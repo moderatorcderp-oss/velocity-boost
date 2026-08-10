@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import AmbientBlueBackground from "../BackgroundCss/AnimatedBlueBg";
 import { AlarmClock, Calendar, ChevronLeft, ChevronRight } from "lucide-react";
+import { usePopupForm } from "../context/Popupformcontext";
 
 // star icon
 const Star = (
@@ -188,6 +189,7 @@ function CourseCard({ course }) {
 export default function PopularCourses() {
   const [hourBucket, setHourBucket] = useState(getHourBucket());
   const [courses, setCourses] = useState(() => buildCourses(getHourBucket()));
+  const { openPopup } = usePopupForm();
 
   // ---- mobile/tablet carousel state ----
   const trackRef = useRef(null);
@@ -403,12 +405,19 @@ export default function PopularCourses() {
             <button
               type="button"
               className="inline-flex items-center gap-2 rounded-lg bg-[#2b5cff] px-6 py-3 font-semibold text-white shadow transition hover:bg-[#1f49d6]"
+              onClick={openPopup}
             >
               ⬇ Download Brochure
             </button>
             <button
               type="button"
               className="inline-flex items-center gap-2 rounded-lg bg-[#13235b] px-6 py-3 font-semibold text-white shadow transition hover:bg-[#0e1a44]"
+              onClick={() =>
+                window.open(
+                  "https://wa.me/9004001938?text=Hi%20I'm%20interested%20in%20your%20courses.",
+                  "_blank"
+                )
+              }
             >
               📅 Book a Free Demo
             </button>

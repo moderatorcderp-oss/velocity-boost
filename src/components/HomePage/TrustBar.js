@@ -1,4 +1,7 @@
+"use client";
+
 import styles from "../../styles/HomePage/TrustBar.module.css";
+import { usePopupForm } from "../../components/context/Popupformcontext";
 
 const CapIcon = (
   <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
@@ -84,6 +87,8 @@ const GoogleIcon = ({ className = "w-5 h-5" }) => (
 );
 
 export default function TrustBar() {
+  const { openPopup } = usePopupForm();
+
   return (
     <>
       <div className={`${styles.wrap}`}>
@@ -129,9 +134,9 @@ export default function TrustBar() {
           </li>
 
           <li className={`${styles.item} ${styles.ctaItem}`}>
-            <a href="#book-demo" className={styles.cta}>
+            <div className={styles.cta} onClick={openPopup}>
               Book Demo
-            </a>
+            </div>
           </li>
         </ul>
       </div>

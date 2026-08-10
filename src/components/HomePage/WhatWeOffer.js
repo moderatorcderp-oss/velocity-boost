@@ -98,7 +98,7 @@ const COURSES = [
             { icon: I.cert, text: "Globally recognized certification" },
         ],
         cta: "Explore SAP Courses",
-        href: "/sap-courses",
+        href: "/sap-courses-in-pune",
     },
     {
         key: "it",
@@ -114,7 +114,7 @@ const COURSES = [
             { icon: I.db, text: "Placement assistance" },
         ],
         cta: "Explore IT Courses",
-        href: "/it-courses",
+        href: "/it-courses-in-pune",
     },
     {
         key: "ai",
@@ -130,7 +130,7 @@ const COURSES = [
             { icon: I.cert, text: "Career growth support" },
         ],
         cta: "Explore AI Courses",
-        href: "/ai-courses",
+        href: "/ai-courses-in-pune",
     },
     {
         key: "hr",
@@ -146,7 +146,7 @@ const COURSES = [
             { icon: I.growth, text: "Leadership development" },
         ],
         cta: "Explore HR Courses",
-        href: "/hr-courses",
+        href: "/hr-courses-in-pune",
     },
 ];
 

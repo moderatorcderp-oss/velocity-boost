@@ -690,10 +690,10 @@ export default function Navbar2() {
                     <Image
                         src="https://res.cloudinary.com/bropujss/image/upload/v1783687070/logo_rju9sa_scdui4.webp"
                         alt="Connecting Dots ERP Logo"
-                        width={150}
-                        height={120}
+                        width={224}
+                        height={112}
                         loading="lazy"
-                        sizes="(max-width: 640px) 90px, 70px"
+                        sizes="(max-width: 639px) 80px, (max-width: 1023px) 80px, 112px"
                         className="h-7 w-auto shrink-0 object-contain sm:h-10 sm:w-20 lg:h-14 lg:w-28"
                     />
                 </Link>
@@ -793,10 +793,10 @@ export default function Navbar2() {
                     <Image
                         src="https://res.cloudinary.com/bropujss/image/upload/v1783687070/logo_rju9sa_scdui4.webp"
                         alt="Connecting Dots ERP Logo"
-                        width={80}
-                        height={80}
+                        width={128}
+                        height={112}
                         loading="lazy"
-                        sizes="(max-width: 500px) 100px, 130px"
+                        sizes="64px"
                         className="h-7 w-auto shrink-0 object-contain sm:h-10 sm:w-16"
                     />
                 </Link>
@@ -805,10 +805,10 @@ export default function Navbar2() {
                     <Image
                         src="https://res.cloudinary.com/bropujss/image/upload/v1783687070/logo_rju9sa_scdui4.webp"
                         alt="Connecting Dots ERP Logo"
-                        width={150}
-                        height={120}
+                        width={160}
+                        height={128}
                         loading="lazy"
-                        sizes="(max-width: 500px) 100px, 130px"
+                        sizes="(max-width: 1023px) 64px, 80px"
                         className="h-7 w-auto shrink-0 object-contain sm:h-10 sm:w-16 lg:h-12 lg:w-20"
                     />
                 </Link>

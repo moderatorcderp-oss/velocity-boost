@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import { usePathname } from "next/navigation";
 
 import { CityProvider } from "@/context/CityContext";
+import { PopupFormProvider, usePopupForm } from "../components/context/Popupformcontext";
 
 const BackgroundAnimation = dynamic(
   () => import("@/components/Common/BackgroundAnimation"),
@@ -94,6 +95,17 @@ const useDeferredRender = (delay = 2000) => {
   return isReady;
 };
 
+// Pulled out so it can call usePopupForm() — that hook needs to be inside
+// PopupFormProvider, which itself has to sit inside this component's return.
+function GlobalPopupForm() {
+  const { isPopupOpen, closePopup } = usePopupForm();
+  return (
+    <Suspense fallback={null}>
+      <PopupForm open={isPopupOpen} onClose={closePopup} />
+    </Suspense>
+  );
+}
+
 export default function ClientLayoutWrapper({ children }) {
   const pathname = usePathname();
   const [hasUserEngaged, setHasUserEngaged] = useState(false);
@@ -158,41 +170,41 @@ export default function ClientLayoutWrapper({ children }) {
 
   return (
     <CityProvider>
-      {children}
+      <PopupFormProvider>
+        {children}
 
-      {showDecorativeWidgets && (
-        <>
-          <BackgroundAnimation />
-          {!shouldHideComponent && <WaveComponent />}
-        </>
-      )}
+        {showDecorativeWidgets && (
+          <>
+            <BackgroundAnimation />
+            {!shouldHideComponent && <WaveComponent />}
+          </>
+        )}
 
-      {showFloatingWidgets && (
-        <>
-          <ScrollToTop />
-          <Floatingcontact phoneNumber="+919004002958" />
-          <Whatsapp phoneNumber="+919004002958" />
-          <BottomMenu />
+        {showFloatingWidgets && (
+          <>
+            <ScrollToTop />
+            <Floatingcontact phoneNumber="+919004002958" />
+            <Whatsapp phoneNumber="+919004002958" />
+            <BottomMenu />
 
-          {hasUserEngaged && (
+            {hasUserEngaged && (
+              <Suspense fallback={null}>
+                <Chatbot />
+              </Suspense>
+            )}
+          </>
+        )}
+
+        {showLeadWidgets && hasUserEngaged && (
+          <>
             <Suspense fallback={null}>
-              <Chatbot />
+              <Stickyform />
             </Suspense>
-          )}
-        </>
-      )}
 
-      {showLeadWidgets && hasUserEngaged && (
-        <>
-          <Suspense fallback={null}>
-            <Stickyform />
-          </Suspense>
-
-          <Suspense fallback={null}>
-            <PopupForm />
-          </Suspense>
-        </>
-      )}
+            <GlobalPopupForm />
+          </>
+        )}
+      </PopupFormProvider>
     </CityProvider>
   );
 }
