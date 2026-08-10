@@ -376,7 +376,11 @@ const NAVBAR_EXTRA_CSS = `
   }
 `;
 
-const CLOSE_DELAY = 500;
+// Reduced from 500ms — 500 made the dropdown feel like it was stuck open
+// after the pointer left. 180ms is still enough slack to move the mouse
+// from the nav link down into the panel without it snapping shut on you,
+// but short enough that it reads as an immediate, intentional close.
+const CLOSE_DELAY = 180;
 
 function MegaPanel({ menu, id, onNavigate, onEnter, onLeave }) {
     return (
@@ -471,11 +475,22 @@ export default function Navbar2() {
     const [open, setOpen] = useState(null);
     const [mobileOpen, setMobileOpen] = useState(false);
     const [section, setSection] = useState(null);
+
+    // `scrolled` = true once the page has scrolled past the full bar's own
+    // height, i.e. the full bar has completely scrolled out of view.
+    // `pillRendered` = whether the pill bar exists in the DOM at all
+    // (true display:none/unmounted when false — not just hidden via
+    // opacity). `pillShown` = the visible/animated-in state, flipped a
+    // frame after mount so the enter transition actually plays.
     const [scrolled, setScrolled] = useState(false);
+    const [pillRendered, setPillRendered] = useState(false);
+    const [pillShown, setPillShown] = useState(false);
 
     const fullBarRef = useRef(null);
     const pillBarRef = useRef(null);
     const closeTimer = useRef(null);
+    const pillUnmountTimer = useRef(null);
+    const pillShowFrame = useRef(null);
 
     const activeBarRef = scrolled ? pillBarRef : fullBarRef;
 
@@ -531,27 +546,26 @@ export default function Navbar2() {
     }, [mobileOpen]);
 
     // ================================================================
-    // SCROLL STATE — with hysteresis to stop flicker
+    // SCROLL STATE — tied 1:1 to the full bar's real height
     // ================================================================
-    // CHANGED: previously both directions flipped at the same scrollY
-    // (80px), so scrolling slowly near that boundary made `scrolled`
-    // toggle back and forth rapidly (each toggle re-triggers the
-    // full-bar/pill-bar transition, which read as a "glitch"). Now the
-    // bar only switches to the pill once scrolled past 80px, and only
-    // switches back once scrolled back up past 40px — a dead zone in
-    // between that a normal slow scroll can pass through only once.
+    // The full bar is plain, static, in-flow content now — it is never
+    // faded, translated, or repositioned by this component at all. It
+    // simply scrolls away with the page like any other element, the
+    // same way the browser handles any header that isn't sticky. We only
+    // need to know the moment it has fully scrolled out of view, which
+    // is exactly when window.scrollY reaches its own rendered height —
+    // read live off the DOM node each time, so it stays correct across
+    // breakpoints/resizes without a separate measurement step. The pill
+    // bar is not shown until that instant, so the two bars are never
+    // both eligible to be on screen at once — there is no window in
+    // which they could disagree about position.
     useEffect(() => {
         let ticking = false;
-        const SCROLL_DOWN_THRESHOLD = 80;
-        const SCROLL_UP_THRESHOLD = 40;
         const handleScroll = () => {
             if (!ticking) {
                 requestAnimationFrame(() => {
-                    setScrolled((prev) => {
-                        const y = window.scrollY;
-                        if (prev) return y > SCROLL_UP_THRESHOLD;
-                        return y > SCROLL_DOWN_THRESHOLD;
-                    });
+                    const fullBarHeight = fullBarRef.current ? fullBarRef.current.offsetHeight : 0;
+                    setScrolled(window.scrollY >= fullBarHeight && fullBarHeight > 0);
                     ticking = false;
                 });
                 ticking = true;
@@ -559,7 +573,48 @@ export default function Navbar2() {
         };
         handleScroll();
         window.addEventListener("scroll", handleScroll, { passive: true });
-        return () => window.removeEventListener("scroll", handleScroll);
+        window.addEventListener("resize", handleScroll, { passive: true });
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+            window.removeEventListener("resize", handleScroll);
+        };
+    }, []);
+
+    // Mount/animate the pill bar in when `scrolled` flips true, and
+    // animate it out then truly unmount it (display:none-equivalent —
+    // removed from the DOM) when `scrolled` flips back false. This is
+    // what keeps the pill bar completely absent — not just invisible —
+    // whenever the full bar is the one on screen.
+    useEffect(() => {
+        if (scrolled) {
+            if (pillUnmountTimer.current) {
+                clearTimeout(pillUnmountTimer.current);
+                pillUnmountTimer.current = null;
+            }
+            setPillRendered(true);
+            pillShowFrame.current = requestAnimationFrame(() => {
+                pillShowFrame.current = requestAnimationFrame(() => setPillShown(true));
+            });
+        } else {
+            if (pillShowFrame.current) {
+                cancelAnimationFrame(pillShowFrame.current);
+                pillShowFrame.current = null;
+            }
+            setPillShown(false);
+            pillUnmountTimer.current = setTimeout(() => {
+                setPillRendered(false);
+                pillUnmountTimer.current = null;
+            }, 300); // matches the pill bar's transition duration below
+        }
+        return () => {
+            if (pillShowFrame.current) cancelAnimationFrame(pillShowFrame.current);
+        };
+    }, [scrolled]);
+
+    useEffect(() => {
+        return () => {
+            if (pillUnmountTimer.current) clearTimeout(pillUnmountTimer.current);
+        };
     }, []);
 
     useEffect(() => {
@@ -597,25 +652,29 @@ export default function Navbar2() {
     }, []);
 
     useEffect(() => {
-    const updateNavbarBottom = () => {
-        const el = scrolled ? pillBarRef.current : fullBarRef.current;
-        if (el) {
-            const bottom = el.getBoundingClientRect().bottom;
-            document.documentElement.style.setProperty(
-                "--navbar-bottom",
-                `${Math.max(bottom, 0)}px`
-            );
-        }
-    };
+        const updateNavbarBottom = () => {
+            // While the pill bar is on screen it's the fixed element pinned to
+            // the viewport, so downstream spacing should follow it. Otherwise
+            // the full bar is the one that matters — note it's unpinned now,
+            // so this value moves with normal scroll like any in-flow element.
+            const el = scrolled && pillBarRef.current ? pillBarRef.current : fullBarRef.current;
+            if (el) {
+                const bottom = el.getBoundingClientRect().bottom;
+                document.documentElement.style.setProperty(
+                    "--navbar-bottom",
+                    `${Math.max(bottom, 0)}px`
+                );
+            }
+        };
 
-    updateNavbarBottom();
-    window.addEventListener("resize", updateNavbarBottom);
-    window.addEventListener("scroll", updateNavbarBottom, { passive: true });
-    return () => {
-        window.removeEventListener("resize", updateNavbarBottom);
-        window.removeEventListener("scroll", updateNavbarBottom);
-    };
-}, [scrolled]);
+        updateNavbarBottom();
+        window.addEventListener("resize", updateNavbarBottom);
+        window.addEventListener("scroll", updateNavbarBottom, { passive: true });
+        return () => {
+            window.removeEventListener("resize", updateNavbarBottom);
+            window.removeEventListener("scroll", updateNavbarBottom);
+        };
+    }, [scrolled]);
 
     // ================================================================
     // FULL (non-scrolled) BAR
@@ -838,42 +897,36 @@ export default function Navbar2() {
     );
 
     return (
-        <Container className="sticky top-0 z-[2147483000]">
-            <div className="cdErpNavbarRoot box-border ">
+        <Container className="relative z-[2147483000]">
+            {/*
+              No `sticky`/`fixed` on this outer wrapper anymore. The full
+              bar below is plain, static, in-flow content — it sits at
+              its natural place on the page and scrolls away with
+              everything else, exactly like a normal (non-sticky) header.
+              The pill bar is a completely separate, conditionally-
+              rendered element: it does not exist in the DOM at all
+              (equivalent to display:none) until `scrolled` flips true,
+              which only happens once the full bar has entirely scrolled
+              out of view. So at any given moment there is only ever ONE
+              of these two bars actually present — never both, never
+              mid-crossfade, never at two different offsets. That's what
+              removes the jump/ghost for good.
+            */}
+            <div className="cdErpNavbarRoot relative box-border">
                 <style>{NAVBAR_EXTRA_CSS}</style>
 
-                {/*
-                  CHANGED: this used to be `${scrolled ? "hidden" : ""}`, which
-                  is a `display:none` toggle — instant, no transition. That
-                  collapsed this bar's reserved height in the document the
-                  moment `scrolled` flipped, shifting the page/scroll position
-                  out from under the still-animating pill bar below — that
-                  shift is what read as a "glitch".
+                <Container className="isolate relative z-[60]">{renderFullBar()}</Container>
 
-                  Now this bar is NEVER removed from layout. It always stays
-                  in the document flow (so its height is always reserved,
-                  and nothing shifts), and only its opacity/interactivity
-                  crossfades with the pill bar. `pointer-events-none` when
-                  scrolled keeps it from intercepting clicks/hovers while
-                  it's invisible underneath the pill bar.
-                */}
-                <Container
-                    className={`isolate relative z-[60] transition-opacity duration-300 ease-out ${
-                        scrolled ? "opacity-0 pointer-events-none" : "opacity-100 pointer-events-auto"
-                    }`}
-                >
-                    {renderFullBar()}
-                </Container>
-
-                <Container
-                    className={`isolate fixed inset-x-0 top-0 z-[2147483000] pt-2 transition-[opacity,transform] duration-300 ease-out ${
-                        scrolled
+                {pillRendered && (
+                    <Container
+                        className={`isolate fixed inset-x-0 top-0 z-[2147483000] pt-2 transition-[opacity,transform] duration-300 ease-out ${pillShown
                             ? "opacity-100 translate-y-0 pointer-events-auto"
                             : "opacity-0 -translate-y-2 pointer-events-none"
-                    }`}
-                >
-                    {renderPillBar()}
-                </Container>
+                            }`}
+                    >
+                        {renderPillBar()}
+                    </Container>
+                )}
 
                 <div id="nav-drawer" className="drawer pointer-events-auto w-full max-w-full" data-open={mobileOpen}>
                     <div className="mb-2 flex items-center justify-between rounded-[16px] p-2.5">

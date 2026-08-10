@@ -2,7 +2,6 @@
   "dsfaq": {
     "DSFAQ": {
       "title": "Frequently Asked Questions",
-
       "video": "https://i.imgur.com/I7XKkrq.mp4",
       "items": [
         {
@@ -31,7 +30,6 @@
   "dafaq": {
     "DAFAQ": {
       "title": "Frequently Asked Questions",
-
       "video": "https://i.imgur.com/I7XKkrq.mp4",
       "items": [
         {
@@ -60,7 +58,6 @@
   "bafaq": {
     "BAFAQ": {
       "title": "Frequently Asked Questions",
-
       "video": "https://i.imgur.com/I7XKkrq.mp4",
       "items": [
         {
@@ -89,7 +86,6 @@
   "GPTfaq": {
     "GPTFAQ": {
       "title": "Frequently Asked Questions",
-
       "video": "https://i.imgur.com/I7XKkrq.mp4",
       "items": [
         {
@@ -118,7 +114,6 @@
   "fullstackfaq": {
     "FullStackFAQ": {
       "title": "Frequently Asked Questions",
-
       "video": "https://i.imgur.com/I7XKkrq.mp4",
       "items": [
         {
@@ -147,7 +142,6 @@
   "javafaq": {
     "JavaFAQ": {
       "title": "Frequently Asked Questions",
-
       "video": "https://i.imgur.com/I7XKkrq.mp4",
       "items": [
         {
@@ -176,7 +170,6 @@
   "pythonfaq": {
     "PythonFAQ": {
       "title": "Frequently Asked Questions",
-
       "video": "https://i.imgur.com/I7XKkrq.mp4",
       "items": [
         {
@@ -205,7 +198,6 @@
   "salesfaq": {
     "SalesFAQ": {
       "title": "Frequently Asked Questions",
-
       "video": "https://i.imgur.com/I7XKkrq.mp4",
       "items": [
         {
@@ -234,7 +226,6 @@
   "abapfaq": {
     "AbapFAQ": {
       "title": "Frequently Asked Questions",
-
       "video": "https://i.imgur.com/I7XKkrq.mp4",
       "items": [
         {
@@ -263,7 +254,6 @@
   "aribafaq": {
     "AribaFAQ": {
       "title": "Frequently Asked Questions",
-
       "video": "https://i.imgur.com/I7XKkrq.mp4",
       "items": [
         {
@@ -292,7 +282,6 @@
   "basisfaq": {
     "BasisFAQ": {
       "title": "Frequently Asked Questions",
-
       "video": "https://i.imgur.com/I7XKkrq.mp4",
       "items": [
         {
@@ -321,7 +310,6 @@
   "bwbifaq": {
     "BwbiFAQ": {
       "title": "Frequently Asked Questions",
-
       "video": "https://i.imgur.com/I7XKkrq.mp4",
       "items": [
         {
@@ -350,7 +338,6 @@
   "ewmfaq": {
     "EWMFAQ": {
       "title": "Frequently Asked Questions",
-
       "video": "https://i.imgur.com/I7XKkrq.mp4",
       "items": [
         {
@@ -379,37 +366,41 @@
   "ficofaq": {
     "FICOFAQ": {
       "title": "Frequently Asked Questions",
-
-      "video": "https://i.imgur.com/I7XKkrq.mp4",
       "items": [
         {
-          "question": "What is SAP FICO?",
-          "answer": "SAP FICO stands for Financial Accounting (FI) and Controlling (CO), modules in SAP ERP systems designed to manage financial transactions and data. SAP FI focuses on external financial reporting, including balance sheets and income statements, while SAP CO supports internal planning and monitoring, such as cost management and profitability analysis. "
+          "question": "What is SAP FICO, and what exactly does the course teach?",
+          "answer": "SAP FICO is the finance backbone of SAP's ERP system, combining Financial Accounting (FI) and Controlling (CO). FI covers areas like general ledger, accounts payable, accounts receivable, asset accounting, and bank accounting for external reporting, while CO focuses on internal cost management through cost centers, profit centers, internal orders, and profitability analysis. A comprehensive SAP FICO course teaches configuration of both modules from scratch, daily business transactions, and hands-on practice in SAP S/4HANA, preparing learners for real-world enterprise finance processes."
         },
         {
-          "question": "Can I learn SAP FICO without a financial or Accounting background?",
-          "answer": "Yes, you can learn SAP FICO without Any financial background. However, having a basic understanding of accounting concepts can make the process easier. You can understand the functional aspects of SAP FICO by concentrating on the system's technical and configuration components."
+          "question": "Do I need an accounting or finance background to learn SAP FICO?",
+          "answer": "No, an accounting or finance background is not mandatory, though it can make learning easier. Candidates with B.Com, M.Com, MBA Finance, CA, or CMA qualifications often understand the accounting concepts more quickly. However, engineers, IT professionals, and graduates from other fields can also learn SAP FICO successfully by first building a basic understanding of accounting principles such as debits, credits, ledgers, and financial statements."
         },
         {
-          "question": "SAP Fico is in demand?",
-          "answer": "Yes, SAP FICO is in high demand due to its critical role in financial management and controlling processes within organizations globally."
+          "question": "How long does the SAP FICO course take, and is it available online?",
+          "answer": "Most SAP FICO training programs are completed within 6 to 10 weeks for weekday batches and around 2 to 3 months for weekend batches designed for working professionals. Self-paced learning options may take anywhere from one to four months depending on your schedule. Live online training is widely available and provides practical access to SAP systems, making it just as effective as classroom-based learning."
         },
         {
-          "question": "Is it possible to take this course's demo sessions?",
-          "answer": "Free demo sessions are available for this course, allowing prospective students to explore the curriculum and teaching style before enrolling. These sessions offer a sneak peek into the course content and learning environment."
+          "question": "How much does an SAP FICO course cost?",
+          "answer": "SAP FICO training in India generally costs between ₹30,000 and ₹1,50,000 depending on the institute, course format, trainer experience, and placement assistance. Keep in mind that the official SAP certification exam fee is separate from the training fee and is paid directly to SAP. Before enrolling, it is always advisable to confirm whether certification costs are included in the quoted course fee."
         },
         {
-          "question": "What is the salary of sap fico fresher in {city}?",
-          "answer": "Salary growth depends upon skill level. A skilled SAP fico consultant can fetch an even higher salary."
+          "question": "Is SAP FICO certification necessary to get a job?",
+          "answer": "No, SAP FICO certification is not mandatory for getting hired. Most employers, especially when hiring freshers, focus more on practical skills, configuration knowledge, and the ability to solve real business scenarios. Certification can strengthen your profile and improve credibility, particularly if you have limited project experience, but it should be viewed as an advantage rather than a strict requirement."
+        },
+        {
+          "question": "What's the salary and career scope after completing an SAP FICO course?",
+          "answer": "Fresh SAP FICO professionals in India typically earn between ₹3.5 and ₹7 LPA, while experienced consultants can earn ₹7 to ₹18 LPA or more. Senior SAP FICO consultants with SAP S/4HANA expertise often earn above ₹20 LPA, with international opportunities offering significantly higher salaries. Career prospects remain strong as organizations continue migrating from SAP ECC to SAP S/4HANA, creating demand for roles such as SAP FICO Consultant, Financial Analyst, Business Process Analyst, and Solution Architect."
+        },
+        {
+          "question": "Do I need any coding or programming knowledge for SAP FICO?",
+          "answer": "No, programming knowledge is not required to learn SAP FICO. It is a functional SAP module where professionals configure business processes through system settings rather than writing code. Basic computer skills and familiarity with spreadsheets are usually sufficient to begin. Learning SAP ABAP later can be helpful for advanced customization, but it is not a prerequisite for starting a career in SAP FICO."
         }
-        
       ]
     }
   },
   "hanafaq": {
     "HanaFAQ": {
       "title": "Frequently Asked Questions",
-
       "video": "https://i.imgur.com/I7XKkrq.mp4",
       "items": [
         {
@@ -438,28 +429,34 @@
   "hrhcmfaq": {
     "HRHCMFAQ": {
       "title": "Frequently Asked Questions",
-
-      "video": "https://i.imgur.com/I7XKkrq.mp4",
       "items": [
         {
-          "question": "Can I learn SAP HCM without prior experience in sales or distribution?",
-          "answer": "Yes, you can learn SAP HCM without any prior experience in sales or distribution. Our SAP HCM course is designed to cover foundational concepts and gradually introduce advanced topics, making it accessible for both beginners and professionals from diverse backgrounds."
+          "question": "What is SAP and why do companies use it?",
+          "answer": "SAP is business software that helps companies manage things like finance, inventory, HR, and operations all from one system, instead of juggling a dozen different tools. Big companies use it because it keeps everything connected — so when something changes in one department, the rest of the business sees it too. That's why SAP skills are in demand, especially in finance, supply chain, and consulting roles."
         },
         {
-          "question": "Is SAP HCM in demand?",
-          "answer": "Absolutely, SAP HCM professionals are in high demand globally. As companies increasingly rely on SAP systems for managing HR processes, they actively seek skilled SAP HCM consultants and experts to improve efficiency and drive business growth."
+          "question": "Is an IT course worth it in 2026?",
+          "answer": "Yes, IT is still one of the safer bets when it comes to career growth. Tech isn't slowing down, and companies across every industry — not just tech companies — need people who understand systems, cloud, networking, or software. The trick is picking a specialization instead of trying to learn 'IT' in a vague, general sense. That's usually what separates someone who gets hired quickly from someone who doesn't."
         },
         {
-          "question": "How long does it take to complete the SAP HCM course?",
-          "answer": "Our SAP HCM course typically takes around 3 months to complete. During this period, you will gain comprehensive knowledge and practical, hands-on experience to excel in managing HR processes within SAP."
+          "question": "What does an AI course actually teach you?",
+          "answer": "Most AI courses start with the basics — how machines 'learn' from data, some math and statistics behind it, and then move into hands-on stuff like building models, working with tools like Python, and understanding real use cases like chatbots, recommendation systems, or automation. A good course won't just throw theory at you; it'll have you building small projects along the way so you actually understand how it works, not just what it is."
         },
         {
-          "question": "What are the career opportunities after completing the SAP HCM course?",
-          "answer": "Upon completing the SAP HCM course, you'll have access to various career opportunities, including roles like SAP HCM Consultant, HR Manager, and Payroll Specialist. SAP HCM expertise is highly valued across industries, offering excellent growth potential and rewarding career paths."
+          "question": "What is an HR course, and is it a good career option?",
+          "answer": "An HR course teaches you how businesses hire, train, manage, and retain people — think recruitment, payroll, employee relations, and workplace policies. It's a good option if you're someone who enjoys working with people rather than just systems or code. HR isn't going anywhere either; every company, no matter the industry, needs someone handling this side of things."
         },
         {
-          "question": "Is the SAP HCM course available online or in the classroom?",
-          "answer": "At Connecting Dots ERP, we offer both online and classroom training for the SAP HCM course. With flexible learning options, you can choose the format that best fits your schedule and location, whether you prefer in-person classes or remote learning."
+          "question": "Which is better — learning SAP or a general IT course?",
+          "answer": "It's not really about one being 'better,' it's about what you want to do. SAP is more specialized and tends to lead into consulting or enterprise roles with solid pay, but it's a narrower path. A general IT course gives you more flexibility early on, and you can specialize later once you know what you actually enjoy. If you already know you want to work with big businesses on their internal systems, go SAP. If you're still exploring, IT gives you more room to figure that out."
+        },
+        {
+          "question": "Will AI replace IT and other tech jobs?",
+          "answer": "AI is changing how a lot of IT work gets done, but it's not wiping out the jobs — it's shifting what the jobs look like. Routine, repetitive tasks are the ones most likely to get automated, while roles that involve problem-solving, decision-making, and actually understanding a business are becoming more valuable, not less. If anything, learning how to work alongside AI tools is turning into a skill of its own."
+        },
+        {
+          "question": "How long does it take to become job-ready in SAP, IT, AI, or HR?",
+          "answer": "On average, most people can get to a job-ready level anywhere from 2 to 6 months, depending on the course, how much time they put in, and whether they're starting from scratch or already have some background. Courses that include real projects and practical work tend to get people ready faster than ones that are purely theory-based, since employers usually care more about what you can actually do than just a certificate."
         }
       ]
     }
@@ -467,7 +464,6 @@
   "mmfaq": {
     "MMFAQ": {
       "title": "Frequently Asked Questions",
-
       "video": "https://i.imgur.com/I7XKkrq.mp4",
       "items": [
         {
@@ -496,7 +492,6 @@
   "netfaq": {
     "NetFAQ": {
       "title": "Frequently Asked Questions",
-
       "video": "https://i.imgur.com/I7XKkrq.mp4",
       "items": [
         {
@@ -525,7 +520,6 @@
   "pmfaq": {
     "PMFAQ": {
       "title": "Frequently Asked Questions",
-
       "video": "https://i.imgur.com/I7XKkrq.mp4",
       "items": [
         {
@@ -554,7 +548,6 @@
   "ppfaq": {
     "PPFAQ": {
       "title": "Frequently Asked Questions",
-
       "video": "https://i.imgur.com/I7XKkrq.mp4",
       "items": [
         {
@@ -583,7 +576,6 @@
   "psfaq": {
     "PSFAQ": {
       "title": "Frequently Asked Questions",
-
       "video": "https://i.imgur.com/I7XKkrq.mp4",
       "items": [
         {
@@ -612,7 +604,6 @@
   "qmfaq": {
     "QMFAQ": {
       "title": "Frequently Asked Questions",
-
       "video": "https://i.imgur.com/I7XKkrq.mp4",
       "items": [
         {
@@ -641,7 +632,6 @@
   "scmfaq": {
     "SCMFAQ": {
       "title": "Frequently Asked Questions",
-
       "video": "https://i.imgur.com/I7XKkrq.mp4",
       "items": [
         {
@@ -670,7 +660,6 @@
   "sdfaq": {
     "SDFAQ": {
       "title": "Frequently Asked Questions",
-
       "video": "https://i.imgur.com/I7XKkrq.mp4",
       "items": [
         {
@@ -699,7 +688,6 @@
   "succfaq": {
     "SuccFAQ": {
       "title": "Frequently Asked Questions",
-
       "video": "https://i.imgur.com/I7XKkrq.mp4",
       "items": [
         {
@@ -728,7 +716,6 @@
   "powerbi": {
     "POWERBI": {
       "title": "Frequently Asked Questions",
-
       "video": "https://i.imgur.com/I7XKkrq.mp4",
       "items": [
         {
@@ -757,7 +744,6 @@
   "tableau": {
     "TABLEAU": {
       "title": "Frequently Asked Questions",
-
       "video": "https://i.imgur.com/I7XKkrq.mp4",
       "items": [
         {
@@ -786,7 +772,6 @@
   "corefaq": {
     "COREFAQ": {
       "title": "Frequently Asked Questions",
-
       "video": "https://i.imgur.com/I7XKkrq.mp4",
       "items": [
         {
@@ -815,7 +800,6 @@
   "anafaq": {
     "ANAFAQ": {
       "title": "Frequently Asked Questions",
-
       "video": "https://i.imgur.com/I7XKkrq.mp4",
       "items": [
         {
@@ -844,7 +828,6 @@
   "manfaq": {
     "MANFAQ": {
       "title": "Frequently Asked Questions",
-
       "video": "https://i.imgur.com/I7XKkrq.mp4",
       "items": [
         {
@@ -873,7 +856,6 @@
   "payfaq": {
     "PAYFAQ": {
       "title": "Frequently Asked Questions",
-
       "video": "https://i.imgur.com/I7XKkrq.mp4",
       "items": [
         {
@@ -899,10 +881,9 @@
       ]
     }
   },
-  "genfaq": {  
+  "genfaq": {
     "GENFAQ": {
       "title": "Frequently Asked Questions",
-
       "video": "https://i.imgur.com/I7XKkrq.mp4",
       "items": [
         {
@@ -931,7 +912,6 @@
   "hrtrainfaq": {
     "HRTRAINFAQ": {
       "title": "Frequently Asked Questions",
-
       "video": "https://i.imgur.com/I7XKkrq.mp4",
       "items": [
         {
@@ -960,7 +940,6 @@
   "sapfaq": {
     "SAPFAQ": {
       "title": "Frequently Asked Questions",
-
       "video": "https://i.imgur.com/I7XKkrq.mp4",
       "items": [
         {
@@ -989,7 +968,6 @@
   "itcoursesfaq": {
     "ITcoursesFAQ": {
       "title": "Frequently Asked Questions",
-
       "video": "https://i.imgur.com/I7XKkrq.mp4",
       "items": [
         {
@@ -1018,7 +996,6 @@
   "hrcoursesfaq": {
     "HRcoursesFAQ": {
       "title": "Frequently Asked Questions",
-
       "video": "https://i.imgur.com/I7XKkrq.mp4",
       "items": [
         {
@@ -1047,7 +1024,6 @@
   "datavisualfaq": {
     "DataVisualFAQ": {
       "title": "Frequently Asked Questions",
-
       "video": "https://i.imgur.com/I7XKkrq.mp4",
       "items": [
         {

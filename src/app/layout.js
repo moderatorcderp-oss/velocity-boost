@@ -4,7 +4,7 @@ import Script from "next/script";
 import { Partytown } from "@builder.io/partytown/react";
 import "./globals.css";
 
-import Navbar from "@/components/Common/Navbar";
+// import Navbar from "@/components/Common/Navbar";
 import Footer from "@/components/Common/Footer";
 import CallAdvisorsStrip from "@/components/Common/CallAdvisorsStrip";
 import Marquee from "@/components/Common/Marquee";
@@ -12,7 +12,6 @@ import ServerPing from "@/components/ServerPing";
 
 import ConditionalAuthProvider from "@/app/conditionalprovider";
 import ClientLayoutWrapper from "@/components/ClientLayoutWrapper";
-import BackgroundAnimation from "@/components/Common/BackgroundAnimation"; // Import the new background animation component
 import Navbar2 from "@/components/Common/Navbar2";
 // --- Font Setup ---
 const lato = Lato({
@@ -91,7 +90,6 @@ export default function RootLayout({ children }) {
         <CallAdvisorsStrip />
         <Navbar2 />
         <Marquee />
-        {/* <Navbar /> */}
 
         {/* Client-Side Wrapper */}
         <ConditionalAuthProvider>

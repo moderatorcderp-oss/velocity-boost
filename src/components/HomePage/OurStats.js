@@ -1,4 +1,5 @@
 import React from "react";
+import { Crown, GraduationCap, BookOpen, Star, Briefcase } from "lucide-react";
 import AmbientBlueBackground from "../../components/BackgroundCss/AnimatedBlueBg";
 import Container from "../StandardContainer";
 
@@ -10,62 +11,26 @@ import Container from "../StandardContainer";
    everything else renders statically, no entrance animation.
    ============================================================ */
 
-/* ---- Inline SVGs (currentColor so each icon inherits its accent) ---- */
-const CrownIcon = (
-  <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true">
-    <path d="M3 8l3.5 3L12 5l5.5 6L21 8l-1.5 10.5h-15L3 8zm2.2 12.5h13.6a.9.9 0 0 1 0 1.8H5.2a.9.9 0 0 1 0-1.8z" />
-  </svg>
-);
-const CapIcon = (
-  <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true">
-    <path d="M12 3 1 8l11 5 9-4.09V15h2V8L12 3zM5 13.18v3.5C5 18.5 8.13 20 12 20s7-1.5 7-3.32v-3.5l-7 3.18-7-3.18z" />
-  </svg>
-);
-const GrowthIcon = (
-  <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true">
-    <path d="M3 3v18h18v-2H5V3H3zm4 12 4-4 3 3 5-6-1.4-1.2-3.7 4.4-3-3L7 13.6V15z" />
-  </svg>
-);
-const MentorsIcon = (
-  <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true">
-    <path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm8 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM2 19v-1.5C2 15 5.3 14 8 14s6 1 6 3.5V19H2zm12.2-4.9c1.9.4 3.8 1.3 3.8 3.4V19h4v-1.5c0-2.2-2.8-3.2-5-3.4-.9 0-1.9.1-2.8.5z" />
-  </svg>
-);
-const BadgeIcon = (
-  <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true">
-    <path d="M12 2a6 6 0 0 1 3 11.2V22l-3-1.6L9 22v-8.8A6 6 0 0 1 12 2zm0 2a4 4 0 1 0 0 8 4 4 0 0 0 0-8z" />
-  </svg>
-);
-const BriefcaseIcon = (
-  <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true">
-    <path d="M9 4h6a2 2 0 0 1 2 2v1h3a2 2 0 0 1 2 2v3H2V9a2 2 0 0 1 2-2h3V6a2 2 0 0 1 2-2zm0 3h6V6H9v1zM2 14h9v2h2v-2h9v5a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-5z" />
-  </svg>
-);
-
 const STATS = [
   {
-    value: "10+", title: "Years of Legacy", tint: "#b47a08", icon: CrownIcon,
+    value: "10+", title: "Years of Legacy", tint: "#b47a08", icon: <Crown size={26} strokeWidth={1.8} />,
     desc: "Our institute, with over 10+ years of excellence, is transforming lives through quality education."
   },
   {
-    value: "5,000+", title: "Students", tint: "#1a7a42", icon: CapIcon,
-    desc: "Our institute has educated and trained 5000+ students, empowering them with practical skills."
+    value: "5,000+", title: "Students Taught", tint: "#1a7a42", icon: <GraduationCap size={26} strokeWidth={1.8} />,
+    desc: "Our institute has educated and trained 5000+ students, empowering them with practical, industry-ready skills."
   },
   {
-    value: "100X", title: "Growth", tint: "#4d3ecf", icon: GrowthIcon,
-    desc: "Our institute has scaled a 100x growth, evolving to empower more learners and adapt to changing times."
+    value: "50+", title: "Courses Offered", tint: "#4d3ecf", icon: <BookOpen size={26} strokeWidth={1.8} />,
+    desc: "Our institute offers 50+ industry-relevant courses designed to help learners upskill across domains."
   },
   {
-    value: "100+", title: "Mentors", tint: "#c95f08", icon: MentorsIcon,
-    desc: "Our institute is guided by 100+ expert mentors with years of real-world experience in various domains."
+    value: "4.9/5", title: "Google Rating", tint: "#c95f08", icon: <Star size={26} strokeWidth={1.8} />,
+    desc: "Our institute is rated 4.9/5 on Google, reflecting the trust and satisfaction of our learners."
   },
   {
-    value: "100%", title: "Practical Courses", tint: "#c9256b", icon: BadgeIcon,
-    desc: "Our institute offers 100% practical, industry-focused courses designed to build job-ready skills."
-  },
-  {
-    value: "100+", title: "Hiring Partners", tint: "#2456b8", icon: BriefcaseIcon,
-    desc: "Our institute has 100+ hiring partners that trust our talent and help students kickstart their careers."
+    value: "200+", title: "Hiring Partners", tint: "#2456b8", icon: <Briefcase size={26} strokeWidth={1.8} />,
+    desc: "Our institute has 200+ hiring partners that trust our talent and help students kickstart their careers."
   },
 ];
 
@@ -124,7 +89,7 @@ export default function StatsSection() {
           position: relative;
           z-index: 2;
           display: grid;
-          grid-template-columns: repeat(6, 1fr);
+          grid-template-columns: repeat(var(--stat-count, 5), 1fr);
           gap: 26px;
         }
 
@@ -276,7 +241,7 @@ export default function StatsSection() {
           </p>
         </header>
 
-        <ul className="ss-grid">
+        <ul className="ss-grid" style={{ "--stat-count": STATS.length }}>
           {STATS.map((s, i) => (
             <li key={i} className="ss-card">
               <div className="ss-iconRow">

@@ -9,6 +9,7 @@ import WhyChooseSection from "@/components/HomePage/WhyChooseSection";
 import WhatWeOffer from "../../components/HomePage/WhatWeOffer"
 import SectionBackground from "@/components/BackgroundCss/SectionBackground";
 import RegistrationForm from "@/components/PopupForm2";
+import Container from "@/components/StandardContainer";
 
 const Marquee = dynamic(() => import("@/components/HomePage/Marquee2"), {
   ssr: false,
@@ -123,51 +124,53 @@ const LazySection = ({ children, fallback, rootMargin = "350px", intrinsicSize }
 export default function HomeClient() {
   return (
     <>
-      <main className="flex-col justify-center overflow-y-hidden">
-        <h1 className="visually-hidden">
-          Job-Oriented Training That Gets You Hired
-        </h1>
+      <Container className="box-border">
+        <main className="flex-col justify-center items-center overflow-y-hidden  overflow-x-hidden w-full max-w-[1800px]">
+          <h1 className="visually-hidden">
+            Job-Oriented Training That Gets You Hired
+          </h1>
 
-        {/* Above the fold */}
-        <HeaderCarousel />
+          {/* Above the fold */}
+          <HeaderCarousel />
 
-        {/* Below the fold — lazy loaded */}
-        <LazySection fallback={<div style={{ height: "60px" }} />}>
-          <Marquee />
-        </LazySection>
-        <LazySection fallback={<div style={{ minHeight: "250px" }} />}>
-          <SectionBackground>
-            <OurClients />
-          </SectionBackground>
-        </LazySection>
-        <LazySection fallback={<div style={{ minHeight: "200px" }} />}>
-          <WhatWeOffer />
-        </LazySection>
-        <LazySection fallback={<div style={{ minHeight: "520px" }} />} intrinsicSize="520px">
-          <Courses />
-        </LazySection>
-        <LazySection fallback={<div style={{ minHeight: "300px" }} />}>
-          {/* <Keypoints /> */}
-          <WhyChooseSection />
-        </LazySection>
-        <LazySection fallback={<div />}>
-          <TrainingProcessSection />
-        </LazySection>
-        <LazySection fallback={<div style={{ minHeight: "400px" }} />}>
-          <FeedbackAndReviews />
-        </LazySection>
-        <LazySection fallback={<div style={{ minHeight: "400px" }} />}>
-          <LatestBlogs />
-        </LazySection>
-        {/* ── Placed students ticker (new) — sits right after PlacementSection ── */}
-        <LazySection fallback={<div style={{ minHeight: "250px" }} />}>
-          <OurStats />
-        </LazySection>
-        <LazySection fallback={<div style={{ minHeight: "400px" }} />}>
-          <FAQAccordion data={homeFaqData} />
-        </LazySection>
+          {/* Below the fold — lazy loaded */}
+          <LazySection fallback={<div style={{ height: "60px" }} />}>
+            <Marquee />
+          </LazySection>
+          <LazySection fallback={<div style={{ minHeight: "250px" }} />}>
+            <SectionBackground>
+              <OurClients />
+            </SectionBackground>
+          </LazySection>
+          <LazySection fallback={<div style={{ minHeight: "200px" }} />}>
+            <WhatWeOffer />
+          </LazySection>
+          <LazySection fallback={<div style={{ minHeight: "520px" }} />} intrinsicSize="520px">
+            <Courses />
+          </LazySection>
+          <LazySection fallback={<div style={{ minHeight: "300px" }} />}>
+            {/* <Keypoints /> */}
+            <WhyChooseSection />
+          </LazySection>
+          <LazySection fallback={<div />}>
+            <TrainingProcessSection />
+          </LazySection>
+          <LazySection fallback={<div style={{ minHeight: "400px" }} />}>
+            <FeedbackAndReviews />
+          </LazySection>
+          <LazySection fallback={<div style={{ minHeight: "400px" }} />}>
+            <LatestBlogs />
+          </LazySection>
+          {/* ── Placed students ticker (new) — sits right after PlacementSection ── */}
+          <LazySection fallback={<div style={{ minHeight: "250px" }} />}>
+            <OurStats />
+          </LazySection>
+          <LazySection fallback={<div style={{ minHeight: "400px" }} />}>
+            <FAQAccordion data={homeFaqData} />
+          </LazySection>
 
-      </main>
+        </main>
+      </Container>
     </>
   );
 }
