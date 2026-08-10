@@ -1,0 +1,397 @@
+{
+  "meta": {
+    "title": "Placements | Connecting Dots ERP",
+    "description": "Explore placements, placement support, FAQs, and social updates from Connecting Dots ERP."
+  },
+  "hero": {
+    "badge": "Career Support Program",
+    "titleLineOne": "Get Job-Ready with",
+    "titleAccent": "Expert Placement Assistance",
+    "description": "We don’t just provide training — we prepare you for real jobs with career mentorship and placement assistance.",
+    "bullets": [
+      "100% Placement Assistance for All Students",
+      "Resume Building & LinkedIn Profile Optimization",
+      "Interview Preparation & Mock Interviews",
+      "Corporate Readiness Training"
+    ],
+    "stats": [
+      {
+        "value": "98",
+        "suffix": "%",
+        "label": "Placement Rate"
+      },
+      {
+        "value": "1000",
+        "suffix": "+",
+        "label": "Hiring Partners"
+      },
+      {
+        "value": "4.9",
+        "suffix": "\u2605",
+        "label": "Google Rating"
+      }
+    ],
+    "form": {
+      "title": "Get Free Placement Guidance",
+      "description": "Fill in your details and our counsellor will reach out to you.",
+      "successMessage": "Thank you! We'll get back to you shortly.",
+      "buttonLabel": "Request Callback ->",
+      "courseOptions": [
+        "SAP Finance & Consulting (FICO)",
+        "SAP Sales & Distribution (SD)",
+        "SAP Materials Management (MM)",
+        "Business Warehouse",
+        "Java Full Stack",
+        "ERP (Other)"
+      ]
+    }
+  },
+  "placedSection": {
+    "titleLineOne": "Recent Placements at",
+    "titleAccent": "Connecting Dots ERP, Pune",
+    "description": "Here are sample placement records loaded from JSON using a reusable template.",
+    "searchPlaceholder": "Search by name, position or company...",
+    "noResultsText": "No results found for",
+    "recordsLabel": "records",
+    "tableHeaders": [
+      "#",
+      "Name",
+      "Package",
+      "Company",
+      "Position"
+    ],
+    "placements": [
+      {
+        "name": "Gaurav WXXXXXX",
+        "package": "7.4 LPA",
+        "company": "Manpower Group",
+        "position": "P2P Analyst"
+      },
+      {
+        "name": "Sujata XXXXXX",
+        "package": "7 LPA",
+        "company": "DOT 1",
+        "position": "Consultant - SAP SD"
+      },
+      {
+        "name": "Mansi DXXXX",
+        "package": "8 LPA",
+        "company": "DigitalBuzz Software PVT LTD",
+        "position": "Software Engineer"
+      },
+      {
+        "name": "Vishal XXXXXX",
+        "package": "11.2 LPA",
+        "company": "Cognizant",
+        "position": "Associate - Projects"
+      },
+      {
+        "name": "XXXXXX Pardeshi",
+        "package": "24 LPA",
+        "company": "Wipro",
+        "position": "Senior Consultant"
+      },
+      {
+        "name": "Siddharth XXXXXX",
+        "package": "5 LPA",
+        "company": "MannlOwe PVT LTD",
+        "position": "Associate SAP Consultant"
+      },
+      {
+        "name": "Sagar NXXXX",
+        "package": "7 LPA",
+        "company": "Stannik",
+        "position": "SAP Consultant - SAP SD"
+      },
+      {
+        "name": "Sneha PXXXXX ",
+        "package": "3.8 LPA",
+        "company": "ACSE Solutions",
+        "position": "Junior Consuktant HCM Functional"
+      },
+      {
+        "name": "Kiran XXXXX ",
+        "package": "8 LPA",
+        "company": "TCS",
+        "position": "Busines Process Lead"
+      },
+      {
+        "name": "XXXXX  Barde",
+        "package": "9 LPA",
+        "company": "Infosys",
+        "position": "Senior Associate Consultant"
+      },
+      {
+        "name": "Nitesh MXXXXX",
+        "package": "4.2 LPA",
+        "company": "Market Legos",
+        "position": "Software Engineer SAP"
+      },
+      {
+        "name": "Mitesh PXXXXX",
+        "package": "8.4 LPA",
+        "company": "Narvik Marine",
+        "position": "SAP fi Lead"
+      },
+      {
+        "name": "Mangesh XXXXX",
+        "package": "2.72 LPA",
+        "company": "Preci Equipments India PVT LTD",
+        "position": "Junior SAP Consultant"
+      },
+      {
+        "name": "Hemant AXXXXX ",
+        "package": "7 LPA",
+        "company": "Macleods",
+        "position": "Executive Information System"
+      },
+      {
+        "name": "Rushikesh XXXXX",
+        "package": "6.2 LPA",
+        "company": "Infosys",
+        "position": "Associate Business Analyst"
+      },
+      {
+        "name": "Prashant XXXXXX",
+        "package": "7 LPA",
+        "company": "CTI Global",
+        "position": "Microsoft Dynamics 365 Developer"
+      },
+      {
+        "name": "XXXXXX Chauhan",
+        "package": "5.5 LPA",
+        "company": "Primus Techsystems Pvt Ltd",
+        "position": "Consultant - SAP HCM"
+      },
+      {
+        "name": "Shubham XXXXX",
+        "package": "13.8 LPA",
+        "company": "Deloitte",
+        "position": "Consultant"
+      },
+      {
+        "name": "Dnyaneshwar XXXXXX",
+        "package": "6 LPA",
+        "company": "AG Technologies Pvt Ltd",
+        "position": "Senior Manager - Operations"
+      },
+      {
+        "name": "Sneha XXXXX",
+        "package": "8 LPA",
+        "company": "Tech Mahindra",
+        "position": "Associate Team Lead"
+      },
+      {
+        "name": "Sharayu JXXXXX",
+        "package": "5.8 LPA",
+        "company": "Allscripts",
+        "position": "Procurement Specialist"
+      },
+      {
+        "name": "Manoj GXXXX",
+        "package": "6 LPA",
+        "company": "Invenio LSI",
+        "position": "SAP HCM Consultant"
+      },
+      {
+        "name": "Vishnu XXXXX",
+        "package": "7 LPA ",
+        "company": "WELT Infotech",
+        "position": "SAP HCM Consultant"
+      },
+      {
+        "name": "Hemant AXXXXX",
+        "package": "7.5 LPA",
+        "company": "Macleods",
+        "position": "Executive Information System"
+      },
+      {
+        "name": "Sneha XXXXX",
+        "package": "11.28 LPA",
+        "company": "Infosys",
+        "position": "Senior Associate Consultant"
+      },
+      {
+        "name": "Nikhil XXXXXX ",
+        "package": "5.5 LPA",
+        "company": "NeoSoft Technologies",
+        "position": "Software Engineer"
+      },
+      {
+        "name": "Shreedhar SXXXXX",
+        "package": "11 LPA",
+        "company": "Accenture",
+        "position": "Software Engineer"
+      },
+      {
+        "name": "Reshma ARXXXX",
+        "package": "5.3 LPA",
+        "company": "Tech Mahindra",
+        "position": "Sr. Software Engineer"
+      },
+      {
+        "name": "Prabhjor XXXXXX ",
+        "package": "9 LPA",
+        "company": "Clariant India Limited",
+        "position": "Senior Process Analyst"
+      },
+      {
+        "name": "Abhiram XXXXX ",
+        "package": "10 LPA",
+        "company": "iBridge Techsoft Pvt Ltd",
+        "position": "Senior Sap MM Consultant"
+      },
+      {
+        "name": "XXXXX Shenkar",
+        "package": "8 LPA",
+        "company": "Syntel pvt ltd",
+        "position": "Associate Consultant"
+      },
+      {
+        "name": "Pooja XXXXXX ",
+        "package": "6 LPA",
+        "company": "Invenio LSI",
+        "position": "SAP HCM COnsultant"
+      },
+      {
+        "name": "Gomat XXXXX",
+        "package": "4.15 LPA",
+        "company": "Birlasoft",
+        "position": "Analyst"
+      },
+      {
+        "name": "Sujata XXXXX ",
+        "package": "7 LPA",
+        "company": "Macleods",
+        "position": "SAP SD Consultant"
+      },
+      {
+        "name": "Rashmi AXXXXX ",
+        "package": "9 LPA",
+        "company": "iLab'z Technology",
+        "position": "sr Consultant - SAP FICO"
+      },
+      {
+        "name": "Narayan XXXXX ",
+        "package": "8 LPA",
+        "company": "TATA Consultancy Services",
+        "position": "I.T. Analyst"
+      },
+      {
+        "name": "Rishi XXXXX",
+        "package": "6 LPA",
+        "company": "TATA Consultancy Services",
+        "position": "Systems Engineer"
+      },
+      {
+        "name": "Arun XXXXX",
+        "package": "9 LPA",
+        "company": "Infosys",
+        "position": "Associate Consultant"
+      },
+      {
+        "name": "Prashant XXXXX ",
+        "package": "7.5 LPA",
+        "company": "Infosys",
+        "position": "Technology Analyst"
+      },
+      {
+        "name": "Vishal XXXXX ",
+        "package": "11.3 LPA",
+        "company": "Infosys",
+        "position": "Senior Associate Consultant"
+      },
+      {
+        "name": "Shreedhar XXXXX ",
+        "package": "5.82 LPA",
+        "company": "Allscripts",
+        "position": "Procurement Specialist"
+      },
+      {
+        "name": "Rohit  XXXXXX",
+        "package": "3.96 LPA",
+        "company": "indoVision",
+        "position": "SAP MDM Consuktant"
+      },
+      {
+        "name": "Dnyanada SXXXXX ",
+        "package": "6.2 LPA",
+        "company": "TATA Consultancy Services",
+        "position": "Assistant Systems Analyst"
+      },
+      {
+        "name": "Suman XXXXX ",
+        "package": "4.05 LPA",
+        "company": "Paysquare Consultancy",
+        "position": "SAP Analyst"
+      }
+
+    ]
+  },
+  "processSection": {
+    "titleLineOne": "Our Placement",
+    "titleAccent": "Assistance Process",
+    "description": "A step-by-step placement support flow designed to help learners move from training to interviews and offers.",
+    "items": [
+      {
+        "icon": "\ud83d\udcc4",
+        "title": "Resume Building",
+        "description": "We help structure your resume to match target job roles and improve recruiter visibility."
+      },
+      {
+        "icon": "\ud83c\udfaf",
+        "title": "Mock Interviews",
+        "description": "Practice interviews and feedback sessions help you improve confidence and performance."
+      },
+      {
+        "icon": "\ud83d\udcbc",
+        "title": "Job Assistance",
+        "description": "Our placement team shares relevant openings and supports your application journey."
+      }
+    ]
+  },
+  "faqSection": {
+    "title": "FAQs",
+    "description": "Everything you want to know about placements at Connecting Dots ERP.",
+    "items": [
+      {
+        "question": "Which courses are most popular at Connecting Dots ERP?",
+        "answer": "Popular choices include SAP Finance & Controlling (FICO), SAP Sales & Distribution (SD), SAP MM, Business Warehouse, and Java Full Stack Development."
+      },
+      {
+        "question": "Do you provide placement support in Pune?",
+        "answer": "Yes, we provide end-to-end placement assistance including resume building, mock interviews, profile optimisation, and job referrals."
+      },
+      {
+        "question": "How long does it usually take to get placed?",
+        "answer": "Many learners start getting interview calls within a few weeks after course completion, depending on their background and engagement with the placement process."
+      }
+    ]
+  },
+  "socialSection": {
+    "title": "Stay Tuned With Us on Social Media",
+    "description": "Follow us for placement updates, student success stories, and job alerts.",
+    "links": [
+      {
+        "label": "YouTube",
+        "href": "#",
+        "variant": "youtube"
+      },
+      {
+        "label": "Instagram",
+        "href": "#",
+        "variant": "instagram"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "#",
+        "variant": "linkedin"
+      },
+      {
+        "label": "Facebook",
+        "href": "#",
+        "variant": "facebook"
+      }
+    ]
+  }
+}

@@ -1,0 +1,226 @@
+.relatedCoursesContainer {
+  padding: 70px 0;
+  background-color: #ffffff;
+  max-width: 1800px;
+  width: 97.5%;
+  height: auto; /* Adjust height dynamically */
+  margin: 0 auto;
+}
+
+.relatedCoursesTitleh2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  background: rgb(1, 1, 98);
+  background: linear-gradient(
+    90deg,
+    rgba(1, 1, 98, 1) 35%,
+    rgb(3, 111, 133) 49%,
+    rgba(2, 2, 85, 1) 62%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.relatedCoursesGrid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 28px 20px 36px;
+}
+
+.relatedCourseCard {
+  width: 200px;
+  min-height: 250px;
+  background: linear-gradient(
+    170deg,
+    rgba(90, 176, 219, 0.86) 0%,
+    rgb(57, 92, 91) 100%
+  );
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.35);
+  border-radius: 20px;
+  margin: 10px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  overflow: hidden;
+  position: relative;
+  padding: 34px 16px 20px;
+}
+
+.relatedCourseCard:hover {
+  transform: scale(0.92);
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.5);
+  border-color: rgba(255, 177, 68, 0.45);
+}
+
+.courseRibbon {
+  position: absolute;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  top: -10px;
+  left: -10px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.courseRibbon::before {
+  content: "Premium";
+  position: absolute;
+  width: 150%;
+  height: 40px;
+  background-image: linear-gradient(
+    45deg,
+    #ff6547 0%,
+    #ffb144 51%,
+    #ff7053 100%
+  );
+  transform: rotate(-45deg) translateY(-20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.23);
+}
+
+.courseRibbon::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  z-index: -1;
+  box-shadow: 140px -140px #cc3f47;
+  background-image: linear-gradient(
+    45deg,
+    #ff512f 0%,
+    #f09819 51%,
+    #ff512f 100%
+  );
+}
+
+.relatedIconContainer {
+  width: 88px;
+  height: 88px;
+  padding: 12px;
+  margin: 14px auto 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+}
+
+.relatedCourseIcon {
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  margin-bottom: 0;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.relatedCourseCard h3 {
+  font-size: 1.08rem;
+  font-weight: bold;
+  padding-top: 0;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.relatedCourseCard p {
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.76);
+  margin-bottom: 0;
+}
+
+.relatedCarouselRadioButtons {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.relatedCarouselRadioButtonsInput[type="radio"] {
+  margin: 0 5px;
+  cursor: pointer;
+  accent-color: #007bff;
+}
+
+.outlineBtn {
+  border: 2px solid #007bff;
+  color: #007bff;
+  background-color: transparent;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: all 0.3s;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.outlineBtn:hover,
+.outlineBtn:focus {
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+  .relatedCourseCard {
+    width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .relatedCoursesGrid {
+    justify-content: center;
+  }
+  .relatedCourseCard {
+    width: min(82vw, 240px);
+  }
+  .relatedCoursesTitleh2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .relatedCourseCard {
+    width: min(86vw, 240px);
+    margin: 10px auto; /* Center cards */
+  }
+
+  .relatedCourseIcon {
+    max-width: 100%;
+  }
+
+  .relatedCoursesTitleh2 {
+    font-size: 1.6rem; /* Adjust title size */
+    letter-spacing: 4px; /* Reduce spacing */
+  }
+}
+
+
+@media (max-width: 350px) {
+  .relatedCourseCard {
+    width: 90%;
+  }
+  .relatedCoursesTitleh2 {
+    font-size: 1.5rem;
+  }
+}
