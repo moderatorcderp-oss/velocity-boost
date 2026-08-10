@@ -33,54 +33,54 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { ClipboardEdit, Users, Target, MessagesSquare, TrendingUp, Briefcase } from "lucide-react";
+import { PhoneCall, UserPlus, Presentation, Target, Linkedin, Briefcase } from "lucide-react";
 import AmbientBlueBackground from "../BackgroundCss/AnimatedBlueBg";
 import Container from "../StandardContainer";
 
 const STEPS = [
     {
         num: "01",
-        title: "Enroll",
-        desc: "Start your journey by enrolling in our industry-focused training programs.",
+        title: "Free Counselling Call",
+        desc: "Begin with a free counselling call to understand your goals and map out the right learning path.",
         color: "#8b2fd6",
         grad: ["#a855f7", "#6d28d9"],
-        icon: <ClipboardEdit strokeWidth={1.8} />,
+        icon: <PhoneCall strokeWidth={1.8} />,
     },
     {
         num: "02",
-        title: "Corporate Training",
-        desc: "Gain real-world insights through corporate training led by industry experts.",
+        title: "Registration",
+        desc: "Complete your registration and get onboarded into our industry-focused training programs.",
         color: "#2f6bf7",
         grad: ["#3b82f6", "#1d4ed8"],
-        icon: <Users strokeWidth={1.8} />,
+        icon: <UserPlus strokeWidth={1.8} />,
     },
     {
         num: "03",
-        title: "Real-Time Projects Scenario",
-        desc: "Work on live projects and real-time scenarios to build practical experience.",
+        title: "Online and Offline Classes",
+        desc: "Learn through flexible online and offline classes led by experienced industry trainers.",
         color: "#10b981",
         grad: ["#34d399", "#059669"],
-        icon: <Target strokeWidth={1.8} />,
+        icon: <Presentation strokeWidth={1.8} />,
     },
     {
         num: "04",
-        title: "Interview Preparation",
-        desc: "Prepare with mock interviews, aptitude tests and soft skills training.",
+        title: "Practice on real time Project Scenario",
+        desc: "Work on live projects and real-time scenarios to build practical, job-ready experience.",
         color: "#f97316",
         grad: ["#fb923c", "#ea580c"],
-        icon: <MessagesSquare strokeWidth={1.8} />,
+        icon: <Target strokeWidth={1.8} />,
     },
     {
         num: "05",
-        title: "Experience Alteration",
-        desc: "Continuous feedback and performance enhancement to make you industry-ready.",
+        title: "Resume building, LinkedIn, & Mock Interview preparation",
+        desc: "Get your resume and LinkedIn profile polished, along with mock interviews to sharpen your skills.",
         color: "#ec2f79",
         grad: ["#f472b6", "#db2777"],
-        icon: <TrendingUp strokeWidth={1.8} />,
+        icon: <Linkedin strokeWidth={1.8} />,
     },
     {
         num: "06",
-        title: "Job Assistance",
+        title: "Placement Support",
         desc: "Get dedicated placement support and connect with top hiring companies.",
         color: "#7c3aed",
         grad: ["#a855f7", "#6d28d9"],

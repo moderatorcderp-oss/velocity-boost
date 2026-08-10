@@ -144,7 +144,7 @@ const footerSections = [
         text: "Advanced Data Analytics (Azure & Power BI)",
       },
       { href: "/data-science-with-ai-course-in-pune", text: "DATA SCIENCE WITH AI" },
-      
+
       { href: "/generative-ai-course-in-pune", text: "Generative AI" },
     ],
   },
@@ -212,14 +212,6 @@ const Footer = () => {
               className="pointer-events-none absolute inset-0 z-0 opacity-80 lg:opacity-50"
               aria-hidden="true"
             >
-              <Image
-                src="https://res.cloudinary.com/bropujss/image/upload/v1783678851/ChatGPT_Image_Jun_20_2026_02_30_00_PM_g2zifl_qt6pkt.webp"
-                alt=""
-                fill
-                sizes="(max-width: 1024px) 100vw, 40vw"
-                className="object-contain object-center"
-                loading="lazy"
-              />
               {/* Subtle gradient so text stays readable over the brightest part of the map */}
               <div className="absolute inset-0 bg-gradient-to-b from-[#182e4a]/40 via-transparent to-[#182e4a]/60" />
             </div>
@@ -320,20 +312,20 @@ const Footer = () => {
                         >
                           Mumbai Office 1
                         </a>
-                          <p className="m-0 text-xs leading-tight">
+                        <p className="m-0 text-xs leading-tight">
                           Paradise Tower, next to MCDonalds, Thane West, Thane,
                           Maharashtra 400601
                         </p>
                         <a
-                        href="tel:+919004001938"
-                        className="text-[#ecf0f1] no-underline text-xs transition-colors hover:text-[#3498db] inline-block mt-1"
-                      >
-                        +91 9004001938
-                      </a>
+                          href="tel:+919004001938"
+                          className="text-[#ecf0f1] no-underline text-xs transition-colors hover:text-[#3498db] inline-block mt-1"
+                        >
+                          +91 9004001938
+                        </a>
 
-                      <div className="my-2 border-b border-dashed border-white/10"></div>
+                        <div className="my-2 border-b border-dashed border-white/10"></div>
 
-                      <a
+                        <a
                           href="https://maps.app.goo.gl/i7W3baVVS1mDLmTJ9"
                           target="_blank"
                           rel="noopener noreferrer"
@@ -361,7 +353,7 @@ const Footer = () => {
                         +91 9004005382
                       </a>
                     </div>
-                    
+
                   </div>
 
                   {/* Raipur Office */}
