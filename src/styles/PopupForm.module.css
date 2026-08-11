@@ -209,7 +209,7 @@
   85% {
     opacity: 0.4;
   }
-  
+
 
   100% {
     background-position: 0% 300%;
@@ -776,7 +776,8 @@
     flex: none;
     width: 100%;
     border-radius: 0 0 12px 12px;
-    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    /* border-left: 1px solid rgba(255, 255, 255, 0.2); */
+    
     border-top: none;
     padding: 16px 14px 20px;
     overflow: visible;
@@ -964,6 +965,7 @@
 }
 
 @keyframes envTwinkle {
+
   0%,
   100% {
     opacity: 0.22;
@@ -1054,6 +1056,7 @@
 }
 
 @keyframes checkmarkDrawErase {
+
   0%,
   14% {
     stroke-dashoffset: 100;

@@ -51,7 +51,7 @@
   margin: 0 auto;
   overflow: hidden;
   isolation: isolate;
-  background-image: url('/updatedHeroSec.webp');
+  background-image: url('https://res.cloudinary.com/djdhtkjhn/image/upload/v1785563975/updatedHeroSec_eyyvqz.webp');
   background-size: cover;
   background-position: center;
 }
@@ -467,7 +467,7 @@
     margin-right: 0;
     box-sizing: border-box;
     justify-content: center;
-    background-image: url("/updatedHeroSec.webp");
+    background-image: url("https://res.cloudinary.com/djdhtkjhn/image/upload/v1785563975/updatedHeroSec_eyyvqz.webp");
   }
   .leftSectionItDs,
   .rightSectionItDs {
@@ -539,7 +539,7 @@
     height: auto;
     padding: 0.75rem 0.75rem 1.75rem;
     margin-bottom: 0;
-    background-image: url("/updatedHeroSec.webp");
+    background-image: url("https://res.cloudinary.com/djdhtkjhn/image/upload/v1785563975/updatedHeroSec_eyyvqz.webp");
   }
 
   .alumniLogosItDs {
