@@ -236,7 +236,7 @@ export default function TrainingProcessSection() {
                         {/* Section heading */}
                         <div className="max-w-[960px] mx-auto text-center px-5 pt-7 pb-1 md:px-10 md:pt-10 md:pb-2">
                             <h2
-                                className="mt-2.5 font-extrabold text-[26px] md:text-[40px] leading-[1.1] text-[#101426]"
+                                className="mt-2.5 font-extrabold text-3xl sm:text-4xl md:text-5xl leading-[1.1] text-[#101426]"
                                 style={{ fontFamily: 'Georgia, "Times New Roman", serif' }}
                             >
                                 How it <span className="text-[#2b5cff]">works</span>

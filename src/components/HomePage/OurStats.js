@@ -232,12 +232,12 @@ export default function StatsSection() {
       `}</style>
 
         <header className="ss-head">
-          <h2 id="ss-heading" className="ss-heading">
+          <h2 id="ss-heading" className="text-3xl sm:text-4xl md:text-5xl ss-heading">
             Our Stats <span className="ss-accent">At A</span> Glance
           </h2>
           <div className="ss-headingRule" aria-hidden="true" />
           <p className="ss-subtitle">
-            Milestones that <span className="ss-underline">define our</span> journey and success
+            Milestones that define our journey and success
           </p>
         </header>
 

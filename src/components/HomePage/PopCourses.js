@@ -337,7 +337,7 @@ export default function PopularCourses() {
         />
         <div className="relative mx-auto max-w-7xl px-4">
           <div className="mb-10 text-center">
-            <h2 className="text-3xl font-extrabold text-[#13235b] sm:text-4xl">
+            <h2 className="text-3xl sm:text-4xl md:text-4xl font-extrabold text-[#13235b]">
               Our Popular <span className="text-[#2b5cff]">Courses</span>
             </h2>
             <div className="mx-auto mt-2 h-1 w-16 rounded bg-[#2b5cff]" />

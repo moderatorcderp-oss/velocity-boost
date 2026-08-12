@@ -164,7 +164,7 @@ export default function TestimonialCarousel() {
           className="relative w-full py-16 sm:py-20 px-4 sm:px-6 overflow-hidden max-w-[1800px] bg-transparent"
         >
           <div className="max-w-6xl mx-auto text-center mb-10 sm:mb-14">
-            <h2 className="font-extrabold tracking-tight text-[1.9rem] leading-tight sm:text-[2.6rem] text-[#0f1b3f]">
+            <h2 className="font-extrabold tracking-tight text-3xl sm:text-4xl md:text-5xl leading-tight text-[#0f1b3f]">
               What Our{" "}
               <span
                 className="bg-clip-text text-transparent"
