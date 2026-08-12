@@ -343,7 +343,7 @@ const DSHeader = ({ data }) => {
                   {data.buttons.map((button, index) => (
                     <button
                       key={index}
-                      className={`${index === 0 ? styles.buttonStyle1 : styles.buttonStyle2} ${styles.smallBtn}`}
+                      className={`${index === 0 ? styles.buttonStyle1 : styles.buttonStyle2} ${styles.smallBtn} p-2 text-[10px]`}
                       onClick={handleButtonClick}
                     >
                       {button.text}
@@ -354,7 +354,7 @@ const DSHeader = ({ data }) => {
             }
             // Default: normal buttons
             return data.buttons.map((button, index) => {
-              const btnClass = `${index === 0 ? styles.buttonStyle1 : styles.buttonStyle2}`;
+              const btnClass = `${index === 0 ? styles.buttonStyle1 : styles.buttonStyle2} p-2 text-[10px]`;
               return (
                 <button
                   key={index}
