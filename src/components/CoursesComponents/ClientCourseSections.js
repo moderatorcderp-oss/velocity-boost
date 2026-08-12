@@ -12,7 +12,6 @@ const Curriculum = dynamic(() => import("./Curriculam"), { ssr: false });
 const Modules = dynamic(() => import("./Modules"), { ssr: false });
 
 // === Below the fold (hydrated after initial paint) ===
-const Counselor = dynamic(() => import("./Councelor"), { ssr: false });
 const TrustUs = dynamic(() => import("./Trustus"), { ssr: false });
 const Certificate = dynamic(() => import("../HomePage/Certificate"), { ssr: false });
 const Program = dynamic(() => import("./ProgramHighlights"), { ssr: false });
@@ -61,10 +60,6 @@ export default function ClientCourseSections(props) {
           </Suspense>
         )}
 
-        {/* --- Below-the-fold (lazy-hydrated) --- */}
-        <Suspense fallback={null}>
-          <Counselor />
-        </Suspense>
 
         <Suspense fallback={null}>
           <Description data={descriptionContentData.main} />
@@ -156,10 +151,6 @@ export default function ClientCourseSections(props) {
         </div>
       )}
 
-      {/* --- Below-the-fold --- */}
-      <Suspense fallback={null}>
-        <Counselor />
-      </Suspense>
 
       <Suspense fallback={null}>
         <TrustUs />
