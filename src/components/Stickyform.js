@@ -1,10 +1,8 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
-import styles from "@/styles/Stickyform.module.css";
 import { usePathname } from "next/navigation";
+import { useState, useRef, useEffect } from "react";
 
-// Define countryCodes array with phone number length requirements
 const countryCodes = [
   { code: "+1", country: "US", minLength: 10, maxLength: 10 },
   { code: "+91", country: "IN", minLength: 10, maxLength: 10 },
@@ -14,329 +12,123 @@ const countryCodes = [
   { code: "+49", country: "DE", minLength: 10, maxLength: 11 },
   { code: "+33", country: "FR", minLength: 9, maxLength: 9 },
   { code: "+86", country: "CN", minLength: 11, maxLength: 11 },
-  { code: "+7", country: "RU", minLength: 10, maxLength: 10 },
-  { code: "+39", country: "IT", minLength: 9, maxLength: 10 },
-  { code: "+55", country: "BR", minLength: 10, maxLength: 11 },
-  { code: "+34", country: "ES", minLength: 9, maxLength: 9 },
-  { code: "+27", country: "ZA", minLength: 9, maxLength: 9 },
   { code: "+971", country: "AE", minLength: 9, maxLength: 9 },
-  { code: "+62", country: "ID", minLength: 10, maxLength: 12 },
-  { code: "+90", country: "TR", minLength: 10, maxLength: 10 },
-  { code: "+82", country: "KR", minLength: 9, maxLength: 10 },
-  { code: "+60", country: "MY", minLength: 9, maxLength: 10 },
-  { code: "+31", country: "NL", minLength: 9, maxLength: 9 },
-  { code: "+52", country: "MX", minLength: 10, maxLength: 10 },
+  { code: "+65", country: "SG", minLength: 8, maxLength: 8 },
 ];
-
 const hiddenPaths = ['/dashboard', '/superadmin', '/AdminLogin'];
 const getApiBaseUrl = () => (process.env.NEXT_PUBLIC_API_URL || "").replace(/\/$/, "");
 const OTHER_LOCATION = "Other";
-const EXTRA_LOCATIONS = [
-  "Pune, Maharashtra",
-  "Mumbai, Maharashtra",
-  "Thane, Maharashtra",
-  "Navi Mumbai, Maharashtra",
-  "Pimpri-Chinchwad, Maharashtra",
-  "Hinjewadi, Pune",
-  "Wakad, Pune",
-  "Baner, Pune",
-  "Kharadi, Pune",
-  "Viman Nagar, Pune",
-  "Hadapsar, Pune",
-  "Kothrud, Pune",
-  "Andheri, Mumbai",
-  "Bandra, Mumbai",
-  "Powai, Mumbai",
-  "Dadar, Mumbai",
-  "Borivali, Mumbai",
-  "Bangalore, Karnataka",
-  "Whitefield, Bengaluru",
-  "Electronic City, Bengaluru",
-  "Hyderabad, Telangana",
-  "HITEC City, Hyderabad",
-  "Gachibowli, Hyderabad",
-  "Chennai, Tamil Nadu",
-  "Delhi",
-  "New Delhi",
-  "Gurugram, Haryana",
-  "Noida, Uttar Pradesh",
-  "Ahmedabad, Gujarat",
-  "Surat, Gujarat",
-  "Vadodara, Gujarat",
-  "Indore, Madhya Pradesh",
-  "Bhopal, Madhya Pradesh",
-  "Jaipur, Rajasthan",
-  "Kolkata, West Bengal",
-  "Nagpur, Maharashtra",
-  "Nashik, Maharashtra",
-  "Raipur, Chhattisgarh",
-  "Chandigarh",
-  "Kochi, Kerala",
-  "Coimbatore, Tamil Nadu",
-  "Remote",
-  "Work from Home",
-  "Hybrid",
-  "Multiple Locations",
-  "Willing to Relocate",
+const LOCATIONS = [
+  "Pune, Maharashtra", "Mumbai, Maharashtra", "Thane, Maharashtra",
+  "Navi Mumbai, Maharashtra", "Hinjewadi, Pune", "Wakad, Pune", "Baner, Pune",
+  "Kharadi, Pune", "Andheri, Mumbai", "Bandra, Mumbai", "Powai, Mumbai",
+  "Bangalore, Karnataka", "Whitefield, Bengaluru", "Hyderabad, Telangana",
+  "Gachibowli, Hyderabad", "Chennai, Tamil Nadu", "Delhi", "Gurugram, Haryana",
+  "Noida, Uttar Pradesh", "Ahmedabad, Gujarat", "Jaipur, Rajasthan",
+  "Kolkata, West Bengal", "Remote", "Work from Home", "Hybrid",
   OTHER_LOCATION,
 ];
 
-const buildLocationOptions = (cities) => {
-  const indianCities = cities.filter(
-    (city) => city.country === "IN" || city.country === "India"
-  );
-  const majorInternationalCities = cities.filter(
-    (city) =>
-      ["US", "UK", "CA", "AU", "DE", "FR", "SG", "AE", "JP"].includes(
-        city.country
-      ) && city.population > 500000
-  );
+const COURSES = ["SAP Course", "IT Course", "Data Visualization", "HR Course"];
 
-  const allLocations = [
-    ...indianCities.map((city) =>
-      city.subcountry ? `${city.name}, ${city.subcountry}` : city.name
-    ),
-    ...majorInternationalCities.map((city) => `${city.name}, ${city.country}`),
-    ...EXTRA_LOCATIONS,
-  ];
-
-  return [...new Set(allLocations)]
-    .filter((location) => location && location.trim())
-    .sort((a, b) => {
-      if (a === OTHER_LOCATION) return 1;
-      if (b === OTHER_LOCATION) return -1;
-      return a.localeCompare(b);
-    });
-};
-
-const getLocationMatches = (value, suggestions) => {
+function getLocationMatches(value) {
   const search = value.trim().toLowerCase();
-
   if (!search) {
-    return [
-      ...EXTRA_LOCATIONS.filter((location) => location !== OTHER_LOCATION).slice(0, 9),
-      OTHER_LOCATION,
-    ];
+    return [...LOCATIONS.filter((l) => l !== OTHER_LOCATION).slice(0, 9), OTHER_LOCATION];
   }
-
-  const filtered = suggestions.filter((suggestion) => {
-    if (suggestion === OTHER_LOCATION) return false;
-    const suggestionLower = suggestion.toLowerCase();
-    return (
-      suggestionLower.includes(search) ||
-      suggestionLower.split(",")[0].trim().startsWith(search)
-    );
+  const filtered = LOCATIONS.filter((l) => {
+    if (l === OTHER_LOCATION) return false;
+    const lower = l.toLowerCase();
+    return lower.includes(search) || lower.split(",")[0].trim().startsWith(search);
   });
-
   return [...filtered.slice(0, 9), OTHER_LOCATION];
-};
+}
 
-const SCROLL_SHOW_THRESHOLD = 500;
-
-function Stickyform() {
-  // --- ALL HOOKS MUST BE DECLARED AT THE TOP LEVEL ---
+export default function StickyEnrollForm() {
+  // --- ALL HOOKS FIRST ---
   const [formData, setFormData] = useState({
-    name: "",
-    contact: "",
-    course: "",
-    email: "",
-    location: "",
-    countryCode: "+91",
+    name: "", contact: "", course: "", email: "", location: "", countryCode: "+91",
   });
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
-  const [isMobileView, setIsMobileView] = useState(false);
-  const [isFormVisible, setIsFormVisible] = useState(true); // State to control visibility based on scroll/path
-  const [hasScrolledPastThreshold, setHasScrolledPastThreshold] = useState(false); // Only show after 800px of scroll
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [filteredSuggestions, setFilteredSuggestions] = useState([]);
   const [activeSuggestion, setActiveSuggestion] = useState(-1);
-  const [locationSuggestions, setLocationSuggestions] = useState([]);
   const [isLocationSelected, setIsLocationSelected] = useState(false);
-  const [isLoadingCities, setIsLoadingCities] = useState(false);
-  const footerRef = useRef(null);
+  const [isFormVisible, setIsFormVisible] = useState(true);
+
   const locationInputRef = useRef(null);
   const suggestionsRef = useRef(null);
+  const footerRef = useRef(null);
 
-  const pathname = usePathname(); // usePathname is a hook
+  const pathname = usePathname();
+  const isAdminPath = pathname && hiddenPaths.some((path) => pathname.startsWith(path));
 
-  // Check if current path is an admin path (derived from pathname)
-  const isAdminPath = pathname && hiddenPaths.some(path => pathname.startsWith(path));
-
-
-  // --- useEffects (must be after useState, useRef, etc.) ---
-
-  // Effect to find the footer element (runs once on mount)
+  // Find footer element once on mount
   useEffect(() => {
     const footerElement = document.querySelector("footer");
-    if (footerElement) {
-      footerRef.current = footerElement;
-    }
-  }, []); // Empty dependency array means it runs once on mount
-
-  // Effect to reveal the form only once the page has been scrolled past
-  // SCROLL_SHOW_THRESHOLD (800px). Before that, it stays hidden regardless
-  // of the other visibility rules.
-  useEffect(() => {
-    let ticking = false;
-
-    const handleScroll = () => {
-      if (!ticking) {
-        requestAnimationFrame(() => {
-          setHasScrolledPastThreshold(window.scrollY > SCROLL_SHOW_THRESHOLD);
-          ticking = false;
-        });
-        ticking = true;
-      }
-    };
-
-    handleScroll(); // check initial scroll position on mount
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
+    if (footerElement) footerRef.current = footerElement;
   }, []);
 
+  // Hide the form once the footer scrolls into view (same behavior as before)
   useEffect(() => {
-    if (!isFormVisible || isMobileView || locationSuggestions.length > 0) {
-      return;
-    }
+    if (isAdminPath || !footerRef.current) return;
 
-    let isMounted = true;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry) return;
+        setIsFormVisible(!entry.isIntersecting);
+      },
+      { root: null, threshold: 0 }
+    );
 
-    const loadLocationData = async () => {
-      try {
-        setIsLoadingCities(true);
-        const citiesModule = await import("@/data/india-cities.json");
-        const cities = citiesModule.default || citiesModule;
-
-        if (!isMounted) return;
-
-        setLocationSuggestions(buildLocationOptions(cities));
-      } catch (error) {
-        console.error("Error loading location suggestions:", error);
-        setLocationSuggestions([...new Set(EXTRA_LOCATIONS)]);
-      } finally {
-        if (isMounted) {
-          setIsLoadingCities(false);
-        }
-      }
-    };
-
-    loadLocationData();
-
-    return () => {
-      isMounted = false;
-    };
-  }, [isFormVisible, isMobileView, locationSuggestions.length]);
+    observer.observe(footerRef.current);
+    return () => observer.disconnect();
+  }, [isAdminPath]);
 
   useEffect(() => {
-    const handleClickOutside = (event) => {
+    const handleClickOutside = (e) => {
       if (
-        locationInputRef.current &&
-        !locationInputRef.current.contains(event.target) &&
-        suggestionsRef.current &&
-        !suggestionsRef.current.contains(event.target)
+        locationInputRef.current && !locationInputRef.current.contains(e.target) &&
+        suggestionsRef.current && !suggestionsRef.current.contains(e.target)
       ) {
         setShowSuggestions(false);
         setActiveSuggestion(-1);
       }
     };
-
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  // Effect to handle resize and footer visibility using IntersectionObserver
-  useEffect(() => {
-    const shouldHideBasedOnPath = hiddenPaths.some(path => pathname?.startsWith(path));
-
-    const handleResize = () => {
-      const isMobile = window.innerWidth <= 768;
-      setIsMobileView(isMobile);
-
-      if (isMobile || shouldHideBasedOnPath) {
-        setIsFormVisible(false);
-      }
-    };
-
-    const observerCallback = ([entry]) => {
-      if (!entry) return;
-      if (entry.isIntersecting) {
-        setIsFormVisible(false);
-      } else {
-        setIsFormVisible(!shouldHideBasedOnPath);
-      }
-    };
-
-    const observer =
-      footerRef.current && !shouldHideBasedOnPath
-        ? new IntersectionObserver(observerCallback, { root: null, threshold: 0 })
-        : null;
-
-    if (observer && footerRef.current) {
-      observer.observe(footerRef.current);
-    }
-
-    const initialIsMobile = window.innerWidth <= 768;
-    setIsMobileView(initialIsMobile);
-    if (initialIsMobile || shouldHideBasedOnPath) {
-      setIsFormVisible(false);
-    } else if (!observer) {
-      setIsFormVisible(true);
-    }
-
-    window.addEventListener("resize", handleResize, { passive: true });
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-      if (observer) observer.disconnect();
-    };
-  }, [pathname]);
-
-
-  // --- Conditional Return (MUST BE AFTER ALL HOOKS) ---
-  // If on admin page, don't render the component's JSX at all
+  // --- CONDITIONAL RETURN MUST COME AFTER ALL HOOKS ---
   if (isAdminPath) {
     return null;
   }
 
-  // --- Rest of the component logic and render ---
-
   const handleChange = (e) => {
     const { name, value } = e.target;
-
     if (name === "contact") {
-      // Allow only digits for phone numbers
-      const digitsOnly = value.replace(/\D/g, "");
-      setFormData({ ...formData, [name]: digitsOnly });
+      setFormData((f) => ({ ...f, contact: value.replace(/\D/g, "") }));
     } else {
-      setFormData({ ...formData, [name]: value });
+      setFormData((f) => ({ ...f, [name]: value }));
     }
-
-    // Clear error when user starts typing
-    if (errors[name]) {
-      // Use undefined or null to clear the specific error
-      setErrors({ ...errors, [name]: undefined });
-    }
+    if (errors[name]) setErrors((er) => ({ ...er, [name]: undefined }));
   };
 
   const handleLocationChange = (e) => {
     const value = e.target.value;
-    setFormData({ ...formData, location: value });
+    setFormData((f) => ({ ...f, location: value }));
     setIsLocationSelected(false);
-
-    if (errors.location) {
-      setErrors({ ...errors, location: undefined });
-    }
-
-    const matches = getLocationMatches(value, locationSuggestions);
+    if (errors.location) setErrors((er) => ({ ...er, location: undefined }));
+    const matches = getLocationMatches(value);
     setFilteredSuggestions(matches);
     setShowSuggestions(matches.length > 0);
     setActiveSuggestion(-1);
   };
 
-  const handleSuggestionClick = (suggestion) => {
-    setFormData({ ...formData, location: suggestion });
+  const handleSuggestionClick = (s) => {
+    setFormData((f) => ({ ...f, location: s }));
     setIsLocationSelected(true);
     setShowSuggestions(false);
     setFilteredSuggestions([]);
@@ -345,36 +137,27 @@ function Stickyform() {
   };
 
   const openLocationDropdown = () => {
-    const matches = getLocationMatches(formData.location, locationSuggestions);
+    const matches = getLocationMatches(formData.location);
     setFilteredSuggestions(matches);
     setShowSuggestions(matches.length > 0);
   };
 
   const handleLocationKeyDown = (e) => {
     if (!showSuggestions) return;
-
-    switch (e.key) {
-      case "ArrowDown":
+    if (e.key === "ArrowDown") {
+      e.preventDefault();
+      setActiveSuggestion((p) => (p < filteredSuggestions.length - 1 ? p + 1 : p));
+    } else if (e.key === "ArrowUp") {
+      e.preventDefault();
+      setActiveSuggestion((p) => (p > 0 ? p - 1 : -1));
+    } else if (e.key === "Enter") {
+      if (activeSuggestion >= 0) {
         e.preventDefault();
-        setActiveSuggestion((prev) =>
-          prev < filteredSuggestions.length - 1 ? prev + 1 : prev
-        );
-        break;
-      case "ArrowUp":
-        e.preventDefault();
-        setActiveSuggestion((prev) => (prev > 0 ? prev - 1 : -1));
-        break;
-      case "Enter":
-        if (activeSuggestion >= 0) {
-          e.preventDefault();
-          handleSuggestionClick(filteredSuggestions[activeSuggestion]);
-        }
-        break;
-      case "Escape":
-      case "Tab":
-        setShowSuggestions(false);
-        setActiveSuggestion(-1);
-        break;
+        handleSuggestionClick(filteredSuggestions[activeSuggestion]);
+      }
+    } else if (e.key === "Escape" || e.key === "Tab") {
+      setShowSuggestions(false);
+      setActiveSuggestion(-1);
     }
   };
 
@@ -382,63 +165,46 @@ function Stickyform() {
     const newErrors = {};
     const { name, email, contact, countryCode, course, location } = formData;
 
-    // Basic trim and presence checks
     if (!name.trim()) newErrors.name = "Name is required";
-     else if (name.trim().length < 2) newErrors.name = "Name must be at least 2 characters"; // Added min length validation
-
+    else if (name.trim().length < 2) newErrors.name = "Name must be at least 2 characters";
 
     if (!email.trim()) newErrors.email = "Email is required";
-    if (!course) newErrors.course = "Please select a course";
-    const isValidLocation =
-      locationSuggestions.includes(location) || location === OTHER_LOCATION;
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim()))
+      newErrors.email = "Enter a valid email address";
+
+    if (!course) newErrors.course = "Select a course";
+
+    const isValidLocation = LOCATIONS.includes(location) || location === OTHER_LOCATION;
     if (!location.trim()) newErrors.location = "Location is required";
     else if (!isLocationSelected || !isValidLocation)
-      newErrors.location = "Please select a location from the dropdown";
+      newErrors.location = "Select a location from the dropdown";
     else if (location.length > 100) newErrors.location = "Location seems too long";
 
-    // Email format validation
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (email.trim() && !emailPattern.test(email.trim())) // Check format only if email is not empty
-      newErrors.email = "Please enter a valid email address";
-
-    // Contact number validation based on country code
     const selectedCountry = countryCodes.find((c) => c.code === countryCode);
     if (selectedCountry) {
+      const digits = contact.replace(/\D/g, "");
       const { minLength, maxLength } = selectedCountry;
-      const contactDigits = contact.replace(/\D/g, ""); // Ensure we validate digits only
-
-      if (!contactDigits) { // Check if contact is empty after removing non-digits
-         newErrors.contact = "Contact number is required";
-      } else if (contactDigits.length < minLength || contactDigits.length > maxLength) {
-        newErrors.contact = `Enter a valid ${minLength === maxLength ? minLength : `${minLength}-${maxLength}`}-digit number for ${selectedCountry.country}`;
-      } else if (!/^\d+$/.test(contactDigits)) { // Double-check it only contains digits
-         newErrors.contact = "Phone number should contain only digits";
-      }
+      if (!digits) newErrors.contact = "Contact number is required";
+      else if (digits.length < minLength || digits.length > maxLength)
+        newErrors.contact = `Enter a valid ${minLength === maxLength ? minLength : `${minLength}-${maxLength}`}-digit number`;
     } else {
-      newErrors.contact = "Please select a valid country code"; // Should not happen with the select dropdown
+      newErrors.contact = "Please select a valid country code";
     }
 
     setErrors(newErrors);
-    return Object.keys(newErrors).length === 0; // Return true if no errors
+    return Object.keys(newErrors).length === 0;
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    // Clear previous errors before validating
     setErrors({});
+    if (!validate()) return;
 
-    if (!validate()) {
-      console.warn("Validation failed:", errors); // Log errors for debugging
-      // Errors state is already set by validate()
-      return; // Stop submission if validation fails
-    }
-
-    setIsSubmitting(true); // Show loading state
+    setIsSubmitting(true);
 
     const submissionData = {
       name: formData.name.trim(),
-      contact: formData.contact, // contact is already digits-only
+      contact: formData.contact,
       countryCode: formData.countryCode,
       email: formData.email.trim(),
       coursename: formData.course,
@@ -446,7 +212,6 @@ function Stickyform() {
     };
 
     try {
-      // --- Send data to backend API ---
       const apiUrl = getApiBaseUrl();
       if (!apiUrl) {
         console.error("API URL (NEXT_PUBLIC_API_URL) is not set.");
@@ -455,13 +220,9 @@ function Stickyform() {
         return;
       }
 
-      const submitEndpoint = `${apiUrl}/api/submit`;
-
-      const response = await fetch(submitEndpoint, {
+      const response = await fetch(`${apiUrl}/api/submit`, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(submissionData),
       });
 
@@ -476,321 +237,225 @@ function Stickyform() {
         throw error;
       }
 
-      // --- Handle.Success (Status 2xx) ---
-      console.info("Form submitted successfully:", responseData);
-      alert(responseData.message || "Thank You! Form successfully submitted."); // Use alert for success
-
+      alert(responseData.message || "Thank You! Form successfully submitted.");
       setShowPopup(true);
-      // Hide popup after 3 seconds
-      const popupTimer = setTimeout(() => {
-        setShowPopup(false);
-      }, 3000);
+      setTimeout(() => setShowPopup(false), 3000);
 
-
-      // Reset form fields on successful submission
-      setFormData({
-        name: "",
-        contact: "",
-        course: "",
-        email: "",
-        location: "",
-        countryCode: "+91", // Reset to default
-      });
+      setFormData({ name: "", contact: "", course: "", email: "", location: "", countryCode: "+91" });
       setFilteredSuggestions([]);
       setShowSuggestions(false);
       setActiveSuggestion(-1);
       setIsLocationSelected(false);
-      // Optionally reset form visibility after submission if desired
-      // setIsFormVisible(false);
-
-      return () => clearTimeout(popupTimer); // Cleanup timer
-
-
     } catch (error) {
-      console.error("Submission error:", error); // Detailed error log
-
-      let errorMessage =
-        "An error occurred while submitting. Please try again."; // Default message
-
-      if (error?.responseData?.message) {
-        errorMessage = error.responseData.message;
-      } else if (error?.status) {
-        errorMessage = `Submission failed due to a server issue (Status: ${error.status}). Please try again later.`;
-      } else {
-        errorMessage = "Cannot reach the server. Please check your connection.";
-      }
-
-      alert(errorMessage); // Show error message using alert
-
+      console.error("Submission error:", error);
+      let errorMessage = "An error occurred while submitting. Please try again.";
+      if (error?.responseData?.message) errorMessage = error.responseData.message;
+      else if (error?.status) errorMessage = `Submission failed due to a server issue (Status: ${error.status}). Please try again later.`;
+      else errorMessage = "Cannot reach the server. Please check your connection.";
+      alert(errorMessage);
     } finally {
       setIsSubmitting(false);
     }
   };
 
-  // Find the selected country to display length requirements in placeholder
-  const selectedCountry = countryCodes.find(
-    (country) => country.code === formData.countryCode
-  );
+  const selectedCountry = countryCodes.find((c) => c.code === formData.countryCode);
   const contactPlaceholder = selectedCountry
-    ? `Enter ${
-        selectedCountry.minLength === selectedCountry.maxLength
-          ? selectedCountry.minLength
-          : `${selectedCountry.minLength}-${selectedCountry.maxLength}`
-      } digits`
+    ? `Enter ${selectedCountry.minLength === selectedCountry.maxLength ? selectedCountry.minLength : `${selectedCountry.minLength}-${selectedCountry.maxLength}`} digits`
     : "Enter phone number";
 
-  // --- FINAL RENDER LOGIC ---
-  // Component returns null if it's an admin path (check happens after all hooks)
-  // Otherwise, it renders the form if visible based on scroll/resize state,
-  // and only once the page has been scrolled past SCROLL_SHOW_THRESHOLD.
+  const inputBase =
+    "w-full h-9 rounded-md border bg-white px-3 text-sm text-gray-900 placeholder-gray-400 outline-none transition focus:ring-2 focus:ring-emerald-500 disabled:opacity-60";
+
+  if (!isFormVisible) return null;
+
   return (
-    <>
-      {/* Only render the form container if not mobile, form is visible,
-          AND the user has scrolled past the threshold */}
-      {!isMobileView && isFormVisible && hasScrolledPastThreshold && (
-        <div className={`${styles.stickyformContainer} transition-all duration-300 ease-in-out`}>
-          {/* Form */}
-          <form
-            onSubmit={handleSubmit}
-            className={styles.contactFormS}
-            noValidate // Disable default browser validation
+    <div className="fixed inset-x-0 bottom-0 z-50">
+      <style>{`
+       .triranga-bg {
+  background-color: #ffffff;
+  background-image:
+    url('/stickyformbg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+      `}</style>
+
+      <form
+        onSubmit={handleSubmit}
+        noValidate
+        className="triranga-bg mx-auto hidden max-w-[1800px] items-end gap-3 rounded-t-xl border-2 border-white/40 p-4 shadow-[0_-2px_18px_rgba(0,0,0,0.2)] backdrop-blur-md md:flex md:flex-wrap"
+      >
+        {/* Name */}
+        <div className="flex min-w-[160px] flex-1 flex-col gap-1">
+          <label htmlFor="name" className="text-xs font-semibold text-[#1a1a1a]">
+            Name <span className="text-red-600">*</span>
+          </label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="E.g., Ram"
+            value={formData.name}
+            onChange={handleChange}
+            maxLength={50}
+            disabled={isSubmitting}
+            aria-invalid={!!errors.name}
+            className={`${inputBase} ${errors.name ? "border-red-600" : "border-gray-300"}`}
+          />
+          {errors.name && <span className="text-[11px] text-red-600">{errors.name}</span>}
+        </div>
+
+        {/* Email */}
+        <div className="flex min-w-[180px] flex-1 flex-col gap-1">
+          <label htmlFor="email" className="text-xs font-semibold text-[#1a1a1a]">
+            Email <span className="text-red-600">*</span>
+          </label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="E.g., ram@gmail.com"
+            value={formData.email}
+            onChange={handleChange}
+            disabled={isSubmitting}
+            aria-invalid={!!errors.email}
+            className={`${inputBase} ${errors.email ? "border-red-600" : "border-gray-300"}`}
+          />
+          {errors.email && <span className="text-[11px] text-red-600">{errors.email}</span>}
+        </div>
+
+        {/* Contact */}
+        <div className="flex min-w-[200px] flex-1 flex-col gap-1">
+          <label htmlFor="contact" className="text-xs font-semibold text-[#1a1a1a]">
+            Contact number <span className="text-red-600">*</span>
+          </label>
+          <div className="flex gap-2">
+            <select
+              id="countryCode"
+              name="countryCode"
+              value={formData.countryCode}
+              onChange={handleChange}
+              disabled={isSubmitting}
+              className="h-9 w-20 rounded-md border border-gray-300 bg-white px-1 text-xs text-gray-900 outline-none focus:ring-2 focus:ring-emerald-500"
+            >
+              {countryCodes.map(({ code, country }) => (
+                <option key={code} value={code}>({code}) {country}</option>
+              ))}
+            </select>
+            <input
+              id="contact"
+              name="contact"
+              type="tel"
+              inputMode="numeric"
+              placeholder={contactPlaceholder}
+              value={formData.contact}
+              onChange={handleChange}
+              maxLength={selectedCountry?.maxLength || 15}
+              disabled={isSubmitting}
+              aria-invalid={!!errors.contact}
+              className={`${inputBase} flex-1 ${errors.contact ? "border-red-600" : "border-gray-300"}`}
+            />
+          </div>
+          {errors.contact && <span className="text-[11px] text-red-600">{errors.contact}</span>}
+        </div>
+
+        {/* Course */}
+        <div className="flex min-w-[160px] flex-1 flex-col gap-1">
+          <label htmlFor="course" className="text-xs font-semibold text-[#1a1a1a]">
+            Course <span className="text-red-600">*</span>
+          </label>
+          <select
+            id="course"
+            name="course"
+            value={formData.course}
+            onChange={handleChange}
+            disabled={isSubmitting}
+            aria-invalid={!!errors.course}
+            className={`${inputBase} ${errors.course ? "border-red-600" : "border-gray-300"}`}
           >
-            <div className={styles.formRow}>
-              <div className={styles.formGroup}>
-                <label htmlFor="name" className={styles.formLabel}>
-                  Name <span className={styles.required}>*</span>
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="E.g., Ram"
-                  value={formData.name}
-                  onChange={handleChange}
-                  className={errors.name ? styles.inputError : ""} // Apply error class
-                  required // HTML5 validation hint (JS validation handles actual logic)
-                  maxLength="50"
-                  aria-required="true" // ARIA attributes for accessibility
-                  aria-invalid={!!errors.name}
-                  aria-describedby={errors.name ? "name-error" : undefined}
-                  disabled={isSubmitting}
-                />
-                {errors.name && ( // Display error message
-                  <span
-                    id="name-error"
-                    className={styles.errorText} // Use errorText class
-                    role="alert"
-                  >
-                    {errors.name}
-                  </span>
-                )}
-              </div>
+            <option value="" disabled>Select a course</option>
+            {COURSES.map((c) => (
+              <option key={c} value={c}>{c}</option>
+            ))}
+          </select>
+          {errors.course && <span className="text-[11px] text-red-600">{errors.course}</span>}
+        </div>
 
-              <div className={styles.formGroup}>
-                <label htmlFor="email" className={styles.formLabel}>
-                  Email <span className={styles.required}>*</span>
-                </label>
-                <input
-                  type="email" // Use type="email" for better mobile keyboards
-                  id="email"
-                  name="email"
-                  placeholder="E.g., ram@gmail.com"
-                  value={formData.email}
-                  onChange={handleChange}
-                  className={errors.email ? styles.inputError : ""}
-                  required
-                  aria-required="true"
-                  aria-invalid={!!errors.email}
-                  aria-describedby={errors.email ? "email-error" : undefined}
-                  disabled={isSubmitting}
-                />
-                {errors.email && (
-                  <span
-                    id="email-error"
-                    className={styles.errorText}
-                    role="alert"
-                  >
-                    {errors.email}
-                  </span>
-                )}
-              </div>
-
-              <div className={styles.formGroup}>
-                <label htmlFor="contact" className={styles.formLabel}>
-                  Contact Number <span className={styles.required}>*</span>
-                </label>
-                <div className={styles.contactField}>
-                  <select
-                    id="countryCode"
-                    name="countryCode"
-                    value={formData.countryCode}
-                    onChange={handleChange}
-                    aria-label="Select Country Code"
-                     disabled={isSubmitting}
-                  >
-                    {countryCodes.map(({ code, country }) => (
-                      <option key={code} value={code}>
-                        ({code}) {country}
-                      </option>
-                    ))}
-                  </select>
-                  <input
-                    type="tel" // Use type="tel" for mobile keyboard optimization
-                    inputMode="numeric" // Hint for numeric keyboard
-                    id="contact"
-                    name="contact"
-                    placeholder={contactPlaceholder}
-                    value={formData.contact}
-                    onChange={handleChange}
-                    className={errors.contact ? styles.inputError : ""}
-                    maxLength={selectedCountry?.maxLength || 15} // Apply max length based on selected country
-                    required
-                    aria-required="true"
-                    aria-invalid={!!errors.contact}
-                    aria-describedby={
-                      errors.contact ? "contact-error" : undefined
-                    }
-                    disabled={isSubmitting}
-                  />
-                </div>
-                {errors.contact && (
-                  <span
-                    id="contact-error"
-                    className={styles.errorText}
-                    role="alert"
-                  >
-                    {errors.contact}
-                  </span>
-                )}
-              </div>
-
-              <div className={styles.formGroup}>
-                <label htmlFor="course" className={styles.formLabel}>
-                  Course <span className={styles.required}>*</span>
-                </label>
-                <select
-                  id="course"
-                  name="course"
-                  value={formData.course}
-                  onChange={handleChange}
-                  className={errors.course ? styles.inputError : ""}
-                  required
-                  aria-required="true"
-                  aria-invalid={!!errors.course}
-                  aria-describedby={errors.course ? "course-error" : undefined}
-                  disabled={isSubmitting}
-                >
-                  <option value="" disabled>
-                    Select a course
-                  </option>
-                  <option value="SAP Course">SAP Course</option>
-                  <option value="IT Course">IT Course</option>
-                  <option value="Data Visualization">Data Visualization</option>
-                  <option value="HR Course">HR Course</option>
-                  {/* Add more course options as needed */}
-                </select>
-                {errors.course && (
-                  <span
-                    id="course-error"
-                    className={styles.errorText}
-                    role="alert"
-                  >
-                    {errors.course}
-                  </span>
-                )}
-              </div>
-              <div className={styles.formGroup}>
-                <label htmlFor="location" className={styles.formLabel}>
-                  Location <span className={styles.required}>*</span>
-                </label>
-                <div className={styles.locationField}>
-                  <input
-                    ref={locationInputRef}
-                    type="text"
-                    id="location"
-                    name="location"
-                    placeholder={isLoadingCities ? "Loading..." : "E.g., Pune"}
-                    value={formData.location}
-                    onChange={handleLocationChange}
-                    onKeyDown={handleLocationKeyDown}
-                    onFocus={openLocationDropdown}
-                    className={`${errors.location ? styles.inputError : ""} ${
-                      !isLocationSelected && formData.location ? styles.inputWarning : ""
-                    }`}
-                    required
-                    maxLength="100"
-                    autoComplete="off"
-                    aria-required="true"
-                    aria-invalid={!!errors.location}
-                    aria-describedby={errors.location ? "location-error" : undefined}
-                    disabled={isSubmitting || isLoadingCities}
-                  />
-                  {showSuggestions && filteredSuggestions.length > 0 && (
-                    <div
-                      ref={suggestionsRef}
-                      className={styles.suggestionsDropdown}
-                      role="listbox"
-                    >
-                      {filteredSuggestions.slice(0, 8).map((suggestion, index) => (
-                        <button
-                          type="button"
-                          key={`${suggestion}-${index}`}
-                          className={`${styles.suggestionItem} ${
-                            index === activeSuggestion ? styles.suggestionActive : ""
-                          }`}
-                          onClick={() => handleSuggestionClick(suggestion)}
-                          onMouseEnter={() => setActiveSuggestion(index)}
-                          role="option"
-                          aria-selected={index === activeSuggestion}
-                        >
-                          {suggestion}
-                        </button>
-                      ))}
-                    </div>
-                  )}
-                </div>
-                {!isLocationSelected && formData.location && !errors.location && (
-                  <span className={styles.helperText}>
-                    Select a location from the dropdown.
-                  </span>
-                )}
-                {errors.location && (
-                  <span
-                    id="location-error"
-                    className={styles.errorText}
-                    role="alert"
-                  >
-                    {errors.location}
-                  </span>
-                )}
-              </div>
-              {/* Submit Button - Make it a formGroup for consistent layout */}
-              <div className={styles.formGroup} style={{ alignSelf: 'flex-end' }}> {/* Align button to the bottom */}
+        {/* Location */}
+        <div className="relative flex min-w-[180px] flex-1 flex-col gap-1">
+          <label htmlFor="location" className="text-xs font-semibold text-[#1a1a1a]">
+            Location <span className="text-red-600">*</span>
+          </label>
+          <input
+            ref={locationInputRef}
+            id="location"
+            name="location"
+            type="text"
+            autoComplete="off"
+            placeholder="E.g., Pune"
+            value={formData.location}
+            onChange={handleLocationChange}
+            onKeyDown={handleLocationKeyDown}
+            onFocus={openLocationDropdown}
+            maxLength={100}
+            disabled={isSubmitting}
+            aria-invalid={!!errors.location}
+            className={`${inputBase} ${errors.location
+              ? "border-red-600"
+              : !isLocationSelected && formData.location
+                ? "border-amber-500"
+                : "border-gray-300"
+              }`}
+          />
+          {showSuggestions && filteredSuggestions.length > 0 && (
+            <div
+              ref={suggestionsRef}
+              role="listbox"
+              className="absolute bottom-full left-0 right-0 z-10 mb-1 max-h-44 overflow-y-auto rounded-md border border-gray-300 bg-white p-1 shadow-lg"
+            >
+              {filteredSuggestions.slice(0, 8).map((s, i) => (
                 <button
-                  className={`${styles.button} ${styles.primaryButton}`} // Use your button styles
-                  type="submit"
-                  disabled={isSubmitting}
+                  type="button"
+                  key={`${s}-${i}`}
+                  role="option"
+                  aria-selected={i === activeSuggestion}
+                  onClick={() => handleSuggestionClick(s)}
+                  onMouseEnter={() => setActiveSuggestion(i)}
+                  className={`block w-full rounded px-2 py-1.5 text-left text-[13px] ${i === activeSuggestion ? "bg-sky-100 text-sky-700" : "text-gray-800 hover:bg-sky-50"
+                    }`}
                 >
-                  {isSubmitting ? (
-                    <>
-                      <span className={styles.spinner} aria-hidden="true" /> Loading...
-                    </>
-                  ) : (
-                    "Submit"
-                  )}
+                  {s}
                 </button>
-              </div>
+              ))}
             </div>
-          </form>
+          )}
+          {!isLocationSelected && formData.location && !errors.location && (
+            <span className="text-[11px] text-amber-700">Select a location from the dropdown.</span>
+          )}
+          {errors.location && <span className="text-[11px] text-red-600">{errors.location}</span>}
+        </div>
+
+        {/* Submit */}
+        <div className="flex flex-col">
+          <button
+            type="submit"
+            disabled={isSubmitting}
+            className="flex h-9 items-center justify-center gap-2 rounded-md bg-[#F28C28] px-5 text-sm font-medium text-white transition hover:bg-white-600 hover:-translate-y-0.5 disabled:opacity-70"
+          >
+            {isSubmitting && (
+              <span className="h-3.5 w-3.5 animate-spin rounded-full border-2 border-white/40 border-t-white" />
+            )}
+            {isSubmitting ? "Loading..." : "Submit"}
+          </button>
+        </div>
+      </form>
+
+      {showPopup && (
+        <div className="fixed bottom-5 left-1/2 -translate-x-1/2 rounded-lg bg-cyan-600/90 px-6 py-3 text-sm font-semibold text-white shadow-lg">
+          Thank you for submitting!
         </div>
       )}
-
-      {/* Success Popup */}
-      {showPopup && (
-        <div className={styles.popup}>Thank you for submitting!</div>
-      )}
-    </>
+    </div>
   );
 }
-
-export default Stickyform;
