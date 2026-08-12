@@ -24,7 +24,7 @@ const sapMenu = {
             "Placement Assistance",
         ],
         ctaLabel: "View All SAP Courses",
-        ctaHref: "/sap-courses",
+        ctaHref: "/sap-course-in-pune",
     },
     columns: [
         {
@@ -85,7 +85,7 @@ const itMenu = {
             "Placement Assistance",
         ],
         ctaLabel: "View All IT Courses",
-        ctaHref: "/it-courses",
+        ctaHref: "/it-course-with-ai-in-pune",
     },
     columns: [
         {
@@ -142,7 +142,7 @@ const hrMenu = {
             "Placement Assistance",
         ],
         ctaLabel: "View All HR Courses",
-        ctaHref: "/hr-courses",
+        ctaHref: "/hr-training-course-in-pune",
     },
     columns: [
         {
@@ -738,7 +738,7 @@ export default function Navbar2() {
 
                 <button
                     type="button"
-                    className="burger ml-auto grid h-[30px] w-[30px] shrink-0 place-items-center rounded-[12px] border border-slate-200 bg-gradient-to-b from-white to-blue-50 shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,_0_1px_2px_rgba(30,64,175,0.09)]"
+                    className="burger ml-auto grid h-[30px] w-[30px] shrink-0 place-items-center border border-gray-200 rounded-md"
                     data-open={mobileOpen}
                     aria-expanded={mobileOpen}
                     aria-controls="nav-drawer"
