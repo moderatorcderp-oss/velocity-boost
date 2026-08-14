@@ -114,7 +114,7 @@ const COURSES = [
             { icon: I.db, text: "Placement assistance" },
         ],
         cta: "Explore IT Courses",
-        href: "/it-courses-in-pune",
+        href: "/it-course-with-ai-in-pune",
     },
     {
         key: "ai",
@@ -130,7 +130,7 @@ const COURSES = [
             { icon: I.cert, text: "Career growth support" },
         ],
         cta: "Explore AI Courses",
-        href: "/ai-courses-in-pune",
+        href: "/data-science-with-ai-course-in-pune",
     },
     {
         key: "hr",
@@ -146,7 +146,7 @@ const COURSES = [
             { icon: I.growth, text: "Leadership development" },
         ],
         cta: "Explore HR Courses",
-        href: "/hr-courses-in-pune",
+        href: "/hr-training-course-in-pune",
     },
 ];
 
