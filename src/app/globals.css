@@ -51,10 +51,10 @@ body {
   background-color: #182e4a;
 }
 
-:where(body > :not([class*="backgroundAnimation"]):not(script):not(style):not(noscript)) {
+/* :where(body > :not([class*="backgroundAnimation"]):not(script):not(style):not(noscript)) {
   position: relative;
   z-index: 1;
-}
+} */
 
 /* Specific highlight classes */
 .highlight-span-cards {

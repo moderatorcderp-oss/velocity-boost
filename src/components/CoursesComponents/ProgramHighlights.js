@@ -2,8 +2,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
-import BackgroundAnimation from "@/components/Common/BackgroundAnimation";
-
+import BackgroundAnimation from '../Common/BackgroundAnimation';
 const ProgramHighlights = () => {
   // Mobile view states (simplified - no animation)
   const [hoveredCard, setHoveredCard] = useState(null);

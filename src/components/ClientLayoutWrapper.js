@@ -7,13 +7,13 @@ import { usePathname } from "next/navigation";
 import { CityProvider } from "@/context/CityContext";
 import { PopupFormProvider, usePopupForm } from "../components/context/Popupformcontext";
 
-const BackgroundAnimation = dynamic(
-  () => import("@/components/Common/BackgroundAnimation"),
-  {
-    ssr: false,
-    loading: () => null,
-  }
-);
+// const BackgroundAnimation = dynamic(
+//   () => import("@/components/Common/BackgroundAnimation"),
+//   {
+//     ssr: false,
+//     loading: () => null,
+//   }
+// );
 
 const Chatbot = dynamic(() => import("@/components/Chatbot"), {
   ssr: false,
@@ -173,12 +173,12 @@ export default function ClientLayoutWrapper({ children }) {
       <PopupFormProvider>
         {children}
 
-        {showDecorativeWidgets && (
+        {/* {showDecorativeWidgets && (
           <>
             <BackgroundAnimation />
             {!shouldHideComponent && <WaveComponent />}
           </>
-        )}
+        )} */}
 
         {showFloatingWidgets && (
           <>

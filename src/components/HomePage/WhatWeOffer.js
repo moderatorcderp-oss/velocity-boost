@@ -170,9 +170,9 @@ export default function CoursesSection() {
                     <span className="cs-plus cs-p3" aria-hidden="true">+</span>
                     <span className="cs-plus cs-p4" aria-hidden="true">+</span>
 
-                    <h2 className="cs-heading">
-                        <span className="cs-h-dark">What We</span>{" "}
-                        <span className="cs-h-blue">Offer</span>
+                    <h2 className="text-3xl md:text-5xl cs-heading">
+                        <span className="cs-h-dark text-3xl md:text-5xl">What We</span>{" "}
+                        <span className="cs-h-blue text-3xl md:text-5xl">Offer</span>
                     </h2>
                     <span className="cs-heading-rule" aria-hidden="true" />
 

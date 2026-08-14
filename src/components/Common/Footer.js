@@ -133,6 +133,7 @@ const footerSections = [
       { href: "/sitemap", text: "CITY SITEMAP" },
       { href: "/all-course-links", text: "ALL COURSES" },
       { href: "/sitemap.xml", text: "SITEMAP" },
+      { href: "/privacy", text: "PRIVACY POLICY" },
     ],
   },
 
@@ -174,19 +175,19 @@ const Footer = () => {
     <footer className="bg-[#182e4a] text-[#ecf0f1] font-sans w-full max-w-[1800px] mx-auto relative">
       <div className="px-10 lg:px-24 flex flex-col">
         {/* Top Section with Logo and Social Icons */}
-        <div className="flex flex-col md:flex-row justify-between items-center mb-2.5 border-b border-white/10 pb-2.5 gap-5 md:gap-0">
-          <div className="w-[180px] h-auto">
+        <div className="w-full flex justify-between items-center mb-2.5 border-b border-white/10 py-2 gap-4 md:gap-0">
+          <div className="w-auto h-auto flex justify-start">
             <Link href="/">
               <Image
                 src="https://res.cloudinary.com/djdhtkjhn/image/upload/v1784203515/cdots_g3izdp_mkglqs.webp"
                 alt="Connecting Dots ERP logo"
-                width={150}
-                height={50}
+                width={190}
+                height={90}
                 loading="lazy"
               />
             </Link>
           </div>
-          <div className="flex gap-4">
+          <div className="w-[50%] flex justify-start md:justify-end lg:justify-end xl:justify-end gap-2 md:gap-6 lg:gap-4 xl:gap-4">
             {socialLinks.map(({ href, label, icon, hoverClass }) => (
               <a
                 key={href}
@@ -195,7 +196,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 aria-label={label}
                 title={label}
-                className={`text-[#ecf0f1] text-lg w-9 h-9 flex items-center justify-center rounded-full bg-white/10 transition-all duration-300 hover:-translate-y-1 ${hoverClass} hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white`}
+                className={`text-[#ecf0f1] text-lg w-9 h-9 flex items-center justify-center md:bg-white/20 lg:bg-white/20 xl:bg-white/20 rounded-full transition-all duration-300 hover:-translate-y-1 ${hoverClass} hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white`}
               >
                 <Icon path={icon} />
               </a>
@@ -221,8 +222,13 @@ const Footer = () => {
               <FooterClient sections={[footerSections[0]]} />
             </div>
 
+            {/* it courses for mobile only */}
+            <div className="block md:hidden lg:hidden xl:hidden relative z-10">
+              <FooterClient sections={[footerSections[1]]} />
+            </div>
+
             {/* Column 2: IT COURSES + ABOUT */}
-            <div className="relative z-10">
+            <div className="hidden md:flex lg:flex xl:flex relative z-10">
               <FooterClient sections={[footerSections[1], footerSections[2]]} />
             </div>
           </div>
@@ -235,6 +241,11 @@ const Footer = () => {
           {/* Column 4: DATA VISUALIZATION + HR COURSES */}
           <div className="lg:col-span-1">
             <FooterClient sections={[footerSections[5], footerSections[6]]} />
+          </div>
+
+          {/* about for mobile only */}
+          <div className="block md:hidden lg:hidden xl:hidden relative z-10">
+            <FooterClient sections={[footerSections[2]]} />
           </div>
 
           {/* Column 5: CONTACT US */}
