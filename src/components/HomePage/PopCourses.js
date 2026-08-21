@@ -25,12 +25,12 @@ function seededRandom(seed) {
 // Static info for the 6 SAP courses. Update `img` to match your
 // actual asset filenames in /public.
 const COURSE_META = [
-  { key: "fico", title: "sap", subtitle: "Fico", img: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1785906042/SAPFICO_sqaqor.png", duration: "2-4 Months", from: '#f8fafe', to: "#f4f6fd", card: "#DBEAFE", head: "#1166ec", slug: "sap-fico-course-in-pune" },
-  { key: "ai", title: "AI", subtitle: "COURSES", img: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1785906042/ai_i3th45.png", duration: "2-4 Months", from: "#f0ecfb", to: "#f0ecfb", card: "#dfccfd", head: "#8b40f4", slug: "generative-ai-course-in-pune" },
-  { key: "hr", title: "HR", subtitle: "MANAGEMENT", img: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1785906041/hrmanagement_hynulp.png", duration: "2-4 Months", from: "#fce4ec", to: "#fce4ec", card: "#fee7ed", head: "#fa4c79", slug: "hr-training-course-in-pune" },
-  { key: "data", title: "DATA", subtitle: "ANALYTICS", img: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1785906042/dataanalytics_knarz3.png", duration: "2-4 Months", from: "#d6ead8", to: "#d6ead8", card: "#e7f3eb", head: "#5ed0a0", slug: "advanced-data-analytics-with-generative-ai-course-in-pune" },
-  { key: "py", title: "PYTHON", subtitle: "PROGRAMMING", img: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1785906041/python_grrv5y.png", duration: "2-4 Months", from: "#d0ddf9", to: "#d0ddf9", card: "#dfe8fc", head: "#003a8e", slug: "python-with-ai-course-in-pune" },
-  { key: "sd", title: "sap", subtitle: "SD", img: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1785906042/sapsd_j257es.png", duration: "2-4 Months", from: "#fdefd9", to: "#fdefd8", card: "#fef5e6", head: "#fdc53b", slug: "sap-sd-course-in-pune" },
+  { key: "fico", title: "sap", subtitle: "Fico", img: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1785906042/SAPFICO_sqaqor.png", duration: "2-4 Months", from: '#f8fafe', to: "#f4f6fd", card: "#DBEAFE", head: "#1166ec", slug: "sap-fico-course-in-pune", desc:"Master Finance & Controlling in SAP." },
+  { key: "ai", title: "AI", subtitle: "COURSES", img: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1785906042/ai_i3th45.png", duration: "2-4 Months", from: "#f0ecfb", to: "#f0ecfb", card: "#dfccfd", head: "#8b40f4", slug: "generative-ai-course-in-pune", desc:"Learn AI Tools & real-world Applications." },
+  { key: "hr", title: "HR", subtitle: "MANAGEMENT", img: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1785906041/hrmanagement_hynulp.png", duration: "2-4 Months", from: "#fce4ec", to: "#fce4ec", card: "#fee7ed", head: "#fa4c79", slug: "hr-training-course-in-pune", desc:"Master recruitment, payroll & HR operations." },
+  { key: "data", title: "DATA", subtitle: "ANALYTICS", img: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1785906042/dataanalytics_knarz3.png", duration: "2-4 Months", from: "#d6ead8", to: "#d6ead8", card: "#e7f3eb", head: "#5ed0a0", slug: "advanced-data-analytics-with-generative-ai-course-in-pune", desc:"Learn data analysis & visualization." },
+  { key: "py", title: "PYTHON", subtitle: "PROGRAMMING", img: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1785906041/python_grrv5y.png", duration: "2-4 Months", from: "#d0ddf9", to: "#d0ddf9", card: "#dfe8fc", head: "#003a8e", slug: "python-with-ai-course-in-pune", desc:"Learn Python from basics to advanced." },
+  { key: "sd", title: "sap", subtitle: "SD", img: "https://res.cloudinary.com/djdhtkjhn/image/upload/v1785906042/sapsd_j257es.png", duration: "2-4 Months", from: "#fdefd9", to: "#fdefd8", card: "#fef5e6", head: "#fdc53b", slug: "sap-sd-course-in-pune", desc:"Master Sales & Distribution in SAP." },
 ];
 
 // How often the seats / timer data refreshes.
@@ -133,7 +133,7 @@ function CourseCard({ course }) {
       <div className="w-fit rounded-md p-1 bg-white absolute right-3 top-3 text-xs text-[#0765f0]">{course.seats} seats left</div>
       <div className="w-[40%] p-2 my-3 box-border relative">
         <h5 className="font-semibold text-2xl uppercase" style={{ color: `${course.head}` }}>{course.title} <span className="text-black">{course.subtitle}</span></h5>
-        <p className=" text-[14px] my-4">Lorem ipsum taheb hj ljkdonn</p>
+        <p className=" text-[14px] my-4">{course.desc}</p>
         <span className="flex justify-start gap-2 items-center">
           <span
             className="flex gap-0.5"
