@@ -134,7 +134,7 @@ export default function TrustBar() {
           </li>
 
           <li className={`${styles.item} ${styles.ctaItem}`}>
-            <div className={styles.cta} onClick={openPopup}>
+            <div className={`${styles.cta} cursor-pointer`} onClick={openPopup}>
               Book Demo
             </div>
           </li>
