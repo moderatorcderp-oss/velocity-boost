@@ -86,7 +86,7 @@ const GoogleIcon = ({ className = "w-5 h-5" }) => (
   </svg>
 );
 
-export default function TrustBar() {
+export default function TrustBar({rating="4.8"}) {
   const { openPopup } = usePopupForm();
 
   return (
@@ -111,7 +111,7 @@ export default function TrustBar() {
           <li className={`${styles.item} ${styles.rating}`}>
             {/* Left: value + stars, stacked */}
             <span className={styles.ratingLeft}>
-              <span className={styles.value}>4.8/5</span>
+              <span className={styles.value}>{rating}/5</span>
               <span
                 className={styles.stars}
                 aria-label="4.8 out of 5 stars on Google"

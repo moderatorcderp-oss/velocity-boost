@@ -3,6 +3,11 @@
 import { Suspense } from "react";
 import dynamic from "next/dynamic";
 import CoursesRelated from "./RelatedCourses";
+import TrustBar from "../HomePage/TrustBar";
+import CoursesTrustBar from "./CoursesTrustBar";
+import WhatYouWillLearn from "./WhatYouWillLearn";
+import SkillsAndTools from "./SkillsAndTools";
+import WhoThisIsFor from "./WhoThisIsFor";
 // import {CityLinks} from "@/components/CityLinks";
 // === Above the fold (SSR enabled for SEO-critical content) ===
 const DSHeader = dynamic(() => import("./Header"));
@@ -115,9 +120,9 @@ export default function ClientCourseSections(props) {
 
         <div
 
->
-               {cityLinks}
-      </div>
+        >
+          {cityLinks}
+        </div>
 
         <Suspense fallback={null}>
           <CoursesRelated data={relatedCoursesData} currentCityName={currentCityName} />
@@ -131,8 +136,11 @@ export default function ClientCourseSections(props) {
     <>
       {/* --- Above-the-fold --- */}
       <DSHeader data={headerData} />
+      <CoursesTrustBar rating="4.9" />
       <Why data={whyData} />
 
+      {/* what section  */}
+      <WhatYouWillLearn />
       {sapModData && <SapModComponent data={sapModData} />}
 
       {shouldUseNewCurriculum && (
@@ -142,6 +150,25 @@ export default function ClientCourseSections(props) {
           </Suspense>
         </div>
       )}
+
+      <SkillsAndTools />
+
+      <WhoThisIsFor />
+
+      <Suspense fallback={null}>
+        <Certificate data={certificateData} />
+      </Suspense>
+
+      <Suspense fallback={null}>
+        <CoursesRelated
+          data={relatedCoursesData}
+          currentCityName={currentCityName}
+        />
+      </Suspense>
+
+      <Suspense fallback={null}>
+        <FAQ data={faqData} />
+      </Suspense>
 
       {shouldUseLegacyModules && (
         <div id="modules" style={{ scrollMarginTop: "80px" }}>
@@ -160,22 +187,16 @@ export default function ClientCourseSections(props) {
         <Program />
       </Suspense>
 
-      <Suspense fallback={null}>
-        <Certificate data={certificateData} />
-      </Suspense>
+
 
       <Suspense fallback={null}>
         <Description data={descriptionContentData} />
       </Suspense>
 
-      <Suspense fallback={null}>
-        <FAQ data={faqData} />
-      </Suspense>
+      
 
 
-        <div
-
-      >
+      <div>
         {cityLinks}
       </div>
 
@@ -185,12 +206,6 @@ export default function ClientCourseSections(props) {
         </Suspense>
       )}
 
-      <Suspense fallback={null}>
-        <CoursesRelated
-          data={relatedCoursesData}
-          currentCityName={currentCityName}
-        />
-      </Suspense>
     </>
   );
 }

@@ -28,6 +28,24 @@ const Certificate = ({ data }) => {
         {/* Main Green Background Box */}
         <div className={`bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white px-8 sm:px-6 md:px-10 lg:px-16 xl:px-20 py-6 grid grid-cols-1 lg:grid-cols-2 items-center relative z-10 mx-4 sm:mx-6 md:mx-10 lg:mx-16 xl:mx-24 ${styles.certificateBox}`}>
           {/* Left Side Content */}
+          <div className="relative mt-10 lg:mt-0 flex justify-center">
+            <div className="relative z-20 -my-10">
+              <div className="certificate-wrapper">
+                <div className="bg-white rounded-xl border-4 border-gray-200">
+                  <Image
+                    src={"https://res.cloudinary.com/bropujss/image/upload/v1784204578/Certificate_pbdvhs_uexpuc.webp"}
+                    alt={data?.alt || `${data?.courseTitle || "SAP Training"} Certificate`}
+                    width={1000}
+                    height={600}
+                    className="certificate-image w-full lg:max-w-lg h-auto lg:h-96 object-contain rounded-xl"
+                    priority
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Side Certificate Image */}
           <div className="space-y-5">
             <h2 className="text-2xl text-center font-bold">Congratulations on Completing Your Training!</h2>
             <span className=" text-white text-xl text-center block">
@@ -48,24 +66,7 @@ const Certificate = ({ data }) => {
               </button>
             </div>
           </div>
-
-          {/* Right Side Certificate Image */}
-          <div className="relative mt-10 lg:mt-0 flex justify-center">
-            <div className="relative z-20 -my-10">
-              <div className="certificate-wrapper">
-                <div className="bg-white rounded-xl border-4 border-gray-200">
-                  <Image
-                    src={"https://res.cloudinary.com/bropujss/image/upload/v1784204578/Certificate_pbdvhs_uexpuc.webp"}
-                    alt={data?.alt || `${data?.courseTitle || "SAP Training"} Certificate`}
-                    width={1000}
-                    height={600}
-                    className="certificate-image w-full lg:max-w-lg h-auto lg:h-96 object-contain rounded-xl"
-                    priority
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
+          
         </div>
         {showForm && <Btnform onClose={handleCloseForm} />}
       </div>

@@ -210,7 +210,7 @@ const CoursesRelated = ({ data, currentCityName }) => {
   // No separate error state, as `data` would be null if there was an upstream error.
 
   return (
-    <div className={styles.relatedCoursesContainer}>
+    <div className={` my-2 ${styles.relatedCoursesContainer}`}>
       <div className={styles.relatedCoursesTitle}>
         <h2 className={styles.relatedCoursesTitleh2}>{data.title}</h2>{" "}
         {/* Use data.title */}
