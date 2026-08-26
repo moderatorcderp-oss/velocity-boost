@@ -12,11 +12,11 @@ import WhoThisIsFor from "./WhoThisIsFor";
 // === Above the fold (SSR enabled for SEO-critical content) ===
 const DSHeader = dynamic(() => import("./Header"));
 const UpcomingBatches=dynamic(()=> import("./UpcomingBatches"))
+const Reviews = dynamic(() => import("./Reviews"));
 const Why = dynamic(() => import("./Why"));
 const SapModComponent = dynamic(() => import("./sapmod"), { ssr: false });
 const Curriculum = dynamic(() => import("./Curriculam"), { ssr: false });
 const Modules = dynamic(() => import("./Modules"), { ssr: false });
-co
 // === Below the fold (hydrated after initial paint) ===
 const TrustUs = dynamic(() => import("./Trustus"), { ssr: false });
 const Certificate = dynamic(() => import("../HomePage/Certificate"), { ssr: false });
@@ -38,6 +38,7 @@ export default function ClientCourseSections(props) {
     certificateData,
     faqData,
     upcomingBatchesData,
+    reviewsData,
     cityLinks,
     relatedCoursesData,
     currentCityName,
@@ -98,6 +99,10 @@ export default function ClientCourseSections(props) {
 
         <Suspense fallback={null}>
           <UpcomingBatches data={upcomingBatchesData} />
+        </Suspense>
+
+        <Suspense fallback={null}>
+          <Reviews data={reviewsData} />
         </Suspense>
 
         <Suspense fallback={null}>
@@ -167,6 +172,10 @@ export default function ClientCourseSections(props) {
 
       <Suspense fallback={null}>
         <UpcomingBatches data={upcomingBatchesData} />
+      </Suspense>
+
+      <Suspense fallback={null}>
+        <Reviews data={reviewsData} />
       </Suspense>
 
       <Suspense fallback={null}>
