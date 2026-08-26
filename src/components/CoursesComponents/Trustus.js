@@ -2,6 +2,7 @@
 import React from "react";
 import { useRef, useEffect } from "react";
 import { Star, Users, Building, TrendingUp, Award, Globe } from "lucide-react";
+import SectionHeading from "./SectionHeading";
 
 const TrustUs = () => {
   // Using actual logo filenames from public directory
@@ -105,21 +106,7 @@ const TrustUs = () => {
 
         <div className="trustusOuter container px-4 max-w-6xl mx-auto">
           {/* Header Section */}
-          <div className="text-center mb-4 sm:mb-6">
-            <h2 className="trustusTitle font-bold mb-1 sm:mb-2 tracking-wider" style={{
-              background: 'linear-gradient(90deg, rgba(1, 1, 98, 1) 35%, rgb(3, 111, 133) 49%, rgba(2, 2, 85, 1) 62%)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              color: 'transparent',
-              position: 'relative',
-              zIndex: 1,
-              letterSpacing: '1px',
-              marginBottom: '0.25rem',
-            }}>
-              Organisations Trust Us
-            </h2>
-            <div className="w-16 sm:w-20 h-1 bg-gradient-to-r from-blue-900 via-blue-500 to-blue-900 mx-auto mb-3 sm:mb-4 rounded"></div>
-          </div>
+          <SectionHeading title="Organisations Trust Us" />
 
           {/* Main Content Grid */}
           <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-6 items-start md:items-center">

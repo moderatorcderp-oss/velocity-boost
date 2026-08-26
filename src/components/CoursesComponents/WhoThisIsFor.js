@@ -1,3 +1,5 @@
+import SectionHeading from "./SectionHeading";
+
 const POINTS = [
   {
     title: "Complete beginners welcome",
@@ -39,22 +41,11 @@ function CheckIcon({ className }) {
 
 export default function WhoThisIsFor() {
   return (
-    <section className="relative overflow-hidden bg-white py-10 mb-3">
+    <section className="relative overflow-hidden bg-white py-10 max-w-[1800px] mx-auto">
       <div className="pointer-events-none absolute left-1/2 top-0 -z-10 h-96 w-96 -translate-x-1/2 rounded-full bg-blue-50 blur-3xl" />
 
       <div className="mx-auto max-w-5xl px-6">
-        {/* Header */}
-        <div className="mb-14 text-center">
-          <span className="inline-flex items-center rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-blue-700 ring-1 ring-inset ring-blue-100">
-            Eligibility
-          </span>
-
-          <h2 className="mt-4 bg-gradient-to-r from-slate-950 via-blue-900 to-slate-900 bg-clip-text text-3xl font-bold text-transparent sm:text-4xl md:text-5xl">
-            Who This Course Is For
-          </h2>
-
-          <div className="mx-auto mt-4 h-1 w-20 rounded-full bg-gradient-to-r from-blue-500 to-blue-700" />
-        </div>
+        <SectionHeading title="Who This Course Is For" />
 
         {/* Ticket */}
         <div className="relative mx-auto flex max-w-4xl flex-col overflow-visible rounded-3xl border border-slate-200 bg-white shadow-xl shadow-blue-100/60 md:flex-row">

@@ -23,7 +23,7 @@ const formatName = (slug) =>
 
 export default function CityLinks({ courseSlug = "sap" }) {
   return (
-    <section className="relative w-full max-w-[1800px] mx-auto overflow-hidden bg-white py-12 px-4 m-10">
+    <section className="relative w-full max-w-[1800px] mx-auto overflow-hidden bg-white py-12 px-4">
       <h2 className="text-center text-3xl sm:text-4xl font-bold tracking-wide bg-gradient-to-r from-[#010162] via-[#036f85] to-[#020255] bg-clip-text text-transparent mb-2">
         Available in Your City
       </h2>

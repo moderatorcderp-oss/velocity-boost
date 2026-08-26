@@ -4,6 +4,7 @@
 
 import { useState, useEffect, useMemo, useRef } from "react";
 import styles from "@/styles/CoursesComponents/Reviews.module.css";
+import SectionHeading from "./SectionHeading";
 import { useInView } from "react-intersection-observer";
 import { Star, Pin, BadgeCheck, Quote } from "lucide-react";
 
@@ -93,13 +94,7 @@ const Reviews = ({ data }) => {
         sectionInView ? styles.fadeIn : styles.hidden
       }`}
     >
-      <h2 className={styles.title}>
-        <span
-          className={styles.accent}
-          dangerouslySetInnerHTML={{ __html: data.title }}
-        ></span>
-      </h2>
-      {data.subtitle && <p className={styles.subtitle}>{data.subtitle}</p>}
+      <SectionHeading titleHtml={data.title} description={data.subtitle} />
 
       {reviews.length > 0 ? (
         <ReviewsBody reviews={reviews} sectionInView={sectionInView} />

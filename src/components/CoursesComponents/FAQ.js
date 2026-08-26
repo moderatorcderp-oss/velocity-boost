@@ -5,6 +5,7 @@ import { useState } from "react";
 import { Headphones, MessageCircle, Phone, Plus, Minus } from "lucide-react";
 import SectionBackground from "../BackgroundCss/SectionBackground";
 import Container from "../StandardContainer";
+import SectionHeading from "./SectionHeading";
 
 const FAQ_DATA = [
   {
@@ -57,18 +58,10 @@ export default function FAQAccordion() {
             <div className="faqLeft">
               <span className="faqEyebrow">FAQS</span>
 
-              <h2 className="faqHeading">
-                Questions?
-                <br />
-                We Have <span className="faqHeadingAccent">Answers.</span>
-              </h2>
-
-              <span className="faqUnderline" />
-
-              <p className="faqSubtitle">
-                Find answers to the most common questions about our
-                courses, admissions, trainings and placement support.
-              </p>
+              <SectionHeading
+                title="Questions? We Have Answers."
+                description="Find answers to the most common questions about our courses, admissions, trainings and placement support."
+              />
 
               <div className="faqHelpCard">
                 <div className="faqHelpTop">

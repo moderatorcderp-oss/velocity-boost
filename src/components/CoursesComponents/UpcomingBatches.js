@@ -4,6 +4,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import styles from "@/styles/CoursesComponents/Upcomingbatches.module.css";
+import SectionHeading from "./SectionHeading";
 import { useInView } from "react-intersection-observer";
 import { Clock, Users, Zap, CalendarDays, MessageCircle } from "lucide-react";
 
@@ -100,14 +101,7 @@ const UpcomingBatches = ({ data }) => {
         Seats filling fast
       </div>
 
-      <h2 className={styles.title}>
-        <span
-          className={styles.accent}
-          dangerouslySetInnerHTML={{ __html: data.title }}
-        ></span>
-      </h2>
-
-      {data.subtitle && <p className={styles.subtitle}>{data.subtitle}</p>}
+      <SectionHeading titleHtml={data.title} description={data.subtitle} />
 
       {batches.length > 0 ? (
         <div className={styles.batchRow}>
