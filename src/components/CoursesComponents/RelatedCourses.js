@@ -1,44 +1,74 @@
 "use client";
 
-import { useState, useEffect, useMemo, useCallback } from "react"; // Removed useContext
+import { useState, useEffect, useMemo, useCallback, useRef } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import styles from "@/styles/CoursesComponents/RelatedCourses.module.css";
-import ContactForm from "@/components/HomePage/Btnform"; // Assuming Btnform is your ContactForm
-// Removed: import { CityContext } from "@/context/CityContext"; // Not needed
-import { Carousel } from "react-bootstrap";
-import dynamic from "next/dynamic";
+import ContactForm from "@/components/HomePage/Btnform";
 
-// CoursesRelated now directly receives the 'data' prop
+const AUTOPLAY_MS = 4500;
+
+// Single shared blue theme (from the HTML mockup's --navy / --teal tokens).
+// Every category uses the same accent pair now — only the label/code
+// still differs so users can tell categories apart by text, not color.
+const BLUE_ACCENT = "#010162"; // --navy
+const BLUE_ACCENT_2 = "#036f85"; // --teal
+
+// Maps a course name to a category label + short code.
+// Color is intentionally uniform (shared blue theme) across all categories.
+const getCourseMeta = (name = "") => {
+  const n = name.toLowerCase();
+
+  if (n.includes("sap"))
+    return { key: "sap", code: "SAP", label: "SAP", accent: BLUE_ACCENT, accent2: BLUE_ACCENT_2 };
+  if (
+    n.includes("data science") ||
+    n.includes("data analytics") ||
+    n.includes("generative ai") ||
+    n.includes("agentic") ||
+    n.includes("aiml")
+  )
+    return { key: "data", code: "AI", label: "AI / Data", accent: BLUE_ACCENT, accent2: BLUE_ACCENT_2 };
+  if (
+    n.includes("python") ||
+    n.includes("java") ||
+    n.includes("reactjs") ||
+    n.includes("devops")
+  )
+    return { key: "dev", code: "DEV", label: "Development", accent: BLUE_ACCENT, accent2: BLUE_ACCENT_2 };
+  if (
+    n.includes("tableau") ||
+    n.includes("power bi") ||
+    n.includes("powerbi") ||
+    n.includes("data visualization")
+  )
+    return { key: "bi", code: "BI", label: "BI", accent: BLUE_ACCENT, accent2: BLUE_ACCENT_2 };
+  if (n.includes("salesforce"))
+    return { key: "crm", code: "CRM", label: "CRM", accent: BLUE_ACCENT, accent2: BLUE_ACCENT_2 };
+  if (n.includes("hr"))
+    return { key: "hr", code: "HR", label: "HR", accent: BLUE_ACCENT, accent2: BLUE_ACCENT_2 };
+  if (n.includes("aws") || n.includes("azure") || n.includes("it course"))
+    return { key: "it", code: "IT", label: "Cloud / IT", accent: BLUE_ACCENT, accent2: BLUE_ACCENT_2 };
+
+  return { key: "general", code: "PRO", label: "Career", accent: BLUE_ACCENT, accent2: BLUE_ACCENT_2 };
+};
+
 const CoursesRelated = ({ data, currentCityName }) => {
-  // Added currentCityName prop to get actual city
-  // Removed: [relatedCourses, setRelatedCourses] = useState([]);
-  // Removed: [loading, setLoading] = useState(true);
-  // Removed: [error, setError] = useState(null);
-  // Removed: const { city } = useContext(CityContext);
   const [showModal, setShowModal] = useState(false);
   const [selectedCourse, setSelectedCourse] = useState(null);
   const [activeIndex, setActiveIndex] = useState(0);
-  const [isMobile, setIsMobile] = useState(false);
   const router = useRouter();
 
-  // Comprehensive course name to URL mapping (moved to masterData.js or a separate utility if needed globally)
-  // For now, let's keep it here for this specific component, but ideally it's centralized.
   const courseNameToUrlMapping = {
-    // Data Science & Analytics
     "Generative AI": "generative-ai-course",
     "Masters in Data Science": "data-science-course",
     "Master in Data Science": "data-science-course",
     "Masters in Data Analytics": "data-analytics-course",
-  
 
-    // Development & Programming
     "Full-Stack Python": "python-course",
     "Full-Stack Java": "java-course",
-    "Reactjs Framework": "reactjs-framework-course", // Adjusted to be more specific
+    "Reactjs Framework": "reactjs-framework-course",
 
-
-    // Data Visualization & BI
     Tableau: "tableau-course",
     PowerBI: "power-bi-course",
     "Power BI": "power-bi-course",
@@ -47,10 +77,8 @@ const CoursesRelated = ({ data, currentCityName }) => {
     "Agentic AI": "agentic-ai-course",
     "Agentic Ai": "agentic-ai-course",
 
-    // CRM & Sales
     Salesforce: "salesforce-training",
 
-    // SAP Modules - ENSURE THESE SLUGS MATCH YOUR MASTERDATA.JS SLUGS
     "SAP HANA": "sap-s4-hana-course",
     "SAP BW/BI": "sap-bwbi-course",
     "SAP BASIS": "sap-basis-course",
@@ -72,7 +100,6 @@ const CoursesRelated = ({ data, currentCityName }) => {
     "SAP SUCCESSFACTOR": "sap-successfactors-course",
     "SAP ARIBA": "sap-ariba-course",
 
-    // HR & Management
     "HR Training": "hr-training-course",
     "HR Analytics": "hr-analytics-course",
     "Core HR": "core-hr-course",
@@ -80,151 +107,190 @@ const CoursesRelated = ({ data, currentCityName }) => {
     "HR Payroll": "hr-payroll-course",
     "HR Generalist": "hr-generalist-course",
 
-    // Digital Marketing
-   
-
-    // IT & General
     "IT Course": "it-course",
     AWS: "aws-course",
-    // Azure: "azure-course",
     DevOps: "devops-course",
     AIML: "ai-ml-course",
     "Data Visualization": "data-visualization-course",
-
-    // Add any other course mappings you might have
   };
 
-  useEffect(() => {
-    const updateScreenSize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
+  const items = useMemo(() => data?.items || [], [data]);
 
-    updateScreenSize();
-    window.addEventListener("resize", updateScreenSize);
-    return () => window.removeEventListener("resize", updateScreenSize);
-  }, []);
-
-  // Removed: useEffect for data fetching and localStorage logic.
-  // Data is now expected in the 'data' prop.
-
-  // Function to normalize city name for URL
   const normalizeCityForUrl = (cityName) => {
     return cityName.toLowerCase().replace(/\s+/g, "-");
   };
 
-  // Function to handle course click and redirect
   const handleCourseClick = useCallback(
     (courseName) => {
-      // Look up the base slug for the course
       const courseBaseSlug = courseNameToUrlMapping[courseName];
 
       if (courseBaseSlug && currentCityName) {
         const normalizedCity = normalizeCityForUrl(currentCityName);
-        // Construct the URL using the base slug and normalized city
-        const redirectUrl = `/${courseBaseSlug}-in-${normalizedCity}`; // Adjust this pattern if your URLs are different
-
-        console.log(`Redirecting to: ${redirectUrl}`); // For debugging
+        const redirectUrl = `/${courseBaseSlug}-in-${normalizedCity}`;
         router.push(redirectUrl);
       } else {
         console.warn(
           `No URL mapping found for course: ${courseName} or city: ${currentCityName}`
         );
         setSelectedCourse(courseName);
-        setShowModal(true); // Fallback to showing modal if URL can't be formed
+        setShowModal(true);
       }
     },
     [currentCityName, router, courseNameToUrlMapping]
-  ); // Depend on currentCityName
+  );
 
   const handleCloseModal = useCallback(() => {
     setShowModal(false);
     setSelectedCourse(null);
   }, []);
 
-  const handleSelect = useCallback((selectedIndex) => {
-    setActiveIndex(selectedIndex);
-  }, []);
-
-  const renderRelatedCourses = useMemo(() => {
-    if (!data || !data.items || data.items.length === 0) return null; // Use 'data.items'
-
-    const relatedCoursesToRender = data.items; // Use data.items directly
-    const cardsPerSlide = isMobile ? 1 : 5;
-    const slides = [];
-
-    for (let i = 0; i < relatedCoursesToRender.length; i += cardsPerSlide) {
-      slides.push(
-        <Carousel.Item key={i}>
-          <div className={styles.relatedCoursesGrid}>
-            {relatedCoursesToRender
-              .slice(i, i + cardsPerSlide)
-              .map((relcourse, index) => (
-                <div
-                  key={index}
-                  className={styles.relatedCourseCard}
-                  onClick={() => handleCourseClick(relcourse.name)}
-                  style={{ cursor: "pointer" }}
-                  title={`Click to view ${relcourse.name} course in ${currentCityName}`} // Helpful tooltip
-                >
-                  <span className={styles.courseRibbon} aria-hidden="true" />
-                  <div className={styles.relatedIconContainer}>
-                    {relcourse.icon.endsWith(".mp4") ? (
-                      <video
-                        src={relcourse.icon}
-                        alt={relcourse.alt}
-                        className={styles.relatedCourseIcon}
-                        loop
-                        autoPlay
-                        muted
-                      />
-                    ) : (
-                      <Image
-                        src={relcourse.icon}
-                        alt={relcourse.alt}
-                        width={100}
-                        height={100}
-                        className={styles.relatedCourseIcon}
-                      />
-                    )}
-                  </div>
-                  <h3>{relcourse.name}</h3>
-                  <p>{relcourse.description}</p>
-                </div>
-              ))}
-          </div>
-        </Carousel.Item>
-      );
+  // Auto-advance the spotlight continuously (no pause on hover/focus).
+  useEffect(() => {
+    if (!items.length) return undefined;
+    if (
+      typeof window !== "undefined" &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    ) {
+      return undefined;
     }
 
-    return slides;
-  }, [data, handleCourseClick, isMobile, currentCityName]); // Use 'data' instead of 'relatedCourses'
+    const id = setInterval(() => {
+      setActiveIndex((prev) => (prev + 1) % items.length);
+    }, AUTOPLAY_MS);
 
-  // Simplified loading/error handling as data is passed directly
-  if (!data) {
+    return () => clearInterval(id);
+  }, [items.length]);
+
+  // Keep activeIndex valid if the items list changes size.
+  useEffect(() => {
+    if (activeIndex >= items.length) {
+      setActiveIndex(0);
+    }
+  }, [items.length, activeIndex]);
+
+  const handleSelectRow = useCallback((index) => {
+    setActiveIndex(index);
+  }, []);
+
+  const handleRowKeyDown = useCallback((e, index) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      setActiveIndex(index);
+    }
+  }, []);
+
+  if (!data || !items.length) {
     return (
       <div className={styles.loadingContainer}>
         No related courses data available (check masterData.js or prop passing).
       </div>
     );
   }
-  // No separate error state, as `data` would be null if there was an upstream error.
+
+  const activeCourse = items[activeIndex];
+  const activeMeta = getCourseMeta(activeCourse.name);
+
+  const introText = currentCityName
+    ? `Courses learners often explore next, based in ${currentCityName}.`
+    : "Courses learners often explore next.";
 
   return (
-    <div className={` my-2 ${styles.relatedCoursesContainer}`}>
-      <div className={styles.relatedCoursesTitle}>
-        <h2 className={styles.relatedCoursesTitleh2}>{data.title}</h2>{" "}
-        {/* Use data.title */}
+    <div className={`my-2 ${styles.relatedCoursesContainer}`}>
+      <div className={styles.sectionHead}>
+        <span className={styles.sectionEyebrow}>Your learning path</span>
+        <h2 className={styles.relatedCoursesTitleh2}>{data.title}</h2>
+        <p className={styles.sectionIntro}>{introText}</p>
       </div>
-      <Carousel
-        activeIndex={activeIndex}
-        onSelect={handleSelect}
-        interval={3000}
-        indicators={true}
-        controls={true}
-        pause="hover"
-      >
-        {renderRelatedCourses}
-      </Carousel>
+
+      <div className={styles.spotlight}>
+        <div
+          className={styles.stage}
+          style={{
+            "--accent": activeMeta.accent,
+            "--accent2": activeMeta.accent2,
+          }}
+          onClick={() => handleCourseClick(activeCourse.name)}
+          role="button"
+          tabIndex={0}
+          onKeyDown={(e) => {
+            if (e.key === "Enter" || e.key === " ") {
+              e.preventDefault();
+              handleCourseClick(activeCourse.name);
+            }
+          }}
+          title={`Click to view ${activeCourse.name} course in ${currentCityName}`}
+        >
+          <span className={styles.stageBlobTop} aria-hidden="true" />
+          <span className={styles.stageBlobBottom} aria-hidden="true" />
+
+          <span className={styles.stageTag}>{activeMeta.label}</span>
+
+          <div className={styles.stageIcon}>
+            {activeCourse.icon.endsWith(".mp4") ? (
+              <video
+                src={activeCourse.icon}
+                className={styles.stageIconMedia}
+                aria-label={activeCourse.alt}
+                loop
+                autoPlay
+                muted
+                playsInline
+              />
+            ) : (
+              <Image
+                src={activeCourse.icon}
+                alt={activeCourse.alt}
+                width={48}
+                height={48}
+                className={styles.stageIconMedia}
+              />
+            )}
+          </div>
+
+          <h3 className={styles.stageTitle}>{activeCourse.name}</h3>
+          <p className={styles.stageDesc}>{activeCourse.description}</p>
+
+          <span className={styles.stageCta}>
+            View course <span className={styles.stageCtaArrow}>→</span>
+          </span>
+
+          <div className={styles.progressTrack} aria-hidden="true">
+            <div
+              key={activeIndex}
+              className={styles.progressFill}
+              style={{
+                animationDuration: `${AUTOPLAY_MS}ms`,
+              }}
+            />
+          </div>
+        </div>
+
+        <div className={styles.list} role="listbox" aria-label="All related courses">
+          {items.map((course, index) => {
+            const meta = getCourseMeta(course.name);
+            const isActive = index === activeIndex;
+            return (
+              <div
+                key={index}
+                className={`${styles.row} ${isActive ? styles.rowActive : ""}`}
+                style={{ "--row-accent": meta.accent }}
+                role="option"
+                aria-selected={isActive}
+                tabIndex={0}
+                onClick={() => handleSelectRow(index)}
+                onKeyDown={(e) => handleRowKeyDown(e, index)}
+              >
+                <span className={styles.rowDot}>{meta.code}</span>
+                <span className={styles.rowText}>
+                  <span className={styles.rowTitle}>{course.name}</span>
+                  <span className={styles.rowCat}>{meta.label}</span>
+                </span>
+                <span className={styles.rowBar} aria-hidden="true" />
+              </div>
+            );
+          })}
+        </div>
+      </div>
 
       {showModal && (
         <ContactForm onClose={handleCloseModal} course={selectedCourse} />
@@ -233,5 +299,4 @@ const CoursesRelated = ({ data, currentCityName }) => {
   );
 };
 
-// Removed the dynamic wrapper here, as it's a client component by default and `[slug]/page.js` handles client-only wrapper for all.
 export default CoursesRelated;

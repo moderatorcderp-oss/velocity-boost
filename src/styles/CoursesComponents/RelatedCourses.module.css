@@ -1,226 +1,331 @@
 .relatedCoursesContainer {
+  --navy: rgb(1, 1, 98);
+  --teal: rgb(3, 111, 133);
+  --ink: #0b1130;
+  --ink-soft: rgba(11, 17, 48, 0.6);
+  --paper: #fbf9f4;
+
   padding: 70px 0;
   background-color: #ffffff;
   max-width: 1800px;
   width: 100%;
-  height: auto; /* Adjust height dynamically */
+  height: auto;
   margin: 0 auto;
+}
+
+.sectionHead {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 36px;
+  padding: 0 20px;
+}
+
+.sectionEyebrow {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 10px;
 }
 
 .relatedCoursesTitleh2 {
   font-size: 2.5rem;
   font-weight: 700;
   letter-spacing: 2px;
-  background: rgb(1, 1, 98);
-  background: linear-gradient(
-    90deg,
-    rgba(1, 1, 98, 1) 35%,
-    rgb(3, 111, 133) 49%,
-    rgba(2, 2, 85, 1) 62%
-  );
+  background: linear-gradient(90deg, var(--navy) 35%, var(--teal) 49%, var(--navy) 62%);
   -webkit-background-clip: text;
   color: transparent;
+  margin: 0 0 12px;
+}
+
+.sectionIntro {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+/* ---------- Spotlight + list ---------- */
+
+.spotlight {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  max-width: 1100px;
+  margin: 0 auto;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 30px 70px rgba(11, 17, 48, 0.16);
+  background: var(--navy);
+}
+
+.stage {
+  position: relative;
+  padding: 44px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+
+  /* Same logic as the spotlight mockup: a simple two-stop diagonal
+     gradient driven entirely by the active course's --accent / --accent2
+     custom properties, falling back to navy/teal when unset. */
+  background: linear-gradient(
+    135deg,
+    var(--accent, var(--navy)),
+    var(--accent2, var(--teal))
+  );
+
+  cursor: pointer;
+  overflow: hidden;
+  min-height: 400px;
+  transition: transform 0.3s ease, background 0.5s ease;
+}
+
+.stage:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: -6px;
+}
+
+.stageBlobTop {
+  position: absolute;
+  top: -40%;
+  right: -10%;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.stageBlobBottom {
+  position: absolute;
+  left: -80px;
+  bottom: -90px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.stageTag {
   position: relative;
   z-index: 1;
-  margin-bottom: 20px;
-  text-align: center;
+  display: inline-block;
+  width: fit-content;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.16);
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin-bottom: 16px;
 }
 
-.relatedCoursesGrid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 24px;
-  padding: 28px 20px 36px;
-}
-
-.relatedCourseCard {
-  width: 200px;
-  min-height: 250px;
-  background: linear-gradient(
-    170deg,
-    rgba(90, 176, 219, 0.86) 0%,
-    rgb(57, 92, 91) 100%
-  );
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.35);
-  border-radius: 20px;
-  margin: 10px;
-  text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-  cursor: pointer;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  overflow: hidden;
+.stageIcon {
   position: relative;
-  padding: 34px 16px 20px;
-}
-
-.relatedCourseCard:hover {
-  transform: scale(0.92);
-  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.5);
-  border-color: rgba(255, 177, 68, 0.45);
-}
-
-.courseRibbon {
-  position: absolute;
-  overflow: hidden;
-  width: 150px;
-  height: 150px;
-  top: -10px;
-  left: -10px;
-  z-index: 2;
+  z-index: 1;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.95);
   display: flex;
   align-items: center;
   justify-content: center;
-  pointer-events: none;
+  margin-bottom: 18px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
 }
 
-.courseRibbon::before {
-  content: "Premium";
-  position: absolute;
-  width: 150%;
+.stageIconMedia {
+  width: 40px;
   height: 40px;
-  background-image: linear-gradient(
-    45deg,
-    #ff6547 0%,
-    #ffb144 51%,
-    #ff7053 100%
-  );
-  transform: rotate(-45deg) translateY(-20px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.23);
-}
-
-.courseRibbon::after {
-  content: "";
-  position: absolute;
-  width: 10px;
-  bottom: 0;
-  left: 0;
-  height: 10px;
-  z-index: -1;
-  box-shadow: 140px -140px #cc3f47;
-  background-image: linear-gradient(
-    45deg,
-    #ff512f 0%,
-    #f09819 51%,
-    #ff512f 100%
-  );
-}
-
-.relatedIconContainer {
-  width: 88px;
-  height: 88px;
-  padding: 12px;
-  margin: 14px auto 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(255, 255, 255, 0.92);
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  object-fit: contain;
   border-radius: 50%;
 }
 
-.relatedCourseIcon {
-  max-width: 100%;
-  height: auto;
-  max-height: 100%;
-  margin-bottom: 0;
-  border-radius: 50%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.stageTitle {
+  position: relative;
+  z-index: 1;
+  font-size: 1.85rem;
+  font-weight: 800;
+  margin: 0 0 12px;
+  line-height: 1.15;
 }
 
-.relatedCourseCard h3 {
-  font-size: 1.08rem;
-  font-weight: bold;
-  padding-top: 0;
-  color: #fff;
-  margin-bottom: 10px;
+.stageDesc {
+  position: relative;
+  z-index: 1;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.86);
+  margin: 0 0 24px;
+  max-width: 420px;
 }
 
-.relatedCourseCard p {
-  font-size: 0.9rem;
-  line-height: 1.45;
-  color: rgba(255, 255, 255, 0.76);
-  margin-bottom: 0;
+.stageCta {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  color: var(--ink);
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 12px 22px;
+  border-radius: 999px;
+  width: fit-content;
 }
 
-.relatedCarouselRadioButtons {
-  margin: 20px 0;
-  text-align: center;
+.stageCtaArrow {
+  display: inline-block;
+  transition: transform 0.25s ease;
 }
 
-.relatedCarouselRadioButtonsInput[type="radio"] {
-  margin: 0 5px;
+.stage:hover .stageCtaArrow {
+  transform: translateX(3px);
+}
+
+.progressTrack {
+  position: relative;
+  z-index: 1;
+  margin-top: 26px;
+  width: 100%;
+  max-width: 260px;
+  height: 3px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.22);
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  width: 0%;
+  background: #ffffff;
+  animation-name: fillProgress;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fillProgress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.list {
+  background: #ffffff;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 14px;
+  border-radius: 14px;
   cursor: pointer;
-  accent-color: #007bff;
+  border: 1px solid transparent;
+  transition: background 0.2s ease, border-color 0.2s ease;
 }
 
-.outlineBtn {
-  border: 2px solid #007bff;
-  color: #007bff;
-  background-color: transparent;
-  padding: 10px 20px;
-  border-radius: 4px;
-  transition: all 0.3s;
-  font-size: 1rem;
-  font-weight: bold;
-  text-transform: uppercase;
+.row:hover {
+  background: rgba(11, 17, 48, 0.04);
 }
 
-.outlineBtn:hover,
-.outlineBtn:focus {
-  background-color: #007bff;
-  color: #fff;
-  text-decoration: none;
+.row:focus-visible {
+  outline: 2px solid var(--row-accent, var(--navy));
+  outline-offset: 2px;
 }
 
-@media (max-width: 1024px) {
-  .relatedCourseCard {
-    width: 200px;
+.rowActive {
+  background: rgba(11, 17, 48, 0.05);
+  border-color: var(--row-accent, var(--navy));
+}
+
+.rowDot {
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--row-accent, var(--navy));
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rowText {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.rowTitle {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rowCat {
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+}
+
+.rowBar {
+  width: 26px;
+  height: 3px;
+  border-radius: 2px;
+  flex-shrink: 0;
+  background: rgba(11, 17, 48, 0.12);
+}
+
+.rowActive .rowBar {
+  background: var(--row-accent, var(--navy));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .progressFill {
+    animation: none;
+    width: 100%;
   }
 }
 
-@media (max-width: 768px) {
-  .relatedCoursesGrid {
-    justify-content: center;
+@media (max-width: 900px) {
+  .spotlight {
+    grid-template-columns: 1fr;
   }
-  .relatedCourseCard {
-    width: min(82vw, 240px);
-  }
-  .relatedCoursesTitleh2 {
-    font-size: 1.8rem;
+  .list {
+    max-height: 320px;
   }
 }
 
 @media (max-width: 480px) {
-  .relatedCourseCard {
-    width: min(86vw, 240px);
-    margin: 10px auto; /* Center cards */
-  }
-
-  .relatedCourseIcon {
-    max-width: 100%;
-  }
-
   .relatedCoursesTitleh2 {
-    font-size: 1.6rem; /* Adjust title size */
-    letter-spacing: 4px; /* Reduce spacing */
+    font-size: 1.7rem;
   }
-}
-
-
-@media (max-width: 350px) {
-  .relatedCourseCard {
-    width: 90%;
-  }
-  .relatedCoursesTitleh2 {
+  .stageTitle {
     font-size: 1.5rem;
+  }
+  .stage {
+    padding: 34px 26px;
+    min-height: 340px;
   }
 }
