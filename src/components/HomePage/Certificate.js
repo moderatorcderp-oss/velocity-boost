@@ -5,6 +5,7 @@ import { useState } from "react";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 import styles from "@/styles/HomePage/Certificate.module.css";
+import SectionHeading from "@/components/CoursesComponents/SectionHeading";
 
 // Dynamically import Btnform to prevent SSR-related issues
 const Btnform = dynamic(() => import("@/components/HomePage/Btnform"), {
@@ -20,10 +21,7 @@ const Certificate = ({ data }) => {
   return (
     <div className="relative w-full max-w-[1800px] mx-auto overflow-hidden bg-white dotted-bg pt-3 py-14">
       <div className="max-w-[1800px] mx-auto relative">
-        <div className="text-center mb-3 px-4 sm:px-2 md:px-8 lg:px-16 xl:px-20">
-          <h2 className={styles.certificateTitle}>Certificate</h2>
-          <div className={styles.titleUnderline}></div>
-        </div>
+        <SectionHeading title="Certificate" />
 
         {/* Main Green Background Box */}
         <div className={`bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white px-8 sm:px-6 md:px-10 lg:px-16 xl:px-20 py-6 grid grid-cols-1 lg:grid-cols-2 items-center relative z-10 mx-4 sm:mx-6 md:mx-10 lg:mx-16 xl:mx-24 ${styles.certificateBox}`}>

@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import BackgroundAnimation from '../Common/BackgroundAnimation';
+import SectionHeading from './SectionHeading';
 const ProgramHighlights = () => {
   // Mobile view states (simplified - no animation)
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -182,24 +183,7 @@ setTimeout(() => {
       {/* Mobile View - Only show on screens smaller than 768px */}
       <div className="flex justify-center mb-8 md:hidden lg:hidden xl:hidden">
   <div className="text-center">
-    <h2 className="inline-flex flex-wrap items-center justify-center gap-1 text-2xl font-extrabold sm:text-3xl">
-      <span className="text-purple-400" aria-hidden>
-        ✦
-      </span>
-
-      <span className="text-white">
-        Program{" "}
-        <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-          Highlights
-        </span>
-      </span>
-
-      <span className="text-blue-400" aria-hidden>
-        ✦
-      </span>
-    </h2>
-
-    <div className="mx-auto mt-3 h-1 w-16 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 sm:w-20 md:w-24" />
+    <SectionHeading title="Program Highlights" />
   </div>
 </div>
 
@@ -210,21 +194,7 @@ setTimeout(() => {
           {/* Desktop Heading */}
           <div className="hidden md:flex lg:flex xl:flex mb-10 my-3 text-center sm:mb-14">
           <div>
-            <h2 className="inline-flex items-center gap-2 text-3xl font-extrabold sm:gap-3 sm:text-4xl lg:text-5xl">
-            <span className="text-purple-400" aria-hidden>
-              ✦
-            </span>
-            <span className='text-white'>
-              Program{" "}
-              <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-                Highlights
-              </span>
-              </span>
-            <span className="text-blue-400" aria-hidden>
-              ✦
-            </span>
-          </h2>
-          <div className="mx-auto mt-3 h-1 w-20 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 sm:w-24" />
+            <SectionHeading title="Program Highlights" />
           </div>
           </div>
 

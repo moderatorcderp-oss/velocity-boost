@@ -3,6 +3,7 @@
 import { useState, useEffect, useMemo, useCallback, useRef } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import SectionHeading from "./SectionHeading";
 import styles from "@/styles/CoursesComponents/RelatedCourses.module.css";
 import ContactForm from "@/components/HomePage/Btnform";
 
@@ -196,11 +197,7 @@ const CoursesRelated = ({ data, currentCityName }) => {
 
   return (
     <div className={` ${styles.relatedCoursesContainer}`}>
-      <div className={styles.sectionHead}>
-        <span className={styles.sectionEyebrow}>Your learning path</span>
-        <h2 className={styles.relatedCoursesTitleh2}>{data.title}</h2>
-        <p className={styles.sectionIntro}>{introText}</p>
-      </div>
+      <SectionHeading title={data.title} description={introText} />
 
       <div className={styles.spotlight}>
         <div

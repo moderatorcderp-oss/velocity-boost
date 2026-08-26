@@ -1,4 +1,5 @@
 import { Code2, Lightbulb, Users, Rocket, BarChart3, Award } from "lucide-react";
+import SectionHeading from "./SectionHeading";
 
 const OUTCOMES= [
   {
@@ -43,18 +44,10 @@ export default function WhatYouWillLearn() {
   return (
     <section className="relative bg-white py-10 max-w-[1800px] mx-auto">
       <div className="mx-auto max-w-6xl px-6">
-        {/* Header */}
-        <div className="text-center mb-4 sm:mb-14 md:mb-16">
-          <div className="relative z-8">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-slate-950 via-blue-900 to-slate-900 bg-clip-text text-transparent mb-2">
-              What You'll Learn
-            </h2>
-            <div className="w-20 h-1 mx-auto bg-gradient-to-r from-blue-500 to-blue-700 rounded-full mb-4"></div>
-            <p className="text-base sm:text-lg text-slate-500 max-w-2xl mx-auto">
-              No filler modules. Every lesson here is built to land one of these six outcomes.
-            </p>
-          </div>
-        </div>
+        <SectionHeading
+          title="What You'll Learn"
+          description="No filler modules. Every lesson here is built to land one of these six outcomes."
+        />
 
         {/* Grid: 2 rows of 3 */}
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">

@@ -1,3 +1,5 @@
+import SectionHeading from "./SectionHeading";
+
 const FRONTEND = [
   { name: "React", hex: "#61DAFB", tint: "#EFFBFF" },
   { name: "Next.js", hex: "#171717", tint: "#F4F4F5" },
@@ -74,23 +76,10 @@ export default function SkillsAndTools() {
       <div className="pointer-events-none absolute -right-24 bottom-10 -z-10 h-96 w-96 rounded-full bg-blue-50 blur-3xl" />
 
       <div className="mx-auto max-w-6xl px-6">
-        {/* Header */}
-        <div className="mb-16 text-center">
-          <span className="inline-flex items-center rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-blue-700 ring-1 ring-inset ring-blue-100">
-            Tech Stack
-          </span>
-
-          <h2 className="mt-4 bg-gradient-to-r from-slate-950 via-blue-900 to-slate-900 bg-clip-text text-3xl font-bold text-transparent sm:text-4xl md:text-5xl">
-            Skills &amp; Tools You&apos;ll Master
-          </h2>
-
-          <div className="mx-auto mt-4 h-1 w-20 rounded-full bg-gradient-to-r from-blue-500 to-blue-700" />
-
-          <p className="mx-auto mt-4 max-w-2xl text-base text-slate-500 sm:text-lg">
-            A real, production-grade toolkit, not toy examples. Everything
-            here is what you&apos;ll actually touch on the job.
-          </p>
-        </div>
+        <SectionHeading
+          title="Skills & Tools You'll Master"
+          description="A real, production-grade toolkit, not toy examples. Everything here is what you'll actually touch on the job."
+        />
 
         {/* Stat banner */}
         <div className="dot-grid relative mb-6 overflow-hidden rounded-2xl bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 px-6 py-6 shadow-lg shadow-blue-200 sm:px-10">

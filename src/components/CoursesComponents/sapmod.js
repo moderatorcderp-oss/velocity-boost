@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Btnform from "@/components/HomePage/Btnform";
 import SyllabusCard from "./SyllabusCard";
+import SectionHeading from "./SectionHeading";
 
 // SapModComponent receives data prop directly from parent
 const SapModComponent = ({ data }) => {
@@ -163,22 +164,7 @@ const SapModComponent = ({ data }) => {
   return (
     <div className="w-full max-w-[1800px] mx-auto">
       <div className="flex flex-col items-center py-8 sm:py-12 px-4 sm:px-6 lg:px-8 min-h-[600px] bg-white">
-        {/* Header */}
-        <div className="mb-10 text-center sm:mb-14">
-          <h2 className="inline-flex items-center gap-2 text-3xl font-extrabold sm:gap-3 sm:text-4xl lg:text-5xl">
-            <span className="text-purple-400" aria-hidden>
-              ✦
-            </span>
-            <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-              Syllabus
-            </span>
-            <span className="text-blue-400" aria-hidden>
-              ✦
-            </span>
-          </h2>
-          <div className="mx-auto mt-3 h-1 w-20 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 sm:w-24" />
-
-        </div>
+        <SectionHeading title="Syllabus" />
 
         {/* new syllabus card */}
         <SyllabusCard data={data} curriculum={curriculum} />

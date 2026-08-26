@@ -2,6 +2,7 @@
 "use client";
 
 import React, { useEffect, useState, useRef } from "react";
+import SectionHeading from "./SectionHeading";
 // Removed: import { CityContext } from "@/context/CityContext"; // Not directly needed
 import styles from "@/styles/CoursesComponents/Description.module.css";
 import { FaCheckCircle, FaChevronRight } from "react-icons/fa";
@@ -128,7 +129,7 @@ const Description = ({ data, sectionIndex = 0 }) => { // Renamed 'content' prop 
       )}
 
       <div className={styles.descriptionContent}>
-        <h2 className={styles.descriptionTitle}>{data.title}</h2> {/* Use data.title */}
+        <SectionHeading title={data.title} />
 
         {/* Paragraphs BEFORE list */}
         {paragraphsBeforeList.map(

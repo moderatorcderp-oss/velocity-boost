@@ -3,6 +3,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import SectionHeading from "./SectionHeading";
 import styles from "@/styles/CoursesComponents/Why.module.css";
 import { useInView } from "react-intersection-observer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -70,12 +71,9 @@ const SectionComponent = ({ section }) => {
 
   return (
     <>
-      <h2 ref={titleRef} className={styles.title}>
-        <span
-          className={styles.accent}
-          dangerouslySetInnerHTML={{ __html: section.title }}
-        ></span>
-      </h2>
+      <div ref={titleRef}>
+        <SectionHeading titleHtml={section.title} />
+      </div>
 
       <div className={styles.cardsContainerYds}>
         {section.cards && section.cards.length > 0 ? (
