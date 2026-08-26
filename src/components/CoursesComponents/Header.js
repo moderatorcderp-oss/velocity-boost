@@ -323,15 +323,7 @@ const DSHeader = ({ data }) => {
         </ul>
         <div className={styles.alumniItDs}>
           <span>Find our Alumni at -</span>
-          <div className={styles.alumniLogosItDs}>
-            {data.alumni.map((company, index) => (
-              <img
-                key={index}
-                src={company.logo}
-                alt={`${company.name} logo`}
-              />
-            ))}
-          </div>
+          removed alumni strip...
         </div>
         <div className={styles.buttons}>
           {(() => {

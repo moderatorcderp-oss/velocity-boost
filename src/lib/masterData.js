@@ -1,5 +1,6 @@
 // lib/masterData.js - Clean and Commented Version
-
+import whyData from "../../public/Jsonfolder/Whyds.json";
+import dsHeaderData from "../../public/Jsonfolder/dsHeaderData.json"
 const companyAlumni = [
   { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
   { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
@@ -457,79 +458,10 @@ export const coursesData = {
 
     // === COMPONENT DATA ===
     // Data for Header Component (DSHeader)
-    header: {
-      title: "SAP FICO Course in {city} | Sap Fico S4/Hana Certification",
-      subtitle: "Practical Based Job Oriented SAP Training in {city}",
-      description:
-        "Enroll in the best SAP FICO course in {city} and master financial accounting and controlling with expert-led training. Our SAP FICO training in {city} offers real-time Training, industry-relevant curriculum, and 100% placement support to help you build a successful career in SAP finance modules.",
-      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
-      features: ["Live Class", "1:1 mentorship", "Industry projects"],
-      alumni: [
-        // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
-      ],
-      buttons: [
-        { text: "Request Call Back", courseName: "SAP FICO Program" },
-        { text: "Download Syllabus", courseName: "Book Live Demo" },
-      ],
-      form: {
-        // Used in: Header form component
-        title: "Book a FREE live class",
-        inputs: [
-          { type: "text", name: "name", placeholder: "Enter your name" },
-          { type: "email", name: "email", placeholder: "Enter your Email" },
-          { type: "location", name: "location", placeholder: "Select your location" },
-          { type: "course", name: "course", placeholder: "Select course" }, ,
-          {
-            type: "tel",
-            name: "contactname",
-            placeholder: "Enter your phone number",
-            countryCode: "+91",
-
-          },
-        ],
-        submitText: "Book Live Class",
-      },
-    },
+    header: dsHeaderData['ficoheader']['FICOHeader'],
 
     // Data for Why Component
-    why: {
-      title: "Why SAP FICO ?",
-      cards: [
-        {
-          title: 'What is <span class="highlight-span-cards">SAP FICO?</span>',
-          content:
-            "SAP FICO also works with other SAP logistic modules, including (production planning (PP), sales and distribution (SD), Quality management (QM), Materials Management (MM), and plant maintenance (PM).",
-        },
-        {
-          title:
-            'What does a <span class="highlight-span-cards">SAP FICO Consultant</span> do?',
-          content:
-            "A SAP FICO Consultant implements and manages SAP FICO modules, ensuring accurate financial reporting and effective financial control.",
-          listItems: [
-            "Implement SAP FICO modules.",
-            "Manage financial reporting and analysis.",
-            "Optimize financial processes and controls.",
-          ],
-        },
-        {
-          title:
-            'Why take <span class="highlight-span-cards">SAP FICO</span> training?',
-          content:
-            "SAP FICO Consultants are vital for managing an organization's financials. Our SAP FICO Course in {city} covers financial accounting, controlling, and integration with other SAP modules.",
-          listItems: [
-            "SAP FICO Consultant",
-            "Financial Analyst",
-            "SAP Financial Controller",
-          ],
-        },
-      ],
-    },
-
+    why: whyData["Whyfico"]["WhyFICO"],
     // Data for SapModComponent (course-specific syllabus)
     sapMod: {
       title2: ' <span class="highlight-span-cards">SAP FICO</span> Syllabus',
@@ -869,74 +801,10 @@ export const coursesData = {
 
     // === COMPONENT DATA ===
     // Data for Header Component (DSHeader)
-    header: {
-      title: "Best SAP Course in {city}",
-      subtitle: "Get Certified with the best SAP training institute in {city}",
-      description:
-        "Grow Your Career with the Best SAP Course in {city}. Accelerate your professional journey with our industry-leading SAP training in {city}, featuring specialized courses in SAP FICO, SAP MM, and SAP SD. Our comprehensive and hands-on training program is designed to build deep expertise in core SAP modules like Financial Accounting, Materials Management, and Sales & Distribution. Whether you're a fresher or a working professional, we'll help you land your dream job in top MNCs.",
-      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
-      features: ["Live Class", "1:1 mentorship", "Industry projects"],
-      alumni: [
-        // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
-      ],
-      buttons: [
-        { text: "Request Call back", courseName: "SAP Training Program" },
-        { text: "Download Syllabus", courseName: "Book Live Demo" },
-      ],
-      form: {
-        // Used in: Header form component
-        title: "Book a FREE live class",
-        inputs: [
-          { type: "text", name: "name", placeholder: "Enter your name" },
-          { type: "email", name: "email", placeholder: "Enter your Email" },
-          { type: "location", name: "location", placeholder: "Select your location" },
-          { type: "course", name: "course", placeholder: "Select course" }, ,
-          {
-            type: "tel",
-            name: "contactname",
-            placeholder: "Enter your phone number",
-            countryCode: "+91",
-          },
-        ],
-        submitText: "Book Live Class",
-      },
-    },
+    header: dsHeaderData['sapheader']['SapHeader'],
 
     // Data for Why Component
-    why: {
-      title: "Why SAP Course in {city}?",
-      cards: [
-        {
-          title: 'What is <span class="highlight-span-cards">SAP</span>?',
-          content:
-            "SAP (Systems, Applications, and Products) is the best enterprise resource planning (ERP) software that helps companies across the world to manage and streamline business processes in various departments like finance, supply chain, sales, and human resources. By integrating data and workflows, SAP enables companies to operate more efficiently and make data-driven decisions. If you're looking to build a career in SAP, our SAP course in {city} provides hands-on training and in-depth knowledge of key SAP modules to help you excel in the dynamic world of ERP.",
-        },
-        {
-          title:
-            'What does a <span class="highlight-span-cards">SAP consultant</span> do?',
-          content:
-            "A SAP Consultant helps businesses implement and manage SAP software solutions to streamline operations across various functions like finance,human resources, supply chain, and customer relationship management. Their role involves analyzing business requirements,configuring SAP modules,training users, and troubleshooting system issues to ensure efficient workflows.The salary of an SAP Consultant varies by experience and specialization. Entry-level consultants can earn around ₹4–6 lakhs per year, while experienced consultants with niche expertise can make ₹10–20 lakhs annually.",
-        },
-        {
-          title:
-            'Why Take <span class="highlight-span-cards">SAP Training in {city}?</span>',
-          content:
-            "A SAP Consultant must possess a diverse skill set to manage and optimize various SAP modules effectively. Our SAP course in {city} offers advanced  training in key SAP modules, preparing you to handle end-to-end SAP implementation, configuration, and support. You will gain hands-on experience to manage business processes, troubleshoot issues, and ensure smooth system functionality.Upon completing the course, you will be qualified to take on roles such as:",
-          listItems: [
-            "SAP FICO Consultant",
-            "SAP MM Consultant",
-            "SAP SD Consultant",
-            "SAP Functional Consultant",
-            "SAP Implementation Specialist",
-          ],
-        },
-      ],
-    },
+    why: whyData['Whysap']['WhySap'],
 
     // Data for Certificate Component
     certificate: {
@@ -1129,77 +997,10 @@ export const coursesData = {
 
     // === COMPONENT DATA ===
     // Data for Header Component (DSHeader)
-    header: {
-      title: "SAP ABAP Course in {city}",
-      subtitle: "Practical Based Job Oriented SAP Training in {city}",
-      description:
-        "The SAP ABAP Course in {city} focuses on learning Advanced Business Application Programming (ABAP), the programming language used for developing applications within the SAP environment. It covers key topics like reporting, interfaces, enhancements, and forms. Our SAP ABAP Training in {city} provides hands-on experience, preparing you for real-world SAP development projects and career opportunities in top companies.",
-      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
-      features: ["Live Class", "1:1 mentorship", "Industry projects"],
-      alumni: [
-        // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
-      ],
-      buttons: [
-        { text: "Request Call back", courseName: "SAP ABAP Program" },
-        { text: "Download Syllabus", courseName: "Book Live Demo" },
-      ],
-      form: {
-        // Used in: Header form component
-        title: "Book a FREE live class",
-        inputs: [
-          { type: "text", name: "name", placeholder: "Enter your name" },
-          { type: "email", name: "email", placeholder: "Enter your Email" },
-          { type: "location", name: "location", placeholder: "Select your location" },
-          { type: "course", name: "course", placeholder: "Select course" }, ,
-          {
-            type: "tel",
-            name: "contactname",
-            placeholder: "Enter your phone number",
-            countryCode: "+91",
-          },
-        ],
-        submitText: "Book Live Class",
-      },
-    },
+    header: dsHeaderData['abapheader']['AbapHeader'],
 
     // Data for Why Component
-    why: {
-      title: "Why SAP ABAP ?",
-      cards: [
-        {
-          title: 'What is <span class="highlight-span-cards">SAP ABAP?</span>',
-          content:
-            "The SAP ABAP Course focuses on Advanced Business Application Programming, equipping students to create custom applications and reports in the SAP ERP system. This SAP ABAP training prepares graduates for careers as SAP Technical Consultants and ABAP Developers, emphasizing integration with various SAP modules.",
-        },
-        {
-          title:
-            'What does a <span class="highlight-span-cards">SAP ABAP Developer</span> do?',
-          content:
-            "An SAP ABAP Developer creates custom SAP applications, programs, and reports using the ABAP language. They work on developing and maintaining SAP modules, forms, and workflows. Join the best SAP ABAP Course in {city}.",
-          listItems: [
-            "Design and develop SAP applications.",
-            "Customize and enhance existing SAP modules.",
-            "Work on SAP workflows and reports.",
-          ],
-        },
-        {
-          title:
-            'Why take <span class="highlight-span-cards">SAP ABAP</span> training?',
-          content:
-            "SAP ABAP Consultants are key to customizing SAP applications. Our SAP ABAP Certification Course in {city} highlights programming skills like report generation and data dictionary management for effective SAP solutions.",
-          listItems: [
-            "SAP Technical Developer",
-            "SAP ABAP Consultant",
-            "SAP Application Programmer",
-          ],
-        },
-      ],
-    },
+    why: whyData['Whyabap']['WhyAbap'],
 
     // Data for SapModComponent (course-specific syllabus)
     sapMod: {
@@ -1586,68 +1387,10 @@ export const coursesData = {
 
     // === COMPONENT DATA ===
     // Data for Header Component (DSHeader)
-    header: {
-      title: "SAP Ariba Course in {city}",
-      subtitle:
-        "Learn SAP Ariba with our Expert trainers to get a Salary hike.",
-      description:
-        "Embark on a journey toward a successful career with our SAP Ariba Course in {city}. Tailored for newcomers and experienced professionals alike, this program offers an extensive syllabus designed to make you proficient in SAP Ariba. From gaining expertise in procurement and sourcing solutions to mastering supplier management and advanced analytics, this course equips you with the hands-on skills needed to thrive in the field.",
-      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
-      features: ["Live Class", "1:1 mentorship", "Industry projects"],
-      alumni: [
-        // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
-      ],
-      buttons: [
-        { text: "Request Call back", courseName: "SAP Ariba Program" },
-        { text: "Download Syllabus", courseName: "Book Live Demo" },
-      ],
-      form: {
-        // Used in: Header form component
-        title: "Book a FREE live class",
-        inputs: [
-          { type: "text", name: "name", placeholder: "Enter your name" },
-          { type: "email", name: "email", placeholder: "Enter your Email" },
-          { type: "location", name: "location", placeholder: "Select your location" },
-          { type: "course", name: "course", placeholder: "Select course" },
-          {
-            type: "tel",
-            name: "contactname",
-            placeholder: "Enter your phone number",
-            countryCode: "+91",
-          },
-        ],
-        submitText: "Book Live Class",
-      },
-    },
+    header: dsHeaderData['aribaheader']['AribaHeader'],
 
     // Data for Why Component
-    why: {
-      title: "Why SAP Ariba ?",
-      cards: [
-        {
-          title: 'What is <span class="highlight-span-cards">SAP Ariba?</span>',
-          content:
-            "SAP Ariba is a leading cloud-based solution designed to streamline procurement and supply chain processes for businesses. It connects buyers and suppliers on a global platform, offering tools to simplify sourcing, contract management, supplier collaboration, and spend analysis. SAP Ariba empowers organizations to optimize their procurement operations, enhance supplier relationships, and achieve cost savings. Our SAP Ariba Course in {city} is the perfect starting point for building expertise in this cutting-edge platform. The program covers essential modules such as procurement processes, supplier management, contract handling, and advanced reporting. Designed for both beginners and professionals, the course emphasizes hands-on learning through real-world projects and scenarios.",
-        },
-        {
-          title:
-            'What do <span class="highlight-span-cards">SAP Ariba Consultants</span> do?',
-          content:
-            "SAP Ariba professionals are key players in optimizing business procurement and supply chain activities. They manage sourcing events, negotiate contracts, collaborate with suppliers, and ensure seamless integration of procurement solutions. These experts utilize tools like spend analytics, supplier management systems, and cloud-based platforms to enhance operational efficiency and cost-effectiveness. By mastering SAP Ariba, professionals help businesses make data-driven decisions, streamline processes, and improve supplier relationships. Enrolling in an SAP Ariba training in {city} equips you with the practical skills to excel in this role, giving you a strong foundation to succeed in a rapidly evolving industry.",
-        },
-        {
-          title:
-            'Why should you take <span class="highlight-span-cards">SAP Ariba</span> training?',
-          content:
-            "Taking SAP Ariba Training in {city} is essential for anyone looking to excel in procurement and supply chain management. As businesses increasingly adopt digital platforms to streamline operations, expertise in SAP Ariba opens up diverse career opportunities. The training provides in-depth knowledge of procurement processes, supplier collaboration, and data-driven decision-making, preparing you to meet industry demands. Our SAP Ariba Course in {city} offers comprehensive, hands-on training designed to prepare you for real-world challenges. You'll work on live projects, explore advanced tools, and gain expertise in managing procurement lifecycles. This training not only boosts your confidence but also enhances your career prospects, making you a sought-after professional in a growing industry.",
-        },
-      ],
-    },
+    why: whyData['Whyariba']['WhyAriba'],
 
     // Data for SapModComponent (course-specific syllabus)
     sapMod: {
@@ -2039,77 +1782,10 @@ export const coursesData = {
 
     // === COMPONENT DATA ===
     // Data for Header Component (DSHeader)
-    header: {
-      title: "SAP BASIS Course in {city}",
-      subtitle: "Practical Based Job Oriented SAP Training in {city}",
-      description:
-        "The goal of the SAP BASIS Course in {city} is to give students a thorough understanding of the SAP BASIS, or Business Application Software Integrated Solution, which is an essential part of the SAP system for system management and administration. It addresses important subjects including transport management, system configuration, user administration, and system monitoring. Our SAP BASIS Course in {city} guarantees practical experience, readying you for prospects for professional advancement in prestigious SAP-based companies as well as real-world issues.",
-      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
-      features: ["Live Class", "1:1 mentorship", "Industry projects"],
-      alumni: [
-        // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
-      ],
-      buttons: [
-        { text: "Request Call back", courseName: "SAP BASIS Program" },
-        { text: "Download Syllabus", courseName: "Book Live Demo" },
-      ],
-      form: {
-        // Used in: Header form component
-        title: "Book a FREE live class",
-        inputs: [
-          { type: "text", name: "name", placeholder: "Enter your name" },
-          { type: "email", name: "email", placeholder: "Enter your Email" },
-          { type: "location", name: "location", placeholder: "Select your location" },
-          { type: "course", name: "course", placeholder: "Select course" },
-          {
-            type: "tel",
-            name: "contactname",
-            placeholder: "Enter your phone number",
-            countryCode: "+91",
-          },
-        ],
-        submitText: "Book Live Class",
-      },
-    },
+    header: dsHeaderData['basisheader']['BasisHeader'],
 
     // Data for Why Component
-    why: {
-      title: "Why SAP BASIS ?",
-      cards: [
-        {
-          title: 'What is <span class="highlight-span-cards">SAP BASIS?</span>',
-          content:
-            "The SAP BASIS Course in {city} prepares students to manage and maintain SAP systems by emphasizing Business Application Software Integrated Solutions (BASIS), which is the technical foundation that enables SAP applications to function efficiently. With a focus on system integration, performance monitoring, and troubleshooting inside SAP settings, this SAP BASIS Training prepares graduates for positions like SAP System Administrators and SAP BASIS Consultants.",
-        },
-        {
-          title:
-            'What does a <span class="highlight-span-cards">SAP BASIS Administrator</span> do?',
-          content:
-            "A SAP BASIS Administrator manages the SAP environment, including installation, configuration, and maintenance of SAP servers and applications.",
-          listItems: [
-            "Install and configure SAP systems.",
-            "Manage system upgrades and patches.",
-            "Monitor system performance and troubleshoot issues.",
-          ],
-        },
-        {
-          title:
-            'Why take <span class="highlight-span-cards">SAP BASIS</span> training?',
-          content:
-            "For SAP applications to operate well and be customized, SAP BASIS Administrators are necessary. Technical skills like system installation, upgrades, performance optimization, and disaster recovery management are highlighted in our SAP BASIS Certification Training in {city} to guarantee optimal SAP system functionality.",
-          listItems: [
-            "SAP NetWeaver Administrator",
-            "SAP System Administrator",
-            "SAP BASIS Consultant",
-          ],
-        },
-      ],
-    },
+    why: whyData['Whybasis']['WhyBasis'],
 
     // Data for SapModComponent (course-specific syllabus)
     sapMod: {
@@ -2491,77 +2167,10 @@ export const coursesData = {
 
     // === COMPONENT DATA ===
     // Data for Header Component (DSHeader)
-    header: {
-      title: "SAP BI Course in {city}",
-      subtitle: "Practical Based Job Oriented SAP Training in {city}",
-      description:
-        "The SAP BW/BI Course in {city} at Connecting Dots ERP is designed to help you maximize your SAP BW/BI implementation. This course provides an in-depth understanding of operations and Info Providers while focusing on optimizing data load performance and query execution. Enroll now in our SAP BI/BW Classroom Training in {city} and SAP BI/BW Online Training to gain hands-on expertise and enhance your data management skills.",
-      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
-      features: ["Live Class", "1:1 mentorship", "Industry projects"],
-      alumni: [
-        // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
-      ],
-      buttons: [
-        { text: "Request Call back", courseName: "SAP BI Program" },
-        { text: "Download Syllabus", courseName: "Book Live Demo" },
-      ],
-      form: {
-        // Used in: Header form component
-        title: "Book a FREE live class",
-        inputs: [
-          { type: "text", name: "name", placeholder: "Enter your name" },
-          { type: "email", name: "email", placeholder: "Enter your Email" },
-          { type: "location", name: "location", placeholder: "Select your location" },
-          { type: "course", name: "course", placeholder: "Select course" },
-          {
-            type: "tel",
-            name: "contactname",
-            placeholder: "Enter your phone number",
-            countryCode: "+91",
-          },
-        ],
-        submitText: "Book Live Class",
-      },
-    },
+    header: dsHeaderData['bwbiheader']['BwbiHeader'],
 
     // Data for Why Component
-    why: {
-      title: "Why SAP BI ?",
-      cards: [
-        {
-          title: 'What is <span class="highlight-span-cards">SAP BI?</span>',
-          content:
-            "The foundation of SAP's analytics and reporting solutions is its Business Warehouse (BW) and Business Intelligence (BI). Organizations may combine, examine, and visualize data from several sources using SAP BW/BI, turning it into insightful information for decision-making. It entails data modeling, data extraction, and report generation, giving users the means to produce detailed business dashboards and reports.",
-        },
-        {
-          title:
-            'What does a <span class="highlight-span-cards">SAP BI Consultant</span> do?',
-          content:
-            "A SAP BI Consultant designs, develops, and implements BI solutions using SAP tools. They work on data modeling, reporting, and analytics.",
-          listItems: [
-            "Develop and implement SAP BI solutions.",
-            "Perform data extraction, transformation, and loading (ETL).",
-            "Create reports and dashboards for business analysis.",
-          ],
-        },
-        {
-          title:
-            'Why take <span class="highlight-span-cards">SAP BI</span> training?',
-          content:
-            "Training in SAP BW/BI is essential for professionals looking to harness the power of data for strategic decision-making. The SAP BW/BI Certification Course in {city} equips participants with skills in data warehousing, reporting, and analytics, enabling them to create efficient data models and insightful reports.",
-          listItems: [
-            "SAP BW/BI Consultant",
-            "Business Intelligence Analyst", // Corrected typo
-            "Data Warehouse Developer",
-          ],
-        },
-      ],
-    },
+    why: whyData['Whybwbi']['WhyBwbi'],
 
     // Data for SapModComponent (course-specific syllabus)
     sapMod: {
@@ -2949,77 +2558,10 @@ export const coursesData = {
 
     // === COMPONENT DATA ===
     // Data for Header Component (DSHeader)
-    header: {
-      title: "SAP EWM Course in {city}",
-      subtitle: "Practical Based Job Oriented SAP Training in {city}",
-      description:
-        "SAP Extended Warehouse Management (EWM) is a powerful module within the SAP Supply Chain Management suite that offers advanced features for efficient warehouse operations. Connecting Dots ERP's SAP EWM course in {city} will empower you to manage warehouse processes, from inventory control to outbound deliveries with industrial learning by MNC experienced trainer and hands-on learning of various tools.",
-      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
-      features: ["Live Class", "1:1 mentorship", "Industry projects"],
-      alumni: [
-        // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
-      ],
-      buttons: [
-        { text: "Request Call back", courseName: "SAP EWM Program" },
-        { text: "Download Syllabus", courseName: "Book Live Demo" },
-      ],
-      form: {
-        // Used in: Header form component
-        title: "Book a FREE live class",
-        inputs: [
-          { type: "text", name: "name", placeholder: "Enter your name" },
-          { type: "email", name: "email", placeholder: "Enter your Email" },
-          { type: "location", name: "location", placeholder: "Select your location" },
-          { type: "course", name: "course", placeholder: "Select course" },
-          {
-            type: "tel",
-            name: "contactname",
-            placeholder: "Enter your phone number",
-            countryCode: "+91",
-          },
-        ],
-        submitText: "Book Live Class",
-      },
-    },
+    header: dsHeaderData['ewmheader']['EWMHeader'],
 
     // Data for Why Component
-    why: {
-      title: "Why SAP EWM ?",
-      cards: [
-        {
-          title: 'What is <span class="highlight-span-cards">SAP EWM?</span>',
-          content:
-            "SAP Extended Warehouse Management (SAP EWM) is an advanced warehouse management module designed to support flexible, automated, and highly efficient warehouse operations. It offers features such as inventory management, resource optimization, and process automation to streamline warehouse activities. By enrolling in SAP EWM training in {city}, you'll gain the skills to efficiently manage and optimize end-to-end warehouse processes, ensuring smooth operations across the supply chain.",
-        },
-        {
-          title:
-            'What does a <span class="highlight-span-cards">SAP EWM Consultant</span> do?',
-          content:
-            "A SAP EWM Consultant designs and implements warehouse management solutions using SAP EWM. They work on integrating SAP EWM with other SAP modules and optimizing warehouse processes.",
-          listItems: [
-            "Implement SAP EWM solutions.",
-            "Optimize warehouse operations.",
-            "Integrate SAP EWM with other SAP modules.",
-          ],
-        },
-        {
-          title:
-            'Why take <span class="highlight-span-cards">SAP EWM</span> training?',
-          content:
-            "With the growing need for streamlined and efficient supply chain operations, businesses are increasingly adopting SAP EWM, creating a surge in demand for SAP EWM Consultants. The SAP EWM course in {city} provides you with in-depth knowledge and practical experience in managing complex warehouse operations, inventory control, and distribution processes. This course is designed to help you succeed in warehouse management roles with real-world skills and expertise.",
-          listItems: [
-            "SAP EWM Consultant",
-            "Warehouse Manager",
-            "Logistics Consultant",
-          ],
-        },
-      ],
-    },
+    why: whyData['Whyewm']['WhyEWM'],
 
     // Data for SapModComponent (course-specific syllabus)
     sapMod: {
@@ -3409,78 +2951,10 @@ export const coursesData = {
 
     // === COMPONENT DATA ===
     // Data for Header Component (DSHeader)
-    header: {
-      title: "SAP S/4 HANA Course in {city}",
-      subtitle: "Practical Based Job Oriented SAP Training in {city}",
-      description:
-        "SAP S/4 HANA is SAP's next-generation ERP suite, designed to run on the in-memory HANA database, offering real-time data processing and analytics. It simplifies business processes and provides enhanced capabilities in areas like finance, supply chain, and procurement. Our SAP S/4 HANA Training in {city} equips you with hands-on knowledge of the platform, preparing you for roles in leading global organizations.",
-      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
-      features: ["Live Class", "1:1 mentorship", "Industry projects"],
-      alumni: [
-        // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
-      ],
-      buttons: [
-        { text: "Request Call back", courseName: "SAP S/4 HANA Program" },
-        { text: "Download Syllabus", courseName: "Book Live Demo" },
-      ],
-      form: {
-        // Used in: Header form component
-        title: "Book a FREE live class",
-        inputs: [
-          { type: "text", name: "name", placeholder: "Enter your name" },
-          { type: "email", name: "email", placeholder: "Enter your Email" },
-          { type: "location", name: "location", placeholder: "Select your location" },
-          { type: "course", name: "course", placeholder: "Select course" },
-          {
-            type: "tel",
-            name: "contactname",
-            placeholder: "Enter your phone number",
-            countryCode: "+91",
-          },
-        ],
-        submitText: "Book Live Class",
-      },
-    },
+    header: dsHeaderData['hanaheader']['HanaHeader'],
 
     // Data for Why Component
-    why: {
-      title: "Why SAP S/4 HANA ?",
-      cards: [
-        {
-          title:
-            'What is <span class="highlight-span-cards">SAP S/4 HANA?</span>',
-          content:
-            "The SAP S/4 HANA Course prepares students for real-time analytics and data management by emphasizing in-memory computing and advanced data processing. The emphasis of SAP S/4 HANA training is on integrating with different SAP applications and utilizing HANA's business intelligence and reporting capabilities to prepare learners for employment in data analytics and database management.",
-        },
-        {
-          title:
-            'What does a <span class="highlight-span-cards">SAP S/4 HANA Consultant</span> do?',
-          content:
-            "A SAP S/4 HANA Consultant works on implementing and managing SAP S/4 HANA solutions, ensuring high performance and scalability of data-driven applications.",
-          listItems: [
-            "Implement SAP S/4 HANA solutions.",
-            "Optimize data processing and storage.",
-            "Integrate SAP S/4 HANA with other SAP modules.",
-          ],
-        },
-        {
-          title:
-            'Why take <span class="highlight-span-cards">SAP S/4 HANA</span> training?',
-          content:
-            "For real-time analytics and data processing to be fully utilized, SAP S/4 HANA experts need to be hired. With a focus on in-memory computing, data modeling, and advanced analytics, our SAP S/4 HANA Certification Course in {city} prepares students to create creative solutions and maximize business performance.",
-          listItems: [
-            "SAP S/4 HANA Consultant",
-            "Data Modeler",
-            "Database Administrator",
-          ],
-        },
-      ],
-    },
+    why: whyData['Whyhana']['WhyHana'],
 
     // Data for SapModComponent (course-specific syllabus)
     sapMod: {
@@ -3869,78 +3343,10 @@ export const coursesData = {
 
     // === COMPONENT DATA ===
     // Data for Header Component (DSHeader)
-    header: {
-      title: "SAP HR/HCM Course in {city}",
-      subtitle: "Practical Based Job Oriented SAP Training in {city}",
-      description:
-        "The SAP HCM Course in {city} at Connecting Dots ERP offers in-depth training on managing human resources processes within organizations. This course covers core HR functions such as personnel management, payroll, time management, and organizational management using SAP HCM. With expert trainers and hands-on projects, this course equips you with the skills needed to excel in HR roles at top companies.",
-      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
-      features: ["Live Class", "1:1 mentorship", "Industry projects"],
-      alumni: [
-        // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
-      ],
-      buttons: [
-        { text: "Request Call back", courseName: "SAP HR/HCM Program" },
-        { text: "Download Syllabus", courseName: "Book Live Demo" },
-      ],
-      form: {
-        // Used in: Header form component
-        title: "Book a FREE live class",
-        inputs: [
-          { type: "text", name: "name", placeholder: "Enter your name" },
-          { type: "email", name: "email", placeholder: "Enter your Email" },
-          { type: "location", name: "location", placeholder: "Select your location" },
-          { type: "course", name: "course", placeholder: "Select course" },
-          {
-            type: "tel",
-            name: "contactname",
-            placeholder: "Enter your phone number",
-            countryCode: "+91",
-          },
-        ],
-        submitText: "Book Live Class",
-      },
-    },
+    header: dsHeaderData['hrhcmheader']['HRHCMHeader'],
 
     // Data for Why Component
-    why: {
-      title: "Why SAP HR/HCM ?",
-      cards: [
-        {
-          title:
-            'What is <span class="highlight-span-cards">SAP HR/HCM?</span>',
-          content:
-            "SAP HCM (Human Capital Management) is a key SAP module that manages HR processes such as recruitment, payroll, employee administration, time management, and performance evaluation. It helps businesses streamline their human resource operations and improve workforce management. At Connecting Dots ERP's SAP HCM Training in {city}, you'll gain practical knowledge of SAP HCM, preparing you for top HR roles in leading organizations.",
-        },
-        {
-          title:
-            'What does a <span class="highlight-span-cards">SAP HR/HCM Consultant</span> do?',
-          content:
-            "A SAP HR/HCM Consultant implements HR solutions using SAP, managing employee data, payroll, and other HR-related activities.",
-          listItems: [
-            "Implement and manage SAP HR/HCM modules.",
-            "Handle payroll and employee data.",
-            "Optimize HR processes.",
-          ],
-        },
-        {
-          title:
-            'Why take <span class="highlight-span-cards">SAP HR/HCM</span> training?',
-          content:
-            "Taking SAP HCM training in {city} equips you with the skills to manage critical HR functions such as payroll, time management, recruitment, and employee administration in a streamlined and efficient way. With hands-on training and industry-relevant knowledge, you can enhance your career prospects in top multinational companies. It opens up opportunities for high-demand roles like ",
-          listItems: [
-            "SAP HR/HCM Consultant",
-            "HR Manager",
-            "Payroll Specialist",
-          ],
-        },
-      ],
-    },
+    why: whyData['Whyhrhcm']['WhyHRHCM'],
 
     // Data for SapModComponent (course-specific syllabus)
     sapMod: {
@@ -4330,77 +3736,10 @@ export const coursesData = {
 
     // === COMPONENT DATA ===
     // Data for Header Component (DSHeader)
-    header: {
-      title: "SAP MM Course in {city}",
-      subtitle: "Practical Based Job Oriented SAP Training in {city}",
-      description:
-        "SAP MM Course in {city} covers Industry oriented curriculum with placement. SAP MM deals with Master Data, Material Valuation, Account Determination, and Material Requirement Planning.",
-      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
-      features: ["Live Class", "1:1 mentorship", "Industry projects"],
-      alumni: [
-        // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
-      ],
-      buttons: [
-        { text: "Request Call back", courseName: "SAP MM Program" },
-        { text: "Download Syllabus", courseName: "Book Live Demo" },
-      ],
-      form: {
-        // Used in: Header form component
-        title: "Book a FREE live class",
-        inputs: [
-          { type: "text", name: "name", placeholder: "Enter your name" },
-          { type: "email", name: "email", placeholder: "Enter your Email" },
-          { type: "location", name: "location", placeholder: "Select your location" },
-          { type: "course", name: "course", placeholder: "Select course" },
-          {
-            type: "tel",
-            name: "contactname",
-            placeholder: "Enter your phone number",
-            countryCode: "+91",
-          },
-        ],
-        submitText: "Book Live Class",
-      },
-    },
+    header: dsHeaderData['mmheader']['MMHeader'],
 
     // Data for Why Component
-    why: {
-      title: "Why SAP MM ?",
-      cards: [
-        {
-          title: 'What is <span class="highlight-span-cards">SAP MM?</span>',
-          content:
-            "SAP MM (Materials Management) is a module of the SAP ERP system that is used for procurement handling and inventory management of materials. It encompasses all facets of material management, including purchasing, inventory control, and invoice verification. SAP MM works in conjunction with other modules, such as Sales and Distribution (SD), Production Planning (PP), and Financial Accounting (FI), to facilitate seamless integration of data and processes. It also supports various types of procurement processes such as purchase requisitions, purchase orders, goods receipt, and invoice verification.",
-        },
-        {
-          title:
-            'What does a <span class="highlight-span-cards">SAP MM Consultant</span> do?',
-          content:
-            "A SAP MM Consultant implements and manages the SAP MM module, ensuring efficient procurement, inventory management, and material planning.",
-          listItems: [
-            "Implement and manage SAP MM modules.",
-            "Optimize procurement processes.",
-            "Handle inventory management.",
-          ],
-        },
-        {
-          title:
-            'Why take <span class="highlight-span-cards">SAP MM</span> training?',
-          content:
-            "SAP MM Consultants are essential for efficient material management. Our SAP MM Certification training covers procurement, inventory management, and material planning using SAP MM.",
-          listItems: [
-            "SAP MM Consultant",
-            "Procurement Specialist",
-            "Inventory Manager",
-          ],
-        },
-      ],
-    },
+    why: whyData['Whymm']['WhyMM'],
 
     // Data for SapModComponent (course-specific syllabus)
     sapMod: {
@@ -4788,77 +4127,10 @@ export const coursesData = {
 
     // === COMPONENT DATA ===
     // Data for Header Component (DSHeader)
-    header: {
-      title: "SAP PM Course in {city}",
-      subtitle: "Practical Based Job Oriented SAP Training in {city}",
-      description:
-        "SAP PM (Plant Maintenance) is a module that helps businesses efficiently manage maintenance activities, including equipment management, preventive maintenance, and repair orders to ensure optimal production performance. It integrates with other SAP modules like MM and PP for seamless operations. Our SAP PM Training in {city} provides practical insights and real-world applications, preparing you for maintenance management roles in various industries.",
-      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
-      features: ["Live Class", "1:1 mentorship", "Industry projects"],
-      alumni: [
-        // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
-      ],
-      buttons: [
-        { text: "Request Call back", courseName: "SAP PM Program" },
-        { text: "Download Syllabus", courseName: "Book Live Demo" },
-      ],
-      form: {
-        // Used in: Header form component
-        title: "Book a FREE live class",
-        inputs: [
-          { type: "text", name: "name", placeholder: "Enter your name" },
-          { type: "email", name: "email", placeholder: "Enter your Email" },
-          { type: "location", name: "location", placeholder: "Select your location" },
-          { type: "course", name: "course", placeholder: "Select course" },
-          {
-            type: "tel",
-            name: "contactname",
-            placeholder: "Enter your phone number",
-            countryCode: "+91",
-          },
-        ],
-        submitText: "Book Live Class",
-      },
-    },
+    header: dsHeaderData['pmheader']['PMHeader'],
 
     // Data for Why Component
-    why: {
-      title: "Why SAP PM ?",
-      cards: [
-        {
-          title: 'What is <span class="highlight-span-cards">SAP PM?</span>',
-          content:
-            "SAP PM (Plant Maintenance) is a module that helps businesses efficiently manage maintenance activities, including equipment management, preventive maintenance, and repair orders to ensure optimal production performance. It integrates with other SAP modules like MM and PP for seamless operations. Our SAP PM Training in {city} provides practical insights and real-world applications, preparing you for maintenance management roles in various industries.",
-        },
-        {
-          title:
-            'What does a <span class="highlight-span-cards">SAP PM Consultant</span> do?',
-          content:
-            "A SAP PM Consultant implements and manages SAP PM solutions, ensuring effective maintenance planning, scheduling, and execution.",
-          listItems: [
-            "Implement and manage SAP PM modules.",
-            "Optimize maintenance processes.",
-            "Ensure equipment availability and reliability.",
-          ],
-        },
-        {
-          title:
-            'Why take <span class="highlight-span-cards">SAP PM</span> training?',
-          content:
-            "The demand for SAP PM Consultants is growing as companies prioritize preventive and predictive maintenance to avoid costly downtime. By enrolling in the SAP PM course in {city}, you will be equipped with practical skills to manage and execute maintenance activities, plan preventive tasks, and optimize equipment performance. Our training prepares you for high-demand roles with real-time case studies and hands-on projects, with placement support to ensure a smooth transition into your new career.",
-          listItems: [
-            "SAP PM Consultant",
-            "Maintenance Planner",
-            "Plant Maintenance Manager",
-          ],
-        },
-      ],
-    },
+    why: whyData['Whypm']['WhyPM'],
 
     // Data for SapModComponent (course-specific syllabus)
     sapMod: {
@@ -5245,77 +4517,10 @@ export const coursesData = {
 
     // === COMPONENT DATA ===
     // Data for Header Component (DSHeader)
-    header: {
-      title: "SAP PP Course in {city}",
-      subtitle: "Practical Based Job Oriented SAP Training in {city}",
-      description:
-        "The SAP PP Course in {city} teaches you how to manage production planning and control processes within the SAP ERP system, including material requirements planning (MRP), bill of materials (BOM), and shop floor control. Our SAP PP Training in {city} provides practical knowledge and hands-on experience, preparing you for production and manufacturing roles in leading organizations.",
-      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
-      features: ["Live Class", "1:1 mentorship", "Industry projects"],
-      alumni: [
-        // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
-      ],
-      buttons: [
-        { text: "Request Call back", courseName: "SAP PP Program" },
-        { text: "Download Syllabus", courseName: "Book Live Demo" },
-      ],
-      form: {
-        // Used in: Header form component
-        title: "Book a FREE live class",
-        inputs: [
-          { type: "text", name: "name", placeholder: "Enter your name" },
-          { type: "email", name: "email", placeholder: "Enter your Email" },
-          { type: "location", name: "location", placeholder: "Select your location" },
-          { type: "course", name: "course", placeholder: "Select course" },
-          {
-            type: "tel",
-            name: "contactname",
-            placeholder: "Enter your phone number",
-            countryCode: "+91",
-          },
-        ],
-        submitText: "Book Live Class",
-      },
-    },
+    header: dsHeaderData['ppheader']['PPHeader'],
 
     // Data for Why Component
-    why: {
-      title: "Why SAP PP ?",
-      cards: [
-        {
-          title: 'What is <span class="highlight-span-cards">SAP PP?</span>',
-          content:
-            "SAP Production Planning (SAP PP) is a vital module in SAP ERP, focused on managing and optimizing production processes like planning, scheduling, and controlling manufacturing activities. It ensures efficient resource utilization, seamless integration with other SAP modules, and timely production deliveries. Learning SAP PP through an SAP PP course in {city} equips professionals with the skills to streamline operations and increase productivity in manufacturing businesses.",
-        },
-        {
-          title:
-            'What does a <span class="highlight-span-cards">SAP PP Consultant</span> do?',
-          content:
-            "A SAP PP Consultant implements and manages SAP PP solutions, ensuring efficient production planning, scheduling, and control.",
-          listItems: [
-            "Implement and manage SAP PP modules.",
-            "Optimize production processes.",
-            "Ensure efficient manufacturing operations.",
-          ],
-        },
-        {
-          title:
-            'Why take <span class="highlight-span-cards">SAP PP</span> training?',
-          content:
-            "SAP PP Consultants are crucial in optimizing production planning, and ensuring manufacturing processes run efficiently. By enrolling in SAP PP training in {city}, you'll gain hands-on experience in production planning, scheduling, and control using SAP PP. This training prepares you to become vital to any manufacturing team, driving smooth operations and efficient workflows.",
-          listItems: [
-            "SAP PP Consultant",
-            "Production Planner",
-            "Manufacturing Manager",
-          ],
-        },
-      ],
-    },
+    why: whyData['Whypp']['WhyPP'],
 
     // Data for SapModComponent (course-specific syllabus)
     sapMod: {
@@ -5704,77 +4909,10 @@ export const coursesData = {
 
     // === COMPONENT DATA ===
     // Data for Header Component (DSHeader)
-    header: {
-      title: "SAP PS Course in {city}",
-      subtitle: "Practical Based Job Oriented SAP Training in {city}",
-      description:
-        "Description: SAP Project Systems is a critical module within SAP ERP that focuses on managing projects across industries, ensuring efficient planning, execution, and control. With Connecting Dots ERP's SAP PS course in {city}, you'll learn how to streamline project management processes and gain practical skills to handle everything from project structuring to resource allocation and reporting. Our course is backed by expert trainers and real-world projects, this course is designed to make you proficient in project management roles.",
-      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
-      features: ["Live Class", "1:1 mentorship", "Industry projects"],
-      alumni: [
-        // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
-      ],
-      buttons: [
-        { text: "Request Call back", courseName: "SAP PS Program" },
-        { text: "Download Syllabus", courseName: "Book Live Demo" },
-      ],
-      form: {
-        // Used in: Header form component
-        title: "Book a FREE live class",
-        inputs: [
-          { type: "text", name: "name", placeholder: "Enter your name" },
-          { type: "email", name: "email", placeholder: "Enter your Email" },
-          { type: "location", name: "location", placeholder: "Select your location" },
-          { type: "course", name: "course", placeholder: "Select course" },
-          {
-            type: "tel",
-            name: "contactname",
-            placeholder: "Enter your phone number",
-            countryCode: "+91",
-          },
-        ],
-        submitText: "Book Live Class",
-      },
-    },
+    header: dsHeaderData['psheader']['PSHeader'],
 
     // Data for Why Component
-    why: {
-      title: "Why SAP PS ?",
-      cards: [
-        {
-          title: 'What is <span class="highlight-span-cards">SAP PS?</span>',
-          content:
-            "SAP Project Systems (SAP PS) is an integrated project management module that enables businesses to plan, monitor, and control projects effectively. It provides tools for project planning, execution, and reporting, ensuring that all project phases are tracked and managed efficiently. The SAP PS training in {city} helps you with the development of skills to manage complex projects, optimize resources, and ensure on-time delivery.",
-        },
-        {
-          title:
-            'What does a <span class="highlight-span-cards">SAP PS Consultant</span> do?',
-          content:
-            "A SAP PS Consultant implements and manages SAP PS solutions, ensuring efficient project planning, execution, and control.",
-          listItems: [
-            "Implement and manage SAP PS modules.",
-            "Optimize project planning and execution.",
-            "Ensure timely project delivery.",
-          ],
-        },
-        {
-          title:
-            'Why take <span class="highlight-span-cards">SAP PS</span> training?',
-          content:
-            "With companies increasingly focusing on project management to achieve business objectives, the demand for SAP PS Consultants is growing rapidly. Enrolling in SAP PS training in {city}, you with hands-on experience in planning, budgeting, execution, and controlling large-scale projects. Our training program is designed to make you job-ready with practical and real-world knowledge.",
-          listItems: [
-            "SAP PS Consultant",
-            "Project Manager",
-            "Project Planner",
-          ],
-        },
-      ],
-    },
+    why: whyData['Whyps']['WhyPS'],
 
     // Data for SapModComponent (course-specific syllabus)
     sapMod: {
@@ -6128,77 +5266,10 @@ export const coursesData = {
 
     // === COMPONENT DATA ===
     // Data for Header Component (DSHeader)
-    header: {
-      title: "SAP QM Course in {city}",
-      subtitle: "Practical Based Job Oriented SAP Training in {city}",
-      description:
-        "SAP Quality Management is a very important module in SAP ERP, designed to streamline and optimize the quality control processes across the globe. With Connecting Dots ERP, the SAP QM course in {city} will provide you with advanced knowledge and practical skills to manage audits, quality inspections, and compliance within manufacturing and supply chain operations of various industries with numerous case studies.",
-      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
-      features: ["Live Class", "1:1 mentorship", "Industry projects"],
-      alumni: [
-        // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
-      ],
-      buttons: [
-        { text: "Request Call back", courseName: "SAP QM Program" },
-        { text: "Download Syllabus", courseName: "Book Live Demo" },
-      ],
-      form: {
-        // Used in: Header form component
-        title: "Book a FREE live class",
-        inputs: [
-          { type: "text", name: "name", placeholder: "Enter your name" },
-          { type: "email", name: "email", placeholder: "Enter your Email" },
-          { type: "location", name: "location", placeholder: "Select your location" },
-          { type: "course", name: "course", placeholder: "Select course" },
-          {
-            type: "tel",
-            name: "contactname",
-            placeholder: "Enter your phone number",
-            countryCode: "+91",
-          },
-        ],
-        submitText: "Book Live Class",
-      },
-    },
+    header: dsHeaderData['qmheader']['QMHeader'],
 
     // Data for Why Component
-    why: {
-      title: "Why SAP QM ?",
-      cards: [
-        {
-          title: 'What is <span class="highlight-span-cards">SAP QM?</span>',
-          content:
-            "SAP Quality Management or SAP QM is a module that focuses on the quality planning, inspection, and control processes among all industries. It helps maintain consistent product quality, reduce errors, and help you comply with industry standards and regulations. The SAP QM training in {city} provided by Connecting Dots ERP trains professionals in the effective implementation of quality management strategies, procurement, and inventory management.",
-        },
-        {
-          title:
-            'What does a <span class="highlight-span-cards">SAP QM Consultant</span> do?',
-          content:
-            "A SAP QM Consultant implements and manages SAP QM solutions, ensuring high-quality standards in production and procurement processes.",
-          listItems: [
-            "Implement and manage SAP QM modules.",
-            "Optimize quality processes.",
-            "Ensure compliance with quality standards.",
-          ],
-        },
-        {
-          title:
-            'Why take <span class="highlight-span-cards">SAP QM</span> training?',
-          content:
-            "The demand for SAP QM Consultants is growing as businesses focus more on quality control and compliance. By enrolling in the SAP QM course in {city} with Connecting Dots ERP, you will gain hands-on experience with real-world scenarios in quality management. We are preparing you for roles that require proficiency in planning, inspections, and audits. This practical training ensures you are job-ready, with placement support to help your career.",
-          listItems: [
-            "SAP QM Consultant",
-            "Quality Manager",
-            "Compliance Specialist",
-          ],
-        },
-      ],
-    },
+    why: whyData['Whyqm']['WhyQM'],
 
     // Data for SapModComponent (course-specific syllabus)
     sapMod: {
@@ -6563,77 +5634,10 @@ export const coursesData = {
 
     // === COMPONENT DATA ===
     // Data for Header Component (DSHeader)
-    header: {
-      title: "SAP SCM Course in {city}",
-      subtitle: "Practical Based Job Oriented SAP Training in {city}",
-      description:
-        "SAP Supply Chain Management (SCM) is an essential module within SAP that enables businesses to efficiently manage their supply chain processes, from procurement to product delivery. Connecting Dots ERP’s SAP SCM course in {city} offers an advanced learning experience, equipping you with skills in supply chain planning, logistics, and order fulfillment. Learn from industry experts with practical, hands-on sessions that prepare you for real-world challenges.",
-      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
-      features: ["Live Class", "1:1 mentorship", "Industry projects"],
-      alumni: [
-        // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
-      ],
-      buttons: [
-        { text: "Request Call back", courseName: "SAP SCM Program" },
-        { text: "Download Syllabus", courseName: "Book Live Demo" },
-      ],
-      form: {
-        // Used in: Header form component
-        title: "Book a FREE live class",
-        inputs: [
-          { type: "text", name: "name", placeholder: "Enter your name" },
-          { type: "email", name: "email", placeholder: "Enter your Email" },
-          { type: "location", name: "location", placeholder: "Select your location" },
-          { type: "course", name: "course", placeholder: "Select course" },
-          {
-            type: "tel",
-            name: "contactname",
-            placeholder: "Enter your phone number",
-            countryCode: "+91",
-          },
-        ],
-        submitText: "Book Live Class",
-      },
-    },
+    header: dsHeaderData['scmheader']['SCMHeader'],
 
     // Data for Why Component
-    why: {
-      title: "Why SAP SCM?",
-      cards: [
-        {
-          title: 'What is <span class="highlight-span-cards">SAP SCM?</span>',
-          content:
-            "SAP Supply Chain Management (SAP SCM) is a versatile module designed to help businesses manage their entire supply chain, including planning, forecasting, procurement, production, and logistics. SAP SCM integrates with other SAP modules to provide seamless operations across the business. By enrolling in our SAP SCM training in {city}, you'll gain the expertise needed to optimize and streamline supply chain processes, reducing costs and improving overall efficiency.",
-        },
-        {
-          title:
-            'What does a <span class="highlight-span-cards">SAP SCM Consultant</span> do?',
-          content:
-            "A SAP SCM Consultant implements and manages SAP SCM solutions, ensuring efficient supply chain operations from procurement to delivery.",
-          listItems: [
-            "Implement and manage SAP SCM modules.",
-            "Optimize supply chain processes.",
-            "Ensure efficient procurement and distribution.",
-          ],
-        },
-        {
-          title:
-            'Why take <span class="highlight-span-cards">SAP SCM</span> training?',
-          content:
-            "In today’s competitive landscape, businesses need efficient supply chain operations to remain competitive. The SAP SCM course in {city} offers you deep insights and practical skills to manage end-to-end supply chain activities, from demand planning to logistics execution. Our training program provides hands-on experience, preparing you for high-demand roles in supply chain management.",
-          listItems: [
-            "SAP SCM Consultant",
-            "Supply Chain Manager",
-            "Logistics Specialist",
-          ],
-        },
-      ],
-    },
+    why: whyData['Whyscm']['WhySCM'],
 
     // Data for SapModComponent (course-specific syllabus)
     sapMod: {
@@ -7016,77 +6020,10 @@ export const coursesData = {
 
     // === COMPONENT DATA ===
     // Data for Header Component (DSHeader)
-    header: {
-      title: "SAP SD Course in {city}",
-      subtitle: "Practical Based Job Oriented SAP Training in {city}",
-      description:
-        "Enroll in the best SAP SD course in {city} and master sales & distribution with expert-led training. Our SAP SD training in {city} offers real-time projects, industry-relevant curriculum, and 100% placement support to launch your career in SAP SD modules.",
-      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
-      features: ["Live Class", "1:1 mentorship", "Industry projects"],
-      alumni: [
-        // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
-      ],
-      buttons: [
-        { text: "Request Call back", courseName: "SAP SD Program" },
-        { text: "Download Syllabus", courseName: "Book Live Demo" },
-      ],
-      form: {
-        // Used in: Header form component
-        title: "Book a FREE live class",
-        inputs: [
-          { type: "text", name: "name", placeholder: "Enter your name" },
-          { type: "email", name: "email", placeholder: "Enter your Email" },
-          { type: "location", name: "location", placeholder: "Select your location" },
-          { type: "course", name: "course", placeholder: "Select course" },
-          {
-            type: "tel",
-            name: "contactname",
-            placeholder: "Enter your phone number",
-            countryCode: "+91",
-          },
-        ],
-        submitText: "Book Live Class",
-      },
-    },
+    header: dsHeaderData['sdheader']['SDHeader'],
 
     // Data for Why Component
-    why: {
-      title: "Why SAP SD ?",
-      cards: [
-        {
-          title: 'What is <span class="highlight-span-cards">SAP SD?</span>',
-          content:
-            "SAP SD (Sales and Distribution) is a key module in SAP ERP that manages the entire sales process, from order creation to product delivery and billing. It includes functionalities such as sales order management, pricing, shipping, billing, and credit management, helping businesses optimize and automate their sales operations. SAP SD is essential for businesses to manage customer relationships efficiently and ensure smooth product delivery and payment processes. It also integrates with other SAP modules like SAP MM (Materials Management) and SAP FICO (Financial Accounting and Controlling) for a comprehensive business solution.",
-        },
-        {
-          title:
-            'What does a <span class="highlight-span-cards">SAP SD Consultant</span> do?',
-          content:
-            "SAP SD training is essential because SAP SD Consultants play a key role in optimizing sales and distribution processes within organizations. With our SAP SD training in {city}, you'll gain expertise in areas like sales order processing, pricing strategies, shipping, and delivery management using SAP SD. This course prepares you for high-demand roles.",
-          listItems: [
-            "Implement and manage SAP SD modules.",
-            "Optimize sales and distribution processes.",
-            "Ensure accurate order processing and delivery.",
-          ],
-        },
-        {
-          title:
-            'Why take <span class="highlight-span-cards">SAP SD</span> training?',
-          content:
-            "SAP SD training is essential because SAP SD Consultants play a key role in optimizing sales and distribution processes within organizations. With our SAP SD training in {city}, you'll gain expertise in areas like sales order processing, pricing strategies, shipping, and delivery management using SAP SD. This course prepares you for high-demand roles.",
-          listItems: [
-            "SAP SD Consultant",
-            "Sales Manager",
-            "Distribution Specialist",
-          ],
-        },
-      ],
-    },
+    why: whyData['Whysd']['WhySD'],
 
     // Data for SapModComponent (course-specific syllabus)
     sapMod: {
@@ -7472,78 +6409,10 @@ export const coursesData = {
 
     // === COMPONENT DATA ===
     // Data for Header Component (DSHeader)
-    header: {
-      title: "SAP Succesfactor Course in {city}",
-      subtitle: "Practical Based Job Oriented SAP Training in {city}",
-      description:
-        "SAP SuccessFactors is a top cloud-based human capital management or SAP HCM solution that helps organizations manage their workforce and optimize HR processes. Our SAP SuccessFactors course in {city} equips you with the skills to manage talent acquisition, employee performance, learning management, and workforce analytics.",
-      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
-      features: ["Live Class", "1:1 mentorship", "Industry projects"],
-      alumni: [
-        // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
-      ],
-      buttons: [
-        { text: "Request Call back", courseName: "SAP Succesfactor Program" },
-        { text: "Download Syllabus", courseName: "Book Live Demo" },
-      ],
-      form: {
-        // Used in: Header form component
-        title: "Book a FREE live class",
-        inputs: [
-          { type: "text", name: "name", placeholder: "Enter your name" },
-          { type: "email", name: "email", placeholder: "Enter your Email" },
-          { type: "location", name: "location", placeholder: "Select your location" },
-          { type: "course", name: "course", placeholder: "Select course" },
-          {
-            type: "tel",
-            name: "contactname",
-            placeholder: "Enter your phone number",
-            countryCode: "+91",
-          },
-        ],
-        submitText: "Book Live Class",
-      },
-    },
+    header: dsHeaderData['sdheader']['SDHeader'],
 
     // Data for Why Component
-    why: {
-      title: "Why SAP SUCCESSFACTOR ?",
-      cards: [
-        {
-          title:
-            'What is <span class="highlight-span-cards">SAP SuccessFactors?</span>',
-          content:
-            "SAP SuccessFactors is a detailed HCM suite designed to manage human resources efficiently. It covers various HR functionalities such as recruitment, employee onboarding, performance management, and payroll. The SAP SuccessFactors training in {city} provides you with the expertise to automate and streamline HR processes while ensuring compliance with modern HR standards and best practices.",
-        },
-        {
-          title:
-            'What does a <span class="highlight-span-cards">SAP SuccessFactors Consultant</span> do?',
-          content:
-            "A SAP SuccessFactors Consultant implements and manages SuccessFactors solutions, ensuring efficient HR processes from recruitment to performance management.",
-          listItems: [
-            "Implement and manage SAP SuccessFactors modules.",
-            "Optimize HR processes.",
-            "Ensure effective talent management.",
-          ],
-        },
-        {
-          title:
-            'Why take <span class="highlight-span-cards">SAP SuccessFactors</span> training?',
-          content:
-            "As more businesses transition to cloud-based HR solutions, the demand for SAP SuccessFactors consultants and HR professionals skilled in this tool is rapidly increasing. The SAP SuccessFactors course in {city} offers practical experience in implementing and managing HCM processes, empowering you with the tools to enhance employee engagement, performance, and retention in any organization.",
-          listItems: [
-            "SAP SuccessFactors Consultant",
-            "HR Manager",
-            "Talent Management Specialist",
-          ],
-        },
-      ],
-    },
+    why: whyData['Whysucc']['WhySucc'],
 
     // Data for SapModComponent (course-specific syllabus)
     sapMod: {
@@ -7583,7 +6452,7 @@ export const coursesData = {
               "Upgrade Center",
             ],
           },
-          
+
           {
             title: "SAP & HCM FOUNDATION ",
 
@@ -7736,7 +6605,7 @@ export const coursesData = {
 
               "Post Go-Live Support",
             ],
-          },          
+          },
         ],
       },
       videoUrl: "https://i.imgur.com/8wkvVyH.mp4",
@@ -7939,76 +6808,10 @@ export const coursesData = {
 
     // === COMPONENT DATA ===
     // Data for Header Component (DSHeader)
-    header: {
-      title: "Software Training in {city} with placement support",
-      subtitle:
-        "Get Certified with the advance IT training institute in {city}",
-      description:
-        "Connecting Dots ERP offers an advanced IT course in {city} designed to equip you with the essential skills to excel in the fast-evolving tech industry. Our advance and detailed training program covers key modules such as Data Science, Data Analytics, Python, and Java, ensuring you gain the expertise to work with cutting-edge technologies and solve complex business problems. By mastering these modules, you'll be prepared to take on roles like Data Scientist, Data Analyst, Python Developer, and Java Developer. Our course is tailored to help you build a strong foundation and land your dream job in the dynamic field of IT.",
-      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
-      features: ["Live Class", "1:1 mentorship", "Industry projects"],
-      alumni: [
-        // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
-      ],
-      buttons: [
-        { text: "Request Call back", courseName: "IT Training Program" },
-        { text: "Download Syllabus", courseName: "Book Live Demo" },
-      ],
-      form: {
-        // Used in: Header form component
-        title: "Book a FREE live class",
-        inputs: [
-          { type: "text", name: "name", placeholder: "Enter your name" },
-          { type: "email", name: "email", placeholder: "Enter your Email" },
-          { type: "location", name: "location", placeholder: "Select your location" },
-          { type: "course", name: "course", placeholder: "Select course" }, ,
-          {
-            type: "tel",
-            name: "contactname",
-            placeholder: "Enter your phone number",
-            countryCode: "+91",
-          },
-        ],
-        submitText: "Book Live Class",
-      },
-    },
+    header: dsHeaderData['itcoursesheader']['ITcoursesHeader'],
 
     // Data for Why Component
-    why: {
-      title: "What is Software Development Course in {city}?",
-      cards: [
-        {
-          title:
-            'What is <span class="highlight-span-cards">Software Development</span>?',
-          content:
-            "Software development is a vital function in today's technology-driven world, responsible for creating applications, systems, and solutions that drive innovation and business growth. Effective software development ensures that organizations can meet customer needs, improve efficiency, and stay competitive in the digital age. If you're looking to build a career in software development, our software course in {city} offers comprehensive training in core software development concepts and practices. You'll gain a deep understanding of programming languages like Python, Java, and more, along with key topics such as software architecture, web development, databases, and data structures. Our course is designed to equip you with the skills and knowledge needed to succeed in the fast-evolving software development industry.",
-        },
-        {
-          title:
-            'What does a <span class="highlight-span-cards">Software Developer</span> do?',
-          content:
-            "A Software Developer is responsible for designing, coding, testing, and maintaining software applications and systems within an organization. Their role involves creating solutions to meet business needs, optimizing performance, and ensuring the functionality of applications across various platforms. Key responsibilities include software development, debugging, database management, user interface design, and collaborating with teams to deliver high-quality code. By mastering these technical skills, software developers contribute to the overall success and innovation of an organization. If you're looking to launch your career in software development, our IT training in {city} offers comprehensive courses in programming, web development, data structures, and more to help you become a proficient software developer.",
-        },
-        {
-          title:
-            'Why Take <span class="highlight-span-cards">IT Training</span> in {city}?',
-          content:
-            "A Software Developer must possess a diverse skill set to design, develop, and maintain high-quality applications. Our IT training in {city} offers advanced training in key software development modules, preparing you to handle end-to-end software development processes, from coding to deployment. You will gain hands-on experience in programming languages like Python, Java, and web development frameworks, as well as in debugging, database management, and version control. Upon completing the course, you will be qualified to take on roles such as:",
-          listItems: [
-            "Software Developer",
-            "Full Stack Developer",
-            "Front-End Developer",
-            "Back-End Developer",
-            "Java/Python Developer",
-          ],
-        },
-      ],
-    },
+    why: whyData['Whyit']['WhyIT'],
 
     // Data for Certificate Component
     certificate: {
@@ -8220,79 +7023,10 @@ export const coursesData = {
 
     // === COMPONENT DATA ===
     // Data for Header Component (DSHeader)
-    header: {
-      title: "Business Analytics Course in {city}",
-      subtitle:
-        "Take advantage of the Business Analytics Training Certificate Course to advance your profession quickly",
-      description:
-        "The Connecting Dots ERP's Business Analytics Course in {city} is intended to give students the tools they need to succeed in the industry. Important subjects covered in the course include business intelligence, data visualization, data analysis, and predictive analytics. Our business analytics training in {city} guarantees that you are ready for opportunities in prestigious firms that focus on data-driven decision-making careers by giving you practical experience working with real-world business data.",
-      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
-      features: ["Live Class", "1:1 mentorship", "Industry projects"],
-      alumni: [
-        // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
-      ],
-      buttons: [
-        { text: "Request Call back", courseName: "Business Analytics Program" },
-        { text: "Download Syllabus", courseName: "Book Live Demo" },
-      ],
-      form: {
-        // Used in: Header form component
-        title: "Book a FREE live class",
-        inputs: [
-          { type: "text", name: "name", placeholder: "Enter your name" },
-          { type: "email", name: "email", placeholder: "Enter your Email" },
-          { type: "location", name: "location", placeholder: "Select your location" },
-          { type: "course", name: "course", placeholder: "Select course" }, ,
-          {
-            type: "tel",
-            name: "contactname",
-            placeholder: "Enter your phone number",
-            countryCode: "+91",
-          },
-        ],
-        submitText: "Book Live Class",
-      },
-    },
+    header: dsHeaderData['BApage']['BAHeader'],
 
     // Data for Why Component
-    why: {
-      title: "Why Business Analytics?",
-      cards: [
-        {
-          title:
-            'What is <span class="highlight-span-cards">Business Analytics?</span>',
-          content:
-            "Business analytics is a field of study that uses statistical techniques, predictive modeling, and data analysis to evaluate and interpret business data to make strategic decisions. To prepare students for careers as business analysts, data analysts, and business intelligence analysts, the Business Analytics Course in {city} focuses on teaching students how to use data to solve practical business problems. This course provides you with the skills necessary to convert data into useful business insights, with a curriculum designed with {city}'s thriving business community in mind.",
-        },
-        {
-          title:
-            'What does a <span class="highlight-span-cards">Business Analyst</span> do?',
-          content:
-            "Business analysts are essential in helping organizations make data-driven choices. They use techniques like statistical analysis, data visualization, and predictive modeling to evaluate corporate data to find patterns, opportunities, and difficulties. Business analysts work with several departments to guarantee the successful execution of data-driven plans.",
-          listItems: [
-            "Identify and collect data from various business operations.",
-            "Analyze business data to uncover trends and insights.",
-            "Formulate strategies to solve business challenges using data insights.",
-          ],
-        },
-        {
-          title:
-            'Why take <span class="highlight-span-cards">Business Analytics</span> training?',
-          content:
-            "Business Analysts are key to driving business success. Our course teaches you to use data analytics, statistical tools, and business intelligence for optimal business outcomes.",
-          listItems: [
-            "Business Analyst",
-            "Management Consultant",
-            "Data Analyst",
-          ],
-        },
-      ],
-    },
+    why: whyData['Whyba']['WhyBA'],
 
     // Data for Modules Component (course-specific curriculum)
     modulesData: {
@@ -8760,75 +7494,10 @@ export const coursesData = {
 
     // === COMPONENT DATA ===
     // Data for Header Component (DSHeader)
-    header: {
-      title: "Data Analytics Course in {city}",
-      subtitle:
-        "Practical Based Job Oriented Data Analytics Training in {city}",
-      description:
-        "To evaluate both structured and unstructured data and turn it into insights that can be put to use, the Data Analytics Course in {city} focuses on teaching the methods and resources needed. In addition to focusing on developing abilities in data mining, predictive analysis, and statistical modeling, this program prepares graduates for positions as data scientists, analysts, and business analysts.",
-      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
-      features: ["Live Class", "1:1 mentorship", "Industry projects"],
-      alumni: [
-        // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
-      ],
-      buttons: [
-        { text: "Request Call back", courseName: "Data Analytics Program" },
-        { text: "Download Syllabus", courseName: "Book Live Demo" },
-      ],
-      form: {
-        // Used in: Header form component
-        title: "Book a FREE live class",
-        inputs: [
-          { type: "text", name: "name", placeholder: "Enter your name" },
-          { type: "email", name: "email", placeholder: "Enter your Email" },
-          { type: "location", name: "location", placeholder: "Select your location" },
-          { type: "course", name: "course", placeholder: "Select course" }, ,
-          {
-            type: "tel",
-            name: "contactname",
-            placeholder: "Enter your phone number",
-            countryCode: "+91",
-          },
-        ],
-        submitText: "Book Live Class",
-      },
-    },
+    header: dsHeaderData['MDApage']['MDAHeader'],
 
     // Data for Why Component
-    why: {
-      title: "Why Data Analytics?",
-      cards: [
-        {
-          title:
-            'What is <span class="highlight-span-cards">Data Analytics?</span>',
-          content:
-            "Teaching the methods and resources needed to evaluate both structured and unstructured data and turn it into insights that can be put to use is the main goal of the data analytics course. Graduates of this program are prepared for positions as business analysts, data scientists, and analysts of data, with an emphasis on developing skills in statistical modeling, data mining, and predictive analysis.",
-        },
-        {
-          title:
-            'What does a <span class="highlight-span-cards">Data Analyst</span> do?',
-          content:
-            "A data scientist analyzes data to provide actionable insights for various processes. They possess strong statistical, analytical, and technical skills to work with structured and unstructured data.",
-          listItems: [
-            "Identify and gather relevant data from various sources",
-            "Analyze data to extract meaningful insights",
-            "Develop data-driven strategies to address business challenges",
-          ],
-        },
-        {
-          title:
-            'Why take <span class="highlight-span-cards">Data Analytics</span> training?',
-          content:
-            "Our Data Analytics Certification Course in {city} focuses on providing the technical skills needed to handle large datasets, design data models, and communicate insights effectively. By mastering data manipulation and visualization, you can solve complex business challenges and optimize operations.",
-          listItems: ["Data Analyst", "Business Analyst", "Operations Analyst"],
-        },
-      ],
-    },
+    why: whyData['Whyda']['WhyDA'],
 
     // Data for Modules Component (course-specific curriculum)
 
@@ -9278,77 +7947,10 @@ export const coursesData = {
 
     // === COMPONENT DATA ===
     // Data for Header Component (DSHeader)
-    header: {
-      title: "Data Science Course in {city}",
-      subtitle:
-        "We invite you to attend the Best Data Science Certification Program in {city}",
-      description:
-        "The complete Data Science Course in {city} given by Connecting Dots ERP is meant to give students the tools they need to succeed in the area. Predictive analytics, machine learning, data visualization, and data analysis are some of the important subjects covered in the course. With practical experience working with real-world data, our data science training in {city} makes sure you are ready for opportunities in top firms that focus on data-driven careers",
-      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
-      features: ["Live Class", "1:1 mentorship", "Industry projects"],
-      alumni: [
-        // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
-      ],
-      buttons: [
-        { text: "Request Call back", courseName: "Data Science Program" },
-        { text: "Download Syllabus", courseName: "Book Live Demo" },
-      ],
-      form: {
-        // Used in: Header form component
-        title: "Book a FREE live class",
-        inputs: [
-          { type: "text", name: "name", placeholder: "Enter your name" },
-          { type: "email", name: "email", placeholder: "Enter your Email" },
-          {
-            type: "tel",
-            name: "contactname",
-            placeholder: "Enter your phone number",
-            countryCode: "+91",
-          },
-        ],
-        submitText: "Book Live Class",
-      },
-    },
+    header: dsHeaderData['MDSpage']['MDSHeader'],
 
     // Data for Why Component
-    why: {
-      title: "Why Data Science?",
-      cards: [
-        {
-          title:
-            'What is <span class="highlight-span-cards">Data Science?</span>',
-          content:
-            "The multidisciplinary subject of data science, which involves using systems, scientific techniques, and algorithms to extract knowledge and insights from both organized and unstructured data, is the emphasis of the data science course. With a focus on using data to solve actual business problems, this Data Science training in {city} trains graduates for positions like data scientist, data analyst, and machine learning engineer.",
-        },
-        {
-          title:
-            'What does a <span class="highlight-span-cards">Data Scientist</span> do?',
-          content:
-            "To provide meaningful insights and facilitate data-driven decision-making, data scientists examine huge datasets. To find trends and resolve business issues, they apply machine learning, statistical analysis, and data visualization approaches. They guarantee the successful implementation of data-driven solutions by working together with different departments.",
-          listItems: [
-            "Identify data sources and collect data.",
-            "Analyze data effectively.",
-            "Formulate strategies to solve business challenges.",
-          ],
-        },
-        {
-          title:
-            'Why take <span class="highlight-span-cards">Data Science</span> training?',
-          content:
-            "As businesses depend more and more on data-driven decision-making, data science specialists are in great demand. Our Data Science Certification Course in {city} places a strong emphasis on critical competencies like data analysis, machine learning, and data visualization, enabling learners to extract actionable insights and forecast models from massive datasets.",
-          listItems: [
-            "Data Scientist",
-            "Data Analyst",
-            "Machine Learning Engineer",
-          ],
-        },
-      ],
-    },
+    why: whyData['Whyds']['WhyDS'],
 
     // Data for Modules Component (course-specific curriculum)
     modulesData: {
@@ -10135,78 +8737,10 @@ export const coursesData = {
 
     // === COMPONENT DATA ===
     // Data for Header Component (DSHeader)
-    header: {
-      title: "Full stack training in {city}",
-      subtitle: "Project-based Job Oriented Full stack course in {city}",
-      description:
-        "Grow your potential with Connecting Dot's Full Stack course in {city}, where you'll learn essential development skills for a successful tech career. With hands-on training and secure placement support, this course equips you to thrive in the ever-evolving world of full-stack development.",
-      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
-      features: ["Live Class", "1:1 mentorship", "Industry projects"],
-      alumni: [
-        // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
-      ],
-      buttons: [
-        { text: "Request Call back", courseName: "Full Stack Program" },
-        { text: "Download Syllabus", courseName: "Book Live Demo" },
-      ],
-      form: {
-        // Used in: Header form component
-        title: "Book a FREE live class",
-        inputs: [
-          { type: "text", name: "name", placeholder: "Enter your name" },
-          { type: "email", name: "email", placeholder: "Enter your Email" },
-          { type: "location", name: "location", placeholder: "Select your location" },
-          { type: "course", name: "course", placeholder: "Select course" }, ,
-          {
-            type: "tel",
-            name: "contactname",
-            placeholder: "Enter your phone number",
-            countryCode: "+91",
-          },
-        ],
-        submitText: "Book Live Class",
-      },
-    },
+    header: dsHeaderData['fullstackheader']['FullStackHeader'],
 
     // Data for Why Component
-    why: {
-      title: "Why FULL STACK TRAINING ?",
-      cards: [
-        {
-          title:
-            'What is <span class="highlight-span-cards">Full Stack Development?</span>',
-          content:
-            "Full stack development refers to the ability to work on both front-end and back-end of a website or application, covering everything from user interfaces to databases. It's a highly sought-after skill in the tech industry, enabling developers to build functional web solutions. Learn full stack development course to become an asset in today's digital landscape.",
-        },
-        {
-          title:
-            'What does a <span class="highlight-span-cards">Full Stack Developer</span> do?',
-          content:
-            "A Full Stack Developer is proficient in both front-end and back-end development. They work on server, networking, and hosting environments as well as client interfaces.",
-          listItems: [
-            "Design and develop web applications.",
-            "Work on databases, servers, and front-end.",
-            "Ensure cross-platform functionality.",
-          ],
-        },
-        {
-          title:
-            'Why take <span class="highlight-span-cards">Full Stack</span> training?',
-          content:
-            "Full Stack Developers are in high demand in today's high-tech world. Our full stack training in {city} covers all aspects of web development and application development, from front-end to back-end, preparing you for the jobs like:",
-          listItems: [
-            "Full Stack Developer",
-            "Web Developer",
-            "Software Engineer",
-          ],
-        },
-      ],
-    },
+    why: whyData['Whyfullstack']['WhyFullStack'],
 
     // Data for Modules Component (course-specific curriculum)
     modulesData: {
@@ -10665,79 +9199,10 @@ export const coursesData = {
 
     // === COMPONENT DATA ===
     // Data for Header Component (DSHeader)
-    header: {
-      title: "Artificial Intelligence Course in {city}",
-      subtitle:
-        "We invite you to attend the Best Artificial Intelligence Certification Program in {city}",
-      description:
-        "Connecting Dots ERP's extensive Artificial Intelligence Course in {city} aims to give students the abilities they need to succeed in AI. The course covers important subjects, including AI-driven automation, machine learning, deep learning, and natural language processing. With practical experience working on actual ChatGPT and AI projects, our AI training in {city} guarantees that you are ready for employment prospects in prestigious companies that value innovation and AI-powered solutions",
-      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
-      features: ["Live Class", "1:1 mentorship", "Industry projects"],
-      alumni: [
-        // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
-      ],
-      buttons: [
-        { text: "Request Call back", courseName: "Generative AI" },
-        { text: "Download Syllabus", courseName: "Book Live Demo" },
-      ],
-      form: {
-        // Used in: Header form component
-        title: "Book a FREE live class",
-        inputs: [
-          { type: "text", name: "name", placeholder: "Enter your name" },
-          { type: "email", name: "email", placeholder: "Enter your Email" },
-          { type: "location", name: "location", placeholder: "Select your location" },
-          { type: "course", name: "course", placeholder: "Select course" }, ,
-          {
-            type: "tel",
-            name: "contactname",
-            placeholder: "Enter your phone number",
-            countryCode: "+91",
-          },
-        ],
-        submitText: "Book Live Class",
-      },
-    },
+    header: dsHeaderData['GPTpage']['GPTHeader'],
 
     // Data for Why Component
-    why: {
-      title: "Why Generative AI?",
-      cards: [
-        {
-          title:
-            'What is <span class="highlight-span-cards">ChatGPT and AI?</span>',
-          content:
-            "The course on artificial intelligence (AI) focuses on the multidisciplinary field of AI, which creates systems that can mimic human intellect by utilizing machine learning, neural networks, and algorithms. With these Artificial Intelligence Courses in {city}, graduates can become machine learning engineers, AI analysts, and AI engineers by learning how to use AI to solve complicated real-world problems. The focus of the course is on using AI to create clever answers to contemporary business problems.",
-        },
-        {
-          title:
-            'What does an <span class="highlight-span-cards">AI Developer</span> do?',
-          content:
-            "AI engineers are in charge of creating AI models that assist businesses in streamlining operations and improving decision-making. To create intelligent systems, they leverage natural language processing, deep learning methods, and machine learning algorithms. By working together across departments, they make sure AI-driven solutions are implemented successfully.",
-          listItems: [
-            "Identify AI-driven opportunities within data.",
-            "Develop AI models to enhance decision-making.",
-            "Solve business challenges using AI and machine learning techniques.",
-          ],
-        },
-        {
-          title:
-            'Why take <span class="highlight-span-cards">AI</span> training?',
-          content:
-            "Industry revolutions driven by AI are creating a significant demand for professionals with AI experience. The focus of our Artificial Intelligence Certification Course in {city} is on critical competencies such as natural language processing, deep learning, and machine learning. These give students the ability to develop AI-driven models that address challenging issues in a variety of industries and offer insightful information.",
-          listItems: [
-            "AI Developer",
-            "Machine Learning Engineer",
-            "Data Scientist",
-          ],
-        },
-      ],
-    },
+    why: whyData['Whygpt']['WhyGPT'],
 
     // Data for Modules Component (course-specific curriculum)
     modulesData: {
@@ -11190,78 +9655,10 @@ export const coursesData = {
 
     // === COMPONENT DATA ===
     // Data for Header Component (DSHeader)
-    header: {
-      title: "Java Training Program in {city}",
-      subtitle: "Project-based Job Oriented Java Course in {city}",
-      description:
-        "Grow your career with Connecting Dots ERP's Java course in {city}, designed to equip you with essential programming skills for a successful tech career. With hands-on training and job placement support, this course prepares you to thrive in the competitive world of Java development.",
-      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
-      features: ["Live Class", "1:1 mentorship", "Industry projects"],
-      alumni: [
-        // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
-      ],
-      buttons: [
-        { text: "Request Call back", courseName: "Java Training Program" },
-        { text: "Download Syllabus", courseName: "Book Live Demo" },
-      ],
-      form: {
-        // Used in: Header form component
-        title: "Book a FREE live class",
-        inputs: [
-          { type: "text", name: "name", placeholder: "Enter your name" },
-          { type: "email", name: "email", placeholder: "Enter your Email" },
-          { type: "location", name: "location", placeholder: "Select your location" },
-          { type: "course", name: "course", placeholder: "Select course" }, ,
-          {
-            type: "tel",
-            name: "contactname",
-            placeholder: "Enter your phone number",
-            countryCode: "+91",
-          },
-        ],
-        submitText: "Book Live Class",
-      },
-    },
+    header: dsHeaderData['javaheader']['JavaHeader'],
 
     // Data for Why Component
-    why: {
-      title: "Why Java ?",
-      cards: [
-        {
-          title:
-            'What is <span class="highlight-span-cards">Java Development?</span>',
-          content:
-            "Java development focuses on creating robust, scalable applications using the Java programming language. It's one of the most in-demand skills in the IT industry, enabling developers to build everything from mobile apps to enterprise software. Learn Java development course in {city} to become a versatile asset in today's tech-driven world.",
-        },
-        {
-          title:
-            'What does a <span class="highlight-span-cards">Java Developer</span> do?',
-          content:
-            "A Java Developer designs and develops applications using Java. They work on building scalable, high-performance applications that can handle large volumes of data.",
-          listItems: [
-            "Design and develop Java applications.",
-            "Maintain and optimize existing applications.",
-            "Ensure application performance and scalability.",
-          ],
-        },
-        {
-          title:
-            'Why take <span class="highlight-span-cards">Java</span> training?',
-          content:
-            "Java Developers are in high demand across various industries. Our Java training in {city} covers all aspects of Java development, from core Java to advanced frameworks, preparing you for jobs like:",
-          listItems: [
-            "Java Developer",
-            "Software Engineer",
-            "Backend Developer",
-          ],
-        },
-      ],
-    },
+    why: whyData['Whyjava']['WhyJava'],
 
     // Data for Modules Component (course-specific curriculum)
     modulesData: {
@@ -11717,80 +10114,10 @@ export const coursesData = {
 
     // === COMPONENT DATA ===
     // Data for Header Component (DSHeader)
-    header: {
-      title: "Python Training Program in {city}",
-      subtitle:
-        "Learn Our advanced Python Course in {city} with practical training",
-      description:
-        "Unlock new career opportunities with Connecting Dot's Python course in {city}, designed to help you master one of the most versatile programming languages. Through hands-on training, expert mentorship, and real-world projects, this course prepares you for a wide range of programming roles, making you proficient in Python development and data handling.",
-      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
-      features: ["Live Class", "1:1 mentorship", "Industry projects"],
-      alumni: [
-        // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
-      ],
-      buttons: [
-        { text: "Request Call back", courseName: "PYTHON Program" },
-        { text: "Download Syllabus", courseName: "Book Live Demo" },
-      ],
-      form: {
-        // Used in: Header form component
-        title: "Book a FREE live class",
-        inputs: [
-          { type: "text", name: "name", placeholder: "Enter your name" },
-          { type: "email", name: "email", placeholder: "Enter your Email" },
-          { type: "location", name: "location", placeholder: "Select your location" },
-          { type: "course", name: "course", placeholder: "Select course" }, ,
-          {
-            type: "tel",
-            name: "contactname",
-            placeholder: "Enter your phone number",
-            countryCode: "+91",
-          },
-        ],
-        submitText: "Book Live Class",
-      },
-    },
+    header: dsHeaderData['pythonheader']['PythonHeader'],
 
     // Data for Why Component
-    why: {
-      title: "Why Python?",
-      cards: [
-        {
-          title:
-            'What is <span class="highlight-span-cards">Python Development?</span>',
-          content:
-            "Python is a high-level, general-purpose programming language known for its simplicity and readability. It's widely used in web development, data science, machine learning, automation, and more. Learning Python in {city} will equip you with the skills to develop robust applications, work with data, and even create AI-powered solutions, making it one of the most in-demand skills in the tech industry.",
-        },
-        {
-          title:
-            'What does a <span class="highlight-span-cards">Python Developer</span> do?',
-          content:
-            "A Python Developer writes server-side web application logic, works on integrating front-end elements, and develops back-end components.",
-          listItems: [
-            "Write reusable and efficient code.",
-            "Implement security and data protection.",
-            "Integrate user-facing elements with server-side logic.",
-          ],
-        },
-        {
-          title:
-            'Why take <span class="highlight-span-cards">Python</span> training?',
-          content:
-            "Python developers are highly valued across industries due to the language's broad range of applications. Our Python training in {city} covers everything from basic syntax to advanced topics, preparing you for roles such as:",
-          listItems: [
-            "Python Developer",
-            "Data Analyst",
-            "Machine Learning Engineer",
-            "Web Developer",
-          ],
-        },
-      ],
-    },
+    why: whyData['Whypython']['WhyPython'],
 
     // Data for Modules Component (course-specific curriculum)
     modulesData: {
@@ -12236,79 +10563,10 @@ export const coursesData = {
 
     // === COMPONENT DATA ===
     // Data for Header Component (DSHeader)
-    header: {
-      title: "Advance Salesforce Training in {city}",
-      subtitle: "Join our Project-based Salesforce Training Program in {city}",
-      description:
-        "Accelerate your career with Connecting Dot's Salesforce course in {city}, designed to equip you with the essential skills required to master Salesforce CRM, one of the most in-demand platforms in the world. Through practical training and project-based learning, this course prepares you for a range of roles in CRM management, cloud solutions, and customer relationship management.",
-      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
-      features: ["Live Class", "1:1 mentorship", "Industry projects"],
-      alumni: [
-        // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
-      ],
-      buttons: [
-        { text: "Request Call back", courseName: "Salesforce Program" },
-        { text: "Download Syllabus", courseName: "Book Live Demo" },
-      ],
-      form: {
-        // Used in: Header form component
-        title: "Book a FREE live class",
-        inputs: [
-          { type: "text", name: "name", placeholder: "Enter your name" },
-          { type: "email", name: "email", placeholder: "Enter your Email" },
-          { type: "location", name: "location", placeholder: "Select your location" },
-          { type: "course", name: "course", placeholder: "Select course" }, ,
-          {
-            type: "tel",
-            name: "contactname",
-            placeholder: "Enter your phone number",
-            countryCode: "+91",
-          },
-        ],
-        submitText: "Book Live Class",
-      },
-    },
+    header: dsHeaderData['salesheader']['SalesHeader'],
 
     // Data for Why Component
-    why: {
-      title: "Why Salesforce ?",
-      cards: [
-        {
-          title:
-            'What is <span class="highlight-span-cards">Salesforce Development?</span>',
-          content:
-            "Salesforce is a cloud-based Customer Relationship Management (CRM) platform that helps businesses manage customer relationships, track sales, and automate services. It is widely used across industries to streamline operations and improve customer engagement. Learning Salesforce in {city} will give you the expertise to manage CRM solutions, sales processes, and customer service applications, making you a valuable asset for organizations looking to optimize their customer relationship strategies.",
-        },
-        {
-          title:
-            'What does a <span class="highlight-span-cards">Salesforce Developer</span> do?',
-          content:
-            "A Salesforce Developer creates custom applications, integrations, and functionalities on the Salesforce platform. They are skilled in using Apex, Visualforce, and other Salesforce technologies.",
-          listItems: [
-            "Develop custom Salesforce applications.",
-            "Integrate Salesforce with other systems.",
-            "Customize Salesforce functionalities.",
-          ],
-        },
-        {
-          title:
-            'Why take <span class="highlight-span-cards">Salesforce</span> training?',
-          content:
-            "Salesforce professionals are in high demand due to the widespread use of Salesforce CRM in industries ranging from retail to technology. Our Salesforce training in {city} covers all the essential modules, preparing you for roles such as:",
-          listItems: [
-            "Salesforce Administrator",
-            "CRM Consultant",
-            "Salesforce Business Analyst",
-            "Salesforce Developer",
-          ],
-        },
-      ],
-    },
+    why: whyData['Whysales']['WhySales'],
 
     // Data for Modules Component (course-specific curriculum)
     modulesData: {
@@ -12759,76 +11017,10 @@ export const coursesData = {
 
     // === COMPONENT DATA ===
     // Data for Header Component (DSHeader)
-    header: {
-      title: "Data Visualization Course in {city}",
-      subtitle:
-        "Get Certified with the Data Visualization training institute in {city}",
-      description:
-        "We offers an advanced Data Visualization course in {city} designed to equip you with the essential skills to excel in the fast-evolving field of data analytics and visualization. Our detailed training program covers key modules such as data visualization techniques, tools like Tableau, Power BI, and advanced Excel, as well as best practices for creating compelling, insightful visualizations from complex datasets. By mastering these modules, you will be prepared to take on roles such as Data Visualization Specialist, Business Intelligence Analyst, or Data Analyst.",
-      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
-      features: ["Live Class", "1:1 mentorship", "Industry projects"],
-      alumni: [
-        // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
-      ],
-      buttons: [
-        { text: "Request Call back", courseName: "Data Visualization Program" },
-        { text: "Download Syllabus", courseName: "Book Live Demo" },
-      ],
-      form: {
-        // Used in: Header form component
-        title: "Book a FREE live class",
-        inputs: [
-          { type: "text", name: "name", placeholder: "Enter your name" },
-          { type: "email", name: "email", placeholder: "Enter your Email" },
-          { type: "location", name: "location", placeholder: "Select your location" },
-          { type: "course", name: "course", placeholder: "Select course" }, ,
-          {
-            type: "tel",
-            name: "contactname",
-            placeholder: "Enter your phone number",
-            countryCode: "+91",
-          },
-        ],
-        submitText: "Book Live Class",
-      },
-    },
+    header: dsHeaderData['datavisualheader']['DataVisualHeader'],
 
     // Data for Why Component
-    why: {
-      title: "Why Data Visualization Course in {city}?",
-      cards: [
-        {
-          title:
-            'What is <span class="highlight-span-cards">Data Visualization?</span>',
-          content:
-            "Data Visualization is essential in today's data-driven world, helping organizations turn complex data into clear, actionable insights. If you're looking to build a career in this field, our Data Visualization course in {city} provides comprehensive training in key visualization tools like Tableau, Power BI, SQL, and advanced Excel. You'll learn to analyze and visualize data effectively, create interactive dashboards, and communicate findings that drive decision-making. With a focus on industry-relevant skills and hands-on practice, this Data Visualization training in {city} equips you with the knowledge to excel in the fast-growing field of data analytics and visualization, preparing you for roles in data analysis, business intelligence, and more.",
-        },
-        {
-          title:
-            'What does a <span class="highlight-span-cards">Data Analyst</span> do?',
-          content:
-            "A Data Analyst is responsible for collecting, processing, and analyzing data to help organizations make informed, data-driven decisions. Their role involves transforming raw data into actionable insights, identifying trends, and creating reports that support business strategies. Key responsibilities include data cleaning, statistical analysis, data visualization, and presenting findings in a clear and understandable format. By Learning these skills, data analysts play a critical role in shaping business decisions. If you're looking to start a career as a Data Analyst, our Data Visualization course in {city} at the top Data Visualization training institute in {city} will equip you with the necessary skills in data analysis, visualization tools like Tableau and Power BI, and techniques to turn data into compelling stories for business success.",
-        },
-        {
-          title:
-            'Why take the <span class="highlight-span-cards">Data Visualization Training</span> in {city}?',
-          content:
-            "A Data Analyst must possess a diverse skill set to analyze, interpret, and visualize data effectively to support data-driven decisions. Our Data Visualization course in {city} offers advanced training in key data visualization tools and techniques, preparing you to transform complex data sets into clear, actionable insights. You will gain hands-on experience in tools like Tableau, Power BI, and advanced Excel, as well as in data cleaning, statistical analysis, and report creation. Upon completing the course, you will be qualified to take on roles such as:",
-          listItems: [
-            "Data Analyst",
-            "Data Visualization Specialist",
-            "Business Intelligence Analyst",
-            "Data Scientist",
-            "Reporting Analyst",
-          ],
-        },
-      ],
-    },
+    why: whyData['Whydatavisual']['WhyDataVisual'],
 
     // Data for Modules Component (course-specific curriculum)
     modulesData: {
@@ -13148,77 +11340,10 @@ export const coursesData = {
 
     // === COMPONENT DATA ===
     // Data for Header Component (DSHeader)
-    header: {
-      title: "Power BI Course in {city}",
-      subtitle: "Job Oriented Power BI Classes in {city}",
-      description:
-        "Power BI is a powerful tool designed to help businesses turn raw data into actionable insights. Whether you're a beginner or a seasoned professional, our Power BI course in {city} offers an in-depth understanding of the platform, enabling you to harness the full potential of your data. From interactive dashboards to real-time analytics, Power BI makes it easier to make informed decisions. Get started today and elevate your data skills through our advanced Power BI classes in {city}.",
-      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
-      features: ["Live Class", "1:1 mentorship", "Industry projects"],
-      alumni: [
-        // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
-      ],
-      buttons: [
-        { text: "Request Call back", courseName: "Power BI Program" },
-        { text: "Download Syllabus", courseName: "Book Live Demo" },
-      ],
-      form: {
-        // Used in: Header form component
-        title: "Book a FREE live class",
-        inputs: [
-          { type: "text", name: "name", placeholder: "Enter your name" },
-          { type: "email", name: "email", placeholder: "Enter your Email" },
-          { type: "location", name: "location", placeholder: "Select your location" },
-          { type: "course", name: "course", placeholder: "Select course" }, ,
-          {
-            type: "tel",
-            name: "contactname",
-            placeholder: "Enter your phone number",
-            countryCode: "+91",
-          },
-        ],
-        submitText: "Book Live Class",
-      },
-    },
+    header: dsHeaderData['powerbi']['POWERBI'],
 
     // Data for Why Component
-    why: {
-      title: "Why Power BI ?",
-      cards: [
-        {
-          title: 'What is <span class="highlight-span-cards">Power BI?</span>',
-          content:
-            "Power BI is Microsoft's business analytics tool that allows users to connect, transform, and visualize data in real time. It integrates with hundreds of data sources to deliver rich insights and provides tools for creating intuitive dashboards, reports, and interactive visuals. This platform is especially beneficial for businesses looking to make data-driven decisions quickly and effectively.",
-        },
-        {
-          title:
-            'What does a <span class="highlight-span-cards">Power BI Developer</span> do?',
-          content:
-            "A Power BI Developer is responsible for creating data models, developing dashboards, and generating reports that help businesses make data-driven decisions. They transform raw data into actionable insights using Power BI tools. By taking a Power BI course in {city}, you can acquire the skills needed to excel in this role and work on real-time projects.",
-          listItems: [
-            "Develop and maintain Power BI reports.",
-            "Integrate Power BI with various data sources.",
-            "Optimize and improve existing dashboards.",
-          ],
-        },
-        {
-          title:
-            'Why take <span class="highlight-span-cards">Power BI</span> training?',
-          content:
-            "Taking Power BI training in {city} gives you a competitive edge in the job market. With the demand for data-driven decision-making rising, learning Power BI offers you the skills to analyze complex datasets and present them in a clear and actionable format. Whether you're looking to advance in your current role or switch careers, mastering Power BI is a valuable asset.",
-          listItems: [
-            "Power BI Developer",
-            "Data Analyst",
-            "Business Intelligence Consultant",
-          ],
-        },
-      ],
-    },
+    why: whyData['Whypowerbi']['WhyPOWERBI'],
 
     // Data for Modules Component (course-specific curriculum)
     modulesData: {
@@ -13514,78 +11639,10 @@ export const coursesData = {
 
     // === COMPONENT DATA ===
     // Data for Header Component (DSHeader)
-    header: {
-      title: "Tableau Training in {city}",
-      subtitle:
-        "100% Practical Based Job Oriented Best Tableau Course in {city}",
-      description:
-        "Tableau is one of the most powerful data visualization tools, offering businesses and individuals the ability to analyze data in dynamic, interactive ways. Whether you're looking to enhance your skills with a Tableau certification Training in {city}, take a Tableau course, or explore Tableau tutorials, we provide everything you need to master the art of data storytelling.",
-      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
-      features: ["Live Class", "1:1 mentorship", "Industry projects"],
-      alumni: [
-        // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
-      ],
-      buttons: [
-        { text: "Request Call back", courseName: "Tableau Program" },
-        { text: "Download Syllabus", courseName: "Book Live Demo" },
-      ],
-      form: {
-        // Used in: Header form component
-        title: "Book a FREE live class",
-        inputs: [
-          { type: "text", name: "name", placeholder: "Enter your name" },
-          { type: "email", name: "email", placeholder: "Enter your Email" },
-          { type: "location", name: "location", placeholder: "Select your location" },
-          { type: "course", name: "course", placeholder: "Select course" }, ,
-          {
-            type: "tel",
-            name: "contactname",
-            placeholder: "Enter your phone number",
-            countryCode: "+91",
-          },
-        ],
-        submitText: "Book Live Class",
-      },
-    },
+    header: dsHeaderData['tableau']['TABLEAU'],
 
     // Data for Why Component
-    why: {
-      title: "Why Tableau ?",
-      cards: [
-        {
-          title: 'What is <span class="highlight-span-cards">Tableau?</span>',
-          content:
-            "Tableau is a leading business intelligence platform that allows users to connect, visualize, and share data seamlessly. Its drag-and-drop interface empowers even non-technical users to create complex data visualizations, transforming raw data into actionable insights. Tableau supports a wide range of data sources, from spreadsheets to cloud services, making it an essential tool for data-driven decision-making. Whether you're diving into Tableau software tutorials or seeking hands-on experience through a Tableau course, this platform offers something for everyone.",
-        },
-        {
-          title:
-            'What does a <span class="highlight-span-cards">Tableau Developer</span> do?',
-          content:
-            "A Tableau Developer is responsible for designing, developing, and maintaining Tableau dashboards and reports. They work closely with business stakeholders to understand their data visualization needs and transform raw data into actionable insights.",
-          listItems: [
-            "Create and manage Tableau dashboards.",
-            "Collaborate with business teams to gather requirements.",
-            "Ensure data accuracy and consistency in reports.",
-          ],
-        },
-        {
-          title:
-            'Why take <span class="highlight-span-cards">Tableau</span> training?',
-          content:
-            "With the growing demand for data analytics across industries, learning Tableau is a smart career move. Whether you're a business professional, data analyst, or aspiring developer, a Tableau certification can set you apart in the job market. Tableau training in {city} offers hands-on experience with real-world data sets, providing an immersive learning environment that prepares you for a variety of business challenges. Enrolling in a Tableau course in {city} or engaging with interactive Tableau software tutorials ensures you stay competitive in a rapidly evolving industry. Plus, a Tableau developer certification proves your ability to turn data into meaningful insights, increasing your professional value.",
-          listItems: [
-            "Tableau Developer",
-            "Data Analyst",
-            "Business Intelligence Analyst",
-          ],
-        },
-      ],
-    },
+    why: whyData['Whytableau']['WhyTABLEAU'],
 
     // Data for Modules Component (course-specific curriculum)
     modulesData: {
@@ -13887,73 +11944,10 @@ export const coursesData = {
 
     // === COMPONENT DATA ===
     // Data for Header Component (DSHeader)
-    header: {
-      title: "Advance HR Training in {city}",
-      subtitle: "Get Certified with the best HR training institute in {city}",
-      description:
-        "Connecting Dots ERP offers a advance HR course in {city} designed to equip you with the essential skills to excel in Human Resources. Our advanced and detailed HR training program covers key modules such as Personnel Administration, Payroll, Time Management, and Organizational Management. By mastering these modules, you'll gain the expertise to streamline HR processes, optimize workforce management, and drive organizational success. Our course is tailored to help you land your dream job in the dynamic field of HR.",
-      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
-      features: ["Live Class", "1:1 mentorship", "Industry projects"],
-      alumni: [
-        // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
-      ],
-      buttons: [
-        { text: "Request Call back", courseName: "HR Training Program" },
-        { text: "Download Syllabus", courseName: "Book Live Demo" },
-      ],
-      form: {
-        // Used in: Header form component
-        title: "Book a FREE live class",
-        inputs: [
-          { type: "text", name: "name", placeholder: "Enter your name" },
-          { type: "email", name: "email", placeholder: "Enter your Email" },
-          { type: "location", name: "location", placeholder: "Select your location" },
-          { type: "course", name: "course", placeholder: "Select course" }, ,
-          {
-            type: "tel",
-            name: "contactname",
-            placeholder: "Enter your phone number",
-            countryCode: "+91",
-          },
-        ],
-        submitText: "Book Live Class",
-      },
-    },
+    header: dsHeaderData['hrtraining']['HRTrainingHeader'],
 
     // Data for Why Component
-    why: {
-      title: "Why HR Training?",
-      cards: [
-        {
-          title: 'What is <span class="highlight-span-cards">HR?</span>',
-          content:
-            "Human Resources (HR) is a critical function within any organization, responsible for managing people, processes, and policies. Effective HR management is essential for attracting, developing, and retaining top talent, ensuring compliance with labor laws, and optimizing workforce productivity. If you're looking to build a career in HR, our HR course in {city} provides comprehensive training in core HR concepts and practices. You'll gain a deep understanding of topics such as recruitment and selection, performance management, compensation and benefits, employee relations, and HR analytics. Our course is designed to equip you with the skills and knowledge needed to succeed in today's dynamic HR landscape.",
-        },
-        {
-          title:
-            'What does an <span class="highlight-span-cards">HR</span> Do?',
-          content:
-            "An HR Professional is responsible for managing people-related functions within an organization. Their role involves attracting, developing, and retaining talent, ensuring compliance with labor laws, and fostering a positive work environment. Key HR responsibilities include recruitment and selection, performance management, compensation and benefits, employee relations, training and development, HR analytics, and legal and compliance. By effectively managing these HR functions, professionals contribute to the overall success of an organization.",
-        },
-        {
-          title:
-            'Why Take <span class="highlight-span-cards">HR Training</span> in {city}?',
-          content:
-            "An HR Professional must possess a diverse skill set to manage people-related functions effectively. Our HR course in {city} offers advanced training in core HR modules, preparing you to handle end-to-end HR processes, from recruitment to retirement. You will gain hands-on experience in managing employee data, conducting performance reviews, administering compensation and benefits, and ensuring compliance with labor laws.",
-          listItems: [
-            "HR Generalist",
-            "HR Specialist (Recruitment, Compensation, Benefits, etc.)",
-            "HR Business Partner",
-            "HR Manager",
-          ],
-        },
-      ],
-    },
+    why: whyData['Whyhr']['WhyHR'],
 
     // Data for Modules Component (course-specific curriculum)
     modulesData: {
@@ -14206,73 +12200,10 @@ export const coursesData = {
 
     // === COMPONENT DATA ===
     // Data for Header Component (DSHeader)
-    header: {
-      title: "Core HR Training in {city}",
-      subtitle: "Join our Practical-based Core HR Training in {city}",
-      description:
-        "Enhance your career with Connecting Dot's Core HR course in {city}, tailored to provide you with the key competencies needed to thrive in the field of human resource management. Focusing on practical skills and hands-on learning, this course equips you for various roles such as recruitment, employee engagement, talent development, and HR data analysis, helping you become a valuable asset in any organization.",
-      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
-      features: ["Live Class", "1:1 mentorship", "Industry projects"],
-      alumni: [
-        // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
-      ],
-      buttons: [
-        { text: "Request Call back", courseName: "Core HR Training Program" },
-        { text: "Download Syllabus", courseName: "Book Live Demo" },
-      ],
-      form: {
-        // Used in: Header form component
-        title: "Book a FREE live class",
-        inputs: [
-          { type: "text", name: "name", placeholder: "Enter your name" },
-          { type: "email", name: "email", placeholder: "Enter your Email" },
-          { type: "location", name: "location", placeholder: "Select your location" },
-          { type: "course", name: "course", placeholder: "Select course" }, ,
-          {
-            type: "tel",
-            name: "contactname",
-            placeholder: "Enter your phone number",
-            countryCode: "+91",
-          },
-        ],
-        submitText: "Book Live Class",
-      },
-    },
+    header: dsHeaderData['coreheader']['CoreHeader'],
 
     // Data for Why Component
-    why: {
-      title: "Why HR Core?",
-      cards: [
-        {
-          title: 'What is <span class="highlight-span-cards">Core HR</span>?',
-          content:
-            "Core HR refers to the foundational aspects of Human Resource Management, encompassing functions such as recruitment, payroll, employee relations, and compliance. These essential components enable businesses to efficiently manage their workforce, streamline HR operations, and ensure that employees are supported throughout their career lifecycle. Learning Core HR training in {city} equips you with the skills needed to handle critical HR responsibilities, optimize workforce management, and contribute to the growth and success of any organization.",
-        },
-        {
-          title:
-            'What Does <span class="highlight-span-cards">an HR</span> Do?',
-          content:
-            "HR core refers to the foundational aspects of human resources, including recruitment, employee development, compensation management, compliance with labor laws, and workforce planning. Professionals working in HR core roles focus on building strong HR frameworks that support both the strategic and operational goals of the company. By enrolling in an HR core course, individuals can gain the necessary skills to handle essential HR tasks and contribute to organizational success by ensuring smooth HR operations.",
-        },
-        {
-          title:
-            'Why Take <span class="highlight-span-cards">HR</span> Training?',
-          content:
-            "Professionals skilled in Core HR are in high demand as businesses across industries require effective HR practices to manage their teams. Our Core HR course in {city} covers all the key areas of HR management, preparing you for roles such as:",
-          listItems: [
-            "HR Generalist",
-            "Recruitment Specialist",
-            "Payroll Officer",
-            "HR Compliance Manager",
-          ],
-        },
-      ],
-    },
+    why: whyData['Whycore']['WhyCORE'],
 
     // Data for Modules Component (course-specific curriculum)
     modulesData: {
@@ -14501,79 +12432,10 @@ export const coursesData = {
 
     // === COMPONENT DATA ===
     // Data for Header Component (DSHeader)
-    header: {
-      title: "HR Generalist Training in {city}",
-      subtitle:
-        "Become a Versatile HR Professional with Our HR Generalist Training in {city}",
-      description:
-        "Elevate your career in human resources with Connecting Dot's HR Generalist training in {city}, designed to provide you with a well-rounded understanding of key HR functions. This training program covers recruitment, employee relations, payroll management, performance appraisals, and labor laws, equipping you with the skills required to excel as an HR Generalist in any organization.",
-      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
-      features: ["Live Class", "1:1 mentorship", "Industry projects"],
-      alumni: [
-        // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
-      ],
-      buttons: [
-        {
-          text: "Request Call back",
-          courseName: "HR Generalist Training Program",
-        },
-        { text: "Download Syllabus", courseName: "Book Live Demo" },
-      ],
-      form: {
-        // Used in: Header form component
-        title: "Book a FREE live class",
-        inputs: [
-          { type: "text", name: "name", placeholder: "Enter your name" },
-          { type: "email", name: "email", placeholder: "Enter your Email" },
-          { type: "location", name: "location", placeholder: "Select your location" },
-          { type: "course", name: "course", placeholder: "Select course" }, ,
-          {
-            type: "tel",
-            name: "contactname",
-            placeholder: "Enter your phone number",
-            countryCode: "+91",
-          },
-        ],
-        submitText: "Book Live Class",
-      },
-    },
+    header: dsHeaderData['genpage']['GENHeader'],
 
     // Data for Why Component
-    why: {
-      title: "WHY HR Generalist?",
-      cards: [
-        {
-          title:
-            'What is <span class="highlight-span-cards">HR Generalist?</span>',
-          content:
-            "An HR Generalist is responsible for managing multiple aspects of human resource management within an organization. This includes recruitment, onboarding, employee engagement, performance management, training, payroll, and compliance with labor laws. An HR Generalist plays a crucial role in creating a positive work environment and ensuring the smooth functioning of HR operations across all levels of the organization.",
-        },
-        {
-          title:
-            'What Does <span class="highlight-span-cards">HR Generalist</span> Do?',
-          content:
-            "An HR generalist handles a broad range of human resource activities, including recruitment, employee onboarding, performance management, employee relations, and compliance with employment laws. They are the all-rounders of the HR department, providing support across various functions and ensuring that HR policies are effectively implemented. For those looking to gain a comprehensive understanding of the HR field, an HR generalist course provides the foundational knowledge to manage multiple HR functions and improve workforce operations.",
-        },
-        {
-          title:
-            'Why Take <span class="highlight-span-cards">HR Generalist</span> Training?',
-          content:
-            "An HR Generalist must possess a diverse skill set to handle various HR functions effectively. Our HR Generalist course in {city} offers comprehensive training that prepares you for handling day-to-day HR operations, ensuring employee satisfaction, and maintaining compliance with legal regulations. Upon completing the course, you will be qualified to take on roles such as:",
-          listItems: [
-            "HR Generalist",
-            "HR Coordinator",
-            "HR Executive",
-            "Talent Acquisition Specialist",
-            "Payroll Administrator",
-          ],
-        },
-      ],
-    },
+    why: whyData['Whygen']['WhyGEN'],
 
     // Data for Modules Component (course-specific curriculum)
     modulesData: {
@@ -14805,77 +12667,10 @@ export const coursesData = {
 
     // === COMPONENT DATA ===
     // Data for Header Component (DSHeader)
-    header: {
-      title: "HR Analytics Training in {city}",
-      subtitle:
-        "Master Data-Driven HR Decision Making with Our HR Analytics Training in {city}",
-      description:
-        "Upgrade your HR skills with Connecting Dot's HR Analytics course in {city}, designed to provide a comprehensive understanding of data analysis in human resource management. This course equips you with the tools to analyze employee data, improve HR processes, and make informed decisions. By integrating data-driven insights into HR operations, you will enhance talent management, recruitment, employee engagement, and retention strategies.",
-      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
-      features: ["Live Class", "1:1 mentorship", "Industry projects"],
-      alumni: [
-        // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
-      ],
-      buttons: [
-        {
-          text: "Request Call back",
-          courseName: "HR Analytics Training Program",
-        },
-        { text: "Download Syllabus", courseName: "Book Live Demo" },
-      ],
-      form: {
-        // Used in: Header form component
-        title: "Book a FREE live class",
-        inputs: [
-          { type: "text", name: "name", placeholder: "Enter your name" },
-          { type: "email", name: "email", placeholder: "Enter your Email" },
-          { type: "location", name: "location", placeholder: "Select your location" },
-          { type: "course", name: "course", placeholder: "Select course" }, ,
-          {
-            type: "tel",
-            name: "contactname",
-            placeholder: "Enter your phone number",
-            countryCode: "+91",
-          },
-        ],
-        submitText: "Book Live Class",
-      },
-    },
+    header: dsHeaderData['anapage']['ANAHeader'],
 
     // Data for Why Component
-    why: {
-      title: "Why HR Analytics?",
-      cards: [
-        {
-          title: 'Why <span class="highlight-span-cards">HR Analytics</span>?',
-          content:
-            "HR Analytics refers to the use of data and statistical methods to measure, analyze, and improve HR processes. It involves collecting and interpreting workforce data to make informed decisions regarding hiring, performance management, employee retention, and organizational development. HR Analytics enables businesses to predict trends, manage risks, and optimize their workforce for better productivity.",
-        },
-        {
-          title:
-            'What Does <span class="highlight-span-cards">HR Analytics</span> Do?',
-          content:
-            "HR analytics is a data-driven approach to managing and optimizing an organization's human resources. It involves the collection and analysis of HR data such as employee performance, turnover rates, recruitment efficiency, and compensation trends to gain insights that can improve decision-making and workforce strategies. By applying statistical techniques and predictive models, HR analytics helps organizations make informed decisions about hiring, employee engagement, retention, and productivity. For professionals looking to specialize in this field, an HR analytics course can provide the necessary skills to analyze complex data and drive better business outcomes through HR insights.",
-        },
-        {
-          title:
-            'Why Take <span class="highlight-span-cards">HR Analytics</span> Training?',
-          content:
-            "With the increasing importance of data in HR decision-making, professionals skilled in HR Analytics are in high demand. This HR Analytics training in {city} prepares you for roles that require analyzing employee data, driving improvements in workforce management, and supporting business strategies with accurate insights. Roles you can pursue after completing the course include:",
-          listItems: [
-            "HR Analyst",
-            "HR Business Partner",
-            "People Analytics Specialist",
-            "Talent Management Analyst",
-          ],
-        },
-      ],
-    },
+    why: whyData['Whyana']['WhyANA'],
 
     // Data for Modules Component (course-specific curriculum)
     modulesData: {
@@ -15105,77 +12900,10 @@ export const coursesData = {
 
     // === COMPONENT DATA ===
     // Data for Header Component (DSHeader)
-    header: {
-      title: "HR Management Training in {city}",
-      subtitle: "Join our complete HR Management Training in {city}",
-      description:
-        "Elevate your career with Connecting Dot's HR Management course in {city}, designed to provide in-depth knowledge and hands-on experience in managing human resources effectively. This course covers key areas such as employee recruitment, talent development, performance management, and compliance with labor laws, equipping you with the skills necessary to thrive in HR roles.",
-      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
-      features: ["Live Class", "1:1 mentorship", "Industry projects"],
-      alumni: [
-        // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
-      ],
-      buttons: [
-        {
-          text: "Request Call back",
-          courseName: "HR Management Training Program",
-        },
-        { text: "Download Syllabus", courseName: "Book Live Demo" },
-      ],
-      form: {
-        // Used in: Header form component
-        title: "Book a FREE live class",
-        inputs: [
-          { type: "text", name: "name", placeholder: "Enter your name" },
-          { type: "email", name: "email", placeholder: "Enter your Email" },
-          { type: "location", name: "location", placeholder: "Select your location" },
-          { type: "course", name: "course", placeholder: "Select course" }, ,
-          {
-            type: "tel",
-            name: "contactname",
-            placeholder: "Enter your phone number",
-            countryCode: "+91",
-          },
-        ],
-        submitText: "Book Live Class",
-      },
-    },
+    header: dsHeaderData['manpage']['MANHeader'],
 
     // Data for Why Component
-    why: {
-      title: "Why HR Management?",
-      cards: [
-        {
-          title:
-            'What is <span class="highlight-span-cards">HR Management</span>?',
-          content:
-            "HR Management involves the strategic planning, development, and management of an organization's workforce. It covers essential functions such as hiring, training, performance evaluation, employee relations, and compensation management. Learning HR Management in {city} equips you with the expertise to streamline HR processes, manage organizational talent, and contribute to a company's overall success.",
-        },
-        {
-          title:
-            'What Does <span class="highlight-span-cards">HR Management</span> Do?',
-          content:
-            "HR management is responsible for overseeing all aspects of human resources within an organization, including recruitment, training, performance evaluation, employee relations, and compliance with labor laws. HR managers work to align the company's goals with employee development and satisfaction, ensuring a productive and engaged workforce. They also handle policy-making and strategic planning related to human capital. Pursuing an HR management course equips individuals with the knowledge to lead teams, design HR strategies, and manage complex workforce challenges effectively.",
-        },
-        {
-          title:
-            'Why Take <span class="highlight-span-cards">HR Management</span> Training?',
-          content:
-            "As businesses grow, the need for skilled HR professionals to manage their workforce increases. This HR Management course in {city} provides a comprehensive understanding of HR operations and prepares you for roles such as:",
-          listItems: [
-            "HR Manager",
-            "HR Generalist",
-            "Talent Acquisition Specialist",
-            "Employee Relations Manager",
-          ],
-        },
-      ],
-    },
+    why: whyData['Whyman']['WhyMAN'],
 
     // Data for Modules Component (course-specific curriculum)
     modulesData: {
@@ -15407,77 +13135,10 @@ export const coursesData = {
 
     // === COMPONENT DATA ===
     // Data for Header Component (DSHeader)
-    header: {
-      title: "Advance HR Payroll Training in {city}",
-      subtitle: "Join our Project-based HR Payroll Training in {city}",
-      description:
-        "Advance your career with Connecting Dot's HR Payroll course in {city}, meticulously designed to provide you with the essential skills to excel in payroll management within Human Resource Management. This practical, hands-on training focuses on vital areas like payroll processing, tax compliance, employee benefits, and HR systems, equipping you to efficiently manage payroll functions in any organization.",
-      backgroundVideo: "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
-      features: ["Live Class", "1:1 mentorship", "Industry projects"],
-      alumni: [
-        // Used in: Header carousel/logos
-        { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
-        { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
-        { name: "Cognizant", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204035/cognizant_qekaos_j1twoa.webp" },
-        { name: "TCS", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204184/tcs_vf98c9_vo1sty.webp" },
-        { name: "IBM", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204130/IBM_yyj2qp_yi8hzh.webp" },
-      ],
-      buttons: [
-        {
-          text: "Request Call back",
-          courseName: "HR Payroll Training Program",
-        },
-        { text: "Download Syllabus", courseName: "Book Live Demo" },
-      ],
-      form: {
-        // Used in: Header form component
-        title: "Book a FREE live class",
-        inputs: [
-          { type: "text", name: "name", placeholder: "Enter your name" },
-          { type: "email", name: "email", placeholder: "Enter your Email" },
-          { type: "location", name: "location", placeholder: "Select your location" },
-          { type: "course", name: "course", placeholder: "Select course" }, ,
-          {
-            type: "tel",
-            name: "contactname",
-            placeholder: "Enter your phone number",
-            countryCode: "+91",
-          },
-        ],
-        submitText: "Book Live Class",
-      },
-    },
+    header: dsHeaderData['payrollmanpage']['PAYROLLHeader'],
 
     // Data for Why Component
-    why: {
-      title: "Why HR Payroll?",
-      cards: [
-        {
-          title:
-            'What is <span class="highlight-span-cards">HR Payroll</span>?',
-          content:
-            "HR Payroll refers to the specific function within Human Resource Management that deals with calculating employee wages, processing paychecks, managing deductions, and ensuring compliance with tax regulations. Effective payroll management is a crucial aspect of maintaining employee satisfaction and adhering to labor laws. By enrolling in HR Payroll training in {city}, you will develop the competencies needed to oversee payroll functions, manage employee compensation, and ensure smooth payroll operations within an organization.",
-        },
-        {
-          title:
-            'What Does <span class="highlight-span-cards">HR Payroll</span> Do?',
-          content:
-            "HR payroll involves managing the process of compensating employees, ensuring accurate salary distribution, handling tax deductions, and maintaining payroll records. Professionals in this field ensure that employees are paid correctly and on time, adhering to legal requirements regarding benefits, bonuses, and deductions. They also work closely with accounting and finance teams to manage payroll-related financial aspects. An HR payroll course helps individuals develop the expertise needed to efficiently handle payroll systems and compliance with taxation and labor regulations.",
-        },
-        {
-          title:
-            'Why Take <span class="highlight-span-cards">HR Payroll</span> Training?',
-          content:
-            "Skilled payroll professionals are highly sought after as businesses across industries must maintain accurate payroll systems and ensure compliance with evolving tax laws. Our HR Payroll course in {city} prepares you for roles such as:",
-          listItems: [
-            "Payroll Specialist",
-            "HR Payroll Administrator",
-            "Payroll Compliance Officer",
-            "Compensation and Benefits Manager",
-          ],
-        },
-      ],
-    },
+    why: whyData['Whypay']['WhyPAY'],
 
     // Data for Modules Component (course-specific curriculum)
     modulesData: {
@@ -16536,3 +14197,9 @@ coursesData["data-visualization-with-ai"] = coursesData["data-visualization"];
 coursesData["full-stack-with-ai"] = coursesData["full-stack-developer"] ?? coursesData["full-stack"];
 coursesData["it-course-with-ai"] = coursesData["it"];
 coursesData["hr-courses-training-institute"] = coursesData["hr-training"];
+// Apply Why cards from whyData.json
+Object.keys(whyData).forEach((slug) => {
+  if (coursesData[slug]) {
+    coursesData[slug].why = whyData[slug];
+  }
+});
