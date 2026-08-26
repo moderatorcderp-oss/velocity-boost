@@ -205,6 +205,7 @@ const CourseCityPage = async ({ params }) => {
     : null;
   const certificateData = processPlaceholders(course.certificate, city.name);
   const faqData = processPlaceholders(course.faq, city.name);
+  const upcomingBatchesData = processPlaceholders(course.upcomingBatches, city.name);
   const relatedCoursesData = processPlaceholders(course.relatedCourses, city.name);
   const descriptionContentData = processPlaceholders(course.descriptionContent, city.name);
 
@@ -317,6 +318,7 @@ const CourseCityPage = async ({ params }) => {
         descriptionContentData={descriptionContentData}
         certificateData={certificateData}
         faqData={faqData}
+        upcomingBatchesData={upcomingBatchesData}
         cityLinks={<CityLinks courseSlug={cityLinkCourseSlug} />}
         relatedCoursesData={relatedCoursesData}
         currentCityName={city.name}

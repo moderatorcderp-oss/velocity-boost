@@ -1,4 +1,4 @@
-// components/CoursesComponents/Why.js (Updated)
+// components/CoursesComponents/Why.js (Redesigned — "Field Notes")
 
 "use client";
 
@@ -6,7 +6,10 @@ import { useState, useEffect, useRef } from "react";
 import styles from "@/styles/CoursesComponents/Why.module.css";
 import { useInView } from "react-intersection-observer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLightbulb } from "@fortawesome/free-solid-svg-icons";
+import { faLightbulb, faChevronDown } from "@fortawesome/free-solid-svg-icons";
+
+// Rotates through a small palette of "subject tab" colors, one per card.
+const TAB_COLORS = ["teal", "violet", "amber", "raspberry"];
 
 const Why = ({ data }) => {
   const [sectionRef, sectionInView] = useInView({
@@ -18,14 +21,14 @@ const Why = ({ data }) => {
     return (
       <div className={styles.loadingContainer}>
         <div className={styles.spinner}></div>
-        <p>Loading "Why" section data...</p>
+        <p>Loading &quot;Why&quot; section data...</p>
       </div>
     );
   }
 
   return (
-    <div 
-      ref={sectionRef} 
+    <div
+      ref={sectionRef}
       className={`${styles.containerYds} ${sectionInView ? styles.fadeIn : styles.hidden}`}
     >
       <SectionComponent section={data} />
@@ -35,10 +38,8 @@ const Why = ({ data }) => {
 
 const SectionComponent = ({ section }) => {
   const titleRef = useRef(null);
-  // Global expanded state for desktop - all cards expand together
-  const [globalExpanded, setGlobalExpanded] = useState(false);
-  // Individual expanded states for mobile - each card expands independently
-  const [individualExpanded, setIndividualExpanded] = useState({});
+  // Each card expands independently - clicking one never affects the others
+  const [expandedCards, setExpandedCards] = useState({});
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -50,48 +51,32 @@ const SectionComponent = ({ section }) => {
 
   useEffect(() => {
     const checkMobile = () => {
-      const mobile = window.innerWidth <= 768;
-      setIsMobile(mobile);
-      
-      // Reset states when switching between mobile/desktop
-      if (mobile) {
-        setGlobalExpanded(false);
-      } else {
-        setIndividualExpanded({});
-      }
+      setIsMobile(window.innerWidth <= 768);
     };
-    
+
     checkMobile();
-    window.addEventListener('resize', checkMobile);
-    return () => window.removeEventListener('resize', checkMobile);
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
   const handleExpandToggle = (cardIndex) => {
-    if (isMobile) {
-      // Mobile: toggle individual card
-      setIndividualExpanded(prev => ({
-        ...prev,
-        [cardIndex]: !prev[cardIndex]
-      }));
-    } else {
-      // Desktop: toggle all cards
-      setGlobalExpanded(prev => !prev);
-    }
+    setExpandedCards((prev) => ({
+      ...prev,
+      [cardIndex]: !prev[cardIndex],
+    }));
   };
 
-  const isCardExpanded = (cardIndex) => {
-    if (isMobile) {
-      return individualExpanded[cardIndex] || false;
-    } else {
-      return globalExpanded;
-    }
-  };
+  const isCardExpanded = (cardIndex) => expandedCards[cardIndex] || false;
 
   return (
     <>
       <h2 ref={titleRef} className={styles.title}>
-        <span className={styles.accent} dangerouslySetInnerHTML={{ __html: section.title }}></span>
+        <span
+          className={styles.accent}
+          dangerouslySetInnerHTML={{ __html: section.title }}
+        ></span>
       </h2>
+
       <div className={styles.cardsContainerYds}>
         {section.cards && section.cards.length > 0 ? (
           section.cards.map((card, index) => (
@@ -101,6 +86,7 @@ const SectionComponent = ({ section }) => {
               content={card.content}
               listItems={card.listItems}
               index={index}
+              tabColor={TAB_COLORS[index % TAB_COLORS.length]}
               expanded={isCardExpanded(index)}
               onExpandToggle={() => handleExpandToggle(index)}
               isMobile={isMobile}
@@ -114,11 +100,20 @@ const SectionComponent = ({ section }) => {
   );
 };
 
-const DataCard = ({ title, content, listItems, index, expanded, onExpandToggle, isMobile }) => {
+const DataCard = ({
+  title,
+  content,
+  listItems,
+  index,
+  tabColor,
+  expanded,
+  onExpandToggle,
+  isMobile,
+}) => {
   const [cardRef, cardInView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px',
+    rootMargin: "0px 0px -50px 0px",
   });
 
   const [showReadMore, setShowReadMore] = useState(false);
@@ -131,17 +126,17 @@ const DataCard = ({ title, content, listItems, index, expanded, onExpandToggle, 
   // Calculate total content length
   const getTotalContentLength = () => {
     let totalLength = 0;
-    
+
     if (Array.isArray(content)) {
-      totalLength += content.join(' ').replace(/<[^>]*>/g, '').length;
+      totalLength += content.join(" ").replace(/<[^>]*>/g, "").length;
     } else {
-      totalLength += content.replace(/<[^>]*>/g, '').length;
+      totalLength += content.replace(/<[^>]*>/g, "").length;
     }
-    
+
     if (listItems && listItems.length > 0) {
-      totalLength += listItems.join(' ').length;
+      totalLength += listItems.join(" ").length;
     }
-    
+
     return totalLength;
   };
 
@@ -150,6 +145,7 @@ const DataCard = ({ title, content, listItems, index, expanded, onExpandToggle, 
     const totalLength = getTotalContentLength();
     const charLimit = isMobile ? MOBILE_CHAR_LIMIT : DESKTOP_CHAR_LIMIT;
     setShowReadMore(totalLength > charLimit);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [content, listItems, isMobile]);
 
   // Truncate content based on character limit
@@ -163,27 +159,30 @@ const DataCard = ({ title, content, listItems, index, expanded, onExpandToggle, 
     if (Array.isArray(content)) {
       for (let i = 0; i < content.length; i++) {
         const paragraph = content[i];
-        const textLength = paragraph.replace(/<[^>]*>/g, '').length;
-        
+        const textLength = paragraph.replace(/<[^>]*>/g, "").length;
+
         if (currentLength + textLength <= charLimit) {
           truncatedContent.push(paragraph);
           currentLength += textLength;
         } else {
           const remainingChars = charLimit - currentLength;
           if (remainingChars > 50) {
-            const truncatedParagraph = paragraph.replace(/<[^>]*>/g, '').substring(0, remainingChars) + '...';
+            const truncatedParagraph =
+              paragraph.replace(/<[^>]*>/g, "").substring(0, remainingChars) +
+              "...";
             truncatedContent.push(truncatedParagraph);
           }
           break;
         }
       }
     } else {
-      const textLength = content.replace(/<[^>]*>/g, '').length;
+      const textLength = content.replace(/<[^>]*>/g, "").length;
       if (textLength <= charLimit) {
         truncatedContent.push(content);
         currentLength = textLength;
       } else {
-        const truncatedText = content.replace(/<[^>]*>/g, '').substring(0, charLimit) + '...';
+        const truncatedText =
+          content.replace(/<[^>]*>/g, "").substring(0, charLimit) + "...";
         truncatedContent.push(truncatedText);
         currentLength = charLimit;
       }
@@ -224,11 +223,13 @@ const DataCard = ({ title, content, listItems, index, expanded, onExpandToggle, 
               dangerouslySetInnerHTML={{ __html: content }}
             ></p>
           )}
-          
+
           {listItems && listItems.length > 0 && (
             <ul className={styles.listClass}>
-              {listItems.map((item, index) => (
-                <li key={index} className={styles.listItem}>{item}</li>
+              {listItems.map((item, i) => (
+                <li key={i} className={styles.listItem}>
+                  {item}
+                </li>
               ))}
             </ul>
           )}
@@ -246,11 +247,13 @@ const DataCard = ({ title, content, listItems, index, expanded, onExpandToggle, 
               dangerouslySetInnerHTML={{ __html: paragraph }}
             ></p>
           ))}
-          
+
           {truncated.listItems.length > 0 && (
             <ul className={styles.listClass}>
-              {truncated.listItems.map((item, index) => (
-                <li key={index} className={styles.listItem}>{item}</li>
+              {truncated.listItems.map((item, i) => (
+                <li key={i} className={styles.listItem}>
+                  {item}
+                </li>
               ))}
             </ul>
           )}
@@ -260,36 +263,52 @@ const DataCard = ({ title, content, listItems, index, expanded, onExpandToggle, 
   };
 
   return (
-    <div 
+    <div
       ref={cardRef}
-      className={`${styles.cardClassYds} ${cardInView ? styles.cardVisible : styles.cardHidden} ${expanded ? styles.cardExpanded : ''}`}
-      style={{ animationDelay: `${index * 0.15}s` }}
+      className={`${styles.cardClassYds} ${
+        cardInView ? styles.cardVisible : styles.cardHidden
+      } ${expanded ? styles.cardExpanded : ""}`}
+      style={{ "--card-delay": `${index * 0.12}s` }}
+      data-tab={tabColor}
     >
+      {/* Spiral-bound punch holes across the top edge */}
+      <div className={styles.spiralRow} aria-hidden="true">
+        {Array.from({ length: 7 }).map((_, i) => (
+          <span key={i} className={styles.spiralRing}></span>
+        ))}
+      </div>
+
+      {/* Subject tab, like a filing-folder marker */}
+      <div className={styles.cardTab} aria-hidden="true">
+        <FontAwesomeIcon icon={faLightbulb} className={styles.tabIcon} />
+        <span className={styles.tabLabel}>
+          Note — {String(index + 1).padStart(2, "0")}
+        </span>
+      </div>
+
       <div className={styles.cardHeader}>
         <h2
           className={styles.textPrimaryClass}
           dangerouslySetInnerHTML={{ __html: title }}
         ></h2>
-        <div className={styles.cardIcon}>
-          <FontAwesomeIcon icon={faLightbulb} />
-        </div>
       </div>
-      
+
       <div ref={contentRef} className={styles.cardContent}>
         {renderContent()}
       </div>
-      
+
       {showReadMore && (
         <div className={styles.readMoreContainer}>
-          <button 
+          <button
             className={styles.readMoreButton}
             onClick={onExpandToggle}
             aria-expanded={expanded}
           >
-            {expanded ? (isMobile ? 'Read Less' : 'Read Less') : (isMobile ? 'Read More' : 'Read More')}
-            {!isMobile && !expanded && (
-              <span className={styles.allCardsHint}></span>
-            )}
+            <span>{expanded ? "Close the page" : "Keep reading"}</span>
+            <FontAwesomeIcon
+              icon={faChevronDown}
+              className={styles.readMoreChevron}
+            />
           </button>
         </div>
       )}
