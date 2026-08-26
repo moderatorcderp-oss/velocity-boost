@@ -15,9 +15,9 @@
   --amber: #f2a007;
   --line: #e4ddc9;
 
-  width: 97.5%;
+  width: 100%;
   max-width: 1800px;
-  margin: 20px auto;
+  margin: 0 auto;
   background-color: #ffffff;
   padding: 3.5rem 3rem 4rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);

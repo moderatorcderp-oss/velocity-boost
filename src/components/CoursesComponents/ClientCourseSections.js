@@ -196,25 +196,7 @@ export default function ClientCourseSections(props) {
           </Suspense>
         </div>
       )}
-
-
-      <Suspense fallback={null}>
-        <TrustUs />
-      </Suspense>
-
-      <Suspense fallback={null}>
-        <Program />
-      </Suspense>
-
-
-
-      <Suspense fallback={null}>
-        <Description data={descriptionContentData} />
-      </Suspense>
-
       
-
-
       <div>
         {cityLinks}
       </div>

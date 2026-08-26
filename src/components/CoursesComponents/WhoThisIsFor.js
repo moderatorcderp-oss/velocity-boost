@@ -39,7 +39,7 @@ function CheckIcon({ className }) {
 
 export default function WhoThisIsFor() {
   return (
-    <section className="relative overflow-hidden bg-white py-10 mb-3">
+    <section className="relative overflow-hidden bg-white py-10 max-w-[1800px] mx-auto">
       <div className="pointer-events-none absolute left-1/2 top-0 -z-10 h-96 w-96 -translate-x-1/2 rounded-full bg-blue-50 blur-3xl" />
 
       <div className="mx-auto max-w-5xl px-6">

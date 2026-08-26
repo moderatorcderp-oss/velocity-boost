@@ -68,7 +68,7 @@ function CategoryIcon({ children }) {
 
 export default function SkillsAndTools() {
   return (
-    <section className="relative overflow-hidden bg-white py-10 max-w-[1800px] mb-3">
+    <section className="relative overflow-hidden bg-white py-10 max-w-[1800px] mx-auto">
       {/* Ambient depth, no assets */}
       <div className="pointer-events-none absolute -left-32 top-0 -z-10 h-96 w-96 rounded-full bg-blue-100/50 blur-3xl" />
       <div className="pointer-events-none absolute -right-24 bottom-10 -z-10 h-96 w-96 rounded-full bg-blue-50 blur-3xl" />

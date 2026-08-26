@@ -195,7 +195,7 @@ const CoursesRelated = ({ data, currentCityName }) => {
     : "Courses learners often explore next.";
 
   return (
-    <div className={`my-2 ${styles.relatedCoursesContainer}`}>
+    <div className={` ${styles.relatedCoursesContainer}`}>
       <div className={styles.sectionHead}>
         <span className={styles.sectionEyebrow}>Your learning path</span>
         <h2 className={styles.relatedCoursesTitleh2}>{data.title}</h2>

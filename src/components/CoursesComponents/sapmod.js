@@ -161,8 +161,8 @@ const SapModComponent = ({ data }) => {
   }
 
   return (
-    <div className="w-full mb-4 sm:mb-4 lg:mb-4">
-      <div className="flex flex-col items-center py-8 sm:py-12 px-4 sm:px-6 lg:px-8 min-h-[600px]">
+    <div className="w-full max-w-[1800px] mx-auto">
+      <div className="flex flex-col items-center py-8 sm:py-12 px-4 sm:px-6 lg:px-8 min-h-[600px] bg-white">
         {/* Header */}
         <div className="mb-10 text-center sm:mb-14">
           <h2 className="inline-flex items-center gap-2 text-3xl font-extrabold sm:gap-3 sm:text-4xl lg:text-5xl">

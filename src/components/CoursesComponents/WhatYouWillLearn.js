@@ -41,7 +41,7 @@ const OUTCOMES= [
 
 export default function WhatYouWillLearn() {
   return (
-    <section className="relative bg-white py-10 max-w-[1800px]">
+    <section className="relative bg-white py-10 max-w-[1800px] mx-auto">
       <div className="mx-auto max-w-6xl px-6">
         {/* Header */}
         <div className="text-center mb-4 sm:mb-14 md:mb-16">
