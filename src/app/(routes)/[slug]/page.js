@@ -195,6 +195,9 @@ const CourseCityPage = async ({ params }) => {
 
   const headerData = processPlaceholders(course.header, city.name);
   const whyData = processPlaceholders(course.why, city.name);
+  const whatYouWillLearnData = processPlaceholders(course.whatYouWillLearn, city.name);
+  const skillsntoolsdata = processPlaceholders(course.skillsndtools, city.name);
+
   const isSapCourse = course.category === "sap";
 
   const sapModData = isSapCourse && course.sapMod
@@ -216,7 +219,7 @@ const CourseCityPage = async ({ params }) => {
       descriptionContentData.ppc ||
       descriptionContentData.seo);
 
-      
+
   const shouldUseNewCurriculum =
     !isSapCourse && modulesData && modulesData.tabs && Array.isArray(modulesData.tabs);
   const shouldUseLegacyModules = !isSapCourse && modulesData && !shouldUseNewCurriculum;
@@ -256,44 +259,6 @@ const CourseCityPage = async ({ params }) => {
     return "";
   }
 
-  // if (courseSlug === "digital-marketing" && isMultiSectionCourse) {
-  //   return (
-  //     <>
-  //       {jsonLd && (
-  //         <script
-  //           type="application/ld+json"
-  //           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-  //         />
-  //       )}
-  //       {headerData?.backgroundVideo && (
-  //         <link rel="preload" as="video" href={headerData.backgroundVideo} type="video/mp4" fetchPriority="high" />
-  //       )}
-  //       {headerData?.backgroundPoster && (
-  //         <link rel="preload" as="image" href={headerData.backgroundPoster} fetchPriority="high" />
-  //       )}
-  //       <ScrollHandler />
-  //       <div dangerouslySetInnerHTML={{ __html: dynamicBodyContent }} />
-  //       <ClientCourseSections
-  //         layoutType="digital"
-  //         headerData={headerData}
-  //         whyData={whyData}
-  //         sapModData={sapModData}
-  //         course={course}
-  //         modulesData={modulesData}
-  //         descriptionContentData={descriptionContentData}
-  //         certificateData={certificateData}
-  //         faqData={faqData}
-  //         cityLinks={<CityLinks courseSlug={cityLinkCourseSlug} />}
-  //         relatedCoursesData={relatedCoursesData}
-  //         currentCityName={city.name}
-  //         courseCategory={course.category}
-  //         shouldUseNewCurriculum={shouldUseNewCurriculum}
-  //         shouldUseLegacyModules={shouldUseLegacyModules}
-  //       />
-  //     </>
-  //   );
-  // }
-
   return (
     <>
       {jsonLd && (
@@ -311,8 +276,10 @@ const CourseCityPage = async ({ params }) => {
       <div dangerouslySetInnerHTML={{ __html: dynamicBodyContent }} />
       <ClientCourseSections
         layoutType="default"
+        skillsntoolsdata={skillsntoolsdata}
         headerData={headerData}
         whyData={whyData}
+        whatYouWillLearnData={whatYouWillLearnData}
         sapModData={sapModData}
         course={course}
         modulesData={modulesData}

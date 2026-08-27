@@ -4,7 +4,6 @@
       "title": "Data Science Course in {city}",
       "subtitle": "We invite you to attend the Best Data Science Certification Program in {city}",
       "description": "The complete Data Science Course in {city} given by Connecting Dots ERP is meant to give students the tools they need to succeed in the area. Predictive analytics, machine learning, data visualization, and data analysis are some of the important subjects covered in the course. With practical experience working with real-world data, our data science training in {city} makes sure you are ready for opportunities in top firms that focus on data-driven careers",
-      "backgroundVideo": "https://i.imgur.com/DpOvcpk.mp4",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -49,7 +48,6 @@
       "title": "Data Analytics Course in {city}",
       "subtitle": "Practical Based Job Oriented Data Analytics Training in {city}",
       "description": " To evaluate both structured and unstructured data and turn it into insights that can be put to use, the Data Analytics Course in {city} focuses on teaching the methods and resources needed. In addition to focusing on developing abilities in data mining, predictive analysis, and statistical modeling, this program prepares graduates for positions as data scientists, analysts, and business analysts.",
-      "backgroundVideo": "https://i.imgur.com/DpOvcpk.mp4",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -98,8 +96,7 @@
     "BAHeader": {
       "title": "Business Analytics Course in {city}",
       "subtitle": "Take advantage of the Business Analytics Training Certificate Course to advance your profession quickly",
-      "description": "The Connecting Dots ERP\u2019s Business Analytics Course in {city} is intended to give students the tools they need to succeed in the industry. Important subjects covered in the course include business intelligence, data visualization, data analysis, and predictive analytics. Our business analytics training in {city} guarantees that you are ready for opportunities in prestigious firms that focus on data-driven decision-making careers by giving you practical experience working with real-world business data.",
-      "backgroundVideo": "https://i.imgur.com/DpOvcpk.mp4",
+      "description": "The Connecting Dots ERP’s Business Analytics Course in {city} is intended to give students the tools they need to succeed in the industry. Important subjects covered in the course include business intelligence, data visualization, data analysis, and predictive analytics. Our business analytics training in {city} guarantees that you are ready for opportunities in prestigious firms that focus on data-driven decision-making careers by giving you practical experience working with real-world business data.",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -149,7 +146,6 @@
       "title": "Artificial Intelligence Course in {city}",
       "subtitle": "We invite you to attend the Best Artificial Intelligence Certification Program in {city}",
       "description": "Connecting Dots ERP's extensive Artificial Intelligence Course in {city} aims to give students the abilities they need to succeed in AI. The course covers important subjects, including AI-driven automation, machine learning, deep learning, and natural language processing. With practical experience working on actual ChatGPT and AI projects, our AI training in {city} guarantees that you are ready for employment prospects in prestigious companies that value innovation and AI-powered solutions",
-      "backgroundVideo": "https://i.imgur.com/DpOvcpk.mp4",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -199,7 +195,6 @@
       "title": "Full stack training in {city}",
       "subtitle": "Project-based Job Oriented Full stack course in {city}",
       "description": "Grow your potential with Connecting Dots' Full Stack course in {city}, where you'll learn essential development skills for a successful tech career. With hands-on training and secure placement support, this course equips you to thrive in the ever-evolving world of full-stack development.",
-      "backgroundVideo": "https://i.imgur.com/DpOvcpk.mp4",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -248,8 +243,7 @@
     "JavaHeader": {
       "title": "Java Training Program in {city}",
       "subtitle": "Project-based Job Oriented Java Course in {city}",
-      "description": "Grow your career with Connecting Dots ERP\u2019s Java course in {city}, designed to equip you with essential programming skills for a successful tech career. With hands-on training and job placement support, this course prepares you to thrive in the competitive world of Java development.",
-      "backgroundVideo": "https://i.imgur.com/DpOvcpk.mp4",
+      "description": "Grow your career with Connecting Dots ERP’s Java course in {city}, designed to equip you with essential programming skills for a successful tech career. With hands-on training and job placement support, this course prepares you to thrive in the competitive world of Java development.",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -299,7 +293,6 @@
       "title": "Python Training Program in {city}",
       "subtitle": " Learn Our advanced Python Course in {city} with practical training",
       "description": "Unlock new career opportunities with Connecting Dots' Python course in {city}, designed to help you master one of the most versatile programming languages. Through hands-on training, expert mentorship, and real-world projects, this course prepares you for a wide range of programming roles, making you proficient in Python development and data handling.",
-      "backgroundVideo": "https://i.imgur.com/DpOvcpk.mp4",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -349,7 +342,6 @@
       "title": "Advance Salesforce Training in {city}",
       "subtitle": "Join our Project-based Salesforce Training Program in {city}",
       "description": "Accelerate your career with Connecting Dots' Salesforce course in {city}, designed to equip you with the essential skills required to master Salesforce CRM, one of the most in-demand platforms in the world. Through practical training and project-based learning, this course prepares you for a range of roles in CRM management, cloud solutions, and customer relationship management.",
-      "backgroundVideo": "https://i.imgur.com/DpOvcpk.mp4",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -396,10 +388,9 @@
   },
   "abapheader": {
     "AbapHeader": {
-      "title": "SAP ABAP Course in {city}",
+      "title": "SAP ABAP Course in Pune — Become a Job-Ready SAP ABAP Developer",
       "subtitle": "Practical Based Job Oriented SAP Training in {city}",
-      "description": "The SAP ABAP Course in {city} focuses on learning Advanced Business Application Programming (ABAP), the programming language used for developing applications within the SAP environment. It covers key topics like reporting, interfaces, enhancements, and forms. Our SAP ABAP Training in {city} provides hands-on experience, preparing you for real-world SAP development projects and career opportunities in top companies.",
-      "backgroundVideo": "https://i.imgur.com/DpOvcpk.mp4",
+      "description": "Kickstart your career in enterprise technology with the most industry-relevant SAP ABAP course in Pune. Learn ABAP programming, SAP module integration, and real-time project work under the guidance of certified SAP experts. Whether you're a fresher, a working IT professional, or someone switching careers into SAP, this course is designed to take you from fundamentals to advanced, job-ready skills.",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -407,109 +398,8 @@
       ],
       "buttons": [
         {
-          "text": "Request Call back",
+          "text": "Book a Free Demo Class",
           "courseName": "SAP ABAP Program"
-        },
-        {
-          "text": "Download Syllabus",
-          "courseName": "Book Live Demo"
-        }
-      ],
-      "form": {
-        "title": "Book a FREE live class",
-        "inputs": [
-          {
-            "type": "text",
-            "name": "name",
-            "placeholder": "Enter your name"
-          },
-          {
-            "type": "email",
-            "name": "email",
-            "placeholder": "Enter your Email"
-          },
-          {
-            "type": "text",
-            "name": "year",
-            "placeholder": "Year of Passing"
-          },
-          {
-            "type": "tel",
-            "name": "contactname",
-            "placeholder": "Enter your phone number",
-            "countryCode": "+91"
-          }
-        ],
-        "submitText": "Book Live Class"
-      }
-    }
-  },
-  "aribaheader": {
-    "AribaHeader": {
-      "title": "SAP Ariba Course in {city}",
-      "subtitle": "Learn SAP Ariba with our Expert trainers to get a Salary hike.",
-      "description": "Embark on a journey toward a successful career with our SAP Ariba Course in {city}. Tailored for newcomers and experienced professionals alike, this program offers an extensive syllabus designed to make you proficient in SAP Ariba. From gaining expertise in procurement and sourcing solutions to mastering supplier management and advanced analytics, this course equips you with the hands-on skills needed to thrive in the field.",
-      "backgroundVideo": "https://i.imgur.com/DpOvcpk.mp4",
-      "features": [
-        "Live Class",
-        "1:1 mentorship",
-        "Industry projects"
-      ],
-      "buttons": [
-        {
-          "text": "Request Call back",
-          "courseName": "SAP ABAP Program"
-        },
-        {
-          "text": "Download Syllabus",
-          "courseName": "Book Live Demo"
-        }
-      ],
-      "form": {
-        "title": "Book a FREE live class",
-        "inputs": [
-          {
-            "type": "text",
-            "name": "name",
-            "placeholder": "Enter your name"
-          },
-          {
-            "type": "email",
-            "name": "email",
-            "placeholder": "Enter your Email"
-          },
-          {
-            "type": "text",
-            "name": "year",
-            "placeholder": "Year of Passing"
-          },
-          {
-            "type": "tel",
-            "name": "contactname",
-            "placeholder": "Enter your phone number",
-            "countryCode": "+91"
-          }
-        ],
-        "submitText": "Book Live Class"
-      }
-    }
-  },
-  "basisheader": {
-    "BasisHeader": {
-      "title": "SAP BASIS Course in {city}",
-      "subtitle": "Become a Certified SAP Professional \u2013 Learn From Industry Experts",
-      "description": "Master SAP modules with hands-on, real-time project training. Get job-ready with practical exposure, live case studies, and 100% placement assistance.",
-      "backgroundVideo": "https://i.imgur.com/DpOvcpk.mp4",
-      "features": [
-        "Live Online & Classroom Batches",
-        "Certified Trainers",
-        "Real-Time Projects",
-        "Placement Support"
-      ],
-      "buttons": [
-        {
-          "text": "Enroll Now",
-          "courseName": "SAP BASIS Program"
         },
         {
           "text": "Download Course Brochure",
@@ -545,12 +435,11 @@
       }
     }
   },
-  "bwbiheader": {
-    "BwbiHeader": {
-      "title": "SAP BI Course in {city}",
-      "subtitle": "Practical Based Job Oriented SAP Training in {city}",
-      "description": "The SAP BW/BI Course in {city} at Connecting Dots ERP is designed to help you maximize your SAP BW/BI implementation. This course provides an in-depth understanding of operations and Info Providers while focusing on optimizing data load performance and query execution. Enroll now in our SAP BI/BW Classroom Training in {city} and SAP BI/BW Online Training to gain hands-on expertise and enhance your data management skills.",
-      "backgroundVideo": "https://i.imgur.com/DpOvcpk.mp4",
+  "aribaheader": {
+    "AribaHeader": {
+      "title": "SAP Ariba Course in Pune — Become a Certified SAP Ariba Professional",
+      "subtitle": "Learn SAP Ariba with our Expert trainers to get a Salary hike.",
+      "description": "Master procurement and supply chain management with the most in-demand SAP Ariba Course in Pune. Learn Sourcing, Procurement, Contract Management, and Supplier Management through live projects, real-time case studies, and expert-led training designed for job-ready skills.",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -558,11 +447,114 @@
       ],
       "buttons": [
         {
-          "text": "Request Call back",
+          "text": "Enroll Now for Free Demo Class",
+          "courseName": "SAP ABAP Program"
+        },
+        {
+          "text": "Call Now",
+          "courseName": "Book Live Demo"
+        }
+      ],
+      "form": {
+        "title": "Book a FREE live class",
+        "inputs": [
+          {
+            "type": "text",
+            "name": "name",
+            "placeholder": "Enter your name"
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "placeholder": "Enter your Email"
+          },
+          {
+            "type": "text",
+            "name": "year",
+            "placeholder": "Year of Passing"
+          },
+          {
+            "type": "tel",
+            "name": "contactname",
+            "placeholder": "Enter your phone number",
+            "countryCode": "+91"
+          }
+        ],
+        "submitText": "Book Live Class"
+      }
+    }
+  },
+  "basisheader": {
+    "BasisHeader": {
+      "title": "SAP BASIS Course in Pune — Become a Certified SAP BASIS Administrator",
+      "subtitle": "Master SAP modules with hands-on, real-time project training. Get job-ready with practical exposure, live case studies, and 100% placement assistance.",
+      "description": "Kickstart your career in SAP technology with our industry-recognized SAP BASIS Course in Pune, designed for freshers, IT professionals, and system administrators who want to master SAP system administration from the ground up. Learn to install, configure, monitor, and manage SAP systems through real-time projects and expert-led live sessions. Whether you're switching careers or upskilling, this SAP BASIS training in Pune gives you the technical foundation and hands-on practice to become job-ready for roles like SAP BASIS Consultant, SAP System Administrator, and SAP Support Engineer.",
+      "features": [
+        "Live Online & Classroom Batches",
+        "Certified Trainers",
+        "Real-Time Projects",
+        "Placement Support"
+      ],
+      "buttons": [
+        {
+          "text": "Enroll Now",
+          "courseName": "SAP BASIS Program"
+        },
+        {
+          "text": "Download Curriculum",
+          "courseName": "Book Live Demo"
+        },
+        {
+          "text": "Book a Free Demo Class",
+          "courseName": "Book Live Demo"
+        }
+      ],
+      "form": {
+        "title": "Book a FREE live class",
+        "inputs": [
+          {
+            "type": "text",
+            "name": "name",
+            "placeholder": "Enter your name"
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "placeholder": "Enter your Email"
+          },
+          {
+            "type": "text",
+            "name": "year",
+            "placeholder": "Year of Passing"
+          },
+          {
+            "type": "tel",
+            "name": "contactname",
+            "placeholder": "Enter your phone number",
+            "countryCode": "+91"
+          }
+        ],
+        "submitText": "Book Live Class"
+      }
+    }
+  },
+  "bwbiheader": {
+    "BwbiHeader": {
+      "title": "SAP BI Course in {city}",
+      "subtitle": "Become a Certified SAP Data & Analytics Professional",
+      "description": "Master SAP Business Warehouse (BW) and Business Intelligence (BI) with hands-on, industry-driven training designed for beginners, working professionals, and SAP consultants. Learn data modeling, ETL, reporting, and analytics on live SAP systems — guided by certified SAP BW/4HANA experts. Join Pune's most trusted SAP BW/BI training program and build the skills companies are hiring for right now.",
+      "features": [
+        "Live Class",
+        "1:1 mentorship",
+        "Industry projects"
+      ],
+      "buttons": [
+        {
+          "text": "Book a Free Demo Class",
           "courseName": "SAP BI Program"
         },
         {
-          "text": "Download Syllabus",
+          "text": "Download Course Brochure",
           "courseName": "Book Live Demo"
         }
       ],
@@ -598,9 +590,8 @@
   "ewmheader": {
     "EWMHeader": {
       "title": " SAP EWM Course in {city}",
-      "subtitle": "Practical Based Job Oriented SAP Training in {city}",
-      "description": "SAP Extended Warehouse Management (EWM) is a powerful module within the SAP Supply Chain Management suite that offers advanced features for efficient warehouse operations. Connecting Dots ERP\u2019s SAP EWM course in {city} will empower you to manage warehouse processes, from inventory control to outbound deliveries with industrial learning by MNC experienced trainer and hands-on learning of various tools.",
-      "backgroundVideo": "https://i.imgur.com/DpOvcpk.mp4",
+      "subtitle": "Become a Certified SAP Extended Warehouse Management Expert",
+      "description": "Master end-to-end warehouse operations with our industry-designed SAP EWM Course in Pune. Learn inbound and outbound processing, warehouse structure, RF framework, labor management, and integration with SAP MM, SD, and TM through live projects, real-time case studies, and hands-on system access.",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -608,11 +599,11 @@
       ],
       "buttons": [
         {
-          "text": "Request Call back",
+          "text": "Book Your Free Demo Class",
           "courseName": "SAP EWM Program"
         },
         {
-          "text": "Download Syllabus",
+          "text": "Talk to Our Counselor",
           "courseName": "Book Live Demo"
         }
       ],
@@ -647,10 +638,9 @@
   },
   "ficoheader": {
     "FICOHeader": {
-      "title": "SAP FICO Course in Pune \u2014 Become a Certified SAP Finance Consultant",
+      "title": "SAP FICO Course in Pune — Become a Certified SAP Finance Consultant",
       "subtitle": "Practical Based Job Oriented SAP Training in {city}",
-      "description": "Learn SAP Financial Accounting and Controlling (FICO) from certified industry trainers with 10+ years of real-world SAP implementation experience. Join 500+ successful learners who've built SAP careers through our 100% practical, project-based training \u2014 with dedicated placement support until you're hired.",
-      "backgroundVideo": "https://i.imgur.com/DpOvcpk.mp4",
+      "description": "Learn SAP Financial Accounting and Controlling (FICO) from certified industry trainers with 10+ years of real-world SAP implementation experience. Join 500+ successful learners who've built SAP careers through our 100% practical, project-based training — with dedicated placement support until you're hired.",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -703,9 +693,8 @@
   "hanaheader": {
     "HanaHeader": {
       "title": "SAP S/4 HANA  Course in {city}",
-      "subtitle": "Practical Based Job Oriented SAP Training in {city}",
-      "description": "SAP S/4 HANA is SAP\u2019s next-generation ERP suite, designed to run on the in-memory HANA database, offering real-time data processing and analytics. It simplifies business processes and provides enhanced capabilities in areas like finance, supply chain, and procurement. Our SAP S/4 HANA Training in {city} equips you with hands-on knowledge of the platform, preparing you for roles in leading global organizations.",
-      "backgroundVideo": "https://i.imgur.com/DpOvcpk.mp4",
+      "subtitle": "Certification Training with Placement",
+      "description": "Enroll in the most industry-relevant SAP S/4 HANA Course in Pune and gain hands-on expertise in the world's leading ERP platform. Learn directly from certified SAP consultants, work on real-time business scenarios, and get trained on the latest S/4 HANA modules used by Fortune 500 companies.\nWhether you're a fresh graduate, working professional, or someone looking to switch careers into ERP consulting, this course is designed to make you industry-ready in just a few months.",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -713,11 +702,15 @@
       ],
       "buttons": [
         {
-          "text": "Request Call back",
+          "text": "Book a Free Demo Class",
           "courseName": "SAP S/4 HANA Program"
         },
         {
-          "text": "Download Syllabus",
+          "text": "Download Course Brochure",
+          "courseName": "Book Live Demo"
+        },
+        {
+          "text": "Talk to Career Counselor",
           "courseName": "Book Live Demo"
         }
       ],
@@ -753,9 +746,8 @@
   "hrhcmheader": {
     "HRHCMHeader": {
       "title": "SAP HR/HCM Course in {city}",
-      "subtitle": "Practical Based Job Oriented SAP Training in {city}",
-      "description": "The SAP HCM Course in {city} at Connecting Dots ERP offers in-depth training on managing human resources processes within organizations. This course covers core HR functions such as personnel management, payroll, time management, and organizational management using SAP HCM. With expert trainers and hands-on projects, this course equips you with the skills needed to excel in HR roles at top companies.",
-      "backgroundVideo": "https://i.imgur.com/DpOvcpk.mp4",
+      "subtitle": "Become a Certified SAP HR Consultant",
+      "description": "Master core and advanced SAP Human Capital Management modules with India's most job-focused SAP HCM Course in Pune. Learn Personnel Administration, Organizational Management, Time Management, Payroll, and ESS/MSS through real-time projects, live SAP server access, and mentorship from industry-certified trainers.\nWhether you're an HR professional looking to upskill or a fresher aiming to break into SAP consulting, this course gives you hands-on, practical exposure to SAP HCM (and SAP SuccessFactors fundamentals) — the way it's actually used in enterprise projects.",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -763,11 +755,11 @@
       ],
       "buttons": [
         {
-          "text": "Request Call back",
+          "text": "Book a Free Demo Class",
           "courseName": "SAP HR/HCM Program"
         },
         {
-          "text": "Download Syllabus",
+          "text": "Talk to Our Counselor",
           "courseName": "Book Live Demo"
         }
       ],
@@ -803,9 +795,8 @@
   "mmheader": {
     "MMHeader": {
       "title": "SAP MM Course in {city}",
-      "subtitle": "Practical Based Job Oriented SAP Training in {city}",
-      "description": "SAP MM Course in {city} covers Industry oriented curriculum with placement SAP MM deals with Master Data, Material Valuation, Account Determination, and Material Requirement Planning",
-      "backgroundVideo": "https://i.imgur.com/DpOvcpk.mp4",
+      "subtitle": "Become Job-Ready in Materials Management",
+      "description": "Learn procurement, inventory, and materials planning on live SAP S/4HANA systems, taught by consultants who've implemented SAP MM on real client projects.",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -813,7 +804,7 @@
       ],
       "buttons": [
         {
-          "text": "Request Call back",
+          "text": "Enroll Now",
           "courseName": "SAP MM Program"
         },
         {
@@ -855,7 +846,6 @@
       "title": "Core HR Training in {city}",
       "subtitle": "Join our Practical-based Core HR Training in {city}",
       "description": "Enhance your career with Connecting Dot's Core HR course in {city}, tailored to provide you with the key competencies needed to thrive in the field of human resource management. Focusing on practical skills and hands-on learning, this course equips you for various roles such as recruitment, employee engagement, talent development, and HR data analysis, helping you become a valuable asset in any organization.",
-      "backgroundVideo": "https://res.cloudinary.com/bropujss/video/upload/v1784205478/digital_kaitnq_clpqqp.webm",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -910,7 +900,6 @@
       "title": "SAP NetWeaver Course in {city}",
       "subtitle": "Practical Based Job Oriented SAP Training in {city}",
       "description": " Practical Training on SAP's core technological platform, including integration, system management, and security, is provided via the SAP NetWeaver Course in {city}. Acquire hands-on experience in real-world projects to get ready for positions such as SAP NetWeaver Consultant and System Administrator. This course gives you the tools to handle enterprise-level, scalable solutions in various SAP environments.",
-      "backgroundVideo": "https://i.imgur.com/DpOvcpk.mp4",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -958,9 +947,8 @@
   "pmheader": {
     "PMHeader": {
       "title": "SAP PM Course in {city}",
-      "subtitle": "Practical Based Job Oriented SAP Training in {city}",
-      "description": "SAP PM (Plant Maintenance) is a module that helps businesses efficiently manage maintenance activities, including equipment management, preventive maintenance, and repair orders to ensure optimal production performance. It integrates with other SAP modules like MM and PP for seamless operations. Our SAP PM Training in {city} provides practical insights and real-world applications, preparing you for maintenance management roles in various industries.",
-      "backgroundVideo": "https://i.imgur.com/DpOvcpk.mp4",
+      "subtitle": "Become a Certified SAP Plant Maintenance Consultant",
+      "description": "Master SAP Plant Maintenance (PM) with hands-on, industry-aligned training designed for working professionals and freshers in Pune. Learn to configure maintenance strategies, manage equipment master data, plan work orders, and integrate PM with MM, PP, and FICO modules all under the guidance of certified SAP trainers with real-time project exposure.\nWhether you're an engineer looking to move into SAP consulting or an SAP professional adding PM to your skill set, this course gives you the practical know-how top companies in Pune's manufacturing and IT hubs are hiring for.",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -1008,9 +996,8 @@
   "ppheader": {
     "PPHeader": {
       "title": "SAP PP Course in {city}",
-      "subtitle": "Practical Based Job Oriented SAP Training in {city}",
-      "description": "The SAP PP Course in {city} teaches you how to manage production planning and control processes within the SAP ERP system, including material requirements planning (MRP), bill of materials (BOM), and shop floor control. Our SAP PP Training in {city} provides practical knowledge and hands-on experience, preparing you for production and manufacturing roles in leading organizations.",
-      "backgroundVideo": "https://i.imgur.com/DpOvcpk.mp4",
+      "subtitle": "Become a Certified SAP Production Planning Consultant",
+      "description": "Master SAP PP (Production Planning) with Pune's most industry-focused training program. Learn MRP, BOM, Routing, Master Recipe, Capacity Planning, and Shop Floor Control through real-time manufacturing scenarios, hands-on server access, and expert-led live sessions.\nWhether you're a fresher looking to break into SAP consulting or a working professional planning a career switch, this SAP PP Course in Pune is designed to get you job-ready with practical, end-to-end implementation knowledge.",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -1018,11 +1005,11 @@
       ],
       "buttons": [
         {
-          "text": "Request Call back",
+          "text": "Enroll Now",
           "courseName": "SAP PP Program"
         },
         {
-          "text": "Download Syllabus",
+          "text": "Book a Free Demo Class",
           "courseName": "Book Live Demo"
         }
       ],
@@ -1058,9 +1045,8 @@
   "psheader": {
     "PSHeader": {
       "title": "SAP PS Course in {city}",
-      "subtitle": "Practical Based Job Oriented SAP Training in {city}",
-      "description": "Description: SAP Project Systems is a critical module within SAP ERP that focuses on managing projects across industries, ensuring efficient planning, execution, and control. With Connecting Dots ERP's SAP PS course in {city}, you'll learn how to streamline project management processes and gain practical skills to handle everything from project structuring to resource allocation and reporting. Our course is backed by expert trainers and real-world projects, this course is designed to make you proficient in project management roles.",
-      "backgroundVideo": "https://i.imgur.com/DpOvcpk.mp4",
+      "subtitle": "Learn Project Systems from Industry Experts",
+      "description": "Planning to build a career in SAP Project Systems? Our SAP PS Course in Pune is designed for professionals and freshers who want to master end-to-end project management using SAP. From project structuring and WBS to budgeting, resource planning, and integration with SAP FICO, MM, and SD this course covers everything you need to become job-ready.\nLearn through live instructor-led sessions, real-time project scenarios, and hands-on practice on a live SAP server. Whether you're switching careers or upskilling, this course helps you gain the confidence and certification employers look for.",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -1068,11 +1054,11 @@
       ],
       "buttons": [
         {
-          "text": "Request Call back",
+          "text": "Book a Free Demo Class",
           "courseName": "SAP PS Program"
         },
         {
-          "text": "Download Syllabus",
+          "text": "Download Course Brochure",
           "courseName": "Book Live Demo"
         }
       ],
@@ -1108,9 +1094,8 @@
   "qmheader": {
     "QMHeader": {
       "title": "SAP QM Course in {city}",
-      "subtitle": "Practical Based Job Oriented SAP Training in {city}",
-      "description": "SAP Quality Management is a very important module in  SAP ERP, designed to streamline and optimize the quality control processes across the globe..With Connecting Dots ERP, the SAP QM course in {city} will provide you with advanced knowledge and practical skills to manage audits, quality inspections, and compliance within manufacturing and supply chain operations of various industries with numerous case studies.",
-      "backgroundVideo": "https://i.imgur.com/DpOvcpk.mp4",
+      "subtitle": "Become a Certified SAP Quality Management Expert",
+      "description": "Master end-to-end Quality Management processes with our industry-focused SAP QM Course in Pune. Learn quality planning, inspection, control, and certification through hands-on training led by experienced SAP consultants. Get real-time project exposure, live server access, and 100% placement assistance to launch your career in SAP Quality Management.",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -1118,11 +1103,15 @@
       ],
       "buttons": [
         {
-          "text": "Request Call back",
+          "text": "Enroll Now",
           "courseName": "SAP QM Program"
         },
         {
-          "text": "Download Syllabus",
+          "text": "Download Brochure",
+          "courseName": "Book Live Demo"
+        },
+        {
+          "text": "Book a Free Demo Class",
           "courseName": "Book Live Demo"
         }
       ],
@@ -1158,9 +1147,8 @@
   "scmheader": {
     "SCMHeader": {
       "title": "SAP SCM Course in {city}",
-      "subtitle": "Practical Based Job Oriented SAP Training in {city}",
-      "description": " SAP Supply Chain Management (SCM) is an essential module within SAP that enables businesses to efficiently manage their supply chain processes, from procurement to product delivery. Connecting Dots ERP\u2019s SAP SCM course in {city} offers an advanced learning experience, equipping you with skills in supply chain planning, logistics, and order fulfillment. Learn from industry experts with practical, hands-on sessions that prepare you for real-world challenges.",
-      "backgroundVideo": "https://i.imgur.com/DpOvcpk.mp4",
+      "subtitle": "Become a Certified SAP Supply Chain Management Professional",
+      "description": "Master end-to-end supply chain operations with our industry-designed SAP SCM Course in Pune. Learn SAP MM, SAP PP, SAP WM/EWM, SAP APO, and SAP IBP modules through live projects, real-time case studies, and expert-led classroom or online sessions. Get placement assistance, hands-on SAP system access, and a globally recognized certification to launch your career in supply chain management.",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -1168,11 +1156,15 @@
       ],
       "buttons": [
         {
-          "text": "Request Call back",
+          "text": "Enroll Now",
           "courseName": "SAP SCM Program"
         },
         {
-          "text": "Download Syllabus",
+          "text": "Download Course Brochure",
+          "courseName": "Book Live Demo"
+        },
+        {
+          "text": "Book a Free Demo Class",
           "courseName": "Book Live Demo"
         }
       ],
@@ -1208,9 +1200,8 @@
   "sdheader": {
     "SDHeader": {
       "title": "SAP SD Course in {city}",
-      "subtitle": "Practical Based Job Oriented SAP Training in {city}",
-      "description": "Enroll in the best SAP SD course in {city} and master sales & distribution with expert-led training. Our SAP SD training in {city} offers real-time projects, industry-relevant curriculum, and 100% placement support to launch your career in SAP SD modules.",
-      "backgroundVideo": "https://i.imgur.com/DpOvcpk.mp4",
+      "subtitle": "Become a Certified SAP Sales & Distribution Consultant",
+      "description": "Master end-to-end Sales and Distribution processes with the most industry-relevant SAP SD course in Pune. Learn Order-to-Cash cycles, pricing, billing, and delivery processing through live SAP GUI access, real-time case studies, and mentorship from certified SAP SD consultants.\nWhether you're a fresher aiming for your first SAP job or a working professional switching to SAP SD, this course gives you the practical, hands-on skills recruiters in Pune's IT and manufacturing hubs are actively hiring for.",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -1218,11 +1209,11 @@
       ],
       "buttons": [
         {
-          "text": "Request Call back",
+          "text": "Book a Free Demo Class",
           "courseName": "SAP SD Program"
         },
         {
-          "text": "Download Syllabus",
+          "text": "Download Course Brochure",
           "courseName": "Book Live Demo"
         }
       ],
@@ -1258,9 +1249,8 @@
   "succheader": {
     "SuccHeader": {
       "title": "SAP Succesfactor Course in {city}",
-      "subtitle": "Practical Based Job Oriented SAP Training in {city}",
-      "description": "SAP SuccessFactors is a top cloud-based human capital management or SAP HCM  solution that helps organizations manage their workforce and optimize HR processes. Our  SAP SuccessFactors course in {city} equips you with the skills to manage talent acquisition, employee performance, learning management, and workforce analytics.",
-      "backgroundVideo": "https://i.imgur.com/DpOvcpk.mp4",
+      "subtitle": "Become a Certified SAP SuccessFactors Consultant",
+      "description": "Master SAP SuccessFactors with Pune's most industry-focused training program. Learn Employee Central, Recruiting, Performance & Goals, Onboarding, and Compensation modules through live projects, real-time case studies, and expert-led sessions — designed to get you job-ready for top HR-tech and SAP consulting roles.",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -1268,11 +1258,15 @@
       ],
       "buttons": [
         {
-          "text": "Request Call back",
+          "text": "Enroll Now – Limited Seats",
           "courseName": "SAP Succesfactor Program"
         },
         {
-          "text": "Download Syllabus",
+          "text": "Download Free Course Brochure",
+          "courseName": "Book Live Demo"
+        },
+        {
+          "text": "Book a Free Demo Class",
           "courseName": "Book Live Demo"
         }
       ],
@@ -1309,8 +1303,7 @@
     "POWERBI": {
       "title": "Power BI Course in {city}",
       "subtitle": "Job Oriented Power BI Classes in {city}",
-      "description": "Power BI is a powerful tool designed to help businesses turn raw data into actionable insights. Whether you\u2019re a beginner or a seasoned professional, our Power BI course in {city} offers an in-depth understanding of the platform, enabling you to harness the full potential of your data. From interactive dashboards to real-time analytics, Power BI makes it easier to make informed decisions. Get started today and elevate your data skills through our advanced Power BI classes in {city}.",
-      "backgroundVideo": "https://i.imgur.com/DpOvcpk.mp4",
+      "description": "Power BI is a powerful tool designed to help businesses turn raw data into actionable insights. Whether you’re a beginner or a seasoned professional, our Power BI course in {city} offers an in-depth understanding of the platform, enabling you to harness the full potential of your data. From interactive dashboards to real-time analytics, Power BI makes it easier to make informed decisions. Get started today and elevate your data skills through our advanced Power BI classes in {city}.",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -1360,7 +1353,6 @@
       "title": "Tableau Training in {city}",
       "subtitle": "100% Practical Based Job Oriented Best Tableau Course in {city}",
       "description": "Tableau is one of the most powerful data visualization tools, offering businesses and individuals the ability to analyze data in dynamic, interactive ways. Whether you're looking to enhance your skills with a Tableau certification Training in {city}, take a Tableau course, or explore Tableau tutorials, we provide everything you need to master the art of data storytelling.",
-      "backgroundVideo": "https://i.imgur.com/DpOvcpk.mp4",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -1410,7 +1402,6 @@
       "title": " HR Analytics Training in {city}",
       "subtitle": " Master Data-Driven HR Decision Making with Our HR Analytics Training in {city}",
       "description": "Upgrade your HR skills with Connecting Dots' HR Analytics course in {city}, designed to provide a comprehensive understanding of data analysis in human resource management. This course equips you with the tools to analyze employee data, improve HR processes, and make informed decisions. By integrating data-driven insights into HR operations, you will enhance talent management, recruitment, employee engagement, and retention strategies.",
-      "backgroundVideo": "https://i.imgur.com/DpOvcpk.mp4",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -1460,7 +1451,6 @@
       "title": "HR Management Training in {city}",
       "subtitle": "Join our complete HR Management Training in {city}",
       "description": "Elevate your career with Connecting Dots' HR Management course in {city}, designed to provide in-depth knowledge and hands-on experience in managing human resources effectively. This course covers key areas such as employee recruitment, talent development, performance management, and compliance with labor laws, equipping you with the skills necessary to thrive in HR roles.",
-      "backgroundVideo": "https://i.imgur.com/DpOvcpk.mp4",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -1510,7 +1500,6 @@
       "title": "Advance HR Payroll Training in {city}",
       "subtitle": "Join our Project-based HR Payroll Training in {city}",
       "description": "Advance your career with Connecting Dots' HR Payroll course in {city}, meticulously designed to provide you with the essential skills to excel in payroll management within Human Resource Management. This practical, hands-on training focuses on vital areas like payroll processing, tax compliance, employee benefits, and HR systems, equipping you to efficiently manage payroll functions in any organization.",
-      "backgroundVideo": "https://i.imgur.com/DpOvcpk.mp4",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -1560,7 +1549,6 @@
       "title": "HR Generalist Training in {city}",
       "subtitle": "Become a Versatile HR Professional with Our HR Generalist Training in {city}",
       "description": "Elevate your career in human resources with Connecting Dots' HR Generalist training in {city}, designed to provide you with a well-rounded understanding of key HR functions. This training program covers recruitment, employee relations, payroll management, performance appraisals, and labor laws, equipping you with the skills required to excel as an HR Generalist in any organization.",
-      "backgroundVideo": "https://i.imgur.com/DpOvcpk.mp4",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -1610,7 +1598,6 @@
       "title": "Best HR Training Institute in {city}",
       "subtitle": " Learn advance HR Strategies with Practical learning",
       "description": " Enhance your career with Best HR Training Institute in {city} including HR Generalist, CORE HR, Payroll Management, HR Management, and HR Analytics. Our HR  programs blend theoretical insights with practical experience about the case studies, equipping you with essential skills to excel in diverse HR roles across the industries.",
-      "backgroundVideo": "https://i.imgur.com/DpOvcpk.mp4",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -1659,8 +1646,7 @@
     "SapHeader": {
       "title": " Best SAP Course in {city}",
       "subtitle": " Get Certified with the best SAP training institute in {city}",
-      "description": "Grow Your Career with the Best SAP Course in {city}. Accelerate your professional journey with our industry-leading SAP training in {city}, featuring specialized courses in SAP FICO, SAP MM, and SAP SD. Our comprehensive and hands-on training program is designed to build deep expertise in core SAP modules like Financial Accounting, Materials Management, and Sales & Distribution. Whether you're a fresher or a working professional, we\u2019ll help you land your dream job in top MNCs.",
-      "backgroundVideo": "https://i.imgur.com/DpOvcpk.mp4",
+      "description": "Grow Your Career with the Best SAP Course in {city}. Accelerate your professional journey with our industry-leading SAP training in {city}, featuring specialized courses in SAP FICO, SAP MM, and SAP SD. Our comprehensive and hands-on training program is designed to build deep expertise in core SAP modules like Financial Accounting, Materials Management, and Sales & Distribution. Whether you're a fresher or a working professional, we’ll help you land your dream job in top MNCs.",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -1710,7 +1696,6 @@
       "title": "Software Training in {city} with placement support",
       "subtitle": " Get Certified with the advance IT training institute in {city}",
       "description": " Connecting Dots ERP offers an advanced IT course in {city} designed to equip you with the essential skills to excel in the fast-evolving tech industry. Our advance and detailed training program covers key modules such as Data Science, Data Analytics, Python, and Java, ensuring you gain the expertise to work with cutting-edge technologies and solve complex business problems. By mastering these modules, you'll be prepared to take on roles like Data Scientist, Data Analyst, Python Developer, and Java Developer. Our course is tailored to help you build a strong foundation and land your dream job in the dynamic field of IT.",
-      "backgroundVideo": "https://i.imgur.com/DpOvcpk.mp4",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -1760,7 +1745,6 @@
       "title": "Advance HR Training in {city}",
       "subtitle": " Get Certified with the best HR training institute in {city}",
       "description": " Connecting Dots ERP offers a advance HR course in {city} designed to equip you with the essential skills to excel in Human Resources. Our advanced and detailed HR training program covers key modules such as Personnel Administration, Payroll, Time Management, and Organizational Management.By mastering these modules, you'll gain the expertise to streamline HR processes, optimize workforce management, and drive organizational success. Our course is tailored to help you land your dream job in the dynamic field of HR.",
-      "backgroundVideo": "https://i.imgur.com/DpOvcpk.mp4",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -1810,7 +1794,6 @@
       "title": "Data Visualization Course in {city}",
       "subtitle": "Get Certified with the Data Visualization training institute in {city}",
       "description": " We offers an advanced Data Visualization course in {city} designed to equip you with the essential skills to excel in the fast-evolving field of data analytics and visualization. Our detailed training program covers key modules such as data visualization techniques, tools like Tableau, Power BI, and advanced Excel, as well as best practices for creating compelling, insightful visualizations from complex datasets. By mastering these modules, you will be prepared to take on roles such as Data Visualization Specialist, Business Intelligence Analyst, or Data Analyst. ",
-      "backgroundVideo": "https://i.imgur.com/DpOvcpk.mp4",
       "features": [
         "Live Class",
         "1:1 mentorship",

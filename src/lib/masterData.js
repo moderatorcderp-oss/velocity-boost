@@ -1,6 +1,9 @@
 // lib/masterData.js - Clean and Commented Version
 import whyData from "../../public/Jsonfolder/Whyds.json";
 import dsHeaderData from "../../public/Jsonfolder/dsHeaderData.json"
+import whatWillLearnData from "../../public/Jsonfolder/whatwilllearn.json";
+import skillsData from '../../public/Jsonfolder/SkillsLearn.json'
+
 const companyAlumni = [
   { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
   { name: "Infosys", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204223/infosys_psvmtb_r0ckbt.webp" },
@@ -8421,37 +8424,7 @@ export const coursesData = {
       },
     },
 
-    why: {
-      title: "Why Agentic AI?",
-      cards: [
-        {
-          title: 'What is <span class="highlight-span-cards">Agentic AI?</span>',
-          content:
-            "Agentic AI refers to AI systems that can autonomously plan, reason, and take actions to achieve goals — going far beyond simple question-answering. These agents use large language models (LLMs) as a reasoning engine, combined with tools, memory, and multi-step planning to complete complex real-world tasks. The Agentic AI course in {city} trains you to build these systems from scratch.",
-        },
-        {
-          title: 'What does an <span class="highlight-span-cards">Agentic AI Engineer</span> do?',
-          content:
-            "An Agentic AI Engineer designs and builds autonomous AI pipelines that can browse the web, write and execute code, query databases, and coordinate with other agents to complete long-horizon tasks. They work with LLM frameworks, APIs, and cloud infrastructure to ship production-ready AI products.",
-          listItems: [
-            "Build and orchestrate multi-agent systems.",
-            "Integrate LLMs with external tools and APIs.",
-            "Design memory and retrieval systems for agents.",
-          ],
-        },
-        {
-          title: 'Why take <span class="highlight-span-cards">Agentic AI</span> training?',
-          content:
-            "Agentic AI is the fastest-growing segment of the AI industry. Companies are racing to build autonomous assistants, coding agents, and business automation pipelines. Our Agentic AI training in {city} prepares you for high-demand roles such as:",
-          listItems: [
-            "Agentic AI Engineer",
-            "LLM Engineer",
-            "AI Automation Specialist",
-            "AI Solutions Architect",
-          ],
-        },
-      ],
-    },
+    why: whyData['Whyagentic']['WhyAgentic'],
 
     modulesData: {
       title: "AGENTIC AI CURRICULUM",
@@ -14197,9 +14170,129 @@ coursesData["data-visualization-with-ai"] = coursesData["data-visualization"];
 coursesData["full-stack-with-ai"] = coursesData["full-stack-developer"] ?? coursesData["full-stack"];
 coursesData["it-course-with-ai"] = coursesData["it"];
 coursesData["hr-courses-training-institute"] = coursesData["hr-training"];
+
 // Apply Why cards from whyData.json
 Object.keys(whyData).forEach((slug) => {
   if (coursesData[slug]) {
     coursesData[slug].why = whyData[slug];
+  }
+});
+
+// Added what will learn cards same logic
+// Apply What You'll Learn outcomes from whatwilllearn.json
+const whatWillLearnMap = {
+  // SAP modules
+  whatsap: "sap",
+  whatfico: "sap-fico",
+  whatmm: "sap-mm",
+  whathrhcm: "sap-hr-hcm",
+  whatqm: "sap-qm",
+  whatps: "sap-ps",
+  whatscm: "sap-scm",
+  whatehs: "sap-ehs",
+  whatibp: "sap-ibp",
+  whatariba: "sap-ariba",
+  whatsd: "sap-sd",
+  whatpp: "sap-pp",
+  whatpm: "sap-pm",
+  whatewm: "sap-ewm",
+  whatbtp: "sap-btp",
+  whatgrc: "sap-grc",
+  whatsucc: "sap-successfactors",
+  whatabap: "sap-abap",
+  whathana: "sap-s4-hana",
+  whatbwbi: "sap-bw-bi",
+  whatbasis: "sap-basis",
+
+  // Data / Analytics / AI
+  whatds: "data-science",
+  whatda: "data-analytics",
+  whatba: "business-analytics",
+  whatgpt: "generative-ai",          // or "ai" / "chatgpt" – match your slug
+  whatpowerbi: "power-bi",
+  whattableau: "tableau",
+  whatdatavisual: "data-visualization",
+
+  // Development
+  whatfullstack: "full-stack",
+  whatjava: "java",
+  whatpython: "python",
+  whatsales: "salesforce",
+  whatit: "it",
+
+  // HR
+  whatana: "hr-analytics",
+  whatman: "hr-management",
+  whatpayroll: "hr-payroll",
+  whatgen: "hr-generalist",
+  whathrtrain: "hr-training",
+  whathr: "hr",
+  whatcore: "core-hr",
+};
+
+Object.entries(whatWillLearnMap).forEach(([whatKey, courseSlug]) => {
+  if (coursesData[courseSlug] && whatWillLearnData[whatKey]) {
+    coursesData[courseSlug].whatYouWillLearn = whatWillLearnData[whatKey];
+  }
+});
+
+// Added skills and tools in this data
+const skillsToCoursesMap = {
+  // SAP modules
+  SkillsSAP: "sap",
+  SkillsFICO: "sap-fico",
+  SkillsMM: "sap-mm",
+  SkillsHCM: "sap-hr-hcm",
+  SkillsQM: "sap-qm",
+  SkillsPS: "sap-ps",
+  SkillsSCM: "sap-scm",
+  SkillsEHS: "sap-ehs",
+  SkillsIBP: "sap-ibp",
+  SkillsAriba: "sap-ariba",
+  SkillsSD: "sap-sd",
+  SkillsPP: "sap-pp",
+  SkillsPM: "sap-pm",
+  SkillsEWM: "sap-ewm",
+  SkillsBTP: "sap-btp",
+  SkillsGRC: "sap-grc",
+  SkillsSF: "sap-successfactors",
+  SkillsABAP: "sap-abap",
+  SkillsHana: "sap-s4-hana",
+  SkillsBWBI: "sap-bw-bi",
+  SkillsBasis: "sap-basis",
+
+  // Data / Analytics / AI
+  SkillsDataScience: "data-science",
+  SkillsDataAnalytics: "data-analytics",
+  SkillsBusinessAnalytics: "business-analytics",
+  SkillsGenAI: "generative-ai",          // or "ai" / "chatgpt" – match your slug
+  SkillsPowerBI: "power-bi",
+  SkillsTableau: "tableau",
+  SkillsDataVisualization: "data-visualization",
+
+  // Development
+  SkillsFullStack: "full-stack",
+  SkillsJava: "java",
+  SkillsPython: "python",
+  SkillsSalesforce: "salesforce",
+  SkillsIT: "it",
+
+  // HR
+  SkillsHRAnalytics: "hr-analytics",
+  SkillsHRManagement: "hr-management",
+  SkillsPayroll: "hr-payroll",
+  SkillsHRGeneralist: "hr-generalist",
+  SkillsHRTraining: "hr-training",
+  SkillsHR: "hr",
+  SkillsCoreHR: "core-hr",
+
+  // Newly added
+  SkillsCyberSecurity: "cyber-security",       // match your slug if a course exists
+  SkillsCompBenefits: "compensation-benefits", // match your slug if a course exists
+};
+
+Object.entries(skillsToCoursesMap).forEach(([skillsKey, courseSlug]) => {
+  if (coursesData[courseSlug] && skillsData[skillsKey]) {
+    coursesData[courseSlug].skillsndtools = skillsData[skillsKey];
   }
 });
