@@ -74,6 +74,17 @@ const defaultData = {
       verified: true,
       avatarInitials: "NV",
     },
+     {
+      id: "demo-review-3",
+      name: "Neha Verma",
+      course: "Digital Marketing",
+      batch: "Evening batch, Jun 2026",
+      rating: 4,
+      quote: "I liked the balance between strategy and hands-on campaign work. The projects gave me something concrete to show prospective employers.",
+      date: "2 months ago",
+      verified: true,
+      avatarInitials: "NV",
+    },
   ],
 };
 

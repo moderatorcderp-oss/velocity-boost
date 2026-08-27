@@ -36,7 +36,7 @@ const DemoCertificate = () => {
         <div className={styles.certificateImage}>
           <Image
             src={certificateData.image}
-            alt={certificateData.alt || `${certificateData.courseTitle} Certificate`}
+            alt={certificateData.alt || `${certificateData.courseTitle} Certificate` || "certificate image"}
             width={500}
             height={300}
             layout="intrinsic"

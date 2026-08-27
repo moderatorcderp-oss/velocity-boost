@@ -223,7 +223,7 @@ setTimeout(() => {
                       {card.img ? (
                         <Image
                           src={card.img}
-                          alt={card.title}
+                          alt={card.title || "program heighlight img"}
                           width={48}
                           height={48}
                           className="w-full h-full object-cover rounded-full"
@@ -278,7 +278,7 @@ setTimeout(() => {
                   {card.img ? (
                     <Image
                       src={card.img}
-                      alt={card.title}
+                      alt={card.title || "highlight img"}
                       width={64}
                       height={64}
                       className="w-full h-full object-cover rounded-full"

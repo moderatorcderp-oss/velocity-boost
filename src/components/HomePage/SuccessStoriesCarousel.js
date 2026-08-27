@@ -66,7 +66,7 @@ function Avatar({ src, alt, size }) {
   return (
     <div className={`relative shrink-0 overflow-hidden rounded-full ring-2 ring-purple-500/40 ${sizeClasses}`}>
       {src ? (
-        <Image src={src} alt={alt} fill sizes="128px" className="object-cover" />
+        <Image src={src} alt={alt || "image"} fill sizes="128px" className="object-cover" />
       ) : (
         <div className="flex h-full w-full items-center justify-center bg-white/5 text-2xl font-semibold text-white/40">
           {alt?.charAt(0) || "?"}

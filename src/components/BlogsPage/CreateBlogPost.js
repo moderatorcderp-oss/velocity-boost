@@ -1888,7 +1888,7 @@ export default function CreateBlogPost({ onSave, initialData = {}, isModal = fal
                           <div key={index} className="bg-white p-3 rounded-lg shadow-sm border border-gray-100">
                             <div className="flex gap-3">
                               {section.imagePreview ? (
-                                <img src={section.imagePreview} alt={section.name} className="w-24 h-18 object-cover rounded" />
+                                <img src={section.imagePreview} alt={section.name || "blog img"} className="w-24 h-18 object-cover rounded" />
                               ) : (
                                 <div className="w-24 h-18 bg-gray-100 flex items-center justify-center rounded">
                                   <ImageIcon className="w-8 h-8 text-gray-300" />

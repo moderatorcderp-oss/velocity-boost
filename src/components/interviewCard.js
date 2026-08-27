@@ -14,7 +14,7 @@ const InterviewCard = ({
       <div className="relative h-48 w-full">
         <Image
           src={imageUrl}
-          alt={title}
+          alt={title || "interview img"}
           fill
           className="object-cover"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

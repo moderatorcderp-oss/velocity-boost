@@ -159,7 +159,7 @@ const TrustUs = () => {
                           >
                             <img
                               src={src}
-                              alt={getLogoAlt(src)}
+                              alt={getLogoAlt(src) || "logo img"}
                               loading="lazy"
                               decoding="async"
                               className="trustusLogoImg w-full h-full object-cover p-3 hover:scale-105 transition-transform duration-200"

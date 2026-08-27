@@ -173,7 +173,7 @@ const AchievementsSection = () => {
                     >
                       <img
                         src={achievement.image}
-                        alt={achievement.name}
+                        alt={achievement.name || "particular achievement img"}
                         className="min-w-full min-h-full object-cover transform scale-125"
                       />
                     </div>
@@ -187,7 +187,7 @@ const AchievementsSection = () => {
                     >
                       <img
                         src={achievement.image}
-                        alt={achievement.name}
+                        alt={achievement.name || "achievement"}
                         className="min-w-full min-h-full object-cover transform scale-125"
                       />
                     </div>
@@ -223,7 +223,7 @@ const AchievementsSection = () => {
                     >
                       <img
                         src={achievement.image}
-                        alt={achievement.name}
+                        alt={achievement.name || "achievement"}
                         className="min-w-full min-h-full object-cover transform scale-125"
                       />
                     </div>
@@ -236,7 +236,7 @@ const AchievementsSection = () => {
                     >
                       <img
                         src={achievement.image}
-                        alt={achievement.name}
+                        alt={achievement.name || "achievement"}
                         className="min-w-full min-h-full object-cover transform scale-125"
                       />
                     </div>

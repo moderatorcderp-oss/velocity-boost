@@ -185,7 +185,7 @@ function Curriculum({ data }) {
                     {tools[0] && (
                       <img
                         src={tools[0].icon}
-                        alt={currentModule?.title}
+                        alt={currentModule?.title || "course img"}
                         className="w-5 h-5 sm:w-6 sm:h-6 mr-2 flex-shrink-0"
                         onError={(e) => {
                           e.target.style.display = "none";
@@ -328,7 +328,7 @@ function Curriculum({ data }) {
                           >
                             <img
                               src={tool.icon}
-                              alt={tool.name}
+                              alt={tool.name || "tool icon"}
                               className="w-6 h-6 sm:w-8 sm:h-8 mb-2"
                               onError={(e) => {
                                 e.target.style.display = "none";
@@ -346,7 +346,7 @@ function Curriculum({ data }) {
                         <div className="my-6">
                           <img
                             src={getBannerImage()}
-                            alt={getBannerAlt()}
+                            alt={getBannerAlt() || "banner img"}
                             className="w-full rounded-lg shadow-lg object-cover cursor-pointer hover:opacity-90 transition-opacity duration-200"
                             style={{ boxShadow: "0 0 24px 0 #1d3b75" }}
                             onClick={handleBannerClick}

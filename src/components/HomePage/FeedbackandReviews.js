@@ -238,7 +238,7 @@ export default function TestimonialCarousel() {
                           >
                             <img
                               src={r.image}
-                              alt={r.name}
+                              alt={r.name || "feedback img"}
                               className="w-full h-full rounded-full object-cover border-2 border-[#0c1638]"
                               draggable={false}
                             />

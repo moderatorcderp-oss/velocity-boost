@@ -876,7 +876,7 @@ const BlogsAdminPanel = () => {
                         <div className="flex justify-center sm:justify-end">
                           <img
                             src={blog.image}
-                            alt={blog.title}
+                            alt={blog.title || "blog image"}
                             className="w-20 h-20 sm:w-24 sm:h-24 object-cover rounded-lg border shadow-sm hover:shadow-md transition-shadow"
                             onError={(e) => {
                               e.target.style.display = "none";

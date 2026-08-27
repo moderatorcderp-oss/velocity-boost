@@ -189,7 +189,7 @@ export default function CoursesSection() {
                                 <div className="cs-figure">
                                     <Image
                                         src={c.img}
-                                        alt={c.alt}
+                                        alt={c.alt || "figure image"}
                                         width={440}
                                         height={388}
                                         sizes="(max-width: 480px) 30vw, (max-width: 900px) 22vw, 140px"

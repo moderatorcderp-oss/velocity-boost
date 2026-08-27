@@ -236,7 +236,7 @@ const CoursesRelated = ({ data, currentCityName }) => {
             ) : (
               <Image
                 src={activeCourse.icon}
-                alt={activeCourse.alt}
+                alt={activeCourse.alt || "related courses img"}
                 width={48}
                 height={48}
                 className={styles.stageIconMedia}

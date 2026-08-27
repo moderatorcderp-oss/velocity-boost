@@ -298,7 +298,7 @@ const renderTocItems = (items, parentIndex = '', depth = 0) => {
                     {course.courseImage ? (
                       <Image
                         src={course.courseImage}
-                        alt={course.name}
+                        alt={course.name || "course image"}
                         width={300}
                         height={190}
                         className="w-full h-full object-cover rounded-lg transition-transform duration-300 group-hover:scale-105"
@@ -925,7 +925,7 @@ const renderTocItems = (items, parentIndex = '', depth = 0) => {
                     <div className="relative rounded-xl shadow-xl border border-blue-400/20 bg-gray-900/20 flex items-center justify-center">
                       <Image
                         src={blog.image || blog.featuredImage}
-                        alt={blog.title}
+                        alt={blog.title || "blog image"}
                         width={800}
                         height={400}
                         className="w-full h-auto max-h-[300px] md:max-h-[400px] lg:max-h-[350px] xl:max-h-[500px] 2xl:max-h-[600px] object-contain"

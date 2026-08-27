@@ -355,7 +355,7 @@ const CareerMentorsComponent = () => {
               <div className="relative w-3/4 h-3/4 flex items-center justify-center">
                 <Image 
                   src={company.logo} 
-                  alt={`${company.name} logo`}
+                  alt={`${company.name} logo` || "company logo"}
                   width={logoSize.width}
                   height={logoSize.height}
                   sizes="(max-width: 768px) 64px, (max-width: 1024px) 72px, 96px"

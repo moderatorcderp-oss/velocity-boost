@@ -167,7 +167,7 @@ const MarqueeRow = ({ logos = [], direction = "left", speed = "normal", shuffle 
           >
             <Image
               src={logo}
-              alt={getLogoAlt(logo)}
+              alt={getLogoAlt(logo) || "client logo"}
               width={120}
               height={100}
               className="object-contain max-w-full max-h-full group-hover:scale-105 transition-transform duration-300"
@@ -185,7 +185,7 @@ const MarqueeRow = ({ logos = [], direction = "left", speed = "normal", shuffle 
           >
             <Image
               src={logo}
-              alt=""
+              alt="logo"
               width={120}
               height={100}
               className="object-contain max-w-full max-h-full group-hover:scale-105 transition-transform duration-300"

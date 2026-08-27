@@ -1065,7 +1065,7 @@ export default function PlacementPage() {
                 <div className="fc-badge">⭐ Top Pick</div>
                 <div className="fc-top">
                   <div className="fc-photo-wrap">
-                    <img src={f.photo} alt={f.name} />
+                    <img src={f.photo} alt={f.name || "name"} />
                   </div>
                   <div>
                     <div className="fc-name">{f.name}</div>
@@ -1092,7 +1092,7 @@ export default function PlacementPage() {
                 <div className="fc-badge">⭐ Top Pick</div>
                 <div className="fc-top">
                   <div className="fc-photo-wrap">
-                    <img src={f.photo} alt={f.name} />
+                    <img src={f.photo} alt={f.name || "client img"} />
                   </div>
                   <div>
                     <div className="fc-name">{f.name}</div>

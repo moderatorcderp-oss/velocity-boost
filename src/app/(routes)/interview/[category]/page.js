@@ -171,7 +171,7 @@ const InterviewCategoryPage = () => {
                 <div className="w-full rounded-lg overflow-hidden shadow-sm bg-white border border-gray-100">
                   <img
                     src={interviewData.initialImage || interviewData.image}
-                    alt={interviewData.heading}
+                    alt={interviewData.heading || "interview related image"}
                     className="w-full h-auto object-contain"
                   />
                 </div>
