@@ -167,7 +167,7 @@ const ReviewsBody = ({ reviews, sectionInView }) => {
 
       <div className={styles.corkboard}>
         {visibleReviews.map((review, index) => (
-          <ReviewPin key={review.id || index} review={review} index={index} />
+          <ReviewPin key={index} review={review} index={index} />
         ))}
       </div>
     </>
