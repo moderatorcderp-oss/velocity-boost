@@ -10,7 +10,7 @@ import WhoThisIsFor from "./WhoThisIsFor";
 // import {CityLinks} from "@/components/CityLinks";
 // === Above the fold (SSR enabled for SEO-critical content) ===
 const DSHeader = dynamic(() => import("./Header"));
-const UpcomingBatches=dynamic(()=> import("./UpcomingBatches"))
+const UpcomingBatches = dynamic(() => import("./UpcomingBatches"))
 const Reviews = dynamic(() => import("./Reviews"));
 const Why = dynamic(() => import("./Why"));
 const SapModComponent = dynamic(() => import("./sapmod"), { ssr: false });
@@ -30,6 +30,8 @@ export default function ClientCourseSections(props) {
     layoutType, // 'digital' | 'default'
     headerData,
     whyData,
+    skillsntoolsdata,
+    whatYouWillLearnData,
     sapModData,
     course,
     modulesData,
@@ -140,7 +142,6 @@ export default function ClientCourseSections(props) {
       </>
     );
   }
-
   // === Default layout (e.g. SAP, HR, Data Analytics) ===
   return (
     <>
@@ -150,7 +151,7 @@ export default function ClientCourseSections(props) {
       <Why data={whyData} />
 
       {/* what section  */}
-      <WhatYouWillLearn />
+      <WhatYouWillLearn data={whatYouWillLearnData} />
       {sapModData && <SapModComponent data={sapModData} />}
 
       {shouldUseNewCurriculum && (
@@ -161,7 +162,7 @@ export default function ClientCourseSections(props) {
         </div>
       )}
 
-      <SkillsAndTools />
+      <SkillsAndTools data={skillsntoolsdata} />
 
       <WhoThisIsFor />
 

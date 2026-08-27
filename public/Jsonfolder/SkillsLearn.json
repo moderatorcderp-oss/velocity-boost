@@ -1,0 +1,1346 @@
+{
+    "SkillsSAP": [
+        {
+            "icon": "BookOpen",
+            "title": "SAP ERP Fundamentals",
+            "description": "Understand the core of SAP ERP and its key business applications across finance, logistics, HR and more."
+        },
+        {
+            "icon": "Settings",
+            "title": "Navigation & Configuration",
+            "description": "Master navigation, configuration and customization inside SAP modules."
+        },
+        {
+            "icon": "GitBranch",
+            "title": "End-to-End Process Mapping",
+            "description": "Map complete business processes using SAP from start to finish."
+        },
+        {
+            "icon": "Database",
+            "title": "Master Data Management",
+            "description": "Create and manage critical master data that drives every SAP process."
+        },
+        {
+            "icon": "Link",
+            "title": "Cross-Module Integration",
+            "description": "See how different SAP modules talk to each other in real scenarios."
+        },
+        {
+            "icon": "Award",
+            "title": "Interview & Job Preparation",
+            "description": "Get interview-ready with resume building and real implementation best practices."
+        }
+    ],
+    "SkillsFICO": [
+        {
+            "icon": "Wallet",
+            "title": "GL, AP & AR Configuration",
+            "description": "Configure General Ledger, Accounts Payable and Accounts Receivable processes end-to-end."
+        },
+        {
+            "icon": "Building2",
+            "title": "Finance Organizational Structures",
+            "description": "Set up company codes, chart of accounts and fiscal year variants correctly."
+        },
+        {
+            "icon": "Landmark",
+            "title": "Asset & Bank Accounting",
+            "description": "Handle asset acquisition to retirement and complete bank reconciliation processes."
+        },
+        {
+            "icon": "PieChart",
+            "title": "Controlling (CO) Elements",
+            "description": "Configure Cost Centers, Profit Centers and Internal Orders."
+        },
+        {
+            "icon": "Link",
+            "title": "FI Integration with MM & SD",
+            "description": "Integrate Financial Accounting with Materials Management and Sales & Distribution."
+        },
+        {
+            "icon": "Award",
+            "title": "S/4HANA Finance & Certification",
+            "description": "Explore S/4HANA Finance, Fiori workflows and prepare for the official SAP exam."
+        }
+    ],
+    "SkillsMM": [
+        {
+            "icon": "Factory",
+            "title": "Organizational Structure Setup",
+            "description": "Configure plant, storage location and purchasing organization elements."
+        },
+        {
+            "icon": "Database",
+            "title": "Master Data Creation",
+            "description": "Create and manage material master, vendor master and source lists."
+        },
+        {
+            "icon": "ShoppingCart",
+            "title": "Procure-to-Pay Cycle",
+            "description": "Execute the complete process from purchase requisition to invoice."
+        },
+        {
+            "icon": "Package",
+            "title": "Inventory Management",
+            "description": "Handle goods receipt, goods issue, stock transfers and physical inventory."
+        },
+        {
+            "icon": "Calculator",
+            "title": "Valuation & Account Determination",
+            "description": "Set up automatic financial postings and resolve pricing discrepancies."
+        },
+        {
+            "icon": "Link",
+            "title": "MM Integration & Troubleshooting",
+            "description": "Integrate MM with SD, FICO & PP and solve real-world issues."
+        }
+    ],
+    "SkillsHCM": [
+        {
+            "icon": "Network",
+            "title": "HCM Architecture & Integration",
+            "description": "Understand SAP HCM architecture and how it connects with other modules."
+        },
+        {
+            "icon": "Building",
+            "title": "Enterprise & Personnel Structure",
+            "description": "Configure Enterprise Structure, Personnel Structure and Organizational Management."
+        },
+        {
+            "icon": "User",
+            "title": "Personnel Administration",
+            "description": "Manage complete employee master data through PA."
+        },
+        {
+            "icon": "Clock",
+            "title": "Time Management",
+            "description": "Set up work schedules, absence quotas and time evaluation."
+        },
+        {
+            "icon": "Banknote",
+            "title": "Indian Payroll Processing",
+            "description": "Configure and run end-to-end Indian Payroll."
+        },
+        {
+            "icon": "Award",
+            "title": "ESS/MSS & Interview Prep",
+            "description": "Work with ESS/MSS and prepare for HCM interviews and certification."
+        }
+    ],
+    "SkillsQM": [
+        {
+            "icon": "ShieldCheck",
+            "title": "SAP QM Fundamentals",
+            "description": "Understand Quality Management and its integration with MM, PP and SD."
+        },
+        {
+            "icon": "Database",
+            "title": "Quality Master Data",
+            "description": "Configure material master, inspection plans and catalogs."
+        },
+        {
+            "icon": "ClipboardList",
+            "title": "Quality Planning",
+            "description": "Manage inspection types, sampling procedures and quality planning."
+        },
+        {
+            "icon": "Search",
+            "title": "Quality Inspections",
+            "description": "Perform inspections during procurement, production and goods movement."
+        },
+        {
+            "icon": "AlertTriangle",
+            "title": "Notifications & Non-Conformance",
+            "description": "Handle quality notifications and manage non-conformance processes."
+        },
+        {
+            "icon": "Award",
+            "title": "Reports & Job Preparation",
+            "description": "Generate quality reports and prepare for QM interviews & certification."
+        }
+    ],
+    "SkillsPS": [
+        {
+            "icon": "FolderKanban",
+            "title": "Project Systems Fundamentals",
+            "description": "Understand SAP PS and its role across the full project lifecycle."
+        },
+        {
+            "icon": "GitBranch",
+            "title": "WBS & Network Activities",
+            "description": "Create and manage Work Breakdown Structures and Network Activities."
+        },
+        {
+            "icon": "Calendar",
+            "title": "Planning, Scheduling & Budgeting",
+            "description": "Handle project planning, scheduling, budgeting and cost control."
+        },
+        {
+            "icon": "Users",
+            "title": "Resources & Material Planning",
+            "description": "Work with milestones, resources and material planning inside projects."
+        },
+        {
+            "icon": "Link",
+            "title": "PS Integration",
+            "description": "Understand how PS integrates with FI, CO, MM and SD."
+        },
+        {
+            "icon": "BarChart3",
+            "title": "Reporting & Project Closure",
+            "description": "Generate reports, analyze performance and manage settlement & closure."
+        }
+    ],
+    "SkillsSCM": [
+        {
+            "icon": "Truck",
+            "title": "SCM Concepts & Digitization",
+            "description": "Understand core Supply Chain concepts and how SAP digitizes them."
+        },
+        {
+            "icon": "ShoppingCart",
+            "title": "SAP MM in SCM",
+            "description": "Configure procurement, vendor management, inventory and invoice verification."
+        },
+        {
+            "icon": "Factory",
+            "title": "SAP PP Processes",
+            "description": "Set up MRP, production orders and BOM management."
+        },
+        {
+            "icon": "Warehouse",
+            "title": "WM / EWM Operations",
+            "description": "Handle goods receipt, storage, picking and packing in the warehouse."
+        },
+        {
+            "icon": "TrendingUp",
+            "title": "APO / IBP Basics",
+            "description": "Gain foundational knowledge of demand forecasting and supply network planning."
+        },
+        {
+            "icon": "Award",
+            "title": "Integration & Job Readiness",
+            "description": "Integrate with SD & FICO and prepare for certification and interviews."
+        }
+    ],
+    "SkillsEHS": [
+        {
+            "icon": "Shield",
+            "title": "SAP EHS Module Setup",
+            "description": "Configure and manage the complete SAP EHS Management module."
+        },
+        {
+            "icon": "AlertCircle",
+            "title": "Incident Management",
+            "description": "Set up accident and near-miss reporting processes."
+        },
+        {
+            "icon": "AlertTriangle",
+            "title": "Risk Assessment & JHA",
+            "description": "Perform Risk Assessment and Job Hazard Analysis inside SAP."
+        },
+        {
+            "icon": "HeartPulse",
+            "title": "Industrial Hygiene & Safety",
+            "description": "Manage IHS data and exposure profiles."
+        },
+        {
+            "icon": "Leaf",
+            "title": "Environment & Product Compliance",
+            "description": "Track waste, emissions and handle REACH / Global Label Management."
+        },
+        {
+            "icon": "Award",
+            "title": "Integration & Interview Prep",
+            "description": "Integrate with HCM, PM & QM and prepare for EHS certification."
+        }
+    ],
+    "SkillsIBP": [
+        {
+            "icon": "Cloud",
+            "title": "IBP Architecture & Modules",
+            "description": "Master the fundamentals of SAP IBP architecture and its five core modules."
+        },
+        {
+            "icon": "TrendingUp",
+            "title": "Demand Planning",
+            "description": "Configure Demand Planning using statistical forecasting models."
+        },
+        {
+            "icon": "Boxes",
+            "title": "Supply & Inventory Planning",
+            "description": "Work with Supply Planning, Inventory Optimization and Response & Supply."
+        },
+        {
+            "icon": "CalendarCheck",
+            "title": "Sales & Operations Planning",
+            "description": "Understand and execute the complete S&OP process."
+        },
+        {
+            "icon": "BarChart3",
+            "title": "SAC Dashboards",
+            "description": "Build and customize dashboards using SAP Analytics Cloud."
+        },
+        {
+            "icon": "Award",
+            "title": "Integration & Certification Prep",
+            "description": "Integrate with ECC/S/4HANA and prepare for interviews and certification."
+        }
+    ],
+    "SkillsAriba": [
+        {
+            "icon": "Cloud",
+            "title": "Ariba Architecture & Procurement",
+            "description": "Understand procurement fundamentals and the SAP Ariba architecture."
+        },
+        {
+            "icon": "Search",
+            "title": "Ariba Sourcing",
+            "description": "Navigate and configure the SAP Ariba Sourcing module."
+        },
+        {
+            "icon": "FileText",
+            "title": "Contract Lifecycle Management",
+            "description": "Manage the complete contract lifecycle with Ariba Contracts."
+        },
+        {
+            "icon": "ShoppingCart",
+            "title": "Ariba Procurement (P2P)",
+            "description": "Handle end-to-end procurement processes on the Ariba platform."
+        },
+        {
+            "icon": "Users",
+            "title": "Supplier Lifecycle & Network",
+            "description": "Work with SLP and configure the Ariba Network for collaboration."
+        },
+        {
+            "icon": "Award",
+            "title": "Integration & Certification",
+            "description": "Integrate with ERP/S4HANA and prepare for Ariba certification and interviews."
+        }
+    ],
+    "SkillsSD": [
+        {
+            "icon": "ShoppingBag",
+            "title": "Order-to-Cash Process",
+            "description": "Configure and manage the complete Order-to-Cash business process."
+        },
+        {
+            "icon": "Building2",
+            "title": "Sales Organization Structure",
+            "description": "Set up sales organizations, distribution channels and divisions."
+        },
+        {
+            "icon": "Database",
+            "title": "Customer & Material Master",
+            "description": "Create and manage customer and material master data."
+        },
+        {
+            "icon": "Tag",
+            "title": "Pricing Procedures",
+            "description": "Configure pricing, condition types, discounts and surcharges."
+        },
+        {
+            "icon": "FileText",
+            "title": "Sales Documents & Billing",
+            "description": "Process sales orders, deliveries, billing documents and returns."
+        },
+        {
+            "icon": "Shield",
+            "title": "Credit Management & Shipping",
+            "description": "Handle credit management, shipping point and route determination."
+        }
+    ],
+    "SkillsPP": [
+        {
+            "icon": "Factory",
+            "title": "Production Planning Flow",
+            "description": "Understand the complete end-to-end Production Planning process in SAP."
+        },
+        {
+            "icon": "Database",
+            "title": "Core Master Data",
+            "description": "Configure Material Master, BOM, Work Centers and Routings."
+        },
+        {
+            "icon": "TrendingUp",
+            "title": "Demand Management",
+            "description": "Work with Planning Strategies for Make-to-Stock and Make-to-Order."
+        },
+        {
+            "icon": "Calculator",
+            "title": "MRP Execution",
+            "description": "Execute and analyze Material Requirements Planning runs."
+        },
+        {
+            "icon": "ClipboardList",
+            "title": "Production & Process Orders",
+            "description": "Create, process and confirm Production Orders and Process Orders."
+        },
+        {
+            "icon": "Gauge",
+            "title": "Capacity Planning & REM",
+            "description": "Handle Capacity Planning, Leveling and Repetitive Manufacturing."
+        }
+    ],
+    "SkillsPM": [
+        {
+            "icon": "Wrench",
+            "title": "Plant Maintenance Fundamentals",
+            "description": "Understand the role of Plant Maintenance within the SAP ecosystem."
+        },
+        {
+            "icon": "Cpu",
+            "title": "Technical Objects",
+            "description": "Configure equipment, functional locations and maintenance BOMs."
+        },
+        {
+            "icon": "Calendar",
+            "title": "Preventive & Breakdown Strategies",
+            "description": "Set up and execute preventive and breakdown maintenance plans."
+        },
+        {
+            "icon": "ClipboardList",
+            "title": "Notifications & Work Orders",
+            "description": "Create and process maintenance notifications and work orders end-to-end."
+        },
+        {
+            "icon": "Link",
+            "title": "PM Integration",
+            "description": "Integrate PM with MM, PP and FICO modules."
+        },
+        {
+            "icon": "BarChart3",
+            "title": "Reporting & Live Practice",
+            "description": "Generate maintenance reports and work on a live S/4HANA system."
+        }
+    ],
+    "SkillsEWM": [
+        {
+            "icon": "Warehouse",
+            "title": "EWM Architecture & Structure",
+            "description": "Understand EWM architecture, organizational structure and master data."
+        },
+        {
+            "icon": "Boxes",
+            "title": "Warehouse Structure Setup",
+            "description": "Configure storage types, sections, bins and activity areas."
+        },
+        {
+            "icon": "ArrowDownToLine",
+            "title": "Inbound Processing",
+            "description": "Manage ASN, goods receipt and putaway strategies."
+        },
+        {
+            "icon": "ArrowUpFromLine",
+            "title": "Outbound Processing",
+            "description": "Handle outbound deliveries, wave management and picking strategies."
+        },
+        {
+            "icon": "RefreshCw",
+            "title": "Internal Processes & RF",
+            "description": "Work with replenishment, physical inventory, slotting and RF framework."
+        },
+        {
+            "icon": "Link",
+            "title": "Integration & Capstone Projects",
+            "description": "Integrate with MM, SD, TM, QM and complete real warehouse scenarios."
+        }
+    ],
+    "SkillsBTP": [
+        {
+            "icon": "Cloud",
+            "title": "BTP Architecture & Services",
+            "description": "Master the core architecture and services of SAP Business Technology Platform."
+        },
+        {
+            "icon": "Code2",
+            "title": "CAP Model Development",
+            "description": "Build applications using the SAP Cloud Application Programming model."
+        },
+        {
+            "icon": "Blocks",
+            "title": "SAP Build (Low-Code)",
+            "description": "Create and deploy apps with SAP Build Low-Code/No-Code tools."
+        },
+        {
+            "icon": "GitBranch",
+            "title": "Integration Suite",
+            "description": "Design and manage integration flows with SAP Integration Suite."
+        },
+        {
+            "icon": "Database",
+            "title": "HANA Cloud & API Management",
+            "description": "Model data on HANA Cloud and connect SAP with third-party systems."
+        },
+        {
+            "icon": "Rocket",
+            "title": "Fiori, Security & Real Projects",
+            "description": "Develop Fiori apps, handle IAS/IPS and deploy on a live BTP account."
+        }
+    ],
+    "SkillsGRC": [
+        {
+            "icon": "Shield",
+            "title": "GRC Core Concepts",
+            "description": "Understand Governance, Risk and Compliance in an SAP landscape."
+        },
+        {
+            "icon": "Lock",
+            "title": "Access Control (AC)",
+            "description": "Configure access risk analysis, SoD rules and mitigation controls."
+        },
+        {
+            "icon": "CheckSquare",
+            "title": "Process Control (PC)",
+            "description": "Work with internal controls and compliance monitoring."
+        },
+        {
+            "icon": "AlertTriangle",
+            "title": "Risk Management (RM)",
+            "description": "Identify, assess and mitigate business risks inside SAP."
+        },
+        {
+            "icon": "UserCheck",
+            "title": "ARM, EAM & UAR",
+            "description": "Manage Access Requests, Firefighter IDs and User Access Reviews."
+        },
+        {
+            "icon": "Award",
+            "title": "Rule Sets & Interview Prep",
+            "description": "Design rule sets, troubleshoot issues and prepare for GRC interviews."
+        }
+    ],
+    "SkillsSF": [
+        {
+            "icon": "Cloud",
+            "title": "SuccessFactors Architecture",
+            "description": "Understand Cloud HCM and the overall SuccessFactors architecture."
+        },
+        {
+            "icon": "Users",
+            "title": "Employee Central (EC)",
+            "description": "Configure the core HR system of record – Employee Central."
+        },
+        {
+            "icon": "UserPlus",
+            "title": "Recruiting & Onboarding",
+            "description": "Implement Recruiting Management and Onboarding 2.0."
+        },
+        {
+            "icon": "Target",
+            "title": "Performance & Goals",
+            "description": "Build Performance & Goal Management templates and workflows."
+        },
+        {
+            "icon": "Banknote",
+            "title": "Compensation & LMS",
+            "description": "Design Compensation structures and manage the Learning Management System."
+        },
+        {
+            "icon": "Award",
+            "title": "Permissions, Integration & Projects",
+            "description": "Handle RBP, data migration, integrations and real project scenarios."
+        }
+    ],
+    "SkillsABAP": [
+        {
+            "icon": "Code2",
+            "title": "ABAP Programming Basics",
+            "description": "Write and debug ABAP programs using the ABAP Workbench."
+        },
+        {
+            "icon": "Database",
+            "title": "Data Dictionary",
+            "description": "Work with tables, views, structures and search helps."
+        },
+        {
+            "icon": "FileText",
+            "title": "Reports (Classical, Interactive, ALV)",
+            "description": "Create and customize all major types of ABAP reports."
+        },
+        {
+            "icon": "Layout",
+            "title": "Module Pool & Dialog Programming",
+            "description": "Develop and enhance Module Pool programs."
+        },
+        {
+            "icon": "Link",
+            "title": "BAPIs, RFCs & Enhancements",
+            "description": "Use Function Modules, BAPIs, User Exits, BADIs and Customer Exits."
+        },
+        {
+            "icon": "Rocket",
+            "title": "Forms, Workflow & S/4HANA ABAP",
+            "description": "Work with Smart Forms, Adobe Forms, Workflow and ABAP on HANA."
+        }
+    ],
+    "SkillsHana": [
+        {
+            "icon": "Cloud",
+            "title": "S/4HANA Architecture",
+            "description": "Understand the architecture and core concepts of SAP S/4HANA."
+        },
+        {
+            "icon": "Monitor",
+            "title": "Fiori Navigation",
+            "description": "Navigate the SAP Fiori user interface with confidence."
+        },
+        {
+            "icon": "Settings",
+            "title": "Business Process Configuration",
+            "description": "Configure key processes in Finance, Logistics or your chosen module."
+        },
+        {
+            "icon": "Play",
+            "title": "Implementation & Testing",
+            "description": "Perform end-to-end implementation, configuration and testing activities."
+        },
+        {
+            "icon": "Zap",
+            "title": "Real-time & In-Memory Concepts",
+            "description": "Work with real-time data processing and in-memory computing."
+        },
+        {
+            "icon": "Award",
+            "title": "Migration & Interview Readiness",
+            "description": "Understand ECC to S/4HANA migration and crack interviews with real project exposure."
+        }
+    ],
+    "SkillsBWBI": [
+        {
+            "icon": "Database",
+            "title": "Data Warehousing & BW Architecture",
+            "description": "Master core Data Warehousing concepts and SAP BW architecture."
+        },
+        {
+            "icon": "Layers",
+            "title": "BW/4HANA Landscape",
+            "description": "Understand the BW/4HANA landscape and its advantages over classic BW."
+        },
+        {
+            "icon": "Box",
+            "title": "InfoObjects & InfoProviders",
+            "description": "Build and manage InfoObjects, InfoAreas and InfoProviders."
+        },
+        {
+            "icon": "Download",
+            "title": "Data Extraction",
+            "description": "Extract data from SAP ECC, S/4HANA and flat files."
+        },
+        {
+            "icon": "GitMerge",
+            "title": "DSOs, Cubes & Transformations",
+            "description": "Design DSOs, InfoCubes, CompositeProviders and configure DTPs."
+        },
+        {
+            "icon": "BarChart3",
+            "title": "BEx Query Design & Reporting",
+            "description": "Create queries and reports using BEx Query Designer and Analyzer."
+        }
+    ],
+    "SkillsBasis": [
+        {
+            "icon": "Server",
+            "title": "System Installation & Configuration",
+            "description": "Install and configure SAP systems from scratch."
+        },
+        {
+            "icon": "Users",
+            "title": "Client & User Administration",
+            "description": "Perform client administration and manage users, roles and authorizations."
+        },
+        {
+            "icon": "GitBranch",
+            "title": "Transport Management System",
+            "description": "Handle TMS for moving changes across the landscape."
+        },
+        {
+            "icon": "Activity",
+            "title": "Performance Monitoring",
+            "description": "Monitor system performance, background jobs and system logs."
+        },
+        {
+            "icon": "Shield",
+            "title": "Security, Backups & Upgrades",
+            "description": "Manage security, backups, disaster recovery and apply patches/upgrades."
+        },
+        {
+            "icon": "Network",
+            "title": "Landscape Architecture",
+            "description": "Understand Dev, QA and Production landscapes and troubleshoot issues."
+        }
+    ],
+    "SkillsDataScience": [
+        {
+            "icon": "Database",
+            "title": "Data Science Fundamentals",
+            "description": "Understand the complete data science lifecycle from data collection to model deployment."
+        },
+        {
+            "icon": "BarChart3",
+            "title": "Statistical Analysis & EDA",
+            "description": "Perform exploratory data analysis and apply statistical techniques to real datasets."
+        },
+        {
+            "icon": "Code2",
+            "title": "Machine Learning Models",
+            "description": "Build, train and evaluate supervised and unsupervised machine learning models."
+        },
+        {
+            "icon": "Layers",
+            "title": "Data Visualization",
+            "description": "Create clear, insightful visualizations and dashboards that communicate findings effectively."
+        },
+        {
+            "icon": "Rocket",
+            "title": "Real-world Projects",
+            "description": "Work on end-to-end projects that mirror industry use-cases and business problems."
+        },
+        {
+            "icon": "Award",
+            "title": "Interview & Job Readiness",
+            "description": "Prepare for data science interviews with portfolio projects and domain knowledge."
+        }
+    ],
+    "SkillsDataAnalytics": [
+        {
+            "icon": "Database",
+            "title": "Data Analytics Foundations",
+            "description": "Master the core concepts of data analytics and the tools used to turn data into insights."
+        },
+        {
+            "icon": "BarChart3",
+            "title": "Data Cleaning & Preparation",
+            "description": "Clean, transform and prepare structured and unstructured data for analysis."
+        },
+        {
+            "icon": "PieChart",
+            "title": "Statistical Modeling",
+            "description": "Apply statistical techniques and predictive modeling to real business data."
+        },
+        {
+            "icon": "TrendingUp",
+            "title": "Business Insights",
+            "description": "Translate analytical findings into actionable recommendations for stakeholders."
+        },
+        {
+            "icon": "Layout",
+            "title": "Dashboards & Reporting",
+            "description": "Build interactive reports and dashboards that drive decision-making."
+        },
+        {
+            "icon": "Award",
+            "title": "Career Preparation",
+            "description": "Get ready for Data Analyst and Business Analyst roles with practical projects."
+        }
+    ],
+    "SkillsBusinessAnalytics": [
+        {
+            "icon": "BarChart3",
+            "title": "Business Analytics Essentials",
+            "description": "Understand how business analytics drives strategic and operational decisions."
+        },
+        {
+            "icon": "Database",
+            "title": "Data-Driven Decision Making",
+            "description": "Learn to collect, analyze and interpret data to support business goals."
+        },
+        {
+            "icon": "TrendingUp",
+            "title": "Predictive Analytics",
+            "description": "Use predictive models to forecast trends and identify opportunities."
+        },
+        {
+            "icon": "PieChart",
+            "title": "Business Intelligence Tools",
+            "description": "Work with BI tools to create reports, KPIs and performance dashboards."
+        },
+        {
+            "icon": "Users",
+            "title": "Stakeholder Communication",
+            "description": "Present insights clearly to both technical and non-technical audiences."
+        },
+        {
+            "icon": "Award",
+            "title": "Job-Ready Skills",
+            "description": "Build the practical skills needed for Business Analyst and BI roles."
+        }
+    ],
+    "SkillsGenAI": [
+        {
+            "icon": "Cloud",
+            "title": "AI & Generative AI Fundamentals",
+            "description": "Understand the core concepts of Artificial Intelligence and Generative AI systems."
+        },
+        {
+            "icon": "Code2",
+            "title": "Large Language Models",
+            "description": "Work with LLMs, prompt engineering and practical applications of ChatGPT-style models."
+        },
+        {
+            "icon": "Layers",
+            "title": "Machine Learning & Deep Learning",
+            "description": "Build and train ML and deep learning models for real-world tasks."
+        },
+        {
+            "icon": "Rocket",
+            "title": "AI Project Development",
+            "description": "Design and implement end-to-end AI solutions including NLP and automation."
+        },
+        {
+            "icon": "Settings",
+            "title": "AI Tools & Frameworks",
+            "description": "Gain hands-on experience with popular AI frameworks and deployment tools."
+        },
+        {
+            "icon": "Award",
+            "title": "Career in AI",
+            "description": "Prepare for roles such as AI Engineer, ML Engineer and AI Solutions Architect."
+        }
+    ],
+    "SkillsFullStack": [
+        {
+            "icon": "Code2",
+            "title": "Frontend Development",
+            "description": "Build responsive user interfaces with modern frontend technologies and frameworks."
+        },
+        {
+            "icon": "Server",
+            "title": "Backend Development",
+            "description": "Create robust server-side applications, APIs and business logic."
+        },
+        {
+            "icon": "Database",
+            "title": "Database Design & Integration",
+            "description": "Design databases and integrate them seamlessly with frontend and backend."
+        },
+        {
+            "icon": "GitBranch",
+            "title": "Full Application Architecture",
+            "description": "Understand how all layers of a web application work together."
+        },
+        {
+            "icon": "Rocket",
+            "title": "Deployment & DevOps Basics",
+            "description": "Deploy applications and understand basic CI/CD and hosting concepts."
+        },
+        {
+            "icon": "Award",
+            "title": "Portfolio & Job Readiness",
+            "description": "Build real projects and prepare for Full Stack Developer interviews."
+        }
+    ],
+    "SkillsJava": [
+        {
+            "icon": "Code2",
+            "title": "Core Java Programming",
+            "description": "Master Java syntax, OOP concepts, collections and exception handling."
+        },
+        {
+            "icon": "Layers",
+            "title": "Advanced Java & Frameworks",
+            "description": "Work with Spring, Hibernate and other enterprise Java frameworks."
+        },
+        {
+            "icon": "Database",
+            "title": "Database Connectivity",
+            "description": "Connect Java applications to databases using JDBC and ORM tools."
+        },
+        {
+            "icon": "Server",
+            "title": "Backend & API Development",
+            "description": "Build RESTful services and backend systems with Java."
+        },
+        {
+            "icon": "Rocket",
+            "title": "Real Project Implementation",
+            "description": "Develop complete Java applications that solve real business problems."
+        },
+        {
+            "icon": "Award",
+            "title": "Interview Preparation",
+            "description": "Get ready for Java Developer and Backend Engineer roles."
+        }
+    ],
+    "SkillsPython": [
+        {
+            "icon": "Code2",
+            "title": "Python Programming Basics",
+            "description": "Learn Python syntax, data structures, functions and object-oriented programming."
+        },
+        {
+            "icon": "Database",
+            "title": "Data Handling with Python",
+            "description": "Work with files, databases and popular data libraries like Pandas and NumPy."
+        },
+        {
+            "icon": "BarChart3",
+            "title": "Data Analysis & Visualization",
+            "description": "Analyze data and create visualizations using Python libraries."
+        },
+        {
+            "icon": "Rocket",
+            "title": "Web & Automation Projects",
+            "description": "Build web applications and automation scripts with Python."
+        },
+        {
+            "icon": "Layers",
+            "title": "Python for AI & ML",
+            "description": "Apply Python in machine learning and AI project workflows."
+        },
+        {
+            "icon": "Award",
+            "title": "Career Pathways",
+            "description": "Prepare for roles as Python Developer, Data Analyst or Automation Engineer."
+        }
+    ],
+    "SkillsSalesforce": [
+        {
+            "icon": "Cloud",
+            "title": "Salesforce Platform Fundamentals",
+            "description": "Understand the Salesforce ecosystem, CRM concepts and cloud architecture."
+        },
+        {
+            "icon": "Settings",
+            "title": "Salesforce Configuration",
+            "description": "Configure objects, fields, page layouts, workflows and process automation."
+        },
+        {
+            "icon": "Code2",
+            "title": "Apex & Lightning Development",
+            "description": "Write Apex code and build Lightning components for custom solutions."
+        },
+        {
+            "icon": "Users",
+            "title": "CRM Process Implementation",
+            "description": "Implement sales, service and marketing processes on the Salesforce platform."
+        },
+        {
+            "icon": "Link",
+            "title": "Integrations & AppExchange",
+            "description": "Integrate Salesforce with external systems and leverage AppExchange apps."
+        },
+        {
+            "icon": "Award",
+            "title": "Certification & Job Prep",
+            "description": "Prepare for Salesforce Admin/Developer certifications and interviews."
+        }
+    ],
+    "SkillsPowerBI": [
+        {
+            "icon": "BarChart3",
+            "title": "Power BI Fundamentals",
+            "description": "Understand the Power BI ecosystem and how to connect to multiple data sources."
+        },
+        {
+            "icon": "Database",
+            "title": "Data Modeling",
+            "description": "Build efficient data models, relationships and calculated columns/measures."
+        },
+        {
+            "icon": "PieChart",
+            "title": "Interactive Dashboards",
+            "description": "Design professional, interactive dashboards and reports."
+        },
+        {
+            "icon": "TrendingUp",
+            "title": "DAX & Advanced Analytics",
+            "description": "Write DAX formulas for advanced calculations and business logic."
+        },
+        {
+            "icon": "Share2",
+            "title": "Sharing & Collaboration",
+            "description": "Publish reports, manage workspaces and share insights securely."
+        },
+        {
+            "icon": "Award",
+            "title": "Job-Ready Portfolio",
+            "description": "Create portfolio projects and prepare for Power BI Developer roles."
+        }
+    ],
+    "SkillsTableau": [
+        {
+            "icon": "BarChart3",
+            "title": "Tableau Fundamentals",
+            "description": "Learn the Tableau interface and how to connect to various data sources."
+        },
+        {
+            "icon": "Layers",
+            "title": "Data Preparation & Modeling",
+            "description": "Clean, join and prepare data for effective visualization."
+        },
+        {
+            "icon": "PieChart",
+            "title": "Advanced Visualizations",
+            "description": "Create sophisticated charts, maps and interactive dashboards."
+        },
+        {
+            "icon": "TrendingUp",
+            "title": "Calculations & Analytics",
+            "description": "Use calculated fields, table calculations and analytics features."
+        },
+        {
+            "icon": "Share2",
+            "title": "Dashboard Storytelling",
+            "description": "Build compelling data stories that drive business decisions."
+        },
+        {
+            "icon": "Award",
+            "title": "Certification & Career Prep",
+            "description": "Prepare for Tableau certification and Data Analyst interviews."
+        }
+    ],
+    "SkillsHRAnalytics": [
+        {
+            "icon": "BarChart3",
+            "title": "HR Analytics Fundamentals",
+            "description": "Understand how data analytics is applied to human resource processes."
+        },
+        {
+            "icon": "Users",
+            "title": "Workforce Metrics & KPIs",
+            "description": "Define and track key HR metrics for recruitment, retention and performance."
+        },
+        {
+            "icon": "TrendingUp",
+            "title": "Predictive HR Insights",
+            "description": "Use analytics to predict attrition, performance and hiring needs."
+        },
+        {
+            "icon": "PieChart",
+            "title": "HR Dashboards",
+            "description": "Build dashboards that give leaders clear visibility into people data."
+        },
+        {
+            "icon": "Database",
+            "title": "Data-Driven HR Decisions",
+            "description": "Turn HR data into actionable strategies for talent management."
+        },
+        {
+            "icon": "Award",
+            "title": "Career in People Analytics",
+            "description": "Prepare for HR Analyst and People Analytics Specialist roles."
+        }
+    ],
+    "SkillsHRManagement": [
+        {
+            "icon": "Users",
+            "title": "HR Management Fundamentals",
+            "description": "Master the core functions of human resource management in modern organizations."
+        },
+        {
+            "icon": "UserPlus",
+            "title": "Talent Acquisition",
+            "description": "Learn end-to-end recruitment, selection and onboarding processes."
+        },
+        {
+            "icon": "Target",
+            "title": "Performance Management",
+            "description": "Design and implement performance appraisal and development systems."
+        },
+        {
+            "icon": "Banknote",
+            "title": "Compensation & Benefits",
+            "description": "Understand compensation structures, benefits and reward strategies."
+        },
+        {
+            "icon": "Shield",
+            "title": "Compliance & Employee Relations",
+            "description": "Handle labor laws, policies and positive employee relations."
+        },
+        {
+            "icon": "Award",
+            "title": "Leadership Readiness",
+            "description": "Build the skills needed for HR Manager and HR Business Partner roles."
+        }
+    ],
+    "SkillsPayroll": [
+        {
+            "icon": "Banknote",
+            "title": "Payroll Fundamentals",
+            "description": "Understand the complete payroll cycle from inputs to final payments."
+        },
+        {
+            "icon": "Calculator",
+            "title": "Salary Structure & Calculations",
+            "description": "Configure salary components, deductions and statutory calculations."
+        },
+        {
+            "icon": "FileText",
+            "title": "Compliance & Statutory Filings",
+            "description": "Handle PF, ESI, professional tax, TDS and other statutory requirements."
+        },
+        {
+            "icon": "Database",
+            "title": "Payroll Systems & Software",
+            "description": "Work with modern payroll systems and maintain accurate employee records."
+        },
+        {
+            "icon": "Shield",
+            "title": "Audit & Error Handling",
+            "description": "Identify, resolve and prevent common payroll errors and discrepancies."
+        },
+        {
+            "icon": "Award",
+            "title": "Career in Payroll",
+            "description": "Prepare for Payroll Specialist, HR Payroll Executive and related roles."
+        }
+    ],
+    "SkillsHRGeneralist": [
+        {
+            "icon": "Users",
+            "title": "HR Generalist Role Overview",
+            "description": "Understand the wide scope of responsibilities handled by an HR Generalist."
+        },
+        {
+            "icon": "UserPlus",
+            "title": "Recruitment & Onboarding",
+            "description": "Manage end-to-end hiring and create smooth onboarding experiences."
+        },
+        {
+            "icon": "ClipboardList",
+            "title": "Employee Lifecycle Management",
+            "description": "Handle day-to-day HR operations across the entire employee lifecycle."
+        },
+        {
+            "icon": "Banknote",
+            "title": "Payroll & Compliance Support",
+            "description": "Support payroll processing and ensure basic statutory compliance."
+        },
+        {
+            "icon": "HeartPulse",
+            "title": "Employee Engagement",
+            "description": "Design initiatives that improve culture, engagement and retention."
+        },
+        {
+            "icon": "Award",
+            "title": "All-Round HR Readiness",
+            "description": "Become job-ready for HR Generalist, HR Executive and Coordinator roles."
+        }
+    ],
+    "SkillsHRTraining": [
+        {
+            "icon": "Users",
+            "title": "Complete HR Skill Set",
+            "description": "Gain a well-rounded foundation across Core HR, Generalist, Payroll and Analytics."
+        },
+        {
+            "icon": "ClipboardList",
+            "title": "Practical HR Processes",
+            "description": "Learn real-world HR processes used in recruitment, payroll and employee management."
+        },
+        {
+            "icon": "BarChart3",
+            "title": "HR Analytics Exposure",
+            "description": "Understand how data is used to improve HR decisions and workforce planning."
+        },
+        {
+            "icon": "Banknote",
+            "title": "Payroll & Compliance",
+            "description": "Get hands-on knowledge of payroll processing and statutory compliance."
+        },
+        {
+            "icon": "Target",
+            "title": "Performance & Talent",
+            "description": "Support performance management and talent development initiatives."
+        },
+        {
+            "icon": "Award",
+            "title": "Multiple Career Paths",
+            "description": "Prepare for roles across HR Generalist, Payroll, Recruitment and Analytics."
+        }
+    ],
+    "SkillsIT": [
+        {
+            "icon": "Code2",
+            "title": "Software Development Fundamentals",
+            "description": "Build a strong foundation in programming, logic and software engineering principles."
+        },
+        {
+            "icon": "Layers",
+            "title": "Multiple Technology Tracks",
+            "description": "Gain exposure to Data Science, Analytics, Python, Java and related technologies."
+        },
+        {
+            "icon": "Database",
+            "title": "Data & Backend Skills",
+            "description": "Work with databases, APIs and backend concepts used in modern applications."
+        },
+        {
+            "icon": "Rocket",
+            "title": "Project-Based Learning",
+            "description": "Apply skills through practical projects that simulate real industry work."
+        },
+        {
+            "icon": "Users",
+            "title": "Collaboration & Best Practices",
+            "description": "Learn version control, code reviews and team collaboration practices."
+        },
+        {
+            "icon": "Award",
+            "title": "Career Launch Pad",
+            "description": "Prepare for roles such as Developer, Analyst or Full Stack Engineer."
+        }
+    ],
+    "SkillsHR": [
+        {
+            "icon": "Users",
+            "title": "HR Core Functions",
+            "description": "Master the essential HR functions that every organization needs."
+        },
+        {
+            "icon": "ClipboardList",
+            "title": "End-to-End HR Processes",
+            "description": "Handle recruitment, employee relations, payroll support and compliance."
+        },
+        {
+            "icon": "Target",
+            "title": "Talent & Performance",
+            "description": "Support talent acquisition, development and performance management."
+        },
+        {
+            "icon": "Banknote",
+            "title": "Compensation Basics",
+            "description": "Understand compensation structures and basic payroll concepts."
+        },
+        {
+            "icon": "Shield",
+            "title": "Compliance & Policies",
+            "description": "Apply labor laws and organizational policies correctly."
+        },
+        {
+            "icon": "Award",
+            "title": "HR Career Readiness",
+            "description": "Get ready for HR Generalist, HR Executive and related positions."
+        }
+    ],
+    "SkillsDataVisualization": [
+        {
+            "icon": "BarChart3",
+            "title": "Data Visualization Principles",
+            "description": "Learn the core principles of effective data visualization and storytelling."
+        },
+        {
+            "icon": "PieChart",
+            "title": "Tableau & Power BI Skills",
+            "description": "Build interactive dashboards using Tableau, Power BI and related tools."
+        },
+        {
+            "icon": "Database",
+            "title": "Data Preparation",
+            "description": "Clean, transform and shape data so it is ready for visualization."
+        },
+        {
+            "icon": "TrendingUp",
+            "title": "Advanced Charts & Analytics",
+            "description": "Create advanced visuals and apply analytical techniques to data."
+        },
+        {
+            "icon": "Layout",
+            "title": "Dashboard Design Best Practices",
+            "description": "Design clear, user-friendly dashboards that drive decisions."
+        },
+        {
+            "icon": "Award",
+            "title": "Portfolio & Job Prep",
+            "description": "Build a visualization portfolio and prepare for Data Analyst roles."
+        }
+    ],
+    "SkillsCoreHR": [
+        {
+            "icon": "Users",
+            "title": "Core HR Foundations",
+            "description": "Understand the fundamental people processes every organization runs."
+        },
+        {
+            "icon": "UserPlus",
+            "title": "Recruitment & Onboarding",
+            "description": "Manage hiring pipelines and create effective onboarding journeys."
+        },
+        {
+            "icon": "ClipboardList",
+            "title": "Employee Records & Administration",
+            "description": "Maintain accurate employee data and handle day-to-day HR operations."
+        },
+        {
+            "icon": "Banknote",
+            "title": "Payroll Support",
+            "description": "Support payroll inputs, validations and basic statutory compliance."
+        },
+        {
+            "icon": "Shield",
+            "title": "Policy & Compliance",
+            "description": "Apply HR policies and ensure basic legal compliance."
+        },
+        {
+            "icon": "Award",
+            "title": "HR Career Start",
+            "description": "Prepare for entry and mid-level Core HR and HR Executive roles."
+        }
+    ],
+    "SkillsCyberSecurity": [
+        {
+            "icon": "Shield",
+            "title": "Cybersecurity Fundamentals",
+            "description": "Understand core security concepts, threat models and the CIA triad."
+        },
+        {
+            "icon": "Lock",
+            "title": "Network & System Security",
+            "description": "Secure networks, servers and endpoints against common attack vectors."
+        },
+        {
+            "icon": "Search",
+            "title": "Vulnerability Assessment",
+            "description": "Identify and assess vulnerabilities using industry-standard scanning tools."
+        },
+        {
+            "icon": "AlertTriangle",
+            "title": "Incident Response",
+            "description": "Detect, contain and respond to security incidents effectively."
+        },
+        {
+            "icon": "Code2",
+            "title": "Ethical Hacking Basics",
+            "description": "Learn penetration testing fundamentals in safe, controlled environments."
+        },
+        {
+            "icon": "Award",
+            "title": "Certification & Career Prep",
+            "description": "Prepare for Security Analyst roles and entry-level cybersecurity certifications."
+        }
+    ],
+    "SkillsCompBenefits": [
+        {
+            "icon": "Banknote",
+            "title": "Compensation Structure Design",
+            "description": "Build salary bands, pay grades and job-leveling frameworks."
+        },
+        {
+            "icon": "PieChart",
+            "title": "Benefits Administration",
+            "description": "Manage health, retirement and other employee benefit programs."
+        },
+        {
+            "icon": "TrendingUp",
+            "title": "Market Benchmarking",
+            "description": "Use compensation surveys to benchmark pay against the market."
+        },
+        {
+            "icon": "Target",
+            "title": "Incentive & Bonus Planning",
+            "description": "Design variable pay and incentive plans tied to performance."
+        },
+        {
+            "icon": "Shield",
+            "title": "Compliance & Pay Equity",
+            "description": "Ensure compensation practices meet legal and pay equity requirements."
+        },
+        {
+            "icon": "Award",
+            "title": "Compensation Career Readiness",
+            "description": "Prepare for Compensation & Benefits Analyst and Total Rewards roles."
+        }
+    ]
+}
