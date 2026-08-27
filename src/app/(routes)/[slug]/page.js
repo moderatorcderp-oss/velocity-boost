@@ -197,6 +197,7 @@ const CourseCityPage = async ({ params }) => {
   const whyData = processPlaceholders(course.why, city.name);
   const whatYouWillLearnData = processPlaceholders(course.whatYouWillLearn, city.name);
   const skillsntoolsdata = processPlaceholders(course.skillsndtools, city.name);
+  const whothisisfor = processPlaceholders(course.whothisisfor, city.name)
 
   const isSapCourse = course.category === "sap";
 
@@ -276,6 +277,7 @@ const CourseCityPage = async ({ params }) => {
       <div dangerouslySetInnerHTML={{ __html: dynamicBodyContent }} />
       <ClientCourseSections
         layoutType="default"
+        whothisisfor = {whothisisfor}
         skillsntoolsdata={skillsntoolsdata}
         headerData={headerData}
         whyData={whyData}

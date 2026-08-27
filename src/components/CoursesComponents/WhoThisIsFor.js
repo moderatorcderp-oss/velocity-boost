@@ -1,6 +1,6 @@
 import SectionHeading from "./SectionHeading";
 
-const POINTS = [
+const DEFAULT_POINTS = [
   {
     title: "Complete beginners welcome",
     description:
@@ -23,6 +23,8 @@ const POINTS = [
   },
 ];
 
+const DEFAULT_NOTE = "No prerequisites required to enroll";
+
 function CheckIcon({ className }) {
   return (
     <svg
@@ -39,13 +41,19 @@ function CheckIcon({ className }) {
   );
 }
 
-export default function WhoThisIsFor() {
+export default function WhoThisIsFor({
+  data,
+  heading = "Who This Course Is For",
+}) {
+  const points = data?.points ?? DEFAULT_POINTS;
+  const note = data?.note ?? DEFAULT_NOTE;
+
   return (
     <section className="relative overflow-hidden bg-white py-10 max-w-[1800px] mx-auto">
       <div className="pointer-events-none absolute left-1/2 top-0 -z-10 h-96 w-96 -translate-x-1/2 rounded-full bg-blue-50 blur-3xl" />
 
       <div className="mx-auto max-w-5xl px-6">
-        <SectionHeading title="Who This Course Is For" />
+        <SectionHeading title={heading} />
 
         {/* Ticket */}
         <div className="relative mx-auto flex max-w-4xl flex-col overflow-visible rounded-3xl border border-slate-200 bg-white shadow-xl shadow-blue-100/60 md:flex-row">
@@ -56,7 +64,7 @@ export default function WhoThisIsFor() {
             </p>
 
             <div className="mt-6 grid grid-cols-1 gap-x-8 gap-y-7 sm:grid-cols-2">
-              {POINTS.map(({ title, description }) => (
+              {points.map(({ title, description }) => (
                 <div key={title} className="flex gap-3">
                   <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-blue-600 text-white">
                     <CheckIcon className="h-3.5 w-3.5" />
@@ -92,9 +100,7 @@ export default function WhoThisIsFor() {
               You&apos;re Eligible
             </p>
 
-            <p className="text-xs text-slate-500">
-              No prerequisites required to enroll
-            </p>
+            <p className="text-xs text-slate-500">{note}</p>
           </div>
         </div>
       </div>
