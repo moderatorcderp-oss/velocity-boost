@@ -40,13 +40,13 @@
   align-items: center;
   justify-content: space-between;
   gap: 3rem;
-  padding: 88px 70px 104px;
+  padding: 20px;
   background-blend-mode: overlay;
   /* background-color: rgba(249, 249, 249, 0.75); */
   /* background-color: #000; */
   width: 100%;
   max-width: 1800px;
-  min-height: 680px;
+  min-height: 600px;
   height: auto;
   margin: 0 auto;
   overflow: hidden;
@@ -54,18 +54,6 @@
   background-image: url('https://res.cloudinary.com/djdhtkjhn/image/upload/v1785563975/updatedHeroSec_eyyvqz.webp');
   background-size: cover;
   background-position: center;
-}
-
-.backgroundVideo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-  min-width: 100%;
-  min-height: 100%;
 }
 
 .leftSectionItDs {
