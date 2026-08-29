@@ -260,7 +260,7 @@ const DSHeader = ({ data }) => {
           height={500}
           priority
           sizes="100vw"
-          className="absolute bottom-0 left-1/2 z-10 h-auto max-h-[48%] w-full max-w-[1200px] -translate-x-1/2 object-contain object-bottom opacity-45 mix-blend-multiply [mask-image:linear-gradient(to_bottom,transparent_0%,black_22%,black_72%,transparent_100%)]"
+          className={styles.heroImage}
         />
         {/* top hairline accent */}
         <div className="absolute inset-x-0 top-0 h-[3px] bg-gradient-to-r from-[#010162] via-[#036f85] to-[#010162]" />

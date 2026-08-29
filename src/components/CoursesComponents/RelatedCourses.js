@@ -1,27 +1,16 @@
+// components/CoursesComponents/RelatedCourses.jsx
 "use client";
 
-import { useState, useEffect, useMemo, useCallback, useRef } from "react";
+import { useMemo, useState, useCallback } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import SectionHeading from "./SectionHeading";
 import styles from "@/styles/CoursesComponents/RelatedCourses.module.css";
 import ContactForm from "@/components/HomePage/Btnform";
 
-const AUTOPLAY_MS = 4500;
-
-// Single shared blue theme (from the HTML mockup's --navy / --teal tokens).
-// Every category uses the same accent pair now — only the label/code
-// still differs so users can tell categories apart by text, not color.
-const BLUE_ACCENT = "#010162"; // --navy
-const BLUE_ACCENT_2 = "#036f85"; // --teal
-
-// Maps a course name to a category label + short code.
-// Color is intentionally uniform (shared blue theme) across all categories.
 const getCourseMeta = (name = "") => {
   const n = name.toLowerCase();
-
-  if (n.includes("sap"))
-    return { key: "sap", code: "SAP", label: "SAP", accent: BLUE_ACCENT, accent2: BLUE_ACCENT_2 };
+  if (n.includes("sap")) return { label: "SAP" };
   if (
     n.includes("data science") ||
     n.includes("data analytics") ||
@@ -29,35 +18,88 @@ const getCourseMeta = (name = "") => {
     n.includes("agentic") ||
     n.includes("aiml")
   )
-    return { key: "data", code: "AI", label: "AI / Data", accent: BLUE_ACCENT, accent2: BLUE_ACCENT_2 };
+    return { label: "AI / DATA" };
   if (
     n.includes("python") ||
     n.includes("java") ||
     n.includes("reactjs") ||
     n.includes("devops")
   )
-    return { key: "dev", code: "DEV", label: "Development", accent: BLUE_ACCENT, accent2: BLUE_ACCENT_2 };
+    return { label: "DEV" };
   if (
     n.includes("tableau") ||
     n.includes("power bi") ||
     n.includes("powerbi") ||
     n.includes("data visualization")
   )
-    return { key: "bi", code: "BI", label: "BI", accent: BLUE_ACCENT, accent2: BLUE_ACCENT_2 };
-  if (n.includes("salesforce"))
-    return { key: "crm", code: "CRM", label: "CRM", accent: BLUE_ACCENT, accent2: BLUE_ACCENT_2 };
-  if (n.includes("hr"))
-    return { key: "hr", code: "HR", label: "HR", accent: BLUE_ACCENT, accent2: BLUE_ACCENT_2 };
+    return { label: "BI" };
+  if (n.includes("salesforce")) return { label: "CRM" };
+  if (n.includes("hr")) return { label: "HR" };
   if (n.includes("aws") || n.includes("azure") || n.includes("it course"))
-    return { key: "it", code: "IT", label: "Cloud / IT", accent: BLUE_ACCENT, accent2: BLUE_ACCENT_2 };
-
-  return { key: "general", code: "PRO", label: "Career", accent: BLUE_ACCENT, accent2: BLUE_ACCENT_2 };
+    return { label: "CLOUD" };
+  return { label: "CAREER" };
 };
+
+// 6 pastel schemes: index 0 is reserved for the overview tile, 1-5 cycle
+// across course cards so colors don't repeat back-to-back on small sets.
+const PALETTES = [
+  { bg: "#EDE9FB", ink: "#2E2270", sub: "#5B4FA0", chipBg: "rgba(255,255,255,0.6)" },
+  { bg: "#DFF3EA", ink: "#0F6B4A", sub: "#3C8B6D", chipBg: "rgba(255,255,255,0.6)" },
+  { bg: "#FCE3EC", ink: "#9C1857", sub: "#B85480", chipBg: "rgba(255,255,255,0.6)" },
+  { bg: "#FDECCF", ink: "#8A5A12", sub: "#A97D3C", chipBg: "rgba(255,255,255,0.6)" },
+  { bg: "#FCE1CE", ink: "#9A4416", sub: "#B8703F", chipBg: "rgba(255,255,255,0.6)" },
+  { bg: "#DCEAFB", ink: "#1E4E8C", sub: "#4A72A8", chipBg: "rgba(255,255,255,0.6)" },
+];
+
+// Bento rhythm: repeats every 7 so any list length still tiles cleanly.
+const SPAN_PATTERN = ["wide", "normal", "tall", "normal", "wide", "normal", "tall"];
+
+const ClockIcon = () => (
+  <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 3" /></svg>
+);
+const LevelIcon = () => (
+  <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M4 20V13" /><path d="M12 20V8" /><path d="M20 20V4" /></svg>
+);
+const BadgeIcon = () => (
+  <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="8" r="5" /><path d="M9 12.5 7 22l5-3 5 3-2-9.5" /></svg>
+);
+const DocIcon = () => (
+  <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" /><path d="M14 2v6h6" /><path d="M9 13h6M9 17h6" /></svg>
+);
+const TrendIcon = () => (
+  <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 17l6-6 4 4 8-8" /><path d="M15 7h6v6" /></svg>
+);
+const CheckIcon = () => (
+  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5" /></svg>
+);
+const ArrowIcon = () => (
+  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="M13 6l6 6-6 6" /></svg>
+);
+
+const CourseMedia = ({ course, className }) =>
+  course.icon?.endsWith(".mp4") ? (
+    <video
+      src={course.icon}
+      className={className}
+      aria-label={course.alt}
+      loop
+      autoPlay
+      muted
+      playsInline
+    />
+  ) : (
+    <Image
+      src={course.icon}
+      alt={course.alt || "related course"}
+      width={40}
+      height={40}
+      className={className}
+    />
+  );
 
 const CoursesRelated = ({ data, currentCityName }) => {
   const [showModal, setShowModal] = useState(false);
   const [selectedCourse, setSelectedCourse] = useState(null);
-  const [activeIndex, setActiveIndex] = useState(0);
   const router = useRouter();
 
   const courseNameToUrlMapping = {
@@ -117,9 +159,8 @@ const CoursesRelated = ({ data, currentCityName }) => {
 
   const items = useMemo(() => data?.items || [], [data]);
 
-  const normalizeCityForUrl = (cityName) => {
-    return cityName.toLowerCase().replace(/\s+/g, "-");
-  };
+  const normalizeCityForUrl = (cityName) =>
+    cityName.toLowerCase().replace(/\s+/g, "-");
 
   const handleCourseClick = useCallback(
     (courseName) => {
@@ -145,40 +186,15 @@ const CoursesRelated = ({ data, currentCityName }) => {
     setSelectedCourse(null);
   }, []);
 
-  // Auto-advance the spotlight continuously (no pause on hover/focus).
-  useEffect(() => {
-    if (!items.length) return undefined;
-    if (
-      typeof window !== "undefined" &&
-      window.matchMedia("(prefers-reduced-motion: reduce)").matches
-    ) {
-      return undefined;
-    }
-
-    const id = setInterval(() => {
-      setActiveIndex((prev) => (prev + 1) % items.length);
-    }, AUTOPLAY_MS);
-
-    return () => clearInterval(id);
-  }, [items.length]);
-
-  // Keep activeIndex valid if the items list changes size.
-  useEffect(() => {
-    if (activeIndex >= items.length) {
-      setActiveIndex(0);
-    }
-  }, [items.length, activeIndex]);
-
-  const handleSelectRow = useCallback((index) => {
-    setActiveIndex(index);
-  }, []);
-
-  const handleRowKeyDown = useCallback((e, index) => {
-    if (e.key === "Enter" || e.key === " ") {
-      e.preventDefault();
-      setActiveIndex(index);
-    }
-  }, []);
+  const handleCardKeyDown = useCallback(
+    (e, courseName) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        handleCourseClick(courseName);
+      }
+    },
+    [handleCourseClick]
+  );
 
   if (!data || !items.length) {
     return (
@@ -188,105 +204,112 @@ const CoursesRelated = ({ data, currentCityName }) => {
     );
   }
 
-  const activeCourse = items[activeIndex];
-  const activeMeta = getCourseMeta(activeCourse.name);
-
   const introText = currentCityName
     ? `Courses learners often explore next, based in ${currentCityName}.`
     : "Courses learners often explore next.";
 
   return (
-    <div className={` ${styles.relatedCoursesContainer}`}>
+    <div className={styles.relatedCoursesContainer}>
       <SectionHeading title={data.title} description={introText} />
 
-      <div className={styles.spotlight}>
+      <div className={styles.bentoGrid}>
+        {/* Overview tile */}
         <div
-          className={styles.stage}
-          style={{
-            "--accent": activeMeta.accent,
-            "--accent2": activeMeta.accent2,
-          }}
-          onClick={() => handleCourseClick(activeCourse.name)}
-          role="button"
-          tabIndex={0}
-          onKeyDown={(e) => {
-            if (e.key === "Enter" || e.key === " ") {
-              e.preventDefault();
-              handleCourseClick(activeCourse.name);
-            }
-          }}
-          title={`Click to view ${activeCourse.name} course in ${currentCityName}`}
+          className={styles.overviewCard}
+          style={{ background: PALETTES[0].bg, color: PALETTES[0].ink }}
         >
-          <span className={styles.stageBlobTop} aria-hidden="true" />
-          <span className={styles.stageBlobBottom} aria-hidden="true" />
-
-          <span className={styles.stageTag}>{activeMeta.label}</span>
-
-          <div className={styles.stageIcon}>
-            {activeCourse.icon.endsWith(".mp4") ? (
-              <video
-                src={activeCourse.icon}
-                className={styles.stageIconMedia}
-                aria-label={activeCourse.alt}
-                loop
-                autoPlay
-                muted
-                playsInline
-              />
-            ) : (
-              <Image
-                src={activeCourse.icon}
-                alt={activeCourse.alt || "related courses img"}
-                width={48}
-                height={48}
-                className={styles.stageIconMedia}
-              />
-            )}
-          </div>
-
-          <h3 className={styles.stageTitle}>{activeCourse.name}</h3>
-          <p className={styles.stageDesc}>{activeCourse.description}</p>
-
-          <span className={styles.stageCta}>
-            View course <span className={styles.stageCtaArrow}>→</span>
+          <span className={styles.overviewEyebrow} style={{ color: PALETTES[0].sub }}>
+            What you get
           </span>
+          <h3 className={styles.overviewTitle}>Certified. Practical. Career-ready.</h3>
+          <p className={styles.overviewDesc} style={{ color: PALETTES[0].sub }}>
+            Every course pairs hands-on projects with instructor support so
+            you can apply new skills immediately.
+          </p>
 
-          <div className={styles.progressTrack} aria-hidden="true">
-            <div
-              key={activeIndex}
-              className={styles.progressFill}
-              style={{
-                animationDuration: `${AUTOPLAY_MS}ms`,
-              }}
-            />
+          <div className={styles.overviewMockup} aria-hidden="true">
+            <div className={styles.mockBlob} />
+            <div className={styles.mockCard}>
+              <TrendIcon />
+            </div>
+          </div>
+
+          <div
+            className={styles.metaBar}
+            style={{ background: PALETTES[0].chipBg }}
+          >
+            <span className={styles.metaItem}>
+              <DocIcon /> {items.length} Courses
+            </span>
+            <span className={styles.metaItem}>
+              <BadgeIcon /> Certificate Included
+            </span>
+            <span className={styles.metaItem}>
+              <ClockIcon /> Flexible Schedule
+            </span>
+            <span className={styles.metaItem}>
+              <TrendIcon /> Career Growth
+            </span>
           </div>
         </div>
 
-        <div className={styles.list} role="listbox" aria-label="All related courses">
-          {items.map((course, index) => {
-            const meta = getCourseMeta(course.name);
-            const isActive = index === activeIndex;
-            return (
-              <div
-                key={index}
-                className={`${styles.row} ${isActive ? styles.rowActive : ""}`}
-                style={{ "--row-accent": meta.accent }}
-                role="option"
-                aria-selected={isActive}
-                tabIndex={0}
-                onClick={() => handleSelectRow(index)}
-                onKeyDown={(e) => handleRowKeyDown(e, index)}
-              >
-                <span className={styles.rowDot}>{meta.code}</span>
-                <span className={styles.rowText}>
-                  <span className={styles.rowTitle}>{course.name}</span>
-                  <span className={styles.rowCat}>{meta.label}</span>
-                </span>
-                <span className={styles.rowBar} aria-hidden="true" />
+        {/* Course tiles */}
+        {items.map((course, index) => {
+          const palette = PALETTES[(index % 5) + 1];
+          const isLast = index === items.length - 1;
+          const span = isLast ? "wide" : SPAN_PATTERN[index % SPAN_PATTERN.length];
+          const meta = getCourseMeta(course.name);
+
+          return (
+            <div
+              key={index}
+              className={`${styles.courseCard} ${styles[span]}`}
+              style={{ background: palette.bg, color: palette.ink }}
+              role="button"
+              tabIndex={0}
+              onClick={() => handleCourseClick(course.name)}
+              onKeyDown={(e) => handleCardKeyDown(e, course.name)}
+              title={`Click to view ${course.name} course in ${currentCityName}`}
+            >
+              <span className={styles.courseTag}>{meta.label}</span>
+
+              <div className={styles.courseTop}>
+                <h3 className={styles.courseTitle}>{course.name}</h3>
+                <p className={styles.courseDesc} style={{ color: palette.sub }}>
+                  {course.description}
+                </p>
               </div>
-            );
-          })}
-        </div>
+
+              <div className={styles.courseMockup} aria-hidden="true">
+                <div className={styles.mockBlob} />
+                <div className={styles.mockCard}>
+                  <CourseMedia course={course} className={styles.mockIcon} />
+                </div>
+                <div className={styles.mockChip}>
+                  <CheckIcon />
+                </div>
+              </div>
+
+              <div
+                className={styles.metaBar}
+                style={{ background: palette.chipBg }}
+              >
+                <span className={styles.metaItem}>
+                  <ClockIcon /> {course.duration || "Self-paced"}
+                </span>
+                <span className={styles.metaItem}>
+                  <LevelIcon /> {course.level || "All levels"}
+                </span>
+                <span className={styles.metaItem}>
+                  <BadgeIcon /> Certificate
+                </span>
+                <span className={styles.metaArrow}>
+                  <ArrowIcon />
+                </span>
+              </div>
+            </div>
+          );
+        })}
       </div>
 
       {showModal && (

@@ -56,6 +56,24 @@
   background-position: center;
 }
 
+.heroImage {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  z-index: 2;
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  max-height: 48%;
+  transform: translateX(-50%);
+  object-fit: contain;
+  object-position: bottom;
+  opacity: 0.52;
+  mix-blend-mode: multiply;
+  mask-image: linear-gradient(to bottom, transparent 0%, black 18%, black 68%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 18%, black 68%, transparent 100%);
+}
+
 .leftSectionItDs {
   max-width: 50%;
   position: relative;
