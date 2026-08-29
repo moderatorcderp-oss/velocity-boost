@@ -1,61 +1,13 @@
 import React, { useState, useEffect, useMemo, useRef, useCallback } from "react";
 import { Star, Quote } from "lucide-react";
 import SectionBackground from "../BackgroundCss/SectionBackground";
+import { homepageReviews, ReviewStarRow } from "../Common/SharedReviews";
 
 const AUTO_MS = 3200;
 const GAP = 24; // px gap between cards
 
 export default function TestimonialCarousel() {
-  const reviews = useMemo(
-    () => [
-      {
-        name: "Sai Srujan",
-        role: "SAP HCM Course",
-        review:
-          "I completed the SAP HCM course at Connecting Dots ERP in Mumbai, where expert instructors guided me through SAP complexities with clarity. The comprehensive, well-designed course covered all essential modules.",
-        image:
-          "https://res.cloudinary.com/bropujss/image/upload/v1784203985/review_image_5_jjm78u_h8txiq.webp",
-        rating: 3,
-      },
-      {
-        name: "Seshu Tamma",
-        role: "SAP Aruba Course",
-        review:
-          "In my opinion, Connecting Dots is Mumbai's best SAP training center, offering top-notch SAP Aruba courses with a comprehensive curriculum, expert instructors, and excellent placement assistance.",
-        image:
-          "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784203579/review_image_2_kh1xcn_uiztqd.webp",
-        rating: 5,
-      },
-      {
-        name: "Niveath P",
-        role: "SAP HCM Course",
-        review:
-          "I completed the SAP HCM course at Connecting Dots ERP in Mumbai, where expert instructors guided me through SAP complexities with clarity. The comprehensive, well-designed course covered all essential modules.",
-        image:
-          "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784203724/review_image_3_ptk5th_tgirdk.webp",
-        rating: 5,
-      },
-      {
-        name: "Shweta Udainiya",
-        role: "SAP SD Course",
-        review:
-          "Connecting Dots Advancements offers top SAP training in Mumbai with expert coaches, flexible learning, and strong job support. I completed my SAP SD Course here, highly recommending it for a successful SAP career.",
-        image:
-          "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784203666/review_image_1_plv1wu_yjudgs.webp",
-        rating: 5,
-      },
-      {
-        name: "Shreyansh Gupta",
-        role: "SAP SD Course",
-        review:
-          "Connecting Dots Advancements offers top SAP training in Mumbai with expert coaches, flexible learning, and strong job support. I completed my SAP SD Course here, highly recommending it for a successful SAP career.",
-        image:
-          "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784203620/review_image_4_vadjw2_vkf3qu.webp",
-        rating: 5,
-      },
-    ],
-    []
-  );
+  const reviews = useMemo(() => homepageReviews, []);
 
   const len = reviews.length;
   const trackRef = useRef(null);
@@ -253,15 +205,7 @@ export default function TestimonialCarousel() {
                           </div>
                         </div>
                         <div className="flex gap-1 shrink-0">
-                          {Array.from({ length: 5 }).map((_, s) => (
-                            <Star
-                              key={s}
-                              size={15}
-                              fill={s < r.rating ? "#fbbf24" : "none"}
-                              color="#fbbf24"
-                              strokeWidth={1.5}
-                            />
-                          ))}
+                          <ReviewStarRow rating={r.rating} size={15} className="flex gap-1" />
                         </div>
                       </div>
 

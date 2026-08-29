@@ -7,6 +7,7 @@ import styles from "@/styles/CoursesComponents/Reviews.module.css";
 import SectionHeading from "./SectionHeading";
 import { useInView } from "react-intersection-observer";
 import { Star, Pin, BadgeCheck, Quote } from "lucide-react";
+import { coursePageReviews, getReviewStats, ReviewStarRow } from "../Common/SharedReviews";
 
 /*
   Expected `data` shape:
@@ -40,52 +41,7 @@ const PIN_TILTS = [-4, 3, -2, 5, -3, 2];
 const defaultData = {
   title: "What Our Students Say",
   subtitle: "Real experiences from learners who built practical skills with us.",
-  reviews: [
-    {
-      id: "demo-review-1",
-      name: "Aditi Sharma",
-      course: "Full-Stack Web Development",
-      batch: "Morning batch, Aug 2026",
-      rating: 5,
-      quote: "The sessions were practical and easy to follow. I built projects during the course and felt confident applying for developer roles.",
-      date: "2 weeks ago",
-      verified: true,
-      avatarInitials: "AS",
-    },
-    {
-      id: "demo-review-2",
-      name: "Rahul Mehta",
-      course: "SAP FICO Training",
-      batch: "Weekend batch, Jul 2026",
-      rating: 5,
-      quote: "The trainer explained each business process with clear examples and answered every question patiently. The placement guidance was useful too.",
-      date: "1 month ago",
-      verified: true,
-      avatarInitials: "RM",
-    },
-    {
-      id: "demo-review-3",
-      name: "Neha Verma",
-      course: "Digital Marketing",
-      batch: "Evening batch, Jun 2026",
-      rating: 4,
-      quote: "I liked the balance between strategy and hands-on campaign work. The projects gave me something concrete to show prospective employers.",
-      date: "2 months ago",
-      verified: true,
-      avatarInitials: "NV",
-    },
-     {
-      id: "demo-review-3",
-      name: "Neha Verma",
-      course: "Digital Marketing",
-      batch: "Evening batch, Jun 2026",
-      rating: 4,
-      quote: "I liked the balance between strategy and hands-on campaign work. The projects gave me something concrete to show prospective employers.",
-      date: "2 months ago",
-      verified: true,
-      avatarInitials: "NV",
-    },
-  ],
+  reviews: coursePageReviews,
 };
 
 const Reviews = ({ data }) => {
@@ -120,22 +76,7 @@ const ReviewsBody = ({ reviews, sectionInView }) => {
   const [activeFilter, setActiveFilter] = useState(null); // null = show all
 
   // ---- AGGREGATE STATS: derived live from the reviews array ----
-  const stats = useMemo(() => {
-    const total = reviews.length;
-    const sum = reviews.reduce((acc, r) => acc + (r.rating || 0), 0);
-    const average = total ? sum / total : 0;
-
-    const distribution = [5, 4, 3, 2, 1].map((star) => {
-      const count = reviews.filter((r) => Math.round(r.rating) === star).length;
-      return {
-        star,
-        count,
-        pct: total ? Math.round((count / total) * 100) : 0,
-      };
-    });
-
-    return { total, average, distribution };
-  }, [reviews]);
+  const stats = useMemo(() => getReviewStats(reviews), [reviews]);
 
   const visibleReviews = activeFilter
     ? reviews.filter((r) => Math.round(r.rating) === activeFilter)
@@ -205,7 +146,7 @@ const StatsPanel = ({ stats, activeFilter, onFilterToggle, animate }) => {
       <div className={styles.statsSummary}>
         <div className={styles.averageNumber}>{displayedAverage.toFixed(1)}</div>
         <div className={styles.averageStars}>
-          <StarRow rating={stats.average} size={16} />
+          <ReviewStarRow rating={stats.average} size={16} className={styles.starRow} />
         </div>
         <div className={styles.totalLabel}>
           Based on {displayedTotal} review{displayedTotal !== 1 ? "s" : ""}
@@ -238,22 +179,9 @@ const StatsPanel = ({ stats, activeFilter, onFilterToggle, animate }) => {
   );
 };
 
-const StarRow = ({ rating, size = 14 }) => {
-  const rounded = Math.round(rating);
-  return (
-    <div className={styles.starRow} aria-label={`${rating.toFixed(1)} out of 5 stars`}>
-      {Array.from({ length: 5 }).map((_, i) => (
-        <Star
-          key={i}
-          size={size}
-          strokeWidth={2}
-          className={i < rounded ? styles.starFilled : styles.starEmpty}
-          fill={i < rounded ? "currentColor" : "none"}
-        />
-      ))}
-    </div>
-  );
-};
+const StarRow = ({ rating, size = 14 }) => (
+  <ReviewStarRow rating={rating} size={size} className={styles.starRow} />
+);
 
 const ReviewPin = ({ review, index }) => {
   const [cardRef, cardInView] = useInView({
