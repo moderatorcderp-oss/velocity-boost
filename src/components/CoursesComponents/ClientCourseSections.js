@@ -31,6 +31,7 @@ export default function ClientCourseSections(props) {
     headerData,
     whyData,
     skillsntoolsdata,
+    whothisisfor,
     whatYouWillLearnData,
     sapModData,
     course,
@@ -164,7 +165,7 @@ export default function ClientCourseSections(props) {
 
       <SkillsAndTools data={skillsntoolsdata} />
 
-      <WhoThisIsFor />
+      <WhoThisIsFor data={whothisisfor} />
 
       <Suspense fallback={null}>
         <Certificate data={certificateData} />

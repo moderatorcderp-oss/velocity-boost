@@ -3,6 +3,7 @@ import whyData from "../../public/Jsonfolder/Whyds.json";
 import dsHeaderData from "../../public/Jsonfolder/dsHeaderData.json"
 import whatWillLearnData from "../../public/Jsonfolder/whatwilllearn.json";
 import skillsData from '../../public/Jsonfolder/SkillsLearn.json'
+import whothisfordata from '../../public/Jsonfolder/Whothisisfor.json'
 
 const companyAlumni = [
   { name: "Amdocs", logo: "https://res.cloudinary.com/bropujss/image/upload/v1784204085/amdocs_imxtpx_talr5t.webp" },
@@ -14294,5 +14295,64 @@ const skillsToCoursesMap = {
 Object.entries(skillsToCoursesMap).forEach(([skillsKey, courseSlug]) => {
   if (coursesData[courseSlug] && skillsData[skillsKey]) {
     coursesData[courseSlug].skillsndtools = skillsData[skillsKey];
+  }
+});
+
+// Who this course for data
+
+// Maps course slugs to their "Who This Is For" data keys
+const courseToWhoMap = {
+  // SAP modules
+  "sap": "whosap",
+  "sap-fico": "whofico",
+  "sap-mm": "whomm",
+  "sap-hr-hcm": "whohrhcm",
+  "sap-qm": "whoqm",
+  "sap-ps": "whops",
+  "sap-scm": "whoscm",
+  "sap-ehs": "whoehs",
+  "sap-ibp": "whoibp",
+  "sap-ariba": "whoariba",
+  "sap-sd": "whosd",
+  "sap-pp": "whopp",
+  "sap-pm": "whopm",
+  "sap-ewm": "whoewm",
+  "sap-btp": "whobtp",
+  "sap-grc": "whogrc",
+  "sap-successfactors": "whosucc",
+  "sap-abap": "whoabap",
+  "sap-s4-hana": "whohana",
+  "sap-bw-bi": "whobwbi",
+  "sap-basis": "whobasis",
+
+  // Data / Analytics / AI
+  "data-science": "whods",
+  "data-analytics": "whoda",
+  "business-analytics": "whoba",
+  "generative-ai": "whogpt",          // match your slug if different
+  "power-bi": "whopowerbi",
+  "tableau": "whotableau",
+  "data-visualization": "whodatavisual",
+
+  // Development
+  "full-stack": "whofullstack",
+  "java": "whojava",
+  "python": "whopython",
+  "salesforce": "whosales",
+  "it": "whoit",
+
+  // HR
+  "hr-analytics": "whoana",
+  "hr-management": "whoman",
+  "hr-payroll": "whopayroll",
+  "hr-generalist": "whogen",
+  "hr-training": "whohrtrain",
+  "hr": "whohr",
+  "core-hr": "whocore",
+};
+
+Object.entries(courseToWhoMap).forEach(([courseSlug, whoKey]) => {
+  if (coursesData[courseSlug] && whothisfordata[whoKey]) {
+    coursesData[courseSlug].whothisisfor = whothisfordata[whoKey];
   }
 });
