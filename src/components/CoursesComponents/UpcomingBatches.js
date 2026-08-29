@@ -7,6 +7,7 @@ import styles from "@/styles/CoursesComponents/Upcomingbatches.module.css";
 import SectionHeading from "./SectionHeading";
 import { useInView } from "react-intersection-observer";
 import { Clock, Users, Zap, CalendarDays, MessageCircle } from "lucide-react";
+import { usePopupForm } from "../context/Popupformcontext";
 
 /*
   Expected `data` shape:
@@ -119,6 +120,8 @@ const UpcomingBatches = ({ data }) => {
 };
 
 const BatchTicket = ({ batch, index }) => {
+  const { openPopup } = usePopupForm();
+
   const [ticketRef, ticketInView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -232,6 +235,10 @@ const BatchTicket = ({ batch, index }) => {
         <a
           href={batch.enrollHref || "#enroll"}
           className={styles.enrollButton}
+          onClick={(event) => {
+            event.preventDefault();
+            openPopup();
+          }}
         >
           <Zap size={15} strokeWidth={2.5} />
           Enroll now
