@@ -272,12 +272,7 @@ export default function StickyEnrollForm() {
     <div className="fixed inset-x-0 bottom-0 z-50">
       <style>{`
        .triranga-bg {
-  background-color: #ffffff;
-  background-image:
-    url('/stickyformbg.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: transparent;
 }
       `}</style>
 
