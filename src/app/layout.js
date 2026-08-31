@@ -1,5 +1,12 @@
 // src/app/layout.js
-import { Lato, Rubik } from "next/font/google";
+import {
+  Lato,
+  Rubik,
+  Fraunces,
+  Inter,
+  JetBrains_Mono,
+  Bricolage_Grotesque,
+} from "next/font/google";
 import Script from "next/script";
 import { Partytown } from "@builder.io/partytown/react";
 import "./globals.css";
@@ -28,6 +35,30 @@ const rubik = Rubik({
   variable: "--font-rubik",
 });
 
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-fraunces",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-jetbrains-mono",
+});
+
+const bricolage = Bricolage_Grotesque({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-bricolage",
+});
+
 // --- Constants ---
 const GTM_ID = "GTM-MB68QM2V";
 const FB_PIXEL_ID = "3414178115554916";
@@ -52,7 +83,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${lato.variable} ${rubik.variable}`}>
+    <html
+      lang="en"
+      className={`${lato.variable} ${rubik.variable} ${fraunces.variable} ${inter.variable} ${jetbrainsMono.variable} ${bricolage.variable}`}
+    >
       <head>
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://www.google-analytics.com" />

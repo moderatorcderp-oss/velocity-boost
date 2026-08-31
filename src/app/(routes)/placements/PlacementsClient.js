@@ -163,8 +163,6 @@ export default function PlacementPage() {
         showBookmark={false}
       />
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700&display=swap');
-
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
         :root {
@@ -186,7 +184,7 @@ export default function PlacementPage() {
 
         body {
           background: var(--bg);
-          font-family: 'Bricolage Grotesque', sans-serif;
+          font-family: var(--font-bricolage), 'Segoe UI', sans-serif;
           color: var(--text);
           overflow-x: hidden;
         }
