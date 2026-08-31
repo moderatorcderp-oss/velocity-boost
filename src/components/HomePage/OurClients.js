@@ -189,7 +189,7 @@ const MarqueeRow = ({ logos = [], direction = "left", speed = "normal", shuffle 
           >
             <Image
               src={logo}
-              alt=""
+              alt="company logos"
               width={120}
               height={100}
               className="object-contain max-w-full max-h-full group-hover:scale-105 transition-transform duration-300"

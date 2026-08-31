@@ -107,7 +107,7 @@ export default function CareerHeroSlide({ onOpenForm }) {
       <div className="relative hidden w-full overflow-hidden sm:block sm:aspect-[16/9] lg:aspect-[14/9] xl:aspect-[2.4/1]">
           <Image
             src="https://res.cloudinary.com/djdhtkjhn/image/upload/v1785573435/RoboWidth_mduj2r.png"
-            alt=""
+            alt="headerImg"
             fill
             priority
             className="object-cover object-center"
