@@ -7,8 +7,6 @@ import HeaderCarousel from "@/components/HomePage/HeaderCarousel";
 import faqdata from "../../../public/Jsonfolder/faqdata.json";
 import WhyChooseSection from "@/components/HomePage/WhyChooseSection";
 import WhatWeOffer from "../../components/HomePage/WhatWeOffer"
-import SectionBackground from "@/components/BackgroundCss/SectionBackground";
-import RegistrationForm from "@/components/PopupForm2";
 import Container from "@/components/StandardContainer";
 
 const Marquee = dynamic(() => import("@/components/HomePage/Marquee2"), {

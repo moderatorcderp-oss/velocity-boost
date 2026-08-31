@@ -195,7 +195,6 @@ const MarqueeRow = ({ logos = [], direction = "left", speed = "normal", shuffle 
               className="object-contain max-w-full max-h-full group-hover:scale-105 transition-transform duration-300"
               loading="lazy"
               decoding="async"
-              quality={60}
               sizes="(max-width: 640px) 80px, (max-width: 1024px) 100px, 120px"
             />
           </div>
