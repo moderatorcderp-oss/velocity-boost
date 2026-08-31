@@ -503,7 +503,6 @@ export default function Navbar2() {
     useLayoutEffect(placeCaret, [placeCaret]);
 
     useEffect(() => {
-        const onResize = () => placeCaret();
         const onKey = (e) => {
             if (e.key === "Escape") {
                 setOpen(null);
@@ -518,15 +517,13 @@ export default function Navbar2() {
                 setOpen(null);
             }
         };
-        window.addEventListener("resize", onResize, { passive: true });
         document.addEventListener("keydown", onKey);
         document.addEventListener("mousedown", onDown);
         return () => {
-            window.removeEventListener("resize", onResize);
             document.removeEventListener("keydown", onKey);
             document.removeEventListener("mousedown", onDown);
         };
-    }, [placeCaret]);
+    }, []);
 
     useEffect(() => {
         setOpen(null);
@@ -558,14 +555,13 @@ export default function Navbar2() {
     useEffect(() => {
         let ticking = false;
         const handleScroll = () => {
-            if (!ticking) {
-                requestAnimationFrame(() => {
-                    const fullBarHeight = fullBarRef.current ? fullBarRef.current.offsetHeight : 0;
-                    setScrolled(window.scrollY >= fullBarHeight && fullBarHeight > 0);
-                    ticking = false;
-                });
-                ticking = true;
-            }
+            if (ticking) return;
+            ticking = true;
+            requestAnimationFrame(() => {
+                const fullBarHeight = fullBarRef.current ? fullBarRef.current.offsetHeight : 0;
+                setScrolled(window.scrollY >= fullBarHeight && fullBarHeight > 0);
+                ticking = false;
+            });
         };
         handleScroll();
         window.addEventListener("scroll", handleScroll, { passive: true });
@@ -648,11 +644,11 @@ export default function Navbar2() {
     }, []);
 
     useEffect(() => {
+        let frameId = null;
+
         const updateNavbarBottom = () => {
-            // While the pill bar is on screen it's the fixed element pinned to
-            // the viewport, so downstream spacing should follow it. Otherwise
-            // the full bar is the one that matters — note it's unpinned now,
-            // so this value moves with normal scroll like any in-flow element.
+            frameId = null;
+
             const el = scrolled && pillBarRef.current ? pillBarRef.current : fullBarRef.current;
             if (el) {
                 const bottom = el.getBoundingClientRect().bottom;
@@ -663,12 +659,18 @@ export default function Navbar2() {
             }
         };
 
+        const scheduleLayoutUpdate = () => {
+            if (frameId !== null) return;
+            frameId = requestAnimationFrame(updateNavbarBottom);
+        };
+
         updateNavbarBottom();
-        window.addEventListener("resize", updateNavbarBottom);
-        window.addEventListener("scroll", updateNavbarBottom, { passive: true });
+        window.addEventListener("resize", scheduleLayoutUpdate, { passive: true });
+        window.addEventListener("scroll", scheduleLayoutUpdate, { passive: true });
         return () => {
-            window.removeEventListener("resize", updateNavbarBottom);
-            window.removeEventListener("scroll", updateNavbarBottom);
+            window.removeEventListener("resize", scheduleLayoutUpdate);
+            window.removeEventListener("scroll", scheduleLayoutUpdate);
+            if (frameId !== null) cancelAnimationFrame(frameId);
         };
     }, [scrolled]);
 
