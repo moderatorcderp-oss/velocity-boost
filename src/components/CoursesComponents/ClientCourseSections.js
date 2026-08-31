@@ -16,10 +16,7 @@ const Why = dynamic(() => import("./Why"));
 const SapModComponent = dynamic(() => import("./sapmod"), { ssr: false });
 const Curriculum = dynamic(() => import("./Curriculam"), { ssr: false });
 const Modules = dynamic(() => import("./Modules"), { ssr: false });
-// === Below the fold (hydrated after initial paint) ===
-const TrustUs = dynamic(() => import("./Trustus"), { ssr: false });
 const Certificate = dynamic(() => import("../HomePage/Certificate"), { ssr: false });
-const Program = dynamic(() => import("./ProgramHighlights"), { ssr: false });
 const Description = dynamic(() => import("./Description"), { ssr: false });
 const FAQ = dynamic(() => import("./FAQ"), { ssr: false });
 const HrCard = dynamic(() => import("./HRCard"), { ssr: false });
@@ -83,10 +80,6 @@ export default function ClientCourseSections(props) {
           </Suspense>
         </div>
 
-        <Suspense fallback={null}>
-          <TrustUs />
-        </Suspense>
-
         <div id="search-engine-optimization" style={{ scrollMarginTop: "80px" }}>
           <Suspense fallback={null}>
             {descriptionContentData.seo && (
@@ -107,9 +100,6 @@ export default function ClientCourseSections(props) {
           <Reviews data={reviewsData} />
         </Suspense>
 
-        <Suspense fallback={null}>
-          <Program />
-        </Suspense>
 
         <div id="social-media-marketing" style={{ scrollMarginTop: "80px" }}>
           <Suspense fallback={null}>
