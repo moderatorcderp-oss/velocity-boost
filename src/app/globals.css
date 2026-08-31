@@ -49,7 +49,7 @@ body {
 }
 
 .body {
-  background-color: #182e4a;
+  background-color: #ffffff;
 }
 
 /* :where(body > :not([class*="backgroundAnimation"]):not(script):not(style):not(noscript)) {

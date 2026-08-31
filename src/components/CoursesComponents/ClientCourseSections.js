@@ -157,12 +157,24 @@ export default function ClientCourseSections(props) {
         <Reviews data={reviewsData} />
       </Suspense>
 
-      <Suspense fallback={null}>
-        <CoursesRelated
-          data={relatedCoursesData}
-          currentCityName={currentCityName}
-        />
-      </Suspense>
+      {
+        !courseCategory === "hr" && (
+
+          <Suspense fallback={null}>
+            <CoursesRelated
+              data={relatedCoursesData}
+              currentCityName={currentCityName}
+            />
+          </Suspense>
+        )
+      }
+
+      {courseCategory === "hr" && (
+        <Suspense fallback={null}>
+          <HrCard />
+        </Suspense>
+      )}
+
 
       <Suspense fallback={null}>
         <FAQ data={faqData} />
@@ -179,13 +191,6 @@ export default function ClientCourseSections(props) {
       <div>
         {cityLinks}
       </div>
-
-      {courseCategory === "hr" && (
-        <Suspense fallback={null}>
-          <HrCard />
-        </Suspense>
-      )}
-
     </>
   );
 }
