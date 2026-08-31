@@ -11496,7 +11496,6 @@ export const coursesData = {
     updatedAt: "2025-07-11T00:00:00Z", // Used in: JSON-LD WebPage dateModified
   },
 
-  // DIGITAL MARKETING
 
   // HR COURSES
 
@@ -12884,7 +12883,7 @@ coursesData["generative-ai"] = {
       ...card,
       title: card.title.replace("ChatGPT and AI", "Generative AI"),
       content: card.content
-        .replace(/ChatGPT and AI/g, "Generative AI")
+        .replace(/generative-ai and AI/g, "Generative AI")
         .replace(/Artificial Intelligence/g, "Generative AI"),
     })),
   },

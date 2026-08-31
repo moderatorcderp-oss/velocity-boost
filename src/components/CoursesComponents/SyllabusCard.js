@@ -339,7 +339,7 @@ export default function SapAbapSyllabus(props) {
               className="text-[11px] sm:text-[11.5px] mb-2"
               style={{ fontFamily: monoFont, color: palette.gold }}
             >
-              sap / abap · course syllabus
+              {(data.title2 || data.title || "Course Title").replace(/<[^>]+>/g, "")}
             </div>
             <h2
               className="text-[26px] sm:text-4xl leading-tight"
