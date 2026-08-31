@@ -48,10 +48,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.body {
-  background-color: #ffffff;
-}
-
 /* :where(body > :not([class*="backgroundAnimation"]):not(script):not(style):not(noscript)) {
   position: relative;
   z-index: 1;
