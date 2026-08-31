@@ -48,119 +48,6 @@ const stats = [
   { icon: Calendar, value: "Certified", label: "Industry recognized" },
 ];
 
-const defaultModules = [
-  {
-    id: "01",
-    title: "ABAP Programming Fundamentals",
-    icon: Code2,
-    duration: "1–2 wks",
-    topics: [
-      "ABAP Editor & Workbench",
-      "Data Types & Variables",
-      "Control Structures",
-      "String & Date Operations",
-      "Internal Tables Basics",
-      "Debugging Fundamentals",
-    ],
-  },
-  {
-    id: "02",
-    title: "Data Dictionary & Database Access",
-    icon: Database,
-    duration: "1–2 wks",
-    topics: [
-      "Tables & Structures",
-      "Data Elements & Domains",
-      "Views & Search Helps",
-      "Open SQL Statements",
-      "Foreign Keys & Relations",
-      "Table Maintenance Generator",
-    ],
-  },
-  {
-    id: "03",
-    title: "Reports & List Generation",
-    icon: BarChart3,
-    duration: "1–2 wks",
-    default: true,
-    columns: [
-      ["Classical Reports", "ALV Reports (List Viewer)", "Report Selection Screens"],
-      ["Nested Loops in Reports", "Interactive Reports", "Events in Reporting"],
-      ["User Interaction in Reports", "Performance in Large Reports"],
-    ],
-  },
-  {
-    id: "04",
-    title: "Forms & Interfaces",
-    icon: LayoutPanelLeft,
-    duration: "1–2 wks",
-    topics: [
-      "SmartForms Basics",
-      "Adobe Forms",
-      "BAPI & RFC Interfaces",
-      "IDocs & File Interfaces",
-      "Print Programs",
-      "Form Layout Design",
-    ],
-  },
-  {
-    id: "05",
-    title: "Modularization Techniques",
-    icon: Layers,
-    duration: "1–2 wks",
-    topics: [
-      "Subroutines",
-      "Function Modules",
-      "Method & Class Basics",
-      "Include Programs",
-      "Macros",
-      "Reusable Components",
-    ],
-  },
-  {
-    id: "06",
-    title: "Performance Analysis & Optimization",
-    icon: Gauge,
-    duration: "1–2 wks",
-    topics: [
-      "Runtime Analysis (SE30)",
-      "SQL Trace (ST05)",
-      "Buffering Strategies",
-      "Efficient Internal Tables",
-      "Avoiding Nested Loops",
-      "Code Inspector",
-    ],
-  },
-  {
-    id: "07",
-    title: "Open SQL & Advanced Topics",
-    icon: Database,
-    duration: "1–2 wks",
-    topics: [
-      "Joins & Subqueries",
-      "CDS Views",
-      "AMDP Basics",
-      "Native SQL",
-      "Locking Mechanisms",
-      "Advanced Selects",
-    ],
-  },
-  {
-    id: "08",
-    title: "SAP Module Integration",
-    icon: PuzzleIcon,
-    duration: "1–2 wks",
-    topics: [
-      "SD & MM Integration",
-      "User Exits & BAdIs",
-      "Enhancement Framework",
-      "Cross-Module Reporting",
-      "Workflow Basics",
-      "Real-time Project Practices",
-    ],
-  },
-];
-
 function TocRow({ mod, isSelected, showProgress, onSelect }) {
   return (
     <button
@@ -305,19 +192,19 @@ export default function SapAbapSyllabus(props) {
         (data && data.overview && data.overview.modules) ||
         (data && data.curriculum);
 
-      if (!Array.isArray(src) || src.length === 0) return defaultModules;
+      if (!Array.isArray(src) || src.length === 0) return [];
 
       return src.map((m, idx) => ({
         id: m.id || m.slug || String(idx + 1).padStart(2, "0"),
         title: m.title || m.name || `Module ${idx + 1}`,
         topics: m.topics || m.subtopics || m.items || m.content || [],
         duration: m.duration || m.time || "1–2 wks",
-        icon: m.icon || defaultModules[idx]?.icon || Code2,
+        icon: m.icon || Code2,
         columns: m.columns,
         default: m.default,
       }));
     } catch (err) {
-      return defaultModules;
+      return [];
     }
   }, [data, props && props.curriculum]);
 
@@ -405,16 +292,9 @@ export default function SapAbapSyllabus(props) {
     }, 1000);
   }, [data]);
 
-  if (!data) {
-    return (
-      <div className="w-full bg-white rounded-2xl mb-16 sm:mb-20 lg:mb-24">
-        <div className="flex items-center justify-center py-16">
-          <div className="text-slate-500 text-xl text-center">
-            No SAP Modules data available (check masterData.js or prop passing).
-          </div>
-        </div>
-      </div>
-    );
+  // No modules → render nothing
+  if (!displayedModules.length) {
+    return null;
   }
 
   const selected =
