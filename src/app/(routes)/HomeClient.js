@@ -138,9 +138,7 @@ export default function HomeClient() {
             <Marquee />
           </LazySection>
           <LazySection fallback={<div style={{ minHeight: "250px" }} />}>
-            <SectionBackground>
-              <OurClients />
-            </SectionBackground>
+            <OurClients />
           </LazySection>
           <LazySection fallback={<div style={{ minHeight: "200px" }} />}>
             <WhatWeOffer />
