@@ -104,15 +104,14 @@ export default function CareerHeroSlide({ onOpenForm }) {
       {/* ================================================================
         DESKTOP (sm+) — UNCHANGED: image with text overlaid on top of it.
       ================================================================ */}
-      <div className="relative hidden bg-no-repeat w-full overflow-hidden sm:block sm:aspect-[16/9] lg:aspect-[14/9] xl:aspect-[2.4/1]"
-        style={
-          {
-            backgroundImage: "url('https://res.cloudinary.com/djdhtkjhn/image/upload/v1785573435/RoboWidth_mduj2r.png')",
-            backgroundPosition: "center",
-            backgroundSize: "cover"
-          }
-        }
-      >
+      <div className="relative hidden w-full overflow-hidden sm:block sm:aspect-[16/9] lg:aspect-[14/9] xl:aspect-[2.4/1]">
+          <Image
+            src="https://res.cloudinary.com/djdhtkjhn/image/upload/v1785573435/RoboWidth_mduj2r.png"
+            alt=""
+            fill
+            priority
+            className="object-cover object-center"
+          />
         <div className="absolute inset-0 z-10 mx-auto flex max-w-[1400px] items-start pt-16 box-border px-5 sm:px-8 lg:px-10">
           <div className="grid w-full grid-cols-1 items-start gap-6 lg:grid-cols-12 lg:gap-8">
             <div className="relative z-10 max-w-2xl lg:col-span-5">
