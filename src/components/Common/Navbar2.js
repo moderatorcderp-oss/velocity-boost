@@ -5,11 +5,7 @@ import Image from "next/image";
 import dynamic from "next/dynamic";
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
 import Container from "./Container";
-
-const AnimatedLogo = dynamic(() => import("../AnimatedLogo"), {
-    ssr: false,
-    loading: () => <div className="h-[26px] w-[26px] shrink-0 rounded-full bg-blue-50" />,
-});
+import AnimatedLogo from "../AnimatedLogo";
 
 const sapMenu = {
     promo: {
