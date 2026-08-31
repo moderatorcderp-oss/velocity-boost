@@ -218,7 +218,7 @@ export default function TestimonialCarousel() {
                           className="absolute -top-1 right-0"
                         />
                         <p className="text-white/85 text-[14.5px] leading-relaxed font-medium pr-6">
-                          "{r.review}"
+                          "{r.quote || r.review || ""}"
                         </p>
                       </div>
                     </div>

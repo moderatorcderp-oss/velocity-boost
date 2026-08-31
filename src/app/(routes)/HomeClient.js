@@ -126,7 +126,7 @@ export default function HomeClient() {
     <>
       <Container className="box-border">
         <main className="flex-col justify-center items-center overflow-y-hidden  overflow-x-hidden w-full max-w-[1800px]">
-          <h1 className="visually-hidden">
+          <h1 className="hidden">
             Job-Oriented Training That Gets You Hired
           </h1>
 

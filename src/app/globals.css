@@ -1,8 +1,5 @@
 /* src/app/globals.css */
 
-/* Third-party CSS */
-@import 'bootstrap/dist/css/bootstrap.min.css';
-
 /* Tailwind CSS directives - KEEP THESE */
 @tailwind base;
 @tailwind components;
