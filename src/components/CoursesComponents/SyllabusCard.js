@@ -1,8 +1,15 @@
 ﻿"use client";
 
-import React, { useCallback, useEffect, useMemo, useState } from "react";
+/**
+ * Font setup (recommended, not required — component falls back to system fonts):
+ *   Display serif: "Fraunces"  (course title, module heading, TOC numerals)
+ *   Body sans:     "Inter"
+ *   Mono:          "JetBrains Mono" (durations, small tags)
+ * Add via next/font or a <link> in your root layout for the intended look.
+ */
+
+import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
-  Package,
   Code2,
   Database,
   BarChart3,
@@ -13,17 +20,32 @@ import {
   Clock,
   Users,
   Calendar,
-  ChevronDown,
   Download,
   Info,
 } from "lucide-react";
 import Btnform from "../HomePage/Btnform";
 
+const displayFont = "'Fraunces', 'Georgia', serif";
+const bodyFont = "'Inter', system-ui, sans-serif";
+const monoFont = "'JetBrains Mono', 'SFMono-Regular', Menlo, monospace";
+
+const palette = {
+  paper: "#FFFFFF",
+  ink: "#0F172A",
+  inkMuted: "#64748B",
+  gold: "#2563EB",
+  goldSoft: "#EFF6FF",
+  rule: "#E2E8F0",
+};
+
+const AUTOPLAY_MS = 3200;
+const RESUME_DELAY_MS = 6000;
+
 const stats = [
-  { icon: Code2, value: "10+", label: "Languages & Tools", color: "#9333EA" },
-  { icon: Clock, value: "280+", label: "Live Sessions Hours", color: "#2563EB" },
-  { icon: Users, value: "Expert", label: "Mentor Guidance", color: "#0D9488" },
-  { icon: Calendar, value: "Certification", label: "Industry Recognized", color: "#EA580C" },
+  { icon: Code2, value: "10+", label: "Languages & tools" },
+  { icon: Clock, value: "280+", label: "Live session hours" },
+  { icon: Users, value: "Expert", label: "Mentor guidance" },
+  { icon: Calendar, value: "Certified", label: "Industry recognized" },
 ];
 
 const defaultModules = [
@@ -31,8 +53,7 @@ const defaultModules = [
     id: "01",
     title: "ABAP Programming Fundamentals",
     icon: Code2,
-    color: "#9333EA",
-    duration: "1 - 2 weeks",
+    duration: "1–2 wks",
     topics: [
       "ABAP Editor & Workbench",
       "Data Types & Variables",
@@ -46,8 +67,7 @@ const defaultModules = [
     id: "02",
     title: "Data Dictionary & Database Access",
     icon: Database,
-    color: "#0891B2",
-    duration: "1 - 2 weeks",
+    duration: "1–2 wks",
     topics: [
       "Tables & Structures",
       "Data Elements & Domains",
@@ -61,9 +81,8 @@ const defaultModules = [
     id: "03",
     title: "Reports & List Generation",
     icon: BarChart3,
-    color: "#EA580C",
-    duration: "1 - 2 weeks",
-    expanded: true,
+    duration: "1–2 wks",
+    default: true,
     columns: [
       ["Classical Reports", "ALV Reports (List Viewer)", "Report Selection Screens"],
       ["Nested Loops in Reports", "Interactive Reports", "Events in Reporting"],
@@ -74,8 +93,7 @@ const defaultModules = [
     id: "04",
     title: "Forms & Interfaces",
     icon: LayoutPanelLeft,
-    color: "#7C3AED",
-    duration: "1 - 2 weeks",
+    duration: "1–2 wks",
     topics: [
       "SmartForms Basics",
       "Adobe Forms",
@@ -89,8 +107,7 @@ const defaultModules = [
     id: "05",
     title: "Modularization Techniques",
     icon: Layers,
-    color: "#16A34A",
-    duration: "1 - 2 weeks",
+    duration: "1–2 wks",
     topics: [
       "Subroutines",
       "Function Modules",
@@ -104,8 +121,7 @@ const defaultModules = [
     id: "06",
     title: "Performance Analysis & Optimization",
     icon: Gauge,
-    color: "#2563EB",
-    duration: "1 - 2 weeks",
+    duration: "1–2 wks",
     topics: [
       "Runtime Analysis (SE30)",
       "SQL Trace (ST05)",
@@ -119,8 +135,7 @@ const defaultModules = [
     id: "07",
     title: "Open SQL & Advanced Topics",
     icon: Database,
-    color: "#DB2777",
-    duration: "1 - 2 weeks",
+    duration: "1–2 wks",
     topics: [
       "Joins & Subqueries",
       "CDS Views",
@@ -134,8 +149,7 @@ const defaultModules = [
     id: "08",
     title: "SAP Module Integration",
     icon: PuzzleIcon,
-    color: "#0D9488",
-    duration: "1 - 2 weeks",
+    duration: "1–2 wks",
     topics: [
       "SD & MM Integration",
       "User Exits & BAdIs",
@@ -147,190 +161,142 @@ const defaultModules = [
   },
 ];
 
-function darkenColor(hex, amount = 0.7) {
-  const num = parseInt(hex.replace("#", ""), 16);
-  const r = Math.max(0, Math.floor(((num >> 16) & 255) * (1 - amount)));
-  const g = Math.max(0, Math.floor(((num >> 8) & 255) * (1 - amount)));
-  const b = Math.max(0, Math.floor((num & 255) * (1 - amount)));
-  return `rgb(${r}, ${g}, ${b})`;
-}
-
-function StatCard({ icon: Icon, value, label, color }) {
+function TocRow({ mod, isSelected, showProgress, onSelect }) {
   return (
-    <div
-      className="rounded-xl p-2.5 sm:p-3 flex flex-col gap-1.5 sm:gap-2"
+    <button
+      onClick={onSelect}
+      className="relative overflow-hidden w-full text-left flex items-baseline gap-2 py-2.5 sm:py-3 px-2.5 sm:px-3 transition-colors duration-150 focus:outline-none focus-visible:ring-2"
       style={{
-        background: "#ffffff",
-        border: "1px solid rgba(99,102,241,0.12)",
-        boxShadow: "0 1px 3px rgba(30,27,75,0.06)",
+        borderLeft: isSelected ? `3px solid ${palette.gold}` : "3px solid transparent",
+        background: isSelected ? palette.goldSoft : "transparent",
+        "--tw-ring-color": palette.gold,
       }}
     >
-      <div
-        className="w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center"
-        style={{ background: `${color}15`, color }}
+      <span
+        className="text-[11px] sm:text-[12px] shrink-0"
+        style={{
+          fontFamily: monoFont,
+          color: isSelected ? palette.gold : palette.inkMuted,
+        }}
       >
-        <Icon size={15} />
-      </div>
-      <div>
-        <div className="text-slate-800 font-bold text-xs sm:text-sm leading-tight">{value}</div>
-        <div className="text-slate-500 text-[10px] sm:text-[11px] leading-tight">{label}</div>
-      </div>
-    </div>
+        {mod.id}
+      </span>
+      <span
+        className="text-[13px] sm:text-[13.5px] whitespace-nowrap"
+        style={{
+          fontFamily: bodyFont,
+          fontWeight: isSelected ? 600 : 500,
+          color: isSelected ? palette.ink : palette.inkMuted,
+        }}
+      >
+        {mod.title}
+      </span>
+      <span
+        className="flex-1 border-b mx-1 mb-1"
+        style={{ borderBottomStyle: "dotted", borderColor: palette.rule }}
+      />
+      <span
+        className="text-[10.5px] sm:text-[11px] shrink-0"
+        style={{ fontFamily: monoFont, color: palette.inkMuted }}
+      >
+        {mod.duration}
+      </span>
+
+      {showProgress && (
+        <span
+          className="sasy-toc-progress absolute left-0 bottom-0 h-[2px]"
+          style={{ background: palette.gold, animationDuration: `${AUTOPLAY_MS}ms` }}
+        />
+      )}
+    </button>
   );
 }
 
-function TimelineCard({ mod, isOpen, onOpen, onToggle, isLast, mounted }) {
+function DetailPane({ mod }) {
   const Icon = mod.icon;
   return (
-    <div
-      className={`relative pl-0 sm:pl-16 transition-all duration-500 ${mounted ? "opacity-100 scale-100" : "opacity-0 scale-95"
-        }`}
-    >
-      {!isLast && (
-        <div
-          className="hidden sm:block absolute left-[11px] sm:left-[19px] top-8 sm:top-9 bottom-[-20px] sm:bottom-[-24px] w-px"
-          style={{
-            background:
-              "linear-gradient(to bottom, rgba(37,99,235,0.35), rgba(147,51,234,0.35))",
-          }}
-        />
-      )}
-      <div
-        className="hidden sm:flex absolute left-0 sm:left-2.5 top-2.5 sm:top-3 w-5 h-5 sm:w-6 sm:h-6 rounded-full items-center justify-center"
-        style={{
-          background: "#ffffff",
-          border: `2px solid ${mod.color}`,
-          boxShadow: `0 0 0 3px ${mod.color}14`,
-        }}
-      >
-        <div
-          className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full animate-pulse"
-          style={{ background: mod.color }}
-        />
-      </div>
-
-      <div
-        onMouseEnter={onOpen}
-        onClick={onToggle}
-        className="w-full text-left rounded-xl sm:rounded-2xl overflow-hidden cursor-pointer transition-all duration-300 hover:-translate-y-0.5 group mb-4 sm:mb-6 relative"
-        style={{
-          background: "#ffffff",
-          border: isOpen
-            ? `1px solid ${mod.color}55`
-            : "1px solid rgba(30,27,75,0.08)",
-          boxShadow: isOpen
-            ? `0 8px 24px -8px ${mod.color}33`
-            : "0 1px 3px rgba(30,27,75,0.05)",
-        }}
-      >
-        {/* header row */}
-        <div className="relative z-0 transition-all duration-300 flex items-center gap-2 sm:gap-3 pl-12 sm:pl-20 pr-2.5 sm:pr-4 py-2.5 sm:py-4 min-h-[52px] sm:min-h-[60px]">
-          {/* full-height gradient icon block — always on top, clearly visible */}
-          <div
-            className="absolute z-20 left-0 top-0 bottom-0 w-9 sm:w-16 flex items-center justify-center"
-            style={{
-              background: `linear-gradient(180deg, ${mod.color} 0%, ${darkenColor(
-                mod.color,
-                0.82
-              )} 100%)`,
-            }}
+    <div key={mod.id} className="sasy-detail-enter">
+      <div className="flex items-start gap-3 sm:gap-4">
+        <span
+          className="text-3xl sm:text-4xl leading-none"
+          style={{ fontFamily: displayFont, fontWeight: 400, color: palette.gold }}
+        >
+          {mod.id}
+        </span>
+        <div className="flex-1 min-w-0">
+          <h4
+            className="text-lg sm:text-[22px] leading-snug"
+            style={{ fontFamily: displayFont, fontWeight: 600, color: palette.ink }}
           >
-            <Icon size={16} className="text-white drop-shadow-sm sm:w-5 sm:h-5" />
-          </div>
-
-          <span
-            className="font-bold text-sm sm:text-lg w-5 sm:w-7 shrink-0"
-            style={{ color: mod.color }}
-          >
-            {mod.id}
-          </span>
-          <span className="text-slate-800 font-semibold text-[13px] sm:text-base flex-1 truncate">
             {mod.title}
-          </span>
-          <span
-            className="hidden sm:flex items-center gap-1 text-[11px] font-medium px-2.5 py-1 rounded-full shrink-0"
-            style={{
-              background: `${mod.color}12`,
-              color: mod.color,
-              border: `1px solid ${mod.color}35`,
-            }}
-          >
-            <Clock size={11} />
-            {mod.duration}
-          </span>
-          <ChevronDown
-            size={15}
-            className="text-slate-400 shrink-0 transition-transform duration-300"
-            style={{ transform: isOpen ? "rotate(180deg)" : "rotate(0deg)" }}
-          />
+          </h4>
+          <div className="flex items-center gap-2 mt-1">
+            <Icon size={13} style={{ color: palette.inkMuted }} />
+            <span
+              className="text-[11.5px]"
+              style={{ fontFamily: monoFont, color: palette.inkMuted }}
+            >
+              {mod.duration}
+            </span>
+          </div>
         </div>
-
-        {/* expanded content */}
-        {isOpen && mod.columns && (
-          <div
-            className="mx-2.5 transition-all duration-300 relative z-10 sm:mx-4 mb-3 sm:mb-4 rounded-lg sm:rounded-xl p-3 sm:p-4 grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4"
-            style={{
-              background: "#F8F7FC",
-              border: "1px solid rgba(30,27,75,0.06)",
-            }}
-          >
-            {mod.columns.map((col, ci) => (
-              <div
-                key={ci}
-                className={`flex flex-col gap-2 sm:gap-2.5 ${ci > 0 ? "sm:pl-4 sm:border-l sm:border-slate-200" : ""
-                  }`}
-              >
-                {col.map((item, ii) => (
-                  <div key={ii} className="flex items-start gap-2">
-                    <span
-                      className="mt-1.5 w-1.5 h-1.5 rounded-full shrink-0"
-                      style={{ background: mod.color }}
-                    />
-                    <span className="text-slate-600 text-[12.5px] sm:text-[13px] leading-snug">
-                      {item}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            ))}
-          </div>
-        )}
-
-        {isOpen && !mod.columns && mod.topics && (
-          <div
-            className="mx-2.5 sm:mx-4 mb-3 sm:mb-4 relative z-10 rounded-lg sm:rounded-xl p-3 sm:p-4 grid grid-cols-1 sm:grid-cols-2 gap-x-4 sm:gap-x-6 gap-y-1.5 sm:gap-y-2"
-            style={{
-              background: "#F8F7FC",
-              border: "1px solid rgba(30,27,75,0.06)",
-            }}
-          >
-            {mod.topics.map((item, ii) => (
-              <div key={ii} className="flex items-start gap-2">
-                <span
-                  className="mt-1.5 w-1.5 h-1.5 rounded-full shrink-0"
-                  style={{ background: mod.color }}
-                />
-                <span className="text-slate-600 text-[12.5px] sm:text-[13px] leading-snug">
-                  {item}
-                </span>
-              </div>
-            ))}
-          </div>
-        )}
       </div>
+
+      <div className="h-px my-4 sm:my-5" style={{ background: palette.rule }} />
+
+      {mod.columns ? (
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-x-6 gap-y-2.5">
+          {mod.columns.map((col, ci) => (
+            <div key={ci} className="flex flex-col gap-2.5">
+              {col.map((item, ii) => (
+                <div key={ii} className="flex items-start gap-2">
+                  <span
+                    className="mt-1.5 w-1.5 h-1.5 shrink-0"
+                    style={{ background: palette.gold }}
+                  />
+                  <span
+                    className="text-[13px] leading-snug"
+                    style={{ fontFamily: bodyFont, color: palette.inkMuted }}
+                  >
+                    {item}
+                  </span>
+                </div>
+              ))}
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2.5">
+          {(mod.topics || []).map((item, ii) => (
+            <div key={ii} className="flex items-start gap-2">
+              <span
+                className="mt-1.5 w-1.5 h-1.5 shrink-0"
+                style={{ background: palette.gold }}
+              />
+              <span
+                className="text-[13px] leading-snug"
+                style={{ fontFamily: bodyFont, color: palette.inkMuted }}
+              >
+                {item}
+              </span>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
 
 export default function SapAbapSyllabus(props) {
-  // support both calling conventions: <SyllabusCard data={...} /> or <SyllabusCard {...data} />
   const data = (props && props.data) || props || {};
-  const [openId, setOpenId] = useState(null);
-  const [mountedIds, setMountedIds] = useState([]);
+  const [selectedId, setSelectedId] = useState(null);
+  const [mounted, setMounted] = useState(false);
+  const [isPaused, setIsPaused] = useState(false);
+  const [reducedMotion, setReducedMotion] = useState(false);
   const [showForm, setShowForm] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const resumeTimeoutRef = useRef(null);
 
-  // Prefer incoming data's modules/curriculum when available, otherwise use defaults
   const displayedModules = useMemo(() => {
     try {
       const src =
@@ -345,60 +311,86 @@ export default function SapAbapSyllabus(props) {
         id: m.id || m.slug || String(idx + 1).padStart(2, "0"),
         title: m.title || m.name || `Module ${idx + 1}`,
         topics: m.topics || m.subtopics || m.items || m.content || [],
-        duration: m.duration || m.time || "1 - 2 weeks",
+        duration: m.duration || m.time || "1–2 wks",
         icon: m.icon || defaultModules[idx]?.icon || Code2,
-        color: m.color || defaultModules[idx]?.color || "#9333EA",
         columns: m.columns,
+        default: m.default,
       }));
     } catch (err) {
       return defaultModules;
     }
   }, [data, props && props.curriculum]);
 
-  // ensure openId defaults to first available module id from displayedModules
+  // pick the initial module
   useEffect(() => {
     if (!displayedModules.length) {
-      setOpenId(null);
-      setMountedIds([]);
+      setSelectedId(null);
       return;
     }
-
-    setOpenId((prev) =>
-      prev && displayedModules.some((m) => m.id === prev)
-        ? prev
-        : displayedModules[0].id
-    );
+    setSelectedId((prev) => {
+      if (prev && displayedModules.some((m) => m.id === prev)) return prev;
+      const flagged = displayedModules.find((m) => m.default);
+      return (flagged || displayedModules[0]).id;
+    });
   }, [displayedModules]);
 
+  // whole-component fade-in on first render
   useEffect(() => {
-    if (!displayedModules.length) {
-      setMountedIds([]);
-      return;
-    }
+    const t = window.setTimeout(() => setMounted(true), 30);
+    return () => window.clearTimeout(t);
+  }, []);
 
-    const timeouts = displayedModules.map((mod, i) =>
-      window.setTimeout(() => {
-        setMountedIds((prev) => (prev.includes(mod.id) ? prev : [...prev, mod.id]));
-      }, i * 80)
-    );
-
+  // respect reduced-motion preference
+  useEffect(() => {
+    if (typeof window === "undefined" || !window.matchMedia) return;
+    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
+    setReducedMotion(mq.matches);
+    const handler = (e) => setReducedMotion(e.matches);
+    if (mq.addEventListener) mq.addEventListener("change", handler);
+    else mq.addListener(handler);
     return () => {
-      timeouts.forEach((timeoutId) => window.clearTimeout(timeoutId));
+      if (mq.removeEventListener) mq.removeEventListener("change", handler);
+      else mq.removeListener(handler);
     };
-  }, [displayedModules]);
-
-  const handleDownloadBrochureClick = useCallback(() => {
-    setShowForm(true);
   }, []);
 
-  const handleCloseForm = useCallback(() => {
-    setShowForm(false);
+  // auto-advance through the chapters one by one
+  useEffect(() => {
+    if (isPaused || reducedMotion || displayedModules.length < 2) return;
+    const interval = window.setInterval(() => {
+      setSelectedId((prev) => {
+        const idx = displayedModules.findIndex((m) => m.id === prev);
+        const nextIdx = idx === -1 ? 0 : (idx + 1) % displayedModules.length;
+        return displayedModules[nextIdx].id;
+      });
+    }, AUTOPLAY_MS);
+    return () => window.clearInterval(interval);
+  }, [isPaused, reducedMotion, displayedModules]);
+
+  useEffect(() => {
+    return () => {
+      if (resumeTimeoutRef.current) window.clearTimeout(resumeTimeoutRef.current);
+    };
   }, []);
 
+  const handleSelect = useCallback((id) => {
+    setSelectedId(id);
+    setIsPaused(true);
+    if (resumeTimeoutRef.current) window.clearTimeout(resumeTimeoutRef.current);
+    resumeTimeoutRef.current = window.setTimeout(() => setIsPaused(false), RESUME_DELAY_MS);
+  }, []);
+
+  const handleMouseEnter = useCallback(() => setIsPaused(true), []);
+  const handleMouseLeave = useCallback(() => {
+    if (resumeTimeoutRef.current) window.clearTimeout(resumeTimeoutRef.current);
+    setIsPaused(false);
+  }, []);
+
+  const handleDownloadBrochureClick = useCallback(() => setShowForm(true), []);
+  const handleCloseForm = useCallback(() => setShowForm(false), []);
   const handleFormSubmit = useCallback(() => {
     setFormSubmitted(true);
     setShowForm(false);
-
     window.setTimeout(() => {
       if (data && data.downloadLink) {
         const link = document.createElement("a");
@@ -413,7 +405,6 @@ export default function SapAbapSyllabus(props) {
     }, 1000);
   }, [data]);
 
-  // fallback
   if (!data) {
     return (
       <div className="w-full bg-white rounded-2xl mb-16 sm:mb-20 lg:mb-24">
@@ -426,194 +417,176 @@ export default function SapAbapSyllabus(props) {
     );
   }
 
+  const selected =
+    displayedModules.find((m) => m.id === selectedId) || displayedModules[0];
+  const isAutoPlaying = !isPaused && !reducedMotion;
+
   return (
     <section
-      className="relative w-full py-6 px-3 sm:py-10 sm:px-6 rounded-2xl sm:rounded-3xl overflow-hidden"
-      style={{
-        background: "linear-gradient(160deg, #FFFFFF 0%, #FAF9FF 45%, #F3F6FF 100%)",
-        boxShadow:
-          "0 25px 70px -20px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,255,255,0.06)",
-        fontFamily: "'Inter', 'Plus Jakarta Sans', sans-serif",
-      }}
+      className={`relative w-full py-8 px-4 sm:py-12 sm:px-8 transition-all duration-700 ease-out ${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
+        }`}
+      style={{ background: palette.paper, fontFamily: bodyFont }}
     >
-      {/* Soft ambient tint, kept very light so it stays a light theme */}
-      <div
-        className="pointer-events-none absolute inset-0 z-0"
-        style={{
-          background: `
-            radial-gradient(ellipse 500px 320px at 8% 0%, rgba(147,51,234,0.06), transparent 60%),
-            radial-gradient(ellipse 600px 400px at 95% 15%, rgba(37,99,235,0.05), transparent 60%)
-          `,
-        }}
-      />
+      <style>{`
+        .sasy-detail-enter {
+          animation: sasyDetailIn 0.4s ease;
+        }
+        @keyframes sasyDetailIn {
+          from { opacity: 0; transform: translateY(6px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        .sasy-toc-progress {
+          width: 0%;
+          animation-name: sasyTocProgress;
+          animation-timing-function: linear;
+          animation-fill-mode: forwards;
+        }
+        @keyframes sasyTocProgress {
+          from { width: 0%; }
+          to { width: 100%; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .sasy-detail-enter { animation: none; }
+          .sasy-toc-progress { animation: none; }
+        }
+      `}</style>
 
-      <div className="relative z-10 max-w-6xl mx-auto flex flex-col lg:flex-row gap-4 sm:gap-6">
-        {/* LEFT CARD */}
-        <div className="w-full lg:w-[32%] shrink-0">
-          <div
-            className="rounded-2xl sm:rounded-3xl p-4 sm:p-6 flex flex-col gap-4 sm:gap-5 lg:sticky lg:top-6"
-            style={{
-              background: "#ffffff",
-              border: "1px solid rgba(99,102,241,0.15)",
-              boxShadow: "0 10px 30px -10px rgba(79,70,229,0.12)",
-            }}
-          >
+      <div className="relative z-10 max-w-5xl mx-auto">
+        {/* HEADER */}
+        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 sm:gap-6">
+          <div className="max-w-xl">
             <div
-              className="inline-flex items-center gap-1.5 w-fit px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-full"
-              style={{
-                background: "rgba(147,51,234,0.08)",
-                border: "1px solid rgba(147,51,234,0.25)",
-              }}
+              className="text-[11px] sm:text-[11.5px] mb-2"
+              style={{ fontFamily: monoFont, color: palette.gold }}
             >
-              <Package size={11} className="text-purple-600" />
-              <span className="text-[9px] sm:text-[10px] font-semibold tracking-wider text-purple-700 uppercase">
-                Course Syllabus
-              </span>
+              sap / abap · course syllabus
             </div>
-
-            {/* Header */}
-            <div className="text-start">
-              <h3 className="text-base font-extrabold sm:text-2xl lg:text-3xl bg-gradient-to-r bg-clip-text text-transparent from-purple-600 to-blue-600 capitalize">
-                {(data.title2 || data.title || "Course Title").replace(
-                  /<[^>]+>/g,
-                  ""
-                )}
-              </h3>
-              <div className="mt-2 sm:mt-3 h-1 w-12 sm:w-24 rounded-full bg-gradient-to-r from-purple-500 to-blue-500" />
-            </div>
-
-            <p className="text-slate-500 text-[12.5px] sm:text-[13px] leading-relaxed">
-              {data.description || "Course description"}
-              <br className="hidden sm:block" />
+            <h2
+              className="text-[26px] sm:text-4xl leading-tight"
+              style={{ fontFamily: displayFont, fontWeight: 600, color: palette.ink }}
+            >
+              {(data.title2 || data.title || "Course Title").replace(/<[^>]+>/g, "")}
+            </h2>
+            <p
+              className="mt-3 text-[13.5px] sm:text-[14.5px] leading-relaxed"
+              style={{ color: palette.inkMuted }}
+            >
+              {data.description || "Course description"}{" "}
               {data.summary || "Course summary"}
             </p>
+          </div>
 
-            <div className="grid grid-cols-2 gap-2.5 sm:gap-3">
-              {stats.map((s, i) => (
-                <StatCard key={i} {...s} />
+          <button
+            onClick={handleDownloadBrochureClick}
+            className="shrink-0 flex items-center justify-center gap-2 px-5 py-3 text-[13px] font-semibold transition-colors duration-200 hover:bg-opacity-90"
+            style={{
+              fontFamily: bodyFont,
+              color: "#FFFFFF",
+              background: palette.gold,
+              border: `1px solid ${palette.gold}`,
+            }}
+          >
+            <Download size={14} />
+            Download syllabus
+          </button>
+        </div>
+
+        {/* STAT STRIP */}
+        <div
+          className="mt-6 sm:mt-8 flex flex-wrap sm:flex-nowrap divide-y sm:divide-y-0 sm:divide-x"
+          style={{ borderTop: `1px solid ${palette.rule}`, borderBottom: `1px solid ${palette.rule}`, borderColor: palette.rule }}
+        >
+          {stats.map((s, i) => {
+            const Icon = s.icon;
+            return (
+              <div
+                key={i}
+                className="w-1/2 sm:w-auto sm:flex-1 flex items-center gap-2.5 py-3 sm:py-4 px-1 sm:px-4"
+              >
+                <Icon size={16} style={{ color: palette.gold, flexShrink: 0 }} />
+                <div className="min-w-0">
+                  <div
+                    className="text-[14px] sm:text-[15px] leading-tight"
+                    style={{ fontFamily: displayFont, fontWeight: 600, color: palette.ink }}
+                  >
+                    {s.value}
+                  </div>
+                  <div
+                    className="text-[10.5px] sm:text-[11px] leading-tight truncate"
+                    style={{ color: palette.inkMuted }}
+                  >
+                    {s.label}
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* CONTENTS + DETAIL */}
+        <div
+          className="mt-8 sm:mt-10 flex flex-col lg:flex-row gap-6 lg:gap-10"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
+          <div className="w-full lg:w-[38%] shrink-0">
+            <div
+              className="text-[11px] mb-2 pl-2.5 sm:pl-3"
+              style={{ fontFamily: monoFont, color: palette.inkMuted }}
+            >
+              contents
+            </div>
+            <div className="flex flex-col">
+              {displayedModules.map((mod) => (
+                <TocRow
+                  key={mod.id}
+                  mod={mod}
+                  isSelected={selected && selected.id === mod.id}
+                  showProgress={isAutoPlaying && selected && selected.id === mod.id}
+                  onSelect={() => handleSelect(mod.id)}
+                />
               ))}
             </div>
+          </div>
 
-            <button
-              onClick={handleDownloadBrochureClick}
-              className="w-full flex items-center justify-center gap-2 rounded-xl py-3 sm:py-3.5 font-semibold text-white text-[13px] sm:text-sm transition-all duration-300 hover:brightness-110 hover:shadow-lg uppercase"
-              style={{
-                background: "linear-gradient(90deg, #9333EA, #3B82F6)",
-                boxShadow: "0 8px 20px -6px rgba(147,51,234,0.35)",
-              }}
-            >
-              DOWNLOAD Syllabus
-              <Download size={14} />
-            </button>
+          <div
+            className="w-full lg:w-[62%] lg:pl-8"
+            style={{ borderLeft: `1px solid ${palette.rule}` }}
+          >
+            {selected && <DetailPane mod={selected} />}
           </div>
         </div>
 
-        {/* RIGHT SECTION */}
-        <div className="w-full lg:w-[68%] flex flex-col">
-          <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 sm:gap-4 mb-5 sm:mb-8">
-            <div>
-              <h3 className="text-slate-800 font-bold text-lg sm:text-2xl lg:text-[26px]">
-                <span>Curriculum </span>
-                <span className="bg-gradient-to-b font-bold from-purple-600 to-blue-500 bg-clip-text text-transparent capitalize">Overview</span>
-              </h3>
-              <div
-                className="h-[3px] w-8 sm:w-10 rounded-full mt-1.5 sm:mt-2"
-                style={{ background: "#9333EA" }}
-              />
-            </div>
-            <div className="flex sm:flex-wrap gap-2 sm:gap-3">
-              <div
-                className="flex items-center gap-2 sm:gap-2.5 rounded-xl px-3 sm:px-4 py-2 sm:py-2.5"
-                style={{
-                  background: "#ffffff",
-                  border: "1px solid rgba(99,102,241,0.15)",
-                  boxShadow: "0 1px 3px rgba(30,27,75,0.05)",
-                }}
-              >
-                <Calendar size={14} className="text-purple-600" />
-                <div>
-                  <div className="text-slate-400 text-[10px] sm:text-[11px] leading-tight">
-                    Duration per Module
-                  </div>
-                  <div className="text-purple-700 font-semibold text-xs sm:text-sm leading-tight">
-                    1 - 2 weeks
-                  </div>
-                </div>
-              </div>
-              <div
-                className="flex items-center gap-2 sm:gap-2.5 rounded-xl px-3 sm:px-4 py-2 sm:py-2.5"
-                style={{
-                  background: "#ffffff",
-                  border: "1px solid rgba(99,102,241,0.15)",
-                  boxShadow: "0 1px 3px rgba(30,27,75,0.05)",
-                }}
-              >
-                <Users size={14} className="text-blue-600" />
-                <div>
-                  <div className="text-slate-400 text-[10px] sm:text-[11px] leading-tight">
-                    Learning Mode
-                  </div>
-                  <div className="text-blue-700 font-semibold text-xs sm:text-sm leading-tight">
-                    Live + Recorded
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex flex-col">
-            {displayedModules.map((mod, i) => (
-              <TimelineCard
-                key={mod.id}
-                mod={mod}
-                isOpen={openId === mod.id}
-                onOpen={() => setOpenId(mod.id)}
-                onToggle={() =>
-                  setOpenId(openId === mod.id ? null : mod.id)
-                }
-                isLast={i === displayedModules.length - 1}
-                mounted={mountedIds.includes(mod.id)}
-              />
-            ))}
-          </div>
-
-          <div
-            className="flex items-center gap-2 rounded-xl px-3 sm:px-4 py-2.5 sm:py-3 mt-1 sm:mt-2"
-            style={{
-              background: "#ffffff",
-              border: "1px solid rgba(99,102,241,0.15)",
-              boxShadow: "0 1px 3px rgba(30,27,75,0.05)",
-            }}
-          >
-            <Info size={13} className="text-purple-600 shrink-0" />
-            <span className="text-slate-500 text-[12px] sm:text-[13px]">
-              <span className="text-slate-700 font-medium">Note:</span> To see
-              the complete Modules Click on <span className="text-blue-600 underline font-semibold cursor-pointer" onClick={handleDownloadBrochureClick}>'Download Syllabus'</span> button
+        {/* NOTE */}
+        <div
+          className="mt-8 sm:mt-10 pt-4 flex items-center gap-2"
+          style={{ borderTop: `1px solid ${palette.rule}` }}
+        >
+          <Info size={13} style={{ color: palette.gold, flexShrink: 0 }} />
+          <span className="text-[12px] sm:text-[12.5px]" style={{ color: palette.inkMuted }}>
+            To see every module in full, click{" "}
+            <span
+              className="underline font-semibold cursor-pointer"
+              style={{ color: palette.ink }}
+              onClick={handleDownloadBrochureClick}
+            >
+              Download syllabus
             </span>
-          </div>
+            .
+          </span>
         </div>
       </div>
 
-      {showForm && (
-        <Btnform onClose={handleCloseForm} onSubmit={handleFormSubmit} />
-      )}
+      {showForm && <Btnform onClose={handleCloseForm} onSubmit={handleFormSubmit} />}
 
-      {/* Success Message */}
       {formSubmitted && (
-        <div className="fixed bottom-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg z-50 transform transition-all duration-500">
-          <div className="flex items-center">
-            <svg
-              className="w-5 h-5 mr-2"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M5 13l4 4L19 7"
-              />
+        <div
+          className="fixed bottom-4 right-4 px-5 py-3 shadow-lg z-50"
+          style={{ background: palette.gold, color: "#FFFFFF" }}
+        >
+          <div className="flex items-center gap-2 text-[13px]">
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
             </svg>
             Thank you! Download will start shortly.
           </div>

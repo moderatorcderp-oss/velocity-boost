@@ -16,13 +16,9 @@ const Btnform = dynamic(() => import("@/components/HomePage/Btnform"), {
 });
 
 // Short, scannable highlights instead of a dense paragraph
-const highlights = [
-  "Hands-on training across real SAP modules",
-  "Guided by certified, industry-experienced trainers",
-  "Career-ready ERP skills — not just theory",
-];
 
 const Certificate = ({ data }) => {
+  const highlights = data.highlights;
   const [showForm, setShowForm] = useState(false);
   const handleButtonClick = () => setShowForm(true);
   const handleCloseForm = () => setShowForm(false);
