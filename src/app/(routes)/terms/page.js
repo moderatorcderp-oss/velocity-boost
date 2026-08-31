@@ -1,5 +1,4 @@
 "use client";
-import { Container, Row, Col } from "react-bootstrap";
 import Head from "next/head";
 import Link from "next/link";
 import styles from "@/styles/Terms.module.css";
@@ -15,10 +14,9 @@ export default function TermsAndConditions() {
         />
       </Head>
 
-      <Container className={styles.termsContainer}>
-        <Row className="justify-content-center">
-          <Col md={10} lg={8}>
-            <div className={styles.termsContent}>
+      <div className={styles.termsContainer}>
+        <div className="mx-auto w-full max-w-4xl">
+          <div className={styles.termsContent}>
               <h1 className={styles.pageTitle}>Terms and Conditions</h1>
 
               <section className={styles.section}>
@@ -229,9 +227,8 @@ export default function TermsAndConditions() {
                 </p>
               </div>
             </div>
-          </Col>
-        </Row>
-      </Container>
+          </div>
+        </div>
     </>
   );
 }

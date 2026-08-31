@@ -1,8 +1,5 @@
 /* src/app/globals.css */
 
-/* Third-party CSS */
-@import 'bootstrap/dist/css/bootstrap.min.css';
-
 /* Tailwind CSS directives - KEEP THESE */
 @tailwind base;
 @tailwind components;
@@ -18,6 +15,10 @@
   --secondary-dark2: #191825;
   --transparent-pink: #e384ff;
   --gradient-angle: 0deg;
+  --font-fraunces: "Fraunces", Georgia, serif;
+  --font-inter: "Inter", "Segoe UI", sans-serif;
+  --font-jetbrains-mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+  --font-bricolage: "Bricolage Grotesque", "Segoe UI", sans-serif;
   font-family: var(--font-lato), var(--font-rubik), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
@@ -45,10 +46,6 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.body {
-  background-color: #182e4a;
 }
 
 /* :where(body > :not([class*="backgroundAnimation"]):not(script):not(style):not(noscript)) {

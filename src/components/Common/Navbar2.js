@@ -5,11 +5,7 @@ import Image from "next/image";
 import dynamic from "next/dynamic";
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
 import Container from "./Container";
-
-const AnimatedLogo = dynamic(() => import("../AnimatedLogo"), {
-    ssr: false,
-    loading: () => <div className="h-[26px] w-[26px] shrink-0 rounded-full bg-blue-50" />,
-});
+import AnimatedLogo from "../AnimatedLogo";
 
 const sapMenu = {
     promo: {
@@ -174,7 +170,42 @@ const NAV_ITEMS = [
     { label: "About us", href: "/aboutus" },
 ];
 
+const NAV_LINK_FALLBACKS = {
+    "/it-course-with-ai-in-pune": "/it-course-with-ai-in-pune",
+    "it-course-with-ai-in-pune": "/it-course-with-ai-in-pune",
+    "/it-courses-with-ai-in-pune": "/it-course-with-ai-in-pune",
+    "it-courses-with-ai-in-pune": "/it-course-with-ai-in-pune",
+    "/it-course-with-ai": "/it-course-with-ai-in-pune",
+    "it-course-with-ai": "/it-course-with-ai-in-pune",
+    "/it-courses": "/it-course-with-ai-in-pune",
+    "it-courses": "/it-course-with-ai-in-pune",
+    "/hr-training-course-in-pune": "/hr-training-course-in-pune",
+    "hr-training-course-in-pune": "/hr-training-course-in-pune",
+    "/hr-training-course": "/hr-training-course-in-pune",
+    "hr-training-course": "/hr-training-course-in-pune",
+    "/hr-courses-in-pune": "/hr-training-course-in-pune",
+    "hr-courses-in-pune": "/hr-training-course-in-pune",
+    "/hr-courses": "/hr-training-course-in-pune",
+    "hr-courses": "/hr-training-course-in-pune",
+    "/agentic-ai-course-in-pune": "/it-course-with-ai-in-pune",
+    "agentic-ai-course-in-pune": "/it-course-with-ai-in-pune",
+    "/advanced-data-analytics-with-generative-ai-course-in-pune": "/data-science-with-ai-course-in-pune",
+    "advanced-data-analytics-with-generative-ai-course-in-pune": "/data-science-with-ai-course-in-pune",
+};
+
 const ENQUIRE_HREF = "/contactus";
+
+const resolveNavHref = (href, fallback = "/") => {
+    if (typeof href !== "string") return fallback;
+
+    const raw = href.trim();
+    if (!raw || raw === "#" || raw.startsWith("javascript:") || raw.startsWith("mailto:") || raw.startsWith("tel:")) {
+        return fallback;
+    }
+
+    const normalized = raw.startsWith("/") ? raw : `/${raw.replace(/^\.?\//, "")}`;
+    return NAV_LINK_FALLBACKS[normalized] || normalized;
+};
 
 const stroke = {
     fill: "none",
@@ -507,7 +538,6 @@ export default function Navbar2() {
     useLayoutEffect(placeCaret, [placeCaret]);
 
     useEffect(() => {
-        const onResize = () => placeCaret();
         const onKey = (e) => {
             if (e.key === "Escape") {
                 setOpen(null);
@@ -522,15 +552,13 @@ export default function Navbar2() {
                 setOpen(null);
             }
         };
-        window.addEventListener("resize", onResize, { passive: true });
         document.addEventListener("keydown", onKey);
         document.addEventListener("mousedown", onDown);
         return () => {
-            window.removeEventListener("resize", onResize);
             document.removeEventListener("keydown", onKey);
             document.removeEventListener("mousedown", onDown);
         };
-    }, [placeCaret]);
+    }, []);
 
     useEffect(() => {
         setOpen(null);
@@ -562,14 +590,13 @@ export default function Navbar2() {
     useEffect(() => {
         let ticking = false;
         const handleScroll = () => {
-            if (!ticking) {
-                requestAnimationFrame(() => {
-                    const fullBarHeight = fullBarRef.current ? fullBarRef.current.offsetHeight : 0;
-                    setScrolled(window.scrollY >= fullBarHeight && fullBarHeight > 0);
-                    ticking = false;
-                });
-                ticking = true;
-            }
+            if (ticking) return;
+            ticking = true;
+            requestAnimationFrame(() => {
+                const fullBarHeight = fullBarRef.current ? fullBarRef.current.offsetHeight : 0;
+                setScrolled(window.scrollY >= fullBarHeight && fullBarHeight > 0);
+                ticking = false;
+            });
         };
         handleScroll();
         window.addEventListener("scroll", handleScroll, { passive: true });
@@ -652,11 +679,11 @@ export default function Navbar2() {
     }, []);
 
     useEffect(() => {
+        let frameId = null;
+
         const updateNavbarBottom = () => {
-            // While the pill bar is on screen it's the fixed element pinned to
-            // the viewport, so downstream spacing should follow it. Otherwise
-            // the full bar is the one that matters — note it's unpinned now,
-            // so this value moves with normal scroll like any in-flow element.
+            frameId = null;
+
             const el = scrolled && pillBarRef.current ? pillBarRef.current : fullBarRef.current;
             if (el) {
                 const bottom = el.getBoundingClientRect().bottom;
@@ -667,12 +694,18 @@ export default function Navbar2() {
             }
         };
 
+        const scheduleLayoutUpdate = () => {
+            if (frameId !== null) return;
+            frameId = requestAnimationFrame(updateNavbarBottom);
+        };
+
         updateNavbarBottom();
-        window.addEventListener("resize", updateNavbarBottom);
-        window.addEventListener("scroll", updateNavbarBottom, { passive: true });
+        window.addEventListener("resize", scheduleLayoutUpdate, { passive: true });
+        window.addEventListener("scroll", scheduleLayoutUpdate, { passive: true });
         return () => {
-            window.removeEventListener("resize", updateNavbarBottom);
-            window.removeEventListener("scroll", updateNavbarBottom);
+            window.removeEventListener("resize", scheduleLayoutUpdate);
+            window.removeEventListener("scroll", scheduleLayoutUpdate);
+            if (frameId !== null) cancelAnimationFrame(frameId);
         };
     }, [scrolled]);
 
@@ -708,7 +741,7 @@ export default function Navbar2() {
                                 onMouseLeave={hoverClose}
                             >
                                 <Link
-                                    href={item.href}
+                                    href={resolveNavHref(item.href)}
                                     className="relative mx-1 flex items-center gap-1.5 whitespace-nowrap rounded-[10px] px-2.5 py-1 text-[14.5px] font-semibold text-slate-700 transition-colors duration-200 hover:text-blue-700"
                                     data-tab={i}
                                     data-open={open === i}
@@ -723,7 +756,7 @@ export default function Navbar2() {
                             </li>
                         ) : (
                             <li key={item.label} className="relative flex items-center" onMouseEnter={() => hoverOpen(null)}>
-                                <Link href={item.href || "/"} className="relative mx-1 flex items-center whitespace-nowrap rounded-[10px] px-2.5 py-1 text-[14.5px] font-semibold text-slate-700 transition-colors duration-200 hover:text-blue-700">
+                                <Link href={resolveNavHref(item.href, "/")} className="relative mx-1 flex items-center whitespace-nowrap rounded-[10px] px-2.5 py-1 text-[14.5px] font-semibold text-slate-700 transition-colors duration-200 hover:text-blue-700">
                                     {item.label}
                                 </Link>
                             </li>
@@ -823,7 +856,7 @@ export default function Navbar2() {
                                 onMouseLeave={hoverClose}
                             >
                                 <Link
-                                    href={item.href}
+                                    href={resolveNavHref(item.href)}
                                     className="relative mx-0.5 flex items-center gap-1 whitespace-nowrap rounded-[10px] px-2 py-1 text-[13px] font-semibold text-slate-700 transition-colors duration-200 hover:text-blue-700"
                                     data-tab={i}
                                     data-open={open === i}
@@ -839,7 +872,7 @@ export default function Navbar2() {
                         ) : (
                             <li key={item.label} className="relative flex items-center shrink-0" onMouseEnter={() => hoverOpen(null)}>
                                 <Link
-                                    href={item.href || "/"}
+                                    href={resolveNavHref(item.href, "/")}
                                     className="relative mx-0.5 flex items-center whitespace-nowrap rounded-[10px] px-2 py-1 text-[13px] font-semibold text-slate-700 transition-colors duration-200 hover:text-blue-700"
                                 >
                                     {item.label}
@@ -983,7 +1016,7 @@ export default function Navbar2() {
                                                         <ul className="flex flex-col gap-1.5 p-0">
                                                             {col.links.map((l) => (
                                                                 <li key={l.label}>
-                                                                    <Link href={l.href} className="flex items-center justify-between rounded-[10px] border border-slate-200 bg-white px-2.5 py-2 text-[13.5px] font-semibold text-slate-700 shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,_0_1px_2px_rgba(30,64,175,0.09)]" onClick={() => setMobileOpen(false)}>
+                                                                    <Link href={resolveNavHref(l.href, "/")} className="flex items-center justify-between rounded-[10px] border border-slate-200 bg-white px-2.5 py-2 text-[13.5px] font-semibold text-slate-700 shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,_0_1px_2px_rgba(30,64,175,0.09)]" onClick={() => setMobileOpen(false)}>
                                                                         <span className="truncate">{l.label}</span>
                                                                         <ChevronRight className="h-3.5 w-3.5 shrink-0 text-slate-500" />
                                                                     </Link>
@@ -993,7 +1026,7 @@ export default function Navbar2() {
                                                     </div>
                                                 ))}
 
-                                                <Link href={item.menu.promo.ctaHref} className="mt-1.5 inline-flex w-full items-center justify-center gap-1.5 rounded-[10px] border border-blue-200 bg-gradient-to-b from-white to-slate-50 px-3 py-2 text-[12px] font-semibold text-blue-700 shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,_0_1px_2px_rgba(30,64,175,0.09)]" onClick={() => setMobileOpen(false)}>
+                                                <Link href={resolveNavHref(item.menu.promo.ctaHref, "/")} className="mt-1.5 inline-flex w-full items-center justify-center gap-1.5 rounded-[10px] border border-blue-200 bg-gradient-to-b from-white to-slate-50 px-3 py-2 text-[12px] font-semibold text-blue-700 shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,_0_1px_2px_rgba(30,64,175,0.09)]" onClick={() => setMobileOpen(false)}>
                                                     {item.menu.promo.ctaLabel}
                                                     <ArrowRight />
                                                 </Link>
@@ -1001,7 +1034,7 @@ export default function Navbar2() {
                                         )}
                                     </>
                                 ) : (
-                                    <Link href={item.href || "/"} className="flex w-full items-center rounded-[12px] border border-slate-200 bg-gradient-to-b from-white to-slate-50 px-3.5 py-3 text-[14.5px] font-semibold text-slate-700 shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,_0_1px_2px_rgba(30,64,175,0.09)]" onClick={() => setMobileOpen(false)}>
+                                    <Link href={resolveNavHref(item.href, "/")} className="flex w-full items-center rounded-[12px] border border-slate-200 bg-gradient-to-b from-white to-slate-50 px-3.5 py-3 text-[14.5px] font-semibold text-slate-700 shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,_0_1px_2px_rgba(30,64,175,0.09)]" onClick={() => setMobileOpen(false)}>
                                         {item.label}
                                     </Link>
                                 )}

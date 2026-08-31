@@ -1,10 +1,8 @@
 /* ============================================================
    FIELD NOTES — design tokens
-   Ideally load these two families with next/font/google in your
-   root layout instead of @import (faster, no FOUT). Left as an
-   @import here so the module works standalone.
+   Fonts are loaded via next/font/google in the root layout so there
+   is no render-blocking stylesheet import.
    ============================================================ */
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap");
 
 .containerYds {
   --ink: #0b1f4b;

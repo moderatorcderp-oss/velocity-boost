@@ -1,5 +1,12 @@
 // src/app/layout.js
-import { Lato, Rubik } from "next/font/google";
+import {
+  Lato,
+  Rubik,
+  Fraunces,
+  Inter,
+  JetBrains_Mono,
+  Bricolage_Grotesque,
+} from "next/font/google";
 import Script from "next/script";
 import { Partytown } from "@builder.io/partytown/react";
 import "./globals.css";
@@ -28,6 +35,30 @@ const rubik = Rubik({
   variable: "--font-rubik",
 });
 
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-fraunces",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-jetbrains-mono",
+});
+
+const bricolage = Bricolage_Grotesque({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-bricolage",
+});
+
 // --- Constants ---
 const GTM_ID = "GTM-MB68QM2V";
 const FB_PIXEL_ID = "3414178115554916";
@@ -52,14 +83,16 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${lato.variable} ${rubik.variable}`}>
+    <html
+      lang="en"
+      className={`${lato.variable} ${rubik.variable} ${fraunces.variable} ${inter.variable} ${jetbrainsMono.variable} ${bricolage.variable}`}
+    >
       <head>
-        {/* Initialize dataLayer before analytics scripts */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `window.dataLayer = window.dataLayer || [];`,
-          }}
-        />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
+        <link rel="preconnect" href="https://connect.facebook.net" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://connect.facebook.net" />
 
         <Partytown
           debug={false}
@@ -106,9 +139,10 @@ export default function RootLayout({ children }) {
         {/* Google Tag Manager */}
         <Script
           id="gtm-script"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
+              window.dataLayer = window.dataLayer || [];
               (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
               new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
               j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -121,6 +155,7 @@ export default function RootLayout({ children }) {
         <Script
           id="facebook-pixel"
           type="text/partytown"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
               !function(f,b,e,v,n,t,s)
@@ -141,7 +176,7 @@ export default function RootLayout({ children }) {
           id="ahrefs-analytics"
           src="/api/ahrefs"
           data-key={AHREFS_KEY}
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
       </body>
     </html>

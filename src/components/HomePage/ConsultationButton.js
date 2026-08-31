@@ -32,7 +32,7 @@ export default function ConsultationButton({ onOpenForm }) {
   <button
     onClick={onOpenForm}
     className="inline-flex items-center justify-center gap-1
-      rounded-lg border-1 border-[#593adc]
+      rounded-lg border-2 bg-transparent border-[#593adc]
       text-[#593adc] transition
       hover:bg-[#593adc] hover:text-white
       px-3 py-2 text-xs

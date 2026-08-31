@@ -254,8 +254,8 @@ const DSHeader = ({ data }) => {
           a diagonal light sheen, and a dedicated glow seated behind the form card. */}
       <div className="pointer-events-none absolute inset-0 z-[1] overflow-hidden" aria-hidden="true">
         <Image
-          src="/headerImg.png"
-          alt=""
+          src="https://res.cloudinary.com/bropujss/image/upload/v1788153580/headerImg_ftsnkg.webp"
+          alt="headerImg"
           width={1400}
           height={500}
           priority

@@ -1,5 +1,4 @@
 "use client";
-import { Container, Row, Col } from "react-bootstrap";
 import Head from "next/head";
 import Link from "next/link";
 import styles from "@/styles/Privacy.module.css";
@@ -15,10 +14,9 @@ export default function PrivacyPolicy() {
         />
       </Head>
 
-      <Container className={styles.privacyContainer}>
-        <Row className="justify-content-center">
-          <Col md={10} lg={8}>
-            <div className={styles.privacyContent}>
+      <div className={styles.privacyContainer}>
+        <div className="mx-auto w-full max-w-4xl">
+          <div className={styles.privacyContent}>
               <h1 className={styles.pageTitle}>Privacy Policy</h1>
 
               <section className={styles.section}>
@@ -197,9 +195,8 @@ export default function PrivacyPolicy() {
                 </p>
               </div>
             </div>
-          </Col>
-        </Row>
-      </Container>
+          </div>
+        </div>
     </>
   );
 }

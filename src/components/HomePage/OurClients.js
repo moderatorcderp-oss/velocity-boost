@@ -1,8 +1,8 @@
 "use client";
 
-import { Briefcase, Calendar, Globe2, Star, Users } from "lucide-react";
+import { Briefcase, Calendar, Globe2, Users } from "lucide-react";
 import Image from "next/image";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, useMemo } from "react";
 import SectionBackground from "../BackgroundCss/SectionBackground";
 import TrustBar from "./TrustBar";
 
@@ -43,52 +43,59 @@ function useCountUp(end, duration = 1200) {
   return { value, ref };
 }
 
-
 const premiumClients = [
-  "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784196792/Accenture_tq8yph_csm5fm.avif", "https://res.cloudinary.com/bropujss/image/upload/v1784190703/wipro_uaggn6_pa26lz.avif", "https://res.cloudinary.com/bropujss/image/upload/v1784193712/infosys_fwvbzh_peauzo.avif", "https://res.cloudinary.com/bropujss/image/upload/v1784194657/google_fyyiqe_cnt0ft.avif",
-  "https://res.cloudinary.com/bropujss/image/upload/v1784193553/microsoft_rpgsvd_ufsjh5.avif", "https://res.cloudinary.com/bropujss/image/upload/v1784196247/capgemini_a2rbho_fghbhe.avif", "https://res.cloudinary.com/bropujss/image/upload/v1784193319/tcs_d0gfvm_n8ckd5.avif", "https://res.cloudinary.com/bropujss/image/upload/v1784196516/amdocs_ht9zgl_jjlvem.avif",
-  "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784197852/Ibmm_rmcikx_nh4x5a.webp", "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784199617/paytm_e2vqfx_zk6tmu.webp", "https://res.cloudinary.com/bropujss/image/upload/v1784196247/capgemini_a2rbho_fghbhe.avif", "https://res.cloudinary.com/bropujss/image/upload/v1784193411/swiggy_t0utde_o5pxt2.avif",
-  "https://res.cloudinary.com/bropujss/image/upload/v1784194527/hdfc_jvdkoi_cf4mlm.avif", "https://res.cloudinary.com/bropujss/image/upload/v1784194989/God_g8j8xc_nl5owb.avif", "https://res.cloudinary.com/bropujss/image/upload/v1784196399/baja_xxmf3l_saurcq.webp", "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784196972/bharatpe_p9ixem_wio63w.webp", "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784199566/pizza-hut_dhd1o8_argx2k.webp",
+  "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784196792/Accenture_tq8yph_csm5fm.avif",
+  "https://res.cloudinary.com/bropujss/image/upload/v1784190703/wipro_uaggn6_pa26lz.avif",
+  "https://res.cloudinary.com/bropujss/image/upload/v1784193712/infosys_fwvbzh_peauzo.avif",
+  "https://res.cloudinary.com/bropujss/image/upload/v1784194657/google_fyyiqe_cnt0ft.avif",
+  "https://res.cloudinary.com/bropujss/image/upload/v1784193553/microsoft_rpgsvd_ufsjh5.avif",
+  "https://res.cloudinary.com/bropujss/image/upload/v1784196247/capgemini_a2rbho_fghbhe.avif",
+  "https://res.cloudinary.com/bropujss/image/upload/v1784193319/tcs_d0gfvm_n8ckd5.avif",
+  "https://res.cloudinary.com/bropujss/image/upload/v1784196516/amdocs_ht9zgl_jjlvem.avif",
+  "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784197852/Ibmm_rmcikx_nh4x5a.webp",
+  "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784199617/paytm_e2vqfx_zk6tmu.webp",
+  "https://res.cloudinary.com/bropujss/image/upload/v1784196247/capgemini_a2rbho_fghbhe.avif",
+  "https://res.cloudinary.com/bropujss/image/upload/v1784193411/swiggy_t0utde_o5pxt2.avif",
+  "https://res.cloudinary.com/bropujss/image/upload/v1784194527/hdfc_jvdkoi_cf4mlm.avif",
+  "https://res.cloudinary.com/bropujss/image/upload/v1784194989/God_g8j8xc_nl5owb.avif",
+  "https://res.cloudinary.com/bropujss/image/upload/v1784196399/baja_xxmf3l_saurcq.webp",
+  "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784196972/bharatpe_p9ixem_wio63w.webp",
+  "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784199566/pizza-hut_dhd1o8_argx2k.webp",
 ];
 
 const enterpriseClients = [
-  "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784197632/exl_zle2ra_mg0tfy.webp", "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784199677/volkswagon_pcvphe_cdvnhu.webp", "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784197965/jindal_njgnxp_nbmnsn.webp", "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784198042/john-deere_ohljwx_uxiuzq.webp",
-  "https://res.cloudinary.com/bropujss/image/upload/v1784196319/bostonbyte_hljirv_fnhzks.avif", "https://res.cloudinary.com/bropujss/image/upload/v1784193475/sharechat_eieyag_dqslhj.webp", "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784199337/leapfinance_v7ykv6_xvnw50.webp",
-  "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784199455/moneytap_dizaqo_qccgwl.webp", "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784199726/whitehat_emmomu_uzfh8l.webp", "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784197326/cummins_alim2w_tdory9.webp",
+  "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784197632/exl_zle2ra_mg0tfy.webp",
+  "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784199677/volkswagon_pcvphe_cdvnhu.webp",
+  "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784197965/jindal_njgnxp_nbmnsn.webp",
+  "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784198042/john-deere_ohljwx_uxiuzq.webp",
+  "https://res.cloudinary.com/bropujss/image/upload/v1784196319/bostonbyte_hljirv_fnhzks.avif",
+  "https://res.cloudinary.com/bropujss/image/upload/v1784193475/sharechat_eieyag_dqslhj.webp",
+  "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784199337/leapfinance_v7ykv6_xvnw50.webp",
+  "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784199455/moneytap_dizaqo_qccgwl.webp",
+  "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784199726/whitehat_emmomu_uzfh8l.webp",
+  "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784197326/cummins_alim2w_tdory9.webp",
 ];
 
 const growingClients = [
-  "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784196748/airmeet_idryrc_lcmgoo.avif", "https://res.cloudinary.com/bropujss/image/upload/v1784196453/ask_nncu3a_nucsuv.avif", "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784196925/bharatgri_weuerc_vltjko.webp", "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784197129/capita_r10ko1_epy8vy.webp",
-  "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784197269/crisi_ciluav_crx1ki.webp", "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784197679/eatfit_bg4cj0_tg3tj6.webp", "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784197751/genius_tqh8rw_b4u9dl.webp", "https://res.cloudinary.com/bropujss/image/upload/v1784194452/homelane_rl9bh6_dkwqll.avif",
-  "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784197917/iss_gcjk9j_ymm5xy.webp", "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784199398/kelly_bkcgnw_emivqo.webp",
+  "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784196748/airmeet_idryrc_lcmgoo.avif",
+  "https://res.cloudinary.com/bropujss/image/upload/v1784196453/ask_nncu3a_nucsuv.avif",
+  "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784196925/bharatgri_weuerc_vltjko.webp",
+  "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784197129/capita_r10ko1_epy8vy.webp",
+  "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784197269/crisi_ciluav_crx1ki.webp",
+  "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784197679/eatfit_bg4cj0_tg3tj6.webp",
+  "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784197751/genius_tqh8rw_b4u9dl.webp",
+  "https://res.cloudinary.com/bropujss/image/upload/v1784194452/homelane_rl9bh6_dkwqll.avif",
+  "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784197917/iss_gcjk9j_ymm5xy.webp",
+  "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784199398/kelly_bkcgnw_emivqo.webp",
 ];
 
-// all clients 
-const allClients = [...premiumClients, ...enterpriseClients, ...growingClients]
+const allClients = [...premiumClients, ...enterpriseClients, ...growingClients];
 
-// stats data 
 const statsData = [
-  {
-    number: 15,
-    text: "Years experience",
-    Icon: Calendar,
-  },
-  {
-    number: 200,
-    text: "Happy students",
-    Icon: Users,
-  },
-  {
-    number: 20,
-    text: "hiring partners",
-    Icon: Globe2,
-  },
-  {
-    number: 50,
-    text: "expert courses",
-    Icon: Briefcase,
-    last: true
-  },
+  { number: 15, text: "Years experience", Icon: Calendar },
+  { number: 200, text: "Happy students", Icon: Users },
+  { number: 20, text: "hiring partners", Icon: Globe2 },
+  { number: 50, text: "expert courses", Icon: Briefcase, last: true },
 ];
 
 const shuffleArray = (array) => {
@@ -102,7 +109,6 @@ const shuffleArray = (array) => {
 
 const getLogoAlt = (logoUrl) => {
   if (typeof logoUrl !== "string" || !logoUrl) return "Client logo";
-
   const filename = logoUrl.split("/").pop() || logoUrl;
   return filename
     .replace(/\.[^/.]+$/, "")
@@ -111,7 +117,6 @@ const getLogoAlt = (logoUrl) => {
     .trim();
 };
 
-// statistics bar
 function Stat({ number, text, Icon }) {
   const { value, ref } = useCountUp(number);
   return (
@@ -130,24 +135,19 @@ function Stat({ number, text, Icon }) {
 }
 
 const MarqueeRow = ({ logos = [], direction = "left", speed = "normal", shuffle = false }) => {
-  const [logosToUse, setLogosToUse] = useState(() => Array.isArray(logos) ? logos : []);
-
-  useEffect(() => {
-    const safeLogos = Array.isArray(logos) ? logos : [];
-    setLogosToUse(shuffle ? shuffleArray(safeLogos) : safeLogos);
+  // Stable list – shuffle only once, no re-render loop
+  const logosToUse = useMemo(() => {
+    const safe = Array.isArray(logos) ? logos : [];
+    return shuffle ? shuffleArray(safe) : safe;
   }, [logos, shuffle]);
 
   const speedMultiplier =
-    speed === "slow" ? "40s" :
-      speed === "fast" ? "20s" :
-        "30s";
+    speed === "slow" ? "40s" : speed === "fast" ? "20s" : "30s";
 
   const animationClass =
     direction === "right" ? "animate-marquee-reverse" : "animate-marquee";
 
-  const safeLogos = Array.isArray(logosToUse) ? logosToUse : [];
-
-  if (!safeLogos.length) return null;
+  if (!logosToUse.length) return null;
 
   return (
     <div className="relative overflow-hidden">
@@ -157,10 +157,11 @@ const MarqueeRow = ({ logos = [], direction = "left", speed = "normal", shuffle 
           width: "max-content",
           animationDuration: speedMultiplier,
           animationIterationCount: "infinite",
-          animationTimingFunction: "linear"
+          animationTimingFunction: "linear",
         }}
       >
-        {safeLogos.map((logo, index) => (
+        {/* First set */}
+        {logosToUse.map((logo, index) => (
           <div
             key={`first-${index}`}
             className="flex-shrink-0 group w-24 h-20 sm:w-28 sm:h-24 md:w-32 md:h-28 flex items-center justify-center bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-2"
@@ -171,13 +172,16 @@ const MarqueeRow = ({ logos = [], direction = "left", speed = "normal", shuffle 
               width={120}
               height={100}
               className="object-contain max-w-full max-h-full group-hover:scale-105 transition-transform duration-300"
-              loading={index < 4 ? "eager" : "lazy"}
-              quality={75}
+              loading="lazy"
+              decoding="async"
+              quality={60}
               sizes="(max-width: 640px) 80px, (max-width: 1024px) 100px, 120px"
             />
           </div>
         ))}
-        {safeLogos.map((logo, index) => (
+
+        {/* Identical second set for seamless loop (aria-hidden) */}
+        {logosToUse.map((logo, index) => (
           <div
             key={`second-${index}`}
             className="flex-shrink-0 group w-24 h-20 sm:w-28 sm:h-24 md:w-32 md:h-28 flex items-center justify-center bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-2"
@@ -185,12 +189,12 @@ const MarqueeRow = ({ logos = [], direction = "left", speed = "normal", shuffle 
           >
             <Image
               src={logo}
-              alt="logo"
+              alt="company logos"
               width={120}
               height={100}
               className="object-contain max-w-full max-h-full group-hover:scale-105 transition-transform duration-300"
               loading="lazy"
-              quality={75}
+              decoding="async"
               sizes="(max-width: 640px) 80px, (max-width: 1024px) 100px, 120px"
             />
           </div>
@@ -202,18 +206,16 @@ const MarqueeRow = ({ logos = [], direction = "left", speed = "normal", shuffle 
 
 const OurClients = () => {
   return (
-    <div className="w-screen flex justify-center items-center bg-red-500 relative left-1/2 -translate-x-1/2">
-      <SectionBackground>
+    <div className="w-full max-w-[1800px] mx-auto">
         <section
           className="sm:py-12 md:py-12 relative"
           style={{
-            background: 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%)',
-            overflow: 'hidden',
-            maxWidth: '1800px',
-            margin: '0 auto',
+            background: "linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%)",
+            overflow: "hidden",
+            maxWidth: "1800px",
+            margin: "0 auto",
           }}
         >
-
           <div className="container w-full mx-auto px-0 md:px-4 lg:px-8 relative my-2 md:my-0 lg:my-0 xl:my-0">
             <div className="text-center mb-4 sm:mb-14 md:mb-16">
               <div className="relative z-8">
@@ -221,7 +223,9 @@ const OurClients = () => {
                   Trust Bar
                 </h2>
                 <div className="w-20 h-1 mx-auto bg-gradient-to-r from-blue-500 to-blue-700 rounded-full mb-4"></div>
-                <p className="text-gray-600 text-sm sm:text-base">Trusted by industry leaders worldwide</p>
+                <p className="text-gray-600 text-sm sm:text-base">
+                  Trusted by industry leaders worldwide
+                </p>
               </div>
             </div>
 
@@ -230,7 +234,6 @@ const OurClients = () => {
             </div>
 
             <div className="space-y-8 sm:space-y-10 md:space-y-12">
-              {/* Premium clients row */}
               <div className="relative">
                 <div className="absolute left-0 top-0 bottom-0 w-8 sm:w-16 bg-gradient-to-r from-blue-50 to-transparent z-10 pointer-events-none"></div>
                 <div className="absolute right-0 top-0 bottom-0 w-8 sm:w-16 bg-gradient-to-l from-blue-50 to-transparent z-10 pointer-events-none"></div>
@@ -242,12 +245,11 @@ const OurClients = () => {
                 />
               </div>
             </div>
-
           </div>
         </section>
-      </SectionBackground>
+      
     </div>
   );
-}
+};
 
 export default OurClients;
