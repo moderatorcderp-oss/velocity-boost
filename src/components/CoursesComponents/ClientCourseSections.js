@@ -7,6 +7,7 @@ import CoursesTrustBar from "./CoursesTrustBar";
 import WhatYouWillLearn from "./WhatYouWillLearn";
 import SkillsAndTools from "./SkillsAndTools";
 import WhoThisIsFor from "./WhoThisIsFor";
+import SapAbapSyllabus from "./SyllabusCard";
 // import {CityLinks} from "@/components/CityLinks";
 // === Above the fold (SSR enabled for SEO-critical content) ===
 const DSHeader = dynamic(() => import("./Header"));
@@ -14,7 +15,6 @@ const UpcomingBatches = dynamic(() => import("./UpcomingBatches"))
 const Reviews = dynamic(() => import("./Reviews"));
 const Why = dynamic(() => import("./Why"));
 const SapModComponent = dynamic(() => import("./sapmod"), { ssr: false });
-const Curriculum = dynamic(() => import("./Curriculam"), { ssr: false });
 const Modules = dynamic(() => import("./Modules"), { ssr: false });
 const Certificate = dynamic(() => import("../HomePage/Certificate"), { ssr: false });
 const Description = dynamic(() => import("./Description"), { ssr: false });
@@ -42,7 +42,6 @@ export default function ClientCourseSections(props) {
     relatedCoursesData,
     currentCityName,
     courseCategory,
-    shouldUseNewCurriculum,
     shouldUseLegacyModules,
   } = props;
 
@@ -55,17 +54,12 @@ export default function ClientCourseSections(props) {
         <Why data={whyData} />
         {sapModData && <SapModComponent data={sapModData} />}
 
-        {shouldUseNewCurriculum && (
-          <Suspense fallback={null}>
-            <Curriculum data={course} />
-          </Suspense>
-        )}
-
         {shouldUseLegacyModules && (
           <Suspense fallback={null}>
             <Modules data={modulesData} />
           </Suspense>
         )}
+
 
 
         <Suspense fallback={null}>
@@ -145,13 +139,7 @@ export default function ClientCourseSections(props) {
       <WhatYouWillLearn data={whatYouWillLearnData} />
       {sapModData && <SapModComponent data={sapModData} />}
 
-      {shouldUseNewCurriculum && (
-        <div id="curriculum" style={{ scrollMarginTop: "80px" }}>
-          <Suspense fallback={null}>
-            <Curriculum data={course} />
-          </Suspense>
-        </div>
-      )}
+      <SapAbapSyllabus />
 
       <SkillsAndTools data={skillsntoolsdata} />
 
