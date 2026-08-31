@@ -2,15 +2,7 @@ import Image from "next/image";
 import dynamic from "next/dynamic";
 import { Barlow_Condensed } from "next/font/google";
 
-const ConsultationButton = dynamic(() => import("./ConsultationButton"), {
-  ssr: false,
-  loading: () => (
-    <div
-      aria-hidden="true"
-      className="h-11 w-40 rounded-xl bg-purple-200/40 animate-pulse"
-    />
-  ),
-});
+import ConsultationButton from "./ConsultationButton";
 
 /* ---------- Inline SVG icons ---------- */
 const StarIcon = ({ className }) => (
