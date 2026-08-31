@@ -25,7 +25,7 @@ function SkillCard({ icon, title, description }) {
 }
 
 export default function SkillsAndTools({ data }) {
-  const skills = data;
+  const skills = Array.isArray(data) ? data : [];
   const skillCount = skills.length;
 
   return (

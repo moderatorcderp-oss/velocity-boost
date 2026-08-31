@@ -1,5 +1,4 @@
 import Image from "next/image";
-import dynamic from "next/dynamic";
 import { Barlow_Condensed } from "next/font/google";
 
 import ConsultationButton from "./ConsultationButton";

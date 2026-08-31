@@ -18,7 +18,11 @@ const Btnform = dynamic(() => import("@/components/HomePage/Btnform"), {
 // Short, scannable highlights instead of a dense paragraph
 
 const Certificate = ({ data }) => {
-  const highlights = data.highlights;
+  const safeData = data && typeof data === 'object' ? data : {};
+  const highlights = Array.isArray(safeData.highlights) ? safeData.highlights : [];
+  const courseTitle = safeData.courseTitle || "Professional Training Certificate";
+  const altText = safeData.alt || "Professional training certificate";
+  
   const [showForm, setShowForm] = useState(false);
   const handleButtonClick = () => setShowForm(true);
   const handleCloseForm = () => setShowForm(false);
@@ -42,7 +46,7 @@ const Certificate = ({ data }) => {
                 <div className="cert-frame relative bg-[#FBF8F2] rounded-xl border-2 border-[#C9A227]/60 p-3">
                   <Image
                     src={"https://res.cloudinary.com/bropujss/image/upload/v1784204578/Certificate_pbdvhs_uexpuc.webp"}
-                    alt={data?.alt || `${data?.courseTitle || "SAP Training"} Certificate`}
+                    alt={altText}
                     width={1000}
                     height={500}
                     className="w-full max-w-md h-auto lg:h-72 object-contain rounded-lg"
@@ -68,7 +72,7 @@ const Certificate = ({ data }) => {
               <span
                 className={`${playfair.className} inline-block w-fit mx-auto lg:mx-0 rounded-full border-2 border-[#C9A227] bg-white/70 px-4 py-1 text-sm sm:text-base text-[#0B1E3F]`}
               >
-                {data?.courseTitle || "SAP Training Certificate"}
+                {courseTitle}
               </span>
 
               <ul className="space-y-3">
