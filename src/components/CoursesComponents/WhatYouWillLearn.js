@@ -153,7 +153,7 @@ export default function WhatYouWillLearn({ data }) {
 
             return (
               <div
-                key={title}
+                key={i}
                 className="outcome-card group relative rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg hover:shadow-blue-100/60"
                 style={{ animationDelay: `${i * 80}ms` }}
               >
