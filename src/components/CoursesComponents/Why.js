@@ -3,7 +3,6 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import SectionHeading from "./SectionHeading";
 import styles from "@/styles/CoursesComponents/Why.module.css";
 import { useInView } from "react-intersection-observer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

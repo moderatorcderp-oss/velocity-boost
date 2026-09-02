@@ -9,24 +9,6 @@ const MAX_VISIBLE_SUGGESTIONS = 10;
 const SUGGESTION_ROW_HEIGHT = 40;
 const SUGGESTION_SCROLL_OFFSET = 4;
 
-const popupCourseImage =
-  "D:\AtorixProjects\Connecting-dots-erp\public\ContactImage_hrf03g.webp,q_auto:eco,c_fill,g_auto,w_480,h_600/v1777442392/1f2a952d-64f6-473e-9b9b-0f880f04fc7c_zw4hn5.webp";
-const popupCourseImageSrcSet = [
-  "D:\AtorixProjects\Connecting-dots-erp\public\ContactImage_hrf03g.webp,q_auto:eco,c_fill,g_auto,w_320,h_400/v1777442392/1f2a952d-64f6-473e-9b9b-0f880f04fc7c_zw4hn5.webp 320w",
-  "D:\AtorixProjects\Connecting-dots-erp\public\ContactImage_hrf03g.webp,q_auto:eco,c_fill,g_auto,w_480,h_600/v1777442392/1f2a952d-64f6-473e-9b9b-0f880f04fc7c_zw4hn5.webp 480w",
-  "D:\AtorixProjects\Connecting-dots-erp\public\ContactImage_hrf03g.webp,q_auto:eco,c_fill,g_auto,w_640,h_800/v1777442392/1f2a952d-64f6-473e-9b9b-0f880f04fc7c_zw4hn5.webp 640w",
-  "D:\AtorixProjects\Connecting-dots-erp\public\ContactImage_hrf03g.webp,q_auto:eco,c_fill,g_auto,w_880,h_1100/v1777442392/1f2a952d-64f6-473e-9b9b-0f880f04fc7c_zw4hn5.webp 880w",
-].join(", ");
-
-const popupLogo =
-  "https://res.cloudinary.com/bropujss/image/upload/v1783687480/Connecting_Logo_New_skvsup_ohmdgr.webp,q_auto:eco,c_fit,w_42,h_42/v1778307122/Connecting_Logo_cxqagq.avif";
-const popupLogoSrcSet = [
-  "https://res.cloudinary.com/bropujss/image/upload/v1783687480/Connecting_Logo_New_skvsup_ohmdgr.webp,q_auto:eco,c_fit,w_42,h_42/v1778307122/Connecting_Logo_cxqagq.avif,q_auto:eco,c_fit,w_28,h_28/v1778307122/Connecting_Logo_cxqagq.avif 28w",
-  "https://res.cloudinary.com/bropujss/image/upload/v1783687480/Connecting_Logo_New_skvsup_ohmdgr.webp,q_auto:eco,c_fit,w_42,h_42/v1778307122/Connecting_Logo_cxqagq.avif,q_auto:eco,c_fit,w_42,h_42/v1778307122/Connecting_Logo_cxqagq.avif 42w",
-  "https://res.cloudinary.com/bropujss/image/upload/v1783687480/Connecting_Logo_New_skvsup_ohmdgr.webp,q_auto:eco,c_fit,w_42,h_42/v1778307122/Connecting_Logo_cxqagq.avif,q_auto:eco,c_fit,w_64,h_64/v1778307122/Connecting_Logo_cxqagq.avif 64w",
-  "https://res.cloudinary.com/bropujss/image/upload/v1783687480/Connecting_Logo_New_skvsup_ohmdgr.webp,q_auto:eco,c_fit,w_42,h_42/v1778307122/Connecting_Logo_cxqagq.avif,q_auto:eco,c_fit,w_84,h_84/v1778307122/Connecting_Logo_cxqagq.avif 84w",
-].join(", ");
-
 const popupBackgroundImage =
   "https://res.cloudinary.com/duz9xipfm/image/upload/f_auto,q_auto:eco,w_520/v1763383745/c6dadb2c42a8ead53b163c770a60c334_1_g1pufv.avif";
 

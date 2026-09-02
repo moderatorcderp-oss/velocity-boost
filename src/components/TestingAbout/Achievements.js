@@ -1,15 +1,5 @@
 "use client";
 import React from "react";
-import {
-  Award,
-  Trophy,
-  Star,
-  Target,
-  Zap,
-  Shield,
-  Users,
-  Globe,
-} from "lucide-react";
 
 const AchievementsSection = () => {
   // Top carousel achievements (10 images)

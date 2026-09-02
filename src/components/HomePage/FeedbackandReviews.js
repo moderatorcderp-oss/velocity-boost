@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo, useRef, useCallback } from "react";
-import { Star, Quote } from "lucide-react";
+import { Quote } from "lucide-react";
 import SectionBackground from "../BackgroundCss/SectionBackground";
 import { homepageReviews, ReviewStarRow } from "../Common/SharedReviews";
 
