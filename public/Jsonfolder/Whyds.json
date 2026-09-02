@@ -320,64 +320,6 @@
       ]
     }
   },
-  "Whybwbi": {
-    "WhyBwbi": {
-      "title": "Why SAP BI ?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">SAP BW/BI</span>?",
-          "content": "SAP BW/BI (Business Warehouse / Business Intelligence) is one of the most in-demand SAP modules, enabling organizations to consolidate, model, and analyze enterprise data for smarter decision-making. Our SAP BW/BI course in Pune is built for freshers, IT professionals, functional consultants, and data analysts who want to build a strong career in SAP data warehousing and analytics."
-        },
-        {
-          "title": "What will you learn from fundamentals to advanced?",
-          "content": "This course takes you from SAP BW fundamentals to advanced BW/4HANA concepts, covering data extraction, transformation, modeling (InfoObjects, InfoProviders, DSOs, CompositeProviders), reporting with BEx and SAP Analytics tools, and real-time project scenarios. You will work on live case studies that mirror actual business requirements across industries like manufacturing, retail, finance, and healthcare.",
-          "listItems": [
-            "Data extraction, transformation & modeling",
-            "InfoObjects, InfoProviders, DSOs, CompositeProviders",
-            "BEx & SAP Analytics reporting + live case studies"
-          ]
-        },
-        {
-          "title": "Who is this course designed for?",
-          "content": "Our SAP BW/BI course in Pune is built for freshers, IT professionals, functional consultants, and data analysts who want to build a strong career in SAP data warehousing and analytics.",
-          "listItems": [
-            "Freshers & IT professionals",
-            "Functional consultants & data analysts",
-            "Career path in SAP data warehousing & analytics"
-          ]
-        }
-      ]
-    }
-  },
-  "Whyewm": {
-    "WhyEWM": {
-      "title": "Why SAP EWM ?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">SAP EWM</span>?",
-          "content": "SAP Extended Warehouse Management (EWM) is one of the most in-demand modules within the SAP Supply Chain Management (SCM) suite, used by global enterprises to manage complex warehouse and distribution operations. As companies in Pune's automotive, manufacturing, retail, and logistics sectors increasingly adopt SAP S/4HANA, the demand for skilled SAP EWM consultants in Pune continues to grow rapidly."
-        },
-        {
-          "title": "What will you learn in this <span class=\"highlight-span-cards\">SAP EWM training</span>?",
-          "content": "Our SAP EWM training in Pune is designed to take you from fundamentals to advanced configuration, covering both Decentralized and Embedded EWM architecture on S/4HANA. You'll work on live warehouse scenarios from goods receipt to put away strategies, wave management, and RF-enabled picking under the guidance of certified SAP professionals with real project experience.",
-          "listItems": [
-            "Decentralized & Embedded EWM on S/4HANA",
-            "Goods receipt, putaway, wave management, RF picking",
-            "Guidance from certified professionals with real projects"
-          ]
-        },
-        {
-          "title": "Why is SAP EWM in high demand in Pune?",
-          "content": "As companies in Pune's automotive, manufacturing, retail, and logistics sectors increasingly adopt SAP S/4HANA, the demand for skilled SAP EWM consultants continues to grow rapidly. This training prepares you with advanced configuration and live warehouse scenario experience.",
-          "listItems": [
-            "Strong demand from Pune's key industries",
-            "S/4HANA adoption driving opportunities",
-            "Advanced configuration + live scenarios"
-          ]
-        }
-      ]
-    }
-  },
   "Whyfico": {
     "WhyFICO": {
       "title": "Why SAP FICO ?",
@@ -402,325 +344,6 @@
             "Conceptual clarity + hands-on configuration",
             "Practice on live SAP systems",
             "Job-ready skills, not just a certificate"
-          ]
-        }
-      ]
-    }
-  },
-  "Whyhana": {
-    "WhyHana": {
-      "title": "Why SAP S/4 HANA ?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">SAP S/4HANA</span>?",
-          "content": "SAP S/4 HANA (Systems, Applications, and Products in Data Processing – Simple, Fast, Advanced) is the next-generation intelligent ERP suite that powers real-time business operations across finance, logistics, supply chain, and manufacturing. As more organizations migrate from legacy SAP ECC systems to S/4 HANA, the demand for skilled SAP S/4 HANA consultants in Pune and across India has grown rapidly."
-        },
-        {
-          "title": "What does this <span class=\"highlight-span-cards\">SAP S/4HANA training</span> cover?",
-          "content": "This SAP S/4 HANA training in Pune is designed by industry experts to help you build core functional and technical skills required to implement, configure, and manage SAP S/4 HANA systems. The course combines conceptual learning with hands-on practice on a live SAP S/4 HANA server, real business case studies, and mock interview preparation — ensuring you're fully prepared for SAP consulting roles.",
-          "listItems": [
-            "Implement, configure & manage S/4HANA",
-            "Hands-on on live S/4HANA server",
-            "Real case studies + mock interview prep"
-          ]
-        },
-        {
-          "title": "What will you be ready for after the course?",
-          "content": "You will be fully prepared for SAP consulting roles with core functional and technical skills, live-server experience, real business case studies, and mock interview preparation.",
-          "listItems": [
-            "Core functional & technical skills",
-            "Live-server practical experience",
-            "Ready for SAP consulting roles"
-          ]
-        }
-      ]
-    }
-  },
-  "Whyhrhcm": {
-    "WhyHRHCM": {
-      "title": "Why SAP HR/HCM ?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">SAP HCM</span>?",
-          "content": "SAP HCM (Human Capital Management) is one of the most widely implemented SAP modules across manufacturing, IT, banking, retail, and healthcare industries. Organizations rely on SAP HCM to manage their entire employee lifecycle — from recruitment and organizational structuring to payroll processing and time tracking."
-        },
-        {
-          "title": "Who is this <span class=\"highlight-span-cards\">SAP HCM training</span> designed for?",
-          "content": "This SAP HCM training in Pune is designed for working professionals, HR executives, and career-switchers who want to build a strong foundation in SAP HR functional consulting. The course covers both configuration (customizing) and end-user functionality, giving you the dual perspective needed to succeed as an SAP HCM consultant.",
-          "listItems": [
-            "Working professionals & HR executives",
-            "Career-switchers",
-            "Dual focus on configuration and end-user functionality"
-          ]
-        },
-        {
-          "title": "What practical skills will you gain?",
-          "content": "You'll work on real business scenarios, configure organizational structures from scratch, run live payroll cycles, and understand integration points with SAP FI/CO and SuccessFactors — preparing you for real SAP implementation and support projects. Course Duration: 2–3 Months (Flexible Weekday/Weekend Batches). Mode: Classroom (Pune) & Live Online. Level: Beginner to Advanced.",
-          "listItems": [
-            "Real business scenarios & live payroll cycles",
-            "Integration with FI/CO and SuccessFactors",
-            "Ready for implementation and support projects"
-          ]
-        }
-      ]
-    }
-  },
-  "Whymm": {
-    "WhyMM": {
-      "title": "Why SAP MM ?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">SAP MM</span>?",
-          "content": "SAP MM (Materials Management) is the module that governs how a company buys, stores, and pays for the materials it needs to run its business — procurement, inventory, vendor management, and invoice verification all sit inside it. It's one of the most widely implemented SAP modules across manufacturing, retail, pharma, and FMCG companies, which keeps demand for trained SAP MM professionals steady."
-        },
-        {
-          "title": "Why is Pune a strong location for a <span class=\"highlight-span-cards\">SAP MM Course</span>?",
-          "content": "Pune has grown into one of India's strongest SAP job markets. The city is home to a large concentration of manufacturing firms, automotive companies, and IT/consulting firms that run or implement SAP — which means a SAP MM Course in Pune puts you close to both training talent and the employers who are actually hiring for this skill.",
-          "listItems": [
-            "Manufacturing & automotive companies",
-            "IT and consulting firms running SAP",
-            "Close to both training talent and hiring employers"
-          ]
-        },
-        {
-          "title": "What career advantage does this course offer?",
-          "content": "Because SAP MM is so widely used across manufacturing, retail, pharma, and FMCG, trained professionals enjoy steady demand. Learning it in Pune places you near the companies that actively hire for this skill.",
-          "listItems": [
-            "Steady demand across key industries",
-            "Proximity to hiring companies in Pune",
-            "Practical path into SAP MM roles"
-          ]
-        }
-      ]
-    }
-  },
-  "Whynet": {
-    "WhyNet": {
-      "title": "Why SAP NETWEAVER ?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">SAP NetWeaver?</span>",
-          "content": "SAP NetWeaver is the integrated technology platform that underpins many SAP applications. It supports system administration, security, and seamless integration of both SAP and non-SAP systems."
-        },
-        {
-          "title": "What does a <span class=\"highlight-span-cards\">SAP NetWeaver Consultant</span> do?",
-          "content": "A SAP NetWeaver Consultant designs, develops, and manages applications on the NetWeaver platform. They ensure reliable integration and efficient operation of the overall SAP landscape.",
-          "listItems": [
-            "Design and implement NetWeaver solutions",
-            "Integrate SAP and non-SAP applications",
-            "Manage and optimize SAP environments"
-          ]
-        },
-        {
-          "title": "Why take <span class=\"highlight-span-cards\">SAP NetWeaver</span> training?",
-          "content": "NetWeaver skills are critical for keeping SAP systems integrated and stable. Our certification course in {city} builds practical knowledge in system administration, integration, and security.",
-          "listItems": [
-            "SAP NetWeaver Consultant",
-            "SAP System Administrator",
-            "SAP Integration Specialist"
-          ]
-        }
-      ]
-    }
-  },
-  "Whypm": {
-    "WhyPM": {
-      "title": "Why SAP PM ?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">SAP Plant Maintenance (PM)</span>?",
-          "content": "SAP Plant Maintenance (PM) is one of the most in-demand modules within the SAP ecosystem, used by manufacturing, engineering, pharmaceutical, and process industries to manage equipment reliability, reduce downtime, and streamline maintenance operations. As Pune continues to grow as a hub for automotive, manufacturing, and IT-enabled enterprises, the demand for skilled SAP PM consultants in the region is rising steadily."
-        },
-        {
-          "title": "What will you learn in this <span class=\"highlight-span-cards\">SAP PM Course</span>?",
-          "content": "Our SAP PM Course in Pune is designed to take you from foundational concepts to advanced configuration, giving you complete command over master data management, preventive maintenance planning, work order processing, and maintenance notifications. The course follows a project-based approach, so you don't just learn theory — you apply it on live SAP systems, just as you would in a real corporate environment.",
-          "listItems": [
-            "Master data & preventive maintenance planning",
-            "Work order processing & notifications",
-            "Project-based learning on live SAP systems"
-          ]
-        },
-        {
-          "title": "Why is demand for SAP PM skills growing in Pune?",
-          "content": "As Pune continues to grow as a hub for automotive, manufacturing, and IT-enabled enterprises, the demand for skilled SAP PM consultants in the region is rising steadily. This course prepares you with project-based, live-system experience to meet that demand.",
-          "listItems": [
-            "Rising demand in Pune's industrial hubs",
-            "Project-based practical experience",
-            "Ready for real corporate environments"
-          ]
-        }
-      ]
-    }
-  },
-  "Whypp": {
-    "WhyPP": {
-      "title": "Why SAP PP ?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">SAP PP</span>?",
-          "content": "SAP Production Planning (PP) is one of the most in-demand modules within the SAP ecosystem, forming the backbone of manufacturing and production operations across industries like automotive, pharmaceuticals, FMCG, and discrete manufacturing. This SAP PP Course in Pune is built to help you understand how organizations plan, schedule, and execute production processes efficiently using SAP."
-        },
-        {
-          "title": "What does the complete <span class=\"highlight-span-cards\">SAP PP lifecycle</span> cover?",
-          "content": "Our training covers the complete SAP PP lifecycle — from Master Data (Bill of Materials, Work Centers, Routings) to core planning processes like Demand Management, MRP (Material Requirements Planning), Production Orders, and Capacity Planning, along with integration touchpoints with SAP MM, SD, and QM modules.",
-          "listItems": [
-            "Master Data: BOM, Work Centers, Routings",
-            "Demand Management, MRP, Production Orders, Capacity Planning",
-            "Integration with MM, SD, and QM"
-          ]
-        },
-        {
-          "title": "What will you be able to do after this course?",
-          "content": "You will understand how organizations plan, schedule, and execute production processes efficiently using SAP, and gain practical knowledge of the full PP lifecycle and its key integrations.",
-          "listItems": [
-            "Efficient production planning & scheduling",
-            "Full PP lifecycle knowledge",
-            "Key module integration skills"
-          ]
-        }
-      ]
-    }
-  },
-  "Whyps": {
-    "WhyPS": {
-      "title": "Why SAP PS ?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">SAP Project Systems (PS)</span>?",
-          "content": "SAP Project Systems (PS) is one of the most powerful modules within SAP, used by organizations to plan, execute, monitor, and control projects of any size — from small internal initiatives to large-scale infrastructure and manufacturing projects. Companies across construction, engineering, IT, pharma, and manufacturing rely on SAP PS to keep their projects on time and within budget."
-        },
-        {
-          "title": "How is this <span class=\"highlight-span-cards\">SAP PS training</span> different?",
-          "content": "This SAP PS training in Pune is built for individuals who want practical, real-world exposure rather than just theory. Our trainers are experienced SAP consultants who bring live industry case studies into the classroom, helping you understand not just \"how\" but \"why\" things are done a certain way in real projects.",
-          "listItems": [
-            "Practical, real-world exposure",
-            "Live industry case studies",
-            "Focus on the \"why\" behind real project decisions"
-          ]
-        },
-        {
-          "title": "What will you be able to do after the course?",
-          "content": "By the end of this course, you'll be able to independently configure and handle a project system landscape, understand its integration with other SAP modules, and confidently work as an SAP PS consultant or end-user in a corporate environment.",
-          "listItems": [
-            "Independent configuration of PS landscape",
-            "Understanding of module integration",
-            "Ready for consultant or end-user roles"
-          ]
-        }
-      ]
-    }
-  },
-  "Whyqm": {
-    "WhyQM": {
-      "title": "Why SAP QM ?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">SAP QM</span>?",
-          "content": "SAP QM (Quality Management) is a core module within SAP ERP/S4 HANA that helps organizations plan, execute, and control quality processes across procurement, production, and sales."
-        },
-        {
-          "title": "What does this <span class=\"highlight-span-cards\">SAP QM course</span> cover?",
-          "content": "This course covers the complete SAP QM lifecycle — from quality planning and inspection to quality control, notifications, and certificates — with practical, scenario-based learning. Whether you are a fresh graduate, a working professional in quality assurance, or an SAP consultant looking to upskill, this course equips you with the practical knowledge and confidence to work on live SAP QM projects.",
-          "listItems": [
-            "Quality planning, inspection & control",
-            "Notifications and certificates",
-            "Scenario-based learning for live projects"
-          ]
-        },
-        {
-          "title": "How is the training delivered and what makes it job-ready?",
-          "content": "Delivered by experienced SAP consultants in Pune, the training blends theoretical concepts with real-time business scenarios, ensuring you're job-ready by the end of the program. Duration: 45–60 Hours (Weekday/Weekend). Mode: Classroom in Pune & Live Online. Level: Beginner to Advanced.",
-          "listItems": [
-            "Experienced SAP consultants",
-            "Real-time business scenarios",
-            "Job-ready skills by course end"
-          ]
-        }
-      ]
-    }
-  },
-  "Whyscm": {
-    "WhySCM": {
-      "title": "Why SAP SCM?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">SAP SCM</span> and who is this course for?",
-          "content": "Our SAP SCM Course in Pune is designed for graduates, working professionals, and supply chain enthusiasts who want to build a career in one of the most in-demand ERP domains. SAP Supply Chain Management (SCM) is the backbone of procurement, production planning, inventory management, warehousing, and logistics for global enterprises — and skilled SAP SCM consultants are in high demand across manufacturing, retail, pharma, FMCG, and logistics industries."
-        },
-        {
-          "title": "What modules and skills does the course cover?",
-          "content": "This course takes you from SCM fundamentals to advanced SAP module configuration, covering SAP MM (Materials Management), SAP PP, SAP WM/EWM, and an introduction to SAP APO/IBP for demand and supply planning. You'll work on real business scenarios inside a live SAP environment, understand end-to-end procure-to-pay and plan-to-produce cycles, and gain the practical exposure recruiters actually look for.",
-          "listItems": [
-            "SAP MM, PP, WM/EWM",
-            "Introduction to APO/IBP",
-            "Live scenarios: procure-to-pay & plan-to-produce"
-          ]
-        },
-        {
-          "title": "Who benefits most from this <span class=\"highlight-span-cards\">SAP SCM training</span>?",
-          "content": "Whether you are a fresher aiming to enter the SAP ecosystem, a supply chain professional looking to upskill, or an SAP consultant expanding your module expertise, this SAP SCM training in Pune gives you the structured learning path, mentorship, and certification needed to succeed.",
-          "listItems": [
-            "Freshers entering SAP",
-            "Supply chain professionals upskilling",
-            "SAP consultants expanding modules"
-          ]
-        }
-      ]
-    }
-  },
-  "Whysd": {
-    "WhySD": {
-      "title": "Why SAP SD ?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">SAP SD</span>?",
-          "content": "SAP Sales and Distribution (SD) is one of the most widely implemented modules in the SAP ERP ecosystem, managing everything from customer inquiries and sales orders to pricing, shipping, billing, and after-sales support. Companies across manufacturing, retail, FMCG, pharma, and automotive sectors depend on SAP SD consultants to keep their sales and logistics operations running smoothly."
-        },
-        {
-          "title": "Who is this <span class=\"highlight-span-cards\">SAP SD training</span> for and what does it cover?",
-          "content": "Our SAP SD training in Pune is designed for both freshers and working professionals who want to build a career in SAP consulting. The course covers the complete Order-to-Cash cycle, master data management, pricing procedures, credit management, and integration with SAP MM and FI modules — all taught through real business scenarios on a live SAP system.",
-          "listItems": [
-            "Complete Order-to-Cash cycle",
-            "Master data, pricing & credit management",
-            "Integration with MM and FI on live system"
-          ]
-        },
-        {
-          "title": "Why is SAP SD a strong career choice?",
-          "content": "Because so many industries rely on SAP SD for sales and logistics, skilled consultants are consistently in demand. This course prepares you with the complete Order-to-Cash knowledge and live-system experience employers look for.",
-          "listItems": [
-            "High demand across multiple industries",
-            "Practical Order-to-Cash expertise",
-            "Live SAP system experience"
-          ]
-        }
-      ]
-    }
-  },
-  "Whysucc": {
-    "WhySucc": {
-      "title": "Why SAP SUCCESSFACTOR ?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">SAP SuccessFactors</span>?",
-          "content": "SAP SuccessFactors is one of the most widely adopted cloud-based Human Capital Management (HCM) suites used by global enterprises to manage their end-to-end HR operations — from hire to retire. As organizations continue to shift from legacy HR systems to cloud HCM platforms, the demand for skilled SAP SuccessFactors consultants in Pune and across India continues to grow rapidly."
-        },
-        {
-          "title": "Who is this course for and what modules does it cover?",
-          "content": "Our SAP SuccessFactors course in Pune is designed for freshers, HR professionals, SAP consultants, and IT professionals who want to build a strong career in cloud HR technology. This comprehensive training program covers all core SuccessFactors modules, including Employee Central, Recruiting Management, Onboarding, Performance & Goal Management, Compensation, and Learning Management System (LMS).",
-          "listItems": [
-            "Employee Central, Recruiting, Onboarding",
-            "Performance & Goals, Compensation, LMS",
-            "Designed for freshers, HR pros, SAP & IT professionals"
-          ]
-        },
-        {
-          "title": "How does the course prepare you for real roles?",
-          "content": "The course blends conceptual learning with hands-on configuration exercises, real-time business scenarios, and mock project implementations — ensuring you don't just learn the theory, but gain the practical expertise needed to configure and implement SuccessFactors solutions in a live enterprise environment.",
-          "listItems": [
-            "Hands-on configuration exercises",
-            "Real-time scenarios & mock projects",
-            "Practical expertise for live enterprise environments"
           ]
         }
       ]
@@ -814,36 +437,6 @@
       ]
     }
   },
-  "Whyana": {
-    "WhyANA": {
-      "title": "Why HR Analytics?",
-      "cards": [
-        {
-          "title": "Why <span class=\"highlight-span-cards\">HR Analytics</span>?",
-          "content": "HR Analytics uses data and statistical methods to measure and improve people processes. It helps organizations make better decisions about hiring, performance, retention, and workforce planning."
-        },
-        {
-          "title": "What Does <span class=\"highlight-span-cards\">HR Analytics</span> Do?",
-          "content": "HR Analytics professionals collect and analyze workforce data to uncover insights that improve decision-making. They look at performance, turnover, recruitment efficiency, and related metrics to support better people strategies.",
-          "listItems": [
-            "Collect and analyze workforce data",
-            "Identify trends in performance and retention",
-            "Support data-driven HR decisions"
-          ]
-        },
-        {
-          "title": "Why Take <span class=\"highlight-span-cards\">HR Analytics</span> Training?",
-          "content": "Data-driven HR is becoming essential. Our training in {city} prepares you to analyze employee data, improve workforce management, and support business strategy with clear insights.",
-          "listItems": [
-            "HR Analyst",
-            "HR Business Partner",
-            "People Analytics Specialist",
-            "Talent Management Analyst"
-          ]
-        }
-      ]
-    }
-  },
   "Whyman": {
     "WhyMAN": {
       "title": "Why HR Management?",
@@ -899,97 +492,6 @@
             "HR Payroll Administrator",
             "Payroll Compliance Officer",
             "Compensation and Benefits Manager"
-          ]
-        }
-      ]
-    }
-  },
-  "Whygen": {
-    "WhyGEN": {
-      "title": "WHY HR Generalist?",
-      "cards": [
-        {
-          "title": "What is<span class=\"highlight-span-cards\">HR Generalist?</span>",
-          "content": "An HR Generalist handles a broad range of people activities — recruitment, onboarding, engagement, performance, training, payroll, and compliance. They keep day-to-day HR operations running smoothly across the organization."
-        },
-        {
-          "title": "What Does <span class=\"highlight-span-cards\">HR Generalist</span> Do?",
-          "content": "HR Generalists are the all-rounders of the HR team. They support multiple functions, implement policies, and help create a positive work environment while ensuring legal compliance.",
-          "listItems": [
-            "Handle recruitment and onboarding",
-            "Support performance and employee relations",
-            "Manage payroll and compliance activities"
-          ]
-        },
-        {
-          "title": "Why Take <span class=\"highlight-span-cards\">HR Generalist</span> Training?",
-          "content": "HR Generalists need a wide skill set. Our course in {city} gives comprehensive training for day-to-day HR operations, employee support, and legal compliance so you can step into the role ready.",
-          "listItems": [
-            "HR Generalist",
-            "HR Coordinator",
-            "HR Executive",
-            "Talent Acquisition Specialist",
-            "Payroll Administrator"
-          ]
-        }
-      ]
-    }
-  },
-  "Whyhrtrain": {
-    "WhyHRTRAIN": {
-      "title": "Why HR Training?",
-      "cards": [
-        {
-          "title": "What is an <span class=\"highlight-span-cards\">HR Course</span>?",
-          "content": "An HR course builds the knowledge and skills needed to manage people effectively. It covers recruitment, employee relations, performance, and compliance so you can support a productive and engaged workforce."
-        },
-        {
-          "title": "What does an <span class=\"highlight-span-cards\">HR</span> Do?",
-          "content": "HR professionals manage employee relations, recruitment, training, and compliance. They help create a positive workplace and align people practices with business goals.",
-          "listItems": [
-            "Manage recruitment and employee relations",
-            "Support performance and development",
-            "Ensure legal and policy compliance"
-          ]
-        },
-        {
-          "title": "Why Take <span class=\"highlight-span-cards\">HR</span> Training?",
-          "content": "Organizations need capable HR professionals more than ever. Our training in {city} covers Generalist, Core HR, Payroll, Management, and Analytics skills and prepares you for a range of practical roles.",
-          "listItems": [
-            "HR Generalist",
-            "HR Manager",
-            "Payroll Specialist",
-            "Talent Acquisition Specialist"
-          ]
-        }
-      ]
-    }
-  },
-  "Whysap": {
-    "WhySap": {
-      "title": "Why SAP Course in {city}?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">SAP</span>?",
-          "content": "SAP (Systems, Applications, and Products in Data Processing) is one of the world's most widely used ERP (Enterprise Resource Planning) software solutions. It helps organizations manage finance, operations, HR, supply chain, and customer relations on a single integrated platform."
-        },
-        {
-          "title": "Who is this <span class=\"highlight-span-cards\">SAP course</span> designed for?",
-          "content": "This SAP course is designed for freshers, working professionals, and career switchers who want to build a strong foundation in SAP and specialize in modules that align with their career goals. Through instructor-led sessions, live projects, and practical assignments, you will gain the skills required to work as an SAP consultant, functional analyst, or technical specialist.",
-          "listItems": [
-            "Build a strong SAP foundation",
-            "Specialize in career-aligned modules",
-            "Gain skills for consultant, analyst, or technical roles"
-          ]
-        },
-        {
-          "title": "What will you achieve by the end of this <span class=\"highlight-span-cards\">SAP course</span>?",
-          "content": "By the end of this course, you will be equipped with real-world SAP implementation knowledge, configuration skills, and end-to-end business process understanding — preparing you for SAP certification exams and industry roles.",
-          "listItems": [
-            "Real-world SAP implementation knowledge",
-            "Configuration skills",
-            "End-to-end business process understanding",
-            "Readiness for SAP certification exams and industry roles"
           ]
         }
       ]
@@ -1112,6 +614,272 @@
             "LLM Engineer",
             "AI Automation Specialist",
             "AI Solutions Architect"
+          ]
+        }
+      ]
+    }
+  },
+  "Whybwbi": {
+    "WhyBwbi": {
+      "title": "Why SAP BI ?",
+      "cards": [
+        {
+          "title": "What is <span class=\"highlight-span-cards\">SAP BW/BI</span>?",
+          "content": "SAP BW/BI (Business Warehouse / Business Intelligence) is one of the most in-demand SAP modules, enabling organizations to consolidate, model, and analyze enterprise data for smarter decision-making. Our SAP BW/BI course in Pune is built for freshers, IT professionals, functional consultants, and data analysts who want to build a strong career in SAP data warehousing and analytics."
+        },
+        {
+          "title": "What will you learn from fundamentals to advanced?",
+          "content": "This course takes you from SAP BW fundamentals to advanced BW/4HANA concepts, covering data extraction, transformation, modeling (InfoObjects, InfoProviders, DSOs, CompositeProviders), reporting with BEx and SAP Analytics tools, and real-time project scenarios. You will work on live case studies that mirror actual business requirements across industries like manufacturing, retail, finance, and healthcare.",
+          "listItems": [
+            "Data extraction, transformation & modeling",
+            "InfoObjects, InfoProviders, DSOs, CompositeProviders",
+            "BEx & SAP Analytics reporting + live case studies"
+          ]
+        },
+        {
+          "title": "Who is this course designed for?",
+          "content": "Our SAP BW/BI course in Pune is built for freshers, IT professionals, functional consultants, and data analysts who want to build a strong career in SAP data warehousing and analytics.",
+          "listItems": [
+            "Freshers & IT professionals",
+            "Functional consultants & data analysts",
+            "Career path in SAP data warehousing & analytics"
+          ]
+        }
+      ]
+    }
+  },
+  "Whyewm": {
+    "WhyEWM": {
+      "title": "Why SAP EWM ?",
+      "cards": [
+        {
+          "title": "What is <span class=\"highlight-span-cards\">SAP EWM</span>?",
+          "content": "SAP Extended Warehouse Management (EWM) is one of the most in-demand modules within the SAP Supply Chain Management (SCM) suite, used by global enterprises to manage complex warehouse and distribution operations. As companies in Pune's automotive, manufacturing, retail, and logistics sectors increasingly adopt SAP S/4HANA, the demand for skilled SAP EWM consultants in Pune continues to grow rapidly."
+        },
+        {
+          "title": "What will you learn in this <span class=\"highlight-span-cards\">SAP EWM training</span>?",
+          "content": "Our SAP EWM training in Pune is designed to take you from fundamentals to advanced configuration, covering both Decentralized and Embedded EWM architecture on S/4HANA. You'll work on live warehouse scenarios from goods receipt to put away strategies, wave management, and RF-enabled picking under the guidance of certified SAP professionals with real project experience.",
+          "listItems": [
+            "Decentralized & Embedded EWM on S/4HANA",
+            "Goods receipt, putaway, wave management, RF picking",
+            "Guidance from certified professionals with real projects"
+          ]
+        },
+        {
+          "title": "Why is SAP EWM in high demand in Pune?",
+          "content": "As companies in Pune's automotive, manufacturing, retail, and logistics sectors increasingly adopt SAP S/4HANA, the demand for skilled SAP EWM consultants continues to grow rapidly. This training prepares you with advanced configuration and live warehouse scenario experience.",
+          "listItems": [
+            "Strong demand from Pune's key industries",
+            "S/4HANA adoption driving opportunities",
+            "Advanced configuration + live scenarios"
+          ]
+        }
+      ]
+    }
+  },
+  "Whyhana": {
+    "WhyHana": {
+      "title": "Why SAP S/4 HANA ?",
+      "cards": [
+        {
+          "title": "What is <span class=\"highlight-span-cards\">SAP S/4HANA</span>?",
+          "content": "SAP S/4 HANA (Systems, Applications, and Products in Data Processing – Simple, Fast, Advanced) is the next-generation intelligent ERP suite that powers real-time business operations across finance, logistics, supply chain, and manufacturing. As more organizations migrate from legacy SAP ECC systems to S/4 HANA, the demand for skilled SAP S/4 HANA consultants in Pune and across India has grown rapidly."
+        },
+        {
+          "title": "What does this <span class=\"highlight-span-cards\">SAP S/4HANA training</span> cover?",
+          "content": "This SAP S/4 HANA training in Pune is designed by industry experts to help you build core competencies in the simplified data model, real-time analytics, and intelligent automation features of S/4HANA.",
+          "listItems": [
+            "Simplified data model & real-time analytics",
+            "Finance, logistics & supply chain processes",
+            "Migration from ECC to S/4HANA"
+          ]
+        },
+        {
+          "title": "Why is demand for SAP S/4HANA growing?",
+          "content": "Organizations worldwide are migrating to S/4HANA. Skilled consultants who understand the new architecture and best practices are in high demand across India.",
+          "listItems": [
+            "Global migration wave to S/4HANA",
+            "High demand for skilled consultants",
+            "Strong career growth potential"
+          ]
+        }
+      ]
+    }
+  },
+  "Whysd": {
+    "WhySD": {
+      "title": "Why SAP SD ?",
+      "cards": [
+        {
+          "title": "What is <span class=\"highlight-span-cards\">SAP SD</span>?",
+          "content": "SAP Sales and Distribution (SD) is one of the most widely implemented modules in the SAP ERP ecosystem, managing everything from customer inquiries and sales orders to pricing, shipping, billing, and after-sales support. Companies across manufacturing, retail, FMCG, pharma, and automotive sectors depend on SAP SD consultants to keep their sales and logistics operations running smoothly."
+        },
+        {
+          "title": "Who is this <span class=\"highlight-span-cards\">SAP SD training</span> for and what does it cover?",
+          "content": "Our SAP SD training in Pune is designed for both freshers and working professionals who want to build a career in SAP consulting. The course covers the complete Order-to-Cash cycle, master data management, pricing procedures, credit management, and integration with SAP MM and FI modules — all taught through real business scenarios on a live SAP system.",
+          "listItems": [
+            "Complete Order-to-Cash cycle",
+            "Master data, pricing & credit management",
+            "Integration with MM and FI on live system"
+          ]
+        },
+        {
+          "title": "Why is SAP SD a strong career choice?",
+          "content": "Because so many industries rely on SAP SD for sales and logistics, skilled consultants are consistently in demand. This course prepares you with the complete Order-to-Cash knowledge and live-system experience employers look for.",
+          "listItems": [
+            "High demand across multiple industries",
+            "Practical Order-to-Cash expertise",
+            "Live SAP system experience"
+          ]
+        }
+      ]
+    }
+  },
+  "Whysucc": {
+    "WhySucc": {
+      "title": "Why SAP SUCCESSFACTOR ?",
+      "cards": [
+        {
+          "title": "What is <span class=\"highlight-span-cards\">SAP SuccessFactors</span>?",
+          "content": "SAP SuccessFactors is one of the most widely adopted cloud-based Human Capital Management (HCM) suites used by global enterprises to manage their end-to-end HR operations — from hire to retire. As organizations continue to shift from legacy HR systems to cloud HCM platforms, the demand for skilled SAP SuccessFactors consultants in Pune and across India continues to grow rapidly."
+        },
+        {
+          "title": "Who is this course for and what modules does it cover?",
+          "content": "Our SAP SuccessFactors course in Pune is designed for freshers, HR professionals, SAP consultants, and IT professionals who want to build a strong career in cloud HR technology. This comprehensive training program covers all core SuccessFactors modules, including Employee Central, Recruiting Management, Onboarding, Performance & Goal Management, Compensation, and Learning Management System (LMS).",
+          "listItems": [
+            "Employee Central, Recruiting, Onboarding",
+            "Performance & Goals, Compensation, LMS",
+            "Designed for freshers, HR pros, SAP & IT professionals"
+          ]
+        },
+        {
+          "title": "How does the course prepare you for real roles?",
+          "content": "The course blends conceptual learning with hands-on configuration exercises, real-time business scenarios, and mock project implementations — ensuring you don't just learn the theory, but gain the practical expertise needed to configure and implement SuccessFactors solutions in a live enterprise environment.",
+          "listItems": [
+            "Hands-on configuration exercises",
+            "Real-time scenarios & mock projects",
+            "Practical expertise for live enterprise environments"
+          ]
+        }
+      ]
+    }
+  },
+  "Whyana": {
+    "WhyANA": {
+      "title": "Why HR Analytics?",
+      "cards": [
+        {
+          "title": "Why <span class=\"highlight-span-cards\">HR Analytics</span>?",
+          "content": "HR Analytics uses data and statistical methods to measure and improve people processes. It helps organizations make better decisions about hiring, performance, retention, and workforce planning."
+        },
+        {
+          "title": "What Does <span class=\"highlight-span-cards\">HR Analytics</span> Do?",
+          "content": "HR Analytics professionals collect and analyze workforce data to uncover insights that improve decision-making. They look at performance, turnover, recruitment efficiency, and related metrics to support better people strategies.",
+          "listItems": [
+            "Collect and analyze workforce data",
+            "Identify trends in performance and retention",
+            "Support data-driven HR decisions"
+          ]
+        },
+        {
+          "title": "Why Take <span class=\"highlight-span-cards\">HR Analytics</span> Training?",
+          "content": "Data-driven HR is becoming essential. Our training in {city} prepares you to analyze employee data, improve workforce management, and support business strategy with clear insights.",
+          "listItems": [
+            "HR Analyst",
+            "HR Business Partner",
+            "People Analytics Specialist",
+            "Talent Management Analyst"
+          ]
+        }
+      ]
+    }
+  },
+  "Whygen": {
+    "WhyGEN": {
+      "title": "WHY HR Generalist?",
+      "cards": [
+        {
+          "title": "What is<span class=\"highlight-span-cards\">HR Generalist?</span>",
+          "content": "An HR Generalist handles a broad range of people activities — recruitment, onboarding, engagement, performance, training, payroll, and compliance. They keep day-to-day HR operations running smoothly across the organization."
+        },
+        {
+          "title": "What Does <span class=\"highlight-span-cards\">HR Generalist</span> Do?",
+          "content": "HR Generalists are the all-rounders of the HR team. They support multiple functions, implement policies, and help create a positive work environment while ensuring legal compliance.",
+          "listItems": [
+            "Handle recruitment and onboarding",
+            "Support performance and employee relations",
+            "Manage payroll and compliance activities"
+          ]
+        },
+        {
+          "title": "Why Take <span class=\"highlight-span-cards\">HR Generalist</span> Training?",
+          "content": "HR Generalists need a wide skill set. Our course in {city} gives comprehensive training for day-to-day HR operations, employee support, and legal compliance so you can step into the role ready.",
+          "listItems": [
+            "HR Generalist",
+            "HR Coordinator",
+            "HR Executive",
+            "Talent Acquisition Specialist",
+            "Payroll Administrator"
+          ]
+        }
+      ]
+    }
+  },
+  "Whyhrtrain": {
+    "WhyHRTRAIN": {
+      "title": "Why HR Training?",
+      "cards": [
+        {
+          "title": "What is an <span class=\"highlight-span-cards\">HR Course</span>?",
+          "content": "An HR course builds the knowledge and skills needed to manage people effectively. It covers recruitment, employee relations, performance, and compliance so you can support a productive and engaged workforce."
+        },
+        {
+          "title": "What does an <span class=\"highlight-span-cards\">HR</span> Do?",
+          "content": "HR professionals manage employee relations, recruitment, training, and compliance. They help create a positive workplace and align people practices with business goals.",
+          "listItems": [
+            "Manage recruitment and employee relations",
+            "Support performance and development",
+            "Ensure legal and policy compliance"
+          ]
+        },
+        {
+          "title": "Why Take <span class=\"highlight-span-cards\">HR</span> Training?",
+          "content": "Organizations need capable HR professionals more than ever. Our training in {city} covers Generalist, Core HR, Payroll, Management, and Analytics skills and prepares you for a range of practical roles.",
+          "listItems": [
+            "HR Generalist",
+            "HR Manager",
+            "Payroll Specialist",
+            "Talent Acquisition Specialist"
+          ]
+        }
+      ]
+    }
+  },
+  "Whysap": {
+    "WhySap": {
+      "title": "Why SAP Course in {city}?",
+      "cards": [
+        {
+          "title": "What is <span class=\"highlight-span-cards\">SAP</span>?",
+          "content": "SAP (Systems, Applications, and Products in Data Processing) is one of the world's most widely used ERP (Enterprise Resource Planning) software solutions. It helps organizations manage finance, operations, HR, supply chain, and customer relations on a single integrated platform."
+        },
+        {
+          "title": "Who is this <span class=\"highlight-span-cards\">SAP course</span> designed for?",
+          "content": "This SAP course is designed for freshers, working professionals, and career switchers who want to build a strong foundation in SAP and specialize in modules that align with their career goals. Through instructor-led sessions, live projects, and practical assignments, you will gain the skills required to work as an SAP consultant, functional analyst, or technical specialist.",
+          "listItems": [
+            "Build a strong SAP foundation",
+            "Specialize in career-aligned modules",
+            "Gain skills for consultant, analyst, or technical roles"
+          ]
+        },
+        {
+          "title": "What will you achieve by the end of this <span class=\"highlight-span-cards\">SAP course</span>?",
+          "content": "By the end of this course, you will be equipped with real-world SAP implementation knowledge, configuration skills, and end-to-end business process understanding — preparing you for SAP certification exams and industry roles.",
+          "listItems": [
+            "Real-world SAP implementation knowledge",
+            "Configuration skills",
+            "End-to-end business process understanding",
+            "Readiness for SAP certification exams and industry roles"
           ]
         }
       ]

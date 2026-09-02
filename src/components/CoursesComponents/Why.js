@@ -22,7 +22,7 @@ const Why = ({ data }) => {
     return (
       <div className={styles.loadingContainer}>
         <div className={styles.spinner}></div>
-        <p>Loading &quot;Why&quot; section data...</p>
+        <p>No data available for this section.</p>
       </div>
     );
   }

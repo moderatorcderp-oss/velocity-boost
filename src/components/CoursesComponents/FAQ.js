@@ -7,47 +7,11 @@ import SectionBackground from "../BackgroundCss/SectionBackground";
 import Container from "../StandardContainer";
 import SectionHeading from "./SectionHeading";
 
-const FAQ_DATA = [
-  {
-    question: "What is SAP and why do companies use it?",
-    answer:
-      "SAP is business software that helps companies manage things like finance, inventory, HR, and operations all from one system, instead of juggling a dozen different tools. Big companies use it because it keeps everything connected — so when something changes in one department, the rest of the business sees it too. That's why SAP skills are in demand, especially in finance, supply chain, and consulting roles.",
-  },
-  {
-    question: "Is an IT course worth it in 2026?",
-    answer:
-      "Yes, IT is still one of the safer bets when it comes to career growth. Tech isn't slowing down, and companies across every industry — not just tech companies — need people who understand systems, cloud, networking, or software. The trick is picking a specialization instead of trying to learn \"IT\" in a vague, general sense. That's usually what separates someone who gets hired quickly from someone who doesn't.",
-  },
-  {
-    question: "What does an AI course actually teach you?",
-    answer:
-      "Most AI courses start with the basics — how machines \"learn\" from data, some math and statistics behind it, and then move into hands-on stuff like building models, working with tools like Python, and understanding real use cases like chatbots, recommendation systems, or automation. A good course won't just throw theory at you; it'll have you building small projects along the way so you actually understand how it works, not just what it is.",
-  },
-  {
-    question: "What is an HR course, and is it a good career option?",
-    answer:
-      "An HR course teaches you how businesses hire, train, manage, and retain people — think recruitment, payroll, employee relations, and workplace policies. It's a good option if you're someone who enjoys working with people rather than just systems or code. HR isn't going anywhere either; every company, no matter the industry, needs someone handling this side of things.",
-  },
-  {
-    question: "Which is better — learning SAP or a general IT course?",
-    answer:
-      "It's not really about one being \"better,\" it's about what you want to do. SAP is more specialized and tends to lead into consulting or enterprise roles with solid pay, but it's a narrower path. A general IT course gives you more flexibility early on, and you can specialize later once you know what you actually enjoy. If you already know you want to work with big businesses on their internal systems, go SAP. If you're still exploring, IT gives you more room to figure that out.",
-  },
-  {
-    question: "Will AI replace IT and other tech jobs?",
-    answer:
-      "AI is changing how a lot of IT work gets done, but it's not wiping out the jobs — it's shifting what the jobs look like. Routine, repetitive tasks are the ones most likely to get automated, while roles that involve problem-solving, decision-making, and actually understanding a business are becoming more valuable, not less. If anything, learning how to work alongside AI tools is turning into a skill of its own.",
-  },
-  {
-    question: "How long does it take to become job-ready in SAP, IT, AI, or HR?",
-    answer:
-      "On average, most people can get to a job-ready level anywhere from 2 to 6 months, depending on the course, how much time they put in, and whether they're starting from scratch or already have some background. Courses that include real projects and practical work tend to get people ready faster than ones that are purely theory-based, since employers usually care more about what you can actually do than just a certificate.",
-  },
-];
 
-export default function FAQAccordion() {
+export default function FAQAccordion({ data }) {
   const [openIndex, setOpenIndex] = useState(0);
-
+  console.log(data, 'faq data')
+  const FAQ_DATA = data['items'] || [];
   return (
     // <section className="w-screen flex items-center justify-center relative left-1/2 -translate-x-1/2">
     <Container>
