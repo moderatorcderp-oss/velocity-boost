@@ -14,7 +14,6 @@ import {
 import Sidebar from "@/components/superadmin/Sidebar"; // Import reusable Sidebar
 import AccessControl from "@/components/superadmin/AccessControl"; // Import reusable AccessControl
 import { fetchWithAuth } from "@/utils/auth"; // Import reusable fetch utility
-import FixedLogo from "@/components/superadmin/FixedLogo";
 
 // Permission Table Component refactored with Tailwind
 const PermissionTable = ({ roleData, onChange, readOnly }) => {

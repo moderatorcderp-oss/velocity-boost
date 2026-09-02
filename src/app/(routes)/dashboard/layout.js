@@ -4,7 +4,7 @@
 import { useEffect, useRef, useState, createContext, useContext } from "react"; // Import createContext, useContext
 import { useRouter, usePathname } from "next/navigation";
 import InactivityWarningModal from "@/components/superadmin/InactivityWarningModal";
-import { FaSignOutAlt, FaSpinner } from "react-icons/fa"; // Import FaSpinner
+import { FaSpinner } from "react-icons/fa"; // Import FaSpinner
 import FixedLogo from "@/components/superadmin/FixedLogo";
 
 // --- Configuration ---
@@ -113,9 +113,6 @@ const DashboardLayout = ({ children }) => {
         if (currentPagePath && isAdminAuthenticated) {
           // Only log if authenticated
           const timeSpent = Date.now() - currentPageStartTime;
-          console.log(
-            `DashboardLayout: Logging PAGE_VIEW_END for ${currentPagePath}. Duration: ${timeSpent}ms`
-          );
           logActivityEvent(
             "PAGE_VIEW_END",
             currentPagePath,

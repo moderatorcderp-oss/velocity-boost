@@ -5,13 +5,10 @@ import { useRouter } from "next/navigation";
 import {
   FaHistory,
   FaCalendarAlt,
-  FaUserShield,
   FaFilter,
   FaUserCog,
   FaChevronLeft,
   FaChevronRight,
-  FaEye,
-  FaSpinner,
   FaTimes,
   FaExclamationTriangle,
   FaClock, // Icon for time/duration
@@ -19,7 +16,6 @@ import {
 import Sidebar from "@/components/superadmin/Sidebar";
 import AccessControl from "@/components/superadmin/AccessControl";
 import { fetchWithAuth } from "@/utils/auth";
-import FixedLogo from "@/components/superadmin/FixedLogo";
 
 // Format date with time
 const formatDateTime = (dateString) => {

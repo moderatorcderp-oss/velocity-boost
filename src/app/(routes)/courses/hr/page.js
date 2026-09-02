@@ -1,8 +1,6 @@
 'use client';
 import React from 'react';
-import { Users, Briefcase, Settings, BarChart3,Palette, BookOpen,Target, 
-  LineChart, Award,  Globe,  Cog,  Shield,  Activity
-} from 'lucide-react';
+import { Users, Briefcase, Settings, BarChart3, BookOpen,Target, Award } from 'lucide-react';
 import CourseCard from '@/components/BlogsPage/CourseListCard';
 
 export default function HRCourses() {

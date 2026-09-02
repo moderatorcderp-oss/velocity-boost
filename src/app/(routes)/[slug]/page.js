@@ -1,6 +1,5 @@
 import { notFound } from "next/navigation";
 import ClientCourseSections from "@/components/CoursesComponents/ClientCourseSections";
-import ScrollHandler from '@/components/Common/ScrollHandlerClient';
 import {
   generateDynamicMetadata,
   generateDynamicJsonLd,
@@ -167,8 +166,6 @@ const CourseCityPage = async ({ params }) => {
   const city = citiesData[citySlug];
 
   if (!course || !city) {
-    console.log(course)
-    console.log(city)
     console.error(`❌ CourseCityPage: Course "${courseSlug}" or City "${citySlug}" not found.`);
     return notFound();
   }
@@ -213,13 +210,6 @@ const CourseCityPage = async ({ params }) => {
   const reviewsData = processPlaceholders(course.reviews, city.name);
   const relatedCoursesData = processPlaceholders(course.relatedCourses, city.name);
   const descriptionContentData = processPlaceholders(course.descriptionContent, city.name);
-
-  const isMultiSectionCourse =
-    descriptionContentData &&
-    (descriptionContentData.main ||
-      descriptionContentData.ppc ||
-      descriptionContentData.seo);
-
 
   const shouldUseNewCurriculum =
     !isSapCourse && modulesData && modulesData.tabs && Array.isArray(modulesData.tabs);

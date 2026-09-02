@@ -9,7 +9,6 @@ import {
   FaTimes,
   FaSpinner,
   FaKey,
-  FaShieldAlt, // For error state icon
 } from "react-icons/fa";
 
 import Sidebar from "@/components/superadmin/Sidebar"; // Import reusable Sidebar

@@ -2,11 +2,11 @@
 
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import styles from "@/styles/CoursesComponents/Upcomingbatches.module.css";
 import SectionHeading from "./SectionHeading";
 import { useInView } from "react-intersection-observer";
-import { Clock, Users, Zap, CalendarDays, MessageCircle } from "lucide-react";
+import { Clock, Users, Zap, CalendarDays } from "lucide-react";
 import { usePopupForm } from "../context/Popupformcontext";
 
 /*
