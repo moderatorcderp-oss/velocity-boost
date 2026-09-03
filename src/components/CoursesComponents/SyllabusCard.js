@@ -297,7 +297,7 @@ export default function SapAbapSyllabus(props) {
 
   return (
     <section
-      className={`relative w-full py-8 px-4 sm:py-12 sm:px-8 transition-all duration-700 ease-out ${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
+      className={`relative w-full pb-8 px-4 sm:py-12 sm:px-8 transition-all duration-700 ease-out ${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
         }`}
       style={{ background: palette.paper, fontFamily: bodyFont }}
     >
