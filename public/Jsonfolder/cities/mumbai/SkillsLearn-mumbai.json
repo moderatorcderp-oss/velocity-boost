@@ -1,0 +1,661 @@
+{
+    "SkillsFICO": [
+        {
+            "icon": "Wallet",
+            "title": "FI, CO, New GL & Asset Accounting",
+            "description": "Core SAP modules: Financial Accounting, Controlling, New GL, Asset Accounting and Product Costing basics"
+        },
+        {
+            "icon": "Monitor",
+            "title": "SAP S/4HANA + Fiori Exposure",
+            "description": "Live system work on SAP S/4HANA, SAP GUI and working familiarity with SAP Fiori"
+        },
+        {
+            "icon": "FileText",
+            "title": "Financial Statements inside SAP",
+            "description": "Preparing financial statements inside SAP, not just Excel"
+        },
+        {
+            "icon": "PieChart",
+            "title": "Cost & Profit Center Reporting",
+            "description": "Cost center and profit center reporting with real configuration"
+        },
+        {
+            "icon": "Link",
+            "title": "FI–MM–SD Integration",
+            "description": "Understanding how FI, MM and SD talk to each other in live projects"
+        },
+        {
+            "icon": "Award",
+            "title": "Interview & Resume Positioning",
+            "description": "Explaining configuration work clearly and positioning your resume for SAP FICO roles"
+        }
+    ],
+    "SkillsMM": [
+        {
+            "icon": "ShoppingCart",
+            "title": "Procurement & Purchasing Management",
+            "description": "End-to-end procurement and purchasing processes in SAP"
+        },
+        {
+            "icon": "Package",
+            "title": "Inventory & Warehouse Management",
+            "description": "Goods movements, stock management and warehouse processes"
+        },
+        {
+            "icon": "Users",
+            "title": "Vendor & Contract Management",
+            "description": "Vendor master, contracts and supplier-side processes"
+        },
+        {
+            "icon": "Calculator",
+            "title": "Invoice Processing & Reconciliation",
+            "description": "MIRO, invoice verification and reconciliation with FI"
+        },
+        {
+            "icon": "Monitor",
+            "title": "SAP S/4HANA GUI & Fiori",
+            "description": "Hands-on with SAP S/4HANA GUI, Fiori Launchpad and ECC comparison"
+        },
+        {
+            "icon": "Truck",
+            "title": "Supply Chain Configuration",
+            "description": "Core supply-chain configuration and basic Ariba exposure"
+        }
+    ],
+    "SkillsHCM": [
+        {
+            "icon": "Monitor",
+            "title": "SAP GUI & Key Transactions",
+            "description": "PA20, PA30, PPOME, PU01 and other daily HCM transaction codes"
+        },
+        {
+            "icon": "Settings",
+            "title": "SPRO Configuration",
+            "description": "Configuration screens you’ll actually use in real projects"
+        },
+        {
+            "icon": "User",
+            "title": "Infotype Configuration",
+            "description": "Infotype configuration and basic enhancement concepts"
+        },
+        {
+            "icon": "Banknote",
+            "title": "Payroll Schema & PCR",
+            "description": "Payroll schema and Payroll Control Record fundamentals"
+        },
+        {
+            "icon": "Database",
+            "title": "LSMW for Data Migration",
+            "description": "Basic LSMW for employee data migration"
+        },
+        {
+            "icon": "FileText",
+            "title": "Ticket Handling & Functional Specs",
+            "description": "Reading functional specs and real support-ticket exposure"
+        }
+    ],
+    "SkillsQM": [
+        {
+            "icon": "ShieldCheck",
+            "title": "SAP S/4HANA QM Module",
+            "description": "Real-time system access on SAP S/4HANA Quality Management"
+        },
+        {
+            "icon": "ClipboardList",
+            "title": "Quality Planning & Inspection",
+            "description": "Quality Planning and Inspection configuration from scratch"
+        },
+        {
+            "icon": "AlertTriangle",
+            "title": "Notification Management",
+            "description": "Handling Q1, Q2, Q3 quality notifications"
+        },
+        {
+            "icon": "Package",
+            "title": "Batch Management & Certificates",
+            "description": "Batch Management and Quality Certificate processing"
+        },
+        {
+            "icon": "Link",
+            "title": "Cross-Module Integration",
+            "description": "QM integration with PP, MM and SD"
+        },
+        {
+            "icon": "Monitor",
+            "title": "Fiori Apps & Live Documentation",
+            "description": "SAP Fiori apps for QM plus ticketing and documentation practices"
+        }
+    ],
+    "SkillsPS": [
+        {
+            "icon": "FolderKanban",
+            "title": "SAP PS Core",
+            "description": "Complete Project Systems module as the main focus"
+        },
+        {
+            "icon": "Link",
+            "title": "Integration Touchpoints",
+            "description": "How PS connects with CO, FI, MM, SD and PP"
+        },
+        {
+            "icon": "Code2",
+            "title": "Key PS Transactions",
+            "description": "CJ20N, CN41, CJ30, CJ33, CJ88 and other standard PS codes"
+        },
+        {
+            "icon": "BarChart3",
+            "title": "Report Painter Basics",
+            "description": "Creating and reading project reports with Report Painter"
+        },
+        {
+            "icon": "Monitor",
+            "title": "SAP Fiori for Project Systems",
+            "description": "Relevant Fiori apps for Project Systems"
+        },
+        {
+            "icon": "Calculator",
+            "title": "Project Cost & Budget Control",
+            "description": "Planning, tracking and settling project costs and budgets"
+        }
+    ],
+    "SkillsSCM": [
+        {
+            "icon": "Cloud",
+            "title": "SAP S/4HANA + MM / SD / PP",
+            "description": "Core modules: S/4HANA, MM, SD, PP with EWM & Ariba intro"
+        },
+        {
+            "icon": "ShoppingCart",
+            "title": "Procure-to-Pay (P2P)",
+            "description": "End-to-end Procure-to-Pay process management"
+        },
+        {
+            "icon": "ShoppingBag",
+            "title": "Order-to-Cash (O2C)",
+            "description": "Complete Order-to-Cash cycle management"
+        },
+        {
+            "icon": "Package",
+            "title": "Master Data & Inventory",
+            "description": "Master data management and inventory & warehouse operations"
+        },
+        {
+            "icon": "Factory",
+            "title": "Production Planning Fundamentals",
+            "description": "Production planning basics inside the supply-chain context"
+        },
+        {
+            "icon": "GitBranch",
+            "title": "Cross-Module Integration Thinking",
+            "description": "Business process mapping and integration across modules"
+        }
+    ],
+    "SkillsEHS": [
+        {
+            "icon": "Shield",
+            "title": "SAP EHS Management",
+            "description": "Core SAP Environment, Health & Safety module"
+        },
+        {
+            "icon": "AlertCircle",
+            "title": "Incident & Risk Management",
+            "description": "Incident logging, investigation and risk-assessment workflows"
+        },
+        {
+            "icon": "FileText",
+            "title": "SDS / Product Safety",
+            "description": "Safety Data Sheet and product-safety data handling"
+        },
+        {
+            "icon": "Link",
+            "title": "HR & PM Integration",
+            "description": "Basic integration of EHS with SAP HR and Plant Maintenance"
+        },
+        {
+            "icon": "Scale",
+            "title": "Indian Regulatory Frameworks",
+            "description": "Factories Act, Environment Protection Act, Hazardous Waste Rules"
+        },
+        {
+            "icon": "BarChart3",
+            "title": "Compliance Reporting & Audit Docs",
+            "description": "MIS reports and real-world audit documentation practices"
+        }
+    ],
+    "SkillsIBP": [
+        {
+            "icon": "TrendingUp",
+            "title": "SAP IBP for Demand & Supply",
+            "description": "Demand Planning, Supply Planning and Inventory modules"
+        },
+        {
+            "icon": "CalendarCheck",
+            "title": "Response & Supply + S&OP",
+            "description": "IBP for Response and Supply plus Sales & Operations Planning"
+        },
+        {
+            "icon": "Monitor",
+            "title": "SAP Fiori & Excel Add-in",
+            "description": "Confident use of Fiori Launchpad and IBP Excel Add-in"
+        },
+        {
+            "icon": "Link",
+            "title": "S/4HANA Integration",
+            "description": "Basics of integrating IBP with SAP S/4HANA"
+        },
+        {
+            "icon": "Activity",
+            "title": "Forecasting & Demand Sensing",
+            "description": "Forecasting models and demand-sensing techniques"
+        },
+        {
+            "icon": "Database",
+            "title": "Master Data & Business Cases",
+            "description": "Master data management and real business-case analysis"
+        }
+    ],
+    "SkillsAriba": [
+        {
+            "icon": "Cloud",
+            "title": "SAP Ariba Platform",
+            "description": "Sourcing, Contracts, Procurement and Supplier Management modules"
+        },
+        {
+            "icon": "ShoppingCart",
+            "title": "Procure-to-Pay (P2P)",
+            "description": "End-to-end P2P processes on the Ariba platform"
+        },
+        {
+            "icon": "Search",
+            "title": "Sourcing Strategy & Events",
+            "description": "RFIs, RFPs, RFQs, auctions and sourcing strategy"
+        },
+        {
+            "icon": "Users",
+            "title": "Supplier Relationship Management",
+            "description": "Onboarding, qualification, performance and contract compliance"
+        },
+        {
+            "icon": "Link",
+            "title": "SAP MM Integration Basics",
+            "description": "How Ariba connects with SAP MM and ERP workflows"
+        },
+        {
+            "icon": "BarChart3",
+            "title": "Spend Analysis & Documentation",
+            "description": "Spend analysis, process documentation and procurement communication"
+        }
+    ],
+    "SkillsSD": [
+        {
+            "icon": "Monitor",
+            "title": "SAP GUI (ECC & S/4HANA)",
+            "description": "Confident navigation of both ECC and S/4HANA SD screens"
+        },
+        {
+            "icon": "Building2",
+            "title": "Enterprise Structure Configuration",
+            "description": "Sales org, distribution channel, division and plant assignment"
+        },
+        {
+            "icon": "ShoppingBag",
+            "title": "Order-to-Cash Cycle",
+            "description": "Full inquiry → quotation → order → delivery → billing cycle"
+        },
+        {
+            "icon": "Tag",
+            "title": "Pricing & Condition Technique",
+            "description": "Pricing procedures and condition technique (deep focus)"
+        },
+        {
+            "icon": "Shield",
+            "title": "Credit Management & Output",
+            "description": "Credit management basics and output determination"
+        },
+        {
+            "icon": "Link",
+            "title": "SD–MM–FI Integration & Tables",
+            "description": "Cross-module integration and basic SE16N troubleshooting"
+        }
+    ],
+    "SkillsPP": [
+        {
+            "icon": "Factory",
+            "title": "SAP S/4HANA Production Planning",
+            "description": "Complete PP module on S/4HANA"
+        },
+        {
+            "icon": "Database",
+            "title": "BOM, Work Center & Routing",
+            "description": "Bill of Materials, Work Centers and Routing configuration"
+        },
+        {
+            "icon": "Calculator",
+            "title": "Material Requirement Planning (MRP)",
+            "description": "Running and interpreting MRP results"
+        },
+        {
+            "icon": "ClipboardList",
+            "title": "Production Order Processing",
+            "description": "Creating, releasing and confirming production orders"
+        },
+        {
+            "icon": "Gauge",
+            "title": "Capacity Planning Tools",
+            "description": "Capacity planning and resource scheduling"
+        },
+        {
+            "icon": "Link",
+            "title": "PP–MM–SD–QM Integration",
+            "description": "Cross-module integration and real business scenarios"
+        }
+    ],
+    "SkillsPM": [
+        {
+            "icon": "Wrench",
+            "title": "SAP ECC & S/4HANA Plant Maintenance",
+            "description": "Full PM module on both ECC and S/4HANA"
+        },
+        {
+            "icon": "Cpu",
+            "title": "Equipment & Functional Locations",
+            "description": "Technical object management including BOMs and serial numbers"
+        },
+        {
+            "icon": "Calendar",
+            "title": "Preventive & Breakdown Maintenance",
+            "description": "Planning and executing both preventive and breakdown maintenance"
+        },
+        {
+            "icon": "ClipboardList",
+            "title": "Maintenance Orders & Notifications",
+            "description": "Complete order and notification lifecycle"
+        },
+        {
+            "icon": "Monitor",
+            "title": "SAP Fiori Apps for Maintenance",
+            "description": "Relevant Fiori apps used by maintenance teams"
+        },
+        {
+            "icon": "Link",
+            "title": "PM–MM–FICO–QM Integration",
+            "description": "Cross-module integration and real-world reporting"
+        }
+    ],
+    "SkillsEWM": [
+        {
+            "icon": "Warehouse",
+            "title": "SAP EWM (Decentralized & Embedded)",
+            "description": "Core EWM concepts on both deployment models"
+        },
+        {
+            "icon": "ArrowDownToLine",
+            "title": "Warehouse Process Design",
+            "description": "Inbound, outbound, internal movements and physical inventory"
+        },
+        {
+            "icon": "Smartphone",
+            "title": "RF Framework & Handheld Devices",
+            "description": "Configuring and using the RF framework for scanning devices"
+        },
+        {
+            "icon": "Link",
+            "title": "Integration with MM, SD & TM",
+            "description": "How EWM talks to Materials Management, Sales and Transportation"
+        },
+        {
+            "icon": "Monitor",
+            "title": "SAP GUI & S/4HANA Basics",
+            "description": "Navigation and system exposure needed for EWM consultants"
+        },
+        {
+            "icon": "Award",
+            "title": "Business Scenarios & Interview Prep",
+            "description": "Real warehouse scenarios plus resume and interview preparation"
+        }
+    ],
+    "SkillsBTP": [
+        {
+            "icon": "Cloud",
+            "title": "SAP BTP Cockpit & Runtimes",
+            "description": "Cockpit, Cloud Foundry, Kyma and entitlement management"
+        },
+        {
+            "icon": "GitBranch",
+            "title": "SAP Integration Suite",
+            "description": "Connecting S/4HANA with third-party and legacy systems"
+        },
+        {
+            "icon": "Database",
+            "title": "SAP HANA Cloud",
+            "description": "Data modeling, storage and analytics on HANA Cloud"
+        },
+        {
+            "icon": "Blocks",
+            "title": "SAP Build Apps & Process Automation",
+            "description": "Low-code/no-code extension development"
+        },
+        {
+            "icon": "Code2",
+            "title": "CAP Model + Node.js / Java",
+            "description": "Cloud Application Programming Model for side-by-side extensions"
+        },
+        {
+            "icon": "Shield",
+            "title": "Fiori, API Management & Auth",
+            "description": "Fiori/UI5, API Management, Identity Authentication and Postman testing"
+        }
+    ],
+    "SkillsGRC": [
+        {
+            "icon": "Shield",
+            "title": "SAP GRC Access Control",
+            "description": "AC 10.1 / 12.0 – SoD rules, risk analysis and mitigation"
+        },
+        {
+            "icon": "UserCheck",
+            "title": "Emergency Access (Firefighter)",
+            "description": "Emergency Access Management configuration and usage"
+        },
+        {
+            "icon": "GitBranch",
+            "title": "MSMP Workflow & BRFplus",
+            "description": "Multi-stage multi-path workflows and Business Rule Framework"
+        },
+        {
+            "icon": "CheckSquare",
+            "title": "Process Control & Risk Management",
+            "description": "Automated compliance monitoring and enterprise risk assessment"
+        },
+        {
+            "icon": "Users",
+            "title": "User Access Reviews",
+            "description": "UAR / PAR and audit reporting"
+        },
+        {
+            "icon": "FileText",
+            "title": "Fiori, S/4HANA & Documentation",
+            "description": "Fiori/S/4HANA basics for GRC plus compliance documentation"
+        }
+    ],
+    "SkillsSF": [
+        {
+            "icon": "Users",
+            "title": "Employee Central (EC)",
+            "description": "Core HR system of record configuration"
+        },
+        {
+            "icon": "UserPlus",
+            "title": "Recruitment Management (RCM)",
+            "description": "End-to-end recruiting workflows"
+        },
+        {
+            "icon": "Target",
+            "title": "Performance & Goal Management",
+            "description": "Performance review templates and goal processes"
+        },
+        {
+            "icon": "BookOpen",
+            "title": "Learning Management System (LMS)",
+            "description": "Corporate training program configuration"
+        },
+        {
+            "icon": "Shield",
+            "title": "Role-Based Permissions (RBP)",
+            "description": "Critical security and permission configuration"
+        },
+        {
+            "icon": "BarChart3",
+            "title": "Integration Center & Reporting",
+            "description": "Integrations, Story Reports and People Analytics basics"
+        }
+    ],
+    "SkillsABAP": [
+        {
+            "icon": "Code2",
+            "title": "Core ABAP Programming",
+            "description": "Programming logic, report writing, database handling and debugging"
+        },
+        {
+            "icon": "Monitor",
+            "title": "ABAP Workbench & ADT",
+            "description": "SE80, Eclipse-based ABAP Development Tools and Data Dictionary"
+        },
+        {
+            "icon": "FileText",
+            "title": "ALV Reporting & Forms",
+            "description": "Classical/Interactive ALV, Smart Forms and form design"
+        },
+        {
+            "icon": "Blocks",
+            "title": "OOABAP & Enhancement Framework",
+            "description": "Object-oriented ABAP, BAPIs, RFCs, User Exits and BAdIs"
+        },
+        {
+            "icon": "Bug",
+            "title": "Module Pool & Performance",
+            "description": "Dialog programming, performance tuning and debugging"
+        },
+        {
+            "icon": "Rocket",
+            "title": "Fiori / OData Basics",
+            "description": "Basic OData exposure and how ABAP fits into modern SAP architecture"
+        }
+    ],
+    "SkillsHana": [
+        {
+            "icon": "Cloud",
+            "title": "SAP S/4HANA (On-Premise)",
+            "description": "Core architecture and business value over legacy ECC"
+        },
+        {
+            "icon": "Monitor",
+            "title": "SAP Fiori Launchpad",
+            "description": "Modern user experience and app navigation"
+        },
+        {
+            "icon": "Settings",
+            "title": "Business Process Configuration",
+            "description": "End-to-end process configuration in your chosen track"
+        },
+        {
+            "icon": "Database",
+            "title": "Master Data Management",
+            "description": "Organizational structure and master-data setup"
+        },
+        {
+            "icon": "Layers",
+            "title": "Module-Specific Tools",
+            "description": "FI/CO, MM, SD or PP tools depending on the track"
+        },
+        {
+            "icon": "FileText",
+            "title": "Documentation, Testing & Excel",
+            "description": "Functional documentation, testing and Excel for SAP reporting"
+        }
+    ],
+    "SkillsBWBI": [
+        {
+            "icon": "Database",
+            "title": "SAP BW 7.5 / BW/4HANA",
+            "description": "Core data-warehouse platform"
+        },
+        {
+            "icon": "BarChart3",
+            "title": "BEx Query Designer & Analyzer",
+            "description": "Building and analyzing queries"
+        },
+        {
+            "icon": "Layout",
+            "title": "BusinessObjects Tools",
+            "description": "WebI, Crystal Reports and Dashboards"
+        },
+        {
+            "icon": "Box",
+            "title": "InfoCubes, DSOs & MultiProviders",
+            "description": "Designing the data model layer"
+        },
+        {
+            "icon": "GitMerge",
+            "title": "Process Chains & ETL",
+            "description": "Data extraction, transformations and job scheduling"
+        },
+        {
+            "icon": "Link",
+            "title": "S/4HANA Integration & SQL",
+            "description": "S/4HANA data integration basics and SQL for data handling"
+        }
+    ],
+    "SkillsBasis": [
+        {
+            "icon": "Server",
+            "title": "SAP System Landscape",
+            "description": "SAP GUI, NetWeaver, S/4HANA, ECC and HANA Database basics"
+        },
+        {
+            "icon": "Users",
+            "title": "User & Role Management",
+            "description": "SU01, PFCG – creating users, roles and authorizations"
+        },
+        {
+            "icon": "GitBranch",
+            "title": "Transport Management System",
+            "description": "TMS configuration, import and troubleshooting"
+        },
+        {
+            "icon": "Copy",
+            "title": "Client Administration",
+            "description": "Client copy, comparison and administration tools"
+        },
+        {
+            "icon": "Activity",
+            "title": "Monitoring & Background Jobs",
+            "description": "CCMS, SPAM/SAINT, job scheduling and system monitoring"
+        },
+        {
+            "icon": "Settings",
+            "title": "Solution Manager & OS Basics",
+            "description": "SAP Solution Manager overview plus Linux/Unix basics for SAP servers"
+        }
+    ],
+    "SkillsDataScience": [],
+    "SkillsDataAnalytics": [],
+    "SkillsBusinessAnalytics": [],
+    "SkillsGenAI": [],
+    "SkillsFullStack": [],
+    "SkillsJava": [],
+    "SkillsPython": [],
+    "SkillsSalesforce": [],
+    "SkillsPowerBI": [],
+    "SkillsTableau": [],
+    "SkillsDataVisualization": [],
+    "SkillsIT": [],
+    "SkillsHRAnalytics": [],
+    "SkillsHRManagement": [],
+    "SkillsPayroll": [],
+    "SkillsHRGeneralist": [],
+    "SkillsHRTraining": [],
+    "SkillsCoreHR": [],
+    "SkillsHR": []
+}

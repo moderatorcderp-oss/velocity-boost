@@ -1,12 +1,30 @@
 // lib/masterData.js
 // Only helpers + assembly logic. All pure data lives in public/Jsonfolder/*.json
 
-import whyData from "../../public/Jsonfolder/Whyds.json";
-import dsHeaderData from "../../public/Jsonfolder/dsHeaderData.json";
-import whatWillLearnData from "../../public/Jsonfolder/whatwilllearn.json";
-import skillsData from "../../public/Jsonfolder/SkillsLearn.json";
-import whothisfordata from "../../public/Jsonfolder/Whothisisfor.json"; // = whoData.json
-import certificateData from "../../public/Jsonfolder/certificateData.json";
+// why course cards data 
+import whyDataPune from "../../public/Jsonfolder/cities/pune/WhyData-pune.json";
+import whyDataMumbai from "../../public/Jsonfolder/cities/mumbai/WhyData-mumbai.json";
+
+// Hero section data
+import dsHeaderDataPune from "../../public/Jsonfolder/cities/pune/dsHeaderData-pune.json";
+import dsHeaderDataMumbai from "../../public/Jsonfolder/cities/mumbai/dsHeaderData-mumbai.json";
+
+// What you'll learn data
+import whatWillLearnDataPune from "../../public/Jsonfolder/cities/pune/whatwilllearn-pune.json";
+import whatWillLearnDataMumbai from "../../public/Jsonfolder/cities/mumbai/whatwilllearn-mumbai.json";
+
+// skills you'll learn
+import skillsDataPune from "../../public/Jsonfolder/cities/pune/SkillsLearn-pune.json";
+import skillsDataMumbai from "../../public/Jsonfolder/cities/mumbai/SkillsLearn-mumbai.json";
+
+//who this is for
+import whoDataPune from "../../public/Jsonfolder/cities/pune/Whothisisfor-pune.json";
+import whoDataMumbai from "../../public/Jsonfolder/cities/mumbai/WhoThisIsFor-mumbai.json";
+
+//certificate data
+import certificatedataPune from "../../public/Jsonfolder/cities/pune/certificatedata-pune.json";
+import certificateDataMumbai from "../../public/Jsonfolder/cities/mumbai/certificateData-mumbai.json";
+
 import faqData from "../../public/Jsonfolder/faqData.json";
 
 import alumni from "../../public/Jsonfolder/alumni.json";
@@ -308,8 +326,8 @@ const {
 
 // ---------- Header ----------
 Object.entries(headerMap || {}).forEach(([courseSlug, [groupKey, headerKey]]) => {
-  if (coursesData[courseSlug] && dsHeaderData?.[groupKey]?.[headerKey]) {
-    coursesData[courseSlug].header = dsHeaderData[groupKey][headerKey];
+  if (coursesData[courseSlug] && dsHeaderDataPune?.[groupKey]?.[headerKey]) {
+    coursesData[courseSlug].header = dsHeaderDataPune[groupKey][headerKey];
   }
 });
 
@@ -317,16 +335,16 @@ Object.entries(headerMap || {}).forEach(([courseSlug, [groupKey, headerKey]]) =>
 Object.entries(whyMap || {}).forEach(([courseSlug, [groupKey, whyKey]]) => {
   if (!coursesData[courseSlug]) return;
 
-  if (whyData?.[groupKey]?.[whyKey]) {
-    coursesData[courseSlug].why = whyData[groupKey][whyKey];
-  } else if (whyData?.[courseSlug]) {
-    coursesData[courseSlug].why = whyData[courseSlug];
+  if (whyDataPune?.[groupKey]?.[whyKey]) {
+    coursesData[courseSlug].why = whyDataPune[groupKey][whyKey];
+  } else if (whyDataPune?.[courseSlug]) {
+    coursesData[courseSlug].why = whyDataPune[courseSlug];
   }
 });
 
 // ---------- What You'll Learn  (IMPORTANT: direction is courseSlug → whatKey) ----------
 Object.entries(whatWillLearnMap || {}).forEach(([courseSlug, whatKey]) => {
-  const data = whatWillLearnData?.[whatKey];
+  const data = whatWillLearnDataPune?.[whatKey];
 
   if (!coursesData[courseSlug]) {
     console.warn(`[WhatYouWillLearn] course not found: ${courseSlug}`);
@@ -345,23 +363,23 @@ Object.entries(whatWillLearnMap || {}).forEach(([courseSlug, whatKey]) => {
 // ---------- Skills & Tools ----------
 // Your skillsMap is: courseSlug → SkillsKey
 Object.entries(skillsMap || {}).forEach(([courseSlug, skillsKey]) => {
-  if (coursesData[courseSlug] && skillsData?.[skillsKey]) {
-    coursesData[courseSlug].skillsndtools = skillsData[skillsKey];
+  if (coursesData[courseSlug] && skillsDataPune?.[skillsKey]) {
+    coursesData[courseSlug].skillsndtools = skillsDataPune[skillsKey];
   }
 });
 
 // ---------- Who This Is For ----------
 // Your whoMap is: courseSlug → whoKey
 Object.entries(whoMap || {}).forEach(([courseSlug, whoKey]) => {
-  if (coursesData[courseSlug] && whothisfordata?.[whoKey]) {
-    coursesData[courseSlug].whothisisfor = whothisfordata[whoKey];
+  if (coursesData[courseSlug] && whoDataPune?.[whoKey]) {
+    coursesData[courseSlug].whothisisfor = whoDataPune[whoKey];
   }
 });
 
 // ---------- Certificate ----------
 Object.entries(certificateMap || {}).forEach(([courseSlug, certKey]) => {
-  if (coursesData[courseSlug] && certificateData?.[certKey]) {
-    coursesData[courseSlug].certificate = certificateData[certKey];
+  if (coursesData[courseSlug] && certificatedataPune?.[certKey]) {
+    coursesData[courseSlug].certificate = certificatedataPune[certKey];
   }
 });
 
@@ -438,17 +456,137 @@ if (coursesData.chatgpt) {
 // 7. CITY-AWARE HELPER
 // =====================================================
 
+/**
+ * Returns the correct header object for a course + city.
+ * Uses dsHeaderData-mumbai.json for mumbai, otherwise the default (Pune) file.
+ */
+export function getHeaderForCity(courseSlug, citySlug = "pune") {
+  const headerSource =
+    citySlug === "mumbai" ? dsHeaderDataMumbai : dsHeaderDataPune;
+
+  const path = enrichmentMaps?.headerMap?.[courseSlug];
+  if (!path) return null;
+
+  const [groupKey, headerKey] = path;
+  return headerSource?.[groupKey]?.[headerKey] || null;
+}
+
+/**
+ * Mumbai-only overrides for courses that share "Whysap" in whyMap
+ * but have dedicated Mumbai Why content.
+ */
+const MUMBAI_WHY_OVERRIDES = {
+  "sap-mm": ["Whymm", "WhyMM"],
+  "sap-hr-hcm": ["Whyhrhcm", "WhyHRHCM"],
+  "sap-qm": ["Whyqm", "WhyQM"],
+  "sap-ps": ["Whyps", "WhyPS"],
+  "sap-scm": ["Whyscm", "WhySCM"],
+  "sap-ehs": ["Whyehs", "WhyEHS"],
+  "sap-ibp": ["Whyibp", "WhyIBP"],
+  "sap-pp": ["Whypp", "WhyPP"],
+  "sap-pm": ["Whypm", "WhyPM"],
+  "sap-btp": ["Whybtp", "WhyBTP"],
+  "sap-grc": ["Whygrc", "WhyGRC"],
+};
+
+/**
+ * Returns the correct Why object for a course + city.
+ * Uses WhyData-mumbai.json for mumbai, otherwise the default (Pune) file.
+ */
+export function getWhyForCity(courseSlug, citySlug = "pune") {
+  const whySource = citySlug === "mumbai" ? whyDataMumbai : whyDataPune;
+
+  const path =
+    (citySlug === "mumbai" && MUMBAI_WHY_OVERRIDES[courseSlug]) ||
+    enrichmentMaps?.whyMap?.[courseSlug];
+  if (!path) return null;
+
+  const [groupKey, whyKey] = path;
+  return whySource?.[groupKey]?.[whyKey] || null;
+}
+
+export function getWhoThisIsForForCity(courseSlug, citySlug = "pune") {
+  const source =
+    citySlug === "mumbai" ? whoDataMumbai : whoDataPune;
+
+  const whoKey = enrichmentMaps?.whoMap?.[courseSlug];
+  if (!whoKey) return null;
+
+  return source?.[whoKey] || null;
+}
+
+
+/**
+ * Returns the correct WhatYouWillLearn array for a course + city.
+ * Uses WhatYouWillLearn-mumbai.json for mumbai, otherwise the default (Pune) file.
+ */
+export function getWhatYouWillLearnForCity(courseSlug, citySlug = "pune") {
+  const source =
+    citySlug === "mumbai" ? whatWillLearnDataMumbai : whatWillLearnDataPune;
+
+  const whatKey = enrichmentMaps?.whatWillLearnMap?.[courseSlug];
+  if (!whatKey) return null;
+
+  const data = source?.[whatKey];
+  if (!data) return null;
+
+  // same normalisation the enrichment step uses
+  return Array.isArray(data) ? data : data.items || data.cards || [];
+}
+
+export function getSkillsForCity(courseSlug, citySlug = "pune") {
+  const source =
+    citySlug === "mumbai" ? skillsDataMumbai : skillsDataPune;
+
+  const skillsKey = enrichmentMaps?.skillsMap?.[courseSlug];
+  if (!skillsKey) return null;
+
+  return source?.[skillsKey] || null;
+}
+
 export function getCourseData(slug, citySlug = "pune") {
   const base = coursesData[slug];
   if (!base) return null;
 
   const course = structuredClone(base);
   course.city = citiesData[citySlug] || null;
+
+  // Override header with city-specific version when available
+  const cityHeader = getHeaderForCity(slug, citySlug);
+  if (cityHeader) {
+    course.header = cityHeader;
+  }
+
+  // Override why with city-specific version when available
+  const cityWhy = getWhyForCity(slug, citySlug);
+  if (cityWhy) {
+    course.why = cityWhy;
+  }
+
   return course;
+}
+
+
+export function getCertificateForCity(courseSlug, citySlug = "pune") {
+  const source =
+    citySlug === "mumbai" ? certificateDataMumbai : certificatedataPune;
+
+  const certKey = enrichmentMaps?.certificateMap?.[courseSlug];
+  if (!certKey) return null;
+
+  return source?.[certKey] || null;
 }
 
 // =====================================================
 // 8. EXPORTS
 // =====================================================
 
-export { coursesData, citiesData };
+export {
+  coursesData,
+  citiesData,
+  dsHeaderDataPune,
+  dsHeaderDataMumbai,
+  whyDataPune,
+  whyDataMumbai,
+  enrichmentMaps,
+};

@@ -1,11 +1,20 @@
 import { notFound } from "next/navigation";
 import ClientCourseSections from "@/components/CoursesComponents/ClientCourseSections";
-import ScrollHandler from '@/components/Common/ScrollHandlerClient';
+import ScrollHandler from "@/components/Common/ScrollHandlerClient";
 import {
   generateDynamicMetadata,
   generateDynamicJsonLd,
 } from "@/lib/dynamicSEO";
-import { coursesData, citiesData } from "@/lib/masterData";
+import {
+  coursesData,
+  citiesData,
+  getHeaderForCity,
+  getWhyForCity,
+  getWhatYouWillLearnForCity,
+  getSkillsForCity,
+  getWhoThisIsForForCity,
+  getCertificateForCity
+} from "@/lib/masterData";
 import CityLinks from "@/components/CityLinks";
 
 export const revalidate = 86400;
@@ -72,7 +81,9 @@ export async function generateMetadata({ params }) {
 
   const parsed = parseSlug(slug);
   if (!parsed) {
-    console.warn(`❌ generateMetadata: Slug "${slug}" does not match expected pattern.`);
+    console.warn(
+      `❌ generateMetadata: Slug "${slug}" does not match expected pattern.`
+    );
     return {};
   }
 
@@ -81,13 +92,17 @@ export async function generateMetadata({ params }) {
   const courseSlug = COURSE_SLUG_ALIASES[rawCourseSlug] || rawCourseSlug;
 
   if (!coursesData[courseSlug] || !citiesData[citySlug]) {
-    console.warn(`❌ generateMetadata: Course "${courseSlug}" or City "${citySlug}" not found. Returning empty metadata.`);
+    console.warn(
+      `❌ generateMetadata: Course "${courseSlug}" or City "${citySlug}" not found. Returning empty metadata.`
+    );
     return {};
   }
 
   const metadata = generateDynamicMetadata(courseSlug, citySlug);
   if (!metadata) {
-    console.warn(`❌ generateMetadata: Failed to generate metadata for "${slug}".`);
+    console.warn(
+      `❌ generateMetadata: Failed to generate metadata for "${slug}".`
+    );
     return {};
   }
 
@@ -126,10 +141,13 @@ export async function generateMetadata({ params }) {
       "course.location": metadata.enhancedMeta.courseLocation,
       "course.category": metadata.enhancedMeta.courseCategory,
       "theme-color": metadata.enhancedMeta.themeColor,
-      "msapplication-navbutton-color": metadata.enhancedMeta.msApplicationNavButtonColor,
-      "apple-mobile-web-app-status-bar-style": metadata.enhancedMeta.appleStatusBarStyle,
+      "msapplication-navbutton-color":
+        metadata.enhancedMeta.msApplicationNavButtonColor,
+      "apple-mobile-web-app-status-bar-style":
+        metadata.enhancedMeta.appleStatusBarStyle,
       "mobile-web-capable": metadata.enhancedMeta.mobileWebCapable,
-      "apple-mobile-web-app-capable": metadata.enhancedMeta.appleMobileCapable,
+      "apple-mobile-web-app-capable":
+        metadata.enhancedMeta.appleMobileCapable,
       "apple-mobile-web-app-title": metadata.enhancedMeta.appleMobileTitle,
     });
   }
@@ -154,22 +172,27 @@ const CourseCityPage = async ({ params }) => {
 
   const parsed = parseSlug(slug);
   if (!parsed) {
-    console.warn(`❌ CourseCityPage: Slug "${slug}" does not match course-city pattern.`);
+    console.warn(
+      `❌ CourseCityPage: Slug "${slug}" does not match course-city pattern.`
+    );
     return notFound();
   }
 
   // ✅ CHANGED: resolve alias before lookup
   const { courseSlug: rawCourseSlug, citySlug } = parsed;
   const courseSlug = COURSE_SLUG_ALIASES[rawCourseSlug] || rawCourseSlug;
-  const cityLinkCourseSlug = PREFERRED_CITY_LINK_SLUGS[rawCourseSlug] || rawCourseSlug;
+  const cityLinkCourseSlug =
+    PREFERRED_CITY_LINK_SLUGS[rawCourseSlug] || rawCourseSlug;
 
   const course = coursesData[courseSlug];
   const city = citiesData[citySlug];
 
   if (!course || !city) {
-    console.log(course)
-    console.log(city)
-    console.error(`❌ CourseCityPage: Course "${courseSlug}" or City "${citySlug}" not found.`);
+    console.log(course);
+    console.log(city);
+    console.error(
+      `❌ CourseCityPage: Course "${courseSlug}" or City "${citySlug}" not found.`
+    );
     return notFound();
   }
 
@@ -193,26 +216,64 @@ const CourseCityPage = async ({ params }) => {
     return obj;
   };
 
-  const headerData = processPlaceholders(course.header, city.name);
-  const whyData = processPlaceholders(course.why, city.name);
-  const whatYouWillLearnData = processPlaceholders(course.whatYouWillLearn, city.name);
-  const skillsntoolsdata = processPlaceholders(course.skillsndtools, city.name);
-  const whothisisfor = processPlaceholders(course.whothisisfor, city.name)
+  // ✅ CITY-SPECIFIC HEADER
+  // Prefer the city-specific header file (mumbai → dsHeaderData-mumbai.json)
+  // Fall back to the header already present on the course object (Pune default)
+  const cityHeader = getHeaderForCity(courseSlug, citySlug);
+  const rawHeader = cityHeader || course.header;
+  const headerData = processPlaceholders(rawHeader, city.name);
+
+  const cityWhy = getWhyForCity(courseSlug, citySlug);
+  const whyData = processPlaceholders(cityWhy || course.why, city.name);
+
+  const cityWhat = getWhatYouWillLearnForCity(courseSlug, citySlug);
+  const whatYouWillLearnData = processPlaceholders(
+    cityWhat || course.whatYouWillLearn,
+    city.name
+  );
+
+  const citySkills = getSkillsForCity(courseSlug, citySlug);
+  const skillsntoolsdata = processPlaceholders(
+    citySkills || course.skillsndtools,
+    city.name
+  );
+
+  const cityWho = getWhoThisIsForForCity(courseSlug, citySlug);
+  const whothisisfor = processPlaceholders(
+    cityWho || course.whothisisfor,
+    city.name
+  );
+
+  const cityCert = getCertificateForCity(courseSlug, citySlug);
+  const certificateData = processPlaceholders(
+    cityCert || course.certificate,
+    city.name
+  );
 
   const isSapCourse = course.category === "sap";
 
-  const sapModData = isSapCourse && course.sapMod
-    ? processPlaceholders(course.sapMod, city.name)
-    : null;
+  const sapModData =
+    isSapCourse && course.sapMod
+      ? processPlaceholders(course.sapMod, city.name)
+      : null;
   const modulesData = course.modulesData
     ? processPlaceholders(course.modulesData, city.name)
     : null;
-  const certificateData = processPlaceholders(course.certificate, city.name);
+  
   const faqData = processPlaceholders(course.faq, city.name);
-  const upcomingBatchesData = processPlaceholders(course.upcomingBatches, city.name);
+  const upcomingBatchesData = processPlaceholders(
+    course.upcomingBatches,
+    city.name
+  );
   const reviewsData = processPlaceholders(course.reviews, city.name);
-  const relatedCoursesData = processPlaceholders(course.relatedCourses, city.name);
-  const descriptionContentData = processPlaceholders(course.descriptionContent, city.name);
+  const relatedCoursesData = processPlaceholders(
+    course.relatedCourses,
+    city.name
+  );
+  const descriptionContentData = processPlaceholders(
+    course.descriptionContent,
+    city.name
+  );
 
   const isMultiSectionCourse =
     descriptionContentData &&
@@ -220,10 +281,13 @@ const CourseCityPage = async ({ params }) => {
       descriptionContentData.ppc ||
       descriptionContentData.seo);
 
-
   const shouldUseNewCurriculum =
-    !isSapCourse && modulesData && modulesData.tabs && Array.isArray(modulesData.tabs);
-  const shouldUseLegacyModules = !isSapCourse && modulesData && !shouldUseNewCurriculum;
+    !isSapCourse &&
+    modulesData &&
+    modulesData.tabs &&
+    Array.isArray(modulesData.tabs);
+  const shouldUseLegacyModules =
+    !isSapCourse && modulesData && !shouldUseNewCurriculum;
 
   const dynamicBodyContent = `
     <div class="course-main-content">
@@ -269,15 +333,26 @@ const CourseCityPage = async ({ params }) => {
         />
       )}
       {headerData?.backgroundVideo && (
-        <link rel="preload" as="video" href={headerData.backgroundVideo} type="video/mp4" fetchPriority="high" />
+        <link
+          rel="preload"
+          as="video"
+          href={headerData.backgroundVideo}
+          type="video/mp4"
+          fetchPriority="high"
+        />
       )}
       {headerData?.backgroundPoster && (
-        <link rel="preload" as="image" href={headerData.backgroundPoster} fetchPriority="high" />
+        <link
+          rel="preload"
+          as="image"
+          href={headerData.backgroundPoster}
+          fetchPriority="high"
+        />
       )}
       <div dangerouslySetInnerHTML={{ __html: dynamicBodyContent }} />
       <ClientCourseSections
         layoutType="default"
-        whothisisfor = {whothisisfor}
+        whothisisfor={whothisisfor}
         skillsntoolsdata={skillsntoolsdata}
         headerData={headerData}
         whyData={whyData}
