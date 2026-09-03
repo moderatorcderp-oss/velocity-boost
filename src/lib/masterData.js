@@ -4,26 +4,32 @@
 // why course cards data 
 import whyDataPune from "../../public/Jsonfolder/cities/pune/WhyData-pune.json";
 import whyDataMumbai from "../../public/Jsonfolder/cities/mumbai/WhyData-mumbai.json";
+import whyDataRaipur from "../../public/Jsonfolder/cities/raipur/WhyData-raipur.json";
 
 // Hero section data
 import dsHeaderDataPune from "../../public/Jsonfolder/cities/pune/dsHeaderData-pune.json";
 import dsHeaderDataMumbai from "../../public/Jsonfolder/cities/mumbai/dsHeaderData-mumbai.json";
+import dsHeaderDataRaipur from "../../public/Jsonfolder/cities/raipur/dsHeaderData-raipur.json";
 
 // What you'll learn data
 import whatWillLearnDataPune from "../../public/Jsonfolder/cities/pune/whatwilllearn-pune.json";
 import whatWillLearnDataMumbai from "../../public/Jsonfolder/cities/mumbai/whatwilllearn-mumbai.json";
+import whatWillLearnDataRaipur from "../../public/Jsonfolder/cities/raipur/whatwilllearn-raipur.json";
 
 // skills you'll learn
 import skillsDataPune from "../../public/Jsonfolder/cities/pune/SkillsLearn-pune.json";
 import skillsDataMumbai from "../../public/Jsonfolder/cities/mumbai/SkillsLearn-mumbai.json";
+import skillsDataRaipur from "../../public/Jsonfolder/cities/raipur/SkillsLearn-raipur.json";
 
 //who this is for
 import whoDataPune from "../../public/Jsonfolder/cities/pune/Whothisisfor-pune.json";
 import whoDataMumbai from "../../public/Jsonfolder/cities/mumbai/WhoThisIsFor-mumbai.json";
+import whoDataRaipur from "../../public/Jsonfolder/cities/raipur/WhoThisIsFor-raipur.json";
 
 //certificate data
-import certificatedataPune from "../../public/Jsonfolder/cities/pune/certificatedata-pune.json";
+import certificateDataPune from "../../public/Jsonfolder/cities/pune/certificatedata-pune.json";
 import certificateDataMumbai from "../../public/Jsonfolder/cities/mumbai/certificateData-mumbai.json";
+import certificateDataRaipur from "../../public/Jsonfolder/cities/raipur/certificateData-raipur.json";
 
 import faqData from "../../public/Jsonfolder/faqData.json";
 
@@ -378,8 +384,8 @@ Object.entries(whoMap || {}).forEach(([courseSlug, whoKey]) => {
 
 // ---------- Certificate ----------
 Object.entries(certificateMap || {}).forEach(([courseSlug, certKey]) => {
-  if (coursesData[courseSlug] && certificatedataPune?.[certKey]) {
-    coursesData[courseSlug].certificate = certificatedataPune[certKey];
+  if (coursesData[courseSlug] && certificateDataPune?.[certKey]) {
+    coursesData[courseSlug].certificate = certificateDataPune[certKey];
   }
 });
 
@@ -462,7 +468,7 @@ if (coursesData.chatgpt) {
  */
 export function getHeaderForCity(courseSlug, citySlug = "pune") {
   const headerSource =
-    citySlug === "mumbai" ? dsHeaderDataMumbai : dsHeaderDataPune;
+    citySlug === "mumbai" ? dsHeaderDataMumbai : citySlug === "raipur" ? dsHeaderDataRaipur : dsHeaderDataPune;
 
   const path = enrichmentMaps?.headerMap?.[courseSlug];
   if (!path) return null;
@@ -494,7 +500,7 @@ const MUMBAI_WHY_OVERRIDES = {
  * Uses WhyData-mumbai.json for mumbai, otherwise the default (Pune) file.
  */
 export function getWhyForCity(courseSlug, citySlug = "pune") {
-  const whySource = citySlug === "mumbai" ? whyDataMumbai : whyDataPune;
+  const whySource = citySlug === "mumbai" ? whyDataMumbai : citySlug === "raipur" ? whyDataRaipur : whyDataPune;
 
   const path =
     (citySlug === "mumbai" && MUMBAI_WHY_OVERRIDES[courseSlug]) ||
@@ -507,7 +513,7 @@ export function getWhyForCity(courseSlug, citySlug = "pune") {
 
 export function getWhoThisIsForForCity(courseSlug, citySlug = "pune") {
   const source =
-    citySlug === "mumbai" ? whoDataMumbai : whoDataPune;
+    citySlug === "mumbai" ? whoDataMumbai : citySlug === "raipur" ? whoDataRaipur : whoDataPune;
 
   const whoKey = enrichmentMaps?.whoMap?.[courseSlug];
   if (!whoKey) return null;
@@ -522,7 +528,7 @@ export function getWhoThisIsForForCity(courseSlug, citySlug = "pune") {
  */
 export function getWhatYouWillLearnForCity(courseSlug, citySlug = "pune") {
   const source =
-    citySlug === "mumbai" ? whatWillLearnDataMumbai : whatWillLearnDataPune;
+    citySlug === "mumbai" ? whatWillLearnDataMumbai : citySlug === "raipur" ? whatWillLearnDataRaipur : whatWillLearnDataPune;
 
   const whatKey = enrichmentMaps?.whatWillLearnMap?.[courseSlug];
   if (!whatKey) return null;
@@ -536,7 +542,7 @@ export function getWhatYouWillLearnForCity(courseSlug, citySlug = "pune") {
 
 export function getSkillsForCity(courseSlug, citySlug = "pune") {
   const source =
-    citySlug === "mumbai" ? skillsDataMumbai : skillsDataPune;
+    citySlug === "mumbai" ? skillsDataMumbai : citySlug === "raipur" ? skillsDataRaipur : skillsDataPune;
 
   const skillsKey = enrichmentMaps?.skillsMap?.[courseSlug];
   if (!skillsKey) return null;
@@ -569,7 +575,7 @@ export function getCourseData(slug, citySlug = "pune") {
 
 export function getCertificateForCity(courseSlug, citySlug = "pune") {
   const source =
-    citySlug === "mumbai" ? certificateDataMumbai : certificatedataPune;
+    citySlug === "mumbai" ? certificateDataMumbai : citySlug === "raipur" ? certificateDataRaipur : certificateDataPune;
 
   const certKey = enrichmentMaps?.certificateMap?.[courseSlug];
   if (!certKey) return null;
