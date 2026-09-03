@@ -518,8 +518,6 @@ const AnalyticsPage = () => {
                         Frame Analysis (Last 30 Days - All Time)
                       </h2>
                       {/* Note: These specific stats (lastWeek, lastMonth) might not respect the date filter
-                                      
-                                      
                                       f the API only provides these fixed-period values. Adjust UI text accordingly
                                       or update backend to provide date-filtered equivalents.
                                       Assuming they are *not* date-filtered here, showing fixed periods. */}

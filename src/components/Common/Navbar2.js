@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import dynamic from "next/dynamic";
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
 import Container from "./Container";
 import AnimatedLogo from "../AnimatedLogo";

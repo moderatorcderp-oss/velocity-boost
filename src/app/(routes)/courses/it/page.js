@@ -3,14 +3,7 @@
 import React from 'react';
 import CourseCard from '@/components/BlogsPage/CourseListCard';
 import {
-  BarChart3,
-  Brain,
-  Cloud,
-  Code,
-  Database,
-  Palette,
-  Settings,
-} from 'lucide-react';
+  BarChart3, Brain, Cloud, Code, Database, Settings, } from 'lucide-react';
 
 export default function ITCourses() {
   const courses = [

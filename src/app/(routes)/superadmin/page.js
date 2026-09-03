@@ -5,7 +5,6 @@ import { useRouter, usePathname } from "next/navigation";
 import Sidebar from "@/components/superadmin/Sidebar";
 import AccessControl from "@/components/superadmin/AccessControl";
 import InactivityWarningModal from "@/components/superadmin/InactivityWarningModal";
-import FixedLogo from "@/components/superadmin/FixedLogo";
 
 const INACTIVITY_TIMEOUT = 15 * 60 * 1000; // 15 minutes
 const WARNING_DURATION = 60 * 1000; // 60 seconds

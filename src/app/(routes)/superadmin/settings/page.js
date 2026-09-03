@@ -17,7 +17,6 @@ import {
 import Sidebar from "@/components/superadmin/Sidebar";
 import AccessControl from "@/components/superadmin/AccessControl";
 import { fetchWithAuth } from "@/utils/auth";
-import FixedLogo from "@/components/superadmin/FixedLogo";
 
 const SettingsPage = () => {
   const [settings, setSettings] = useState([]);

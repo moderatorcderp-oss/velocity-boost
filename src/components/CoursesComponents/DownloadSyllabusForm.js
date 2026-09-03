@@ -328,7 +328,6 @@ const DownloadSyllabusForm = ({ onClose, course }) => {
       }
 
       const response = await axios.post(`${apiUrl}/api/submit`, payload);
-      console.log("Form submitted successfully:", response.data);
 
       setShowThankYou(true);
       setFormData({

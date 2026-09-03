@@ -11,12 +11,6 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   Code2,
-  Database,
-  BarChart3,
-  LayoutPanelLeft,
-  Layers,
-  Gauge,
-  PuzzleIcon,
   Clock,
   Users,
   Calendar,

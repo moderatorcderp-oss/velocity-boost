@@ -545,10 +545,6 @@ const BlogsAdminPanel = () => {
     await fetchBlogs(true, false);
   };
 
-  const handleRefresh = async () => {
-    await fetchBlogs(true, false);
-  };
-
   useEffect(() => {
     if (isAuthenticated()) {
       const debounceTimer = setTimeout(() => {

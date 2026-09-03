@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import {
   FaUsers,
@@ -15,37 +15,35 @@ import {
   FaTimes,
   FaCheckSquare, // For checkbox (checked)
   FaSquare, // For checkbox (unchecked)
-  FaShieldAlt, // For error state icon - Removed as not used, but keep if needed
 } from "react-icons/fa";
 
 import Sidebar from "@/components/superadmin/Sidebar";
 import AccessControl from "@/components/superadmin/AccessControl";
 import { fetchWithAuth } from "@/utils/auth";
-import FixedLogo from "@/components/superadmin/FixedLogo";
 
 // Array of 20 distinct colors for admin users with names (Used for assignedTo color background)
-const COLOR_OPTIONS = [
-  { code: "#4299e1", name: "Blue" },
-  { code: "#48bb78", name: "Green" },
-  { code: "#ed8936", name: "Orange" },
-  { code: "#f56565", name: "Red" },
-  { code: "#9f7aea", name: "Purple" },
-  { code: "#667eea", name: "Indigo" },
-  { code: "#f687b3", name: "Pink" },
-  { code: "#ecc94b", name: "Yellow" },
-  { code: "#38b2ac", name: "Teal" },
-  { code: "#fc8181", name: "Light Red" },
-  { code: "#68d391", name: "Light Green" },
-  { code: "#63b3ed", name: "Light Blue" },
-  { code: "#4c51bf", name: "Dark Blue" },
-  { code: "#6b46c1", name: "Dark Purple" },
-  { code: "#dd6b20", name: "Dark Orange" },
-  { code: "#805ad5", name: "Medium Purple" },
-  { code: "#b794f4", name: "Light Purple" },
-  { code: "#9ae6b4", name: "Light Mint" },
-  { code: "#f6ad55", name: "Light Orange" },
-  { code: "#feb2b2", name: "Light Coral" },
-];
+// const COLOR_OPTIONS = [
+//   { code: "#4299e1", name: "Blue" },
+//   { code: "#48bb78", name: "Green" },
+//   { code: "#ed8936", name: "Orange" },
+//   { code: "#f56565", name: "Red" },
+//   { code: "#9f7aea", name: "Purple" },
+//   { code: "#667eea", name: "Indigo" },
+//   { code: "#f687b3", name: "Pink" },
+//   { code: "#ecc94b", name: "Yellow" },
+//   { code: "#38b2ac", name: "Teal" },
+//   { code: "#fc8181", name: "Light Red" },
+//   { code: "#68d391", name: "Light Green" },
+//   { code: "#63b3ed", name: "Light Blue" },
+//   { code: "#4c51bf", name: "Dark Blue" },
+//   { code: "#6b46c1", name: "Dark Purple" },
+//   { code: "#dd6b20", name: "Dark Orange" },
+//   { code: "#805ad5", name: "Medium Purple" },
+//   { code: "#b794f4", name: "Light Purple" },
+//   { code: "#9ae6b4", name: "Light Mint" },
+//   { code: "#f6ad55", name: "Light Orange" },
+//   { code: "#feb2b2", name: "Light Coral" },
+// ];
 
 // Format date
 const formatDate = (dateString) => {
@@ -117,7 +115,7 @@ const LeadManagementPage = () => {
   });
   const [userRole, setUserRole] = useState(null);
   const [searchInput, setSearchInput] = useState(""); // For the actual input field
-  const [debouncedSearch, setDebouncedSearch] = useState(""); // For the debounced search
+  // const [debouncedSearch, setDebouncedSearch] = useState(""); // For the debounced search
 
   useEffect(() => {
     const token =

@@ -2,7 +2,6 @@
 import dynamic from "next/dynamic";
 import { useEffect, useRef, useState } from "react";
 import Btnform from "@/components/HomePage/Btnform";
-import { IndianRupee, Minus, PipetteIcon, StarIcon } from "lucide-react";
 const PopupForm = dynamic(() => import("@/components/PopupForm"), {
   ssr: false,
   loading: () => null,

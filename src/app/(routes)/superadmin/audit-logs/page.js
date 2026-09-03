@@ -10,7 +10,6 @@ import {
   FaChevronLeft,
   FaChevronRight,
   FaEye,
-  FaSpinner, // For loading spinner
   FaTimes, // For error message icon
   FaExclamationTriangle, // For no data/error message
 } from "react-icons/fa";
@@ -18,7 +17,6 @@ import Sidebar from "@/components/superadmin/Sidebar";
 import AccessControl from "@/components/superadmin/AccessControl";
 import { fetchWithAuth } from "@/utils/auth";
 import AuditLogDetailsModal from "@/components/superadmin/AuditLogDetailsModal";
-import FixedLogo from "@/components/superadmin/FixedLogo";
 
 // Format date with time
 const formatDateTime = (dateString) => {

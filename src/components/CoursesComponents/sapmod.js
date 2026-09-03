@@ -11,7 +11,6 @@ const SapModComponent = ({ data }) => {
   const [stats, setStats] = useState([]);
   const [openIdx, setOpenIdx] = useState(0);
   const [cardPopStates, setCardPopStates] = useState([]);
-  const [hoveredModuleIdx, setHoveredModuleIdx] = useState(null);
   const [showForm, setShowForm] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false);
 

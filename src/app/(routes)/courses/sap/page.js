@@ -1,10 +1,7 @@
 'use client';
 import React from 'react';
 import CourseCard from '@/components/BlogsPage/CourseListCard';
-import {
-  Settings, BarChart3, Database, Users, Code, Cog, Activity, Globe, Monitor,
-  Cloud, TestTube, TrendingUp, Shield, Palette, Lock, Leaf
-} from 'lucide-react';
+import {Settings, BarChart3, Database, Users, Code, Cog, Activity, Globe, Monitor,Cloud, TestTube, TrendingUp, Shield, Palette, Lock, Leaf } from 'lucide-react';
 export default function SAPCourses() {
   const courses = [
     { icon: Settings, title: "SAP FICO", slug: "sap-fico", iconColor: "text-purple-500" },
