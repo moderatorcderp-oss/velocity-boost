@@ -79,7 +79,7 @@ const jsonLd = {
         "@id": "https://connectingdotserp.com/#logo",
       },
       description:
-        "Connecting Dots ERP - Leading Training Institute for SAP, IT & HR Courses with Placement Support across multiple cities in India.",
+        "Connecting Dots ERP - Leading Training Institute for SAP, IT & HR Courses with 100% Placement Support across multiple cities in India.",
       telephone: "+919004002941",
       email: "info@connectingdotserp.com",
       address: [
@@ -231,7 +231,7 @@ const jsonLd = {
       url: "https://connectingdotserp.com/",
       name: "Connecting Dots ERP",
       description:
-        "Connecting Dots ERP - Leading Training Institute for SAP, IT & HR Courses with Placement Support.",
+        "Connecting Dots ERP - Leading Training Institute for SAP, IT & HR Courses with 100% Placement Support.",
       publisher: {
         "@id": "https://connectingdotserp.com/#organization",
       },

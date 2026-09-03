@@ -29,7 +29,7 @@ const ITEMS = [
     },
     {
         id: "placement",
-        title: "Placement Assistance",
+        title: "100% Placement Assistance",
         desc: "Get dedicated placement support with resume building, mock interviews, and direct connections to hiring partners.",
         accent: "#c45eff",
     },
@@ -132,7 +132,7 @@ const SECTORS = [
     },
     { // upper-right — Placement Assistance
         d: "M 669.8 130.2 A 18 18 0 0 1 695.2 126.4 A 406 406 0 0 1 852.8 399.4 A 18 18 0 0 1 836.8 419.6 L 667.3 432.9 A 18 18 0 0 1 647.4 417.9 A 200 200 0 0 0 576.5 295.1 A 18 18 0 0 1 573.5 270.3 Z",
-        cx: 712, iconX: 689, iconY: 246, textY: 317, color: "#ff5ecf", label: ["Placement", "Assistance"], icon: "placement",
+        cx: 712, iconX: 689, iconY: 246, textY: 317, color: "#ff5ecf", label: ["100%", "Placement", "Assistance"], icon: "placement",
     },
     { // lower-right — Industry Expert Trainers
         d: "M 836.8 480.4 A 18 18 0 0 1 852.8 500.6 A 406 406 0 0 1 695.2 773.6 A 18 18 0 0 1 669.8 769.8 L 573.5 629.7 A 18 18 0 0 1 576.5 604.9 A 200 200 0 0 0 647.4 482.1 A 18 18 0 0 1 667.3 467.1 Z",

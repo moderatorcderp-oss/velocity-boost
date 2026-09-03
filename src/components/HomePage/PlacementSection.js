@@ -107,7 +107,7 @@ const STORIES = [
     rating: 5,
     placedIn: "Placed in 3 Months",
     testimonial:
-      "From classroom learning to mock interviews, every stage improved my confidence. The placement support exceeded my expectations throughout the complete journey.",
+      "From classroom learning to mock interviews, every stage improved my confidence. The 100% placement support exceeded my expectations throughout the complete journey.",
     journey: [
       { title: "Training", desc: "Completed SAP FICO training with industry experts" },
       { title: "Projects", desc: "Worked on real-time projects and gained hands-on experience" },

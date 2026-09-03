@@ -159,7 +159,7 @@ const allCourseLinks = generateCourseLinks();
 export const metadata = {
   title: "All Courses | SAP, IT & HR Training | Connecting Dots ERP",
   description:
-    "Browse all SAP, IT, and HR courses offered by Connecting Dots ERP. Find detailed information and links to specific training programs with placement support in Pune, Mumbai, Raipur and more.",
+    "Browse all SAP, IT, and HR courses offered by Connecting Dots ERP. Find detailed information and links to specific training programs with 100% placement support in Pune, Mumbai, Raipur and more.",
   keywords: [
     "all courses",
     "course list",
@@ -227,7 +227,7 @@ const jsonLd = {
         "@id": "https://connectingdotserp.com/#logo",
       },
       description:
-        "Connecting Dots ERP - Leading Training Institute for SAP, IT & HR Courses with Placement Support.",
+        "Connecting Dots ERP - Leading Training Institute for SAP, IT & HR Courses with 100% Placement Support.",
       telephone: "+919004002941",
       address: {
         "@type": "PostalAddress",
@@ -254,7 +254,7 @@ const jsonLd = {
       url: "https://connectingdotserp.com/all-course-links",
       name: "All Courses | SAP, IT & HR Training | Connecting Dots ERP",
       description:
-        "Browse all SAP, IT, and HR courses offered by Connecting Dots ERP. Find detailed information and links to specific training programs with placement support in Pune, Mumbai, Raipur and more.",
+        "Browse all SAP, IT, and HR courses offered by Connecting Dots ERP. Find detailed information and links to specific training programs with 100% placement support in Pune, Mumbai, Raipur and more.",
       inLanguage: "en-US",
       isPartOf: {
         "@id": "https://connectingdotserp.com/#website",
@@ -305,7 +305,7 @@ const jsonLd = {
       url: "https://connectingdotserp.com/",
       name: "Connecting Dots ERP",
       description:
-        "Connecting Dots ERP - Leading Training Institute for SAP, IT & HR Courses with Placement Support.",
+        "Connecting Dots ERP - Leading Training Institute for SAP, IT & HR Courses with 100% Placement Support.",
       publisher: {
         "@id": "https://connectingdotserp.com/#organization",
       },
@@ -347,7 +347,7 @@ export default function AllCourseLinks() {
         <p className="text-lg text-gray-600 mb-8 text-center max-w-4xl">
           Explore our comprehensive range of {courses.length} professional
           courses across {cities.length} cities. Find the perfect SAP, IT, or HR
-          training program near you with placement support and
+          training program near you with 100% placement support and
           industry-recognized certification.
         </p>
 

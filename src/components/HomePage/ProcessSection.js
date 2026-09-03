@@ -80,8 +80,8 @@ const STEPS = [
     },
     {
         num: "06",
-        title: "Placement Support",
-        desc: "Get dedicated placement support and connect with top hiring companies.",
+        title: "100% Placement Assistance",
+        desc: "Get dedicated placement assistance and connect with top hiring companies.",
         color: "#7c3aed",
         grad: ["#a855f7", "#6d28d9"],
         icon: <Briefcase strokeWidth={1.8} />,

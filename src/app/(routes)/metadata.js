@@ -1,6 +1,6 @@
 export const metadata = {
   title: "Connecting Dots ERP | SAP Training, HR Courses & IT Skill Development",
-  description: "Join Connecting Dots ERP – Pune & Mumbai's leading institute for SAP training, HR certification programs, IT courses, placement support, and hands-on learning from industry experts.",
+  description: "Join Connecting Dots ERP – Pune & Mumbai's leading institute for SAP training, HR certification programs, IT courses, 100% placement support, and hands-on learning from industry experts.",
   keywords: [
     "SAP Certification Courses",
     "SAP Course",

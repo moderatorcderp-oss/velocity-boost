@@ -24,7 +24,7 @@ export default function FAQAccordion({ data }) {
 
               <SectionHeading
                 title="Questions? We Have Answers."
-                description="Find answers to the most common questions about our courses, admissions, trainings and placement support."
+                description="Find answers to the most common questions about our courses, admissions, trainings and 100% placement support."
               />
 
               <div className="faqHelpCard">

@@ -657,7 +657,7 @@ return (
                 </div>
                 
                 <p className="text-lg lg:text-xl text-gray-100 leading-relaxed">
-                Learn SAP with real-time projects, expert mentors & placement support
+                Learn SAP with real-time projects, expert mentors & 100% placement support
                 </p>
                 
                 <div className="mr-40 flex-shrink-0">

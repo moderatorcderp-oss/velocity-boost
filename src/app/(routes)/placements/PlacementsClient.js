@@ -24,7 +24,7 @@ const placementSteps = [
   { step: "03", icon: "🧠", title: "Technical & HR Mocks", desc: "Prepare for technical and HR interviews through mock sessions with expert feedback and confidence-building practice." },
   { step: "04", icon: "📝", title: "Resume & LinkedIn", desc: "ATS-optimised resume helped by HR team with LinkedIn profile revamp to attract 10× more recruiters." },
   { step: "05", icon: "🤝", title: "Experience Alteration", desc: "Our unique offering helps you apply for jobs with relevant experience, enhancing your resume and boosting hiring chances." },
-  { step: "06", icon: "🏆", title: "100% Job Assistance", desc: "Get 100% job assistance with expert training, resume building, mock interviews & placement support at our top-rated training institute." },
+  { step: "06", icon: "🏆", title: "100% Job Assistance", desc: "Get 100% job assistance with expert training, resume building, mock interviews & 100% placement support at our top-rated training institute." },
 ];
 
 const partners = [
@@ -108,7 +108,7 @@ const featuredPlacements = [
 const faqs = [
   { q: "What is the placement guarantee?", a: "We offer a 100% placement assistance guarantee. If you complete all milestones and don't get placed within 6 months of graduation, we refund your course fee in full." },
   { q: "How long does placement take after course completion?", a: "On average, our students receive their first offer within 45–60 days of completing the program. 80% of students are placed within 3 months." },
-  { q: "Do you help with placements too?", a: "Yes! Our placement support covers direct referrals to 100+ off-campus hiring partners across startups and MNCs." },
+  { q: "Do you help with placements too?", a: "Yes! Our 100% placement support covers direct referrals to 100+ off-campus hiring partners across startups and MNCs." },
   { q: "Is there a minimum package guaranteed?", a: "We work hard to match you to roles that match your skill level. Our average package is ₹6 LPA, and we don't stop supporting you until you're placed." },
   { q: "Can working professionals join the placement program?", a: "Absolutely. We have a dedicated upskilling + lateral placement track for professionals with 1–5 years of experience looking to switch roles or companies." },
 ];

@@ -472,7 +472,7 @@ export async function generateMetadata({ params }) {
 
   const cityInfo = cityData[city];
   const title = `Courses in ${cityInfo.name} | Connecting Dots ERP Training Institute`;
-  const description = `${cityInfo.description} Find SAP, IT, HR, Data Science courses with placement support.`;
+  const description = `${cityInfo.description} Find SAP, IT, HR, Data Science courses with 100% placement support.`;
   const url = `https://connectingdotserp.com/sitemap/${city}`;
   const imageUrl = `https://connectingdotserp.com/images/courses-${city}.jpg`;
 
@@ -545,7 +545,7 @@ function generateCityJsonLd(city, cityInfo) {
           caption: "Connecting Dots ERP Logo",
         },
         description:
-          "Connecting Dots ERP - Leading Training Institute for SAP, IT & HR Courses with Placement Support.",
+          "Connecting Dots ERP - Leading Training Institute for SAP, IT & HR Courses with 100% Placement Support.",
         telephone: "+919004002941",
         email: "info@connectingdotserp.com",
         address: [
@@ -600,7 +600,7 @@ function generateCityJsonLd(city, cityInfo) {
         "@id": `${cityUrl}#webpage`,
         url: cityUrl,
         name: `Courses in ${cityInfo.name} | Connecting Dots ERP Training Institute`,
-        description: `${cityInfo.description} Find SAP, IT, HR, Data Science courses with placement support.`,
+        description: `${cityInfo.description} Find SAP, IT, HR, Data Science courses with 100%  placement support.`,
         inLanguage: "en-US",
         isPartOf: {
           "@id": "https://connectingdotserp.com/#website",
@@ -624,7 +624,7 @@ function generateCityJsonLd(city, cityInfo) {
             {
               "@type": "Course",
               name: `SAP Training in ${cityInfo.name}`,
-              description: `Comprehensive SAP modules training in ${cityInfo.name} with placement support`,
+              description: `Comprehensive SAP modules training in ${cityInfo.name} with 100%  placement support`,
               provider: {
                 "@id": "https://connectingdotserp.com/#organization",
               },
@@ -686,7 +686,7 @@ function generateCityJsonLd(city, cityInfo) {
         url: "https://connectingdotserp.com/",
         name: "Connecting Dots ERP",
         description:
-          "Connecting Dots ERP - Leading Training Institute for SAP, IT & HR Courses with Placement Support.",
+          "Connecting Dots ERP - Leading Training Institute for SAP, IT & HR Courses with 100%  placement support.",
         publisher: {
           "@id": "https://connectingdotserp.com/#organization",
         },
@@ -711,7 +711,7 @@ function generateCityJsonLd(city, cityInfo) {
         "@type": "LocalBusiness",
         "@id": `${cityUrl}#localbusiness`,
         name: `Connecting Dots ERP - ${cityInfo.name}`,
-        description: `Professional SAP, IT, and HR training institute serving ${cityInfo.name} with placement support`,
+        description: `Professional SAP, IT, and HR training institute serving ${cityInfo.name} with 100%  placement support`,
         url: cityUrl,
         telephone: "+919004002941",
         email: "info@connectingdotserp.com",
@@ -827,7 +827,7 @@ export default async function CityPage({ params }) {
               <Link href={link.slug}>
                 {link.name} in {cityInfo.name} - {link.category}
                 {link.subcategory && ` - ${link.subcategory}`} - Professional
-                Training with Placement Support
+                Training with 100%  placement support
               </Link>
             </div>
           ))}
