@@ -10,7 +10,6 @@ import SectionHeading from "./SectionHeading";
 
 export default function FAQAccordion({ data }) {
   const [openIndex, setOpenIndex] = useState(0);
-  console.log(data, 'faq data')
   const FAQ_DATA = data['items'] || [];
   return (
     // <section className="w-screen flex items-center justify-center relative left-1/2 -translate-x-1/2">

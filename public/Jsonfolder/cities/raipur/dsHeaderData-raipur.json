@@ -1,0 +1,1841 @@
+{
+    "MDSpage": {
+        "MDSHeader": {
+            "title": "Data Science Course in {city}",
+            "subtitle": "We invite you to attend the Best Data Science Certification Program in {city}",
+            "description": "The complete Data Science Course in {city} given by Connecting Dots ERP is meant to give students the tools they need to succeed in the area. Predictive analytics, machine learning, data visualization, and data analysis are some of the important subjects covered in the course. With practical experience working with real-world data, our data science training in {city} makes sure you are ready for opportunities in top firms that focus on data-driven careers",
+            "features": [
+                "Live Class",
+                "1:1 mentorship",
+                "Industry projects"
+            ],
+            "buttons": [
+                {
+                    "text": "Request Call back",
+                    "courseName": "Data Science Program"
+                },
+                {
+                    "text": "Download Syllabus",
+                    "courseName": "Book Live Demo"
+                }
+            ],
+            "form": {
+                "title": "Book a FREE live class",
+                "inputs": [
+                    {
+                        "type": "text",
+                        "name": "name",
+                        "placeholder": "Enter your name"
+                    },
+                    {
+                        "type": "email",
+                        "name": "email",
+                        "placeholder": "Enter your Email"
+                    },
+                    {
+                        "type": "tel",
+                        "name": "contactname",
+                        "placeholder": "Enter your phone number",
+                        "countryCode": "+91"
+                    }
+                ],
+                "submitText": "Book Live Class"
+            }
+        }
+    },
+    "MDApage": {
+        "MDAHeader": {
+            "title": "Data Analytics Course in {city}",
+            "subtitle": "Practical Based Job Oriented Data Analytics Training in {city}",
+            "description": " To evaluate both structured and unstructured data and turn it into insights that can be put to use, the Data Analytics Course in {city} focuses on teaching the methods and resources needed. In addition to focusing on developing abilities in data mining, predictive analysis, and statistical modeling, this program prepares graduates for positions as data scientists, analysts, and business analysts.",
+            "features": [
+                "Live Class",
+                "1:1 mentorship",
+                "Industry projects"
+            ],
+            "buttons": [
+                {
+                    "text": "Request Call back",
+                    "courseName": "Data Analytics Program"
+                },
+                {
+                    "text": "Download Syllabus",
+                    "courseName": "Book Live Demo"
+                }
+            ],
+            "form": {
+                "title": "Book a FREE live class",
+                "inputs": [
+                    {
+                        "type": "text",
+                        "name": "name",
+                        "placeholder": "Enter your name"
+                    },
+                    {
+                        "type": "email",
+                        "name": "email",
+                        "placeholder": "Enter your Email"
+                    },
+                    {
+                        "type": "text",
+                        "name": "year",
+                        "placeholder": "Year of Passing"
+                    },
+                    {
+                        "type": "tel",
+                        "name": "contactname",
+                        "placeholder": "Enter your phone number",
+                        "countryCode": "+91"
+                    }
+                ],
+                "submitText": "Book Live Class"
+            }
+        }
+    },
+    "BApage": {
+        "BAHeader": {
+            "title": "Business Analytics Course in {city}",
+            "subtitle": "Take advantage of the Business Analytics Training Certificate Course to advance your profession quickly",
+            "description": "The Connecting Dots ERP’s Business Analytics Course in {city} is intended to give students the tools they need to succeed in the industry. Important subjects covered in the course include business intelligence, data visualization, data analysis, and predictive analytics. Our business analytics training in {city} guarantees that you are ready for opportunities in prestigious firms that focus on data-driven decision-making careers by giving you practical experience working with real-world business data.",
+            "features": [
+                "Live Class",
+                "1:1 mentorship",
+                "Industry projects"
+            ],
+            "buttons": [
+                {
+                    "text": "Request Call back",
+                    "courseName": "Business Analytics Program"
+                },
+                {
+                    "text": "Download Syllabus",
+                    "courseName": "Book Live Demo"
+                }
+            ],
+            "form": {
+                "title": "Book a FREE live class",
+                "inputs": [
+                    {
+                        "type": "text",
+                        "name": "name",
+                        "placeholder": "Enter your name"
+                    },
+                    {
+                        "type": "email",
+                        "name": "email",
+                        "placeholder": "Enter your Email"
+                    },
+                    {
+                        "type": "text",
+                        "name": "year",
+                        "placeholder": "Year of Passing"
+                    },
+                    {
+                        "type": "tel",
+                        "name": "contactname",
+                        "placeholder": "Enter your phone number",
+                        "countryCode": "+91"
+                    }
+                ],
+                "submitText": "Book Live Class"
+            }
+        }
+    },
+    "GPTpage": {
+        "GPTHeader": {
+            "title": "Artificial Intelligence Course in {city}",
+            "subtitle": "We invite you to attend the Best Artificial Intelligence Certification Program in {city}",
+            "description": "Connecting Dots ERP's extensive Artificial Intelligence Course in {city} aims to give students the abilities they need to succeed in AI. The course covers important subjects, including AI-driven automation, machine learning, deep learning, and natural language processing. With practical experience working on actual ChatGPT and AI projects, our AI training in {city} guarantees that you are ready for employment prospects in prestigious companies that value innovation and AI-powered solutions",
+            "features": [
+                "Live Class",
+                "1:1 mentorship",
+                "Industry projects"
+            ],
+            "buttons": [
+                {
+                    "text": "Request Call back",
+                    "courseName": "Generative AI"
+                },
+                {
+                    "text": "Download Syllabus",
+                    "courseName": "Book Live Demo"
+                }
+            ],
+            "form": {
+                "title": "Book a FREE live class",
+                "inputs": [
+                    {
+                        "type": "text",
+                        "name": "name",
+                        "placeholder": "Enter your name"
+                    },
+                    {
+                        "type": "email",
+                        "name": "email",
+                        "placeholder": "Enter your Email"
+                    },
+                    {
+                        "type": "text",
+                        "name": "year",
+                        "placeholder": "Year of Passing"
+                    },
+                    {
+                        "type": "tel",
+                        "name": "contactname",
+                        "placeholder": "Enter your phone number",
+                        "countryCode": "+91"
+                    }
+                ],
+                "submitText": "Book Live Class"
+            }
+        }
+    },
+    "fullstackheader": {
+        "FullStackHeader": {
+            "title": "Full stack training in {city}",
+            "subtitle": "Project-based Job Oriented Full stack course in {city}",
+            "description": "Grow your potential with Connecting Dots' Full Stack course in {city}, where you'll learn essential development skills for a successful tech career. With hands-on training and secure placement support, this course equips you to thrive in the ever-evolving world of full-stack development.",
+            "features": [
+                "Live Class",
+                "1:1 mentorship",
+                "Industry projects"
+            ],
+            "buttons": [
+                {
+                    "text": "Request Call back",
+                    "courseName": "Full Stack Program"
+                },
+                {
+                    "text": "Download Syllabus",
+                    "courseName": "Book Live Demo"
+                }
+            ],
+            "form": {
+                "title": "Book a FREE live class",
+                "inputs": [
+                    {
+                        "type": "text",
+                        "name": "name",
+                        "placeholder": "Enter your name"
+                    },
+                    {
+                        "type": "email",
+                        "name": "email",
+                        "placeholder": "Enter your Email"
+                    },
+                    {
+                        "type": "text",
+                        "name": "year",
+                        "placeholder": "Year of Passing"
+                    },
+                    {
+                        "type": "tel",
+                        "name": "contactname",
+                        "placeholder": "Enter your phone number",
+                        "countryCode": "+91"
+                    }
+                ],
+                "submitText": "Book Live Class"
+            }
+        }
+    },
+    "javaheader": {
+        "JavaHeader": {
+            "title": "Java Training Program in {city}",
+            "subtitle": "Project-based Job Oriented Java Course in {city}",
+            "description": "Grow your career with Connecting Dots ERP’s Java course in {city}, designed to equip you with essential programming skills for a successful tech career. With hands-on training and job placement support, this course prepares you to thrive in the competitive world of Java development.",
+            "features": [
+                "Live Class",
+                "1:1 mentorship",
+                "Industry projects"
+            ],
+            "buttons": [
+                {
+                    "text": "Request Call back",
+                    "courseName": "Java Training Program"
+                },
+                {
+                    "text": "Download Syllabus",
+                    "courseName": "Book Live Demo"
+                }
+            ],
+            "form": {
+                "title": "Book a FREE live class",
+                "inputs": [
+                    {
+                        "type": "text",
+                        "name": "name",
+                        "placeholder": "Enter your name"
+                    },
+                    {
+                        "type": "email",
+                        "name": "email",
+                        "placeholder": "Enter your Email"
+                    },
+                    {
+                        "type": "text",
+                        "name": "year",
+                        "placeholder": "Year of Passing"
+                    },
+                    {
+                        "type": "tel",
+                        "name": "contactname",
+                        "placeholder": "Enter your phone number",
+                        "countryCode": "+91"
+                    }
+                ],
+                "submitText": "Book Live Class"
+            }
+        }
+    },
+    "pythonheader": {
+        "PythonHeader": {
+            "title": "Python Training Program in {city}",
+            "subtitle": " Learn Our advanced Python Course in {city} with practical training",
+            "description": "Unlock new career opportunities with Connecting Dots' Python course in {city}, designed to help you master one of the most versatile programming languages. Through hands-on training, expert mentorship, and real-world projects, this course prepares you for a wide range of programming roles, making you proficient in Python development and data handling.",
+            "features": [
+                "Live Class",
+                "1:1 mentorship",
+                "Industry projects"
+            ],
+            "buttons": [
+                {
+                    "text": "Request Call back",
+                    "courseName": "PYTHON Program"
+                },
+                {
+                    "text": "Download Syllabus",
+                    "courseName": "Book Live Demo"
+                }
+            ],
+            "form": {
+                "title": "Book a FREE live class",
+                "inputs": [
+                    {
+                        "type": "text",
+                        "name": "name",
+                        "placeholder": "Enter your name"
+                    },
+                    {
+                        "type": "email",
+                        "name": "email",
+                        "placeholder": "Enter your Email"
+                    },
+                    {
+                        "type": "text",
+                        "name": "year",
+                        "placeholder": "Year of Passing"
+                    },
+                    {
+                        "type": "tel",
+                        "name": "contactname",
+                        "placeholder": "Enter your phone number",
+                        "countryCode": "+91"
+                    }
+                ],
+                "submitText": ""
+            }
+        }
+    },
+    "salesheader": {
+        "SalesHeader": {
+            "title": "Advance Salesforce Training in {city}",
+            "subtitle": "Join our Project-based Salesforce Training Program in {city}",
+            "description": "Accelerate your career with Connecting Dots' Salesforce course in {city}, designed to equip you with the essential skills required to master Salesforce CRM, one of the most in-demand platforms in the world. Through practical training and project-based learning, this course prepares you for a range of roles in CRM management, cloud solutions, and customer relationship management.",
+            "features": [
+                "Live Class",
+                "1:1 mentorship",
+                "Industry projects"
+            ],
+            "buttons": [
+                {
+                    "text": "Request Call back",
+                    "courseName": "Salesforce Program"
+                },
+                {
+                    "text": "Download Syllabus",
+                    "courseName": "Book Live Demo"
+                }
+            ],
+            "form": {
+                "title": "Book a FREE live class",
+                "inputs": [
+                    {
+                        "type": "text",
+                        "name": "name",
+                        "placeholder": "Enter your name"
+                    },
+                    {
+                        "type": "email",
+                        "name": "email",
+                        "placeholder": "Enter your Email"
+                    },
+                    {
+                        "type": "text",
+                        "name": "year",
+                        "placeholder": "Year of Passing"
+                    },
+                    {
+                        "type": "tel",
+                        "name": "contactname",
+                        "placeholder": "Enter your phone number",
+                        "countryCode": "+91"
+                    }
+                ],
+                "submitText": "Book Live Class"
+            }
+        }
+    },
+    "abapheader": {
+        "AbapHeader": {
+            "title": "Master SAP ABAP with Raipur's Most Practical, Job-Focused Training Program",
+            "subtitle": "Learn SAP ABAP programming from real-time SAP consultants, work on live projects, and get placement support all without leaving Raipur. Our SAP ABAP course in Raipur is designed for freshers, working professionals, and functional consultants who want to build a strong career in SAP development.",
+            "description": "Learn SAP ABAP programming from real-time SAP consultants, work on live projects, and get placement support all without leaving Raipur. Our SAP ABAP course in Raipur is designed for freshers, working professionals, and functional consultants who want to build a strong career in SAP development.",
+            "features": [
+                "Live Class",
+                "1:1 mentorship",
+                "Industry projects"
+            ],
+            "buttons": [
+                {
+                    "text": "Book a Free Demo Class",
+                    "courseName": "SAP ABAP Program"
+                },
+                {
+                    "text": "Download Course Brochure",
+                    "courseName": "Book Live Demo"
+                }
+            ],
+            "form": {
+                "title": "Book a FREE live class",
+                "inputs": [
+                    {
+                        "type": "text",
+                        "name": "name",
+                        "placeholder": "Enter your name"
+                    },
+                    {
+                        "type": "email",
+                        "name": "email",
+                        "placeholder": "Enter your Email"
+                    },
+                    {
+                        "type": "text",
+                        "name": "year",
+                        "placeholder": "Year of Passing"
+                    },
+                    {
+                        "type": "tel",
+                        "name": "contactname",
+                        "placeholder": "Enter your phone number",
+                        "countryCode": "+91"
+                    }
+                ],
+                "submitText": "Book Live Class"
+            }
+        }
+    },
+    "aribaheader": {
+        "AribaHeader": {
+            "title": "Master Procurement with the Best SAP Ariba Course in Raipur",
+            "subtitle": "Learn end-to-end SAP Ariba from certified trainers, work on live procurement projects, and step into a high-demand career in supply chain and procurement — all from our training center in Raipur.",
+            "description": "Whether you're a fresher exploring SAP careers or a working professional looking to upskill, our SAP Ariba training in Raipur is designed to take you from basics to job-ready expertise in sourcing, contracts, and procurement management.",
+            "features": [
+                "Live Class",
+                "1:1 mentorship",
+                "Industry projects"
+            ],
+            "buttons": [
+                {
+                    "text": "Book a Free Demo Class",
+                    "courseName": "SAP Ariba Program"
+                },
+                {
+                    "text": "Download Course Brochure",
+                    "courseName": "Book Live Demo"
+                }
+            ],
+            "form": {
+                "title": "Book a FREE live class",
+                "inputs": [
+                    {
+                        "type": "text",
+                        "name": "name",
+                        "placeholder": "Enter your name"
+                    },
+                    {
+                        "type": "email",
+                        "name": "email",
+                        "placeholder": "Enter your Email"
+                    },
+                    {
+                        "type": "text",
+                        "name": "year",
+                        "placeholder": "Year of Passing"
+                    },
+                    {
+                        "type": "tel",
+                        "name": "contactname",
+                        "placeholder": "Enter your phone number",
+                        "countryCode": "+91"
+                    }
+                ],
+                "submitText": "Book Live Class"
+            }
+        }
+    },
+    "basisheader": {
+        "BasisHeader": {
+            "title": "Become a Certified SAP Basis Consultant with the Best SAP Basis Course in Raipur",
+            "subtitle": "Learn SAP system administration, installation, and support from real industry experts. Our SAP Basis training in Raipur combines hands-on labs, live projects, and placement support to turn beginners into job-ready SAP Basis consultants.",
+            "description": "Join Raipur's most trusted SAP Basis institute and build a career in SAP system administration, client management, and technical support starting with your very first class.",
+            "features": [
+                "Live Online & Classroom Batches",
+                "Certified Trainers",
+                "Real-Time Projects",
+                "Placement Support"
+            ],
+            "buttons": [
+                {
+                    "text": "Book a Free Demo Class",
+                    "courseName": "SAP BASIS Program"
+                },
+                {
+                    "text": "Talk to Our Course Counselor",
+                    "courseName": "Book Live Demo"
+                }
+            ],
+            "form": {
+                "title": "Book a FREE live class",
+                "inputs": [
+                    {
+                        "type": "text",
+                        "name": "name",
+                        "placeholder": "Enter your name"
+                    },
+                    {
+                        "type": "email",
+                        "name": "email",
+                        "placeholder": "Enter your Email"
+                    },
+                    {
+                        "type": "text",
+                        "name": "year",
+                        "placeholder": "Year of Passing"
+                    },
+                    {
+                        "type": "tel",
+                        "name": "contactname",
+                        "placeholder": "Enter your phone number",
+                        "countryCode": "+91"
+                    }
+                ],
+                "submitText": "Book Live Class"
+            }
+        }
+    },
+    "bwbiheader": {
+        "BwbiHeader": {
+            "title": "Become a Certified SAP BW/BI Consultant in Raipur",
+            "subtitle": "Looking for a job-ready SAP BW/BI course in Raipur? Our training program is designed for students, working professionals, and career switchers who want hands-on expertise in SAP Business Warehouse and Business Intelligence. Learn data modeling, reporting, and analytics on real SAP systems, guided by trainers who have actually worked on live SAP BW/BI projects.",
+            "description": "Looking for a job-ready SAP BW/BI course in Raipur? Our training program is designed for students, working professionals, and career switchers who want hands-on expertise in SAP Business Warehouse and Business Intelligence. Learn data modeling, reporting, and analytics on real SAP systems, guided by trainers who have actually worked on live SAP BW/BI projects.",
+            "features": [
+                "Live Class",
+                "1:1 mentorship",
+                "Industry projects"
+            ],
+            "buttons": [
+                {
+                    "text": "Book a Free Demo Class",
+                    "courseName": "SAP BI Program"
+                },
+                {
+                    "text": "Download Course Brochure",
+                    "courseName": "Book Live Demo"
+                }
+            ],
+            "form": {
+                "title": "Book a FREE live class",
+                "inputs": [
+                    {
+                        "type": "text",
+                        "name": "name",
+                        "placeholder": "Enter your name"
+                    },
+                    {
+                        "type": "email",
+                        "name": "email",
+                        "placeholder": "Enter your Email"
+                    },
+                    {
+                        "type": "text",
+                        "name": "year",
+                        "placeholder": "Year of Passing"
+                    },
+                    {
+                        "type": "tel",
+                        "name": "contactname",
+                        "placeholder": "Enter your phone number",
+                        "countryCode": "+91"
+                    }
+                ],
+                "submitText": "Book Live Class"
+            }
+        }
+    },
+    "ewmheader": {
+        "EWMHeader": {
+            "title": "SAP EWM Course in Raipur | Learn Warehouse Management the Practical Way",
+            "subtitle": "Join Raipur's most hands-on SAP EWM training program and learn how modern warehouses run on SAP S/4HANA. Real-time scenarios, live server access, and guidance from consultants who have actually implemented EWM on the ground.",
+            "description": "Live SAP EWM server access. Trainer with real implementation experience. Weekday & weekend batches. Resume building + interview preparation. Certificate on course completion.",
+            "features": [
+                "Live Class",
+                "1:1 mentorship",
+                "Industry projects"
+            ],
+            "buttons": [
+                {
+                    "text": "Book a Free Demo Class",
+                    "courseName": "SAP EWM Program"
+                },
+                {
+                    "text": "Download Course Brochure",
+                    "courseName": "Book Live Demo"
+                }
+            ],
+            "form": {
+                "title": "Book a FREE live class",
+                "inputs": [
+                    {
+                        "type": "text",
+                        "name": "name",
+                        "placeholder": "Enter your name"
+                    },
+                    {
+                        "type": "email",
+                        "name": "email",
+                        "placeholder": "Enter your Email"
+                    },
+                    {
+                        "type": "text",
+                        "name": "year",
+                        "placeholder": "Year of Passing"
+                    },
+                    {
+                        "type": "tel",
+                        "name": "contactname",
+                        "placeholder": "Enter your phone number",
+                        "countryCode": "+91"
+                    }
+                ],
+                "submitText": "Book Live Class"
+            }
+        }
+    },
+    "ficoheader": {
+        "FICOHeader": {
+            "title": "SAP FICO Course in Raipur — Become Job-Ready in Finance & Controlling",
+            "subtitle": "Learn SAP FICO from certified trainers with real-time project exposure, hands-on system access, and placement support. Join Raipur's growing community of SAP-certified finance professionals.",
+            "description": "Whether you are a commerce graduate, a working accountant, or an ERP consultant looking to upskill, this SAP FICO training in Raipur is built to take you from fundamentals to configuration-level expertise.",
+            "features": [
+                "Live Class",
+                "1:1 mentorship",
+                "Industry projects"
+            ],
+            "buttons": [
+                {
+                    "text": "Book a Free Demo Class",
+                    "courseName": "SAP FICO Program"
+                },
+                {
+                    "text": "Download Course Brochure",
+                    "courseName": "Book Live Demo"
+                }
+            ],
+            "form": {
+                "title": "Book a FREE live class",
+                "inputs": [
+                    {
+                        "type": "text",
+                        "name": "name",
+                        "placeholder": "Enter your name"
+                    },
+                    {
+                        "type": "email",
+                        "name": "email",
+                        "placeholder": "Enter your Email"
+                    },
+                    {
+                        "type": "text",
+                        "name": "year",
+                        "placeholder": "Year of Passing"
+                    },
+                    {
+                        "type": "text",
+                        "name": "location",
+                        "placeholder": "Add your location"
+                    },
+                    {
+                        "type": "tel",
+                        "name": "contactname",
+                        "placeholder": "Enter your phone number",
+                        "countryCode": "+91"
+                    }
+                ],
+                "submitText": "Book Live Class"
+            }
+        }
+    },
+    "hanaheader": {
+        "HanaHeader": {
+            "title": "Master SAP S/4 HANA in Raipur | Build a Career in Enterprise Technology",
+            "subtitle": "Join the most practical SAP S/4 HANA course in Raipur, designed for freshers, working professionals, and functional consultants who want real hands-on experience on live SAP systems. Learn directly from certified trainers, work on industry projects, and walk away job-ready.",
+            "description": "Join the most practical SAP S/4 HANA course in Raipur, designed for freshers, working professionals, and functional consultants who want real hands-on experience on live SAP systems. Learn directly from certified trainers, work on industry projects, and walk away job-ready.",
+            "features": [
+                "Live Class",
+                "1:1 mentorship",
+                "Industry projects"
+            ],
+            "buttons": [
+                {
+                    "text": "Book a Free Demo Class",
+                    "courseName": "SAP S/4 HANA Program"
+                },
+                {
+                    "text": "Download Course Brochure",
+                    "courseName": "Book Live Demo"
+                }
+            ],
+            "form": {
+                "title": "Book a FREE live class",
+                "inputs": [
+                    {
+                        "type": "text",
+                        "name": "name",
+                        "placeholder": "Enter your name"
+                    },
+                    {
+                        "type": "email",
+                        "name": "email",
+                        "placeholder": "Enter your Email"
+                    },
+                    {
+                        "type": "text",
+                        "name": "year",
+                        "placeholder": "Year of Passing"
+                    },
+                    {
+                        "type": "tel",
+                        "name": "contactname",
+                        "placeholder": "Enter your phone number",
+                        "countryCode": "+91"
+                    }
+                ],
+                "submitText": "Book Live Class"
+            }
+        }
+    },
+    "hrhcmheader": {
+        "HRHCMHeader": {
+            "title": "Become an SAP HCM Certified Professional in Raipur — Learn from Industry Experts",
+            "subtitle": "Looking for a career-ready SAP HCM course in Raipur? Our training program is designed for freshers, HR professionals, and working executives who want to master SAP Human Capital Management from the ground up. Get hands-on exposure to real-time SAP HCM projects, learn directly from certified trainers, and walk away with a globally recognised certificate.",
+            "description": "Whether you're switching careers into HR technology or upgrading your existing SAP skills, this SAP HCM training in Raipur gives you the practical, job-oriented learning you need to succeed.",
+            "features": [
+                "Live Class",
+                "1:1 mentorship",
+                "Industry projects"
+            ],
+            "buttons": [
+                {
+                    "text": "Book a Free Demo Class",
+                    "courseName": "SAP HR/HCM Program"
+                },
+                {
+                    "text": "Talk to Our Counsellor",
+                    "courseName": "Book Live Demo"
+                }
+            ],
+            "form": {
+                "title": "Book a FREE live class",
+                "inputs": [
+                    {
+                        "type": "text",
+                        "name": "name",
+                        "placeholder": "Enter your name"
+                    },
+                    {
+                        "type": "email",
+                        "name": "email",
+                        "placeholder": "Enter your Email"
+                    },
+                    {
+                        "type": "text",
+                        "name": "year",
+                        "placeholder": "Year of Passing"
+                    },
+                    {
+                        "type": "tel",
+                        "name": "contactname",
+                        "placeholder": "Enter your phone number",
+                        "countryCode": "+91"
+                    }
+                ],
+                "submitText": "Book Live Class"
+            }
+        }
+    },
+    "mmheader": {
+        "MMHeader": {
+            "title": "Master SAP MM in Raipur — Learn from Certified Industry Experts",
+            "subtitle": "Join Raipur's most practical SAP MM Course and build real-world skills in procurement, inventory, and material management using live SAP systems. Learn by doing, not just watching.",
+            "description": "Whether you're a fresher, a working professional, or someone switching careers, this SAP MM Training in Raipur is designed to take you from basics to job-ready in a few months — with real-time projects, mock interviews, and placement support.",
+            "features": [
+                "Live Class",
+                "1:1 mentorship",
+                "Industry projects"
+            ],
+            "buttons": [
+                {
+                    "text": "Book a Free Demo Class",
+                    "courseName": "SAP MM Program"
+                },
+                {
+                    "text": "Download Course Brochure",
+                    "courseName": "Book Live Demo"
+                },
+                {
+                    "text": "Talk to a Counsellor",
+                    "courseName": "Book Live Demo"
+                }
+            ],
+            "form": {
+                "title": "Book a FREE live class",
+                "inputs": [
+                    {
+                        "type": "text",
+                        "name": "name",
+                        "placeholder": "Enter your name"
+                    },
+                    {
+                        "type": "email",
+                        "name": "email",
+                        "placeholder": "Enter your Email"
+                    },
+                    {
+                        "type": "text",
+                        "name": "year",
+                        "placeholder": "Year of Passing"
+                    },
+                    {
+                        "type": "tel",
+                        "name": "contactname",
+                        "placeholder": "Enter your phone number",
+                        "countryCode": "+91"
+                    }
+                ],
+                "submitText": "Book Live Class"
+            }
+        }
+    },
+    "coreheader": {
+        "CoreHeader": {
+            "title": "Core HR Training in {city}",
+            "subtitle": "Join our Practical-based Core HR Training in {city}",
+            "description": "Enhance your career with Connecting Dot's Core HR course in {city}, tailored to provide you with the key competencies needed to thrive in the field of human resource management. Focusing on practical skills and hands-on learning, this course equips you for various roles such as recruitment, employee engagement, talent development, and HR data analysis, helping you become a valuable asset in any organization.",
+            "features": [
+                "Live Class",
+                "1:1 mentorship",
+                "Industry projects"
+            ],
+            "buttons": [
+                {
+                    "text": "Request Call back",
+                    "courseName": "Core HR Training Program"
+                },
+                {
+                    "text": "Download Syllabus",
+                    "courseName": "Book Live Demo"
+                }
+            ],
+            "form": {
+                "title": "Book a FREE live class",
+                "inputs": [
+                    {
+                        "type": "text",
+                        "name": "name",
+                        "placeholder": "Enter your name"
+                    },
+                    {
+                        "type": "email",
+                        "name": "email",
+                        "placeholder": "Enter your Email"
+                    },
+                    {
+                        "type": "location",
+                        "name": "location",
+                        "placeholder": "Select your location"
+                    },
+                    {
+                        "type": "course",
+                        "name": "course",
+                        "placeholder": "Select course"
+                    },
+                    {
+                        "type": "tel",
+                        "name": "contactname",
+                        "placeholder": "Enter your phone number",
+                        "countryCode": "+91"
+                    }
+                ],
+                "submitText": "Book Live Class"
+            }
+        }
+    },
+    "netheader": {
+        "NetHeader": {
+            "title": "SAP NetWeaver Course in {city}",
+            "subtitle": "Practical Based Job Oriented SAP Training in {city}",
+            "description": " Practical Training on SAP's core technological platform, including integration, system management, and security, is provided via the SAP NetWeaver Course in {city}. Acquire hands-on experience in real-world projects to get ready for positions such as SAP NetWeaver Consultant and System Administrator. This course gives you the tools to handle enterprise-level, scalable solutions in various SAP environments.",
+            "features": [
+                "Live Class",
+                "1:1 mentorship",
+                "Industry projects"
+            ],
+            "buttons": [
+                {
+                    "text": "Request Call back",
+                    "courseName": "SAP NetWeaver Program"
+                },
+                {
+                    "text": "Download Syllabus",
+                    "courseName": "Book Live Demo"
+                }
+            ],
+            "form": {
+                "title": "Book a FREE live class",
+                "inputs": [
+                    {
+                        "type": "text",
+                        "name": "name",
+                        "placeholder": "Enter your name"
+                    },
+                    {
+                        "type": "email",
+                        "name": "email",
+                        "placeholder": "Enter your Email"
+                    },
+                    {
+                        "type": "text",
+                        "name": "year",
+                        "placeholder": "Year of Passing"
+                    },
+                    {
+                        "type": "tel",
+                        "name": "contactname",
+                        "placeholder": "Enter your phone number",
+                        "countryCode": "+91"
+                    }
+                ],
+                "submitText": "Book Live Class"
+            }
+        }
+    },
+    "pmheader": {
+        "PMHeader": {
+            "title": "Become a Certified SAP PM Consultant with Raipur's Most Practical SAP PM Course",
+            "subtitle": "Looking for a job-ready SAP PM course in Raipur? You are in the right place. Our SAP PM training in Raipur is built for engineers, maintenance professionals, and fresh graduates who want to master SAP Plant Maintenance and step into high-paying SAP PM roles across India and abroad.",
+            "description": "This isn't theory-heavy classroom learning. Every session in our SAP PM course in Raipur is hands-on, taught by consultants who've implemented SAP PM in real factories, plants, and manufacturing units. By the end of the course, you'll be able to configure maintenance orders, notifications, equipment master data, preventive maintenance plans, and more the exact skills companies hire for. Whether you're switching careers into SAP, upgrading from a core maintenance background, or preparing for SAP PM certification, this SAP PM training in Raipur gives you the structured path to get there.",
+            "features": [
+                "Live Class",
+                "1:1 mentorship",
+                "Industry projects"
+            ],
+            "buttons": [
+                {
+                    "text": "Book a Free Demo Class",
+                    "courseName": "SAP PM Program"
+                },
+                {
+                    "text": "Download Course Brochure",
+                    "courseName": "Book Live Demo"
+                },
+                {
+                    "text": "Talk to a Counselor",
+                    "courseName": "Book Live Demo"
+                }
+            ],
+            "form": {
+                "title": "Book a FREE live class",
+                "inputs": [
+                    {
+                        "type": "text",
+                        "name": "name",
+                        "placeholder": "Enter your name"
+                    },
+                    {
+                        "type": "email",
+                        "name": "email",
+                        "placeholder": "Enter your Email"
+                    },
+                    {
+                        "type": "text",
+                        "name": "year",
+                        "placeholder": "Year of Passing"
+                    },
+                    {
+                        "type": "tel",
+                        "name": "contactname",
+                        "placeholder": "Enter your phone number",
+                        "countryCode": "+91"
+                    }
+                ],
+                "submitText": "Book Live Class"
+            }
+        }
+    },
+    "ppheader": {
+        "PPHeader": {
+            "title": "Master SAP PP Course in Raipur | Become a Certified SAP Production Planning Consultant",
+            "subtitle": "Join Raipur's most practical SAP PP training program and learn real-time production planning, manufacturing execution, and MRP concepts from certified industry experts. Get 100% job-oriented training with live SAP server access.",
+            "description": "Join Raipur's most practical SAP PP training program and learn real-time production planning, manufacturing execution, and MRP concepts from certified industry experts. Get 100% job-oriented training with live SAP server access.",
+            "features": [
+                "Live Class",
+                "1:1 mentorship",
+                "Industry projects"
+            ],
+            "buttons": [
+                {
+                    "text": "Book a Free Demo Class",
+                    "courseName": "SAP PP Program"
+                },
+                {
+                    "text": "Download Course Brochure",
+                    "courseName": "Book Live Demo"
+                },
+                {
+                    "text": "Talk to Our Career Counsellor",
+                    "courseName": "Book Live Demo"
+                }
+            ],
+            "form": {
+                "title": "Book a FREE live class",
+                "inputs": [
+                    {
+                        "type": "text",
+                        "name": "name",
+                        "placeholder": "Enter your name"
+                    },
+                    {
+                        "type": "email",
+                        "name": "email",
+                        "placeholder": "Enter your Email"
+                    },
+                    {
+                        "type": "text",
+                        "name": "year",
+                        "placeholder": "Year of Passing"
+                    },
+                    {
+                        "type": "tel",
+                        "name": "contactname",
+                        "placeholder": "Enter your phone number",
+                        "countryCode": "+91"
+                    }
+                ],
+                "submitText": "Book Live Class"
+            }
+        }
+    },
+    "psheader": {
+        "PSHeader": {
+            "title": "Master SAP PS Course in Raipur — Build a Career in Project Systems",
+            "subtitle": "Learn end-to-end SAP Project Systems (PS) module with live projects, real-time case studies, and placement support. Join Raipur's most practical SAP PS training program designed for working professionals and freshers alike.",
+            "description": "Weekday & Weekend Batches | Live Instructor-Led Training | Certificate on Completion | 1-on-1 Doubt Sessions",
+            "features": [
+                "Live Class",
+                "1:1 mentorship",
+                "Industry projects"
+            ],
+            "buttons": [
+                {
+                    "text": "Book a Free Demo Class",
+                    "courseName": "SAP PS Program"
+                },
+                {
+                    "text": "Download Course Brochure",
+                    "courseName": "Book Live Demo"
+                }
+            ],
+            "form": {
+                "title": "Book a FREE live class",
+                "inputs": [
+                    {
+                        "type": "text",
+                        "name": "name",
+                        "placeholder": "Enter your name"
+                    },
+                    {
+                        "type": "email",
+                        "name": "email",
+                        "placeholder": "Enter your Email"
+                    },
+                    {
+                        "type": "text",
+                        "name": "year",
+                        "placeholder": "Year of Passing"
+                    },
+                    {
+                        "type": "tel",
+                        "name": "contactname",
+                        "placeholder": "Enter your phone number",
+                        "countryCode": "+91"
+                    }
+                ],
+                "submitText": "Book Live Class"
+            }
+        }
+    },
+    "qmheader": {
+        "QMHeader": {
+            "title": "Become a Certified SAP QM Consultant — Right Here in Raipur",
+            "subtitle": "Looking for a career-focused SAP QM course in Raipur that actually gets you job-ready? This program is built for people who want more than theory real SAP systems, real business scenarios, and real guidance from trainers who've worked on live SAP Quality Management projects.",
+            "description": "Whether you're a mechanical, production, or quality engineer, an SAP end-user looking to upskill, or a fresher aiming to break into the SAP ecosystem, this course walks you through every module of SAP QM from quality planning to inspection, quality control, and quality certificates using hands-on system access, not just slides.",
+            "features": [
+                "Live Class",
+                "1:1 mentorship",
+                "Industry projects"
+            ],
+            "buttons": [
+                {
+                    "text": "Book a Free Demo Class",
+                    "courseName": "SAP QM Program"
+                },
+                {
+                    "text": "Download Course Brochure",
+                    "courseName": "Book Live Demo"
+                }
+            ],
+            "form": {
+                "title": "Book a FREE live class",
+                "inputs": [
+                    {
+                        "type": "text",
+                        "name": "name",
+                        "placeholder": "Enter your name"
+                    },
+                    {
+                        "type": "email",
+                        "name": "email",
+                        "placeholder": "Enter your Email"
+                    },
+                    {
+                        "type": "text",
+                        "name": "year",
+                        "placeholder": "Year of Passing"
+                    },
+                    {
+                        "type": "tel",
+                        "name": "contactname",
+                        "placeholder": "Enter your phone number",
+                        "countryCode": "+91"
+                    }
+                ],
+                "submitText": "Book Live Class"
+            }
+        }
+    },
+    "scmheader": {
+        "SCMHeader": {
+            "title": "Master SAP SCM in Raipur | Build a Career in Supply Chain Management",
+            "subtitle": "Join Raipur's most practical SAP SCM course, designed for freshers, working professionals, and logistics experts who want hands-on SAP training, real-time project exposure, and placement support all under one roof.",
+            "description": "Learn SAP MM, SAP SD, SAP PP, SAP WM, and SAP EWM from certified trainers, with live SAP server access and 100% practical sessions.",
+            "features": [
+                "Live Class",
+                "1:1 mentorship",
+                "Industry projects"
+            ],
+            "buttons": [
+                {
+                    "text": "Book a Free Demo Class",
+                    "courseName": "SAP SCM Program"
+                },
+                {
+                    "text": "Download Course Brochure",
+                    "courseName": "Book Live Demo"
+                }
+            ],
+            "form": {
+                "title": "Book a FREE live class",
+                "inputs": [
+                    {
+                        "type": "text",
+                        "name": "name",
+                        "placeholder": "Enter your name"
+                    },
+                    {
+                        "type": "email",
+                        "name": "email",
+                        "placeholder": "Enter your Email"
+                    },
+                    {
+                        "type": "text",
+                        "name": "year",
+                        "placeholder": "Year of Passing"
+                    },
+                    {
+                        "type": "tel",
+                        "name": "contactname",
+                        "placeholder": "Enter your phone number",
+                        "countryCode": "+91"
+                    }
+                ],
+                "submitText": "Book Live Class"
+            }
+        }
+    },
+    "sdheader": {
+        "SDHeader": {
+            "title": "SAP SD Course in Raipur | Become a Certified SAP Sales and Distribution Consultant",
+            "subtitle": "Learn SAP SD from real-time industry experts through a hands-on, placement-focused SAP SD training program in Raipur. Get live project exposure, SAP GUI access, and job-ready skills in Order to Cash, Pricing, Billing, and Credit Management.",
+            "description": "Whether you're a fresher, a functional consultant, or a working professional switching careers, this SAP SD course in Raipur is built to take you from basics to enterprise-level implementation.",
+            "features": [
+                "Live Class",
+                "1:1 mentorship",
+                "Industry projects"
+            ],
+            "buttons": [
+                {
+                    "text": "Book a Free Demo Class",
+                    "courseName": "SAP SD Program"
+                },
+                {
+                    "text": "Download Course Brochure",
+                    "courseName": "Book Live Demo"
+                },
+                {
+                    "text": "Talk to a Counsellor",
+                    "courseName": "Book Live Demo"
+                }
+            ],
+            "form": {
+                "title": "Book a FREE live class",
+                "inputs": [
+                    {
+                        "type": "text",
+                        "name": "name",
+                        "placeholder": "Enter your name"
+                    },
+                    {
+                        "type": "email",
+                        "name": "email",
+                        "placeholder": "Enter your Email"
+                    },
+                    {
+                        "type": "text",
+                        "name": "year",
+                        "placeholder": "Year of Passing"
+                    },
+                    {
+                        "type": "tel",
+                        "name": "contactname",
+                        "placeholder": "Enter your phone number",
+                        "countryCode": "+91"
+                    }
+                ],
+                "submitText": "Book Live Class"
+            }
+        }
+    },
+    "succheader": {
+        "SuccHeader": {
+            "title": "Become a Certified SAP SuccessFactors Consultant in Raipur",
+            "subtitle": "Learn Employee Central, Recruiting, Performance & Goals, and Learning Management from certified trainers. Get hands-on with live SAP SF systems, real HR project scenarios, and placement support all from the heart of Raipur.",
+            "description": "Join Raipur's most practical SAP SuccessFactors training program and step into one of the fastest-growing careers in HR technology.",
+            "features": [
+                "Live Class",
+                "1:1 mentorship",
+                "Industry projects"
+            ],
+            "buttons": [
+                {
+                    "text": "Book a Free Demo Class",
+                    "courseName": "SAP SuccessFactors Program"
+                },
+                {
+                    "text": "Download Course Brochure",
+                    "courseName": "Book Live Demo"
+                },
+                {
+                    "text": "Talk to a Career Counsellor",
+                    "courseName": "Book Live Demo"
+                }
+            ],
+            "form": {
+                "title": "Book a FREE live class",
+                "inputs": [
+                    {
+                        "type": "text",
+                        "name": "name",
+                        "placeholder": "Enter your name"
+                    },
+                    {
+                        "type": "email",
+                        "name": "email",
+                        "placeholder": "Enter your Email"
+                    },
+                    {
+                        "type": "text",
+                        "name": "year",
+                        "placeholder": "Year of Passing"
+                    },
+                    {
+                        "type": "tel",
+                        "name": "contactname",
+                        "placeholder": "Enter your phone number",
+                        "countryCode": "+91"
+                    }
+                ],
+                "submitText": "Book Live Class"
+            }
+        }
+    },
+    "powerbi": {
+        "POWERBI": {
+            "title": "Power BI Course in {city}",
+            "subtitle": "Job Oriented Power BI Classes in {city}",
+            "description": "Power BI is a powerful tool designed to help businesses turn raw data into actionable insights. Whether you’re a beginner or a seasoned professional, our Power BI course in {city} offers an in-depth understanding of the platform, enabling you to harness the full potential of your data. From interactive dashboards to real-time analytics, Power BI makes it easier to make informed decisions. Get started today and elevate your data skills through our advanced Power BI classes in {city}.",
+            "features": [
+                "Live Class",
+                "1:1 mentorship",
+                "Industry projects"
+            ],
+            "buttons": [
+                {
+                    "text": "Request Call back",
+                    "courseName": "Power BI Program"
+                },
+                {
+                    "text": "Download Syllabus",
+                    "courseName": "Book Live Demo"
+                }
+            ],
+            "form": {
+                "title": "Book a FREE live class",
+                "inputs": [
+                    {
+                        "type": "text",
+                        "name": "name",
+                        "placeholder": "Enter your name"
+                    },
+                    {
+                        "type": "email",
+                        "name": "email",
+                        "placeholder": "Enter your Email"
+                    },
+                    {
+                        "type": "text",
+                        "name": "year",
+                        "placeholder": "Year of Passing"
+                    },
+                    {
+                        "type": "tel",
+                        "name": "contactname",
+                        "placeholder": "Enter your phone number",
+                        "countryCode": "+91"
+                    }
+                ],
+                "submitText": "Book Live Class"
+            }
+        }
+    },
+    "tableau": {
+        "TABLEAU": {
+            "title": "Tableau Training in {city}",
+            "subtitle": "100% Practical Based Job Oriented Best Tableau Course in {city}",
+            "description": "Tableau is one of the most powerful data visualization tools, offering businesses and individuals the ability to analyze data in dynamic, interactive ways. Whether you're looking to enhance your skills with a Tableau certification Training in {city}, take a Tableau course, or explore Tableau tutorials, we provide everything you need to master the art of data storytelling.",
+            "features": [
+                "Live Class",
+                "1:1 mentorship",
+                "Industry projects"
+            ],
+            "buttons": [
+                {
+                    "text": "Request Call back",
+                    "courseName": "Tableau Program"
+                },
+                {
+                    "text": "Download Syllabus",
+                    "courseName": "Book Live Demo"
+                }
+            ],
+            "form": {
+                "title": "Book a FREE live class",
+                "inputs": [
+                    {
+                        "type": "text",
+                        "name": "name",
+                        "placeholder": "Enter your name"
+                    },
+                    {
+                        "type": "email",
+                        "name": "email",
+                        "placeholder": "Enter your Email"
+                    },
+                    {
+                        "type": "text",
+                        "name": "year",
+                        "placeholder": "Year of Passing"
+                    },
+                    {
+                        "type": "tel",
+                        "name": "contactname",
+                        "placeholder": "Enter your phone number",
+                        "countryCode": "+91"
+                    }
+                ],
+                "submitText": "Book Live Class"
+            }
+        }
+    },
+    "anapage": {
+        "ANAHeader": {
+            "title": " HR Analytics Training in {city}",
+            "subtitle": " Master Data-Driven HR Decision Making with Our HR Analytics Training in {city}",
+            "description": "Upgrade your HR skills with Connecting Dots' HR Analytics course in {city}, designed to provide a comprehensive understanding of data analysis in human resource management. This course equips you with the tools to analyze employee data, improve HR processes, and make informed decisions. By integrating data-driven insights into HR operations, you will enhance talent management, recruitment, employee engagement, and retention strategies.",
+            "features": [
+                "Live Class",
+                "1:1 mentorship",
+                "Industry projects"
+            ],
+            "buttons": [
+                {
+                    "text": "Request Call back",
+                    "courseName": "Digital Marketing Training Program"
+                },
+                {
+                    "text": "Download Syllabus",
+                    "courseName": "Book Live Demo"
+                }
+            ],
+            "form": {
+                "title": "Book a FREE live class",
+                "inputs": [
+                    {
+                        "type": "text",
+                        "name": "name",
+                        "placeholder": "Enter your name"
+                    },
+                    {
+                        "type": "email",
+                        "name": "email",
+                        "placeholder": "Enter your Email"
+                    },
+                    {
+                        "type": "text",
+                        "name": "year",
+                        "placeholder": "Year of Passing"
+                    },
+                    {
+                        "type": "text",
+                        "name": "contactname",
+                        "placeholder": "Enter your phone number",
+                        "countryCode": "+91"
+                    }
+                ],
+                "submitText": "Book Live Class"
+            }
+        }
+    },
+    "manpage": {
+        "MANHeader": {
+            "title": "HR Management Training in {city}",
+            "subtitle": "Join our complete HR Management Training in {city}",
+            "description": "Elevate your career with Connecting Dots' HR Management course in {city}, designed to provide in-depth knowledge and hands-on experience in managing human resources effectively. This course covers key areas such as employee recruitment, talent development, performance management, and compliance with labor laws, equipping you with the skills necessary to thrive in HR roles.",
+            "features": [
+                "Live Class",
+                "1:1 mentorship",
+                "Industry projects"
+            ],
+            "buttons": [
+                {
+                    "text": "Request Call back",
+                    "courseName": "Digital Marketing Training Program"
+                },
+                {
+                    "text": "Download Syllabus",
+                    "courseName": "Book Live Demo"
+                }
+            ],
+            "form": {
+                "title": "Book a FREE live class",
+                "inputs": [
+                    {
+                        "type": "text",
+                        "name": "name",
+                        "placeholder": "Enter your name"
+                    },
+                    {
+                        "type": "email",
+                        "name": "email",
+                        "placeholder": "Enter your Email"
+                    },
+                    {
+                        "type": "text",
+                        "name": "year",
+                        "placeholder": "Year of Passing"
+                    },
+                    {
+                        "type": "text",
+                        "name": "contactname",
+                        "placeholder": "Enter your phone number",
+                        "countryCode": "+91"
+                    }
+                ],
+                "submitText": "Book Live Class"
+            }
+        }
+    },
+    "payrollmanpage": {
+        "PAYROLLHeader": {
+            "title": "Advance HR Payroll Training in {city}",
+            "subtitle": "Join our Project-based HR Payroll Training in {city}",
+            "description": "Advance your career with Connecting Dots' HR Payroll course in {city}, meticulously designed to provide you with the essential skills to excel in payroll management within Human Resource Management. This practical, hands-on training focuses on vital areas like payroll processing, tax compliance, employee benefits, and HR systems, equipping you to efficiently manage payroll functions in any organization.",
+            "features": [
+                "Live Class",
+                "1:1 mentorship",
+                "Industry projects"
+            ],
+            "buttons": [
+                {
+                    "text": "Request Call back",
+                    "courseName": "Digital Marketing Training Program"
+                },
+                {
+                    "text": "Download Syllabus",
+                    "courseName": "Book Live Demo"
+                }
+            ],
+            "form": {
+                "title": "Book a FREE live class",
+                "inputs": [
+                    {
+                        "type": "text",
+                        "name": "name",
+                        "placeholder": "Enter your name"
+                    },
+                    {
+                        "type": "email",
+                        "name": "email",
+                        "placeholder": "Enter your Email"
+                    },
+                    {
+                        "type": "text",
+                        "name": "year",
+                        "placeholder": "Year of Passing"
+                    },
+                    {
+                        "type": "text",
+                        "name": "contactname",
+                        "placeholder": "Enter your phone number",
+                        "countryCode": "+91"
+                    }
+                ],
+                "submitText": "Book Live Class"
+            }
+        }
+    },
+    "genpage": {
+        "GENHeader": {
+            "title": "HR Generalist Training in {city}",
+            "subtitle": "Become a Versatile HR Professional with Our HR Generalist Training in {city}",
+            "description": "Elevate your career in human resources with Connecting Dots' HR Generalist training in {city}, designed to provide you with a well-rounded understanding of key HR functions. This training program covers recruitment, employee relations, payroll management, performance appraisals, and labor laws, equipping you with the skills required to excel as an HR Generalist in any organization.",
+            "features": [
+                "Live Class",
+                "1:1 mentorship",
+                "Industry projects"
+            ],
+            "buttons": [
+                {
+                    "text": "Request Call back",
+                    "courseName": "Digital Marketing Training Program"
+                },
+                {
+                    "text": "Download Syllabus",
+                    "courseName": "Book Live Demo"
+                }
+            ],
+            "form": {
+                "title": "Book a FREE live class",
+                "inputs": [
+                    {
+                        "type": "text",
+                        "name": "name",
+                        "placeholder": "Enter your name"
+                    },
+                    {
+                        "type": "email",
+                        "name": "email",
+                        "placeholder": "Enter your Email"
+                    },
+                    {
+                        "type": "text",
+                        "name": "year",
+                        "placeholder": "Year of Passing"
+                    },
+                    {
+                        "type": "text",
+                        "name": "contactname",
+                        "placeholder": "Enter your phone number",
+                        "countryCode": "+91"
+                    }
+                ],
+                "submitText": "Book Live Class"
+            }
+        }
+    },
+    "hrtraining": {
+        "HRTrainingHeader": {
+            "title": "Best HR Training Institute in {city}",
+            "subtitle": " Learn advance HR Strategies with Practical learning",
+            "description": " Enhance your career with Best HR Training Institute in {city} including HR Generalist, CORE HR, Payroll Management, HR Management, and HR Analytics. Our HR  programs blend theoretical insights with practical experience about the case studies, equipping you with essential skills to excel in diverse HR roles across the industries.",
+            "features": [
+                "Live Class",
+                "1:1 mentorship",
+                "Industry projects"
+            ],
+            "buttons": [
+                {
+                    "text": "Request Call back",
+                    "courseName": "Digital Marketing Training Program"
+                },
+                {
+                    "text": "Download Syllabus",
+                    "courseName": "Book Live Demo"
+                }
+            ],
+            "form": {
+                "title": "Book a FREE live class",
+                "inputs": [
+                    {
+                        "type": "text",
+                        "name": "name",
+                        "placeholder": "Enter your name"
+                    },
+                    {
+                        "type": "email",
+                        "name": "email",
+                        "placeholder": "Enter your Email"
+                    },
+                    {
+                        "type": "text",
+                        "name": "year",
+                        "placeholder": "Year of Passing"
+                    },
+                    {
+                        "type": "text",
+                        "name": "contactname",
+                        "placeholder": "Enter your phone number",
+                        "countryCode": "+91"
+                    }
+                ],
+                "submitText": "Book Live Class"
+            }
+        }
+    },
+    "sapheader": {
+        "SapHeader": {
+            "title": " Best SAP Course in {city}",
+            "subtitle": " Get Certified with the best SAP training institute in {city}",
+            "description": "Grow Your Career with the Best SAP Course in {city}. Accelerate your professional journey with our industry-leading SAP training in {city}, featuring specialized courses in SAP FICO, SAP MM, and SAP SD. Our comprehensive and hands-on training program is designed to build deep expertise in core SAP modules like Financial Accounting, Materials Management, and Sales & Distribution. Whether you're a fresher or a working professional, we’ll help you land your dream job in top MNCs.",
+            "features": [
+                "Live Class",
+                "1:1 mentorship",
+                "Industry projects"
+            ],
+            "buttons": [
+                {
+                    "text": "Request Call back",
+                    "courseName": "Digital Marketing Training Program"
+                },
+                {
+                    "text": "Download Syllabus",
+                    "courseName": "Book Live Demo"
+                }
+            ],
+            "form": {
+                "title": "Book a FREE live class",
+                "inputs": [
+                    {
+                        "type": "text",
+                        "name": "name",
+                        "placeholder": "Enter your name"
+                    },
+                    {
+                        "type": "email",
+                        "name": "email",
+                        "placeholder": "Enter your Email"
+                    },
+                    {
+                        "type": "text",
+                        "name": "year",
+                        "placeholder": "Year of Passing"
+                    },
+                    {
+                        "type": "text",
+                        "name": "contactname",
+                        "placeholder": "Enter your phone number",
+                        "countryCode": "+91"
+                    }
+                ],
+                "submitText": "Book Live Class"
+            }
+        }
+    },
+    "itcoursesheader": {
+        "ITcoursesHeader": {
+            "title": "Software Training in {city} with placement support",
+            "subtitle": " Get Certified with the advance IT training institute in {city}",
+            "description": " Connecting Dots ERP offers an advanced IT course in {city} designed to equip you with the essential skills to excel in the fast-evolving tech industry. Our advance and detailed training program covers key modules such as Data Science, Data Analytics, Python, and Java, ensuring you gain the expertise to work with cutting-edge technologies and solve complex business problems. By mastering these modules, you'll be prepared to take on roles like Data Scientist, Data Analyst, Python Developer, and Java Developer. Our course is tailored to help you build a strong foundation and land your dream job in the dynamic field of IT.",
+            "features": [
+                "Live Class",
+                "1:1 mentorship",
+                "Industry projects"
+            ],
+            "buttons": [
+                {
+                    "text": "Request Call back",
+                    "courseName": "Digital Marketing Training Program"
+                },
+                {
+                    "text": "Download Syllabus",
+                    "courseName": "Book Live Demo"
+                }
+            ],
+            "form": {
+                "title": "Book a FREE live class",
+                "inputs": [
+                    {
+                        "type": "text",
+                        "name": "name",
+                        "placeholder": "Enter your name"
+                    },
+                    {
+                        "type": "email",
+                        "name": "email",
+                        "placeholder": "Enter your Email"
+                    },
+                    {
+                        "type": "text",
+                        "name": "year",
+                        "placeholder": "Year of Passing"
+                    },
+                    {
+                        "type": "text",
+                        "name": "contactname",
+                        "placeholder": "Enter your phone number",
+                        "countryCode": "+91"
+                    }
+                ],
+                "submitText": "Book Live Class"
+            }
+        }
+    },
+    "hrcoursesheader": {
+        "HRcoursesHeader": {
+            "title": "Advance HR Training in {city}",
+            "subtitle": " Get Certified with the best HR training institute in {city}",
+            "description": " Connecting Dots ERP offers a advance HR course in {city} designed to equip you with the essential skills to excel in Human Resources. Our advanced and detailed HR training program covers key modules such as Personnel Administration, Payroll, Time Management, and Organizational Management.By mastering these modules, you'll gain the expertise to streamline HR processes, optimize workforce management, and drive organizational success. Our course is tailored to help you land your dream job in the dynamic field of HR.",
+            "features": [
+                "Live Class",
+                "1:1 mentorship",
+                "Industry projects"
+            ],
+            "buttons": [
+                {
+                    "text": "Request Call back",
+                    "courseName": "Digital Marketing Training Program"
+                },
+                {
+                    "text": "Download Syllabus",
+                    "courseName": "Book Live Demo"
+                }
+            ],
+            "form": {
+                "title": "Book a FREE live class",
+                "inputs": [
+                    {
+                        "type": "text",
+                        "name": "name",
+                        "placeholder": "Enter your name"
+                    },
+                    {
+                        "type": "email",
+                        "name": "email",
+                        "placeholder": "Enter your Email"
+                    },
+                    {
+                        "type": "text",
+                        "name": "year",
+                        "placeholder": "Year of Passing"
+                    },
+                    {
+                        "type": "text",
+                        "name": "contactname",
+                        "placeholder": "Enter your phone number",
+                        "countryCode": "+91"
+                    }
+                ],
+                "submitText": "Book Live Class"
+            }
+        }
+    },
+    "datavisualheader": {
+        "DataVisualHeader": {
+            "title": "Data Visualization Course in {city}",
+            "subtitle": "Get Certified with the Data Visualization training institute in {city}",
+            "description": " We offers an advanced Data Visualization course in {city} designed to equip you with the essential skills to excel in the fast-evolving field of data analytics and visualization. Our detailed training program covers key modules such as data visualization techniques, tools like Tableau, Power BI, and advanced Excel, as well as best practices for creating compelling, insightful visualizations from complex datasets. By mastering these modules, you will be prepared to take on roles such as Data Visualization Specialist, Business Intelligence Analyst, or Data Analyst. ",
+            "features": [
+                "Live Class",
+                "1:1 mentorship",
+                "Industry projects"
+            ],
+            "buttons": [
+                {
+                    "text": "Request Call back",
+                    "courseName": "Digital Marketing Training Program"
+                },
+                {
+                    "text": "Download Syllabus",
+                    "courseName": "Book Live Demo"
+                }
+            ],
+            "form": {
+                "title": "Book a FREE live class",
+                "inputs": [
+                    {
+                        "type": "text",
+                        "name": "name",
+                        "placeholder": "Enter your name"
+                    },
+                    {
+                        "type": "email",
+                        "name": "email",
+                        "placeholder": "Enter your Email"
+                    },
+                    {
+                        "type": "text",
+                        "name": "year",
+                        "placeholder": "Year of Passing"
+                    },
+                    {
+                        "type": "text",
+                        "name": "contactname",
+                        "placeholder": "Enter your phone number",
+                        "countryCode": "+91"
+                    }
+                ],
+                "submitText": "Book Live Class"
+            }
+        }
+    }
+}

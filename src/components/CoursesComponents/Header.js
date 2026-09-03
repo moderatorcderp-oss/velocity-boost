@@ -392,11 +392,10 @@ const DSHeader = ({ data }) => {
                 {statusMessage.text && (
                   <div
                     role="status"
-                    className={`mt-4 rounded-lg px-3 py-2 text-sm font-medium ${
-                      statusMessage.type === "success"
-                        ? "bg-emerald-50 text-emerald-700"
-                        : "bg-red-50 text-red-600"
-                    }`}
+                    className={`mt-4 rounded-lg px-3 py-2 text-sm font-medium ${statusMessage.type === "success"
+                      ? "bg-emerald-50 text-emerald-700"
+                      : "bg-red-50 text-red-600"
+                      }`}
                   >
                     {statusMessage.text}
                   </div>
