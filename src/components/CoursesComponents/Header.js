@@ -302,8 +302,8 @@ const DSHeader = ({ data }) => {
               SAP Training &amp; Certification
             </div>
 
-            <h1 className="text-3xl font-extrabold leading-[1.2] tracking-tight text-[#0b1130] sm:text-4xl lg:text-[2.7rem]">
-              {data.title}
+            <h1 className="text-xl font-extrabold leading-[1.2] tracking-tight text-[#0b1130] sm:text-4xl lg:text-[2.7rem]">
+              {data.title} |
             </h1>
 
             {data.subtitle && (
@@ -313,40 +313,9 @@ const DSHeader = ({ data }) => {
             )}
 
             {data.description && (
-              <p className="mt-3 max-w-xl text-base leading-relaxed text-slate-600">
+              <p className="mt-6 max-w-xl text-base leading-relaxed text-slate-600">
                 {data.description}
               </p>
-            )}
-
-            {featureList.length > 0 && (
-              <ul className="mt-6 flex flex-wrap gap-x-6 gap-y-3">
-                {featureList.map((feature, index) => (
-                  <li key={index} className="flex items-center gap-2 text-sm font-semibold text-slate-700">
-                    <CheckCircle2 size={17} className="shrink-0 text-[#036f85]" strokeWidth={2.2} />
-                    {feature}
-                  </li>
-                ))}
-              </ul>
-            )}
-
-            {alumni.length > 0 && (
-              <div className="mt-8 border-t border-slate-100 pt-5">
-                <span className="text-xs font-medium uppercase tracking-wide text-slate-400">
-                  Find our alumni at
-                </span>
-                <div className="mt-3 flex flex-wrap items-center gap-x-7 gap-y-3">
-                  {alumni.map((company, index) => (
-                    <Image
-                      key={index}
-                      src={company.logo}
-                      alt={`${company.name} logo`}
-                      width={92}
-                      height={26}
-                      className="h-6 w-auto object-contain opacity-70 grayscale transition duration-150 hover:opacity-100 hover:grayscale-0"
-                    />
-                  ))}
-                </div>
-              </div>
             )}
 
             {data.buttons?.length > 0 && (
