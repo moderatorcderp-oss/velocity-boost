@@ -154,7 +154,7 @@ const StatsPanel = ({ stats, activeFilter, onFilterToggle, animate }) => {
       </div>
 
       <div className={styles.distribution}>
-        {stats.distribution.map(({ star, count, pct }) => (
+        {stats.distribution.slice(0,3).map(({ star, count, pct }) => (
           <button
             key={star}
             className={`${styles.distRow} ${
@@ -227,13 +227,6 @@ const ReviewPin = ({ review, index }) => {
         </div>
       </div>
 
-      {(review.batch || review.date) && (
-        <div className={styles.metaRow}>
-          {review.batch && <span>{review.batch}</span>}
-          {review.batch && review.date && <span className={styles.metaDot}>•</span>}
-          {review.date && <span>{review.date}</span>}
-        </div>
-      )}
     </div>
   );
 };
