@@ -19,8 +19,8 @@ import { usePopupForm } from "../context/Popupformcontext";
         id: "batch-1",
         session: "Morning" | "Evening" | any label,
         timeRange: "7:00 AM – 9:00 AM",
-        startDate: "1 Sept 2026",       // display string
-        startsAt: "2026-09-01T07:00:00", // optional ISO string, powers the countdown
+        startInDays: 7,                  // optional; creates a date relative to today
+        startsAt: "2026-09-01T07:00:00", // optional fixed ISO string, used when startInDays is absent
         mode: "Online" | "Offline" | "Hybrid",
         seatsLeft: 4,
         totalSeats: 20,
@@ -45,6 +45,21 @@ const getCountdownParts = (startsAt) => {
   return { days, hours, minutes };
 };
 
+const getRelativeStart = (daysFromToday, time = "09:00") => {
+  const start = new Date();
+  const [hours, minutes] = time.split(":").map(Number);
+  start.setDate(start.getDate() + daysFromToday);
+  start.setHours(hours, minutes, 0, 0);
+  return start;
+};
+
+const formatStartDate = (date) =>
+  date.toLocaleDateString("en-GB", {
+    day: "numeric",
+    month: "short",
+    year: "numeric",
+  });
+
 const defaultData = {
   title: "Upcoming Batches",
   subtitle: "Choose a schedule that works for you and reserve your seat.",
@@ -53,12 +68,12 @@ const defaultData = {
       id: "demo-morning-batch",
       session: "Morning",
       timeRange: "7:00 AM - 9:00 AM",
-      startDate: "1 Sept 2026",
-      startsAt: "2026-09-01T07:00:00",
+      startInDays: 7,
+      batchTime: "07:00",
       mode: "Online",
       fees:"50,000 /-",
       seatsLeft: 6,
-      totalSeats: 20,
+      totalSeats: 10,
       whatsappNumber: "919004001938",
       whatsappMessage: "Hi! I would like to know more about the morning batch.",
       enrollHref: "#enroll",
@@ -67,12 +82,12 @@ const defaultData = {
       id: "demo-evening-batch",
       session: "Evening",
       timeRange: "7:00 PM - 9:00 PM",
-      startDate: "8 Sept 2026",
-      startsAt: "2026-09-08T19:00:00",
+      startInDays: 9,
+      batchTime: "19:00",
       mode: "Hybrid",
       fees:"50,000 /-",
       seatsLeft: 4,
-      totalSeats: 20,
+      totalSeats: 10,
       whatsappNumber: "919004001938",
       whatsappMessage: "Hi! I would like to know more about the evening batch.",
       enrollHref: "#enroll",
@@ -122,6 +137,13 @@ const UpcomingBatches = ({ data }) => {
 const BatchTicket = ({ batch, index }) => {
   const { openPopup } = usePopupForm();
 
+  const [startAt] = useState(() => {
+    if (typeof batch.startInDays === "number") {
+      return getRelativeStart(batch.startInDays, batch.batchTime);
+    }
+    return batch.startsAt ? new Date(batch.startsAt) : null;
+  });
+
   const [ticketRef, ticketInView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -129,16 +151,18 @@ const BatchTicket = ({ batch, index }) => {
   });
 
   const [countdown, setCountdown] = useState(() =>
-    getCountdownParts(batch.startsAt)
+    getCountdownParts(startAt)
   );
 
   useEffect(() => {
-    if (!batch.startsAt) return;
+    if (!startAt) return;
     const interval = setInterval(() => {
-      setCountdown(getCountdownParts(batch.startsAt));
+      setCountdown(getCountdownParts(startAt));
     }, 60000);
     return () => clearInterval(interval);
-  }, [batch.startsAt]);
+  }, [startAt]);
+
+  const startDate = startAt ? formatStartDate(startAt) : batch.startDate;
 
   const sessionKey = (batch.session || "").toLowerCase().includes("evening")
     ? "evening"
@@ -188,21 +212,23 @@ const BatchTicket = ({ batch, index }) => {
           <span>{batch.timeRange || "Time to be announced"}</span>
         </div>
 
-        <div className={styles.dateRow}>Starts {batch.startDate || "soon"}</div>
+        <div className={styles.dateRow}>Starts {startDate || "soon"}</div>
+
+        {countdown && (
+          <div className={styles.countdownRow} aria-label="Time until batch starts">
+            <span className={styles.countdownValue}>{countdown.days}d</span>
+            <span className={styles.countdownValue}>{countdown.hours}h</span>
+            <span className={styles.countdownValue}>{countdown.minutes}m</span>
+            <span className={styles.countdownLabel}>until start</span>
+          </div>
+        )}
 
         <div className="w-full flex justify-start gap-2">
             {batch.mode && <div className={styles.modeChip}>{batch.mode}</div>}
             {batch.fees && <div className={`font-sans font-semibold ${styles.modeChip}`}>&#x20B9; {batch.fees}</div>}
         </div>
 
-        {countdown && (
-          <div className={styles.countdownRow}>
-            <span className={styles.countdownValue}>{countdown.days}d</span>
-            <span className={styles.countdownValue}>{countdown.hours}h</span>
-            <span className={styles.countdownValue}>{countdown.minutes}m</span>
-            <span className={styles.countdownLabel}>until this batch starts</span>
-          </div>
-        )}
+        
 
         {seatsLeft !== null && totalSeats > 0 && (
           <div className={styles.seatsBlock}>

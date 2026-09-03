@@ -158,7 +158,7 @@ export default function ClientCourseSections(props) {
       </Suspense>
 
       {
-        !courseCategory === "hr" && (
+        courseCategory !== "hr" && (
 
           <Suspense fallback={null}>
             <CoursesRelated
