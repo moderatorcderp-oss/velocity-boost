@@ -23,15 +23,15 @@ import skillsDataRaipur from "../../public/Jsonfolder/cities/raipur/SkillsLearn-
 
 //who this is for
 import whoDataPune from "../../public/Jsonfolder/cities/pune/Whothisisfor-pune.json";
-import whoDataMumbai from "../../public/Jsonfolder/cities/mumbai/WhoThisIsFor-mumbai.json";
-import whoDataRaipur from "../../public/Jsonfolder/cities/raipur/WhoThisIsFor-raipur.json";
+import whoDataMumbai from "../../public/Jsonfolder/cities/mumbai/Whothisisfor-mumbai.json";
+import whoDataRaipur from "../../public/Jsonfolder/cities/raipur/Whothisisfor-raipur.json";
 
 //certificate data
-import certificateDataPune from "../../public/Jsonfolder/cities/pune/certificatedata-pune.json";
+import certificateDataPune from "../../public/Jsonfolder/cities/pune/certificateData-pune.json";
 import certificateDataMumbai from "../../public/Jsonfolder/cities/mumbai/certificateData-mumbai.json";
 import certificateDataRaipur from "../../public/Jsonfolder/cities/raipur/certificateData-raipur.json";
 
-import faqData from "../../public/Jsonfolder/faqData.json";
+import faqData from "../../public/Jsonfolder/faqdata.json";
 
 // CTABanner data
 import CTABannerData from "../../public/Jsonfolder/cities/pune/CTAbanner.json";
@@ -319,6 +319,7 @@ coursesData["full-stack-with-ai"] =
   coursesData["full-stack-developer"] ?? coursesData["full-stack"];
 coursesData["it-course-with-ai"] = coursesData["it"];
 coursesData["hr-courses-training-institute"] = coursesData["hr-training"];
+coursesData["hr"] = coursesData["hr-training"];
 coursesData["generative-ai"] = coursesData["chatgpt"]; // will be refined in step 6
 
 // =====================================================
