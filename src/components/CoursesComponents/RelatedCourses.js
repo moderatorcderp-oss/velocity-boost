@@ -5,9 +5,9 @@ import { useMemo, useState, useCallback } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import SectionHeading from "./SectionHeading";
-import styles from "@/styles/CoursesComponents/RelatedCourses.module.css";
 import ContactForm from "@/components/HomePage/Btnform";
 
+/* ───────────────── helpers ───────────────── */
 const getCourseMeta = (name = "") => {
   const n = name.toLowerCase();
   if (n.includes("sap")) return { label: "SAP" };
@@ -40,127 +40,122 @@ const getCourseMeta = (name = "") => {
   return { label: "CAREER" };
 };
 
-// 6 pastel schemes: index 0 is reserved for the overview tile, 1-5 cycle
-// across course cards so colors don't repeat back-to-back on small sets.
-const PALETTES = [
-  { bg: "#EDE9FB", ink: "#2E2270", sub: "#5B4FA0", chipBg: "rgba(255,255,255,0.6)" },
-  { bg: "#DFF3EA", ink: "#0F6B4A", sub: "#3C8B6D", chipBg: "rgba(255,255,255,0.6)" },
-  { bg: "#FCE3EC", ink: "#9C1857", sub: "#B85480", chipBg: "rgba(255,255,255,0.6)" },
-  { bg: "#FDECCF", ink: "#8A5A12", sub: "#A97D3C", chipBg: "rgba(255,255,255,0.6)" },
-  { bg: "#FCE1CE", ink: "#9A4416", sub: "#B8703F", chipBg: "rgba(255,255,255,0.6)" },
-  { bg: "#DCEAFB", ink: "#1E4E8C", sub: "#4A72A8", chipBg: "rgba(255,255,255,0.6)" },
+const courseNameToUrlMapping = {
+  "Generative AI": "generative-ai-course",
+  "Masters in Data Science": "data-science-course",
+  "Master in Data Science": "data-science-course",
+  "Masters in Data Analytics": "data-analytics-course",
+  "Full-Stack Python": "python-course",
+  "Full-Stack Java": "java-course",
+  "Reactjs Framework": "reactjs-framework-course",
+  Tableau: "tableau-course",
+  PowerBI: "power-bi-course",
+  "Power BI": "power-bi-course",
+  AgenticAi: "agentic-ai-course",
+  "Agentic AI": "agentic-ai-course",
+  "Agentic Ai": "agentic-ai-course",
+  Salesforce: "salesforce-training",
+  "SAP HANA": "sap-s4-hana-course",
+  "SAP BW/BI": "sap-bwbi-course",
+  "SAP BASIS": "sap-basis-course",
+  "SAP ABAP": "sap-abap-course",
+  "SAP FICO": "sap-fico-course",
+  "SAP MM": "sap-mm-course",
+  "SAP SD": "sap-sd-course",
+  "SAP HR/HCM": "sap-hr-hcm-course",
+  "SAP PM": "sap-pm-course",
+  "SAP PP": "sap-pp-course",
+  "SAP PS": "sap-ps-course",
+  "SAP QM": "sap-qm-course",
+  "SAP SCM": "sap-scm-course",
+  "SAP EWM": "sap-ewm-course",
+  "SAP BTP": "sap-btp-course",
+  "SAP EHS": "sap-ehs-course",
+  "SAP GRC": "sap-grc-course",
+  "SAP IBP": "sap-ibp-course",
+  "SAP SUCCESSFACTOR": "sap-successfactors-course",
+  "SAP ARIBA": "sap-ariba-course",
+  "HR Training": "hr-training-course",
+  "HR Analytics": "hr-analytics-course",
+  "Core HR": "core-hr-course",
+  "HR Management": "hr-management-course",
+  "HR Payroll": "hr-payroll-course",
+  "HR Generalist": "hr-generalist-course",
+  "IT Course": "it-course",
+  AWS: "aws-course",
+  DevOps: "devops-course",
+  AIML: "ai-ml-course",
+  "Data Visualization": "data-visualization-course",
+};
+
+/* Soft accent colors for cards */
+const ACCENTS = [
+  { bg: "#F5F3FF", border: "#C4B5FD", tag: "#7C3AED" },
+  { bg: "#ECFDF5", border: "#6EE7B7", tag: "#059669" },
+  { bg: "#FDF2F8", border: "#F9A8D4", tag: "#DB2777" },
+  { bg: "#FFF7ED", border: "#FDBA74", tag: "#EA580C" },
+  { bg: "#EFF6FF", border: "#93C5FD", tag: "#2563EB" },
+  { bg: "#F0FDFA", border: "#5EEAD4", tag: "#0D9488" },
 ];
 
-// Bento rhythm: repeats every 7 so any list length still tiles cleanly.
-const SPAN_PATTERN = ["wide", "normal", "tall", "normal", "wide", "normal", "tall"];
-
+/* ───────────────── icons ───────────────── */
 const ClockIcon = () => (
-  <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 3" /></svg>
+  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <circle cx="12" cy="12" r="9" />
+    <path d="M12 7v5l3 3" />
+  </svg>
 );
 const LevelIcon = () => (
-  <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M4 20V13" /><path d="M12 20V8" /><path d="M20 20V4" /></svg>
+  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+    <path d="M4 20V13" />
+    <path d="M12 20V8" />
+    <path d="M20 20V4" />
+  </svg>
 );
 const BadgeIcon = () => (
-  <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="8" r="5" /><path d="M9 12.5 7 22l5-3 5 3-2-9.5" /></svg>
-);
-const DocIcon = () => (
-  <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" /><path d="M14 2v6h6" /><path d="M9 13h6M9 17h6" /></svg>
-);
-const TrendIcon = () => (
-  <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 17l6-6 4 4 8-8" /><path d="M15 7h6v6" /></svg>
-);
-const CheckIcon = () => (
-  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5" /></svg>
+  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <circle cx="12" cy="8" r="5" />
+    <path d="M9 12.5 7 22l5-3 5 3-2-9.5" />
+  </svg>
 );
 const ArrowIcon = () => (
-  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="M13 6l6 6-6 6" /></svg>
+  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M5 12h14" />
+    <path d="M13 6l6 6-6 6" />
+  </svg>
 );
 
-const CourseMedia = ({ course, className }) =>
+const CourseMedia = ({ course }) =>
   course.icon?.endsWith(".mp4") ? (
     <video
       src={course.icon}
-      className={className}
       aria-label={course.alt}
       loop
       autoPlay
       muted
       playsInline
+      style={{ width: 44, height: 44, objectFit: "contain", borderRadius: 10 }}
     />
   ) : (
     <Image
-      src={course.icon}
+      src={course.icon || "/placeholder-course.png"}
       alt={course.alt || "related course"}
-      width={40}
-      height={40}
-      className={className}
+      width={44}
+      height={44}
+      style={{ objectFit: "contain", borderRadius: 10 }}
     />
   );
 
-const CoursesRelated = ({ data, currentCityName }) => {
+/* ───────────────── main component ───────────────── */
+const RelatedCourses = ({ data, currentCityName }) => {
   const [showModal, setShowModal] = useState(false);
   const [selectedCourse, setSelectedCourse] = useState(null);
   const router = useRouter();
 
-  const courseNameToUrlMapping = {
-    "Generative AI": "generative-ai-course",
-    "Masters in Data Science": "data-science-course",
-    "Master in Data Science": "data-science-course",
-    "Masters in Data Analytics": "data-analytics-course",
-
-    "Full-Stack Python": "python-course",
-    "Full-Stack Java": "java-course",
-    "Reactjs Framework": "reactjs-framework-course",
-
-    Tableau: "tableau-course",
-    PowerBI: "power-bi-course",
-    "Power BI": "power-bi-course",
-
-    AgenticAi: "agentic-ai-course",
-    "Agentic AI": "agentic-ai-course",
-    "Agentic Ai": "agentic-ai-course",
-
-    Salesforce: "salesforce-training",
-
-    "SAP HANA": "sap-s4-hana-course",
-    "SAP BW/BI": "sap-bwbi-course",
-    "SAP BASIS": "sap-basis-course",
-    "SAP ABAP": "sap-abap-course",
-    "SAP FICO": "sap-fico-course",
-    "SAP MM": "sap-mm-course",
-    "SAP SD": "sap-sd-course",
-    "SAP HR/HCM": "sap-hr-hcm-course",
-    "SAP PM": "sap-pm-course",
-    "SAP PP": "sap-pp-course",
-    "SAP PS": "sap-ps-course",
-    "SAP QM": "sap-qm-course",
-    "SAP SCM": "sap-scm-course",
-    "SAP EWM": "sap-ewm-course",
-    "SAP BTP": "sap-btp-course",
-    "SAP EHS": "sap-ehs-course",
-    "SAP GRC": "sap-grc-course",
-    "SAP IBP": "sap-ibp-course",
-    "SAP SUCCESSFACTOR": "sap-successfactors-course",
-    "SAP ARIBA": "sap-ariba-course",
-
-    "HR Training": "hr-training-course",
-    "HR Analytics": "hr-analytics-course",
-    "Core HR": "core-hr-course",
-    "HR Management": "hr-management-course",
-    "HR Payroll": "hr-payroll-course",
-    "HR Generalist": "hr-generalist-course",
-
-    "IT Course": "it-course",
-    AWS: "aws-course",
-    DevOps: "devops-course",
-    AIML: "ai-ml-course",
-    "Data Visualization": "data-visualization-course",
-  };
-
   const items = useMemo(() => data?.items || [], [data]);
 
   const normalizeCityForUrl = (cityName) =>
-    cityName.toLowerCase().replace(/\s+/g, "-");
+    cityName?.toLowerCase().replace(/\s+/g, "-") || "";
 
   const handleCourseClick = useCallback(
     (courseName) => {
@@ -168,8 +163,7 @@ const CoursesRelated = ({ data, currentCityName }) => {
 
       if (courseBaseSlug && currentCityName) {
         const normalizedCity = normalizeCityForUrl(currentCityName);
-        const redirectUrl = `/${courseBaseSlug}-in-${normalizedCity}`;
-        router.push(redirectUrl);
+        router.push(`/${courseBaseSlug}-in-${normalizedCity}`);
       } else {
         console.warn(
           `No URL mapping found for course: ${courseName} or city: ${currentCityName}`
@@ -178,7 +172,7 @@ const CoursesRelated = ({ data, currentCityName }) => {
         setShowModal(true);
       }
     },
-    [currentCityName, router, courseNameToUrlMapping]
+    [currentCityName, router]
   );
 
   const handleCloseModal = useCallback(() => {
@@ -198,7 +192,7 @@ const CoursesRelated = ({ data, currentCityName }) => {
 
   if (!data || !items.length) {
     return (
-      <div className={styles.loadingContainer}>
+      <div style={{ padding: 40, textAlign: "center", color: "#666" }}>
         No related courses data available (check masterData.js or prop passing).
       </div>
     );
@@ -209,114 +203,187 @@ const CoursesRelated = ({ data, currentCityName }) => {
     : "Courses learners often explore next.";
 
   return (
-    <div className={styles.relatedCoursesContainer}>
-      <SectionHeading title={data.title} description={introText} />
+    <>
+      <style>{`
+        .rc-section {
+          font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+          padding: 48px 20px 64px;
+          background: #f8fafc;
+        }
+        .rc-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+          gap: 22px;
+          max-width: 1140px;
+          margin: 36px auto 0;
+        }
+        .rc-card {
+          position: relative;
+          background: #fff;
+          border-radius: 18px;
+          border: 1.5px solid #e2e8f0;
+          padding: 22px 20px 18px;
+          display: flex;
+          flex-direction: column;
+          gap: 14px;
+          cursor: pointer;
+          transition: all 0.28s cubic-bezier(0.25, 0.8, 0.25, 1);
+          box-shadow: 0 4px 14px -6px rgba(15, 23, 42, 0.08);
+        }
+        .rc-card:hover {
+          transform: translateY(-6px);
+          box-shadow: 0 18px 32px -12px rgba(15, 23, 42, 0.16);
+          border-color: var(--accent-border);
+        }
+        .rc-card:hover .rc-arrow {
+          opacity: 1;
+          transform: translateX(0);
+        }
+        .rc-top {
+          display: flex;
+          align-items: flex-start;
+          gap: 14px;
+        }
+        .rc-icon-wrap {
+          flex-shrink: 0;
+          width: 52px;
+          height: 52px;
+          border-radius: 14px;
+          background: var(--accent-bg);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+        }
+        .rc-title-block {
+          flex: 1;
+          min-width: 0;
+        }
+        .rc-tag {
+          display: inline-block;
+          font-size: 10px;
+          font-weight: 700;
+          letter-spacing: 0.04em;
+          text-transform: uppercase;
+          color: var(--accent-tag);
+          background: var(--accent-bg);
+          padding: 3px 8px;
+          border-radius: 999px;
+          margin-bottom: 6px;
+        }
+        .rc-title {
+          margin: 0;
+          font-size: 16.5px;
+          font-weight: 600;
+          color: #1e293b;
+          line-height: 1.35;
+        }
+        .rc-desc {
+          margin: 0;
+          font-size: 13px;
+          line-height: 1.55;
+          color: #64748b;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+        .rc-meta {
+          display: flex;
+          align-items: center;
+          gap: 14px;
+          margin-top: auto;
+          padding-top: 12px;
+          border-top: 1px solid #f1f5f9;
+          font-size: 12px;
+          color: #64748b;
+        }
+        .rc-meta-item {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+        }
+        .rc-arrow {
+          margin-left: auto;
+          color: var(--accent-tag);
+          opacity: 0;
+          transform: translateX(-6px);
+          transition: all 0.25s ease;
+        }
+        @media (max-width: 600px) {
+          .rc-grid {
+            grid-template-columns: 1fr;
+            gap: 16px;
+          }
+        }
+      `}</style>
 
-      <div className={styles.bentoGrid}>
-        {/* Overview tile */}
-        <div
-          className={styles.overviewCard}
-          style={{ background: PALETTES[0].bg, color: PALETTES[0].ink }}
-        >
-          <span className={styles.overviewEyebrow} style={{ color: PALETTES[0].sub }}>
-            What you get
-          </span>
-          <h3 className={styles.overviewTitle}>Certified. Practical. Career-ready.</h3>
-          <p className={styles.overviewDesc} style={{ color: PALETTES[0].sub }}>
-            Every course pairs hands-on projects with instructor support so
-            you can apply new skills immediately.
-          </p>
+      <div className="rc-section">
+        <SectionHeading title={data.title} description={introText} />
 
-          <div className={styles.overviewMockup} aria-hidden="true">
-            <div className={styles.mockBlob} />
-            <div className={styles.mockCard}>
-              <TrendIcon />
-            </div>
-          </div>
+        <div className="rc-grid">
+          {items.map((course, index) => {
+            const accent = ACCENTS[index % ACCENTS.length];
+            const meta = getCourseMeta(course.name);
 
-          <div
-            className={styles.metaBar}
-            style={{ background: PALETTES[0].chipBg }}
-          >
-            <span className={styles.metaItem}>
-              <DocIcon /> {items.length} Courses
-            </span>
-            <span className={styles.metaItem}>
-              <BadgeIcon /> Certificate Included
-            </span>
-            <span className={styles.metaItem}>
-              <ClockIcon /> Flexible Schedule
-            </span>
-            <span className={styles.metaItem}>
-              <TrendIcon /> Career Growth
-            </span>
-          </div>
-        </div>
-
-        {/* Course tiles */}
-        {items.map((course, index) => {
-          const palette = PALETTES[(index % 5) + 1];
-          const isLast = index === items.length - 1;
-          const span = isLast ? "wide" : SPAN_PATTERN[index % SPAN_PATTERN.length];
-          const meta = getCourseMeta(course.name);
-
-          return (
-            <div
-              key={index}
-              className={`${styles.courseCard} ${styles[span]}`}
-              style={{ background: palette.bg, color: palette.ink }}
-              role="button"
-              tabIndex={0}
-              onClick={() => handleCourseClick(course.name)}
-              onKeyDown={(e) => handleCardKeyDown(e, course.name)}
-              title={`Click to view ${course.name} course in ${currentCityName}`}
-            >
-              <span className={styles.courseTag}>{meta.label}</span>
-
-              <div className={styles.courseTop}>
-                <h3 className={styles.courseTitle}>{course.name}</h3>
-                <p className={styles.courseDesc} style={{ color: palette.sub }}>
-                  {course.description}
-                </p>
-              </div>
-
-              <div className={styles.courseMockup} aria-hidden="true">
-                <div className={styles.mockBlob} />
-                <div className={styles.mockCard}>
-                  <CourseMedia course={course} className={styles.mockIcon} />
-                </div>
-                <div className={styles.mockChip}>
-                  <CheckIcon />
-                </div>
-              </div>
-
+            return (
               <div
-                className={styles.metaBar}
-                style={{ background: palette.chipBg }}
+                key={index}
+                className="rc-card"
+                style={{
+                  "--accent-bg": accent.bg,
+                  "--accent-border": accent.border,
+                  "--accent-tag": accent.tag,
+                }}
+                role="button"
+                tabIndex={0}
+                onClick={() => handleCourseClick(course.name)}
+                onKeyDown={(e) => handleCardKeyDown(e, course.name)}
+                title={`View ${course.name}${
+                  currentCityName ? ` in ${currentCityName}` : ""
+                }`}
               >
-                <span className={styles.metaItem}>
-                  <ClockIcon /> {course.duration || "Self-paced"}
-                </span>
-                <span className={styles.metaItem}>
-                  <LevelIcon /> {course.level || "All levels"}
-                </span>
-                <span className={styles.metaItem}>
-                  <BadgeIcon /> Certificate
-                </span>
-                <span className={styles.metaArrow}>
-                  <ArrowIcon />
-                </span>
+                <div className="rc-top">
+                  <div className="rc-icon-wrap">
+                    <CourseMedia course={course} />
+                  </div>
+
+                  <div className="rc-title-block">
+                    <span className="rc-tag">{meta.label}</span>
+                    <h3 className="rc-title">{course.name}</h3>
+                  </div>
+                </div>
+
+                <p className="rc-desc">
+                  {course.description ||
+                    "Hands-on training with real projects and career support."}
+                </p>
+
+                <div className="rc-meta">
+                  <span className="rc-meta-item">
+                    <ClockIcon /> {course.duration || "Self-paced"}
+                  </span>
+                  <span className="rc-meta-item">
+                    <LevelIcon /> {course.level || "All levels"}
+                  </span>
+                  <span className="rc-meta-item">
+                    <BadgeIcon /> Certificate
+                  </span>
+                  <span className="rc-arrow">
+                    <ArrowIcon />
+                  </span>
+                </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
 
       {showModal && (
         <ContactForm onClose={handleCloseModal} course={selectedCourse} />
       )}
-    </div>
+    </>
   );
 };
 
-export default CoursesRelated;
+export default RelatedCourses;
