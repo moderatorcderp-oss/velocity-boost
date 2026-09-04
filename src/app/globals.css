@@ -46,12 +46,8 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: white !important;
 }
-
-/* :where(body > :not([class*="backgroundAnimation"]):not(script):not(style):not(noscript)) {
-  position: relative;
-  z-index: 1;
-} */
 
 /* Specific highlight classes */
 .highlight-span-cards {
@@ -126,7 +122,8 @@ body {
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
+    background-color: white;
   }
 }
 
