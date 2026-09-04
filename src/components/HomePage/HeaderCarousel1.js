@@ -102,6 +102,7 @@ export default function CareerHeroSlide({ onOpenForm }) {
             alt="headerImg"
             fill
             priority
+            fetchPriority="high"
             className="object-cover object-center"
           />
         <div className="absolute inset-0 z-10 mx-auto flex max-w-[1400px] items-start pt-16 box-border px-5 sm:px-8 lg:px-10">
