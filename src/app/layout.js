@@ -20,6 +20,7 @@ import ServerPing from "@/components/ServerPing";
 import ConditionalAuthProvider from "@/app/conditionalprovider";
 import ClientLayoutWrapper from "@/components/ClientLayoutWrapper";
 import Navbar2 from "@/components/Common/Navbar2";
+import WaveComponent from "@/components/Wave";
 // --- Font Setup ---
 const lato = Lato({
   weight: ["400", "700"],
@@ -132,6 +133,7 @@ export default function RootLayout({ children }) {
         </ConditionalAuthProvider>
 
         <div className="app-footer">
+          <WaveComponent/>
           <Footer />
         </div>
 
