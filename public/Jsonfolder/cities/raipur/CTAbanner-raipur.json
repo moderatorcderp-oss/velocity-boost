@@ -1,0 +1,522 @@
+{
+    "homepage": {
+        "badge": "Free Guidance",
+        "title": "Not Sure which Course Fits You?",
+        "subtitle": "Get personalized career guidance from our experts and discover the right course based on your skills, experience, and career goals.",
+        "primaryBtn": "WhatsApp Us",
+        "secondaryBtn": "Talk to a Counselor",
+        "trust": "Raipur classroom + online options · Free career counselling",
+        "screenTitle": "SAP S/4HANA Live System",
+        "widgets": [
+            "FI/CO",
+            "MM/SD",
+            "Reports",
+            "Master Data"
+        ]
+    },
+    "sap": {
+        "badge": "Free Live Demo",
+        "title": "Start Your SAP Career Journey Today",
+        "subtitle": "Join thousands of learners who transformed their careers with industry-relevant SAP training and placement support.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to a Career Counselor",
+        "trust": "Raipur classroom + online options · Real placement support",
+        "screenTitle": "SAP S/4HANA Live System",
+        "widgets": [
+            "FI/CO",
+            "MM/SD",
+            "Reports",
+            "Master Data"
+        ]
+    },
+    "fico": {
+        "badge": "Free Live Demo",
+        "title": "Ready to Build a Career in SAP FICO?",
+        "subtitle": "Join Raipur's hands-on SAP FICO training program and start learning from professionals who've worked on real implementations.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to a Counselor",
+        "trust": "Limited seats available · Real placement support",
+        "screenTitle": "SAP S/4HANA Live System",
+        "widgets": [
+            "FI/CO",
+            "MM/SD",
+            "Reports",
+            "Master Data"
+        ]
+    },
+    "mm": {
+        "badge": "Free Live Demo",
+        "title": "Ready to Start Your SAP MM Career in Raipur?",
+        "subtitle": "Seats for the next batch are filling up fast. Get hands-on training, expert mentorship, and real project experience — all in one course.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Book a Free Demo Class",
+        "trust": "Chat with Us on WhatsApp · Limited seats available",
+        "screenTitle": "SAP S/4HANA Live System",
+        "widgets": [
+            "FI/CO",
+            "MM/SD",
+            "Reports",
+            "Master Data"
+        ]
+    },
+    "hrhcm": {
+        "badge": "Free Live Demo",
+        "title": "Start Your SAP HCM Career Journey in Raipur Today",
+        "subtitle": "Seats are limited for the upcoming batch of our SAP HCM course in Raipur. Get hands-on training, real-time projects, and placement support — all in one program.",
+        "primaryBtn": "Enrol Now",
+        "secondaryBtn": "Book a Free Counselling Session",
+        "trust": "Download Course Brochure · Call us today",
+        "screenTitle": "SAP S/4HANA Live System",
+        "widgets": [
+            "FI/CO",
+            "MM/SD",
+            "Reports",
+            "Master Data"
+        ]
+    },
+    "qm": {
+        "badge": "Free Live Demo",
+        "title": "Ready to Build a Career in SAP QM?",
+        "subtitle": "Seats are limited for the next batch of our SAP QM course in Raipur. Get hands-on training, expert mentorship, and placement support — all in one program.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to a Course Counselor",
+        "trust": "Download Detailed Syllabus PDF · Limited seats left",
+        "screenTitle": "SAP S/4HANA Live System",
+        "widgets": [
+            "FI/CO",
+            "MM/SD",
+            "Reports",
+            "Master Data"
+        ]
+    },
+    "ps": {
+        "badge": "Free Live Demo",
+        "title": "Ready to build your career with SAP Project Systems?",
+        "subtitle": "Join the most trusted SAP PS course in Raipur and learn directly from industry consultants. Seats are limited for the upcoming batch.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to a Course Advisor",
+        "trust": "Download Free Brochure · Limited seats available",
+        "screenTitle": "SAP S/4HANA Live System",
+        "widgets": [
+            "FI/CO",
+            "MM/SD",
+            "Reports",
+            "Master Data"
+        ]
+    },
+    "scm": {
+        "badge": "Free Live Demo",
+        "title": "Ready to Start Your SAP SCM Career in Raipur?",
+        "subtitle": "Seats are limited per batch to keep training practical and personal. Talk to our counsellor today and find the right batch for you.",
+        "primaryBtn": "Book Your Free Demo Class",
+        "secondaryBtn": "Download Brochure",
+        "trust": "Limited seats available · Real placement support",
+        "screenTitle": "SAP S/4HANA Live System",
+        "widgets": [
+            "FI/CO",
+            "MM/SD",
+            "Reports",
+            "Master Data"
+        ]
+    },
+    "ehs": {
+        "badge": "Free Live Demo",
+        "title": "Ready to build your career in SAP EHS?",
+        "subtitle": "Join the most trusted SAP EHS course in Raipur and get the hands-on training, mentorship, and placement support you need to move into a real SAP career.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Book a Free Demo Class",
+        "trust": "Limited seats available · Real placement support",
+        "screenTitle": "SAP S/4HANA Live System",
+        "widgets": [
+            "FI/CO",
+            "MM/SD",
+            "Reports",
+            "Master Data"
+        ]
+    },
+    "ibp": {
+        "badge": "Free Live Demo",
+        "title": "Ready to build a career in SAP Supply Chain Planning?",
+        "subtitle": "Seats in our next SAP IBP training batch in Raipur are filling up. Get hands-on with the same tools companies are actively hiring for, and walk out with a certificate, a portfolio of project work, and placement support behind you.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Book a Free Demo Class",
+        "trust": "Talk to Our Course Counselor · Limited seats available",
+        "screenTitle": "SAP S/4HANA Live System",
+        "widgets": [
+            "FI/CO",
+            "MM/SD",
+            "Reports",
+            "Master Data"
+        ]
+    },
+    "ariba": {
+        "badge": "Free Live Demo",
+        "title": "Ready to Build a Career in SAP Procurement?",
+        "subtitle": "Join the most practical SAP Ariba course in Raipur and get trained by experts who've worked on real Ariba implementations. Limited seats per batch — reserve yours today.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to a Course Counselor",
+        "trust": "Download Free Brochure · Raipur, Chhattisgarh",
+        "screenTitle": "SAP S/4HANA Live System",
+        "widgets": [
+            "FI/CO",
+            "MM/SD",
+            "Reports",
+            "Master Data"
+        ]
+    },
+    "sd": {
+        "badge": "Free Live Demo",
+        "title": "Ready to Build a Career in SAP Sales and Distribution?",
+        "subtitle": "Join the most practical SAP SD course in Raipur and get trained the way real implementation projects actually work — live server access, real scenarios, and a trainer who's been in the field.",
+        "primaryBtn": "Book Your Free Demo Class Now",
+        "secondaryBtn": "Talk to Our Counsellor",
+        "trust": "Limited seats available · Real placement support",
+        "screenTitle": "SAP S/4HANA Live System",
+        "widgets": [
+            "FI/CO",
+            "MM/SD",
+            "Reports",
+            "Master Data"
+        ]
+    },
+    "pp": {
+        "badge": "Free Live Demo",
+        "title": "Ready to Start Your SAP PP Career in Raipur?",
+        "subtitle": "Join a training program built around real SAP projects, practical configuration, and expert mentorship. Limited seats available for the next batch.",
+        "primaryBtn": "Book Your Free Demo Class Now",
+        "secondaryBtn": "Talk to a Counsellor",
+        "trust": "Download Brochure · Call us today",
+        "screenTitle": "SAP S/4HANA Live System",
+        "widgets": [
+            "FI/CO",
+            "MM/SD",
+            "Reports",
+            "Master Data"
+        ]
+    },
+    "pm": {
+        "badge": "Free Live Demo",
+        "title": "Ready to Start Your SAP PM Career in Raipur?",
+        "subtitle": "Seats for the next batch of our SAP PM course in Raipur are filling up fast. Get hands-on training, real project experience, and placement support all in one program.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Book a Free Demo Class",
+        "trust": "Chat with Us on WhatsApp · Limited seats available",
+        "screenTitle": "SAP S/4HANA Live System",
+        "widgets": [
+            "FI/CO",
+            "MM/SD",
+            "Reports",
+            "Master Data"
+        ]
+    },
+    "ewm": {
+        "badge": "Free Live Demo",
+        "title": "Ready to build a career in SAP Warehouse Management?",
+        "subtitle": "Join the next batch of our SAP EWM course in Raipur and get hands-on with real warehouse scenarios, expert mentorship, and a project you can actually talk about in interviews.",
+        "primaryBtn": "Book Your Free Demo Class",
+        "secondaryBtn": "Talk to a Counselor",
+        "trust": "Limited seats available · Real placement support",
+        "screenTitle": "SAP S/4HANA Live System",
+        "widgets": [
+            "FI/CO",
+            "MM/SD",
+            "Reports",
+            "Master Data"
+        ]
+    },
+    "btp": {
+        "badge": "Free Live Demo",
+        "title": "Ready to build a career in SAP BTP?",
+        "subtitle": "Join the next batch of our SAP BTP course in Raipur and get hands-on with the same platform that top enterprises use to run their cloud operations. Limited seats per batch.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to a Course Counselor",
+        "trust": "Classroom sessions in Raipur | Live online batches available | Free demo class",
+        "screenTitle": "SAP S/4HANA Live System",
+        "widgets": [
+            "FI/CO",
+            "MM/SD",
+            "Reports",
+            "Master Data"
+        ]
+    },
+    "grc": {
+        "badge": "Free Live Demo",
+        "title": "Ready to Build a Career in SAP GRC?",
+        "subtitle": "Join Raipur's hands-on SAP GRC course and get trained on real SAP systems, real projects, and real mentorship — not just slides.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to a Course Advisor",
+        "trust": "Limited seats available · Real placement support",
+        "screenTitle": "SAP S/4HANA Live System",
+        "widgets": [
+            "FI/CO",
+            "MM/SD",
+            "Reports",
+            "Master Data"
+        ]
+    },
+    "successfactors": {
+        "badge": "Free Live Demo",
+        "title": "Ready to Build Your Career in SAP SuccessFactors?",
+        "subtitle": "Join Raipur's leading SAP SF training program and get hands-on skills, expert mentorship, and certification support all in one place.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Book Your Free Demo Class",
+        "trust": "Chat with Us on WhatsApp · Limited seats available",
+        "screenTitle": "SAP S/4HANA Live System",
+        "widgets": [
+            "FI/CO",
+            "MM/SD",
+            "Reports",
+            "Master Data"
+        ]
+    },
+    "abap": {
+        "badge": "Free Live Demo",
+        "title": "Your SAP Career Starts Right Here in Raipur",
+        "subtitle": "Join the most trusted SAP ABAP course in Raipur and learn directly from experienced SAP professionals. Limited seats available for the upcoming batch.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to a Course Advisor",
+        "trust": "Limited seats available · Real placement support",
+        "screenTitle": "SAP S/4HANA Live System",
+        "widgets": [
+            "FI/CO",
+            "MM/SD",
+            "Reports",
+            "Master Data"
+        ]
+    },
+    "hana": {
+        "badge": "Free Live Demo",
+        "title": "Ready to Start Your SAP S/4 HANA Career in Raipur?",
+        "subtitle": "Seats are limited in every batch to keep training practical and personal. Take the first step toward a stable, in-demand career in enterprise technology.",
+        "primaryBtn": "Book Your Free Demo Class",
+        "secondaryBtn": "Talk to a Course Counselor",
+        "trust": "Limited seats available · Real placement support",
+        "screenTitle": "SAP S/4HANA Live System",
+        "widgets": [
+            "FI/CO",
+            "MM/SD",
+            "Reports",
+            "Master Data"
+        ]
+    },
+    "bwbi": {
+        "badge": "Free Live Demo",
+        "title": "Start Your SAP BW/BI Career Today — Right Here in Raipur",
+        "subtitle": "Seats for the next batch of our SAP BW/BI course in Raipur are filling fast. Get hands-on SAP training, real project exposure, and placement support — all in one program.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to a Course Advisor",
+        "trust": "Limited seats available · Real placement support",
+        "screenTitle": "SAP S/4HANA Live System",
+        "widgets": [
+            "FI/CO",
+            "MM/SD",
+            "Reports",
+            "Master Data"
+        ]
+    },
+    "basis": {
+        "badge": "Free Live Demo",
+        "title": "Start Your SAP Basis Career Today with Raipur's Most Practical SAP Basis Course",
+        "subtitle": "Seats are limited for our upcoming batch. Join hands-on SAP Basis training in Raipur and take the first step toward a stable, high-demand IT career.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Book a Free Demo Class",
+        "trust": "Chat with Our Course Advisor · Raipur, Chhattisgarh",
+        "screenTitle": "SAP S/4HANA Live System",
+        "widgets": [
+            "FI/CO",
+            "MM/SD",
+            "Reports",
+            "Master Data"
+        ]
+    },
+    "datascience": {
+        "badge": "",
+        "title": "",
+        "subtitle": "",
+        "primaryBtn": "",
+        "secondaryBtn": "",
+        "trust": "",
+        "screenTitle": "",
+        "widgets": []
+    },
+    "dataanalytics": {
+        "badge": "",
+        "title": "",
+        "subtitle": "",
+        "primaryBtn": "",
+        "secondaryBtn": "",
+        "trust": "",
+        "screenTitle": "",
+        "widgets": []
+    },
+    "businessanalytics": {
+        "badge": "",
+        "title": "",
+        "subtitle": "",
+        "primaryBtn": "",
+        "secondaryBtn": "",
+        "trust": "",
+        "screenTitle": "",
+        "widgets": []
+    },
+    "ai": {
+        "badge": "",
+        "title": "",
+        "subtitle": "",
+        "primaryBtn": "",
+        "secondaryBtn": "",
+        "trust": "",
+        "screenTitle": "",
+        "widgets": []
+    },
+    "fullstack": {
+        "badge": "",
+        "title": "",
+        "subtitle": "",
+        "primaryBtn": "",
+        "secondaryBtn": "",
+        "trust": "",
+        "screenTitle": "",
+        "widgets": []
+    },
+    "java": {
+        "badge": "",
+        "title": "",
+        "subtitle": "",
+        "primaryBtn": "",
+        "secondaryBtn": "",
+        "trust": "",
+        "screenTitle": "",
+        "widgets": []
+    },
+    "python": {
+        "badge": "",
+        "title": "",
+        "subtitle": "",
+        "primaryBtn": "",
+        "secondaryBtn": "",
+        "trust": "",
+        "screenTitle": "",
+        "widgets": []
+    },
+    "salesforce": {
+        "badge": "",
+        "title": "",
+        "subtitle": "",
+        "primaryBtn": "",
+        "secondaryBtn": "",
+        "trust": "",
+        "screenTitle": "",
+        "widgets": []
+    },
+    "tableau": {
+        "badge": "",
+        "title": "",
+        "subtitle": "",
+        "primaryBtn": "",
+        "secondaryBtn": "",
+        "trust": "",
+        "screenTitle": "",
+        "widgets": []
+    },
+    "powerbi": {
+        "badge": "",
+        "title": "",
+        "subtitle": "",
+        "primaryBtn": "",
+        "secondaryBtn": "",
+        "trust": "",
+        "screenTitle": "",
+        "widgets": []
+    },
+    "corehr": {
+        "badge": "",
+        "title": "",
+        "subtitle": "",
+        "primaryBtn": "",
+        "secondaryBtn": "",
+        "trust": "",
+        "screenTitle": "",
+        "widgets": []
+    },
+    "hrpayroll": {
+        "badge": "",
+        "title": "",
+        "subtitle": "",
+        "primaryBtn": "",
+        "secondaryBtn": "",
+        "trust": "",
+        "screenTitle": "",
+        "widgets": []
+    },
+    "hrmanagement": {
+        "badge": "",
+        "title": "",
+        "subtitle": "",
+        "primaryBtn": "",
+        "secondaryBtn": "",
+        "trust": "",
+        "screenTitle": "",
+        "widgets": []
+    },
+    "hrgeneralist": {
+        "badge": "",
+        "title": "",
+        "subtitle": "",
+        "primaryBtn": "",
+        "secondaryBtn": "",
+        "trust": "",
+        "screenTitle": "",
+        "widgets": []
+    },
+    "hranalytics": {
+        "badge": "",
+        "title": "",
+        "subtitle": "",
+        "primaryBtn": "",
+        "secondaryBtn": "",
+        "trust": "",
+        "screenTitle": "",
+        "widgets": []
+    },
+    "hrtraining": {
+        "badge": "",
+        "title": "",
+        "subtitle": "",
+        "primaryBtn": "",
+        "secondaryBtn": "",
+        "trust": "",
+        "screenTitle": "",
+        "widgets": []
+    },
+    "itcourses": {
+        "badge": "",
+        "title": "",
+        "subtitle": "",
+        "primaryBtn": "",
+        "secondaryBtn": "",
+        "trust": "",
+        "screenTitle": "",
+        "widgets": []
+    },
+    "hrcourses": {
+        "badge": "",
+        "title": "",
+        "subtitle": "",
+        "primaryBtn": "",
+        "secondaryBtn": "",
+        "trust": "",
+        "screenTitle": "",
+        "widgets": []
+    },
+    "datavisualization": {
+        "badge": "",
+        "title": "",
+        "subtitle": "",
+        "primaryBtn": "",
+        "secondaryBtn": "",
+        "trust": "",
+        "screenTitle": "",
+        "widgets": []
+    }
+}

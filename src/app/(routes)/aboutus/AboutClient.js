@@ -1,6 +1,7 @@
 // app/aboutus/AboutClient.jsx
 'use client';
 
+import ApplyBanner from '@/components/TestingAbout/ApplyBanner';
 // import Achievements from '@/components/HomePage/Achievements';
 import dynamic from 'next/dynamic';
 import React from 'react';
@@ -26,6 +27,7 @@ const SAPAdoptionRings = dynamic(() => import("@/components/TestingAbout/SapComp
   loading: () => <div className="h-[300px] bg-gray-100 flex items-center justify-center">Loading SAP content...</div>,
 });
 
+
 const AboutClient = ({ branches = [] }) => {
   return (
     <div className="min-h-screen bg-white">
@@ -35,6 +37,7 @@ const AboutClient = ({ branches = [] }) => {
       <Achievements />
       <SAPCompassDial />
       <SAPAdoptionRings />
+      <ApplyBanner />
     </div>
   );
 };

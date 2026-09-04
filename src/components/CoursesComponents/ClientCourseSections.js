@@ -8,6 +8,7 @@ import WhatYouWillLearn from "./WhatYouWillLearn";
 import SkillsAndTools from "./SkillsAndTools";
 import WhoThisIsFor from "./WhoThisIsFor";
 import SapAbapSyllabus from "./SyllabusCard";
+import SapDemoBanner from "./CTAbanner";
 // import {CityLinks} from "@/components/CityLinks";
 // === Above the fold (SSR enabled for SEO-critical content) ===
 const DSHeader = dynamic(() => import("./Header"));
@@ -42,6 +43,7 @@ export default function ClientCourseSections(props) {
     relatedCoursesData,
     currentCityName,
     courseCategory,
+    demoBannerData,
     shouldUseLegacyModules,
   } = props;
 
@@ -127,6 +129,9 @@ export default function ClientCourseSections(props) {
       </>
     );
   }
+
+
+
   // === Default layout (e.g. SAP, HR, Data Analytics) ===
   return (
     <>
@@ -179,6 +184,8 @@ export default function ClientCourseSections(props) {
       <Suspense fallback={null}>
         <FAQ data={faqData} />
       </Suspense>
+
+      <SapDemoBanner {...demoBannerData} />
 
       {shouldUseLegacyModules && (
         <div id="modules" style={{ scrollMarginTop: "80px" }}>

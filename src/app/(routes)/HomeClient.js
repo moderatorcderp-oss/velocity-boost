@@ -4,36 +4,28 @@
 import { useEffect, useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import HeaderCarousel from "@/components/HomePage/HeaderCarousel";
-import faqdata from "../../../public/Jsonfolder/faqdata.json";
 import WhyChooseSection from "@/components/HomePage/WhyChooseSection";
 import WhatWeOffer from "../../components/HomePage/WhatWeOffer"
 import Container from "@/components/StandardContainer";
+
+// Dynamic FAQ from masterdata (same pattern as other pages)
+import { faqData } from "@/lib/masterData";
+import SapDemoBanner from "@/components/CoursesComponents/CTAbanner";
+
 
 const Marquee = dynamic(() => import("@/components/HomePage/Marquee2"), {
   ssr: false,
   loading: () => <div style={{ height: "60px" }} />,
 });
 
-// const Chevron = dynamic(() => import("@/components/HomePage/Chevron"), {
-//   ssr: false,
-//   loading: () => <div style={{ minHeight: "100px" }} />,
-// });
-
 const TrainingProcessSection = dynamic(() => import('@/components/HomePage/ProcessSection'), {
   ssr: false,
 })
-
-// const Keypoints = dynamic(() => import("@/components/HomePage/Keypoints"), {
-//   ssr: false,
-//   loading: () => <div style={{ minHeight: "300px" }} />,
-// });
 
 const OurClients = dynamic(() => import("@/components/HomePage/OurClients"), {
   ssr: false,
   loading: () => <div style={{ minHeight: "250px" }} />,
 });
-
-// ── NEW: compact placed-students ticker ──────────────────────────────────────
 
 const OurStats = dynamic(() => import("@/components/HomePage/OurStats"), {
   ssr: false,
@@ -63,15 +55,13 @@ const FAQAccordion = dynamic(() => import("@/components/CoursesComponents/FAQ"),
   loading: () => <div style={{ minHeight: '600px' }} />
 })
 
-
-const allowedFaqKeys = ["hrhcmfaq"];
-const homeFaqData = allowedFaqKeys.flatMap((key) => {
-  const sectionGroup = faqdata?.[key];
-  if (!sectionGroup) return [];
-
-  const firstSection = Object.values(sectionGroup)[0];
-  return firstSection ? [firstSection] : [];
-});
+// Dynamically pick FAQ data for the home page from masterdata
+// (mirrors the pattern used on course pages)
+const homeFaqData = (() => {
+  const section = faqData?.homefaq?.HomeFAQ;
+  if (!section || section.length === 0) return [];
+  return section;
+})();
 
 const LazySection = ({ children, fallback, rootMargin = "350px", intrinsicSize }) => {
   const ref = useRef(null);
@@ -161,6 +151,7 @@ export default function HomeClient() {
           <LazySection fallback={<div style={{ minHeight: "250px" }} />}>
             <OurStats />
           </LazySection>
+          <SapDemoBanner />
           <LazySection fallback={<div style={{ minHeight: "400px" }} />}>
             <FAQAccordion data={homeFaqData} />
           </LazySection>

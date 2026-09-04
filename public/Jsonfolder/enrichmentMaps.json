@@ -1101,5 +1101,28 @@
             "datavisualfaq",
             "DataVisualFAQ"
         ]
+    },
+    "demoBannerMap": {
+        "sap-abap": "abap",
+        "sap-ariba": "ariba",
+        "sap-basis": "basis",
+        "sap-fico": "fico",
+        "sap-ewm": "ewm",
+        "sap-mm": "mm",
+        "sap-bwbi": "bwbi",
+        "sap-ps": "ps",
+        "sap-pm": "pm",
+        "sap-qm": "qm",
+        "sap-pp": "pp",
+        "sap-s4-hana": "hana",
+        "sap-hr-hcm": "hrhcm",
+        "sap-scm": "scm",
+        "sap-successfactors": "successfactors",
+        "sap-sd": "sd",
+        "sap": "sap",
+        "sap-ehs": "ehs",
+        "sap-ibp": "ibp",
+        "sap-btp": "btp",
+        "sap-grc": "grc"
     }
 }
