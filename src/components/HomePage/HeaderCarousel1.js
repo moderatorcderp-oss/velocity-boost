@@ -33,6 +33,7 @@ export default function CareerHeroSlide({ onOpenForm }) {
           alt="AI powered learning, SAP industry standard, smart assessments, personalized roadmap"
           width={1200}
           height={1500}
+          fetchPriority="high"
           className="w-full h-auto"
           priority
         />
