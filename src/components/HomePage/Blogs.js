@@ -187,7 +187,7 @@ const LatestBlogs = () => {
 
   return (
     <>
-      <div id="latest-blogs" className="relative w-full mx-auto overflow-hidden py-8 md:py-16 px-4">
+      <div id="latest-blogs" className="bg-black relative w-full mx-auto overflow-hidden py-8 md:py-16 px-4">
         {/* Header Section */}
         
          <div className="mb-10 text-center sm:mb-14">
