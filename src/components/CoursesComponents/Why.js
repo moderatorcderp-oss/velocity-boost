@@ -1,15 +1,10 @@
-// components/CoursesComponents/Why.js (Redesigned — "Field Notes")
+// components/CoursesComponents/Why.js
 
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import styles from "@/styles/CoursesComponents/Why.module.css";
 import { useInView } from "react-intersection-observer";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLightbulb, faChevronDown } from "@fortawesome/free-solid-svg-icons";
-
-// Rotates through a small palette of "subject tab" colors, one per card.
-const TAB_COLORS = ["teal", "violet", "amber", "raspberry"];
 
 const Why = ({ data }) => {
   const [sectionRef, sectionInView] = useInView({
@@ -29,7 +24,7 @@ const Why = ({ data }) => {
   return (
     <div
       ref={sectionRef}
-      className={`${styles.containerYds} ${sectionInView ? styles.fadeIn : styles.hidden}`}
+      className={`${styles.containerYds} py-0 ${sectionInView ? styles.fadeIn : styles.hidden}`}
     >
       <SectionComponent section={data} />
     </div>
@@ -38,284 +33,148 @@ const Why = ({ data }) => {
 
 const SectionComponent = ({ section }) => {
   const titleRef = useRef(null);
-  // Each card expands independently - clicking one never affects the others
-  const [expandedCards, setExpandedCards] = useState({});
-  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     if (titleRef.current) {
-      const title = titleRef.current;
-      title.classList.add(styles.titleAnimation);
+      titleRef.current.classList.add(styles.titleAnimation);
     }
   }, []);
 
-  useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
+  const cards = section?.cards || [];
 
-    checkMobile();
-    window.addEventListener("resize", checkMobile);
-    return () => window.removeEventListener("resize", checkMobile);
-  }, []);
+  // Pull just the "answer" out of every card — flatten string vs array content
+  // into one plain string each, drop anything empty.
+  const paragraphs = cards
+    .map((card) =>
+      Array.isArray(card.content) ? card.content.join(" ") : card.content
+    )
+    .filter(Boolean);
 
-  const handleExpandToggle = (cardIndex) => {
-    setExpandedCards((prev) => ({
-      ...prev,
-      [cardIndex]: !prev[cardIndex],
-    }));
-  };
+  // Any structured listItems across cards become a single consolidated
+  // "Key points" list, rather than living inside separate cards.
+  const keyPoints = cards.flatMap((card) => card.listItems || []);
 
-  const isCardExpanded = (cardIndex) => expandedCards[cardIndex] || false;
+  const heading = section?.title || "Course overview";
+  const kicker = section?.kicker || section?.subtitle || "What this course covers";
 
-  return (
-    <>
-      <div ref={titleRef}>
-        <div className="text-center mb-4 sm:mb-14 md:mb-16">
-          <div className="relative z-8">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-slate-950 via-blue-900 to-slate-900 bg-clip-text text-transparent mb-2">
-              Course Overview
-            </h2>
-            <div className="w-20 h-1 mx-auto bg-gradient-to-r from-blue-500 to-blue-700 rounded-full mb-4"></div>
-          </div>
-        </div>
-      </div>
-
-      <div className={styles.cardsContainerYds}>
-        {section.cards && section.cards.length > 0 ? (
-          section.cards.map((card, index) => (
-            <DataCard
-              key={index}
-              title={card.title}
-              content={card.content}
-              listItems={card.listItems}
-              index={index}
-              tabColor={TAB_COLORS[index % TAB_COLORS.length]}
-              expanded={isCardExpanded(index)}
-              onExpandToggle={() => handleExpandToggle(index)}
-              isMobile={isMobile}
-            />
-          ))
-        ) : (
-          <p className={styles.noCards}>No cards available for this section.</p>
-        )}
-      </div>
-    </>
-  );
-};
-
-const DataCard = ({
-  title,
-  content,
-  listItems,
-  index,
-  tabColor,
-  expanded,
-  onExpandToggle,
-  isMobile,
-}) => {
-  const [cardRef, cardInView] = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-    rootMargin: "0px 0px -50px 0px",
-  });
-
-  const [showReadMore, setShowReadMore] = useState(false);
-  const contentRef = useRef(null);
-
-  // Character limits for different screen sizes
-  const DESKTOP_CHAR_LIMIT = 120;
-  const MOBILE_CHAR_LIMIT = 100;
-
-  // Calculate total content length
-  const getTotalContentLength = () => {
-    let totalLength = 0;
-
-    if (Array.isArray(content)) {
-      totalLength += content.join(" ").replace(/<[^>]*>/g, "").length;
-    } else {
-      totalLength += content.replace(/<[^>]*>/g, "").length;
-    }
-
-    if (listItems && listItems.length > 0) {
-      totalLength += listItems.join(" ").length;
-    }
-
-    return totalLength;
-  };
-
-  // Check if content should be truncated
-  useEffect(() => {
-    const totalLength = getTotalContentLength();
-    const charLimit = isMobile ? MOBILE_CHAR_LIMIT : DESKTOP_CHAR_LIMIT;
-    setShowReadMore(totalLength > charLimit);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [content, listItems, isMobile]);
-
-  // Truncate content based on character limit
-  const getTruncatedContent = () => {
-    const charLimit = isMobile ? MOBILE_CHAR_LIMIT : DESKTOP_CHAR_LIMIT;
-    let currentLength = 0;
-    const truncatedContent = [];
-    const truncatedListItems = [];
-
-    // Process content paragraphs
-    if (Array.isArray(content)) {
-      for (let i = 0; i < content.length; i++) {
-        const paragraph = content[i];
-        const textLength = paragraph.replace(/<[^>]*>/g, "").length;
-
-        if (currentLength + textLength <= charLimit) {
-          truncatedContent.push(paragraph);
-          currentLength += textLength;
-        } else {
-          const remainingChars = charLimit - currentLength;
-          if (remainingChars > 50) {
-            const truncatedParagraph =
-              paragraph.replace(/<[^>]*>/g, "").substring(0, remainingChars) +
-              "...";
-            truncatedContent.push(truncatedParagraph);
-          }
-          break;
-        }
-      }
-    } else {
-      const textLength = content.replace(/<[^>]*>/g, "").length;
-      if (textLength <= charLimit) {
-        truncatedContent.push(content);
-        currentLength = textLength;
-      } else {
-        const truncatedText =
-          content.replace(/<[^>]*>/g, "").substring(0, charLimit) + "...";
-        truncatedContent.push(truncatedText);
-        currentLength = charLimit;
-      }
-    }
-
-    // Process list items if there's space left
-    if (listItems && listItems.length > 0 && currentLength < charLimit) {
-      for (let i = 0; i < listItems.length; i++) {
-        const item = listItems[i];
-        if (currentLength + item.length <= charLimit) {
-          truncatedListItems.push(item);
-          currentLength += item.length;
-        } else {
-          break;
-        }
-      }
-    }
-
-    return { content: truncatedContent, listItems: truncatedListItems };
-  };
-
-  const renderContent = () => {
-    if (!showReadMore || expanded) {
-      // Show full content
-      return (
-        <>
-          {Array.isArray(content) ? (
-            content.map((paragraph, idx) => (
-              <p
-                key={idx}
-                className={styles.textMutedForegroundClass}
-                dangerouslySetInnerHTML={{ __html: paragraph }}
-              ></p>
-            ))
-          ) : (
-            <p
-              className={styles.textMutedForegroundClass}
-              dangerouslySetInnerHTML={{ __html: content }}
-            ></p>
-          )}
-
-          {listItems && listItems.length > 0 && (
-            <ul className={styles.listClass}>
-              {listItems.map((item, i) => (
-                <li key={i} className={styles.listItem}>
-                  {item}
-                </li>
-              ))}
-            </ul>
-          )}
-        </>
-      );
-    } else {
-      // Show truncated content
-      const truncated = getTruncatedContent();
-      return (
-        <>
-          {truncated.content.map((paragraph, idx) => (
-            <p
-              key={idx}
-              className={styles.textMutedForegroundClass}
-              dangerouslySetInnerHTML={{ __html: paragraph }}
-            ></p>
-          ))}
-
-          {truncated.listItems.length > 0 && (
-            <ul className={styles.listClass}>
-              {truncated.listItems.map((item, i) => (
-                <li key={i} className={styles.listItem}>
-                  {item}
-                </li>
-              ))}
-            </ul>
-          )}
-        </>
-      );
-    }
-  };
+  if (paragraphs.length === 0) {
+    return (
+      <section
+        className="w-full px-6 py-24 text-center"
+        style={{ backgroundColor: "#fbfbfb" }}
+      >
+        <p style={{ color: "#4B5163", fontFamily: "'IBM Plex Sans', sans-serif" }}>
+          No content available for this section.
+        </p>
+      </section>
+    );
+  }
 
   return (
-    <div
-      ref={cardRef}
-      className={`${styles.cardClassYds} ${cardInView ? styles.cardVisible : styles.cardHidden
-        } ${expanded ? styles.cardExpanded : ""}`}
-      style={{ "--card-delay": `${index * 0.12}s` }}
-      data-tab={tabColor}
+    <section
+      className="relative w-full overflow-hidden px-6 py-24 md:py-15"
+      style={{ backgroundColor: "#fbfbfb" }}
     >
-      {/* Spiral-bound punch holes across the top edge */}
-      <div className={styles.spiralRow} aria-hidden="true">
-        {Array.from({ length: 7 }).map((_, i) => (
-          <span key={i} className={styles.spiralRing}></span>
-        ))}
-      </div>
+      {/* faint ruled-paper texture */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0"
+        style={{
+          opacity: 0.4,
+          backgroundImage:
+            "repeating-linear-gradient(to bottom, transparent, transparent 35px, #D8D2C2 35px, #D8D2C2 36px)",
+        }}
+      />
 
-      {/* Subject tab, like a filing-folder marker */}
-      <div className={styles.cardTab} aria-hidden="true">
-        <FontAwesomeIcon icon={faLightbulb} className={styles.tabIcon} />
-        <span className={styles.tabLabel}>
-          Note — {String(index + 1).padStart(2, "0")}
-        </span>
-      </div>
-
-      <div className={styles.cardHeader}>
-        <h2
-          className={styles.textPrimaryClass}
-          dangerouslySetInnerHTML={{ __html: title }}
-        ></h2>
-      </div>
-
-      <div ref={contentRef} className={styles.cardContent}>
-        {renderContent()}
-      </div>
-
-      {showReadMore && (
-        <div className={styles.readMoreContainer}>
-          <button
-            className={styles.readMoreButton}
-            onClick={onExpandToggle}
-            aria-expanded={expanded}
+      <div className="relative mx-auto max-w-6xl">
+        <div className="mb-14 max-w-2xl md:mb-20">
+          <p
+            className="mb-3 text-base italic"
+            style={{ color: "#6B4E1D", fontFamily: "'IBM Plex Serif', Georgia, serif" }}
           >
-            <span>{expanded ? "Close the page" : "Keep reading"}</span>
-            <FontAwesomeIcon
-              icon={faChevronDown}
-              className={styles.readMoreChevron}
-            />
-          </button>
+            {kicker}
+          </p>
+          <h2
+            ref={titleRef}
+            className="text-4xl leading-[1.15] tracking-tight md:text-5xl"
+            style={{
+              color: "#12192B",
+              fontFamily: "'IBM Plex Serif', Georgia, serif",
+              fontWeight: 600,
+            }}
+          >
+            {heading}
+          </h2>
         </div>
-      )}
-    </div>
+
+        <div
+          className={`grid grid-cols-1 gap-y-12 ${
+            keyPoints.length > 0 ? "lg:grid-cols-12 lg:gap-x-16" : ""
+          }`}
+        >
+          {/* Combined answers, as flowing paragraphs */}
+          <div className={keyPoints.length > 0 ? "lg:col-span-8" : ""}>
+            <div
+              className="space-y-6 text-[17px] md:text-[18px]"
+              style={{
+                color: "#3D4257",
+                fontFamily: "'IBM Plex Sans', -apple-system, sans-serif",
+                lineHeight: 1.75,
+                maxWidth: "62ch",
+              }}
+            >
+              {paragraphs.map((html, idx) => (
+                <p
+                  key={idx}
+                  className={idx === 0 ? "drop-cap" : undefined}
+                  dangerouslySetInnerHTML={{ __html: html }}
+                />
+              ))}
+            </div>
+          </div>
+
+          {/* Only rendered when cards actually carry listItems */}
+          {keyPoints.length > 0 && (
+            <div className="lg:col-span-4">
+              <div className="border-t pt-6" style={{ borderColor: "#C9C2AC" }}>
+                <h3
+                  className="mb-4 text-sm"
+                  style={{ color: "#12192B", fontFamily: "'IBM Plex Sans', sans-serif", fontWeight: 500 }}
+                >
+                  Key points
+                </h3>
+                <ul className="space-y-2">
+                  {keyPoints.map((item, i) => (
+                    <li
+                      key={i}
+                      className="text-[15px]"
+                      style={{ color: "#4B5163", fontFamily: "'IBM Plex Sans', sans-serif" }}
+                      dangerouslySetInnerHTML={{ __html: item }}
+                    />
+                  ))}
+                </ul>
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+
+      <style jsx global>{`
+        @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@400;500&display=swap");
+      `}</style>
+      <style jsx>{`
+        .drop-cap::first-letter {
+          float: left;
+          font-family: "IBM Plex Serif", Georgia, serif;
+          font-size: 3.6rem;
+          line-height: 0.85;
+          font-weight: 600;
+          color: #6b4e1d;
+          padding-right: 0.5rem;
+          padding-top: 0.35rem;
+        }
+      `}</style>
+    </section>
   );
 };
 

@@ -21,7 +21,7 @@ const HrCard = () => {
   }
   
   return (
-    <div className={styles.cardsSection}>
+    <div className={`bg-white ${styles.cardsSection}`}>
   <SectionHeading title="HR Courses We Offer" />
 
   <div className={styles.pageContent}>

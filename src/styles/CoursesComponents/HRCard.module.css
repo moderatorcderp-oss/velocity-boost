@@ -5,6 +5,7 @@
   width: 100%;
   max-width: 1800px;
   margin: auto;
+  background-color: white;
 }
 
 /* Title */
@@ -38,6 +39,7 @@
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
   justify-content: center;
+  background-color: white;
 }
 
 /* Individual Card */
