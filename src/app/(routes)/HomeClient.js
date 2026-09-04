@@ -12,6 +12,10 @@ import Container from "@/components/StandardContainer";
 import { faqData } from "@/lib/masterData";
 import SapDemoBanner from "@/components/CoursesComponents/CTAbanner";
 
+// Homepage CTA data
+import sapDemoBannerData from "../../../public/Jsonfolder/cities/pune/CTAbanner.json"; // Pune / default
+// or if you prefer city-aware later:
+// import { getDemoBannerForCity } from "@/lib/masterData";
 
 const Marquee = dynamic(() => import("@/components/HomePage/Marquee2"), {
   ssr: false,
@@ -56,12 +60,14 @@ const FAQAccordion = dynamic(() => import("@/components/CoursesComponents/FAQ"),
 })
 
 // Dynamically pick FAQ data for the home page from masterdata
-// (mirrors the pattern used on course pages)
 const homeFaqData = (() => {
   const section = faqData?.homefaq?.HomeFAQ;
   if (!section || section.length === 0) return [];
   return section;
 })();
+
+// Homepage CTA Banner data
+const homeCtaData = sapDemoBannerData?.homepage || {};
 
 const LazySection = ({ children, fallback, rootMargin = "350px", intrinsicSize }) => {
   const ref = useRef(null);
@@ -135,7 +141,6 @@ export default function HomeClient() {
             <Courses />
           </LazySection>
           <LazySection fallback={<div style={{ minHeight: "300px" }} />}>
-            {/* <Keypoints /> */}
             <WhyChooseSection />
           </LazySection>
           <LazySection fallback={<div />}>
@@ -147,11 +152,13 @@ export default function HomeClient() {
           <LazySection fallback={<div style={{ minHeight: "400px" }} />}>
             <LatestBlogs />
           </LazySection>
-          {/* ── Placed students ticker (new) — sits right after PlacementSection ── */}
           <LazySection fallback={<div style={{ minHeight: "250px" }} />}>
             <OurStats />
           </LazySection>
-          <SapDemoBanner />
+
+          {/* Homepage CTA Banner */}
+          <SapDemoBanner {...homeCtaData} />
+
           <LazySection fallback={<div style={{ minHeight: "400px" }} />}>
             <FAQAccordion data={homeFaqData} />
           </LazySection>
