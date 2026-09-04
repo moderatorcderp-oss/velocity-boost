@@ -212,23 +212,10 @@ const BatchTicket = ({ batch, index }) => {
           <span>{batch.timeRange || "Time to be announced"}</span>
         </div>
 
-        <div className={styles.dateRow}>Starts {startDate || "soon"}</div>
-
-        {countdown && (
-          <div className={styles.countdownRow} aria-label="Time until batch starts">
-            <span className={styles.countdownValue}>{countdown.days}d</span>
-            <span className={styles.countdownValue}>{countdown.hours}h</span>
-            <span className={styles.countdownValue}>{countdown.minutes}m</span>
-            <span className={styles.countdownLabel}>until start</span>
-          </div>
-        )}
-
         <div className="w-full flex justify-start gap-2">
             {batch.mode && <div className={styles.modeChip}>{batch.mode}</div>}
             {batch.fees && <div className={`font-sans font-semibold ${styles.modeChip}`}>&#x20B9; {batch.fees}</div>}
         </div>
-
-        
 
         {seatsLeft !== null && totalSeats > 0 && (
           <div className={styles.seatsBlock}>
