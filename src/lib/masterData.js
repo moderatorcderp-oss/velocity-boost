@@ -23,8 +23,8 @@ import skillsDataRaipur from "../../public/Jsonfolder/cities/raipur/SkillsLearn-
 
 //who this is for
 import whoDataPune from "../../public/Jsonfolder/cities/pune/Whothisisfor-pune.json";
-import whoDataMumbai from "../../public/Jsonfolder/cities/mumbai/WhoThisIsFor-mumbai.json";
-import whoDataRaipur from "../../public/Jsonfolder/cities/raipur/WhoThisIsFor-raipur.json";
+import whoDataMumbai from "../../public/Jsonfolder/cities/mumbai/Whothisisfor-mumbai.json";
+import whoDataRaipur from "../../public/Jsonfolder/cities/raipur/Whothisisfor-raipur.json";
 
 //certificate data
 import certificateDataPune from "../../public/Jsonfolder/cities/pune/certificatedata-pune.json";
