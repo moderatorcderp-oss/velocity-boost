@@ -255,10 +255,13 @@ const DSHeader = ({ data }) => {
       <div className="pointer-events-none absolute inset-0 z-[1] overflow-hidden" aria-hidden="true">
         <Image
           src="https://res.cloudinary.com/bropujss/image/upload/v1788153580/headerImg_ftsnkg.webp"
-          alt="headerImg"
-          width={1400}
-          height={500}
+          alt="header img"
+          width={861}
+          height={515}
           priority
+          fetchPriority="high"
+          loading="eager"
+          quality={70}
           sizes="100vw"
           className={styles.heroImage}
         />

@@ -51,9 +51,6 @@
   margin: 0 auto;
   overflow: hidden;
   isolation: isolate;
-  background-image: url('https://res.cloudinary.com/djdhtkjhn/image/upload/v1785563975/updatedHeroSec_eyyvqz.webp');
-  background-size: cover;
-  background-position: center;
 }
 
 .heroImage {
