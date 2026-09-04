@@ -89,7 +89,7 @@ const jsonLd = {
         availableLanguage: ["English"],
       },
       description:
-        "We offer expert-led training in SAP, Software Development, and HR courses with strong placement support for your career.",
+        "We offer expert-led training in SAP, Software Development, and HR courses with 100% placement support for your career.",
       address: [
         {
           "@type": "PostalAddress",

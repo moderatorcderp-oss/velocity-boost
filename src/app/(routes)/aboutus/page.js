@@ -113,7 +113,7 @@ const jsonLd = {
         height: 70,
       },
       description:
-        "Connecting Dots ERP provides SAP training, HR courses, IT programs, and placement support to build successful careers.",
+        "Connecting Dots ERP provides SAP training, HR courses, IT programs, and 100% placement support to build successful careers.",
       telephone: "+919004002941",
       sameAs: [
         "https://www.facebook.com/sapinstallation.pune.9",

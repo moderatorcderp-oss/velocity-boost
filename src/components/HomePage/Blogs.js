@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
-import styles from "@/styles/HomePage/Placement.module.css";
 
 const LatestBlogs = () => {
   const [blogs, setBlogs] = useState([]);

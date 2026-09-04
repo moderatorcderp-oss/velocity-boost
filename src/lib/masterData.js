@@ -131,9 +131,9 @@ const generatedCourseData = generatedCourseSpecs.reduce((acc, spec) => {
     fullTitle: spec.fullTitle,
     category: spec.category,
     slug: spec.slug,
-    description: `Join the best ${spec.title} course in {city} and master ${spec.fullTitle} with expert-led training, real-time projects, certification guidance, and placement support.`,
+    description: `Join the best ${spec.title} course in {city} and master ${spec.fullTitle} with expert-led training, real-time projects, certification guidance, and 100%  placement support.`,
     metaTitle: `${spec.title} Course in {city} | Training & Certification`,
-    metaDescription: `Master ${spec.title} in {city}. Expert-led training, hands-on projects, certification guidance, and placement support for career growth.`,
+    metaDescription: `Master ${spec.title} in {city}. Expert-led training, hands-on projects, certification guidance, and 100%  placement support for career growth.`,
     duration: spec.duration,
     price: spec.price,
     modules: spec.modules,
@@ -237,7 +237,7 @@ const generatedCourseData = generatedCourseSpecs.reduce((acc, spec) => {
         "Industry-oriented curriculum with practical assignments.",
         "Experienced trainers with project exposure.",
         "Flexible batches for students and working professionals.",
-        "Interview preparation and placement support.",
+        "Interview preparation and 100%  placement support.",
         "Certification-focused learning path.",
       ],
       listItemAfterIndex: 1,
@@ -269,7 +269,7 @@ const generatedCourseData = generatedCourseSpecs.reduce((acc, spec) => {
         {
           question: `Does this ${spec.title} course include placement support?`,
           answer:
-            "Yes. The course includes resume guidance, interview preparation, and placement support from the training team.",
+            "Yes. The course includes resume guidance, interview preparation, and 100%  placement support from the training team.",
         },
         {
           question: `How long is the ${spec.title} course?`,
@@ -443,10 +443,10 @@ if (coursesData.chatgpt) {
     category: "it",
     slug: "generative-ai",
     description:
-      "Master Generative AI in {city} with expert-led training in AI tools, prompt engineering, automation, and real-world AI projects. Our Generative AI course in {city} includes hands-on practice, certification guidance, and placement support.",
+      "Master Generative AI in {city} with expert-led training in AI tools, prompt engineering, automation, and real-world AI projects. Our Generative AI course in {city} includes hands-on practice, certification guidance, and 100%  placement support.",
     metaTitle: "Generative AI Course in {city} | AI Training & Certification",
     metaDescription:
-      "Master Generative AI in {city}. Learn AI tools, prompt engineering, automation, projects, certification guidance, and placement support.",
+      "Master Generative AI in {city}. Learn AI tools, prompt engineering, automation, projects, certification guidance, and 100%  placement support.",
     header: {
       ...(base.header || {}),
       title: "Generative AI Course in {city}",

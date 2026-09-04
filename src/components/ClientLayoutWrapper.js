@@ -110,7 +110,6 @@ export default function ClientLayoutWrapper({ children }) {
   const pathname = usePathname();
   const [hasUserEngaged, setHasUserEngaged] = useState(false);
   const showFloatingWidgets = useDeferredRender(1800);
-  const showDecorativeWidgets = useDeferredRender(3000);
   const showLeadWidgets = useDeferredRender(4500);
   const shouldHideComponent = hiddenRoutes.some((path) =>
     pathname?.startsWith(path)
@@ -172,13 +171,6 @@ export default function ClientLayoutWrapper({ children }) {
     <CityProvider>
       <PopupFormProvider>
         {children}
-
-        {/* {showDecorativeWidgets && (
-          <>
-            <BackgroundAnimation />
-            {!shouldHideComponent && <WaveComponent />}
-          </>
-        )} */}
 
         {showFloatingWidgets && (
           <>

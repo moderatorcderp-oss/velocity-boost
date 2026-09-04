@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import { MapPin, Building2, Phone, Mail, Navigation } from "lucide-react";
+import { MapPin, Building2, Phone, Navigation } from "lucide-react";
 
 // Company locations data
 const companyLocations = [

@@ -10,7 +10,7 @@ export const placementKeywords = [
   "job placement",
   "placement assistance",
   "100% placement",
-  "placement support",
+  "100% placement support",
   "job assistance",
   "SAP placement",
   "IT placement",
@@ -138,7 +138,7 @@ export const jsonLd = {
       "@id": `${placementUrl}#placementservice`,
       name: "Job Placement Assistance",
       description: placementDescription,
-      serviceType: "Career placement support",
+      serviceType: "Career 100% placement support",
       provider: {
         "@id": "https://connectingdotserp.com/#organization",
       },

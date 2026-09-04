@@ -3,7 +3,6 @@
 import { Briefcase, Calendar, Globe2, Users } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useState, useRef, useMemo } from "react";
-import SectionBackground from "../BackgroundCss/SectionBackground";
 import TrustBar from "./TrustBar";
 
 // Lightweight replacement for react-countup — no deps, animates once on view
@@ -61,9 +60,6 @@ const premiumClients = [
   "https://res.cloudinary.com/bropujss/image/upload/v1784196399/baja_xxmf3l_saurcq.webp",
   "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784196972/bharatpe_p9ixem_wio63w.webp",
   "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784199566/pizza-hut_dhd1o8_argx2k.webp",
-];
-
-const enterpriseClients = [
   "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784197632/exl_zle2ra_mg0tfy.webp",
   "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784199677/volkswagon_pcvphe_cdvnhu.webp",
   "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784197965/jindal_njgnxp_nbmnsn.webp",
@@ -74,9 +70,6 @@ const enterpriseClients = [
   "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784199455/moneytap_dizaqo_qccgwl.webp",
   "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784199726/whitehat_emmomu_uzfh8l.webp",
   "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784197326/cummins_alim2w_tdory9.webp",
-];
-
-const growingClients = [
   "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784196748/airmeet_idryrc_lcmgoo.avif",
   "https://res.cloudinary.com/bropujss/image/upload/v1784196453/ask_nncu3a_nucsuv.avif",
   "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784196925/bharatgri_weuerc_vltjko.webp",
@@ -88,8 +81,6 @@ const growingClients = [
   "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784197917/iss_gcjk9j_ymm5xy.webp",
   "https://res.cloudinary.com/djdhtkjhn/image/upload/v1784199398/kelly_bkcgnw_emivqo.webp",
 ];
-
-const allClients = [...premiumClients, ...enterpriseClients, ...growingClients];
 
 const statsData = [
   { number: 15, text: "Years experience", Icon: Calendar },
@@ -238,7 +229,7 @@ const OurClients = () => {
                 <div className="absolute left-0 top-0 bottom-0 w-8 sm:w-16 bg-gradient-to-r from-blue-50 to-transparent z-10 pointer-events-none"></div>
                 <div className="absolute right-0 top-0 bottom-0 w-8 sm:w-16 bg-gradient-to-l from-blue-50 to-transparent z-10 pointer-events-none"></div>
                 <MarqueeRow
-                  logos={allClients}
+                  logos={premiumClients}
                   direction="left"
                   speed="slow"
                   shuffle={true}
@@ -247,7 +238,6 @@ const OurClients = () => {
             </div>
           </div>
         </section>
-      
     </div>
   );
 };

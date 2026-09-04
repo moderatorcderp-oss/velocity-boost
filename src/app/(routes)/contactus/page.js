@@ -224,7 +224,7 @@ const jsonLd = {
       url: "https://connectingdotserp.com/",
       name: "Connecting Dots ERP",
       description:
-        "Connecting Dots ERP - Leading Training Institute for SAP, IT & HR Courses with Placement Support.",
+        "Connecting Dots ERP - Leading Training Institute for SAP, IT & HR Courses with 100% Placement Support.",
       publisher: {
         "@id": "https://connectingdotserp.com/#organization",
       },
@@ -250,7 +250,7 @@ const jsonLd = {
       "@id": "https://connectingdotserp.com/pune#localbusiness",
       name: "Connecting Dots ERP - Pune Branch",
       description:
-        "SAP, IT, and HR training institute in Pune with placement support",
+        "SAP, IT, and HR training institute in Pune with 100% placement support",
       url: "https://connectingdotserp.com/",
       telephone: "+919004002941",
       email: "info@connectingdotserp.com",
@@ -295,7 +295,7 @@ const jsonLd = {
       "@id": "https://connectingdotserp.com/mumbai#localbusiness",
       name: "Connecting Dots ERP - Mumbai Branch",
       description:
-        "SAP, IT, and HR training institute in Mumbai with placement support",
+        "SAP, IT, and HR training institute in Mumbai with 100% placement support",
       url: "https://connectingdotserp.com/",
       telephone: "+919004002958",
       email: "info@connectingdotserp.com",
@@ -330,7 +330,7 @@ const jsonLd = {
       "@id": "https://connectingdotserp.com/raipur#localbusiness",
       name: "Connecting Dots ERP - Raipur Branch",
       description:
-        "SAP, IT, and HR training institute in Raipur with placement support",
+        "SAP, IT, and HR training institute in Raipur with 100% placement support",
       url: "https://connectingdotserp.com/",
       telephone: "+919004002941",
       email: "info@connectingdotserp.com",

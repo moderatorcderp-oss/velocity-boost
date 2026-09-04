@@ -111,7 +111,7 @@ const COURSES = [
         features: [
             { icon: I.code, text: "Hands-on coding practice" },
             { icon: I.cloud, text: "Cloud & DevOps training" },
-            { icon: I.db, text: "Placement assistance" },
+            { icon: I.db, text: "100% Placement assistance" },
         ],
         cta: "Explore IT Courses",
         href: "/it-course-with-ai-in-pune",
