@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import styles from "@/styles/BlogPage/Components/Breadcrumb.module.css";
+import styles from "@/styles/Components/Breadcrumb.module.css";
 
 const Breadcrumb = () => {
   const pathname = usePathname();
