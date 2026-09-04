@@ -1,4 +1,19 @@
 {
+    "homepage": {
+        "badge": "Free Guidance",
+        "title": "Not Sure which Course Fits You?",
+        "subtitle": "Get personalized career guidance from our experts and discover the right course based on your skills, experience, and career goals.",
+        "primaryBtn": "WhatsApp Us",
+        "secondaryBtn": "Talk to a Counselor",
+        "trust": "Free career counselling · Classroom + online options available",
+        "screenTitle": "SAP S/4HANA Live System",
+        "widgets": [
+            "FI/CO",
+            "MM/SD",
+            "Reports",
+            "Master Data"
+        ]
+    },
     "abap": {
         "badge": "Free Live Demo",
         "title": "Launch Your SAP Career Today with {city}'s Trusted SAP ABAP Training Institute",
@@ -245,7 +260,7 @@
         "subtitle": "Join thousands of learners who transformed their careers with industry-relevant SAP training and placement support.",
         "primaryBtn": "Enroll Now",
         "secondaryBtn": "Talk to a Career Counselor",
-        "trust": "Mumbai classroom + online options · 1,000+ students trained so far · Real placement support",
+        "trust": "Classroom + online options · 1,000+ students trained so far · Real placement support",
         "screenTitle": "SAP S/4HANA Live System",
         "widgets": [
             "FI/CO",
