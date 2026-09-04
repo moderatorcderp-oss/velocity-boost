@@ -12,7 +12,8 @@ import {
   getWhatYouWillLearnForCity,
   getSkillsForCity,
   getWhoThisIsForForCity,
-  getCertificateForCity
+  getCertificateForCity,
+  getDemoBannerForCity
 } from "@/lib/masterData";
 import CityLinks from "@/components/CityLinks";
 
@@ -245,6 +246,13 @@ const CourseCityPage = async ({ params }) => {
     city.name
   );
 
+  // ---------- Demo / CTA Banner ----------
+  const cityDemoBanner = getDemoBannerForCity(courseSlug, citySlug);
+  const demoBannerData = processPlaceholders(
+    cityDemoBanner || course.demoBanner,
+    city.name
+  );
+
   const isSapCourse = course.category === "sap";
 
   const sapModData =
@@ -254,7 +262,7 @@ const CourseCityPage = async ({ params }) => {
   const modulesData = course.modulesData
     ? processPlaceholders(course.modulesData, city.name)
     : null;
-  
+
   const faqData = processPlaceholders(course.faq, city.name);
   const upcomingBatchesData = processPlaceholders(
     course.upcomingBatches,
@@ -348,6 +356,7 @@ const CourseCityPage = async ({ params }) => {
         faqData={faqData}
         upcomingBatchesData={upcomingBatchesData}
         reviewsData={reviewsData}
+        demoBannerData={demoBannerData}
         cityLinks={<CityLinks courseSlug={cityLinkCourseSlug} />}
         relatedCoursesData={relatedCoursesData}
         currentCityName={city.name}

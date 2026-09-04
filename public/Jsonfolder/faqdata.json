@@ -1,4 +1,40 @@
 {
+  "homefaq": {
+    "HomeFAQ": {
+      "title": "Frequently Asked Questions",
+      "video": "https://i.imgur.com/I7XKkrq.mp4",
+      "items": [
+        {
+          "question": "What is SAP and why do companies use it?",
+          "answer": "SAP is business software that helps companies manage things like finance, inventory, HR, and operations all from one system, instead of juggling a dozen different tools. Big companies use it because it keeps everything connected — so when something changes in one department, the rest of the business sees it too. That's why SAP skills are in demand, especially in finance, supply chain, and consulting roles."
+        },
+        {
+          "question": "Is an IT course worth it in 2026?",
+          "answer": "Yes, IT is still one of the safer bets when it comes to career growth. Tech isn't slowing down, and companies across every industry — not just tech companies — need people who understand systems, cloud, networking, or software. The trick is picking a specialization instead of trying to learn \"IT\" in a vague, general sense. That's usually what separates someone who gets hired quickly from someone who doesn't."
+        },
+        {
+          "question": "What does an AI course actually teach you?",
+          "answer": "Most AI courses start with the basics — how machines \"learn\" from data, some math and statistics behind it, and then move into hands-on stuff like building models, working with tools like Python, and understanding real use cases like chatbots, recommendation systems, or automation. A good course won't just throw theory at you; it'll have you building small projects along the way so you actually understand how it works, not just what it is."
+        },
+        {
+          "question": "What is an HR course, and is it a good career option?",
+          "answer": "An HR course teaches you how businesses hire, train, manage, and retain people — think recruitment, payroll, employee relations, and workplace policies. It's a good option if you're someone who enjoys working with people rather than just systems or code. HR isn't going anywhere either; every company, no matter the industry, needs someone handling this side of things."
+        },
+        {
+          "question": "Which is better — learning SAP or a general IT course?",
+          "answer": "It's not really about one being \"better,\" it's about what you want to do. SAP is more specialized and tends to lead into consulting or enterprise roles with solid pay, but it's a narrower path. A general IT course gives you more flexibility early on, and you can specialize later once you know what you actually enjoy. If you already know you want to work with big businesses on their internal systems, go SAP. If you're still exploring, IT gives you more room to figure that out."
+        },
+        {
+          "question": "Will AI replace IT and other tech jobs?",
+          "answer": "AI is changing how a lot of IT work gets done, but it's not wiping out the jobs — it's shifting what the jobs look like. Routine, repetitive tasks are the ones most likely to get automated, while roles that involve problem-solving, decision-making, and actually understanding a business are becoming more valuable, not less. If anything, learning how to work alongside AI tools is turning into a skill of its own."
+        },
+        {
+          "question": "How long does it take to become job-ready in SAP, IT, AI, or HR?",
+          "answer": "On average, most people can get to a job-ready level anywhere from 2 to 6 months, depending on the course, how much time they put in, and whether they're starting from scratch or already have some background. Courses that include real projects and practical work tend to get people ready faster than ones that are purely theory-based, since employers usually care more about what you can actually do than just a certificate."
+        }
+      ]
+    }
+  },
   "dsfaq": {
     "DSFAQ": {
       "title": "Frequently Asked Questions",
@@ -377,338 +413,7 @@
         },
         {
           "question": "How long does the SAP FICO course take, and is it available online?",
-          "answer": "Most SAP FICO training programs are completed within 6 to 10 weeks for weekday batches and around 2 to 3 months for weekend batches designed for working professionals. Self-paced learning options may take anywhere from one to four months depending on your schedule. Live online training is widely available and provides practical access to SAP systems, making it just as effective as classroom-based learning."
-        },
-        {
-          "question": "How much does an SAP FICO course cost?",
-          "answer": "SAP FICO training in India generally costs between ₹30,000 and ₹1,50,000 depending on the institute, course format, trainer experience, and placement assistance. Keep in mind that the official SAP certification exam fee is separate from the training fee and is paid directly to SAP. Before enrolling, it is always advisable to confirm whether certification costs are included in the quoted course fee."
-        },
-        {
-          "question": "Is SAP FICO certification necessary to get a job?",
-          "answer": "No, SAP FICO certification is not mandatory for getting hired. Most employers, especially when hiring freshers, focus more on practical skills, configuration knowledge, and the ability to solve real business scenarios. Certification can strengthen your profile and improve credibility, particularly if you have limited project experience, but it should be viewed as an advantage rather than a strict requirement."
-        },
-        {
-          "question": "What's the salary and career scope after completing an SAP FICO course?",
-          "answer": "Fresh SAP FICO professionals in India typically earn between ₹3.5 and ₹7 LPA, while experienced consultants can earn ₹7 to ₹18 LPA or more. Senior SAP FICO consultants with SAP S/4HANA expertise often earn above ₹20 LPA, with international opportunities offering significantly higher salaries. Career prospects remain strong as organizations continue migrating from SAP ECC to SAP S/4HANA, creating demand for roles such as SAP FICO Consultant, Financial Analyst, Business Process Analyst, and Solution Architect."
-        },
-        {
-          "question": "Do I need any coding or programming knowledge for SAP FICO?",
-          "answer": "No, programming knowledge is not required to learn SAP FICO. It is a functional SAP module where professionals configure business processes through system settings rather than writing code. Basic computer skills and familiarity with spreadsheets are usually sufficient to begin. Learning SAP ABAP later can be helpful for advanced customization, but it is not a prerequisite for starting a career in SAP FICO."
-        }
-      ]
-    }
-  },
-  "hanafaq": {
-    "HanaFAQ": {
-      "title": "Frequently Asked Questions",
-      "video": "https://i.imgur.com/I7XKkrq.mp4",
-      "items": [
-        {
-          "question": "Is this SAP S/4 HANA course available online?",
-          "answer": "Yes, Connecting Dots ERP offers both classroom and online modes for the SAP S/4 HANA Course in {city}, providing flexibility for students based on their location and convenience"
-        },
-        {
-          "question": "Does the SAP S/4 HANA course include live projects?",
-          "answer": "Yes, the SAP S/4 HANA Course at Connecting Dots ERP incorporates live projects to provide real-world experience. This practical exposure helps students grasp the complexities of SAP S/4 HANA and prepares them for the industry."
-        },
-        {
-          "question": "Can I pursue the SAP S/4 HANA course if I don’t have a technical background?",
-          "answer": "Yes, although a basic understanding of database management is recommended, Connecting Dots ERP offers foundational training to ensure even beginners can succeed in the SAP S/4 HANA Course in {city}."
-        },
-        {
-          "question": "What are the prerequisites for learning SAP S/4 HANA?",
-          "answer": "A basic knowledge of databases and SQL is recommended, but the SAP S/4 HANA Course in {city} at Connecting Dots ERP covers all fundamental concepts, making it accessible to beginners."
-        },
-        {
-          "question": "How can I apply for the SAP S/4 HANA Course in {city}?",
-          "answer": "You can easily apply for the SAP S/4 HANA Course at Connecting Dots ERP by visiting our website or contacting our admissions team. Both online and classroom options are available to fit your schedule and preferences."
-        }
-      ]
-    }
-  },
-  "hrhcmfaq": {
-    "HRHCMFAQ": {
-      "title": "Frequently Asked Questions",
-      "items": [
-        {
-          "question": "What is SAP and why do companies use it?",
-          "answer": "SAP is business software that helps companies manage things like finance, inventory, HR, and operations all from one system, instead of juggling a dozen different tools. Big companies use it because it keeps everything connected — so when something changes in one department, the rest of the business sees it too. That's why SAP skills are in demand, especially in finance, supply chain, and consulting roles."
-        },
-        {
-          "question": "Is an IT course worth it in 2026?",
-          "answer": "Yes, IT is still one of the safer bets when it comes to career growth. Tech isn't slowing down, and companies across every industry — not just tech companies — need people who understand systems, cloud, networking, or software. The trick is picking a specialization instead of trying to learn 'IT' in a vague, general sense. That's usually what separates someone who gets hired quickly from someone who doesn't."
-        },
-        {
-          "question": "What does an AI course actually teach you?",
-          "answer": "Most AI courses start with the basics — how machines 'learn' from data, some math and statistics behind it, and then move into hands-on stuff like building models, working with tools like Python, and understanding real use cases like chatbots, recommendation systems, or automation. A good course won't just throw theory at you; it'll have you building small projects along the way so you actually understand how it works, not just what it is."
-        },
-        {
-          "question": "What is an HR course, and is it a good career option?",
-          "answer": "An HR course teaches you how businesses hire, train, manage, and retain people — think recruitment, payroll, employee relations, and workplace policies. It's a good option if you're someone who enjoys working with people rather than just systems or code. HR isn't going anywhere either; every company, no matter the industry, needs someone handling this side of things."
-        },
-        {
-          "question": "Which is better — learning SAP or a general IT course?",
-          "answer": "It's not really about one being 'better,' it's about what you want to do. SAP is more specialized and tends to lead into consulting or enterprise roles with solid pay, but it's a narrower path. A general IT course gives you more flexibility early on, and you can specialize later once you know what you actually enjoy. If you already know you want to work with big businesses on their internal systems, go SAP. If you're still exploring, IT gives you more room to figure that out."
-        },
-        {
-          "question": "Will AI replace IT and other tech jobs?",
-          "answer": "AI is changing how a lot of IT work gets done, but it's not wiping out the jobs — it's shifting what the jobs look like. Routine, repetitive tasks are the ones most likely to get automated, while roles that involve problem-solving, decision-making, and actually understanding a business are becoming more valuable, not less. If anything, learning how to work alongside AI tools is turning into a skill of its own."
-        },
-        {
-          "question": "How long does it take to become job-ready in SAP, IT, AI, or HR?",
-          "answer": "On average, most people can get to a job-ready level anywhere from 2 to 6 months, depending on the course, how much time they put in, and whether they're starting from scratch or already have some background. Courses that include real projects and practical work tend to get people ready faster than ones that are purely theory-based, since employers usually care more about what you can actually do than just a certificate."
-        }
-      ]
-    }
-  },
-  "mmfaq": {
-    "MMFAQ": {
-      "title": "Frequently Asked Questions",
-      "video": "https://i.imgur.com/I7XKkrq.mp4",
-      "items": [
-        {
-          "question": "Is SAP MM challenging to learn? What are the prerequisites for learning SAP MM?",
-          "answer": "SAP MM is not difficult to learn. The learner has to understand business processes along with sap functionalities. Companies seek candidates with a strong understanding of business processes and expertise in SAP MM."
-        },
-        {
-          "question": "Is this SAP MM course online or classroom?",
-          "answer": "We provide SAP mm course in classroom as well as online mode. Nearby students can enroll in classroom batches. Students outside {city} can enroll for online batch."
-        },
-        {
-          "question": "What career opportunities are available after acquiring knowledge in SAP MM?",
-          "answer": "Mastering SAP MM opens the door to a rewarding career with a wide range of opportunities across various industries. Whether you aspire to be an SAP MM consultant or an end user, expertise in SAP MM is highly sought after and can greatly boost your professional development and marketability."
-        },
-        {
-          "question": "Is SAP MM training available near me?",
-          "answer": "Yes, Connecting Dots ERP provides SAP training near me, with conveniently located centers in {city} and other cities across India. Our accessible training facilities and online learning options make it convenient for professionals to enhance their skills in SAP MM."
-        },
-        {
-          "question": "What kind of training does Connecting Dots ERP provide for SAP MM?",
-          "answer": "Initium Learning is renowned as the best SAP training Institute, offering comprehensive courses on SAP MM. Our training covers various aspects, including development, integration, analytics, and more, equipping participants with the skills needed to leverage SAP MM effectively."
-        }
-      ]
-    }
-  },
-  "netfaq": {
-    "NetFAQ": {
-      "title": "Frequently Asked Questions",
-      "video": "https://i.imgur.com/I7XKkrq.mp4",
-      "items": [
-        {
-          "question": "Will I get hands-on experience with SAP NetWeaver?",
-          "answer": "Absolutely! Our course emphasizes hands-on learning, allowing participants to work on real SAP projects to apply their knowledge in practical scenarios."
-        },
-        {
-          "question": "Do you provide placement assistance?",
-          "answer": "Yes, we offer 100% placement assistance to our students, helping them connect with job opportunities that match their skills and qualifications."
-        },
-        {
-          "question": "How often are new batches scheduled?",
-          "answer": "New batches for the SAP NetWeaver Course are typically scheduled every week. Please check our website for the latest batch updates."
-        },
-        {
-          "question": "Can I switch between online and in-person training?",
-          "answer": "Yes, we offer the flexibility to switch between online and in-person training, subject to availability and course scheduling."
-        },
-        {
-          "question": "What kind of training does Connecting Dots ERP provide for SAP NetWeaver?",
-          "answer": "Connecting Dots ERP offers training in SAP NetWeaver, covering essential topics such as system administration, integration techniques, and security management to equip participants for effective SAP system management."
-        }
-      ]
-    }
-  },
-  "pmfaq": {
-    "PMFAQ": {
-      "title": "Frequently Asked Questions",
-      "video": "https://i.imgur.com/I7XKkrq.mp4",
-      "items": [
-        {
-          "question": "What makes SAP PM training beneficial?",
-          "answer": "SAP PM training provides essential skills for managing and optimizing maintenance operations in any industry. Learning how to reduce downtime, manage repairs, and implement preventive maintenance gives you a competitive edge in the job market."
-        },
-        {
-          "question": "How much practical training is included in the course?",
-          "answer": "At Connecting Dots ERP, practical training is a major part of our SAP PM course in {city}. We ensure that you have real-world exposure through live projects and case studies, giving you hands-on experience in managing plant maintenance processes."
-        },
-        {
-          "question": "What can I expect in terms of batch size and learning environment?",
-          "answer": "Our batches are small, typically 10-12 students, allowing for personalized attention from instructors and fostering interactive learning. This helps you to engage deeply with the content and ask questions as you go."
-        },
-        {
-          "question": "What job roles are available after completing the SAP PM course?",
-          "answer": "After completing the SAP PM certification in {city}, you can pursue career paths such as SAP PM Consultant, Maintenance Planner, and Plant Maintenance Manager. These roles are in demand across industries, especially in manufacturing, utilities, and infrastructure."
-        },
-        {
-          "question": "Is the SAP PM certification recognized by employers?",
-          "answer": "Yes, the certification from Connecting Dots ERP is widely recognized by employers. Our course is designed to meet industry standards, and the practical skills you gain make you a valuable candidate in the job market. Many of our graduates are successfully employed in top companies globally."
-        }
-      ]
-    }
-  },
-  "ppfaq": {
-    "PPFAQ": {
-      "title": "Frequently Asked Questions",
-      "video": "https://i.imgur.com/I7XKkrq.mp4",
-      "items": [
-        {
-          "question": "Why should I choose Connecting Dots ERP for my SAP PP certification in {city}?",
-          "answer": "At Connecting Dots ERP, we focus on providing industry-aligned training that equips you with real-world SAP PP skills. Our SAP PP course in {city} includes hands-on projects, case studies, and practical experience, ensuring you are fully prepared for the job market. With expert trainers who have years of SAP consulting experience, we offer a comprehensive learning experience that helps you excel in your career."
-        },
-        {
-          "question": " Do you offer practical training in the SAP PP course?",
-          "answer": "Yes, our SAP PP training in {city} emphasizes practical training to give you real-world experience. From live projects to case studies, you will have plenty of opportunities to apply theoretical concepts to practical business scenarios. This ensures you are job-ready from day one."
-        },
-        {
-          "question": "How large are the SAP PP training batches at Connecting Dots ERP?",
-          "answer": "At Connecting Dots ERP, we maintain small batch sizes to ensure personalized attention and effective learning. Typically, our SAP PP batches consist of 10-12 students, allowing for more one-on-one interaction with the instructors and better peer collaboration."
-        },
-        {
-          "question": " What makes the SAP PP certification program in {city} at Connecting Dots ERP unique?",
-          "answer": "Our SAP PP certification program in {city} stands out for its well-rounded curriculum that covers both technical and business process aspects of production planning. In addition to core SAP PP modules, we also integrate learning on how SAP PP interacts with other modules like SAP MM and SAP SD, ensuring you develop a holistic understanding of the SAP environment."
-        },
-        {
-          "question": " Is SAP PP certification from Connecting Dots ERP recognized by employers?",
-          "answer": "Absolutely. The SAP PP certification course in {city} offered by Connecting Dots ERP is designed to align with industry standards, making it highly recognized by employers. Our strong ties with local and global businesses also ensure that our certification holds value in the job market, giving you an edge during interviews and job placements."
-        }
-      ]
-    }
-  },
-  "psfaq": {
-    "PSFAQ": {
-      "title": "Frequently Asked Questions",
-      "video": "https://i.imgur.com/I7XKkrq.mp4",
-      "items": [
-        {
-          "question": "What makes SAP PS training essential for my career?",
-          "answer": "SAP PS training equips you with the tools and skills needed to manage complex projects efficiently. It’s essential for anyone looking to build a career in project management across various industries, as it teaches you to optimize resources and ensure project success."
-        },
-        {
-          "question": "What type of hands-on experience will I acquire throughout the training?",
-          "answer": "Our SAP PS training in {city} focuses heavily on practical experience. You’ll work on live projects and case studies, giving you hands-on experience in project structuring, scheduling, and resource allocation. This ensures you’re job-ready from the moment you complete the course."
-        },
-        {
-          "question": "How large are the SAP PS training batches at Connecting Dots ERP?",
-          "answer": "We maintain small batch sizes of around 10-12 students to ensure a personalized learning experience. This allows for better interaction with instructors and more tailored learning."
-        },
-        {
-          "question": "What career options do I have after completing the SAP PS course?",
-          "answer": "After completing the SAP PS course in {city}, you can explore roles such as SAP PS Consultant, Project Manager, and Project Planner. The skills you gain will be in high demand across industries that rely on efficient project management."
-        },
-        {
-          "question": "Is SAP PS certification recognized by employers?",
-          "answer": "Yes, the certification you receive from Connecting Dots ERP is globally recognized and highly valued by employers. We ensure that our training aligns with industry standards, making your certification a valuable asset in the job market."
-        }
-      ]
-    }
-  },
-  "qmfaq": {
-    "QMFAQ": {
-      "title": "Frequently Asked Questions",
-      "video": "https://i.imgur.com/I7XKkrq.mp4",
-      "items": [
-        {
-          "question": " Why should I choose Connecting Dots ERP for my SAP QM certification in {city}?",
-          "answer": "At Connecting Dots ERP, we offer an advanced SAP QM course in {city} designed to align with industry standards and provide real-world, hands-on training. With experienced trainers and practical project work, we ensure that you are fully prepared to meet the demands of the job market. Moving forward, our course includes placement support to help you secure a job after completing the training."
-        },
-        {
-          "question": "What kind of practical experience will I get in SAP QM training?",
-          "answer": "Our SAP QM training in {city} emphasizes practical learning through live projects, case studies, and real-world scenarios. You'll gain hands-on experience in quality planning, inspections, and audits, ensuring you are ready to handle real business challenges from day one."
-        },
-        {
-          "question": "How large are the SAP QM training batches at Connecting Dots ERP?",
-          "answer": "We maintain small batch sizes, typically 10-12 students, to ensure personalized attention and interactive learning experiences. This allows for more focused training and better one-on-one interaction with instructors."
-        },
-        {
-          "question": " What career opportunities can I expect after completing SAP QM training?",
-          "answer": "Upon completing our SAP QM course in {city}, you can pursue roles such as SAP QM Consultant, Quality Assurance Manager, and Compliance Specialist. The skills you gain will be in high demand across industries that prioritize quality control and compliance."
-        },
-        {
-          "question": "Is SAP QM certification from Connecting Dots ERP recognized by employers?",
-          "answer": "Yes, the SAP QM certification from Connecting Dots ERP is highly valued by employers. Our training program is designed to meet industry standards, and we maintain strong relationships with businesses, ensuring that our certification holds significant value in the job market."
-        }
-      ]
-    }
-  },
-  "scmfaq": {
-    "SCMFAQ": {
-      "title": "Frequently Asked Questions",
-      "video": "https://i.imgur.com/I7XKkrq.mp4",
-      "items": [
-        {
-          "question": "How long does it take to complete the SAP SCM course?",
-          "answer": "The SAP SCM course typically takes 2 to 4 months to complete, depending on the training format and individual learning pace. Online self-paced options may take longer, while intensive instructor-led programs can be completed in a shorter time."
-        },
-        {
-          "question": "What are the course fees for the SAP SCM training program?",
-          "answer": "The course fees for an SAP SCM course typically range from 40,000 depending on course duration, and training format. For more info  Please contact our support team or visit our website."
-        },
-        {
-          "question": "What are the learning modes available for SAP SCM training?",
-          "answer": "The SAP SCM course is available in various learning modes, including instructor-led classroom training and online virtual classes. These flexible options allow learners to choose the format that best suits their schedule and learning preferences."
-        },
-        {
-          "question": "Is placement support provided after completing the SAP SCM course?",
-          "answer": "Yes, we provide full placement support to our students, including resume reviews, interview preparation, and job connections. Many of our graduates have secured roles at top companies thanks to our dedicated support."
-        },
-        {
-          "question": "Do I need any prior experience before enrolling in the SAP SCM course?",
-          "answer": "While no prior experience is strictly required, having a basic understanding of supply chain processes or logistics can be beneficial. The course is designed to cater to both beginners and professionals seeking to enhance their knowledge."
-        }
-      ]
-    }
-  },
-  "sdfaq": {
-    "SDFAQ": {
-      "title": "Frequently Asked Questions",
-      "video": "https://i.imgur.com/I7XKkrq.mp4",
-      "items": [
-        {
-          "question": "What is SAP SD?",
-          "answer": "SAP SD (Sales and Distribution) is a crucial module of SAP ERP, designed to manage all sales, customer distribution, and billing processes in an organization. It helps businesses streamline their sales operations, track customer data, and optimize order processing."
-        },
-        {
-          "question": "Can I learn SAP SD without prior experience in sales or distribution?",
-          "answer": " Yes, you can learn SAP SD even without a background in sales or distribution. Our SAP SD course is designed to cover the basics and gradually introduce advanced concepts, making it accessible for beginners as well as professionals from different fields."
-        },
-        {
-          "question": "Is SAP SD in demand?",
-          "answer": "Yes, SAP SD professionals are in high demand globally. With the increasing reliance on SAP systems for managing sales and distribution processes, companies are actively seeking skilled SAP SD consultants and experts to improve efficiency and drive business growth."
-        },
-        {
-          "question": " How long does it take to complete the SAP SD course?",
-          "answer": " Our SAP SD course can be completed in 3 months, providing you with comprehensive knowledge and hands-on experience to excel in sales and distribution processes within SAP."
-        },
-        {
-          "question": " What are the career opportunities after completing the SAP SD course?",
-          "answer": "Completing the SAP SD course opens up a wide range of career opportunities, including roles like SAP SD consultant, sales process manager, and SAP SD end-user. Companies across various industries value SAP SD expertise, making it a lucrative field with high growth potential."
-        }
-      ]
-    }
-  },
-  "succfaq": {
-    "SuccFAQ": {
-      "title": "Frequently Asked Questions",
-      "video": "https://i.imgur.com/I7XKkrq.mp4",
-      "items": [
-        {
-          "question": "Can I enroll in this course if I don’t have any HR experience?",
-          "answer": "Absolutely! No prior HR experience is required. Our SAP SuccessFactors course is designed for both beginners looking to enter the HR field and experienced professionals aiming to upgrade their skills. You’ll get foundational as well as advanced knowledge tailored to your needs."
-        },
-        {
-          "question": "What kind of learning experience can I expect—online or Classroom?",
-          "answer": "You can choose what suits you best! We offer both SAP Successfactor Classroom training in {city} and live, interactive online sessions. Our online training is designed to be just as immersive and practical as the classroom experience, with real-time Q&A and collaborative projects."
-        },
-        {
-          "question": "Will this certification guarantee me a job after completion?",
-          "answer": "While no course can guarantee a job, we offer dedicated placement support to connect you with top employers. From resume-building to interview coaching, our support team is there to ensure you're job-ready. Many of our graduates have successfully secured roles at top MNCs soon after completing the course."
-        },
-        {
-          "question": "How much practical, hands-on experience will I gain during this course?",
-          "answer": "You’ll work on real-world SAP SuccessFactors projects and live case studies throughout the course. Our hands-on approach ensures you not only understand the theory but can also apply it in real HR scenarios, making you job-ready from day one."
-        },
-        {
-          "question": "How is this certification recognized in the global job market?",
-          "answer": "The SAP SuccessFactor certification you earn is globally recognized, making you a competitive candidate in the international job market. Employers worldwide value SAP SuccessFactor's expertise, and your certification will significantly boost your employability."
+          "answer": "Most SAP FICO training programs are completed within 6 to 10 weeks for weekday batches and around 2 to 3 months for weekend batches designed for working professionals."
         }
       ]
     }

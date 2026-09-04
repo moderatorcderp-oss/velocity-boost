@@ -33,6 +33,12 @@ import certificateDataRaipur from "../../public/Jsonfolder/cities/raipur/certifi
 
 import faqData from "../../public/Jsonfolder/faqData.json";
 
+// CTABanner data
+import CTABannerData from "../../public/Jsonfolder/cities/pune/CTAbanner.json";
+import CTABannerDataMumbai from "../../public/Jsonfolder/cities/mumbai/CTAbanner-mumbai.json";
+import CTABannerDataRaipur from "../../public/Jsonfolder/cities/raipur/CTAbanner-raipur.json";
+
+
 import alumni from "../../public/Jsonfolder/alumni.json";
 import icons from "../../public/Jsonfolder/icons.json";
 import generatedCourseSpecs from "../../public/Jsonfolder/generatedCourseSpecs.json";
@@ -402,6 +408,13 @@ Object.entries(faqMap || {}).forEach(([courseSlug, [groupKey, faqKey]]) => {
 });
 
 
+// ---------- CTA Banner ----------
+Object.entries(enrichmentMaps?.demoBannerMap || {}).forEach(([courseSlug, bannerKey]) => {
+  if (coursesData[courseSlug] && CTABannerData?.[bannerKey]) {
+    coursesData[courseSlug].demoBanner = CTABannerData[bannerKey];
+  }
+});
+
 // =====================================================
 // 5. FIX SAP RELATED COURSE ICONS
 // =====================================================
@@ -569,6 +582,12 @@ export function getCourseData(slug, citySlug = "pune") {
     course.why = cityWhy;
   }
 
+  // Override demo banner with city-specific version when available
+  const cityDemoBanner = getDemoBannerForCity(slug, citySlug);
+  if (cityDemoBanner) {
+    course.demoBanner = cityDemoBanner;
+  }
+
   return course;
 }
 
@@ -583,6 +602,21 @@ export function getCertificateForCity(courseSlug, citySlug = "pune") {
   return source?.[certKey] || null;
 }
 
+/**
+ * Returns the Demo / CTA Banner object for a course + city.
+ * Currently uses the single SapDemoBanner.json; swap the source
+ * when you create city-specific files.
+ */
+export function getDemoBannerForCity(courseSlug, citySlug = "pune") {
+  const source = citySlug === "mumbai" ? CTABannerDataMumbai
+    : citySlug === "raipur" ? CTABannerDataRaipur
+      : CTABannerData;
+  const bannerKey = enrichmentMaps?.demoBannerMap?.[courseSlug];
+  if (!bannerKey) return null;
+
+  return source?.[bannerKey] || null;
+}
+
 // =====================================================
 // 8. EXPORTS
 // =====================================================
@@ -595,4 +629,5 @@ export {
   whyDataPune,
   whyDataMumbai,
   enrichmentMaps,
+  faqData,
 };
