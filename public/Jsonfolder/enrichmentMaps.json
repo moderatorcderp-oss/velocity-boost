@@ -1053,6 +1053,58 @@
             "ficofaq",
             "FICOFAQ"
         ],
+        "sap-mm": [
+            "mmfaq",
+            "MMFAQ"
+        ],
+        "sap-sd": [
+            "sdfaq",
+            "SDFAQ"
+        ],
+        "sap-hcm": [
+            "hcmfaq",
+            "HCMFAQ"
+        ],
+        "sap-pp": [
+            "ppfaq",
+            "PPFAQ"
+        ],
+        "sap-qm": [
+            "qmfaq",
+            "QMFAQ"
+        ],
+        "sap-pm": [
+            "pmfaq",
+            "PMFAQ"
+        ],
+        "sap-ps": [
+            "psfaq",
+            "PSFAQ"
+        ],
+        "sap-btp": [
+            "btpfaq",
+            "BTPFAQ"
+        ],
+        "sap-ehs": [
+            "ehsfaq",
+            "EHSFAQ"
+        ],
+        "sap-grc": [
+            "grcfaq",
+            "GRCFAQ"
+        ],
+        "sap-ibp": [
+            "ibpfaq",
+            "IBPFAQ"
+        ],
+        "sap-successfactors": [
+            "successfactorsfaq",
+            "SuccessFactorsFAQ"
+        ],
+        "sap-s4hana": [
+            "s4hanafaq",
+            "S4HANAFAQ"
+        ],
         "power-bi": [
             "powerbi",
             "POWERBI"
