@@ -1,28 +1,28 @@
 {
   "Whyds": {
     "WhyDS": {
-      "title": "Why Data Science?",
+      "title": "Why Data Science with AI?",
       "cards": [
         {
-          "title": "What is <span class='highlight-span-cards'>Data Science?</span>",
-          "content": "Data Science is the practice of using statistics, algorithms, and systems to extract useful insights from both structured and unstructured data. Our Data Science course in {city} focuses on solving real business problems and prepares you for roles such as Data Scientist, Data Analyst, and Machine Learning Engineer."
+          "title": "What is <span class='highlight-span-cards'>Data Science with AI?</span>",
+          "content": "Mumbai has quietly become one of India's busiest hubs for data hiring from fintech startups in BKC to global banks and retail giants that need people who can turn raw numbers into decisions. This Data Science with AI course in Mumbai was built with that hiring reality in mind."
         },
         {
-          "title": "What does a <span class=\"highlight-span-cards\">Data Scientist</span> do?",
-          "content": "A Data Scientist examines large datasets to uncover patterns and deliver insights that drive better business decisions. They combine statistical analysis, machine learning, and visualization to turn raw data into clear, actionable recommendations.",
+          "title": "What will you learn in this <span class=\"highlight-span-cards\">Data Science with AI course</span>?",
+          "content": "Instead of throwing fifteen tools at you and hoping something sticks, the program is structured around how data teams actually work: clean the data, understand it, build a model, test it, and explain it to someone who isn't technical. You'll code every day, work on datasets pulled from real business problems, and finish with a portfolio you can actually show in an interview.",
           "listItems": [
-            "Identify and collect relevant data sources",
-            "Analyze data to find meaningful trends",
-            "Build strategies that solve real business challenges"
+            "Python, SQL, statistics & data wrangling",
+            "Machine learning, deep learning & generative AI",
+            "Model deployment + portfolio-ready projects"
           ]
         },
         {
-          "title": "Why take <span class=\"highlight-span-cards\">Data Science</span> training?",
-          "content": "Companies rely more than ever on data-driven decisions, so skilled Data Science professionals are in high demand. Our certification course in {city} builds core skills in analysis, machine learning, and visualization so you can extract insights and create predictive models with confidence.",
+          "title": "Who is this course built for?",
+          "content": "Whether you're a fresh graduate trying to break into analytics, a working professional looking to move into a data role, or someone switching careers entirely, this course meets you where you are and builds forward from there. Classes run out of our Mumbai campus, with a live online track for those who'd rather learn from home or can't commute daily.",
           "listItems": [
-            "Data Scientist",
-            "Data Analyst",
-            "Machine Learning Engineer"
+            "Freshers & career switchers",
+            "Working professionals in IT or analytics",
+            "Developers adding AI to their toolkit"
           ]
         }
       ]
@@ -30,57 +30,28 @@
   },
   "Whyda": {
     "WhyDA": {
-      "title": "Why Data Analytics?",
+      "title": "Why Data Analytics with AI?",
       "cards": [
         {
-          "title": "What is <span class=\"highlight-span-cards\">Data Analytics?</span>",
-          "content": "Data Analytics teaches the methods and tools needed to examine structured and unstructured data and turn it into practical insights. This program in {city} prepares graduates for roles as Data Analysts, Business Analysts, and related positions by focusing on statistical modeling, data mining, and predictive analysis."
+          "title": "What is <span class=\"highlight-span-cards\">Data Analytics with AI?</span>",
+          "content": "Data is growing faster than most businesses can handle, and companies in Mumbai and across India are actively hiring people who can read that data and turn it into decisions. That is exactly why this Data Analytics with Gen AI course in Mumbai was built not as another theory-heavy program, but as a hands-on course that mixes classic data analytics skills with the newest Generative AI tools that are changing how analysts work."
         },
         {
-          "title": "What does a <span class=\"highlight-span-cards\">Data Analyst</span> do?",
-          "content": "A Data Analyst examines data to deliver clear, actionable insights that support business processes. They use strong statistical, analytical, and technical skills to work with both structured and unstructured data and help teams make better decisions.",
+          "title": "What skills will you gain?",
+          "content": "Over the duration of this course, you will learn how to collect, clean, analyze, and visualize data using tools like Excel, SQL, Power BI, Tableau, and Python. Alongside this, you will also learn how to use Generative AI tools such as ChatGPT, Copilot, and AI-based analytics assistants to speed up reporting, automate repetitive tasks, and generate insights faster than traditional methods allow.",
           "listItems": [
-            "Identify and gather relevant data from multiple sources",
-            "Analyze data to extract meaningful insights",
-            "Develop data-driven strategies for business challenges"
+            "Excel, SQL, Python, Power BI & Tableau",
+            "Statistics, basic ML & AI-assisted workflows",
+            "Portfolio project + stakeholder storytelling"
           ]
         },
         {
-          "title": "Why take <span class=\"highlight-span-cards\">Data Analytics</span> training?",
-          "content": "Our Data Analytics Certification Course in {city} gives you the technical skills to handle large datasets, design solid data models, and communicate insights effectively. Mastering data manipulation and visualization helps you solve complex problems and improve operations.",
+          "title": "Who is this course designed for?",
+          "content": "This is not a course that only talks about data analytics in theory. You will work on real datasets, real business problems, and real dashboards from day one. By the end of the program, you will have a portfolio of projects, a strong understanding of how Generative AI fits into modern analytics, and the confidence to apply for analyst roles in Mumbai's growing data industry.",
           "listItems": [
-            "Data Analyst",
-            "Business Analyst",
-            "Operations Analyst"
-          ]
-        }
-      ]
-    }
-  },
-  "Whyba": {
-    "WhyBA": {
-      "title": "Why Business Analytics?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">Business Analytics?</span>",
-          "content": "Business Analytics uses statistical techniques, predictive modeling, and data analysis to interpret business data and support strategic decisions. The Business Analytics Course in {city} teaches you how to turn data into useful insights and prepares you for roles such as Business Analyst, Data Analyst, and Business Intelligence Analyst."
-        },
-        {
-          "title": "What does a <span class=\"highlight-span-cards\">Business Analyst</span> do?",
-          "content": "Business Analysts help organizations make smarter, data-driven choices. They apply statistical analysis, visualization, and predictive modeling to uncover patterns, opportunities, and challenges, then work with teams to put those insights into action.",
-          "listItems": [
-            "Identify and collect data from business operations",
-            "Analyze data to uncover trends and insights",
-            "Formulate strategies that solve business challenges"
-          ]
-        },
-        {
-          "title": "Why take <span class=\"highlight-span-cards\">Business Analytics</span> training?",
-          "content": "Business Analysts play a key role in driving better outcomes. Our course in {city} teaches you to use data analytics, statistical tools, and business intelligence so you can deliver measurable results for any organization.",
-          "listItems": [
-            "Business Analyst",
-            "Management Consultant",
-            "Data Analyst"
+            "Freshers & career switchers",
+            "Working professionals adding analytics + AI",
+            "Mumbai learners who want classroom or hybrid batches"
           ]
         }
       ]
@@ -91,54 +62,25 @@
       "title": "Why Generative AI?",
       "cards": [
         {
-          "title": "What is <span class=\"highlight-span-cards\">ChatGPT and AI?</span>",
-          "content": "Artificial Intelligence focuses on building systems that can mimic human intelligence using machine learning, neural networks, and algorithms. Our AI courses in {city} prepare you for roles such as Machine Learning Engineer, AI Analyst, and AI Engineer by teaching practical ways to solve real business problems with AI."
+          "title": "What is <span class=\"highlight-span-cards\">Generative AI?</span>",
+          "content": "Generative AI has moved from research labs into everyday business operations marketing teams use it to draft campaigns, developers use it to write and debug code, and analysts use it to summarise data in seconds. This Generative AI course in Mumbai is built around that shift."
         },
         {
-          "title": "What does an <span class=\"highlight-span-cards\">AI Developer</span> do?",
-          "content": "AI Developers create models that help businesses streamline operations and improve decision-making. They use machine learning, deep learning, and natural language processing to build intelligent systems and work across teams to ensure successful implementation.",
+          "title": "What will you build in this <span class=\"highlight-span-cards\">Generative AI course</span>?",
+          "content": "Instead of long lectures on theory, you'll spend most of your time inside tools like ChatGPT, Claude, Midjourney, and open-source LLMs, learning how to prompt, fine-tune, and deploy them for real use cases. The course is structured to take you from \"I've used ChatGPT a few times\" to \"I can design and deploy a Generative AI solution for a business problem.\"",
           "listItems": [
-            "Identify AI-driven opportunities in data",
-            "Develop AI models that enhance decision-making",
-            "Solve business challenges with AI and machine learning"
+            "Prompt engineering & LLM application development",
+            "RAG systems, LangChain & vector databases",
+            "Deployable AI apps + interview-ready portfolio"
           ]
         },
         {
-          "title": "Why take <span class=\"highlight-span-cards\">AI</span> training?",
-          "content": "AI is transforming industries and creating strong demand for skilled professionals. Our Artificial Intelligence Certification Course in {city} builds core skills in machine learning, deep learning, and natural language processing so you can create AI-driven solutions that deliver real value.",
+          "title": "Who should join?",
+          "content": "Whether you're a marketer, developer, business analyst, student, or entrepreneur, this course meets you where you are and builds up from there with Mumbai-based mentors who understand the local job market and what employers are actually asking for.",
           "listItems": [
-            "AI Developer",
-            "Machine Learning Engineer",
-            "Data Scientist"
-          ]
-        }
-      ]
-    }
-  },
-  "Whyfullstack": {
-    "WhyFullStack": {
-      "title": "Why FULL STACK TRAINING ?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">Full Stack Development?</span>",
-          "content": "Full Stack Development means working on both the front-end and back-end of websites and applications — from user interfaces to databases. It is one of the most sought-after skills in tech and enables developers to build complete, functional web solutions."
-        },
-        {
-          "title": "What does a <span class=\"highlight-span-cards\">Full Stack Developer</span> do?",
-          "content": "A Full Stack Developer handles both client-side and server-side development. They work on interfaces, databases, servers, and hosting environments to deliver complete, reliable applications.",
-          "listItems": [
-            "Design and develop full web applications",
-            "Work across databases, servers, and front-end",
-            "Ensure smooth cross-platform functionality"
-          ]
-        },
-        {
-          "title": "Why take <span class=\"highlight-span-cards\">Full Stack</span> training?",
-          "content": "Full Stack Developers are highly valued in today’s tech-driven market. Our training in {city} covers front-end to back-end development and prepares you for roles that require end-to-end web and application skills.",
-          "listItems": [
-            "Full Stack Developer",
-            "Web Developer",
-            "Software Engineer"
+            "Developers & data professionals",
+            "Freshers & career switchers",
+            "Product & business roles adding AI fluency"
           ]
         }
       ]
@@ -150,11 +92,11 @@
       "cards": [
         {
           "title": "What is <span class=\"highlight-span-cards\">Java Development?</span>",
-          "content": "Java Development focuses on building robust, scalable applications with the Java programming language. It remains one of the most in-demand skills in IT and is used for everything from mobile apps to large enterprise systems."
+          "content": "Mumbai's IT and fintech companies are constantly hiring Java developers and for good reason. Java still powers a huge share of enterprise backend systems, banking software, and Android applications used across the city's biggest employers. This Java course in Mumbai is built specifically to close the gap between \"knowing Java\" and \"being hired to build with Java.\""
         },
         {
           "title": "What does a <span class=\"highlight-span-cards\">Java Developer</span> do?",
-          "content": "A Java Developer designs and builds applications that are scalable and high-performing. They create solutions that can handle large volumes of data and keep existing systems running smoothly.",
+          "content": "Over the course of the program, you'll move from Java fundamentals, variables, loops, OOP concepts — into the tools real developers use daily: Spring Boot, Hibernate, REST APIs, Git, and SQL databases. Every module is backed by hands-on coding exercises, and the course wraps up with a capstone project you can showcase to recruiters.",
           "listItems": [
             "Design and develop Java applications",
             "Maintain and optimize existing systems",
@@ -163,7 +105,7 @@
         },
         {
           "title": "Why take <span class=\"highlight-span-cards\">Java</span> training?",
-          "content": "Java Developers are needed across many industries. Our Java training in {city} covers core Java through advanced frameworks and prepares you for practical, high-demand development roles.",
+          "content": "Whether you're a fresher trying to break into IT, a BCA/BSc IT graduate preparing for placements, or a working professional switching to backend development, this Java training in Mumbai is structured to get you interview-ready, not just syllabus-complete. Classes run out of our Mumbai training center, with a live online batch for students who prefer to learn from home.",
           "listItems": [
             "Java Developer",
             "Software Engineer",
@@ -179,25 +121,24 @@
       "cards": [
         {
           "title": "What is <span class=\"highlight-span-cards\">Python Development?</span>",
-          "content": "Python is a clean, readable programming language used widely in web development, data science, machine learning, and automation. Learning Python in {city} gives you the skills to build applications, work with data, and create AI-powered solutions."
+          "content": "Python has quietly become the backbone of modern technology from websites and mobile apps to data science, automation, and artificial intelligence. If you have been searching for a Python Course in Mumbai that actually teaches you how things work in the real world, you're in the right place."
         },
         {
-          "title": "What does a <span class=\"highlight-span-cards\">Python Developer</span> do?",
-          "content": "A Python Developer writes efficient server-side logic, integrates front-end elements, and builds reliable back-end components. They focus on clean, reusable code and secure data handling.",
+          "title": "What will you master?",
+          "content": "This course was built by developers who still write code every day, not just people who teach theory from a slide deck. Over the duration of the program, you'll write real Python scripts, build actual mini-projects, debug your own mistakes and walk away with a portfolio you can show in interviews.",
           "listItems": [
-            "Write clean, reusable, and efficient code",
-            "Implement security and data protection",
-            "Integrate front-end elements with server-side logic"
+            "Core Python, OOP & data structures",
+            "Libraries, APIs, databases & automation",
+            "Capstone project for your portfolio"
           ]
         },
         {
-          "title": "Why take <span class=\"highlight-span-cards\">Python</span> training?",
-          "content": "Python skills are valued across many industries because of the language’s versatility. Our Python training in {city} covers basics to advanced topics and prepares you for a wide range of technical roles.",
+          "title": "Who should take this course?",
+          "content": "We keep batch sizes small so every student gets attention. Classes run on weekdays and weekends, and you can choose between our Mumbai classroom or live interactive online sessions with the same trainers, same depth, same support either way. By the end of this Python Training in Mumbai, you won't just \"know Python\" you'll be comfortable using it to solve actual problems.",
           "listItems": [
-            "Python Developer",
-            "Data Analyst",
-            "Machine Learning Engineer",
-            "Web Developer"
+            "Students & freshers building a foundation",
+            "Professionals pivoting into tech or data",
+            "Beginners with no prior coding experience"
           ]
         }
       ]
@@ -209,11 +150,11 @@
       "cards": [
         {
           "title": "What is <span class=\"highlight-span-cards\">Salesforce Development?</span>",
-          "content": "Salesforce is a leading cloud-based CRM platform that helps businesses manage customer relationships, track sales, and automate service processes. Learning Salesforce in {city} gives you practical skills to improve customer engagement and streamline operations."
+          "content": "Salesforce has become the backbone of customer relationship management for businesses across the globe, and the demand for skilled professionals is only growing. This Salesforce course in Mumbai is designed for freshers, working professionals, and career switchers who want to build a strong foundation in CRM, cloud computing, and business automation."
         },
         {
           "title": "What does a <span class=\"highlight-span-cards\">Salesforce Developer</span> do?",
-          "content": "A Salesforce Developer builds custom applications, integrations, and features on the Salesforce platform using Apex, Visualforce, and related tools. They tailor the system so it fits the exact needs of the business.",
+          "content": "Through this Salesforce training in Mumbai, you'll work on real business scenarios from setting up a Sales Cloud environment to building custom apps using Apex and Lightning Web Components. The course doesn't just teach concepts; it walks you through how actual Salesforce consultants and administrators solve problems for clients.",
           "listItems": [
             "Develop custom Salesforce applications",
             "Integrate Salesforce with other systems",
@@ -222,7 +163,7 @@
         },
         {
           "title": "Why take <span class=\"highlight-span-cards\">Salesforce</span> training?",
-          "content": "Salesforce professionals are in strong demand because so many companies rely on the platform. Our training in {city} covers the essential modules and prepares you for a variety of CRM and development roles.",
+          "content": "By the end of this program, you will be equipped to sit for globally recognized Salesforce certification exams and confidently apply for roles like Salesforce Administrator, Business Analyst, or Junior Developer.",
           "listItems": [
             "Salesforce Administrator",
             "CRM Consultant",
@@ -233,149 +174,30 @@
       ]
     }
   },
-  "Whyabap": {
-    "WhyAbap": {
-      "title": "Why SAP ABAP ?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">SAP ABAP</span>?",
-          "content": "SAP is the backbone of enterprise operations for thousands of companies, and ABAP is the language that powers customization inside every SAP system. Our SAP ABAP course in Mumbai is designed for people who want more than theory — you will write actual code, work on live SAP GUI systems, and build the kind of project experience that recruiters actually ask about in interviews."
-        },
-        {
-          "title": "What will you learn?",
-          "content": "This isn't a rushed crash course. Over the duration of the program, you'll move step by step from ABAP fundamentals to advanced topics like Object-Oriented ABAP, RFCs, BAPIs, Smart Forms, and SAP Fiori integration basics. Classes are kept small so trainers can actually answer your questions.",
-          "listItems": [
-            "ABAP fundamentals to OO ABAP",
-            "RFCs, BAPIs, Smart Forms",
-            "SAP Fiori integration basics",
-            "Small batches, real answers"
-          ]
-        },
-        {
-          "title": "What will you achieve?",
-          "content": "By the end of this course, you won't just understand ABAP — you'll be comfortable writing programs, debugging errors, and explaining your logic confidently in a technical interview.",
-          "listItems": [
-            "Write and debug real programs",
-            "Explain logic in technical interviews",
-            "Project experience recruiters ask for"
-          ]
-        }
-      ]
-    }
-  },
-  "Whyariba": {
-    "WhyAriba": {
-      "title": "Why SAP Ariba ?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">SAP Ariba</span>?",
-          "content": "Let's be honest — most SAP course pages sound the same. SAP Ariba is one of the fastest-growing modules because more companies are moving procurement and supply chain processes onto cloud platforms. That means genuine, growing demand for people who actually understand how to work with it — not just people who've memorized menu options."
-        },
-        {
-          "title": "What will you learn?",
-          "content": "Instead of rushing through slides, we spend time on how Ariba is actually used inside real companies — sourcing events, supplier management, contract workflows, and procurement operations — the kind of things you'll be doing (or explaining in an interview) on day one of a real job.",
-          "listItems": [
-            "Sourcing events & supplier management",
-            "Contract workflows",
-            "Procurement operations",
-            "Real company usage, not just menus"
-          ]
-        },
-        {
-          "title": "Who can join and what will you achieve?",
-          "content": "You don't need a technical background. If you've worked in procurement, supply chain, finance, or general SAP (MM/SD), you'll pick this up quickly. If you're a fresher, we'll build you up from the fundamentals. By the end, you'll be comfortable navigating Ariba, configuring workflows, and speaking about it confidently in interviews.",
-          "listItems": [
-            "No technical background required",
-            "Procurement/supply chain/finance background helps",
-            "Navigate, configure, and interview with confidence"
-          ]
-        }
-      ]
-    }
-  },
-  "Whybasis": {
-    "WhyBasis": {
-      "title": "Why SAP BASIS ?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">SAP BASIS</span>?",
-          "content": "SAP Basis is the technical backbone of every SAP system — the layer that keeps installations running, users logged in, transports moving, and the whole landscape healthy. If you enjoy working with servers, databases, and troubleshooting rather than writing business logic, SAP Basis is one of the most stable and well-paid career paths inside the SAP ecosystem."
-        },
-        {
-          "title": "What will you do in this course?",
-          "content": "This course is designed for people who want more than theory. You'll install an SAP system from scratch, configure client settings, manage transport requests, handle user administration, monitor system performance, and work through the kind of tickets a real Basis consultant deals with every day.",
-          "listItems": [
-            "Install SAP from scratch",
-            "Client settings, transports, user admin",
-            "Performance monitoring & real tickets"
-          ]
-        },
-        {
-          "title": "How is it delivered and what will you achieve?",
-          "content": "Classes are kept small so the trainer can actually walk around and check your work. Most sessions blend a short concept explanation with a much longer hands-on segment. By the time you finish, you won't just know what Basis administration is — you'll know how to do it. If you're searching for dependable SAP Basis training in Mumbai focused on employability rather than just certificates, this is where most conversations with students start.",
-          "listItems": [
-            "Small batches, hands-on focus",
-            "Know how to do it, not just what it is",
-            "Employability-first, not certificate-only"
-          ]
-        }
-      ]
-    }
-  },
-  "Whyfico": {
-    "WhyFICO": {
-      "title": "Why SAP FICO ?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">SAP FICO</span>?",
-          "content": "Let's be honest — there's no shortage of SAP FICO courses in Mumbai. What usually separates a good one from a forgettable one is whether you actually get your hands on the system, or just watch someone else click through it. This course is built around that gap. You'll be working inside SAP S/4HANA from week one — configuring the General Ledger, running vendor and customer transactions, setting up asset accounting, and eventually handling month-end closing the way a finance team actually does it."
-        },
-        {
-          "title": "Who is this <span class=\"highlight-span-cards\">SAP FICO training</span> for?",
-          "content": "It's meant for people who already understand basic accounting — commerce graduates, working accountants, CAs looking to specialise, or SAP end-users who want to move into a configuration or support role. If you're switching careers into SAP consulting, this is usually the first serious step.",
-          "listItems": [
-            "Commerce graduates & working accountants",
-            "CAs looking to specialise",
-            "SAP end-users moving into config/support",
-            "Career switchers into SAP consulting"
-          ]
-        },
-        {
-          "title": "How does this course make you <span class=\"highlight-span-cards\">job-ready</span>?",
-          "content": "By the time you finish, you won't just \"know\" FI and CO modules on paper. You'll have configured them yourself, broken things and fixed them, and built a small project you can talk through confidently in an interview — which, honestly, is what most hiring managers are actually listening for.",
-          "listItems": [
-            "Configure FI & CO yourself on live S/4HANA",
-            "Break things and fix them hands-on",
-            "Build a project you can discuss in interviews"
-          ]
-        }
-      ]
-    }
-  },
   "Whypowerbi": {
     "WhyPOWERBI": {
-      "title": "Why Power BI ?",
+      "title": "Why Power BI?",
       "cards": [
         {
           "title": "What is <span class=\"highlight-span-cards\">Power BI?</span>",
-          "content": "Power BI is Microsoft’s business-analytics platform that lets you connect, transform, and visualize data in real time. It creates interactive dashboards and reports that help teams make faster, better decisions."
+          "content": "Data is everywhere, but very few professionals know how to turn it into something a manager can actually act on. That's the gap this Power BI course in Mumbai is built to close."
         },
         {
-          "title": "What does a <span class=\"highlight-span-cards\">Power BI Developer</span> do?",
-          "content": "A Power BI Developer builds data models, dashboards, and reports that turn raw data into clear insights. They help business users understand performance and make informed decisions.",
+          "title": "What will you master?",
+          "content": "Over the duration of the course, you'll learn how to pull data from multiple sources, clean it, model it correctly, and build dashboards that tell a clear story not just charts that look busy. We start with the basics of Power BI Desktop and move step by step into DAX formulas, data modelling, and Power Query, before finishing with real dashboard projects you can show in interviews or use at work the very next day.",
           "listItems": [
-            "Develop and maintain Power BI reports",
-            "Integrate Power BI with multiple data sources",
-            "Optimize and improve existing dashboards"
+            "Power Query, data modeling & DAX",
+            "Interactive dashboards & storytelling",
+            "Publishing, security & PL-300 readiness"
           ]
         },
         {
-          "title": "Why take <span class=\"highlight-span-cards\">Power BI</span> training?",
-          "content": "Power BI skills give you a clear edge in a data-driven job market. Our training in {city} teaches you to analyze complex data and present it in a clear, actionable way — whether you want to advance or change careers.",
+          "title": "Who is this course for?",
+          "content": "This isn't a course built around slides. It's built around a laptop open in front of you, a dataset you're actually struggling with, and an instructor walking you through it live. Whether you're a fresher trying to break into analytics, or a working professional in Mumbai who's been asked to \"just make a dashboard\" without ever being taught how this course meets you where you are.",
           "listItems": [
-            "Power BI Developer",
-            "Data Analyst",
-            "Business Intelligence Consultant"
+            "Excel users & reporting professionals",
+            "Freshers & career switchers",
+            "Anyone targeting Power BI or BI analyst roles"
           ]
         }
       ]
@@ -383,15 +205,15 @@
   },
   "Whytableau": {
     "WhyTABLEAU": {
-      "title": "Why Tableau ?",
+      "title": "Why Tableau?",
       "cards": [
         {
           "title": "What is <span class=\"highlight-span-cards\">Tableau?</span>",
-          "content": "Tableau is a leading business-intelligence platform that makes it easy to connect, visualize, and share data. Its drag-and-drop interface lets users create powerful visualizations that turn raw data into clear insights for decision-making."
+          "content": "Tableau has become one of the most in-demand tools in the data analytics industry, and Mumbai's fast-growing IT, BFSI, e-commerce, and consulting sectors are actively hiring professionals who know how to turn raw data into clear, decision-ready dashboards. Our Tableau course in Mumbai is built for exactly this demand."
         },
         {
           "title": "What does a <span class=\"highlight-span-cards\">Tableau Developer</span> do?",
-          "content": "A Tableau Developer designs, builds, and maintains dashboards and reports. They work with business stakeholders to understand needs and turn data into clear, useful visual insights.",
+          "content": "This is not a theory-heavy lecture series. You will work with real, messy datasets from day one, build interactive dashboards, and learn how data teams actually use Tableau inside a company from connecting to live data sources to publishing dashboards on Tableau Server and Tableau Cloud.",
           "listItems": [
             "Create and manage Tableau dashboards",
             "Collaborate with teams to gather requirements",
@@ -399,12 +221,157 @@
           ]
         },
         {
-          "title": "Why take <span class=\"highlight-span-cards\">Tableau</span> training?",
-          "content": "Tableau skills are in high demand across industries. Our training in {city} offers hands-on practice with real data sets and prepares you to deliver meaningful visual insights that businesses value.",
+          "title": "Why take <span class=\"highlight-span-cards\">Tableau</span> training in Mumbai?",
+          "content": "Whether you are a fresher trying to break into analytics, a working professional switching careers, or someone who already uses Excel and wants to move to a more powerful visualization tool, this Tableau training in Mumbai is structured to take you from zero to job-ready.",
           "listItems": [
             "Tableau Developer",
             "Data Analyst",
             "Business Intelligence Analyst"
+          ]
+        }
+      ]
+    }
+  },
+  "Whydatavisual": {
+    "WhyDataVisual": {
+      "title": "Why Data Visualization with AI?",
+      "cards": [
+        {
+          "title": "What is <span class=\"highlight-span-cards\">Data Visualization with AI?</span>",
+          "content": "Data is everywhere, but insight is rare. That's exactly the gap this Data Visualization with AI Course in Mumbai is built to close."
+        },
+        {
+          "title": "What will you be able to do?",
+          "content": "Over the past few years, the way we visualize data has changed dramatically. It's no longer just about building charts in Excel it's about combining traditional visualization tools with AI-powered automation to generate insights faster, cleaner, and with far less manual effort. That's precisely what this course is designed to teach.",
+          "listItems": [
+            "Power BI, Tableau, Excel & Python visuals",
+            "Chart selection, storytelling & AI-assisted workflows",
+            "Portfolio-ready dashboards"
+          ]
+        },
+        {
+          "title": "Who should join?",
+          "content": "This Data Visualization Course in Mumbai takes you from the fundamentals of visual design and storytelling to advanced, AI-assisted dashboard creation using tools like Power BI, Tableau, Python (Matplotlib, Seaborn, Plotly), and generative AI assistants for automated chart generation and narrative summaries. By the end of the course, you won't just know how to make a chart you'll know how to make the *right* chart, tell the *right* story, and use AI tools to do it faster than ever before.",
+          "listItems": [
+            "Professionals adding data storytelling skills",
+            "Freshers targeting BI or analytics roles",
+            "Anyone ready to move beyond basic charts"
+          ]
+        }
+      ]
+    }
+  },
+  "Whyagentic": {
+    "WhyAgentic": {
+      "title": "Why Agentic AI?",
+      "cards": [
+        {
+          "title": "What is <span class=\"highlight-span-cards\">Agentic AI?</span>",
+          "content": "Agentic AI is no longer a buzzword; it's how modern software is starting to get built. Instead of AI that just answers questions, agentic systems can plan multi-step tasks, use tools, remember context, and even correct their own mistakes. Companies across Mumbai's tech, fintech, and product ecosystem are already hiring for this skill set, and the demand is only accelerating."
+        },
+        {
+          "title": "What will you be able to do?",
+          "content": "This Agentic AI course in Mumbai is built for people who want to move beyond prompt engineering and actually understand how autonomous agents are designed, trained, and deployed. Over the course of the program, you'll go from understanding how large language models reason, to building your own multi-agent workflows that can browse, code, retrieve data, and take action all with minimal human intervention.",
+          "listItems": [
+            "Single-agent, multi-agent & hierarchical systems",
+            "LangChain, LangGraph, CrewAI, AutoGen",
+            "Memory, tools, RAG, deployment & monitoring"
+          ]
+        },
+        {
+          "title": "Who is this course for?",
+          "content": "You won't just watch lectures. Every module is paired with a project, so by the time you finish this Agentic AI training in Mumbai, you'll have a portfolio of working agents you can show in interviews not just a certificate.",
+          "listItems": [
+            "Developers & ML engineers",
+            "Data scientists applying skills to agents",
+            "Mumbai IT professionals reskilling part-time"
+          ]
+        }
+      ]
+    }
+  },
+  "Whyaiml": {
+    "WhyAIML": {
+      "title": "Why AI ML Course?",
+      "cards": [
+        {
+          "title": "What is <span class=\"highlight-span-cards\">AI & Machine Learning?</span>",
+          "content": "Mumbai is fast becoming one of India's biggest hubs for AI-driven startups, fintech companies, and enterprise data teams and that means the demand for skilled AI and ML professionals in the city has never been higher. This course was designed specifically to meet that demand."
+        },
+        {
+          "title": "What will you learn?",
+          "content": "This isn't a course that throws theory at you and hopes it sticks. Our AI & ML course in Mumbai is structured around actual industry workflows, the same ones used by data scientists and ML engineers working at product companies today. You'll learn Python, statistics, machine learning algorithms, deep learning, natural language processing, and generative AI, but more importantly, you'll learn how to apply all of it to real business problems.",
+          "listItems": [
+            "Python, statistics, ML & deep learning",
+            "NLP, generative AI & model deployment",
+            "Portfolio projects + interview readiness"
+          ]
+        },
+        {
+          "title": "Who is this course for?",
+          "content": "By the end of this Artificial Intelligence and Machine Learning course, you won't just understand how algorithms work you'll have built and deployed your own models, worked on capstone projects with real datasets, and developed the kind of practical experience that recruiters in Mumbai's tech scene actually look for.",
+          "listItems": [
+            "Freshers targeting AI/ML roles",
+            "Working professionals reskilling",
+            "Anyone who learns best by building real models"
+          ]
+        }
+      ]
+    }
+  },
+  "Whyaws": {
+    "WhyAWS": {
+      "title": "Why AWS?",
+      "cards": [
+        {
+          "title": "What is <span class=\"highlight-span-cards\">AWS?</span>",
+          "content": "Cloud computing is no longer optional for IT careers it's the baseline. Our AWS course in Mumbai is designed for people who want to move fast: from zero cloud experience to confidently deploying and managing infrastructure on Amazon Web Services."
+        },
+        {
+          "title": "What will you master in this <span class=\"highlight-span-cards\">AWS course</span>?",
+          "content": "Unlike generic online tutorials, this is a structured, instructor-led program delivered in Mumbai, with in-person and live-online batches to suit working professionals, students, and career changers. You'll learn AWS the way it's actually used in production environments through labs, real deployments, and guided projects not just slides.",
+          "listItems": [
+            "EC2, S3, IAM, VPC, RDS, Lambda & more",
+            "Hands-on labs + real cloud deployments",
+            "Certification readiness + job-ready skills"
+          ]
+        },
+        {
+          "title": "Who is this course for?",
+          "content": "By the end of this course, you'll understand how to design, deploy, and secure cloud infrastructure on AWS, and you'll be prepared to sit for globally recognized AWS certification exams. Whether you're targeting a role as a Cloud Engineer, DevOps Engineer, or Solutions Architect, this program gives you the practical foundation employers in Mumbai and beyond are actively hiring for.",
+          "listItems": [
+            "Freshers & engineering graduates",
+            "IT professionals upskilling to cloud",
+            "Anyone targeting Cloud / DevOps roles"
+          ]
+        }
+      ]
+    }
+  },
+  "Whydevops": {
+    "WhyDEVOPS": {
+      "title": "Why DevOps?",
+      "cards": [
+        {
+          "title": "What is <span class=\"highlight-span-cards\">DevOps?</span>",
+          "content": "Mumbai's IT and fintech companies are hiring DevOps engineers faster than almost any other tech role, and this DevOps course in Mumbai is designed to meet that demand head-on. Instead of teaching tools in isolation, this program takes you through the complete DevOps lifecycle — from version control and continuous integration to containerization, orchestration, and cloud deployment."
+        },
+        {
+          "title": "What will you master in this <span class=\"highlight-span-cards\">DevOps course</span>?",
+          "content": "You will work on real-world projects, set up CI/CD pipelines from scratch, deploy applications on the cloud, and learn to automate infrastructure the way it is done in modern tech companies. By the end of this training, you won't just understand DevOps concepts you will have hands-on experience that you can confidently talk about in interviews and apply directly on the job.",
+          "listItems": [
+            "Linux, Git, Jenkins, Docker, Kubernetes",
+            "Terraform, Ansible, CI/CD & monitoring",
+            "Live projects + interview-ready portfolio"
+          ]
+        },
+        {
+          "title": "Who is this course for?",
+          "content": "Whether you are a fresher, a software developer, or a system administrator planning a career switch, this course builds your skills step by step. Join Mumbai's most practical DevOps training program and learn directly from industry practitioners who've built and scaled production systems.",
+          "listItems": [
+            "Freshers & recent graduates",
+            "Sysadmins & developers upskilling",
+            "Working professionals targeting DevOps roles"
           ]
         }
       ]
@@ -416,11 +383,11 @@
       "cards": [
         {
           "title": "What is  <span class=\"highlight-span-cards\">Core HR</span>?",
-          "content": "Core HR covers the foundational people processes — recruitment, payroll, employee relations, and compliance. These functions help organizations manage their workforce efficiently and support employees throughout their journey."
+          "content": "If you're searching for an HR course in Mumbai that actually prepares you for a real HR desk job not just a certificate to frame this program is built for you. This Core HR Course in Mumbai is designed for freshers, career-switchers, and working professionals who want to build a strong foundation in Human Resources."
         },
         {
           "title": "What Does <span class=\"highlight-span-cards\">an HR</span> Do?",
-          "content": "HR professionals in core roles build and maintain the basic frameworks that support both day-to-day operations and longer-term people strategies. They handle recruitment, development, compensation, compliance, and workforce planning.",
+          "content": "Unlike generic HR training programs that stay stuck in theory, this course focuses on what HR teams actually do every day: hiring, onboarding, payroll processing, statutory compliance, performance management, and employee engagement. You'll work on real HR documents, live payroll sheets, mock interviews, and actual compliance case studies used by Mumbai-based companies.",
           "listItems": [
             "Manage recruitment and onboarding",
             "Handle payroll and employee records",
@@ -429,7 +396,7 @@
         },
         {
           "title": "Why Take <span class=\"highlight-span-cards\">HR</span> Training?",
-          "content": "Strong Core HR skills are needed in every industry. Our course in {city} covers the key areas of HR management and prepares you for practical, in-demand roles.",
+          "content": "By the end of the course, you won't just understand HR concepts you'll be able to walk into an HR Executive or HR Generalist role and start contributing from day one. Whether you're a fresh graduate exploring HR as a career, or someone already working in HR who wants to formalize your knowledge with a recognized Core HR Certification in Mumbai, this program meets you where you are and takes you to job-ready.",
           "listItems": [
             "HR Generalist",
             "Recruitment Specialist",
@@ -446,11 +413,11 @@
       "cards": [
         {
           "title": "What is  <span class=\"highlight-span-cards\">HR Management</span>?",
-          "content": "HR Management covers the strategic planning and day-to-day management of an organization’s people. It includes hiring, training, performance, employee relations, and compensation so the workforce supports business goals."
+          "content": "Looking for an HR Management course in Mumbai that goes beyond theory? This program is built for people who want to actually *do* the job of an HR professional, not just memorise definitions for an exam."
         },
         {
           "title": "What Does <span class=\"highlight-span-cards\">HR Management</span> Do?",
-          "content": "HR Managers oversee the full range of people processes and align them with company objectives. They design policies, support employee development, and ensure a productive, engaged workforce.",
+          "content": "Over the course of this HR training program, you'll work on real hiring drives, build actual payroll sheets, run mock performance appraisals, and get hands-on with the same HRMS software used by companies across Mumbai's corporate hubs BKC, Lower Parel, Andheri, and Powai.",
           "listItems": [
             "Lead recruitment and talent development",
             "Manage performance and employee relations",
@@ -459,7 +426,7 @@
         },
         {
           "title": "Why Take <span class=\"highlight-span-cards\">HR Management</span> Training?",
-          "content": "As organizations grow, skilled HR leaders become more important. Our course in {city} gives a complete understanding of HR operations and prepares you for leadership and specialist roles.",
+          "content": "Mumbai's job market for HR roles is competitive, and recruiters increasingly expect candidates to know applicant tracking systems, payroll compliance, and basic HR analytics not just \"soft skills.\" This HR Management course is structured around exactly those expectations, so what you learn in class is what you'll be asked to do in your first HR job.",
           "listItems": [
             "HR Manager",
             "HR Generalist",
@@ -476,11 +443,11 @@
       "cards": [
         {
           "title": "What is <span class=\"highlight-span-cards\">HR Payroll</span>?",
-          "content": "HR Payroll covers calculating wages, processing payments, managing deductions, and ensuring tax compliance. Accurate payroll is essential for employee trust and legal compliance."
+          "content": "Payroll is one of the few HR functions that never gets automated away. Someone still has to understand it, run it, and defend it during an audit. That's exactly why this HR Payroll Course in Mumbai exists."
         },
         {
           "title": "What Does <span class=\"highlight-span-cards\">HR Payroll</span> Do?",
-          "content": "Payroll professionals ensure employees are paid correctly and on time while meeting all legal requirements. They manage records, benefits, bonuses, and work closely with finance teams.",
+          "content": "This course is built for people who want more than theory. Over the duration of the program, you'll work on live payroll cases, learn how salary structures are actually designed in Indian companies, and get comfortable with PF, ESI, TDS, Professional Tax, Gratuity, and Labour Law compliance, the parts of payroll that trip up most beginners.",
           "listItems": [
             "Process accurate and timely payroll",
             "Handle deductions, taxes, and benefits",
@@ -489,279 +456,12 @@
         },
         {
           "title": "Why Take <span class=\"highlight-span-cards\">HR Payroll</span> Training?",
-          "content": "Reliable payroll skills are always in demand. Our course in {city} prepares you to manage payroll systems accurately and stay compliant with changing regulations.",
+          "content": "Whether you're an HR fresher trying to break into a core payroll role, an admin professional looking to upskill, or a business owner who wants to run payroll in-house instead of outsourcing it, this program is structured to take you from basics to independent, audit-ready payroll processing. Classes are conducted at our Mumbai training center with both weekday and weekend batch options.",
           "listItems": [
             "Payroll Specialist",
             "HR Payroll Administrator",
             "Payroll Compliance Officer",
             "Compensation and Benefits Manager"
-          ]
-        }
-      ]
-    }
-  },
-  "Whyit": {
-    "WhyIT": {
-      "title": "What is Software Developement Course in {city}?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">Software Development</span>?",
-          "content": "Software development creates the applications and systems that power modern business and innovation. Our software course in {city} covers core programming, architecture, web development, databases, and data structures so you can build real solutions."
-        },
-        {
-          "title": "What does a <span class=\"highlight-span-cards\">Software Developer</span> do?",
-          "content": "A Software Developer designs, codes, tests, and maintains applications that meet business needs. They focus on performance, reliability, and collaboration to deliver high-quality software.",
-          "listItems": [
-            "Design and develop software solutions",
-            "Test, debug, and maintain applications",
-            "Collaborate with teams to deliver quality code"
-          ]
-        },
-        {
-          "title": "Why Take <span class=\"highlight-span-cards\">IT Training</span> in {city}?",
-          "content": "Software skills remain highly valued. Our IT training in {city} builds practical ability in programming languages, frameworks, debugging, and databases so you can move into development roles with confidence.",
-          "listItems": [
-            "Software Developer",
-            "Full Stack Developer",
-            "Front-End Developer",
-            "Back-End Developer",
-            "Java/Python Developer"
-          ]
-        }
-      ]
-    }
-  },
-  "Whyhr": {
-    "WhyHR": {
-      "title": "Why HR Training?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">HR?</span>",
-          "content": "Human Resources manages the people side of an organization — attracting, developing, and retaining talent while ensuring compliance and supporting productivity. Our HR course in {city} covers the core practices needed in today’s workplace."
-        },
-        {
-          "title": "What does an <span class=\"highlight-span-cards\">HR</span> Do?",
-          "content": "HR professionals handle recruitment, performance, compensation, employee relations, training, and compliance. They help create a positive environment and align people practices with business goals.",
-          "listItems": [
-            "Manage recruitment and talent development",
-            "Support performance and employee relations",
-            "Ensure compliance and fair practices"
-          ]
-        },
-        {
-          "title": "Why Take <span class=\"highlight-span-cards\">HR Training</span>in {city}? ",
-          "content": "Strong HR skills are essential for any growing organization. Our course in {city} builds practical ability across the full HR lifecycle so you can contribute from day one.",
-          "listItems": [
-            "HR Generalist",
-            "HR Specialist",
-            "HR Business Partner",
-            "HR Manager"
-          ]
-        }
-      ]
-    }
-  },
-  "Whydatavisual": {
-    "WhyDataVisual": {
-      "title": "Why Data Visualization Course in {city}?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">Data Visualization?</span>",
-          "content": "Data Visualization turns complex data into clear, actionable insights. Our course in {city} teaches tools such as Tableau, Power BI, SQL, and advanced Excel so you can create interactive dashboards and communicate findings that drive decisions."
-        },
-        {
-          "title": "What does a <span class=\"highlight-span-cards\">Data Analyst</span> do?",
-          "content": "A Data Analyst collects, processes, and analyzes data to support informed decisions. They clean data, find trends, create visualizations, and present insights in a way that business teams can use.",
-          "listItems": [
-            "Collect, clean, and analyze data",
-            "Create clear visualizations and reports",
-            "Present insights that support business decisions"
-          ]
-        },
-        {
-          "title": "Why take the <span class=\"highlight-span-cards\">Data Visualization Training</span> in {city}?",
-          "content": "Data visualization skills help you turn numbers into stories that influence decisions. Our course in {city} builds hands-on ability with leading tools and prepares you for roles that need clear, actionable insights.",
-          "listItems": [
-            "Data Analyst",
-            "Data Visualization Specialist",
-            "Business Intelligence Analyst",
-            "Data Scientist",
-            "Reporting Analyst"
-          ]
-        }
-      ]
-    }
-  },
-  "Whyagentic": {
-    "WhyAgentic": {
-      "title": "Why Agentic AI?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">Agentic AI?</span>",
-          "content": "Agentic AI refers to AI systems that can autonomously plan, reason, and take actions to achieve goals — going far beyond simple question-answering. These agents use large language models (LLMs) as a reasoning engine, combined with tools, memory, and multi-step planning to complete complex real-world tasks. The Agentic AI course in {city} trains you to build these systems from scratch."
-        },
-        {
-          "title": "What does an <span class=\"highlight-span-cards\">Agentic AI Engineer</span> do?",
-          "content": "An Agentic AI Engineer designs and builds autonomous AI pipelines that can browse the web, write and execute code, query databases, and coordinate with other agents to complete long-horizon tasks. They work with LLM frameworks, APIs, and cloud infrastructure to ship production-ready AI products.",
-          "listItems": [
-            "Build and orchestrate multi-agent systems.",
-            "Integrate LLMs with external tools and APIs.",
-            "Design memory and retrieval systems for agents."
-          ]
-        },
-        {
-          "title": "Why take <span class=\"highlight-span-cards\">Agentic AI</span> training?",
-          "content": "Agentic AI is the fastest-growing segment of the AI industry. Companies are racing to build autonomous assistants, coding agents, and business automation pipelines. Our Agentic AI training in {city} prepares you for high-demand roles such as:",
-          "listItems": [
-            "Agentic AI Engineer",
-            "LLM Engineer",
-            "AI Automation Specialist",
-            "AI Solutions Architect"
-          ]
-        }
-      ]
-    }
-  },
-  "Whybwbi": {
-    "WhyBwbi": {
-      "title": "Why SAP BW/BI ?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">SAP BW/BI</span>?",
-          "content": "If you have ever wondered how large companies make sense of mountains of data every single day, the answer usually involves SAP BW/BI. Our SAP BW/BI course in Mumbai is built for people who want more than theory — it's designed around the kind of reporting, modelling, and data warehousing challenges you'll actually face on the job."
-        },
-        {
-          "title": "What will you learn?",
-          "content": "You'll work with SAP BW and SAP BI tools to extract, transform, and load data, build info cubes, design reports, and create dashboards that business teams can actually use. Whether you're an SAP consultant looking to upskill, a fresher aiming to break into the SAP ecosystem, or a working professional planning a career switch, this course meets you where you are.",
-          "listItems": [
-            "ETL, info cubes, reports, dashboards",
-            "SAP BW and BI tools",
-            "Real job-style challenges"
-          ]
-        },
-        {
-          "title": "How is it taught?",
-          "content": "Classes are conducted by trainers who have spent years implementing SAP projects for real clients — not just teaching from a slide deck. Expect practical exercises, doubt-clearing sessions, and enough hands-on practice that by the end, you're not just familiar with SAP BW/BI, you're confident using it.",
-          "listItems": [
-            "Trainers with real implementation experience",
-            "Practical exercises & doubt-clearing",
-            "Confident, not just familiar"
-          ]
-        }
-      ]
-    }
-  },
-  "Whyewm": {
-    "WhyEWM": {
-      "title": "Why SAP EWM ?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">SAP EWM</span>?",
-          "content": "Warehousing has changed. Companies no longer manage stock with spreadsheets and guesswork — they run it on SAP Extended Warehouse Management, and that's exactly what this SAP EWM course in Mumbai is built to teach you."
-        },
-        {
-          "title": "What will you learn?",
-          "content": "This program takes you from the basics of warehouse structures right through to advanced topics like RF framework, wave management, and yard management — the same processes used in real distribution centers. You'll get hands-on server access, work on live business scenarios, and build the practical understanding interviewers test for.",
-          "listItems": [
-            "Warehouse structures to advanced topics",
-            "RF framework, wave & yard management",
-            "Hands-on server access + live scenarios"
-          ]
-        },
-        {
-          "title": "Who is it for?",
-          "content": "Whether you're an SAP MM consultant looking to specialise, a logistics professional wanting to move into SAP, or a fresh graduate aiming for your first SAP job, this course is designed to get you interview-ready and job-ready. Trainers have real EWM implementation experience; curriculum matches Mumbai's manufacturing, FMCG, pharma, and 3PL needs.",
-          "listItems": [
-            "MM consultants, logistics pros, freshers",
-            "Interview & job-ready",
-            "Aligned to Mumbai industry demand"
-          ]
-        }
-      ]
-    }
-  },
-  "Whyhana": {
-    "WhyHana": {
-      "title": "Why SAP S/4HANA ?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">SAP S/4HANA</span>?",
-          "content": "SAP S/4HANA has become the backbone of enterprise operations across finance, manufacturing, retail, and logistics — and Mumbai, being India's commercial capital, has one of the highest concentrations of SAP-driven businesses in the country. That's exactly why this course was built: to take you from the basics of ERP to job-ready, hands-on expertise on the same system Fortune 500 companies run."
-        },
-        {
-          "title": "How is the training delivered?",
-          "content": "This isn't a course that hands you slides and expects you to \"figure it out\" later. You'll work directly on a live SAP S/4HANA environment, walk through real business scenarios, and build the kind of practical understanding that interviewers actually test for.",
-          "listItems": [
-            "Live S/4HANA environment",
-            "Real business scenarios",
-            "Practical understanding interviewers test"
-          ]
-        },
-        {
-          "title": "Who is it for and what will you achieve?",
-          "content": "Whether you're a commerce graduate looking to break into IT, a functional consultant upgrading from ECC to S/4HANA, or a working professional planning a career shift, this training meets you where you are. By the end, you'll know how to configure it, troubleshoot it, and talk about it confidently in a client-facing role.",
-          "listItems": [
-            "Commerce grads, ECC consultants, career switchers",
-            "Configure and troubleshoot",
-            "Client-facing confidence"
-          ]
-        }
-      ]
-    }
-  },
-  "Whysd": {
-    "WhySD": {
-      "title": "Why SAP SD ?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">SAP SD</span>?",
-          "content": "If you've searched for \"SAP SD course in Mumbai,\" you've probably noticed most institutes teach the same 40-slide theory deck. This one's built differently. SAP SD runs the entire order-to-cash cycle — from customer order to payment. It's one of the most in-demand modules because almost every SAP-using company needs someone who understands sales, pricing, billing, and delivery inside SAP."
-        },
-        {
-          "title": "What will you do in this course?",
-          "content": "This course is designed for people in Mumbai who want to actually use SAP SD, not just recognize the acronyms. You'll work on a real SAP server, configure your own sales organization structure from scratch, run through order-to-cash cycles end to end, and troubleshoot the kind of errors that show up on real projects — not textbook examples.",
-          "listItems": [
-            "Configure sales org structure from scratch",
-            "End-to-end order-to-cash on live server",
-            "Troubleshoot real project errors"
-          ]
-        },
-        {
-          "title": "What will you achieve?",
-          "content": "By the end, you'll be able to walk into an interview and talk through a live scenario, not just recite definitions.",
-          "listItems": [
-            "Talk through live scenarios in interviews",
-            "Practical SD skills, not just theory",
-            "Real project-style troubleshooting"
-          ]
-        }
-      ]
-    }
-  },
-  "Whysucc": {
-    "WhySucc": {
-      "title": "Why SAP SuccessFactors ?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">SAP SuccessFactors</span>?",
-          "content": "SAP SuccessFactors has become the backbone of modern HR departments, and demand for skilled consultants keeps rising every quarter. Our SAP SuccessFactors course in Mumbai takes you from the basics of cloud HCM to job-ready configuration skills across Employee Central, Recruitment, Performance & Goals, Learning Management, and Compensation."
-        },
-        {
-          "title": "How is this different from generic tutorials?",
-          "content": "Unlike generic online tutorials, this program is delivered by trainers who have implemented SAP SF for real clients. You'll get hands-on access to a live system, work through configuration exercises, and understand how HR processes actually translate into SAP SF workflows.",
-          "listItems": [
-            "Live system access",
-            "Configuration exercises",
-            "Real client implementation experience"
-          ]
-        },
-        {
-          "title": "Who is it for and what will you achieve?",
-          "content": "Whether you're an HR professional looking to upskill, an SAP consultant expanding into cloud HCM, or a fresher aiming for your first SAP job, this course gives you the structured path Mumbai's IT and HR job market expects. By the end, you'll be able to configure modules, troubleshoot common issues, and speak confidently in interviews about real implementation scenarios.",
-          "listItems": [
-            "HR pros, SAP consultants, freshers",
-            "Configure modules & troubleshoot",
-            "Interview-ready implementation scenarios"
           ]
         }
       ]
@@ -773,11 +473,11 @@
       "cards": [
         {
           "title": "Why <span class=\"highlight-span-cards\">HR Analytics</span>?",
-          "content": "HR Analytics uses data and statistical methods to measure and improve people processes. It helps organizations make better decisions about hiring, performance, retention, and workforce planning."
+          "content": "Mumbai's job market is shifting fast, and HR teams are now expected to justify every decision with data — attrition trends, hiring cost, engagement scores, and productivity metrics. This HR Analytics Course in Mumbai is designed to help HR professionals bridge that exact gap."
         },
         {
           "title": "What Does <span class=\"highlight-span-cards\">HR Analytics</span> Do?",
-          "content": "HR Analytics professionals collect and analyze workforce data to uncover insights that improve decision-making. They look at performance, turnover, recruitment efficiency, and related metrics to support better people strategies.",
+          "content": "Over the course of this program, you will learn how to collect, clean, visualise, and interpret HR data using tools that real companies use every day. Instead of theory-heavy lectures, this HR Analytics Course focuses on live projects: building an attrition dashboard, calculating recruitment ROI, and presenting people-metrics to leadership in a way that actually gets acted upon.",
           "listItems": [
             "Collect and analyze workforce data",
             "Identify trends in performance and retention",
@@ -786,7 +486,7 @@
         },
         {
           "title": "Why Take <span class=\"highlight-span-cards\">HR Analytics</span> Training?",
-          "content": "Data-driven HR is becoming essential. Our training in {city} prepares you to analyze employee data, improve workforce management, and support business strategy with clear insights.",
+          "content": "This is not a generic data analytics course dressed up for HR. Every case study, dataset, and assignment in this HR Analytics Course in Mumbai is built around real HR functions — recruitment, performance management, compensation, engagement, and retention — so you walk out able to apply what you learn on Monday morning.",
           "listItems": [
             "HR Analyst",
             "HR Business Partner",
@@ -803,11 +503,11 @@
       "cards": [
         {
           "title": "What is<span class=\"highlight-span-cards\">HR Generalist?</span>",
-          "content": "An HR Generalist handles a broad range of people activities — recruitment, onboarding, engagement, performance, training, payroll, and compliance. They keep day-to-day HR operations running smoothly across the organization."
+          "content": "If you're looking to build a career in Human Resources, this HR Generalist Course in Mumbai gives you everything you need to start strong from the basics of recruitment to the finer points of payroll processing and labour law compliance."
         },
         {
           "title": "What Does <span class=\"highlight-span-cards\">HR Generalist</span> Do?",
-          "content": "HR Generalists are the all-rounders of the HR team. They support multiple functions, implement policies, and help create a positive work environment while ensuring legal compliance.",
+          "content": "Unlike generic HR training programs, this course focuses on what actually happens on the job. You'll learn how HR teams in real companies handle onboarding, employee grievances, performance appraisals, statutory compliance, and HR documentation using the same tools and formats used in the industry today.",
           "listItems": [
             "Handle recruitment and onboarding",
             "Support performance and employee relations",
@@ -816,7 +516,7 @@
         },
         {
           "title": "Why Take <span class=\"highlight-span-cards\">HR Generalist</span> Training?",
-          "content": "HR Generalists need a wide skill set. Our course in {city} gives comprehensive training for day-to-day HR operations, employee support, and legal compliance so you can step into the role ready.",
+          "content": "Whether you're a fresh graduate exploring HR as a career, a working professional switching fields, or someone returning to work after a break, this HR Generalist training in Mumbai is built to take you from zero HR experience to confidently handling a generalist role in any organization.",
           "listItems": [
             "HR Generalist",
             "HR Coordinator",
@@ -828,17 +528,47 @@
       ]
     }
   },
+  "Whyhr": {
+    "WhyHR": {
+      "title": "Why HR Training?",
+      "cards": [
+        {
+          "title": "What is <span class=\"highlight-span-cards\">HR?</span>",
+          "content": "If you're looking for practical, career-focused HR training in Mumbai, this program is built around what recruiters and HR managers actually expect from new hires. Rather than only covering theory, the course walks you through real hiring workflows, payroll processing, statutory compliance, and performance management systems used by companies operating in and around Mumbai."
+        },
+        {
+          "title": "What does an <span class=\"highlight-span-cards\">HR</span> Do?",
+          "content": "The curriculum is designed for both freshers exploring a career in human resources and working professionals who want to formalize their HR skills with a recognized certification. Every module blends conceptual learning with hands-on exercises using tools like Excel, HRMS software, and applicant tracking systems, so you leave the classroom already comfortable with day-to-day HR operations.",
+          "listItems": [
+            "Manage recruitment and talent development",
+            "Support performance and employee relations",
+            "Ensure compliance and fair practices"
+          ]
+        },
+        {
+          "title": "Why Take <span class=\"highlight-span-cards\">HR Training</span>in {city}? ",
+          "content": "Whether your goal is to break into HR, switch from a generalist role into HR analytics, or prepare for a managerial position, this HR course in Mumbai gives you a structured path with mentorship, case studies, and placement guidance at every stage.",
+          "listItems": [
+            "HR Generalist",
+            "HR Specialist",
+            "HR Business Partner",
+            "HR Manager"
+          ]
+        }
+      ]
+    }
+  },
   "Whyhrtrain": {
     "WhyHRTRAIN": {
       "title": "Why HR Training?",
       "cards": [
         {
           "title": "What is an <span class=\"highlight-span-cards\">HR Course</span>?",
-          "content": "An HR course builds the knowledge and skills needed to manage people effectively. It covers recruitment, employee relations, performance, and compliance so you can support a productive and engaged workforce."
+          "content": "If you're looking for practical, career-focused HR training in Mumbai, this program is built around what recruiters and HR managers actually expect from new hires. Rather than only covering theory, the course walks you through real hiring workflows, payroll processing, statutory compliance, and performance management systems used by companies operating in and around Mumbai."
         },
         {
           "title": "What does an <span class=\"highlight-span-cards\">HR</span> Do?",
-          "content": "HR professionals manage employee relations, recruitment, training, and compliance. They help create a positive workplace and align people practices with business goals.",
+          "content": "The curriculum is designed for both freshers exploring a career in human resources and working professionals who want to formalize their HR skills with a recognized certification. Every module blends conceptual learning with hands-on exercises using tools like Excel, HRMS software, and applicant tracking systems, so you leave the classroom already comfortable with day-to-day HR operations.",
           "listItems": [
             "Manage recruitment and employee relations",
             "Support performance and development",
@@ -847,369 +577,12 @@
         },
         {
           "title": "Why Take <span class=\"highlight-span-cards\">HR</span> Training?",
-          "content": "Organizations need capable HR professionals more than ever. Our training in {city} covers Generalist, Core HR, Payroll, Management, and Analytics skills and prepares you for a range of practical roles.",
+          "content": "Whether your goal is to break into HR, switch from a generalist role into HR analytics, or prepare for a managerial position, this HR course in Mumbai gives you a structured path with mentorship, case studies, and placement guidance at every stage.",
           "listItems": [
             "HR Generalist",
             "HR Manager",
             "Payroll Specialist",
             "Talent Acquisition Specialist"
-          ]
-        }
-      ]
-    }
-  },
-  "Whysap": {
-    "WhySap": {
-      "title": "Why SAP Course in {city}?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">SAP</span>?",
-          "content": "SAP (Systems, Applications, and Products in Data Processing) is one of the world's most widely used ERP (Enterprise Resource Planning) software solutions. It helps organizations manage finance, operations, HR, supply chain, and customer relations on a single integrated platform."
-        },
-        {
-          "title": "Who is this <span class=\"highlight-span-cards\">SAP course</span> designed for?",
-          "content": "This SAP course is designed for freshers, working professionals, and career switchers who want to build a strong foundation in SAP and specialize in modules that align with their career goals. Through instructor-led sessions, live projects, and practical assignments, you will gain the skills required to work as an SAP consultant, functional analyst, or technical specialist.",
-          "listItems": [
-            "Build a strong SAP foundation",
-            "Specialize in career-aligned modules",
-            "Gain skills for consultant, analyst, or technical roles"
-          ]
-        },
-        {
-          "title": "What will you achieve by the end of this <span class=\"highlight-span-cards\">SAP course</span>?",
-          "content": "By the end of this course, you will be equipped with real-world SAP implementation knowledge, configuration skills, and end-to-end business process understanding — preparing you for SAP certification exams and industry roles.",
-          "listItems": [
-            "Real-world SAP implementation knowledge",
-            "Configuration skills",
-            "End-to-end business process understanding",
-            "Readiness for SAP certification exams and industry roles"
-          ]
-        }
-      ]
-    }
-  },
-  "Whymm": {
-    "WhyMM": {
-      "title": "Why SAP MM ?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">SAP MM</span>?",
-          "content": "SAP MM is one of the most in-demand modules in the SAP ecosystem, forming the backbone of procurement, inventory, and supply chain operations for organizations worldwide. This course is designed for freshers, working professionals, and functional consultants who want to build or switch their career into SAP."
-        },
-        {
-          "title": "What will you learn in this <span class=\"highlight-span-cards\">SAP MM training</span>?",
-          "content": "Our SAP MM training in Mumbai covers the complete procure-to-pay cycle, inventory management, valuation, and integration with SAP SD, FI, and PP modules — all taught through real-time business scenarios and hands-on system access.",
-          "listItems": [
-            "Complete procure-to-pay cycle",
-            "Inventory management & valuation",
-            "Integration with SD, FI, and PP",
-            "Real-time scenarios + hands-on system access"
-          ]
-        },
-        {
-          "title": "What will you achieve by the end?",
-          "content": "By the end of this course, you will be able to independently configure, execute, and troubleshoot core MM processes, and confidently appear for SAP MM consultant interviews.",
-          "listItems": [
-            "Configure and execute core MM processes",
-            "Troubleshoot independently",
-            "Interview-ready for SAP MM consultant roles"
-          ]
-        }
-      ]
-    }
-  },
-  "Whyhrhcm": {
-    "WhyHRHCM": {
-      "title": "Why SAP HCM ?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">SAP HCM</span>?",
-          "content": "SAP HCM (Human Capital Management) is still one of the most in-demand modules in the SAP ecosystem, especially for companies that haven't fully shifted to SuccessFactors or are running hybrid setups. If you're in HR, payroll, or core SAP consulting and want to move into functional consulting work, this is where most people start."
-        },
-        {
-          "title": "Who is this course built for?",
-          "content": "This course is designed for Mumbai's working crowd — people holding down a 9-to-6 job who still want to build a real, billable skill on weekends or evenings. We don't rush through modules just to \"complete the syllabus.\" Every topic is taught the way it actually shows up in a client project: configuration first, then the business logic behind why it's configured that way, then troubleshooting the errors you'll actually hit.",
-          "listItems": [
-            "Working professionals (evenings/weekends)",
-            "HR & payroll professionals",
-            "SAP consultants moving into functional work",
-            "Configuration-first, then business logic"
-          ]
-        },
-        {
-          "title": "What will you be able to do by the end?",
-          "content": "By the end of this course, you won't just know what Infotype 0002 is — you'll know how to configure it, break it, and fix it, because that's what a client will expect from you on day one.",
-          "listItems": [
-            "Configure, break, and fix Infotypes",
-            "Day-one client-ready skills",
-            "Practical troubleshooting experience"
-          ]
-        }
-      ]
-    }
-  },
-  "Whyqm": {
-    "WhyQM": {
-      "title": "Why SAP QM ?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">SAP QM</span>?",
-          "content": "If you've worked anywhere near production, inspection, or quality control, you already know SAP QM isn't optional anymore — it's how companies track defects, manage inspections, and stay audit-ready. Problem is, most courses teach it like a PowerPoint deck. Ours doesn't."
-        },
-        {
-          "title": "What will you learn?",
-          "content": "This course is built around one idea: you should be able to open an actual SAP system on Day 1 and start clicking through it. We cover the entire QM lifecycle — from quality planning and inspection lots, to notifications, certificates, and integration with PP, MM, and SD — using real business scenarios from Indian manufacturing setups.",
-          "listItems": [
-            "Quality planning & inspection lots",
-            "Notifications & certificates",
-            "Integration with PP, MM, and SD",
-            "Real manufacturing scenarios"
-          ]
-        },
-        {
-          "title": "Why does this matter in Mumbai?",
-          "content": "By the time you finish, you won't just \"know\" SAP QM. You'll have configured it, broken it, fixed it, and documented it — which is exactly what employers in Mumbai's manufacturing, pharma, and auto-ancillary hubs are hiring for right now.",
-          "listItems": [
-            "Configure, break, fix, and document",
-            "Hiring demand in manufacturing, pharma, auto",
-            "Day-1 system access, not just slides"
-          ]
-        }
-      ]
-    }
-  },
-  "Whyps": {
-    "WhyPS": {
-      "title": "Why SAP PS ?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">SAP PS</span>?",
-          "content": "SAP Project System sits at the centre of project monitoring — construction, manufacturing rollouts, IT implementations, plant shutdowns. If your organisation runs projects and uses SAP, PS talks to Controlling, Materials Management, Sales & Distribution, and Finance."
-        },
-        {
-          "title": "What will you learn?",
-          "content": "This course is built for people who need to actually use PS at work — not just recognise the menu options. We start from the basics of Work Breakdown Structures and Networks, and move into cost planning, budgeting, resource assignment, milestone billing, and project closing.",
-          "listItems": [
-            "Work Breakdown Structures & Networks",
-            "Cost planning, budgeting, resource assignment",
-            "Milestone billing & project closing"
-          ]
-        },
-        {
-          "title": "How is the course delivered?",
-          "content": "By the end, you should be comfortable creating a project from scratch, running it through its lifecycle, and pulling the reports a project manager or finance controller would expect. Sessions are in Mumbai (Andheri, Powai, and other locations) as well as live online, with hands-on SAP system access for every batch.",
-          "listItems": [
-            "Create and run projects end-to-end",
-            "Classroom (Mumbai) + live online",
-            "Hands-on SAP system access"
-          ]
-        }
-      ]
-    }
-  },
-  "Whyscm": {
-    "WhySCM": {
-      "title": "Why SAP SCM ?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">SAP SCM</span>?",
-          "content": "Let's be honest — there's a lot of noise around SAP SCM courses in Mumbai right now. Everyone claims to teach SAP. Very few actually show you how supply chains run inside a real company. This course is built differently."
-        },
-        {
-          "title": "What will you work on?",
-          "content": "Instead of just clicking through screens in SAP S/4HANA, you'll work on a live business scenario from a purchase requisition all the way to delivery and billing — the same way a manufacturing firm or FMCG distributor would run it in SAP. You'll cover MM, SD, PP, and get an introduction to EWM and Ariba depending on the track.",
-          "listItems": [
-            "Live business scenario (PR to billing)",
-            "Core modules: MM, SD, PP",
-            "Introduction to EWM and Ariba",
-            "Supply chain strategy context"
-          ]
-        },
-        {
-          "title": "What will you achieve?",
-          "content": "By the end of the course, you won't just know SAP. You'll know how to think like someone who's used it to solve real supply chain problems — which is exactly what interviewers are trying to find out.",
-          "listItems": [
-            "Think like a real supply chain user",
-            "Solve real problems, not just T-codes",
-            "Interview-ready practical skills"
-          ]
-        }
-      ]
-    }
-  },
-  "Whyehs": {
-    "WhyEHS": {
-      "title": "Why SAP EHS ?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">SAP EHS</span>?",
-          "content": "Mumbai isn't short on companies that need EHS professionals — it's short on people who actually know how to work the SAP EHS module properly. Between the refineries near Trombay, the pharma belt in Thane-Belapur, the chemical units in Taloja and Turbhe, and every mid-size manufacturer in between, demand for skilled SAP EHS people is constant."
-        },
-        {
-          "title": "What will you do in this course?",
-          "content": "You won't just learn what SAP EHS is — you'll spend real time inside the system, working through the same scenarios EHS officers deal with on the floor: logging an incident correctly, setting up a risk assessment workflow, managing hazardous substance data, and pulling compliance reports that hold up during an audit.",
-          "listItems": [
-            "Incident logging & risk assessment workflows",
-            "Hazardous substance data management",
-            "Compliance reports for audits",
-            "Real floor scenarios"
-          ]
-        },
-        {
-          "title": "Who is this for?",
-          "content": "Whether you're an EHS professional trying to move from manual/Excel tracking to SAP, an SAP consultant looking to specialize, or a fresher trying to break into a niche that pays well and doesn't have a hundred applicants for every opening — this is built to get you there without the fluff.",
-          "listItems": [
-            "EHS pros moving from Excel to SAP",
-            "SAP consultants specializing",
-            "Freshers entering a high-demand niche"
-          ]
-        }
-      ]
-    }
-  },
-  "Whyibp": {
-    "WhyIBP": {
-      "title": "Why SAP IBP ?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">SAP IBP</span>?",
-          "content": "Supply chains today move fast, and companies need people who can plan smarter, not just react faster. That's exactly why demand for skilled SAP IBP professionals has grown so quickly across Mumbai's manufacturing, FMCG, pharma, and logistics sectors."
-        },
-        {
-          "title": "What will you learn?",
-          "content": "This SAP IBP course in Mumbai is built for working professionals, freshers with a supply chain background, and SAP consultants who want to specialize in planning. You'll work inside the actual SAP IBP system, build planning models, run forecasts, and solve the kind of problems planners face on the job every day. Covers Demand Planning, Supply Planning, Inventory Optimization, S&OP, and Response & Supply.",
-          "listItems": [
-            "Demand & Supply Planning",
-            "Inventory Optimization & S&OP",
-            "Response & Supply",
-            "Live system work, not just slides"
-          ]
-        },
-        {
-          "title": "What will you be able to do?",
-          "content": "By the end of the course, you'll be able to configure planning areas, work with Fiori apps, and confidently speak the language of SAP IBP in interviews and on the job. Classes are held both online and offline at our Mumbai training center.",
-          "listItems": [
-            "Configure planning areas",
-            "Work with Fiori apps",
-            "Interview & job-ready IBP language",
-            "Online + offline Mumbai batches"
-          ]
-        }
-      ]
-    }
-  },
-  "Whypp": {
-    "WhyPP": {
-      "title": "Why SAP PP ?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">SAP PP</span>?",
-          "content": "If you are searching for a reliable SAP PP course in Mumbai, this program takes you from the basics of production planning to real-world SAP implementation skills. SAP PP is one of the core modules used by manufacturing companies to plan, schedule, and control production processes efficiently."
-        },
-        {
-          "title": "What will you learn?",
-          "content": "This course is not just about theory. Our trainers walk you through actual business scenarios — from Bill of Materials (BOM) creation to Material Requirement Planning (MRP) and shop floor control — so you understand exactly how SAP PP works inside a live manufacturing environment.",
-          "listItems": [
-            "BOM creation",
-            "Material Requirement Planning (MRP)",
-            "Shop floor control",
-            "Live manufacturing scenarios"
-          ]
-        },
-        {
-          "title": "Who is it for and what will you achieve?",
-          "content": "Whether you're a mechanical or production engineer looking to move into SAP, a working professional planning a career switch, or an SAP end-user aiming for a functional consultant role, this training gives you the practical exposure recruiters look for. By the end, you'll be able to configure, execute, and troubleshoot production planning processes independently.",
-          "listItems": [
-            "Engineers, career switchers, SAP end-users",
-            "Configure, execute, troubleshoot independently",
-            "Practical exposure recruiters want"
-          ]
-        }
-      ]
-    }
-  },
-  "Whypm": {
-    "WhyPM": {
-      "title": "Why SAP PM ?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">SAP PM</span>?",
-          "content": "Plant Maintenance is one of the most in-demand modules within the SAP ecosystem. Every manufacturing plant, energy company, and process industry depends on smooth equipment uptime — and that's exactly the problem SAP PM solves."
-        },
-        {
-          "title": "What will you learn?",
-          "content": "Over the duration of the program, you'll get comfortable navigating SAP PM the way a real consultant would: configuring maintenance plans, managing equipment master data, handling breakdown maintenance, running preventive maintenance cycles, and integrating PM with MM and FICO.",
-          "listItems": [
-            "Maintenance plans & equipment master data",
-            "Breakdown & preventive maintenance",
-            "Integration with MM and FICO"
-          ]
-        },
-        {
-          "title": "Who is it for and what will you achieve?",
-          "content": "Whether you're a mechanical or electrical engineer looking to move into SAP consulting, a maintenance manager wanting to upgrade your resume, or a fresher aiming for your first SAP job, this program takes you from zero SAP knowledge to project-ready competence. By the end, you'll have configured, tested, and troubleshot PM just like on a live client project.",
-          "listItems": [
-            "Engineers, maintenance managers, freshers",
-            "Small batches, individual attention",
-            "Configured, tested, and troubleshot on live-style work"
-          ]
-        }
-      ]
-    }
-  },
-  "Whybtp": {
-    "WhyBTP": {
-      "title": "Why SAP BTP ?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">SAP BTP</span>?",
-          "content": "If you're searching for a genuine, job-ready SAP BTP course in Mumbai, this program is built exactly for that. SAP Business Technology Platform is now the backbone of every modern SAP landscape, and companies across Mumbai are actively hiring consultants who understand cloud integration, extension development, and data management on this platform."
-        },
-        {
-          "title": "What will you learn?",
-          "content": "This training takes you from the fundamentals of cloud architecture to advanced topics like SAP Integration Suite, SAP Build, and Fiori-based extensions. You won't just watch slides — you'll work inside a live BTP environment, build your own applications, and troubleshoot real scenarios the way an actual consultant would on a client project.",
-          "listItems": [
-            "Cloud architecture fundamentals",
-            "Integration Suite, SAP Build, Fiori extensions",
-            "Live BTP environment + real scenarios"
-          ]
-        },
-        {
-          "title": "Who is it for and what will you achieve?",
-          "content": "Whether you're an SAP ABAP developer wanting to upgrade, a functional consultant curious about the cloud side, or a fresh graduate aiming for your first SAP job, this course meets you where you are. By the end, you'll be comfortable navigating the BTP cockpit, building extensions, connecting SAP and non-SAP systems, and speaking confidently about BTP architecture in interviews.",
-          "listItems": [
-            "ABAP devs, functional consultants, freshers",
-            "Navigate cockpit, build extensions",
-            "Interview-ready BTP architecture knowledge"
-          ]
-        }
-      ]
-    }
-  },
-  "Whygrc": {
-    "WhyGRC": {
-      "title": "Why SAP GRC ?",
-      "cards": [
-        {
-          "title": "What is <span class=\"highlight-span-cards\">SAP GRC</span>?",
-          "content": "SAP GRC (Governance, Risk, and Compliance) is one of the most in-demand SAP modules today, as companies of every size need to control access risk, automate compliance checks, and reduce audit workload. This SAP GRC training in Mumbai covers the complete GRC suite — Access Control (AC), Process Control (PC), and Risk Management (RM) — with a strong focus on real-time configuration and case studies."
-        },
-        {
-          "title": "What will you do?",
-          "content": "Our trainers are experienced SAP GRC consultants who have implemented projects for manufacturing, banking, retail, and IT clients. You will not just learn theory — you will configure Access Risk Analysis, design Mitigation Controls, build Emergency Access Management (Firefighter) workflows, and run User Access Reviews on a live SAP GRC server.",
-          "listItems": [
-            "Access Risk Analysis & Mitigation Controls",
-            "Firefighter / Emergency Access workflows",
-            "User Access Reviews on live GRC server"
-          ]
-        },
-        {
-          "title": "Who is it for?",
-          "content": "Whether you are an SAP Basis consultant, a functional consultant looking to upskill, or a fresher aiming to enter the SAP ecosystem, this course gives you the practical exposure that recruiters in Mumbai actively look for.",
-          "listItems": [
-            "Basis & functional consultants",
-            "Freshers entering SAP",
-            "Practical exposure Mumbai recruiters want"
           ]
         }
       ]

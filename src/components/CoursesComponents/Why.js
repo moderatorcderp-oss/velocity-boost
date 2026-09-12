@@ -108,9 +108,8 @@ const SectionComponent = ({ section }) => {
         </div>
 
         <div
-          className={`grid grid-cols-1 gap-y-12 ${
-            keyPoints.length > 0 ? "lg:grid-cols-12 lg:gap-x-16" : ""
-          }`}
+          className={`grid grid-cols-1 gap-y-12 ${keyPoints.length > 0 ? "lg:grid-cols-12 lg:gap-x-16" : ""
+            }`}
         >
           {/* Combined answers, as flowing paragraphs */}
           <div className={keyPoints.length > 0 ? "lg:col-span-8" : ""}>

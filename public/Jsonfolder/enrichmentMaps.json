@@ -731,36 +731,36 @@
             "WhyEWM"
         ],
         "sap-mm": [
-            "Whysap",
-            "WhySap"
+            "Whymm",
+            "WhyMM"
         ],
         "sap-sd": [
             "Whysd",
             "WhySD"
         ],
         "sap-pp": [
-            "Whysap",
-            "WhySap"
+            "Whypp",
+            "WhyPP"
         ],
         "sap-pm": [
-            "Whysap",
-            "WhySap"
+            "Whypm",
+            "WhyPM"
         ],
         "sap-qm": [
-            "Whysap",
-            "WhySap"
+            "Whyqm",
+            "WhyQM"
         ],
         "sap-ps": [
-            "Whysap",
-            "WhySap"
+            "Whyps",
+            "WhyPS"
         ],
         "sap-hr-hcm": [
-            "Whysap",
-            "WhySap"
+            "Whyhcm",
+            "WhyHCM"
         ],
         "sap-scm": [
-            "Whysap",
-            "WhySap"
+            "Whyscm",
+            "WhySCM"
         ],
         "sap-successfactors": [
             "Whysucc",
@@ -771,20 +771,20 @@
             "WhyHana"
         ],
         "sap-btp": [
-            "Whysap",
-            "WhySap"
+            "Whybtp",
+            "WhyBTP"
         ],
         "sap-ehs": [
-            "Whysap",
-            "WhySap"
+            "Whyehs",
+            "WhyEHS"
         ],
         "sap-grc": [
-            "Whysap",
-            "WhySap"
+            "Whygrc",
+            "WhyGRC"
         ],
         "sap-ibp": [
-            "Whysap",
-            "WhySap"
+            "Whyibp",
+            "WhyIBP"
         ],
         "hr-training": [
             "Whyhr",
@@ -834,6 +834,14 @@
             "Whygpt",
             "WhyGPT"
         ],
+        "aws": [
+            "Whyaws",
+            "WhyAWS"
+        ],
+        "devops": [
+            "Whydevops",
+            "WhyDEVOPS"
+        ],
         "agentic-ai": [
             "Whyagentic",
             "WhyAgentic"
@@ -865,6 +873,10 @@
         "data-visualization": [
             "Whydatavisual",
             "WhyDataVisual"
+        ],
+        "ai-ml": [
+            "Whyaiml",
+            "WhyAIML"
         ]
     },
     "skillsMap": {
