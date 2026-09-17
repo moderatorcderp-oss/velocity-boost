@@ -25,6 +25,9 @@
         "data-analytics": "whatda",
         "business-analytics": "whatba",
         "chatgpt": "whatgpt",
+        "generative-ai": "whatgpt",
+        "gen-ai": "whatgpt",
+        "agentic-ai": "whatagentic",
         "full-stack": "whatfullstack",
         "java": "whatjava",
         "python": "whatpython",
@@ -41,7 +44,6 @@
         "core-hr": "whatcore",
         "hr": "whathr",
         "aws": "whataws",
-        "agentic-ai": "whatagentic",
         "devops": "whatdevops",
         "ai-ml": "whataiml"
     },
@@ -119,6 +121,11 @@
             "business-analytics"
         ],
         "SkillsGenAI": [
+            "chatgpt",
+            "generative-ai",
+            "gen-ai"
+        ],
+        "SkillsAgentic": [
             "agentic-ai"
         ],
         "SkillsFullStack": [
@@ -168,9 +175,6 @@
         ],
         "SkillsAWS": [
             "aws"
-        ],
-        "SkillsAgentic": [
-            "agentic-ai"
         ],
         "SkillsDevOps": [
             "devops"
@@ -230,6 +234,26 @@
             "ML Engineer",
             "AI Consultant"
         ],
+        "generative-ai": [
+            "AI Developer",
+            "Machine Learning Engineer",
+            "Data Scientist",
+            "AI Research Scientist",
+            "NLP Engineer",
+            "Prompt Engineer",
+            "AI Product Manager",
+            "MLOps Engineer"
+        ],
+        "chatgpt": [
+            "AI Developer",
+            "Machine Learning Engineer",
+            "Data Scientist",
+            "AI Research Scientist",
+            "NLP Engineer",
+            "Prompt Engineer",
+            "AI Product Manager",
+            "MLOps Engineer"
+        ],
         "full-stack": [
             "Full Stack Developer",
             "Web Developer",
@@ -239,16 +263,6 @@
             "JavaScript Developer",
             "React Developer",
             "Node.js Developer"
-        ],
-        "chatgpt": [
-            "AI Developer",
-            "Machine Learning Engineer",
-            "Data Scientist",
-            "AI Research Scientist",
-            "NLP Engineer",
-            "Computer Vision Engineer",
-            "AI Product Manager",
-            "MLOps Engineer"
         ],
         "java": [
             "Java Developer",
@@ -369,6 +383,33 @@
             "HRIS Administrator",
             "Payroll Coordinator",
             "Benefits Administrator"
+        ],
+        "aws": [
+            "Cloud Engineer",
+            "AWS Solutions Architect",
+            "DevOps Engineer",
+            "Cloud Support Associate",
+            "SysOps Administrator",
+            "Cloud Consultant",
+            "Infrastructure Engineer"
+        ],
+        "devops": [
+            "DevOps Engineer",
+            "Site Reliability Engineer",
+            "Cloud Engineer",
+            "CI/CD Engineer",
+            "Infrastructure Engineer",
+            "Platform Engineer",
+            "Automation Engineer"
+        ],
+        "ai-ml": [
+            "Machine Learning Engineer",
+            "AI Engineer",
+            "Data Scientist",
+            "MLOps Engineer",
+            "Deep Learning Engineer",
+            "AI Specialist",
+            "Research Scientist"
         ],
         "sap-fico": [
             "SAP FICO Consultant",
@@ -517,8 +558,9 @@
         "data-analytics": "Certified Data Analytics Professional",
         "data-science": "Certified Data Science Professional",
         "agentic-ai": "Certified Agentic AI Professional",
+        "generative-ai": "Certified Generative AI Professional",
+        "chatgpt": "Certified Generative AI Professional",
         "full-stack": "Certified Full Stack Developer",
-        "chatgpt": "Certified AI & Machine Learning Professional",
         "java": "Certified Java Developer",
         "python": "Certified Python Developer",
         "salesforce": "Salesforce Certified Administrator & Developer",
@@ -531,6 +573,9 @@
         "hr-analytics": "Certified HR Analytics Professional",
         "hr-management": "Certified HR Management Professional",
         "hr-payroll": "Certified HR Payroll Professional",
+        "aws": "AWS Certified Solutions Architect – Associate",
+        "devops": "Certified DevOps Professional",
+        "ai-ml": "Certified AI & Machine Learning Professional",
         "sap-fico": "SAP Certified Application Associate - Financial Accounting",
         "sap": "SAP Certified Application Associate",
         "sap-abap": "SAP Certified Development Associate - ABAP",
@@ -682,6 +727,10 @@
             "GPTpage",
             "GPTHeader"
         ],
+        "chatgpt": [
+            "GPTpage",
+            "GPTHeader"
+        ],
         "agentic-ai": [
             "agenticheader",
             "AgenticHeader"
@@ -705,6 +754,10 @@
         "devops": [
             "devopsheader",
             "DevOpsHeader"
+        ],
+        "aws": [
+            "awsheader",
+            "AWSHeader"
         ],
         "salesforce": [
             "salesheader",
@@ -856,6 +909,10 @@
             "Whygpt",
             "WhyGPT"
         ],
+        "generative-ai": [
+            "Whygpt",
+            "WhyGPT"
+        ],
         "aws": [
             "Whyaws",
             "WhyAWS"
@@ -927,7 +984,9 @@
         "data-analytics": "SkillsDataAnalytics",
         "business-analytics": "SkillsBusinessAnalytics",
         "chatgpt": "SkillsGenAI",
-        "agentic-ai": "SkillsGenAI",
+        "generative-ai": "SkillsGenAI",
+        "gen-ai": "SkillsGenAI",
+        "agentic-ai": "SkillsAgentic",
         "full-stack": "SkillsFullStack",
         "java": "SkillsJava",
         "python": "SkillsPython",
@@ -944,7 +1003,8 @@
         "core-hr": "SkillsCoreHR",
         "hr": "SkillsHR",
         "devops": "SkillsDevOps",
-        "aws": "SkillsAWS"
+        "aws": "SkillsAWS",
+        "ai-ml": "SkillsAIML"
     },
     "whoMap": {
         "sap": "whosap",
@@ -972,7 +1032,9 @@
         "data-analytics": "whoda",
         "business-analytics": "whoba",
         "chatgpt": "whogpt",
-        "agentic-ai": "whogpt",
+        "generative-ai": "whogpt",
+        "gen-ai": "whogpt",
+        "agentic-ai": "whoagentic",
         "full-stack": "whofullstack",
         "java": "whojava",
         "python": "whopython",
@@ -989,7 +1051,8 @@
         "core-hr": "whocore",
         "hr": "whohr",
         "aws": "whoaws",
-        "devops": "whodevops"
+        "devops": "whodevops",
+        "ai-ml": "whoaiml"
     },
     "certificateMap": {
         "sap-abap": "abap",
@@ -1012,8 +1075,10 @@
         "data-science": "datascience",
         "data-analytics": "dataanalytics",
         "business-analytics": "businessanalytics",
-        "chatgpt": "ai",
-        "agentic-ai": "ai",
+        "chatgpt": "genai",
+        "generative-ai": "genai",
+        "gen-ai": "genai",
+        "agentic-ai": "agenticai",
         "full-stack": "fullstack",
         "java": "java",
         "python": "python",
@@ -1031,8 +1096,7 @@
         "data-visualization": "datavisualization",
         "aws": "aws",
         "devops": "devops",
-        "genai": "genai",
-        "agenticai": "agenticai"
+        "ai-ml": "ai"
     },
     "faqMap": {
         "data-science": [
@@ -1051,9 +1115,13 @@
             "GPTfaq",
             "GPTFAQ"
         ],
-        "agentic-ai": [
+        "generative-ai": [
             "GPTfaq",
             "GPTFAQ"
+        ],
+        "agentic-ai": [
+            "agenticfaq",
+            "AgenticFAQ"
         ],
         "full-stack": [
             "fullstackfaq",
@@ -1194,6 +1262,18 @@
         "data-visualization": [
             "datavisualfaq",
             "DataVisualFAQ"
+        ],
+        "aws": [
+            "awsfaq",
+            "AWSFAQ"
+        ],
+        "devops": [
+            "devopsfaq",
+            "DevOpsFAQ"
+        ],
+        "ai-ml": [
+            "aimlfaq",
+            "AIMLFAQ"
         ]
     },
     "demoBannerMap": {
@@ -1228,6 +1308,7 @@
         "artificial-intelligence": "ai",
         "generative-ai": "genai",
         "gen-ai": "genai",
+        "chatgpt": "genai",
         "agentic-ai": "agenticai",
         "full-stack": "fullstack",
         "fullstack": "fullstack",
