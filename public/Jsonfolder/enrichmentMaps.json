@@ -25,7 +25,6 @@
         "data-analytics": "whatda",
         "business-analytics": "whatba",
         "chatgpt": "whatgpt",
-        "agentic-ai": "whatgpt",
         "full-stack": "whatfullstack",
         "java": "whatjava",
         "python": "whatpython",
@@ -943,7 +942,8 @@
         "hr-generalist": "SkillsHRGeneralist",
         "hr-training": "SkillsHRTraining",
         "core-hr": "SkillsCoreHR",
-        "hr": "SkillsHR"
+        "hr": "SkillsHR",
+        "devops": "SkillsDevops"
     },
     "whoMap": {
         "sap": "whosap",
