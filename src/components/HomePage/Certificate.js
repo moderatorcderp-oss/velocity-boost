@@ -23,7 +23,7 @@ const Certificate = ({ data }) => {
   const courseTitle = safeData.courseTitle || "Professional Training Certificate";
   const altText = safeData.alt || "Professional training certificate";
   const description = safeData.description || "";
-  
+  const completionText = safeData.completionText || ""
   const [showForm, setShowForm] = useState(false);
   const handleButtonClick = () => setShowForm(true);
   const handleCloseForm = () => setShowForm(false);
@@ -60,8 +60,10 @@ const Certificate = ({ data }) => {
             {/* Right: cream zone, content leads */}
             <div className="relative bg-[#FBF8F2] px-6 sm:px-10 md:px-12 py-12 flex flex-col justify-center gap-6 lg:border-l lg:border-[#C9A227]/30">
 
-              <span className="inline-flex w-fit mx-auto lg:mx-0 items-center gap-2 rounded-full border border-[#0B1E3F]/15 bg-[#0B1E3F]/[0.04] px-3 py-1 text-[11px] font-semibold tracking-[0.2em] text-[#0B1E3F] uppercase">
-                Official Certification
+              <span
+                className={`${playfair.className} inline-block w-fit mx-auto lg:mx-0 rounded-full border-2 border-[#C9A227] bg-white/70 px-4 py-1 text-sm sm:text-base text-[#0B1E3F]`}
+              >
+                {courseTitle}
               </span>
 
               <h2
@@ -69,11 +71,8 @@ const Certificate = ({ data }) => {
               >
                 Congratulations on Completing Your Training
               </h2>
-
-              <span
-                className={`${playfair.className} inline-block w-fit mx-auto lg:mx-0 rounded-full border-2 border-[#C9A227] bg-white/70 px-4 py-1 text-sm sm:text-base text-[#0B1E3F]`}
-              >
-                {courseTitle}
+              <span>
+                {completionText}
               </span>
 
               <span className="text-sm text-gray-600">
