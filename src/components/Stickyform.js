@@ -65,6 +65,11 @@ export default function StickyEnrollForm() {
   const pathname = usePathname();
   const isAdminPath = pathname && hiddenPaths.some((path) => pathname.startsWith(path));
 
+  // changing text-color to white 
+  const [placement, setPlacement]=useState(false)
+  useEffect(()=>{
+    setPlacement(pathname==="/placements" || pathname==="/aboutus")
+  },[pathname])
   // Find footer element once on mount
   useEffect(() => {
     const footerElement = document.querySelector("footer");
@@ -283,7 +288,7 @@ export default function StickyEnrollForm() {
       >
         {/* Name */}
         <div className="flex min-w-[160px] flex-1 flex-col gap-1">
-          <label htmlFor="name" className="text-xs font-semibold text-[#1a1a1a]">
+          <label htmlFor="name" className={`text-xs font-semibold ${placement?'text-white':'text-[#1a1a1a]'}`}>
             Name <span className="text-red-600">*</span>
           </label>
           <input
@@ -303,7 +308,7 @@ export default function StickyEnrollForm() {
 
         {/* Email */}
         <div className="flex min-w-[180px] flex-1 flex-col gap-1">
-          <label htmlFor="email" className="text-xs font-semibold text-[#1a1a1a]">
+          <label htmlFor="email" className={`text-xs font-semibold ${placement?'text-white':'text-[#1a1a1a]'}`}>
             Email <span className="text-red-600">*</span>
           </label>
           <input
@@ -322,7 +327,7 @@ export default function StickyEnrollForm() {
 
         {/* Contact */}
         <div className="flex min-w-[200px] flex-1 flex-col gap-1">
-          <label htmlFor="contact" className="text-xs font-semibold text-[#1a1a1a]">
+          <label htmlFor="contact" className={`text-xs font-semibold ${placement?'text-white':'text-[#1a1a1a]'}`}>
             Contact number <span className="text-red-600">*</span>
           </label>
           <div className="flex gap-2">
@@ -357,7 +362,7 @@ export default function StickyEnrollForm() {
 
         {/* Course */}
         <div className="flex min-w-[160px] flex-1 flex-col gap-1">
-          <label htmlFor="course" className="text-xs font-semibold text-[#1a1a1a]">
+          <label htmlFor="course" className={`text-xs font-semibold ${placement?'text-white':'text-[#1a1a1a]'}`}>
             Course <span className="text-red-600">*</span>
           </label>
           <select
@@ -379,7 +384,7 @@ export default function StickyEnrollForm() {
 
         {/* Location */}
         <div className="relative flex min-w-[180px] flex-1 flex-col gap-1">
-          <label htmlFor="location" className="text-xs font-semibold text-[#1a1a1a]">
+          <label htmlFor="location" className={`text-xs font-semibold ${placement?'text-white':'text-[#1a1a1a]'}`}>
             Location <span className="text-red-600">*</span>
           </label>
           <input
@@ -436,7 +441,7 @@ export default function StickyEnrollForm() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="flex h-9 items-center justify-center gap-2 rounded-md bg-[#F28C28] px-5 text-sm font-medium text-white transition hover:bg-white-600 hover:-translate-y-0.5 disabled:opacity-70"
+            className="flex h-9 items-center justify-center gap-2 rounded-md bg-[#010162] px-5 text-sm font-medium text-white transition hover:bg-white-600 hover:-translate-y-0.5 disabled:opacity-70"
           >
             {isSubmitting && (
               <span className="h-3.5 w-3.5 animate-spin rounded-full border-2 border-white/40 border-t-white" />
