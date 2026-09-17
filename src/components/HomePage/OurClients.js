@@ -90,12 +90,18 @@ const statsData = [
 ];
 
 const shuffleArray = (array) => {
-  const shuffled = [...array];
-  for (let i = shuffled.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-  }
-  return shuffled;
+  return array
+    .map((value, index) => ({
+      value,
+      index,
+      sortKey: `${value}-${index}`,
+    }))
+    .sort((first, second) => {
+      if (first.sortKey < second.sortKey) return -1;
+      if (first.sortKey > second.sortKey) return 1;
+      return 0;
+    })
+    .map(({ value }) => value);
 };
 
 const getLogoAlt = (logoUrl) => {
@@ -159,7 +165,7 @@ const MarqueeRow = ({ logos = [], direction = "left", speed = "normal", shuffle 
           >
             <Image
               src={logo}
-              alt={getLogoAlt(logo) || "client logo"}
+              alt="client logo"
               width={120}
               height={100}
               className="object-contain max-w-full max-h-full group-hover:scale-105 transition-transform duration-300"

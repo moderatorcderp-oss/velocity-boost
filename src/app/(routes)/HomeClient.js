@@ -4,7 +4,6 @@
 import { useEffect, useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import HeaderCarousel from "@/components/HomePage/HeaderCarousel";
-import WhyChooseSection from "@/components/HomePage/WhyChooseSection";
 import WhatWeOffer from "../../components/HomePage/WhatWeOffer"
 import Container from "@/components/StandardContainer";
 
@@ -22,16 +21,20 @@ import sapDemoBannerData from "../../../public/Jsonfolder/cities/pune/CTAbanner.
 //   loading: () => <div style={{ height: "60px" }} />,
 // });
 import Marquee from "@/components/HomePage/Marquee2";
-import OurClients from "@/components/HomePage/OurClients";
 
 const TrainingProcessSection = dynamic(() => import('@/components/HomePage/ProcessSection'), {
   ssr: false,
 })
 
-// const OurClients = dynamic(() => import("@/components/HomePage/OurClients"), {
-//   ssr: false,
-//   loading: () => <div style={{ minHeight: "250px" }} />,
-// });
+const WhyChooseSection = dynamic(() => import("@/components/HomePage/WhyChooseSection"), {
+  ssr: false,
+  loading: () => <div style={{ minHeight: "300px" }} />,
+});
+
+const OurClients = dynamic(() => import("@/components/HomePage/OurClients"), {
+  ssr: false,
+  loading: () => <div style={{ minHeight: "250px" }} />,
+});
 
 const OurStats = dynamic(() => import("@/components/HomePage/OurStats"), {
   ssr: false,
@@ -129,7 +132,9 @@ export default function HomeClient() {
           {/* Above the fold */}
           <HeaderCarousel />
           <Marquee />
-          <OurClients />
+          <LazySection fallback={<div style={{ minHeight: "250px" }} />}>
+            <OurClients />
+          </LazySection>
 
           {/* Below the fold — lazy loaded */}
           {/* <LazySection fallback={<div style={{ height: "60px" }} />}>
