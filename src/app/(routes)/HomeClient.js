@@ -17,19 +17,21 @@ import sapDemoBannerData from "../../../public/Jsonfolder/cities/pune/CTAbanner.
 // or if you prefer city-aware later:
 // import { getDemoBannerForCity } from "@/lib/masterData";
 
-const Marquee = dynamic(() => import("@/components/HomePage/Marquee2"), {
-  ssr: false,
-  loading: () => <div style={{ height: "60px" }} />,
-});
+// const Marquee = dynamic(() => import("@/components/HomePage/Marquee2"), {
+//   ssr: false,
+//   loading: () => <div style={{ height: "60px" }} />,
+// });
+import Marquee from "@/components/HomePage/Marquee2";
+import OurClients from "@/components/HomePage/OurClients";
 
 const TrainingProcessSection = dynamic(() => import('@/components/HomePage/ProcessSection'), {
   ssr: false,
 })
 
-const OurClients = dynamic(() => import("@/components/HomePage/OurClients"), {
-  ssr: false,
-  loading: () => <div style={{ minHeight: "250px" }} />,
-});
+// const OurClients = dynamic(() => import("@/components/HomePage/OurClients"), {
+//   ssr: false,
+//   loading: () => <div style={{ minHeight: "250px" }} />,
+// });
 
 const OurStats = dynamic(() => import("@/components/HomePage/OurStats"), {
   ssr: false,
@@ -126,14 +128,16 @@ export default function HomeClient() {
 
           {/* Above the fold */}
           <HeaderCarousel />
+          <Marquee />
+          <OurClients />
 
           {/* Below the fold — lazy loaded */}
-          <LazySection fallback={<div style={{ height: "60px" }} />}>
-            <Marquee />
+          {/* <LazySection fallback={<div style={{ height: "60px" }} />}>
+            marquee compo
           </LazySection>
           <LazySection fallback={<div style={{ minHeight: "250px" }} />}>
-            <OurClients />
-          </LazySection>
+          our clients
+          </LazySection> */}
           <LazySection fallback={<div style={{ minHeight: "200px" }} />}>
             <WhatWeOffer />
           </LazySection>
