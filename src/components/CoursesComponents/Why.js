@@ -5,7 +5,7 @@
 import { useEffect, useRef } from "react";
 import styles from "@/styles/CoursesComponents/Why.module.css";
 import { useInView } from "react-intersection-observer";
-
+import SectionHeading from "./SectionHeading";
 const Why = ({ data }) => {
   const [sectionRef, sectionInView] = useInView({
     triggerOnce: true,
@@ -72,9 +72,13 @@ const SectionComponent = ({ section }) => {
 
   return (
     <section
-      className="relative w-full overflow-hidden px-6 py-24 md:py-15"
+      className="relative w-full overflow-hidden px-6 pt-8 pb-18 md:py-15"
       style={{ backgroundColor: "#fbfbfb" }}
     >
+      <SectionHeading
+        title="Course Overview"
+        description=""
+      />
       {/* faint ruled-paper texture */}
       <div
         aria-hidden="true"

@@ -22,6 +22,7 @@ const Certificate = ({ data }) => {
   const highlights = Array.isArray(safeData.highlights) ? safeData.highlights : [];
   const courseTitle = safeData.courseTitle || "Professional Training Certificate";
   const altText = safeData.alt || "Professional training certificate";
+  const description = safeData.description || "";
   
   const [showForm, setShowForm] = useState(false);
   const handleButtonClick = () => setShowForm(true);
@@ -73,6 +74,10 @@ const Certificate = ({ data }) => {
                 className={`${playfair.className} inline-block w-fit mx-auto lg:mx-0 rounded-full border-2 border-[#C9A227] bg-white/70 px-4 py-1 text-sm sm:text-base text-[#0B1E3F]`}
               >
                 {courseTitle}
+              </span>
+
+              <span className="text-sm text-gray-600">
+                {description || ""}
               </span>
 
               <ul className="space-y-3">
