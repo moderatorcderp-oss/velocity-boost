@@ -2,7 +2,7 @@
   "MDSpage": {
     "MDSHeader": {
       "title": "Data Science with AI Course in Mumbai",
-      "subtitle": "Become a Data Scientist Who Actually Understands AI – Not Just the Buzzwords",
+      "subtitle": "Become a Data Scientist Who Actually Understands AI",
       "description": "Mumbai's most practical Data Science with AI course, built for people who want real skills, real projects, and a real shot at a data science job not just another certificate on the wall. This Data Science with AI course in Mumbai takes you from Python fundamentals to building and deploying machine learning and generative AI models, the same tools companies are actually hiring for right now.",
       "features": [
         "Live Class",
@@ -46,7 +46,7 @@
   "MDApage": {
     "MDAHeader": {
       "title": "Data Analytics with AI Course in Mumbai",
-      "subtitle": "Learn to turn raw numbers into real business decisions",
+      "subtitle": "Learn to Turn Raw Numbers into Real Business Decisions",
       "description": "This Data Analytics with AI course in Mumbai combines hands-on analytics training with practical AI tools like ChatGPT, Python-based machine learning, and automated reporting so you graduate job-ready, not just certificate-ready. 100% live, instructor-led sessions | Real datasets from actual businesses | Weekend and weekday batches in Mumbai.",
       "features": [
         "Live Class",
@@ -143,7 +143,7 @@
   },
   "fullstackheader": {
     "FullStackHeader": {
-      "title": "Full Stack Development Course in Mumbai",
+      "title": "Full Stack Course in Mumbai",
       "subtitle": "Master Front-End & Back-End Development with Real Projects",
       "description": "Join Mumbai's most practical Full Stack Development course and learn to build complete web applications from scratch. Master HTML, CSS, JavaScript, React, Node.js, Express, MongoDB, and deployment — all through live projects and industry-relevant training. Whether you're a fresher, a working professional, or a career switcher, this course is designed to make you job-ready with a strong portfolio.",
       "features": [
@@ -340,7 +340,7 @@
   "powerbi": {
     "POWERBI": {
       "title": "Power BI Course in Mumbai",
-      "subtitle": "Become a Certified Power BI Analyst — Right Here in Mumbai",
+      "subtitle": "Become a Certified Power BI Analyst",
       "description": "Data is everywhere, but professionals who can turn it into decisions are still rare. This Power BI course in Mumbai is built to change that for you. Over the next few weeks, you'll go from opening Power BI for the first time to publishing dashboards that actual businesses rely on no fluff, no filler, just the skills that get you hired or promoted.Whether you're a fresh graduate, a working professional switching to analytics, or someone who's tired of manually updating Excel reports every Monday morning, this course meets you where you are.",
       "features": [
         "Live Class",
@@ -394,7 +394,7 @@
     "TABLEAU": {
       "title": "Tableau Course in Mumbai",
       "subtitle": "Turn Raw Data Into Real Decisions",
-      "description": " Learn Tableau the way working analysts actually use it through live dashboards, real datasets, and a mentor who's built reports for actual businesses, not just slides.Mumbai's job market is full of roles asking for Tableau proficiency, but most people learning it online never touch a real business problem. This Tableau course in Mumbai is built differently. You'll work with messy, real-world data, build dashboards that a manager would actually approve of, and leave with a portfolio you can show in an interview instead of just a certificate you have to explain.",
+      "description": "Learn Tableau the way working analysts actually use it through live dashboards, real datasets, and a mentor who's built reports for actual businesses, not just slides.Mumbai's job market is full of roles asking for Tableau proficiency, but most people learning it online never touch a real business problem. This Tableau course in Mumbai is built differently. You'll work with messy, real-world data, build dashboards that a manager would actually approve of, and leave with a portfolio you can show in an interview instead of just a certificate you have to explain.",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -442,7 +442,7 @@
   "datavisualheader": {
     "DataVisualHeader": {
       "title": "Data Visualization with AI Course in Mumbai",
-      "subtitle": "Turn raw numbers into decisions that get noticed",
+      "subtitle": "Turn Raw Numbers into Decisions That Get Noticed",
       "description": "Learn to build dashboards, tell stories with data, and use AI tools to work faster — all in a hands-on program designed for working professionals in Mumbai. From Excel to Power BI, Tableau to AI-assisted analytics this course takes you from \"I can make a chart\" to \"I can make a chart that changes minds.\"",
       "features": [
         "Live Class",
@@ -540,7 +540,7 @@
   "manpage": {
     "MANHeader": {
       "title": "HR Management Course in Mumbai",
-      "subtitle": "Build a Career in HR with Mumbai's Most Practical HR Management Course",
+      "subtitle": "Build a Career in HR with Practical HR Management Training",
       "description": "Looking for an HR Management Course in Mumbai that actually prepares you for the job floor, not just the exam hall? You are in the right place. Our HR Management Course in Mumbai is designed by industry practitioners, covering everything from recruitment and payroll to labour law and HR analytics with real case studies, live projects, and placement support built in.Whether you're a fresh graduate, a working professional switching careers, or an HR executive looking to upskill, this HR Management Course in Mumbai gives you the tools, templates, and confidence to walk into any HR role and deliver from day one.",
       "features": [
         "Live Class",
@@ -699,7 +699,7 @@
   "anapage": {
     "ANAHeader": {
       "title": "HR Analytics Course in Mumbai",
-      "subtitle": "Become a Certified HR Analytics Professional in Mumbai",
+      "subtitle": "Become a Certified HR Analytics Professional",
       "description": "Learn to turn people's data into business decisions. Our HR Analytics Course in Mumbai is built for HR professionals who want to move from intuition-based HR to data-driven HR using real tools, real datasets, and real hiring, attrition, and performance case studies.Join Mumbai's most practical, project-based HR Analytics Course and get hands-on with Excel, Power BI, SQL, and People Analytics dashboards used by top companies.",
       "features": [
         "Live Class",
@@ -747,8 +747,8 @@
   },
   "hrtraining": {
     "HRTrainingHeader": {
-      "title": "HR Training in Mumbai",
-      "subtitle": "Build a Career in Human Resources with Practical HR Training in Mumbai",
+      "title": "HR Training Course in Mumbai",
+      "subtitle": "Build a Career in Human Resources with Practical HR Training",
       "description": "Our HR Training in Mumbai covers recruitment, payroll, compliance, HRBP strategy, and HRMS tools, taught by working HR professionals — with real company projects, live case studies, and placement support.",
       "features": [
         "Live Class",
@@ -796,8 +796,8 @@
   },
   "agenticheader": {
     "AgenticHeader": {
-      "title": "Agentic AI Course in Mumbai — Build Autonomous AI Agents That Actually Get Work Done",
-      "subtitle": "Learn to design, build, and deploy AI agents that plan, reason, and act on their own. This hands-on Agentic AI course in Mumbai takes you from LLM basics to production-ready multi-agent systems using tools like LangChain, LangGraph, AutoGen, and CrewAI.",
+      "title": "Agentic AI Course in Mumbai",
+      "subtitle": "Build Autonomous AI Agents That Actually Get Work Done",
       "description": "Classroom sessions in Mumbai + live online batches | Real projects Scenario, not just theory | Certificate on completion | Placement support for eligible learners",
       "features": [
         "Live Class",
@@ -849,8 +849,8 @@
   },
   "aimlheader": {
     "AIMLHeader": {
-      "title": "AI ML Course in Mumbai Learn Artificial Intelligence & Machine Learning the Practical Way",
-      "subtitle": "Build real-world AI and ML projects, master Python, and get job-ready with a hands-on AI ML course in Mumbai trusted by students, working professionals, and career switchers.",
+      "title": "AI & ML Course in Mumbai",
+      "subtitle": "Learn Artificial Intelligence & Machine Learning the Practical Way",
       "description": "Mumbai has become one of India's fastest-growing hubs for artificial intelligence and data-driven careers, and this AI ML course in Mumbai is built to help you become part of that growth story. Whether you're a fresh graduate exploring your first tech role or a working professional planning a shift into AI, this course walks you through everything from Python fundamentals to advanced machine learning and deep learning concepts taught by mentors who've actually worked in the field. You won't just watch lectures. You'll build models, work on live datasets, and walk away with a portfolio you can show in interviews.",
       "features": [
         "Live Class",
@@ -902,8 +902,8 @@
   },
   "awsheader": {
     "AWSHeader": {
-      "title": "Become a Certified AWS Cloud Professional Right Here in Mumbai",
-      "subtitle": "Join Mumbai's most practical AWS course and learn to design, deploy, and manage real cloud infrastructure on Amazon Web Services. Get hands-on with EC2, S3, IAM, Lambda, VPC, and 20+ AWS services through live projects, not just slides.",
+      "title": "AWS Course in Mumbai",
+      "subtitle": "Become a Certified AWS Cloud Professional",
       "description": "Whether you're a fresher, a working IT professional, or a business owner exploring the cloud, this AWS course in Mumbai is built to take you from fundamentals to job-ready skills in a few short weeks.",
       "features": [
         "Live Class",
@@ -955,8 +955,8 @@
   },
   "devopsheader": {
     "DevOpsHeader": {
-      "title": "Devops Course in Mumbai",
-      "subtitle": "Become a Job-Ready DevOps Engineer with Mumbai's Most Practical DevOps Course",
+      "title": "DevOps Course in Mumbai",
+      "subtitle": "Become a Job-Ready DevOps Engineer",
       "description": "Learn Git, Docker, Kubernetes, Jenkins, AWS, and Terraform through hands-on projects. Our DevOps course in Mumbai is designed by industry practitioners to get you interview-ready in 4 months, not 4 years.",
       "features": [
         "Live Class",
@@ -1004,8 +1004,8 @@
   },
   "abapheader": {
     "AbapHeader": {
-      "title": "Master SAP ABAP Development with Mumbai's Most Trusted Training Program",
-      "subtitle": "Join our industry-focused SAP ABAP course in Mumbai and learn to design, code, and debug real-world SAP applications. Whether you are a fresher, a functional consultant, or an experienced developer switching domains, this SAP ABAP training in Mumbai is built to get you job-ready in months, not years.",
+      "title": "SAP ABAP Course in Mumbai",
+      "subtitle": "Become a Job-Ready SAP ABAP Developer",
       "description": "Hands-on SAP ABAP training with real-world projects and placement support in Mumbai.",
       "features": [
         "Live Class",
@@ -1053,8 +1053,8 @@
   },
   "aribaheader": {
     "AribaHeader": {
-      "title": "Learn SAP Ariba in Mumbai — From Someone Who's Actually Worked in Procurement",
-      "subtitle": "A practical, hands-on SAP Ariba course built for people who want real skills, not just a certificate to hang on the wall. Whether you're switching careers into procurement tech or upgrading your current SAP skillset, this course gets you job-ready.",
+      "title": "SAP Ariba Course in Mumbai",
+      "subtitle": "Become a Certified SAP Ariba Professional",
       "description": "Live classes in Mumbai (with online options) | Real Ariba project scenarios | Resume & interview support included",
       "features": [
         "Live Class",
@@ -1102,8 +1102,8 @@
   },
   "basisheader": {
     "BasisHeader": {
-      "title": "Become an SAP Basis Administrator with Mumbai's Most Practical SAP Basis Course",
-      "subtitle": "Learn SAP system administration, installation, and support the way it's actually done in the industry. This SAP Basis course in Mumbai is built around live server access, real support tickets, and a trainer who's spent years managing production SAP landscapes not just PowerPoint slides.",
+      "title": "SAP BASIS Course in Mumbai",
+      "subtitle": "Become a Certified SAP BASIS Consultant",
       "description": "Whether you're an IT graduate looking for your first break or a working professional planning to move into SAP administration, this SAP Basis training in Mumbai gives you the hands-on exposure that recruiters actually ask for.",
       "features": [
         "Live Class",
@@ -1151,8 +1151,8 @@
   },
   "bwbiheader": {
     "BwbiHeader": {
-      "title": "Master SAP BW/BI in Mumbai — Turn Raw Data Into Real Business Decisions",
-      "subtitle": "Learn SAP Business Warehouse and Business Intelligence from certified trainers with 10+ years of live SAP project experience. Hands-on labs, real client scenarios, and placement support included.",
+      "title": "SAP BW/BI Course in Mumbai",
+      "subtitle": "Become a Certified SAP BW/BI Consultant",
       "description": "Next batch starting soon | Weekday & Weekend options | Classroom + Online",
       "features": [
         "Live Class",
@@ -1200,8 +1200,8 @@
   },
   "ewmheader": {
     "EWMHeader": {
-      "title": "Master SAP EWM in Mumbai — Become a Certified Warehouse Management Expert",
-      "subtitle": "Join Mumbai's most practical SAP EWM course and learn how real warehouses run on SAP from goods receipt to putaway, picking, packing, and dispatch. Built for freshers, SAP consultants, and warehouse professionals who want a career in logistics and supply chain technology.",
+      "title": "SAP EWM Course in Mumbai",
+      "subtitle": "Become a Certified SAP EWM Professional",
       "description": "Live classes. Real-time server access. Trainers who've actually implemented SAP EWM on the shop floor — not just taught it from slides. Classroom & Online | Weekday & Weekend Batches | Certificate on Completion | Placement Assistance",
       "features": [
         "Live Class",
@@ -1249,8 +1249,8 @@
   },
   "ficoheader": {
     "FICOHeader": {
-      "title": "Learn SAP FICO in Mumbai — From Someone Who's Actually Implemented It",
-      "subtitle": "This isn't a slideshow course. You'll work on a live SAP system, handle the same GL postings, vendor reconciliations and month-end closing tasks that real finance teams deal with — and walk out with something to actually show in an interview.",
+      "title": "SAP FICO Course in Mumbai",
+      "subtitle": "Become a Job-Ready SAP FICO Consultant",
       "description": "Classroom in Mumbai or live online — your call. Batches for beginners, working professionals, and career switchers.",
       "features": [
         "Live Class",
@@ -1303,8 +1303,8 @@
   },
   "hanaheader": {
     "HanaHeader": {
-      "title": "Become an SAP S/4HANA Consultant — Learn from Mumbai's Most Trusted SAP Training Institute",
-      "subtitle": "A practical, job-focused SAP S/4HANA course in Mumbai designed for freshers, working professionals, and career-switchers who want real skills, real projects, and real placement support not just theory.",
+      "title": "SAP S/4HANA Course in Mumbai",
+      "subtitle": "Become a Certified SAP S/4HANA Professional",
       "description": "Hands-on SAP S/4HANA training with live projects and placement support in Mumbai.",
       "features": [
         "Live Class",
@@ -1356,8 +1356,8 @@
   },
   "mmheader": {
     "MMHeader": {
-      "title": "Master SAP MM in Mumbai — Build a Career in Procurement, Inventory & Supply Chain",
-      "subtitle": "Learn SAP Materials Management from certified industry experts with 100% hands-on training on live SAP systems. Weekday & weekend batches available in Mumbai and Online.",
+      "title": "SAP MM Course in Mumbai",
+      "subtitle": "Become a Certified SAP MM Consultant",
       "description": "100% Practical Training on Live SAP GUI. Industry-Expert Trainers (10+ Years SAP Experience). Placement Assistance. Globally Recognized Course Completion Certificate. Classroom (Mumbai) + Online Live Batches.",
       "features": [
         "100% Practical Training on Live SAP GUI",
@@ -1407,8 +1407,8 @@
   },
   "sdheader": {
     "SDHeader": {
-      "title": "SAP SD Training in Mumbai — Learn From Consultants Who've Actually Implemented It",
-      "subtitle": "A practical, hands-on SAP SD course for freshers, functional consultants, and working professionals who want real project exposure — not just theory slides. Live server access, real-time case studies, and a trainer who's been on the client side.",
+      "title": "SAP SD Course in Mumbai",
+      "subtitle": "Become a Certified SAP SD Consultant",
       "description": "Next batch starting soon in Mumbai | Weekday & Weekend batches available | Online & Classroom options",
       "features": [
         "Live Class",
@@ -1456,8 +1456,8 @@
   },
   "ppheader": {
     "PPHeader": {
-      "title": "Become a Certified SAP PP Consultant in Mumbai — Learn From Real Industry Projects",
-      "subtitle": "Master SAP Production Planning (PP) with hands-on training, live server access, and placement support. Join Mumbai's most practical SAP PP course designed for freshers, engineers, and working professionals who want to build a career in SAP.",
+      "title": "SAP PP Course in Mumbai",
+      "subtitle": "Become a Certified SAP PP Consultant",
       "description": "100% Practical, Project-Based SAP PP Training. Live SAP Server Access. Certified Trainers with 10+ Years Industry Experience. Placement Assistance After Course Completion. Weekday & Weekend Batches Available in Mumbai.",
       "features": [
         "100% Practical, Project-Based SAP PP Training",
@@ -1507,8 +1507,8 @@
   },
   "qmheader": {
     "QMHeader": {
-      "title": "Learn SAP QM in Mumbai — From a Trainer Who's Actually Worked the Shop Floor",
-      "subtitle": "Stop watching theory-only videos. This is a hands-on SAP Quality Management course built for people who want to walk into an interview — or their next appraisal — and talk numbers, not buzzwords. Real-time SAP access, live projects, and a trainer who's implemented QM modules for manufacturing clients across Maharashtra.",
+      "title": "SAP QM Course in Mumbai",
+      "subtitle": "Become a Certified SAP QM Consultant",
       "description": "Weekday & weekend batches | Classroom (Andheri/Powai) + Online | Next batch starts soon.",
       "features": [
         "Live Class",
@@ -1560,8 +1560,8 @@
   },
   "psheader": {
     "PSHeader": {
-      "title": "SAP PS Training in Mumbai — Learn Project Systems the Way It's Actually Used on the Job",
-      "subtitle": "A hands-on SAP Project System course for engineers, project managers, and finance professionals who want to plan, execute, and track projects inside SAP — from WBS to final settlement, taught by consultants who've implemented PS on live client projects.",
+      "title": "SAP PS Course in Mumbai",
+      "subtitle": "Become a Certified SAP PS Consultant",
       "description": "Classroom sessions in Mumbai + live online batches. Real client-style project scenarios, not just textbook demos. SAP system access for practice, included in the course. Resume building and interview prep before you finish.",
       "features": [
         "Classroom sessions in Mumbai + live online batches",
@@ -1610,8 +1610,8 @@
   },
   "scmheader": {
     "SCMHeader": {
-      "title": "Become an SAP SCM Consultant — Learn From Trainers Who've Actually Worked on Live SAP Projects",
-      "subtitle": "A practical, project-based SAP Supply Chain Management course in Mumbai, built for people who want real S/4HANA skills, not just certificates that gather dust.",
+      "title": "SAP SCM Course in Mumbai",
+      "subtitle": "Become a Certified SAP SCM Consultant",
       "description": "Whether you're a fresher trying to break into SAP, a supply chain professional wanting to move into consulting, or someone switching careers into IT — this course is designed to get you job-ready, not just \"aware\" of SAP.",
       "features": [
         "100% Practical, Hands-on SAP S/4HANA Training",
@@ -1661,8 +1661,8 @@
   },
   "succheader": {
     "SuccHeader": {
-      "title": "Become an SAP SuccessFactors Expert — Learn From India's HR Tech Capital",
-      "subtitle": "Join Mumbai's most practical SAP SuccessFactors course and master the world's leading cloud HR platform, taught by certified SAP SF consultants with real project experience.",
+      "title": "SAP SuccessFactors Course in Mumbai",
+      "subtitle": "Become a Certified SAP SuccessFactors Consultant",
       "description": "This SAP SF course in Mumbai is built for working professionals, HR practitioners, and freshers who want to break into SAP's cloud HCM ecosystem. You'll work on live client-style scenarios, not just theory slides.",
       "features": [
         "Live Class",
@@ -1714,35 +1714,8 @@
   },
   "ehsheader": {
     "EHSHeader": {
-      "form": {
-        "title": "Book a FREE live class",
-        "inputs": [
-          {
-            "type": "text",
-            "name": "name",
-            "placeholder": "Enter your name"
-          },
-          {
-            "type": "email",
-            "name": "email",
-            "placeholder": "Enter your Email"
-          },
-          {
-            "type": "text",
-            "name": "year",
-            "placeholder": "Year of Passing"
-          },
-          {
-            "type": "tel",
-            "name": "contactname",
-            "placeholder": "Enter your phone number",
-            "countryCode": "+91"
-          }
-        ],
-        "submitText": "Book Live Class"
-      },
-      "title": "Learn SAP EHS in Mumbai — From a City That Actually Needs It",
-      "subtitle": "Mumbai runs on chemicals, pharma, ports, and heavy manufacturing — which means it runs on compliance. Get hands-on with SAP Environment, Health & Safety and become the person companies call when an audit is due.",
+      "title": "SAP EHS Course in Mumbai",
+      "subtitle": "Become a Certified SAP EHS Professional",
       "description": "Live SAP access · Real EHS case studies from process industries · Placement support.",
       "features": [
         "Live Class",
@@ -1758,11 +1731,7 @@
           "text": "Download Course Brochure",
           "courseName": "Book Live Demo"
         }
-      ]
-    }
-  },
-  "btpheader": {
-    "BTPHeader": {
+      ],
       "form": {
         "title": "Book a FREE live class",
         "inputs": [
@@ -1789,9 +1758,13 @@
           }
         ],
         "submitText": "Book Live Class"
-      },
-      "title": "Master SAP BTP Course in Mumbai — Build, Extend and Integrate Enterprise Apps the SAP Way",
-      "subtitle": "Learn SAP Business Technology Platform from certified trainers with real-time projects, live server access, and placement support. Our SAP BTP course in Mumbai is designed for working professionals, freshers, and consultants who want to move into cloud-based SAP development.",
+      }
+    }
+  },
+  "btpheader": {
+    "BTPHeader": {
+      "title": "SAP BTP Course in Mumbai",
+      "subtitle": "Become a Certified SAP BTP Professional",
       "description": "Hands-on SAP BTP training with live server access and placement support.",
       "features": [
         "Live Class",
@@ -1807,11 +1780,7 @@
           "text": "Download Course Brochure",
           "courseName": "Book Live Demo"
         }
-      ]
-    }
-  },
-  "grcheader": {
-    "GRCHeader": {
+      ],
       "form": {
         "title": "Book a FREE live class",
         "inputs": [
@@ -1838,9 +1807,13 @@
           }
         ],
         "submitText": "Book Live Class"
-      },
-      "title": "Become a Certified SAP GRC Expert — Learn from Mumbai's Most Trusted SAP GRC Training Institute",
-      "subtitle": "Master SAP Governance, Risk and Compliance (GRC) with hands-on projects, real client scenarios, and placement support. Our SAP GRC course in Mumbai is designed for freshers, SAP consultants, and working professionals who want to build a career in Access Control, Risk Management, and Process Control.",
+      }
+    }
+  },
+  "grcheader": {
+    "GRCHeader": {
+      "title": "SAP GRC Course in Mumbai",
+      "subtitle": "Become a Certified SAP GRC Professional",
       "description": "100% Practical Training | Live SAP GRC Server Access | Industry-Recognized Certificate | Weekday & Weekend Batches Available in Mumbai",
       "features": [
         "Live Class",
@@ -1856,13 +1829,40 @@
           "text": "Download Course Brochure",
           "courseName": "Book Live Demo"
         }
-      ]
+      ],
+      "form": {
+        "title": "Book a FREE live class",
+        "inputs": [
+          {
+            "type": "text",
+            "name": "name",
+            "placeholder": "Enter your name"
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "placeholder": "Enter your Email"
+          },
+          {
+            "type": "text",
+            "name": "year",
+            "placeholder": "Year of Passing"
+          },
+          {
+            "type": "tel",
+            "name": "contactname",
+            "placeholder": "Enter your phone number",
+            "countryCode": "+91"
+          }
+        ],
+        "submitText": "Book Live Class"
+      }
     }
   },
   "ibpheader": {
     "IBPHeader": {
-      "title": "Become an SAP IBP Expert with Mumbai's Most Practical SAP IBP Course",
-      "subtitle": "Learn SAP Integrated Business Planning (IBP) from certified industry trainers through real-time projects, live demand and supply planning scenarios, and hands-on system access. Our SAP IBP course in Mumbai is designed for professionals who want to move into high-paying supply chain planning roles with confidence.",
+      "title": "SAP IBP Course in Mumbai",
+      "subtitle": "Become a Certified SAP IBP Professional",
       "description": "Hands-on SAP IBP training with live system access, real demand & supply planning scenarios, and placement support in Mumbai.",
       "features": [
         "Live Class",
@@ -1910,8 +1910,8 @@
   },
   "hrhcmheader": {
     "HRHCMHeader": {
-      "title": "SAP HCM Training in Mumbai — Learn From People Who've Actually Implemented It",
-      "subtitle": "Not another theory-heavy course. This is hands-on SAP HCM/HR training built around real client scenarios, live system access, and a trainer who's spent years inside actual SAP HR projects — not just PowerPoint slides.",
+      "title": "SAP HR/HCM Course in Mumbai",
+      "subtitle": "Become a Certified SAP HR/HCM Consultant",
       "description": "Personnel Administration • Organizational Management • Time Management • Payroll India • ESS/MSS. Classroom in Mumbai + Live Online Batches | Weekday & Weekend Batches | Real SAP Server Access | Certificate on Completion.",
       "features": [
         "Live Class",
@@ -1959,9 +1959,9 @@
   },
   "netheader": {
     "NetHeader": {
-      "title": "SAP NetWeaver Course in {city}",
-      "subtitle": "Practical Based Job Oriented SAP Training in {city}",
-      "description": " Practical Training on SAP's core technological platform, including integration, system management, and security, is provided via the SAP NetWeaver Course in {city}. Acquire hands-on experience in real-world projects to get ready for positions such as SAP NetWeaver Consultant and System Administrator. This course gives you the tools to handle enterprise-level, scalable solutions in various SAP environments.",
+      "title": "SAP NetWeaver Course in Mumbai",
+      "subtitle": "Become a Certified SAP NetWeaver Professional",
+      "description": "Practical Training on SAP's core technological platform, including integration, system management, and security, is provided via the SAP NetWeaver Course in {city}. Acquire hands-on experience in real-world projects to get ready for positions such as SAP NetWeaver Consultant and System Administrator. This course gives you the tools to handle enterprise-level, scalable solutions in various SAP environments.",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -2008,8 +2008,8 @@
   },
   "pmheader": {
     "PMHeader": {
-      "title": "Become a Certified SAP PM Consultant — Learn From Mumbai's Leading SAP PM Training Institute",
-      "subtitle": "Master SAP Plant Maintenance (PM) with a hands-on, industry-driven SAP PM course in Mumbai designed for engineers, maintenance professionals, and IT graduates who want to break into the world of SAP consulting.",
+      "title": "SAP PM Course in Mumbai",
+      "subtitle": "Become a Certified SAP PM Consultant",
       "description": "Learn directly from certified SAP PM trainers, work on real-time maintenance scenarios, and walk away job-ready — with lifetime access to class recordings and placement support. Weekday & Weekend Batches Available | Classroom + Live Online Training | 100% Practical Learning",
       "features": [
         "Live Class",
@@ -2057,8 +2057,8 @@
   },
   "sapheader": {
     "SapHeader": {
-      "title": " Best SAP Course in {city}",
-      "subtitle": " Get Certified with the best SAP training institute in {city}",
+      "title": "SAP Course in Mumbai",
+      "subtitle": "Get Certified with the Best SAP Training Institute in Mumbai",
       "description": "Grow Your Career with the Best SAP Course in {city}. Accelerate your professional journey with our industry-leading SAP training in {city}, featuring specialized courses in SAP FICO, SAP MM, and SAP SD. Our comprehensive and hands-on training program is designed to build deep expertise in core SAP modules like Financial Accounting, Materials Management, and Sales & Distribution. Whether you're a fresher or a working professional, we’ll help you land your dream job in top MNCs.",
       "features": [
         "Live Class",
@@ -2106,9 +2106,9 @@
   },
   "itcoursesheader": {
     "ITcoursesHeader": {
-      "title": "Software Training in {city} with placement support",
-      "subtitle": " Get Certified with the advance IT training institute in {city}",
-      "description": " Connecting Dots ERP offers an advanced IT course in {city} designed to equip you with the essential skills to excel in the fast-evolving tech industry. Our advance and detailed training program covers key modules such as Data Science, Data Analytics, Python, and Java, ensuring you gain the expertise to work with cutting-edge technologies and solve complex business problems. By mastering these modules, you'll be prepared to take on roles like Data Scientist, Data Analyst, Python Developer, and Java Developer. Our course is tailored to help you build a strong foundation and land your dream job in the dynamic field of IT.",
+      "title": "IT Course in Mumbai",
+      "subtitle": "Get Certified with Advanced IT Training in Mumbai",
+      "description": "Connecting Dots ERP offers an advanced IT course in {city} designed to equip you with the essential skills to excel in the fast-evolving tech industry. Our advance and detailed training program covers key modules such as Data Science, Data Analytics, Python, and Java, ensuring you gain the expertise to work with cutting-edge technologies and solve complex business problems. By mastering these modules, you'll be prepared to take on roles like Data Scientist, Data Analyst, Python Developer, and Java Developer. Our course is tailored to help you build a strong foundation and land your dream job in the dynamic field of IT.",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -2155,9 +2155,9 @@
   },
   "hrcoursesheader": {
     "HRcoursesHeader": {
-      "title": "Advance HR Training in {city}",
-      "subtitle": " Get Certified with the best HR training institute in {city}",
-      "description": " Connecting Dots ERP offers a advance HR course in {city} designed to equip you with the essential skills to excel in Human Resources. Our advanced and detailed HR training program covers key modules such as Personnel Administration, Payroll, Time Management, and Organizational Management.By mastering these modules, you'll gain the expertise to streamline HR processes, optimize workforce management, and drive organizational success. Our course is tailored to help you land your dream job in the dynamic field of HR.",
+      "title": "HR Course in Mumbai",
+      "subtitle": "Get Certified with the Best HR Training Institute in Mumbai",
+      "description": "Connecting Dots ERP offers a advance HR course in {city} designed to equip you with the essential skills to excel in Human Resources. Our advanced and detailed HR training program covers key modules such as Personnel Administration, Payroll, Time Management, and Organizational Management.By mastering these modules, you'll gain the expertise to streamline HR processes, optimize workforce management, and drive organizational success. Our course is tailored to help you land your dream job in the dynamic field of HR.",
       "features": [
         "Live Class",
         "1:1 mentorship",
