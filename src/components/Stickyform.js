@@ -15,7 +15,7 @@ const countryCodes = [
   { code: "+971", country: "AE", minLength: 9, maxLength: 9 },
   { code: "+65", country: "SG", minLength: 8, maxLength: 8 },
 ];
-const hiddenPaths = ['/dashboard', '/superadmin', '/AdminLogin'];
+const hiddenPaths = ['/dashboard', '/superadmin', '/AdminLogin', '/blog', '/blog-admin'];
 const getApiBaseUrl = () => (process.env.NEXT_PUBLIC_API_URL || "").replace(/\/$/, "");
 const OTHER_LOCATION = "Other";
 const LOCATIONS = [

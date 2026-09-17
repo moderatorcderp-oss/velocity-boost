@@ -134,7 +134,7 @@
     "courseTitle": "SAP HR/HCM CERTIFICATION",
     "image": "/Certificate/Certificate-1.avif",
     "completionText": "Upon successful completion of the course, you will receive an Industry-Recognized SAP HCM Course Completion Certificate.",
-    "description": "",
+    "description": "Validates practical and theoretical knowledge of SAP HCM configuration and processes.",
     "highlights": [
       "Validates practical and theoretical knowledge",
       "Strengthens resume for functional consultant roles",
@@ -145,7 +145,7 @@
     "courseTitle": "SAP SCM CERTIFICATION",
     "image": "/Certificate/Certificate-1.avif",
     "completionText": "Upon successful completion of the course and capstone project, you will receive a Course Completion Certificate in SAP Supply Chain Management.",
-    "description": "",
+    "description": "Demonstrates verified project-based skills in SAP SCM modules and integration.",
     "highlights": [
       "Recognized by hiring partners",
       "Demonstrates verified project-based skills",
@@ -153,7 +153,7 @@
     ]
   },
   "successfactors": {
-    "courseTitle": "SAP SUCCESSFACTOR CERTIFICATION",
+    "courseTitle": "SAP SUCCESSFACTORS CERTIFICATION",
     "image": "/Certificate/Certificate-1.avif",
     "completionText": "Upon successful completion of the course, you will receive a Course Completion Certificate.",
     "description": "Our trainers also provide guidance for the official SAP SuccessFactors Certification exam.",
@@ -175,179 +175,235 @@
     ]
   },
   "datascience": {
-    "courseTitle": "Data Science Certificate",
+    "courseTitle": "Data Science with AI Certificate",
     "image": "/Certificate/Certificate-1.avif",
-    "completionText": "The Data Science Certification provides in-depth knowledge of data analysis, machine learning, and big data.",
-    "description": "With hands-on training, you'll be prepared to apply data science techniques to solve complex problems.",
+    "completionText": "On successful completion of the course and capstone project, you'll receive a Data Science with AI Certificate, which you can add directly to your LinkedIn profile and resume.",
+    "description": "Certificate reflects the specific modules and tools covered (ML, deep learning, and generative AI). Awarded only after capstone project evaluation — not just attendance.",
     "highlights": [
-      "Industry-recognized certificate",
-      "Hands-on training in Python, R, SQL",
-      "Validates practical ML and analytics skills"
+      "Verifiable certificate ID for employers to confirm authenticity",
+      "Reflects ML, deep learning and generative AI modules",
+      "Optional guidance on showcasing certificate and portfolio on LinkedIn and GitHub"
     ]
   },
   "dataanalytics": {
-    "courseTitle": "Data Analytics Certificate",
+    "courseTitle": "Data Analytics with Gen AI Certificate",
     "image": "/Certificate/Certificate-1.avif",
-    "completionText": "The Masters in Data Analytics Certification offers advanced training in data processing, statistical analysis, and reporting.",
-    "description": "You'll learn to use tools like Python, Excel, and Power BI to extract valuable insights.",
+    "completionText": "On successful completion of the course, you will receive an industry-recognized Data Analytics with Gen AI Certification.",
+    "description": "Reflects both traditional data analytics skills and Generative AI proficiency. Backed by project work and a capstone portfolio, not just attendance.",
     "highlights": [
-      "Industry-recognized certificate",
-      "Hands-on with Python, Excel, Power BI",
-      "Validates statistical analysis skills"
+      "Shareable directly on LinkedIn and professional profiles",
+      "Recognized by hiring partners as proof of practical, job-ready skills",
+      "Adds credibility for analyst roles in Pune and beyond"
     ]
   },
   "businessanalytics": {
     "courseTitle": "Business Analytics Certificate",
     "image": "/Certificate/Certificate-1.avif",
-    "completionText": "The Masters in Business Analytics Certification focuses on turning data into actionable business insights.",
-    "description": "Learn to use analytics tools to optimize business processes and drive growth.",
+    "completionText": "On successful completion of the course and capstone project, you will receive an industry-recognized Business Analytics Course Completion Certificate.",
+    "description": "Validates practical training in metrics, dashboarding and data-driven decision making.",
     "highlights": [
-      "Industry-recognized certificate",
-      "Hands-on BI and predictive analytics",
-      "Validates ability to turn data into insights"
+      "Shareable on LinkedIn and with potential employers",
+      "Backed by real project work and assessments",
+      "Reflects demonstrated ability, not just attendance"
     ]
   },
   "ai": {
-    "courseTitle": "Artificial Intelligence Certificate",
+    "courseTitle": "AI & ML Course Completion Certificate",
     "image": "/Certificate/Certificate-1.avif",
-    "completionText": "The Generative AI Certification offers cutting-edge training in AI-powered conversational systems.",
-    "description": "Learn to develop chatbots, integrate AI into business processes, and create intelligent applications.",
+    "completionText": "On successful completion of this AI ML course in Pune, you'll receive an industry-recognized certificate that reflects both your coursework and your project work — not attendance alone.",
+    "description": "Certificate awarded after completing all modules, assignments, and at least one capstone project. Verifies practical proficiency in Python, machine learning, deep learning, and applied AI concepts.",
     "highlights": [
-      "Industry-recognized certificate",
-      "Hands-on with GPT models and chatbots",
-      "Validates practical AI application skills"
+      "Verifiable digital certificate with unique ID",
+      "Shareable directly on LinkedIn and resume",
+      "Recognized by hiring partners across Pune"
+    ]
+  },
+  "genai": {
+    "courseTitle": "Generative AI Course Completion Certificate",
+    "image": "/Certificate/Certificate-1.avif",
+    "completionText": "On successful completion of the assessments and capstone project, you will receive an industry-recognized Generative AI Course Completion Certificate, verifiable online and shareable directly on LinkedIn.",
+    "description": "Certificate reflects real project work, not just attendance. Includes a verifiable digital ID and QR code.",
+    "highlights": [
+      "Recognized by hiring partners across Pune's IT ecosystem",
+      "Adds credibility for Data Science, AI Engineer, and ML roles",
+      "Backed by a portfolio of hands-on projects"
+    ]
+  },
+  "agenticai": {
+    "courseTitle": "Agentic AI Course Certificate",
+    "image": "/Certificate/Certificate-1.avif",
+    "completionText": "On completing the course and capstone project, you'll receive an Agentic AI Course Certificate that verifies completion of all modules and hands-on project work, including a multi-agent capstone application.",
+    "description": "The certificate includes a unique verification ID that employers or clients can use to confirm authenticity. Designed to be shared directly on LinkedIn and included on your resume as proof of applied, project-based experience.",
+    "highlights": [
+      "Skills validated: agent design, LangChain/LangGraph, RAG, and deployment",
+      "Reviewed and signed off based on project quality",
+      "Backed by real, demonstrable project work — not just attendance"
     ]
   },
   "fullstack": {
     "courseTitle": "Full-Stack Certificate",
     "image": "/Certificate/Certificate-1.avif",
-    "completionText": "The Full Stack Training Certification provides comprehensive skills in front-end and back-end web development.",
-    "description": "You'll learn to build dynamic web applications using HTML, CSS, JavaScript, and Node.js.",
+    "completionText": "On successful completion of the course and capstone project, you will receive an industry-recognized Full Stack Course Completion Certificate.",
+    "description": "Validates end-to-end project work from frontend to backend and deployment.",
     "highlights": [
-      "Industry-recognized certificate",
-      "Hands-on full-stack development",
-      "Validates end-to-end web application skills"
+      "Shareable on LinkedIn and with recruiters",
+      "Backed by a portfolio-ready application",
+      "Awarded only after project submission and evaluation"
     ]
   },
   "java": {
-    "courseTitle": "Java Certificate",
+    "courseTitle": "Java Course Completion Certificate",
     "image": "/Certificate/Certificate-1.avif",
-    "completionText": "The JAVA Certification Course is tailored for those looking to master the Java programming language.",
-    "description": "Gain proficiency in building high-performance applications and scalable solutions.",
+    "completionText": "On successful completion of the course and capstone project, you'll receive an industry-recognized Java course completion certificate.",
+    "description": "This certificate validates your skills in core Java, object-oriented programming, and framework-level development, and can be added to your resume and LinkedIn profile.",
     "highlights": [
-      "Industry-recognized certificate",
-      "Hands-on OOP and enterprise design",
-      "Validates high-performance Java skills"
+      "Issued after final project evaluation",
+      "Includes a verifiable certificate ID",
+      "Recognized by hiring partners in Pune's IT and tech ecosystem",
+      "Optional guidance for Oracle Certified Associate/Professional Java Programmer"
     ]
   },
   "python": {
-    "courseTitle": "Python Certificate",
+    "courseTitle": "Python Course Completion Certificate",
     "image": "/Certificate/Certificate-1.avif",
-    "completionText": "The Python Certification equips you with versatile skills in one of the most popular programming languages.",
-    "description": "Learn to use Python for data analysis, web development, and automation.",
+    "completionText": "On successful completion of this Python course in Pune, you'll receive an industry-recognized certificate that validates your skills in Python programming, OOP, data handling, and project development.",
+    "description": "The certificate includes your name, course duration, modules completed, a unique verification ID, and a project summary highlighting your capstone work.",
     "highlights": [
-      "Industry-recognized certificate",
-      "Hands-on for data analysis and automation",
-      "Validates versatile Python skills"
+      "Shareable format for LinkedIn and resume",
+      "Designed to carry real weight in interviews",
+      "Reviewers can see exactly what you built, not just that you attended"
     ]
   },
   "salesforce": {
-    "courseTitle": "Salesforce Certificate",
+    "courseTitle": "Salesforce Course Completion Certificate",
     "image": "/Certificate/Certificate-1.avif",
-    "completionText": "The Salesforce Training Certification is designed to make you proficient in managing and configuring Salesforce CRM.",
-    "description": "Gain hands-on experience with Salesforce tools and automate workflows.",
+    "completionText": "On successful completion of this Salesforce course in Pune, you'll receive a course completion certificate from Connecting Dots ERP, recognized by hiring partners across the IT and CRM industry.",
+    "description": "In addition, our trainers guide you step-by-step to prepare for and pass the official Salesforce Certified Administrator exam.",
     "highlights": [
-      "Industry-recognized certificate",
-      "Hands-on CRM configuration",
-      "Validates practical CRM skills"
+      "Recognized by hiring partners across IT and CRM",
+      "Guidance for official Salesforce Certified Administrator exam",
+      "Adds significant credibility to your resume"
     ]
   },
   "tableau": {
-    "courseTitle": "Tableau Certificate",
+    "courseTitle": "Tableau Course Completion Certificate",
     "image": "/Certificate/Certificate-1.avif",
-    "completionText": "The Tableau Certification offers in-depth training in data visualization and dashboard creation.",
-    "description": "You'll learn to present complex data insights through interactive visuals.",
+    "completionText": "On successful completion of the course and capstone projects, you'll receive an industry-recognized Tableau Course Completion Certificate, which you can add directly to your LinkedIn profile and resume.",
+    "description": "The certificate reflects genuine, project-based learning — not attendance alone. To earn it, you'll need to attend a minimum of 85% of live sessions, complete all module assignments, and successfully present at least one capstone dashboard project.",
     "highlights": [
-      "Industry-recognized certificate",
-      "Hands-on interactive dashboards",
-      "Validates data visualization skills"
+      "Project portfolio summary included",
+      "Shareable directly on LinkedIn and with recruiters",
+      "Verifiable certificate ID for employer verification"
     ]
   },
   "powerbi": {
-    "courseTitle": "PowerBI Certificate",
+    "courseTitle": "Power BI Course Completion Certificate",
     "image": "/Certificate/Certificate-1.avif",
-    "completionText": "The Power BI Certification trains you in Microsoft's leading business intelligence tool.",
-    "description": "Learn to create dynamic dashboards, perform data analysis, and share insights.",
+    "completionText": "On successful completion of the course and capstone projects, you'll receive an industry-recognised Power BI course completion certificate, which you can add directly to your LinkedIn profile and resume.",
+    "description": "The certificate reflects both your technical skills and the real project work you've completed. Students who wish to go further are also guided through preparation for Microsoft's official PL-300: Power BI Data Analyst certification exam.",
     "highlights": [
-      "Industry-recognized certificate",
-      "Hands-on dynamic dashboards",
-      "Validates Microsoft Power BI proficiency"
+      "Hands-on training in data modelling, DAX, Power Query and dashboard design",
+      "Shareable on LinkedIn and resume",
+      "Guidance for official Microsoft PL-300 exam"
+    ]
+  },
+  "datavisualization": {
+    "courseTitle": "Data Visualization with AI Certificate",
+    "image": "/Certificate/Certificate-1.avif",
+    "completionText": "On successful completion of the course and capstone project, you'll receive an industry-recognized Data Visualization with AI Certification.",
+    "description": "Validates hands-on experience with Power BI, Tableau, Python, and AI visualization tools. Backed by a portfolio of real, reviewed projects — not just a test score.",
+    "highlights": [
+      "Shareable directly on LinkedIn",
+      "Recognized by hiring partners as proof of practical, job-ready skills",
+      "Certificate for capability, not just attendance"
+    ]
+  },
+  "aws": {
+    "courseTitle": "AWS Course Completion Certificate",
+    "image": "/Certificate/Certificate-1.avif",
+    "completionText": "On successful completion of this AWS training in Pune, you will receive a Course Completion Certificate verifying your hands-on training and project work, plus a personalised capstone project certificate.",
+    "description": "Exam-readiness documentation and a structured study plan for the official AWS Certified Solutions Architect – Associate exam are also provided. Our team guides you through official AWS certification registration, exam pattern, and mock tests.",
+    "highlights": [
+      "Verifies hands-on training and project work",
+      "Capstone project certificate for resume and LinkedIn",
+      "Guidance for AWS Certified Solutions Architect – Associate exam"
+    ]
+  },
+  "devops": {
+    "courseTitle": "DevOps Course Completion Certificate",
+    "image": "/Certificate/Certificate-1.avif",
+    "completionText": "On successful completion of the course and capstone project, you'll receive an industry-recognized DevOps Course Completion Certificate.",
+    "description": "Validates hands-on experience with CI/CD, cloud, and containerization tools. Includes project details and technologies used so it's résumé and LinkedIn-ready.",
+    "highlights": [
+      "Verifiable certificate ID for employer verification",
+      "Guidance for AWS Certified DevOps Engineer and Kubernetes (CKA) exams",
+      "Reflects practical, project-based learning"
     ]
   },
   "corehr": {
-    "courseTitle": "Core HR Certificate",
+    "courseTitle": "Core HR Course Completion Certificate",
     "image": "/Certificate/Certificate-1.avif",
-    "completionText": "The Core HR Certification focuses on the essentials of human resources, including policies, employee management, and labor laws.",
-    "description": "This certification ensures you are equipped to handle core HR functions.",
+    "completionText": "On successful completion of this Core HR Course in Pune, you will receive an industry-recognised certificate that validates your hands-on training in recruitment, payroll, statutory compliance, and HR operations.",
+    "description": "Certificate issued after evaluation of the capstone project and module assessments. Mentions all core HR modules covered, making it relevant for recruiter screening.",
     "highlights": [
-      "Industry-recognized certificate",
-      "Covers policies and labor laws",
-      "Validates practical core HR skills"
+      "Shareable on LinkedIn with verifiable certificate ID",
+      "Recognised by our hiring partners during placement assistance",
+      "Reflects real HR tasks completed during training, not just attendance"
     ]
   },
   "hrpayroll": {
-    "courseTitle": "HR Payroll Certificate",
+    "courseTitle": "HR Payroll Certification",
     "image": "/Certificate/Certificate-1.avif",
-    "completionText": "The HR Payroll Certification teaches you the intricacies of payroll management.",
-    "description": "From handling salary calculations to statutory compliances, this certification ensures you are well-prepared.",
+    "completionText": "On successful completion of the course and capstone project, you will receive an HR Payroll Certification that validates your practical skills in payroll processing, statutory compliance, and payroll software tools.",
+    "description": "Recognized by hiring partners across Pune's HR and finance job market. Based on hands-on evaluation, not just attendance.",
     "highlights": [
-      "Industry-recognized certificate",
-      "Hands-on salary and compliance",
-      "Validates practical payroll skills"
+      "Includes a verifiable certificate ID for employers",
+      "Adds direct credibility to resume and LinkedIn for payroll roles",
+      "Proof of a completed practical Payroll Management Course"
     ]
   },
   "hrmanagement": {
-    "courseTitle": "HR Management Certificate",
+    "courseTitle": "HR Management Course Certificate",
     "image": "/Certificate/Certificate-1.avif",
-    "completionText": "The HR Management Certification offers advanced training in strategic HR practices.",
-    "description": "This certification prepares you for managerial roles in HR.",
+    "completionText": "On successful completion, you'll receive an industry-recognised HR Management Course in Pune certificate that validates your skills to employers.",
+    "description": "The certificate covers all core HR competencies taught in the program and is accompanied by a digital portfolio of your capstone project.",
     "highlights": [
-      "Industry-recognized certificate",
-      "Covers workforce planning and talent",
-      "Validates strategic HR skills"
+      "Issued after final assessment and project submission",
+      "Verifiable digital certificate with unique ID",
+      "Recognised by our 200+ hiring partners in Pune"
     ]
   },
   "hrgeneralist": {
-    "courseTitle": "HR Generalist Certificate",
+    "courseTitle": "HR Generalist Certification",
     "image": "/Certificate/Certificate-1.avif",
-    "completionText": "The HR Generalist Certification covers all key HR functions, from recruitment to payroll management.",
-    "description": "This well-rounded program provides the skills you need to efficiently manage HR operations.",
+    "completionText": "On successful completion of the HR Generalist Course, you will receive an industry-recognized certificate that validates your practical HR skills to employers.",
+    "description": "Certificate issued upon completion of assessments and live projects. Includes a detailed skill breakdown (not just a generic completion certificate).",
     "highlights": [
-      "Industry-recognized certificate",
-      "Covers recruitment to payroll",
-      "Validates well-rounded HR skills"
+      "Recognized by HR consultancies and hiring partners in Pune",
+      "Adds credibility to resume and LinkedIn profile",
+      "Digital and printed certificate options available"
     ]
   },
   "hranalytics": {
     "courseTitle": "HR Analytics Certificate",
     "image": "/Certificate/Certificate-1.avif",
-    "completionText": "The HR Analytics Certification focuses on using data to optimize HR processes.",
-    "description": "Learn to analyse workforce metrics, improve recruitment strategies, and enhance employee performance.",
+    "completionText": "On successful completion of the HR Analytics Course in Pune, you'll receive an industry-recognized certificate that validates your skills in HR data analysis, dashboarding, and workforce reporting.",
+    "description": "The certificate reflects hands-on project work, not just attendance — making it a strong addition to your resume and LinkedIn profile.",
     "highlights": [
-      "Industry-recognized certificate",
-      "Hands-on workforce metrics",
-      "Validates data-driven HR skills"
+      "Used by alumni to move into People Analytics and HRBP roles",
+      "Validates dashboarding and workforce reporting skills",
+      "Strong signal for data-driven HR roles across Pune"
     ]
   },
   "hrtraining": {
-    "courseTitle": "HR Training Certificate",
+    "courseTitle": "HR Training in Pune Certificate",
     "image": "/Certificate/Certificate-1.avif",
-    "completionText": "The HR Training Certification provides a solid foundation in human resource management.",
-    "description": "This certification prepares you to handle the daily operations of an HR department.",
+    "completionText": "On successful completion of the course and capstone project, you'll receive an industry-recognised HR Training in Pune certification that validates your skills in recruitment, payroll, compliance, and HR operations.",
+    "description": "Certificate issued after project submission and final assessment. Recognised across Pune as proof of a serious, practical HR Training program.",
     "highlights": [
-      "Industry-recognized certificate",
-      "Covers recruitment and performance",
-      "Validates solid HR foundation"
+      "Verifiable digital certificate with unique credential ID",
+      "Shareable directly to LinkedIn and your resume",
+      "Recognised by our hiring partners during placement drives"
     ]
   },
   "sap": {
@@ -381,17 +437,6 @@
       "Industry-recognized certificate",
       "Combines theory and practical",
       "Focuses on real-world HR scenarios"
-    ]
-  },
-  "datavisualization": {
-    "courseTitle": "Data Visualization Training Certificate",
-    "image": "/Certificate/Certificate-1.avif",
-    "completionText": "Learn advance topics and industrial tools with the Certification of Data Visualization Course.",
-    "description": "Our program blends theoretical concepts with hands-on training, focusing on Tableau, Power BI, and Excel.",
-    "highlights": [
-      "Industry-recognized certificate",
-      "Hands-on with Tableau, Power BI, Excel",
-      "Validates ability to transform complex data"
     ]
   }
 }

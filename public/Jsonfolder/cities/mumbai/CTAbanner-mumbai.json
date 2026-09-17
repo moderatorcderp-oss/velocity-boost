@@ -330,193 +330,348 @@
         ]
     },
     "datascience": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
+        "badge": "Free Live Demo",
+        "title": "Mumbai's Data Science with AI Course for People Who Want to Actually Get Hired",
+        "subtitle": "Seats for the next batch are filling up. Talk to our academic counsellor, get your questions answered, and see if this is the right next step for your career.",
+        "primaryBtn": "Book Your Free Counselling Call",
+        "secondaryBtn": "Reserve Your Seat Now",
+        "trust": "Classroom + Live Online · Real projects · Placement support",
+        "screenTitle": "Data Science Live Lab",
+        "widgets": [
+            "Python",
+            "ML Models",
+            "Power BI",
+            "Gen AI"
+        ]
     },
     "dataanalytics": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
+        "badge": "Free Live Demo",
+        "title": "Ready to Start Your Career in Data Analytics with Gen AI?",
+        "subtitle": "Join Mumbai's practical, project-based Data Analytics with Gen AI course and learn the exact skills companies are hiring for right now.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to a Course Counsellor",
+        "trust": "Classroom sessions in Mumbai · Live projects · 1-on-1 mentorship",
+        "screenTitle": "Analytics Dashboard",
+        "widgets": [
+            "Excel",
+            "SQL",
+            "Power BI",
+            "Gen AI"
+        ]
     },
     "businessanalytics": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
+        "badge": "Free Live Demo",
+        "title": "Ready to Make Data-Driven Business Decisions?",
+        "subtitle": "Join Mumbai's practical Business Analytics program and learn the metrics, tools, and storytelling skills that leadership teams actually use.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to a Career Counsellor",
+        "trust": "Weekend & weekday batches · Real business case studies · Placement support",
+        "screenTitle": "Business Dashboard",
+        "widgets": [
+            "KPIs",
+            "Power BI",
+            "SQL",
+            "AI Insights"
+        ]
     },
     "ai": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
+        "badge": "Free Live Demo",
+        "title": "Your AI & ML Career in Mumbai Starts With One Decision",
+        "subtitle": "Seats for the next batch of our AI & ML course in Mumbai are filling up fast. Don't just learn AI — learn how to use it to build a career that keeps growing.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to a Career Counsellor",
+        "trust": "Download Free Brochure · Limited seats available",
+        "screenTitle": "AI Model Lab",
+        "widgets": [
+            "Python",
+            "TensorFlow",
+            "NLP",
+            "Deployment"
+        ]
+    },
+    "genai": {
+        "badge": "Free Live Demo",
+        "title": "Ready to Build Your Future with Generative AI?",
+        "subtitle": "Seats for the next batch of our Generative AI course in Mumbai are filling up fast. Learn the skills employers are actually hiring for — with hands-on projects, expert mentors, and a certificate that means something.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to an Admissions Counsellor",
+        "trust": "Download Full Curriculum PDF · Limited seats",
+        "screenTitle": "Generative AI Workspace",
+        "widgets": [
+            "Prompting",
+            "RAG",
+            "Agents",
+            "Custom GPTs"
+        ]
+    },
+    "agenticai": {
+        "badge": "Free Live Demo",
+        "title": "Seats Are Filling Up for the Next Agentic AI Batch in Mumbai",
+        "subtitle": "Don't just learn about AI agents — build them. Join a hands-on Agentic AI course in Mumbai designed to get you job-ready with real projects, real mentors, and a real portfolio.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to a Course Advisor",
+        "trust": "Download Curriculum PDF · Limited seats per batch",
+        "screenTitle": "Agentic AI Lab",
+        "widgets": [
+            "LangChain",
+            "CrewAI",
+            "RAG",
+            "Multi-Agent"
+        ]
     },
     "fullstack": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
+        "badge": "Free Live Demo",
+        "title": "Ready to Build Full-Stack Applications That Get You Hired?",
+        "subtitle": "Join Mumbai's practical full-stack program and walk away with a complete application you can show in interviews.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Book a Free Demo Class",
+        "trust": "Weekend & weekday batches · Portfolio projects · Placement support",
+        "screenTitle": "Full Stack Workspace",
+        "widgets": [
+            "Frontend",
+            "Backend",
+            "Database",
+            "Deploy"
+        ]
     },
     "java": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
+        "badge": "Free Live Demo",
+        "title": "Ready to Start Your Java Developer Journey in Mumbai?",
+        "subtitle": "Seats for the next batch are limited. Book your free demo class today and see exactly how this Java course in Mumbai is structured before you commit.",
+        "primaryBtn": "Book Free Demo Class",
+        "secondaryBtn": "Talk to an Admissions Counselor",
+        "trust": "Weekday & weekend batches · Beginner to advanced · Classroom + Live Online",
+        "screenTitle": "Java Development Lab",
+        "widgets": [
+            "Core Java",
+            "Spring Boot",
+            "Hibernate",
+            "REST APIs"
+        ]
     },
     "python": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
+        "badge": "Free Live Demo",
+        "title": "Your Python Career Starts Right Here in Mumbai",
+        "subtitle": "Seats for the next batch are filling fast. Join hundreds of students who chose this Python Course in Mumbai to build real skills, real projects, and a real career.",
+        "primaryBtn": "Reserve Your Seat Now",
+        "secondaryBtn": "Talk to a Course Counselor",
+        "trust": "Download Brochure (PDF) · Limited seats available",
+        "screenTitle": "Python Coding Lab",
+        "widgets": [
+            "Core Python",
+            "OOP",
+            "Pandas",
+            "Projects"
+        ]
     },
     "salesforce": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
+        "badge": "Free Live Demo",
+        "title": "Your Salesforce Career in Mumbai Starts With One Decision",
+        "subtitle": "Seats are limited for the upcoming batch. Talk to our course counselor today and find out which track — Admin or Developer — fits your goals best.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to a Counselor",
+        "trust": "Download Free Brochure · Limited seats",
+        "screenTitle": "Salesforce Org",
+        "widgets": [
+            "Admin",
+            "Apex",
+            "LWC",
+            "Flows"
+        ]
     },
     "tableau": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
+        "badge": "Free Live Demo",
+        "title": "Seats Are Filling Fast for the Next Batch of Our Tableau Course in Mumbai",
+        "subtitle": "Join hands-on, project-based Tableau training built by industry professionals — and walk away with a portfolio, a certificate, and placement support.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to a Counselor",
+        "trust": "Weekend and weekday batches · Hands-on projects · Certificate on completion",
+        "screenTitle": "Tableau Dashboard",
+        "widgets": [
+            "Dashboards",
+            "Calculations",
+            "LOD",
+            "Stories"
+        ]
     },
     "powerbi": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
-    },
-    "corehr": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
-    },
-    "hrpayroll": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
-    },
-    "hrmanagement": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
-    },
-    "hrgeneralist": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
-    },
-    "hranalytics": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
-    },
-    "hrtraining": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
-    },
-    "itcourses": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
-    },
-    "hrcourses": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
+        "badge": "Free Live Demo",
+        "title": "Your Next Job Might Just Need One New Skill",
+        "subtitle": "Join our Power BI course in Mumbai and start building dashboards that get noticed by your manager, your resume, and your next interviewer.",
+        "primaryBtn": "Enroll Now — Limited Seats",
+        "secondaryBtn": "Talk to a Course Advisor",
+        "trust": "Classroom sessions in Mumbai · Live online batches · Real instructors",
+        "screenTitle": "Power BI Dashboard",
+        "widgets": [
+            "Power Query",
+            "DAX",
+            "Modelling",
+            "Reports"
+        ]
     },
     "datavisualization": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
+        "badge": "Free Live Demo",
+        "title": "Your Data Deserves to Be Understood — Not Just Seen",
+        "subtitle": "Enroll in Mumbai's leading Data Visualization with AI Course and start turning raw data into decisions, dashboards, and career opportunities.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to an Admissions Counselor",
+        "trust": "Hands-on projects · Power BI + Tableau + Python · Placement support",
+        "screenTitle": "Visualization Studio",
+        "widgets": [
+            "Power BI",
+            "Tableau",
+            "Python",
+            "AI Charts"
+        ]
+    },
+    "aws": {
+        "badge": "Free Live Demo",
+        "title": "Your Cloud Career Starts With One Decision",
+        "subtitle": "Mumbai's tech companies are hiring cloud talent right now — and this AWS course is your fastest, most practical way in. Real labs. Real projects. Real trainers who've worked in the industry you're trying to enter.",
+        "primaryBtn": "Book Your Free Demo Class",
+        "secondaryBtn": "Talk to a Course Advisor",
+        "trust": "Limited seats per batch · Next batch filling fast · Online & Classroom options in Mumbai",
+        "screenTitle": "AWS Console",
+        "widgets": [
+            "EC2",
+            "S3",
+            "IAM",
+            "VPC"
+        ]
+    },
+    "devops": {
+        "badge": "Free Live Demo",
+        "title": "Your DevOps Career Starts Here — Right Here in Mumbai",
+        "subtitle": "Seats for the next batch are filling up fast. Get hands-on with Docker, Kubernetes, AWS, and Jenkins, and walk out with a portfolio, a certificate, and real interview confidence.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to a Course Advisor",
+        "trust": "Download Free Curriculum PDF · Limited seats available",
+        "screenTitle": "DevOps Pipeline",
+        "widgets": [
+            "Docker",
+            "Kubernetes",
+            "Jenkins",
+            "Terraform"
+        ]
+    },
+    "corehr": {
+        "badge": "Free Live Demo",
+        "title": "Your HR Career Starts With One Decision",
+        "subtitle": "Join Mumbai's most practical Core HR Course and get the skills, certificate, and placement support you need to land your first (or next) HR role.",
+        "primaryBtn": "Enroll in the Next Batch",
+        "secondaryBtn": "Talk to Our Course Counselor",
+        "trust": "Weekday & weekend batches · Classroom + Live Online · Placement support",
+        "screenTitle": "HR Operations Desk",
+        "widgets": [
+            "Recruitment",
+            "Payroll",
+            "Compliance",
+            "HRMS"
+        ]
+    },
+    "hrpayroll": {
+        "badge": "Free Live Demo",
+        "title": "Your Payroll Career Starts With One Decision",
+        "subtitle": "Join Mumbai's most practical HR Payroll Course and go from confused about compliance to confidently running payroll in weeks, not years.",
+        "primaryBtn": "Enroll Now — Limited Seats",
+        "secondaryBtn": "Talk to a Course Counsellor",
+        "trust": "100% Practical Training · Live Payroll Software · Placement Assistance",
+        "screenTitle": "Payroll Processing",
+        "widgets": [
+            "CTC Design",
+            "PF/ESI",
+            "TDS",
+            "Payslips"
+        ]
+    },
+    "hrmanagement": {
+        "badge": "Free Live Demo",
+        "title": "Your Next HR Job Starts With the Right HR Management Course",
+        "subtitle": "Join the next batch of our HR Management Course in Mumbai and learn recruitment, payroll, compliance, and HR tools the way working professionals actually use them — with placement support built in.",
+        "primaryBtn": "Enrol Now — Limited Seats",
+        "secondaryBtn": "Talk to a Career Counsellor",
+        "trust": "Small batches · Individual feedback · Placement support",
+        "screenTitle": "HR Management Desk",
+        "widgets": [
+            "Recruitment",
+            "Payroll",
+            "Labour Law",
+            "HRMS"
+        ]
+    },
+    "hrgeneralist": {
+        "badge": "Free Live Demo",
+        "title": "Your HR Career Starts Here — Right in Mumbai",
+        "subtitle": "Join the next batch of our HR Generalist Course in Mumbai and get the practical skills, tools, and placement support you need to land your first (or next) HR role.",
+        "primaryBtn": "Book Your Free Counselling Session",
+        "secondaryBtn": "Download Course Brochure",
+        "trust": "No spam. No pressure. Just clarity on whether this course is right for you.",
+        "screenTitle": "HR Generalist Desk",
+        "widgets": [
+            "Recruitment",
+            "Payroll",
+            "Policies",
+            "HRMS"
+        ]
+    },
+    "hranalytics": {
+        "badge": "Free Live Demo",
+        "title": "Ready to Lead HR Decisions with Data, Not Guesswork?",
+        "subtitle": "Seats for the next batch of our HR Analytics Course in Mumbai are limited to keep cohorts small and feedback personal.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to a Course Counsellor",
+        "trust": "Download Full Syllabus (PDF) · Limited seats",
+        "screenTitle": "HR Analytics Dashboard",
+        "widgets": [
+            "Attrition",
+            "Power BI",
+            "eNPS",
+            "Surveys"
+        ]
+    },
+    "hrtraining": {
+        "badge": "Free Live Demo",
+        "title": "Ready to Build a Career in HR?",
+        "subtitle": "Join Mumbai's practical, placement-focused HR training program and start learning from real HR professionals this week.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to a Career Counsellor",
+        "trust": "Weekday & weekend batches · Classroom + Live Online · Beginner to Advanced",
+        "screenTitle": "HR Training Desk",
+        "widgets": [
+            "Recruitment",
+            "Payroll",
+            "Compliance",
+            "Analytics"
+        ]
+    },
+    "itcourses": {
+        "badge": "Free Guidance",
+        "title": "Not Sure Which IT Course Fits You?",
+        "subtitle": "Get personalized career guidance from our experts and discover the right IT or data course based on your skills, experience, and career goals.",
+        "primaryBtn": "WhatsApp Us",
+        "secondaryBtn": "Talk to a Counselor",
+        "trust": "Mumbai classroom + online options · Free career counselling",
+        "screenTitle": "IT Career Path",
+        "widgets": [
+            "Data Science",
+            "AI/ML",
+            "Cloud",
+            "DevOps"
+        ]
+    },
+    "hrcourses": {
+        "badge": "Free Guidance",
+        "title": "Not Sure Which HR Course Fits You?",
+        "subtitle": "Get personalized career guidance from our experts and discover the right HR course based on your skills, experience, and career goals.",
+        "primaryBtn": "WhatsApp Us",
+        "secondaryBtn": "Talk to a Counselor",
+        "trust": "Mumbai classroom + online options · Free career counselling",
+        "screenTitle": "HR Career Path",
+        "widgets": [
+            "Core HR",
+            "Payroll",
+            "Generalist",
+            "Analytics"
+        ]
     }
 }

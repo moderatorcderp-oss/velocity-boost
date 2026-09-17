@@ -1,1346 +1,446 @@
 {
-    "SkillsSAP": [
-        {
-            "icon": "BookOpen",
-            "title": "SAP ERP Fundamentals",
-            "description": "Understand the core of SAP ERP and its key business applications across finance, logistics, HR and more."
-        },
-        {
-            "icon": "Settings",
-            "title": "Navigation & Configuration",
-            "description": "Master navigation, configuration and customization inside SAP modules."
-        },
-        {
-            "icon": "GitBranch",
-            "title": "End-to-End Process Mapping",
-            "description": "Map complete business processes using SAP from start to finish."
-        },
-        {
-            "icon": "Database",
-            "title": "Master Data Management",
-            "description": "Create and manage critical master data that drives every SAP process."
-        },
-        {
-            "icon": "Link",
-            "title": "Cross-Module Integration",
-            "description": "See how different SAP modules talk to each other in real scenarios."
-        },
-        {
-            "icon": "Award",
-            "title": "Interview & Job Preparation",
-            "description": "Get interview-ready with resume building and real implementation best practices."
-        }
-    ],
-    "SkillsFICO": [
-        {
-            "icon": "Wallet",
-            "title": "SAP FICO Configuration & Navigation",
-            "description": "Master SAP FICO configuration in SPRO along with SAP GUI navigation and key transaction codes."
-        },
-        {
-            "icon": "Building2",
-            "title": "GL, AP & AR Processes",
-            "description": "Handle General Ledger, Accounts Payable and Accounts Receivable processes end-to-end."
-        },
-        {
-            "icon": "Landmark",
-            "title": "Asset Accounting & Depreciation",
-            "description": "Manage Asset Accounting and complete depreciation processes."
-        },
-        {
-            "icon": "PieChart",
-            "title": "Cost & Profit Center Accounting",
-            "description": "Configure Cost Center Accounting, Profit Center Accounting, Internal Orders and Product Costing basics."
-        },
-        {
-            "icon": "Link",
-            "title": "Reporting & Cross-Module Integration",
-            "description": "Generate financial reports, perform reconciliation and integrate FI with MM and SD modules."
-        },
-        {
-            "icon": "Award",
-            "title": "Project Documentation",
-            "description": "Prepare real-world SAP FICO project documentation used in live implementations."
-        }
-    ],
-    "SkillsMM": [
-        {
-            "icon": "Factory",
-            "title": "SAP GUI & MM Configuration",
-            "description": "Master SAP GUI navigation, transaction codes and Material Management configuration."
-        },
-        {
-            "icon": "ShoppingCart",
-            "title": "Procurement Lifecycle",
-            "description": "Manage the complete procurement lifecycle from requisition to purchase order."
-        },
-        {
-            "icon": "Package",
-            "title": "Inventory & Vendor Management",
-            "description": "Handle inventory and warehouse processes along with vendor and purchasing management."
-        },
-        {
-            "icon": "Calculator",
-            "title": "Invoice Verification & Posting",
-            "description": "Perform invoice verification and understand account posting basics."
-        },
-        {
-            "icon": "Link",
-            "title": "Integration & Troubleshooting",
-            "description": "Integrate MM with FI and SD modules and apply real-world SAP support and troubleshooting practices."
-        },
-        {
-            "icon": "Award",
-            "title": "Documentation & Communication Skills",
-            "description": "Prepare business documentation, process mapping and develop interview and workplace communication skills."
-        }
-    ],
-    "SkillsHCM": [
-        {
-            "icon": "Network",
-            "title": "SAP HCM Configuration",
-            "description": "Configure SAP HCM using SAP GUI for core HR processes."
-        },
-        {
-            "icon": "Building",
-            "title": "PA, OM & Time Management",
-            "description": "Work with Personnel Administration, Organizational Management and Time Management modules."
-        },
-        {
-            "icon": "Banknote",
-            "title": "Payroll Processing",
-            "description": "Handle end-to-end payroll processing within SAP HCM."
-        },
-        {
-            "icon": "User",
-            "title": "Employee Lifecycle & ESS/MSS",
-            "description": "Manage the complete employee lifecycle and work with Employee and Manager Self-Service."
-        },
-        {
-            "icon": "Link",
-            "title": "HR Data Analysis & Integration",
-            "description": "Perform HR data analysis using SAP Query & Reports and integrate with SAP FI/CO."
-        },
-        {
-            "icon": "Award",
-            "title": "Real-Time Troubleshooting",
-            "description": "Gain hands-on experience with real-time troubleshooting in a live project environment."
-        }
-    ],
-    "SkillsQM": [
-        {
-            "icon": "ShieldCheck",
-            "title": "SAP QM Configuration & Navigation",
-            "description": "Configure the SAP QM module in SPRO and master SAP GUI navigation with key transaction codes."
-        },
-        {
-            "icon": "ClipboardList",
-            "title": "Quality Planning & Inspection",
-            "description": "Handle Quality Planning, Inspection Planning, Inspection Lot Processing (Origins 01, 03, 04, 05, 89), Results Recording and Usage Decisions."
-        },
-        {
-            "icon": "Search",
-            "title": "Sampling & SPC",
-            "description": "Configure Sampling Procedures and apply Statistical Process Control (SPC)."
-        },
-        {
-            "icon": "AlertTriangle",
-            "title": "Notifications, CAPA & Certificates",
-            "description": "Manage Quality Notifications, CAPA process and Quality Certificate Management."
-        },
-        {
-            "icon": "Link",
-            "title": "QM Integration",
-            "description": "Integrate SAP QM with MM, PP and SD modules."
-        },
-        {
-            "icon": "Award",
-            "title": "Business Blueprint Documentation",
-            "description": "Prepare real-world business blueprint documentation for quality management projects."
-        }
-    ],
-    "SkillsPS": [
-        {
-            "icon": "FolderKanban",
-            "title": "SAP S/4HANA Project Systems",
-            "description": "Work with SAP S/4HANA Project Systems and master SAP GUI navigation."
-        },
-        {
-            "icon": "GitBranch",
-            "title": "WBS & Network Planning",
-            "description": "Create and manage Work Breakdown Structures and Network Planning."
-        },
-        {
-            "icon": "Calendar",
-            "title": "Cost and Budget Control",
-            "description": "Handle cost and budget control within project systems."
-        },
-        {
-            "icon": "Link",
-            "title": "Cross-Module Integration",
-            "description": "Integrate SAP PS with MM, SD, FI/CO and PP modules."
-        },
-        {
-            "icon": "BarChart3",
-            "title": "Reporting Tools",
-            "description": "Use reporting tools available within SAP Project Systems."
-        },
-        {
-            "icon": "Award",
-            "title": "Real-Time Business Scenarios",
-            "description": "Handle real-time business scenarios in live project environments."
-        }
-    ],
-    "SkillsSCM": [
-        {
-            "icon": "Truck",
-            "title": "Core SCM Skills",
-            "description": "Master procurement management, inventory control, order management, production planning, warehouse operations, demand & supply planning and vendor management."
-        },
-        {
-            "icon": "ShoppingCart",
-            "title": "SAP Tools & Navigation",
-            "description": "Work with SAP GUI, SAP Fiori, MRP concepts and master data management."
-        },
-        {
-            "icon": "Factory",
-            "title": "Business Process Documentation",
-            "description": "Prepare business process documentation and use Excel-based reporting for SCM."
-        },
-        {
-            "icon": "Users",
-            "title": "Business Process Analysis",
-            "description": "Perform business process analysis required in consulting roles."
-        },
-        {
-            "icon": "Link",
-            "title": "Client Communication",
-            "description": "Develop client communication skills expected in SAP consulting environments."
-        },
-        {
-            "icon": "Award",
-            "title": "Real-Time Problem Solving",
-            "description": "Apply real-time problem solving techniques on live supply chain scenarios."
-        }
-    ],
-    "SkillsEHS": [
-        {
-            "icon": "Shield",
-            "title": "SAP EHS Management",
-            "description": "Configure and work with SAP EHS Management (EHSM)."
-        },
-        {
-            "icon": "AlertCircle",
-            "title": "Incident Management",
-            "description": "Handle SAP Incident Management processes from reporting to resolution."
-        },
-        {
-            "icon": "Leaf",
-            "title": "Product, REACH & Environment",
-            "description": "Manage SAP Product & REACH Compliance and SAP Environment Management."
-        },
-        {
-            "icon": "Settings",
-            "title": "GUI Navigation & Master Data",
-            "description": "Master SAP GUI navigation and perform master data configuration for EHS."
-        },
-        {
-            "icon": "Link",
-            "title": "Cross-Module Integration",
-            "description": "Integrate SAP EHS with MM, PM and QM modules."
-        },
-        {
-            "icon": "Award",
-            "title": "Compliance Reporting & Case Studies",
-            "description": "Generate compliance reporting and documentation and handle real-world case studies."
-        }
-    ],
-    "SkillsIBP": [
-        {
-            "icon": "Cloud",
-            "title": "SAP IBP Tools & Navigation",
-            "description": "Work with SAP IBP for Excel Add-in and SAP Fiori Launchpad."
-        },
-        {
-            "icon": "TrendingUp",
-            "title": "Demand Planning & Forecasting",
-            "description": "Configure Demand Planning and apply statistical forecasting models."
-        },
-        {
-            "icon": "Boxes",
-            "title": "Inventory & Supply Planning",
-            "description": "Perform Inventory Optimization along with Supply and Response Planning."
-        },
-        {
-            "icon": "CalendarCheck",
-            "title": "S&OP Process Design",
-            "description": "Design and execute Sales & Operations Planning processes."
-        },
-        {
-            "icon": "BarChart3",
-            "title": "Analytics & Integration",
-            "description": "Use SAP Analytics Cloud overview and understand integration basics with SAP S/4HANA."
-        },
-        {
-            "icon": "Award",
-            "title": "Configuration & Case Studies",
-            "description": "Perform business process configuration and analyse real-world case studies."
-        }
-    ],
-    "SkillsAriba": [
-        {
-            "icon": "Cloud",
-            "title": "Ariba Sourcing & Contracts",
-            "description": "Work with SAP Ariba Sourcing and SAP Ariba Contracts modules."
-        },
-        {
-            "icon": "ShoppingCart",
-            "title": "Buying, Invoicing & Network",
-            "description": "Handle SAP Ariba Buying & Invoicing and operate on the Ariba Network from both buyer and supplier sides."
-        },
-        {
-            "icon": "Users",
-            "title": "Supplier Lifecycle & Performance",
-            "description": "Manage Supplier Lifecycle & Performance (SLP) processes."
-        },
-        {
-            "icon": "Link",
-            "title": "Procurement Fundamentals & Integration",
-            "description": "Apply procurement and supply chain fundamentals along with SAP S/4HANA integration basics and Cloud Integration Gateway (CIG)."
-        },
-        {
-            "icon": "BarChart3",
-            "title": "Reporting & Dashboards",
-            "description": "Generate and interpret reporting and dashboards within Ariba."
-        },
-        {
-            "icon": "Award",
-            "title": "Business Process Documentation",
-            "description": "Prepare business process documentation for Ariba implementations."
-        }
-    ],
-    "SkillsSD": [
-        {
-            "icon": "ShoppingBag",
-            "title": "Order Management & Pricing",
-            "description": "Configure Order Management, Pricing Configuration, Billing & Invoicing, Credit Management, Output Determination and Availability Check."
-        },
-        {
-            "icon": "Building2",
-            "title": "Enterprise Structure Setup",
-            "description": "Set up the complete enterprise structure required for Sales and Distribution."
-        },
-        {
-            "icon": "Link",
-            "title": "SD-MM-FI Integration",
-            "description": "Integrate Sales and Distribution with Materials Management and Financial Accounting."
-        },
-        {
-            "icon": "Monitor",
-            "title": "SAP Tools & Live Access",
-            "description": "Work with SAP GUI, live SAP ECC/S4 HANA server access and SAP Easy Access navigation."
-        },
-        {
-            "icon": "FileText",
-            "title": "Functional Documentation",
-            "description": "Prepare functional specification documentation used in live projects."
-        },
-        {
-            "icon": "Award",
-            "title": "Professional & Interview Skills",
-            "description": "Develop business process mapping, requirement gathering, client interaction basics and interview & resume preparation for SAP SD roles."
-        }
-    ],
-    "SkillsPP": [
-        {
-            "icon": "Factory",
-            "title": "SAP GUI & PP Configuration",
-            "description": "Master SAP GUI and perform Production Planning module configuration."
-        },
-        {
-            "icon": "Database",
-            "title": "BOM, Routing & Master Data",
-            "description": "Configure Bill of Materials (BOM), Routing and related master data."
-        },
-        {
-            "icon": "Calculator",
-            "title": "Material Requirement Planning",
-            "description": "Execute and analyse Material Requirement Planning (MRP) runs."
-        },
-        {
-            "icon": "Gauge",
-            "title": "Capacity Planning & Shop Floor",
-            "description": "Handle Capacity Planning tools and Shop Floor Control processes."
-        },
-        {
-            "icon": "Link",
-            "title": "Integration with MM & SD",
-            "description": "Manage integration handling with SAP MM and SD modules."
-        },
-        {
-            "icon": "Award",
-            "title": "Blueprint & S/4HANA Basics",
-            "description": "Prepare Business Blueprint documentation and understand SAP S/4HANA basics for Production Planning."
-        }
-    ],
-    "SkillsPM": [
-        {
-            "icon": "Wrench",
-            "title": "SAP GUI & Technical Objects",
-            "description": "Master SAP GUI navigation, transaction codes and design functional location and equipment hierarchy."
-        },
-        {
-            "icon": "ClipboardList",
-            "title": "Notifications & Orders",
-            "description": "Process maintenance orders and notifications end-to-end."
-        },
-        {
-            "icon": "Calendar",
-            "title": "Preventive Maintenance Setup",
-            "description": "Configure preventive maintenance plans, task lists and maintenance strategies."
-        },
-        {
-            "icon": "Code2",
-            "title": "Basic ABAP Awareness",
-            "description": "Gain basic ABAP debugging awareness useful for functional consultants."
-        },
-        {
-            "icon": "BarChart3",
-            "title": "Reporting & Integration",
-            "description": "Build reports using standard SAP PM reports and understand cross-module integration concepts with MM and FI/CO."
-        },
-        {
-            "icon": "Award",
-            "title": "Process Mapping & Documentation",
-            "description": "Perform business process mapping for maintenance workflows and prepare documentation and blueprints expected in live SAP projects."
-        }
-    ],
-    "SkillsEWM": [
-        {
-            "icon": "Warehouse",
-            "title": "SAP EWM & S/4HANA Logistics",
-            "description": "Work with SAP Extended Warehouse Management and SAP S/4HANA Logistics."
-        },
-        {
-            "icon": "Boxes",
-            "title": "Warehouse Monitor & RF Framework",
-            "description": "Use the Warehouse Management Monitor and RF Framework / RF Devices."
-        },
-        {
-            "icon": "ArrowDownToLine",
-            "title": "Delivery Document Processing",
-            "description": "Handle inbound and outbound delivery document processing."
-        },
-        {
-            "icon": "RefreshCw",
-            "title": "Physical Inventory & Yard Management",
-            "description": "Manage physical inventory and understand yard and dock management basics."
-        },
-        {
-            "icon": "Code2",
-            "title": "Basic ABAP for EWM",
-            "description": "Apply basic ABAP concepts relevant to EWM configuration."
-        },
-        {
-            "icon": "Award",
-            "title": "Reporting & Exception Handling",
-            "description": "Perform reporting and exception handling in warehouse operations."
-        }
-    ],
-    "SkillsBTP": [
-        {
-            "icon": "Cloud",
-            "title": "BTP Cockpit & Application Studio",
-            "description": "Work with SAP BTP Cockpit and SAP Business Application Studio."
-        },
-        {
-            "icon": "Code2",
-            "title": "Fiori Elements & Extensions",
-            "description": "Build applications using SAP Fiori Elements along with Node.js and Java for extensions."
-        },
-        {
-            "icon": "Database",
-            "title": "HANA Cloud & APIs",
-            "description": "Model data on SAP HANA Cloud and work with REST & OData APIs."
-        },
-        {
-            "icon": "GitBranch",
-            "title": "Integration Suite",
-            "description": "Design and manage flows with SAP Integration Suite."
-        },
-        {
-            "icon": "Blocks",
-            "title": "SAP Build Tools",
-            "description": "Use SAP Build Apps, SAP Build Process Automation and SAP Build Work Zone."
-        },
-        {
-            "icon": "Rocket",
-            "title": "Cloud Foundry & Analytics",
-            "description": "Deploy on Cloud Foundry and apply SAP Analytics Cloud basics."
-        }
-    ],
-    "SkillsGRC": [
-        {
-            "icon": "Shield",
-            "title": "SAP GRC Access Control",
-            "description": "Configure and manage SAP GRC Access Control 12.0."
-        },
-        {
-            "icon": "CheckSquare",
-            "title": "Process Control & Risk Management",
-            "description": "Work with SAP Process Control and SAP Risk Management modules."
-        },
-        {
-            "icon": "Lock",
-            "title": "BRF+ & MSMP Workflows",
-            "description": "Use BRF+ (Business Rule Framework) and configure MSMP Workflows."
-        },
-        {
-            "icon": "Monitor",
-            "title": "Fiori Launchpad & S/4HANA Basics",
-            "description": "Navigate SAP Fiori Launchpad for GRC apps and understand SAP S/4HANA basics relevant to GRC."
-        },
-        {
-            "icon": "AlertTriangle",
-            "title": "SoD Rule Set Design",
-            "description": "Design and maintain Segregation of Duties rule sets."
-        },
-        {
-            "icon": "Award",
-            "title": "Audit Reporting & Dashboards",
-            "description": "Prepare audit reporting and dashboards for compliance teams."
-        }
-    ],
-    "SkillsSF": [
-        {
-            "icon": "Cloud",
-            "title": "Employee Central",
-            "description": "Configure SAP SuccessFactors Employee Central as the core HR system of record."
-        },
-        {
-            "icon": "UserPlus",
-            "title": "Recruiting & Onboarding",
-            "description": "Implement SAP Recruiting Management and Onboarding 2.0."
-        },
-        {
-            "icon": "Target",
-            "title": "Performance & Goal Management",
-            "description": "Build and manage Performance & Goal Management processes."
-        },
-        {
-            "icon": "Banknote",
-            "title": "Compensation, LMS & Permissions",
-            "description": "Configure Compensation & Variable Pay, Learning Management System and Role-Based Permissions (RBP)."
-        },
-        {
-            "icon": "Settings",
-            "title": "Metadata Framework & Integration",
-            "description": "Work with Metadata Framework (MDF) and SAP Integration Center basics."
-        },
-        {
-            "icon": "Award",
-            "title": "HR Business Process Design",
-            "description": "Design end-to-end HR business processes within the SuccessFactors suite."
-        }
-    ],
-    "SkillsABAP": [
-        {
-            "icon": "Code2",
-            "title": "ABAP Workbench & Editor",
-            "description": "Work with SAP ABAP Workbench (SE80), ABAP Editor and Debugger (SE38/SE80)."
-        },
-        {
-            "icon": "Database",
-            "title": "Data Dictionary & Function Builder",
-            "description": "Use ABAP Data Dictionary (SE11) and Function Builder (SE37)."
-        },
-        {
-            "icon": "FileText",
-            "title": "ALV Reporting & Module Pool",
-            "description": "Create ALV reports and develop Module Pool Programming."
-        },
-        {
-            "icon": "Layout",
-            "title": "Forms & Object-Oriented ABAP",
-            "description": "Work with SAP Script, Smart Forms and apply Object-Oriented ABAP (OOABAP)."
-        },
-        {
-            "icon": "Link",
-            "title": "BAPIs, RFCs & Enhancements",
-            "description": "Use BAPIs, RFCs, Web Services and the Enhancement Framework with BADIs."
-        },
-        {
-            "icon": "Rocket",
-            "title": "HANA, CDS & SQL",
-            "description": "Apply basics of SAP HANA, CDS Views and SQL / Open SQL for SAP systems."
-        }
-    ],
-    "SkillsHana": [
-        {
-            "icon": "Cloud",
-            "title": "SAP S/4HANA On-Premise",
-            "description": "Work with SAP S/4 HANA On-Premise Edition and understand SAP HANA Database Concepts."
-        },
-        {
-            "icon": "Monitor",
-            "title": "Fiori & GUI Navigation",
-            "description": "Navigate the SAP Fiori Interface and SAP GUI with confidence."
-        },
-        {
-            "icon": "Settings",
-            "title": "Functional Configuration Basics",
-            "description": "Perform functional configuration basics and master data handling."
-        },
-        {
-            "icon": "GitBranch",
-            "title": "Business Process Mapping",
-            "description": "Map business processes as required in real implementations."
-        },
-        {
-            "icon": "BarChart3",
-            "title": "Reporting Tools",
-            "description": "Use reporting tools available within SAP."
-        },
-        {
-            "icon": "Award",
-            "title": "Documentation & Consulting Skills",
-            "description": "Prepare real-time project documentation and develop business communication skills for consulting roles."
-        }
-    ],
-    "SkillsBWBI": [
-        {
-            "icon": "Database",
-            "title": "SAP BW / BW on HANA / BW/4HANA",
-            "description": "Work with SAP BW, SAP BW on HANA and SAP BW/4HANA environments."
-        },
-        {
-            "icon": "BarChart3",
-            "title": "BEx Query Designer & Analyzer",
-            "description": "Create queries and reports using SAP BEx Query Designer and Analyzer."
-        },
-        {
-            "icon": "Download",
-            "title": "Data Extraction & ETL",
-            "description": "Perform data extraction and apply ETL concepts from various source systems."
-        },
-        {
-            "icon": "Box",
-            "title": "InfoObjects, Cubes & DSOs",
-            "description": "Build and manage InfoObjects, InfoCubes, DSOs and Multiproviders."
-        },
-        {
-            "icon": "Layers",
-            "title": "Analytics Cloud & External Tools",
-            "description": "Use SAP Analytics Cloud basics and understand integration concepts with Power BI and Tableau."
-        },
-        {
-            "icon": "Award",
-            "title": "SQL & Real-Time Reporting",
-            "description": "Apply SQL fundamentals for reporting and create real-time business reporting and dashboards."
-        }
-    ],
-    "SkillsBasis": [
-        {
-            "icon": "Server",
-            "title": "SAP NetWeaver Administration",
-            "description": "Perform SAP NetWeaver Administration and work with SAP GUI and SAP Fiori Basics."
-        },
-        {
-            "icon": "Database",
-            "title": "SAP HANA Studio & Databases",
-            "description": "Use SAP HANA Studio and manage databases including Oracle, SAP HANA and SQL Server."
-        },
-        {
-            "icon": "GitBranch",
-            "title": "Transport Management System",
-            "description": "Handle the Transport Management System (STMS) for moving changes across landscapes."
-        },
-        {
-            "icon": "Activity",
-            "title": "System Monitoring & Job Scheduling",
-            "description": "Monitor systems and schedule jobs using standard monitoring tools."
-        },
-        {
-            "icon": "Shield",
-            "title": "Kernel, Patches & Solution Manager",
-            "description": "Manage SAP Kernel and Patch Management Tools and gain a basic overview of SAP Solution Manager."
-        },
-        {
-            "icon": "Network",
-            "title": "Operating Systems Support",
-            "description": "Work with Windows Server and Linux environments supporting SAP landscapes."
-        }
-    ],
-    "SkillsDataScience": [
-        {
-            "icon": "Database",
-            "title": "Data Science Fundamentals",
-            "description": "Understand the complete data science lifecycle from data collection to model deployment."
-        },
-        {
-            "icon": "BarChart3",
-            "title": "Statistical Analysis & EDA",
-            "description": "Perform exploratory data analysis and apply statistical techniques to real datasets."
-        },
-        {
-            "icon": "Code2",
-            "title": "Machine Learning Models",
-            "description": "Build, train and evaluate supervised and unsupervised machine learning models."
-        },
-        {
-            "icon": "Layers",
-            "title": "Data Visualization",
-            "description": "Create clear, insightful visualizations and dashboards that communicate findings effectively."
-        },
-        {
-            "icon": "Rocket",
-            "title": "Real-world Projects",
-            "description": "Work on end-to-end projects that mirror industry use-cases and business problems."
-        },
-        {
-            "icon": "Award",
-            "title": "Interview & Job Readiness",
-            "description": "Prepare for data science interviews with portfolio projects and domain knowledge."
-        }
-    ],
-    "SkillsDataAnalytics": [
-        {
-            "icon": "Database",
-            "title": "Data Analytics Foundations",
-            "description": "Master the core concepts of data analytics and the tools used to turn data into insights."
-        },
-        {
-            "icon": "BarChart3",
-            "title": "Data Cleaning & Preparation",
-            "description": "Clean, transform and prepare structured and unstructured data for analysis."
-        },
-        {
-            "icon": "PieChart",
-            "title": "Statistical Modeling",
-            "description": "Apply statistical techniques and predictive modeling to real business data."
-        },
-        {
-            "icon": "TrendingUp",
-            "title": "Business Insights",
-            "description": "Translate analytical findings into actionable recommendations for stakeholders."
-        },
-        {
-            "icon": "Layout",
-            "title": "Dashboards & Reporting",
-            "description": "Build interactive reports and dashboards that drive decision-making."
-        },
-        {
-            "icon": "Award",
-            "title": "Career Preparation",
-            "description": "Get ready for Data Analyst and Business Analyst roles with practical projects."
-        }
-    ],
-    "SkillsBusinessAnalytics": [
-        {
-            "icon": "BarChart3",
-            "title": "Business Analytics Essentials",
-            "description": "Understand how business analytics drives strategic and operational decisions."
-        },
-        {
-            "icon": "Database",
-            "title": "Data-Driven Decision Making",
-            "description": "Learn to collect, analyze and interpret data to support business goals."
-        },
-        {
-            "icon": "TrendingUp",
-            "title": "Predictive Analytics",
-            "description": "Use predictive models to forecast trends and identify opportunities."
-        },
-        {
-            "icon": "PieChart",
-            "title": "Business Intelligence Tools",
-            "description": "Work with BI tools to create reports, KPIs and performance dashboards."
-        },
-        {
-            "icon": "Users",
-            "title": "Stakeholder Communication",
-            "description": "Present insights clearly to both technical and non-technical audiences."
-        },
-        {
-            "icon": "Award",
-            "title": "Job-Ready Skills",
-            "description": "Build the practical skills needed for Business Analyst and BI roles."
-        }
-    ],
-    "SkillsGenAI": [
-        {
-            "icon": "Cloud",
-            "title": "AI & Generative AI Fundamentals",
-            "description": "Understand the core concepts of Artificial Intelligence and Generative AI systems."
-        },
-        {
-            "icon": "Code2",
-            "title": "Large Language Models",
-            "description": "Work with LLMs, prompt engineering and practical applications of ChatGPT-style models."
-        },
-        {
-            "icon": "Layers",
-            "title": "Machine Learning & Deep Learning",
-            "description": "Build and train ML and deep learning models for real-world tasks."
-        },
-        {
-            "icon": "Rocket",
-            "title": "AI Project Development",
-            "description": "Design and implement end-to-end AI solutions including NLP and automation."
-        },
-        {
-            "icon": "Settings",
-            "title": "AI Tools & Frameworks",
-            "description": "Gain hands-on experience with popular AI frameworks and deployment tools."
-        },
-        {
-            "icon": "Award",
-            "title": "Career in AI",
-            "description": "Prepare for roles such as AI Engineer, ML Engineer and AI Solutions Architect."
-        }
-    ],
-    "SkillsFullStack": [
-        {
-            "icon": "Code2",
-            "title": "Frontend Development",
-            "description": "Build responsive user interfaces with modern frontend technologies and frameworks."
-        },
-        {
-            "icon": "Server",
-            "title": "Backend Development",
-            "description": "Create robust server-side applications, APIs and business logic."
-        },
-        {
-            "icon": "Database",
-            "title": "Database Design & Integration",
-            "description": "Design databases and integrate them seamlessly with frontend and backend."
-        },
-        {
-            "icon": "GitBranch",
-            "title": "Full Application Architecture",
-            "description": "Understand how all layers of a web application work together."
-        },
-        {
-            "icon": "Rocket",
-            "title": "Deployment & DevOps Basics",
-            "description": "Deploy applications and understand basic CI/CD and hosting concepts."
-        },
-        {
-            "icon": "Award",
-            "title": "Portfolio & Job Readiness",
-            "description": "Build real projects and prepare for Full Stack Developer interviews."
-        }
-    ],
-    "SkillsJava": [
-        {
-            "icon": "Code2",
-            "title": "Core Java Programming",
-            "description": "Master Java syntax, OOP concepts, collections and exception handling."
-        },
-        {
-            "icon": "Layers",
-            "title": "Advanced Java & Frameworks",
-            "description": "Work with Spring, Hibernate and other enterprise Java frameworks."
-        },
-        {
-            "icon": "Database",
-            "title": "Database Connectivity",
-            "description": "Connect Java applications to databases using JDBC and ORM tools."
-        },
-        {
-            "icon": "Server",
-            "title": "Backend & API Development",
-            "description": "Build RESTful services and backend systems with Java."
-        },
-        {
-            "icon": "Rocket",
-            "title": "Real Project Implementation",
-            "description": "Develop complete Java applications that solve real business problems."
-        },
-        {
-            "icon": "Award",
-            "title": "Interview Preparation",
-            "description": "Get ready for Java Developer and Backend Engineer roles."
-        }
-    ],
-    "SkillsPython": [
-        {
-            "icon": "Code2",
-            "title": "Python Programming Basics",
-            "description": "Learn Python syntax, data structures, functions and object-oriented programming."
-        },
-        {
-            "icon": "Database",
-            "title": "Data Handling with Python",
-            "description": "Work with files, databases and popular data libraries like Pandas and NumPy."
-        },
-        {
-            "icon": "BarChart3",
-            "title": "Data Analysis & Visualization",
-            "description": "Analyze data and create visualizations using Python libraries."
-        },
-        {
-            "icon": "Rocket",
-            "title": "Web & Automation Projects",
-            "description": "Build web applications and automation scripts with Python."
-        },
-        {
-            "icon": "Layers",
-            "title": "Python for AI & ML",
-            "description": "Apply Python in machine learning and AI project workflows."
-        },
-        {
-            "icon": "Award",
-            "title": "Career Pathways",
-            "description": "Prepare for roles as Python Developer, Data Analyst or Automation Engineer."
-        }
-    ],
-    "SkillsSalesforce": [
-        {
-            "icon": "Cloud",
-            "title": "Salesforce Platform Fundamentals",
-            "description": "Understand the Salesforce ecosystem, CRM concepts and cloud architecture."
-        },
-        {
-            "icon": "Settings",
-            "title": "Salesforce Configuration",
-            "description": "Configure objects, fields, page layouts, workflows and process automation."
-        },
-        {
-            "icon": "Code2",
-            "title": "Apex & Lightning Development",
-            "description": "Write Apex code and build Lightning components for custom solutions."
-        },
-        {
-            "icon": "Users",
-            "title": "CRM Process Implementation",
-            "description": "Implement sales, service and marketing processes on the Salesforce platform."
-        },
-        {
-            "icon": "Link",
-            "title": "Integrations & AppExchange",
-            "description": "Integrate Salesforce with external systems and leverage AppExchange apps."
-        },
-        {
-            "icon": "Award",
-            "title": "Certification & Job Prep",
-            "description": "Prepare for Salesforce Admin/Developer certifications and interviews."
-        }
-    ],
-    "SkillsPowerBI": [
-        {
-            "icon": "BarChart3",
-            "title": "Power BI Fundamentals",
-            "description": "Understand the Power BI ecosystem and how to connect to multiple data sources."
-        },
-        {
-            "icon": "Database",
-            "title": "Data Modeling",
-            "description": "Build efficient data models, relationships and calculated columns/measures."
-        },
-        {
-            "icon": "PieChart",
-            "title": "Interactive Dashboards",
-            "description": "Design professional, interactive dashboards and reports."
-        },
-        {
-            "icon": "TrendingUp",
-            "title": "DAX & Advanced Analytics",
-            "description": "Write DAX formulas for advanced calculations and business logic."
-        },
-        {
-            "icon": "Share2",
-            "title": "Sharing & Collaboration",
-            "description": "Publish reports, manage workspaces and share insights securely."
-        },
-        {
-            "icon": "Award",
-            "title": "Job-Ready Portfolio",
-            "description": "Create portfolio projects and prepare for Power BI Developer roles."
-        }
-    ],
-    "SkillsTableau": [
-        {
-            "icon": "BarChart3",
-            "title": "Tableau Fundamentals",
-            "description": "Learn the Tableau interface and how to connect to various data sources."
-        },
-        {
-            "icon": "Layers",
-            "title": "Data Preparation & Modeling",
-            "description": "Clean, join and prepare data for effective visualization."
-        },
-        {
-            "icon": "PieChart",
-            "title": "Advanced Visualizations",
-            "description": "Create sophisticated charts, maps and interactive dashboards."
-        },
-        {
-            "icon": "TrendingUp",
-            "title": "Calculations & Analytics",
-            "description": "Use calculated fields, table calculations and analytics features."
-        },
-        {
-            "icon": "Share2",
-            "title": "Dashboard Storytelling",
-            "description": "Build compelling data stories that drive business decisions."
-        },
-        {
-            "icon": "Award",
-            "title": "Certification & Career Prep",
-            "description": "Prepare for Tableau certification and Data Analyst interviews."
-        }
-    ],
-    "SkillsHRAnalytics": [
-        {
-            "icon": "BarChart3",
-            "title": "HR Analytics Fundamentals",
-            "description": "Understand how data analytics is applied to human resource processes."
-        },
-        {
-            "icon": "Users",
-            "title": "Workforce Metrics & KPIs",
-            "description": "Define and track key HR metrics for recruitment, retention and performance."
-        },
-        {
-            "icon": "TrendingUp",
-            "title": "Predictive HR Insights",
-            "description": "Use analytics to predict attrition, performance and hiring needs."
-        },
-        {
-            "icon": "PieChart",
-            "title": "HR Dashboards",
-            "description": "Build dashboards that give leaders clear visibility into people data."
-        },
-        {
-            "icon": "Database",
-            "title": "Data-Driven HR Decisions",
-            "description": "Turn HR data into actionable strategies for talent management."
-        },
-        {
-            "icon": "Award",
-            "title": "Career in People Analytics",
-            "description": "Prepare for HR Analyst and People Analytics Specialist roles."
-        }
-    ],
-    "SkillsHRManagement": [
-        {
-            "icon": "Users",
-            "title": "HR Management Fundamentals",
-            "description": "Master the core functions of human resource management in modern organizations."
-        },
-        {
-            "icon": "UserPlus",
-            "title": "Talent Acquisition",
-            "description": "Learn end-to-end recruitment, selection and onboarding processes."
-        },
-        {
-            "icon": "Target",
-            "title": "Performance Management",
-            "description": "Design and implement performance appraisal and development systems."
-        },
-        {
-            "icon": "Banknote",
-            "title": "Compensation & Benefits",
-            "description": "Understand compensation structures, benefits and reward strategies."
-        },
-        {
-            "icon": "Shield",
-            "title": "Compliance & Employee Relations",
-            "description": "Handle labor laws, policies and positive employee relations."
-        },
-        {
-            "icon": "Award",
-            "title": "Leadership Readiness",
-            "description": "Build the skills needed for HR Manager and HR Business Partner roles."
-        }
-    ],
-    "SkillsPayroll": [
-        {
-            "icon": "Banknote",
-            "title": "Payroll Fundamentals",
-            "description": "Understand the complete payroll cycle from inputs to final payments."
-        },
-        {
-            "icon": "Calculator",
-            "title": "Salary Structure & Calculations",
-            "description": "Configure salary components, deductions and statutory calculations."
-        },
-        {
-            "icon": "FileText",
-            "title": "Compliance & Statutory Filings",
-            "description": "Handle PF, ESI, professional tax, TDS and other statutory requirements."
-        },
-        {
-            "icon": "Database",
-            "title": "Payroll Systems & Software",
-            "description": "Work with modern payroll systems and maintain accurate employee records."
-        },
-        {
-            "icon": "Shield",
-            "title": "Audit & Error Handling",
-            "description": "Identify, resolve and prevent common payroll errors and discrepancies."
-        },
-        {
-            "icon": "Award",
-            "title": "Career in Payroll",
-            "description": "Prepare for Payroll Specialist, HR Payroll Executive and related roles."
-        }
-    ],
-    "SkillsHRGeneralist": [
-        {
-            "icon": "Users",
-            "title": "HR Generalist Role Overview",
-            "description": "Understand the wide scope of responsibilities handled by an HR Generalist."
-        },
-        {
-            "icon": "UserPlus",
-            "title": "Recruitment & Onboarding",
-            "description": "Manage end-to-end hiring and create smooth onboarding experiences."
-        },
-        {
-            "icon": "ClipboardList",
-            "title": "Employee Lifecycle Management",
-            "description": "Handle day-to-day HR operations across the entire employee lifecycle."
-        },
-        {
-            "icon": "Banknote",
-            "title": "Payroll & Compliance Support",
-            "description": "Support payroll processing and ensure basic statutory compliance."
-        },
-        {
-            "icon": "HeartPulse",
-            "title": "Employee Engagement",
-            "description": "Design initiatives that improve culture, engagement and retention."
-        },
-        {
-            "icon": "Award",
-            "title": "All-Round HR Readiness",
-            "description": "Become job-ready for HR Generalist, HR Executive and Coordinator roles."
-        }
-    ],
-    "SkillsHRTraining": [
-        {
-            "icon": "Users",
-            "title": "Complete HR Skill Set",
-            "description": "Gain a well-rounded foundation across Core HR, Generalist, Payroll and Analytics."
-        },
-        {
-            "icon": "ClipboardList",
-            "title": "Practical HR Processes",
-            "description": "Learn real-world HR processes used in recruitment, payroll and employee management."
-        },
-        {
-            "icon": "BarChart3",
-            "title": "HR Analytics Exposure",
-            "description": "Understand how data is used to improve HR decisions and workforce planning."
-        },
-        {
-            "icon": "Banknote",
-            "title": "Payroll & Compliance",
-            "description": "Get hands-on knowledge of payroll processing and statutory compliance."
-        },
-        {
-            "icon": "Target",
-            "title": "Performance & Talent",
-            "description": "Support performance management and talent development initiatives."
-        },
-        {
-            "icon": "Award",
-            "title": "Multiple Career Paths",
-            "description": "Prepare for roles across HR Generalist, Payroll, Recruitment and Analytics."
-        }
-    ],
-    "SkillsIT": [
-        {
-            "icon": "Code2",
-            "title": "Software Development Fundamentals",
-            "description": "Build a strong foundation in programming, logic and software engineering principles."
-        },
-        {
-            "icon": "Layers",
-            "title": "Multiple Technology Tracks",
-            "description": "Gain exposure to Data Science, Analytics, Python, Java and related technologies."
-        },
-        {
-            "icon": "Database",
-            "title": "Data & Backend Skills",
-            "description": "Work with databases, APIs and backend concepts used in modern applications."
-        },
-        {
-            "icon": "Rocket",
-            "title": "Project-Based Learning",
-            "description": "Apply skills through practical projects that simulate real industry work."
-        },
-        {
-            "icon": "Users",
-            "title": "Collaboration & Best Practices",
-            "description": "Learn version control, code reviews and team collaboration practices."
-        },
-        {
-            "icon": "Award",
-            "title": "Career Launch Pad",
-            "description": "Prepare for roles such as Developer, Analyst or Full Stack Engineer."
-        }
-    ],
-    "SkillsHR": [
-        {
-            "icon": "Users",
-            "title": "HR Core Functions",
-            "description": "Master the essential HR functions that every organization needs."
-        },
-        {
-            "icon": "ClipboardList",
-            "title": "End-to-End HR Processes",
-            "description": "Handle recruitment, employee relations, payroll support and compliance."
-        },
-        {
-            "icon": "Target",
-            "title": "Talent & Performance",
-            "description": "Support talent acquisition, development and performance management."
-        },
-        {
-            "icon": "Banknote",
-            "title": "Compensation Basics",
-            "description": "Understand compensation structures and basic payroll concepts."
-        },
-        {
-            "icon": "Shield",
-            "title": "Compliance & Policies",
-            "description": "Apply labor laws and organizational policies correctly."
-        },
-        {
-            "icon": "Award",
-            "title": "HR Career Readiness",
-            "description": "Get ready for HR Generalist, HR Executive and related positions."
-        }
-    ],
-    "SkillsDataVisualization": [
-        {
-            "icon": "BarChart3",
-            "title": "Data Visualization Principles",
-            "description": "Learn the core principles of effective data visualization and storytelling."
-        },
-        {
-            "icon": "PieChart",
-            "title": "Tableau & Power BI Skills",
-            "description": "Build interactive dashboards using Tableau, Power BI and related tools."
-        },
-        {
-            "icon": "Database",
-            "title": "Data Preparation",
-            "description": "Clean, transform and shape data so it is ready for visualization."
-        },
-        {
-            "icon": "TrendingUp",
-            "title": "Advanced Charts & Analytics",
-            "description": "Create advanced visuals and apply analytical techniques to data."
-        },
-        {
-            "icon": "Layout",
-            "title": "Dashboard Design Best Practices",
-            "description": "Design clear, user-friendly dashboards that drive decisions."
-        },
-        {
-            "icon": "Award",
-            "title": "Portfolio & Job Prep",
-            "description": "Build a visualization portfolio and prepare for Data Analyst roles."
-        }
-    ],
-    "SkillsCoreHR": [
-        {
-            "icon": "Users",
-            "title": "Core HR Foundations",
-            "description": "Understand the fundamental people processes every organization runs."
-        },
-        {
-            "icon": "UserPlus",
-            "title": "Recruitment & Onboarding",
-            "description": "Manage hiring pipelines and create effective onboarding journeys."
-        },
-        {
-            "icon": "ClipboardList",
-            "title": "Employee Records & Administration",
-            "description": "Maintain accurate employee data and handle day-to-day HR operations."
-        },
-        {
-            "icon": "Banknote",
-            "title": "Payroll Support",
-            "description": "Support payroll inputs, validations and basic statutory compliance."
-        },
-        {
-            "icon": "Shield",
-            "title": "Policy & Compliance",
-            "description": "Apply HR policies and ensure basic legal compliance."
-        },
-        {
-            "icon": "Award",
-            "title": "HR Career Start",
-            "description": "Prepare for entry and mid-level Core HR and HR Executive roles."
-        }
-    ],
-    "SkillsCyberSecurity": [
-        {
-            "icon": "Shield",
-            "title": "Cybersecurity Fundamentals",
-            "description": "Understand core security concepts, threat models and the CIA triad."
-        },
-        {
-            "icon": "Lock",
-            "title": "Network & System Security",
-            "description": "Secure networks, servers and endpoints against common attack vectors."
-        },
-        {
-            "icon": "Search",
-            "title": "Vulnerability Assessment",
-            "description": "Identify and assess vulnerabilities using industry-standard scanning tools."
-        },
-        {
-            "icon": "AlertTriangle",
-            "title": "Incident Response",
-            "description": "Detect, contain and respond to security incidents effectively."
-        },
-        {
-            "icon": "Code2",
-            "title": "Ethical Hacking Basics",
-            "description": "Learn penetration testing fundamentals in safe, controlled environments."
-        },
-        {
-            "icon": "Award",
-            "title": "Certification & Career Prep",
-            "description": "Prepare for Security Analyst roles and entry-level cybersecurity certifications."
-        }
-    ],
-    "SkillsCompBenefits": [
-        {
-            "icon": "Banknote",
-            "title": "Compensation Structure Design",
-            "description": "Build salary bands, pay grades and job-leveling frameworks."
-        },
-        {
-            "icon": "PieChart",
-            "title": "Benefits Administration",
-            "description": "Manage health, retirement and other employee benefit programs."
-        },
-        {
-            "icon": "TrendingUp",
-            "title": "Market Benchmarking",
-            "description": "Use compensation surveys to benchmark pay against the market."
-        },
-        {
-            "icon": "Target",
-            "title": "Incentive & Bonus Planning",
-            "description": "Design variable pay and incentive plans tied to performance."
-        },
-        {
-            "icon": "Shield",
-            "title": "Compliance & Pay Equity",
-            "description": "Ensure compensation practices meet legal and pay equity requirements."
-        },
-        {
-            "icon": "Award",
-            "title": "Compensation Career Readiness",
-            "description": "Prepare for Compensation & Benefits Analyst and Total Rewards roles."
-        }
-    ]
+    "abap": {
+        "courseTitle": "SAP ABAP CERTIFICATION",
+        "image": "/Certificate/Certificate-1.avif",
+        "completionText": "On successful completion of the course, you will receive a Course Completion Certificate that validates your practical training in SAP ABAP development, covering everything from core programming to real-time project work.",
+        "description": "Our focus stays on making sure you can actually perform the job — the certificate is proof of that capability, not just attendance.",
+        "highlights": [
+            "Certificate includes details of modules covered and project work completed",
+            "Recognised by our placement partners and industry network in Raipur and beyond",
+            "Optional guidance provided for those who wish to pursue official SAP certification exams",
+            "Certificate is issued only after project submission and final assessment"
+        ]
+    },
+    "ariba": {
+        "courseTitle": "SAP ARIBA CERTIFICATION",
+        "image": "/Certificate/Certificate-1.avif",
+        "completionText": "On successful completion of the SAP Ariba course in Raipur, you will receive a Course Completion Certificate recognizing your hands-on training in Ariba Sourcing, Contracts, Procurement, and Supplier Management modules.",
+        "description": "What the certificate reflects: Duration and modules completed, Practical/live project work undertaken, Skill areas covered during training. Additionally, our trainers will guide you on how to register for official SAP Ariba certification exams, exam pattern, structure, and preparation strategy, and building a certification-ready resume and LinkedIn profile.",
+        "highlights": [
+            "Duration and modules completed",
+            "Practical/live project work undertaken",
+            "Guidance for official SAP Ariba certification exams"
+        ]
+    },
+    "basis": {
+        "courseTitle": "SAP BASIS CERTIFICATION",
+        "image": "/Certificate/Certificate-1.avif",
+        "completionText": "On successful completion of this SAP Basis training in Raipur, you will receive a course completion certificate recognizing your practical training and project work.",
+        "description": "Our trainers also guide students who wish to pursue official SAP certification, helping them understand exam patterns, question types, and preparation strategy.",
+        "highlights": [
+            "Verifiable course completion certificate from the institute",
+            "Detailed skill and module breakdown mentioned on the certificate",
+            "Guidance and preparation support for global SAP certification exams",
+            "Certificate adds credibility to your resume and LinkedIn profile"
+        ]
+    },
+    "fico": {
+        "courseTitle": "SAP FICO CERTIFICATION",
+        "image": "/Certificate/Certificate-1.avif",
+        "completionText": "On successful completion of the course, you'll receive a Course Completion Certificate recognizing your training in SAP FICO, including the modules covered and the practical project work completed.",
+        "description": "For learners aiming for official SAP certification, our trainers will guide you on exam pattern, preparation resources, and how our training curriculum maps to SAP's certification syllabus.",
+        "highlights": [
+            "Certificate reflects your training hours, curriculum covered, and hands-on project completion",
+            "Useful to include on your resume and LinkedIn profile when applying for SAP FICO roles",
+            "Guidance for official SAP certification exam"
+        ]
+    },
+    "ewm": {
+        "courseTitle": "SAP EWM CERTIFICATION",
+        "image": "/Certificate/Certificate-1.avif",
+        "completionText": "Every student who completes the course, including the live project and assessments, receives a course completion certificate in SAP EWM. The certificate reflects the modules covered, project work completed, and the duration of training.",
+        "description": "While this is not an official SAP certification, it is recognized by hiring partners and recruiters we work with in Raipur, and it strengthens your profile when applying for SAP EWM or logistics-related roles. For students who want to pursue the official SAP certification exam, our trainers provide additional guidance, sample questions, and exam-pattern practice as part of the mentorship support.",
+        "highlights": [
+            "Modules covered, project work completed, and duration of training",
+            "Recognized by hiring partners and recruiters in Raipur",
+            "Guidance for official SAP certification exam"
+        ]
+    },
+    "mm": {
+        "courseTitle": "SAP MM CERTIFICATION",
+        "image": "/Certificate/Certificate-1.avif",
+        "completionText": "On successful completion of the course, you will receive a Course Completion Certificate recognising your training in SAP Materials Management.",
+        "description": "A completion certificate from a structured SAP MM Training in Raipur adds credibility to your resume and LinkedIn profile, especially when paired with the practical project work and case studies you complete during the course. For learners who wish to pursue the official SAP certification exam separately, our trainers also provide exam-oriented guidance and mock tests to help you prepare.",
+        "highlights": [
+            "Modules covered and total training hours",
+            "Hands-on project work completed",
+            "Institute name and verification details"
+        ]
+    },
+    "bwbi": {
+        "courseTitle": "SAP BW/BI CERTIFICATION",
+        "image": "/Certificate/Certificate-1.avif",
+        "completionText": "On successful completion of the course and project work, you will receive a verified SAP BW/BI course completion certificate that reflects your training duration and modules covered, hands-on project work completed during the course, a unique certificate ID for verification by employers, and recognition that supports your resume and LinkedIn profile.",
+        "description": "This certificate, combined with the practical project experience you gain, gives you a strong edge when applying for SAP BW/BI roles or freelance consulting opportunities.",
+        "highlights": [
+            "Training duration and modules covered",
+            "Hands-on project work completed",
+            "Unique certificate ID for employer verification"
+        ]
+    },
+    "ps": {
+        "courseTitle": "SAP PS CERTIFICATION",
+        "image": "/Certificate/Certificate-1.avif",
+        "completionText": "On successful completion of the course, you will receive a Course Completion Certificate in SAP Project Systems, recognizing your training hours, project work, and assessment scores.",
+        "description": "The certificate reflects hands-on exposure to real-time SAP PS scenarios and can be added to your resume and LinkedIn profile to strengthen your job applications. Guidance is also provided for those who wish to pursue official SAP global certification separately.",
+        "highlights": [
+            "Recognizes training hours, project work, and assessment scores",
+            "Reflects hands-on exposure to real-time SAP PS scenarios",
+            "Guidance for official SAP global certification"
+        ]
+    },
+    "pm": {
+        "courseTitle": "SAP PM CERTIFICATION",
+        "image": "/Certificate/Certificate-1.avif",
+        "completionText": "On successful completion of this SAP PM course in Raipur, you will receive a course completion certificate that validates your hands-on training in SAP Plant Maintenance concepts, configuration, and real-world project work.",
+        "description": "This certificate is designed to strengthen your resume and LinkedIn profile, and it's recognized by our placement and hiring partners as proof of practical, job-ready SAP PM skills. For students aiming for official SAP certification, we also provide guidance and structured preparation support to help you approach the SAP certification exam with confidence.",
+        "highlights": [
+            "The modules and topics covered during training",
+            "Practical project work completed during the course",
+            "Total training hours and duration"
+        ]
+    },
+    "qm": {
+        "courseTitle": "SAP QM CERTIFICATION",
+        "image": "/Certificate/Certificate-1.avif",
+        "completionText": "On successful completion of the course and the capstone project, you will receive a Course Completion Certificate in SAP QM, recognized by employers and consulting firms as proof of practical, hands-on training.",
+        "description": "Guidance also provided for those who wish to pursue official SAP global certification separately.",
+        "highlights": [
+            "Certificate includes modules covered, training duration, and project details",
+            "Awarded only after passing the final assessment and submitting the live project",
+            "Verifiable certificate with a unique ID for employer verification"
+        ]
+    },
+    "pp": {
+        "courseTitle": "SAP PP CERTIFICATION",
+        "image": "/Certificate/Certificate-1.avif",
+        "completionText": "On successful completion of the SAP PP training in Raipur, you will receive a course completion certificate that validates your practical knowledge of SAP Production Planning concepts, configuration, and real-time scenarios.",
+        "description": "This certificate can be added to your resume and LinkedIn profile to strengthen your profile for SAP PP consultant roles.",
+        "highlights": [
+            "Modules covered during training",
+            "Hands-on project work completed",
+            "Duration and mode of training"
+        ]
+    },
+    "hana": {
+        "courseTitle": "SAP S/4 HANA CERTIFICATION",
+        "image": "/Certificate/Certificate-1.avif",
+        "completionText": "On successful completion of the SAP S/4 HANA course in Raipur, learners receive a Course Completion Certificate that reflects the modules covered, project work completed, and the duration of training.",
+        "description": "What the certificate includes: Learner's name and course duration, Modules and specialization track covered, Unique certificate ID for verification, Trainer or institute authorization.",
+        "highlights": [
+            "Learner's name and course duration",
+            "Modules and specialization track covered",
+            "Unique certificate ID for verification"
+        ]
+    },
+    "hrhcm": {
+        "courseTitle": "SAP HR/HCM CERTIFICATION",
+        "image": "/Certificate/Certificate-1.avif",
+        "completionText": "On successful completion of the course, you will receive an industry-recognised SAP HCM Course Completion Certificate, along with a detailed project completion certificate based on your live project work, guidance and preparation support for global SAP certification exams, a verifiable certificate ID that can be added to your resume and LinkedIn profile, and a letter of recommendation for top-performing students (placement-track batches).",
+        "description": "This certification adds credibility to your resume and demonstrates your practical, job-ready SAP HCM skills to recruiters.",
+        "highlights": [
+            "Detailed project completion certificate based on live project work",
+            "Guidance and preparation support for global SAP certification exams",
+            "Verifiable certificate ID for resume and LinkedIn",
+            "Letter of recommendation for top-performing students"
+        ]
+    },
+    "scm": {
+        "courseTitle": "SAP SCM CERTIFICATION",
+        "image": "/Certificate/Certificate-1.avif",
+        "completionText": "On successful completion of the course, you will receive an SAP SCM Course Completion Certificate from [Institute Name], recognising your training in Materials Management, Sales & Distribution, Production Planning, and Warehouse Management concepts.",
+        "description": "Certificate reflects hands-on project work, not attendance alone. Adds credibility to your resume and LinkedIn profile. Assessment-based issuance (a short practical evaluation is conducted before certification). Digital and physical copies provided.",
+        "highlights": [
+            "Reflects hands-on project work, not attendance alone",
+            "Adds credibility to your resume and LinkedIn profile",
+            "Assessment-based issuance with practical evaluation"
+        ]
+    },
+    "successfactors": {
+        "courseTitle": "SAP SUCCESSFACTOR CERTIFICATION",
+        "image": "/Certificate/Certificate-1.avif",
+        "completionText": "On successful completion of this SAP SuccessFactors course in Raipur, you will receive a Course Completion Certificate recognizing your training and project work.",
+        "description": "We also prepare you separately for the official SAP Certified Application Associate — SAP SuccessFactors exam (module-specific, e.g., Employee Central or Recruiting), which is administered by SAP directly and is the credential employers actually look for. What's included in certificate preparation: Structured mapping of course content to the official exam blueprint, Practice tests and mock exams, Guidance on exam registration and exam-day process.",
+        "highlights": [
+            "Recognizing your training and project work",
+            "Structured mapping to official exam blueprint",
+            "Practice tests and mock exams"
+        ]
+    },
+    "sd": {
+        "courseTitle": "SAP SD CERTIFICATION",
+        "image": "/Certificate/Certificate-1.avif",
+        "completionText": "On successful completion of the course, you will receive a Course Completion Certificate in SAP Sales and Distribution, which reflects total training hours completed, modules and topics covered, practical project work completed on the live SAP server, and trainer evaluation and assessment score.",
+        "description": "This certificate can be added to your resume and LinkedIn profile as proof of structured, hands-on SAP SD training. For students who also wish to pursue official SAP certification, our trainers provide guidance on exam patterns, eligibility, and preparation strategy separately, as official SAP certification is administered directly by SAP SE and is not included in the institute fee.",
+        "highlights": [
+            "Total training hours completed",
+            "Modules and topics covered",
+            "Practical project work on live SAP server",
+            "Trainer evaluation and assessment score"
+        ]
+    },
+    "datascience": {
+        "courseTitle": "Data Science with AI Certificate",
+        "image": "/Certificate/Certificate-1.avif",
+        "completionText": "On successful completion of the course, you'll receive an industry-recognized Data Science with AI course completion certificate that validates your practical skills — not just attendance.",
+        "description": "The certificate reflects completion of all curriculum modules, successful submission of capstone and mini-projects, and a verified skill assessment covering Python, Machine Learning, and AI fundamentals. It is designed to strengthen your resume, LinkedIn profile, and standing in interviews across Raipur and beyond.",
+        "highlights": [
+            "Completion of all curriculum modules and capstone projects",
+            "Verified skill assessment in Python, ML, and AI fundamentals",
+            "Shareable on resume and LinkedIn; recognized by hiring partners in Raipur"
+        ]
+    },
+    "dataanalytics": {
+        "courseTitle": "Data Analytics with Gen AI Certificate",
+        "image": "/Certificate/Certificate-1.avif",
+        "completionText": "On successful completion of the course, you will receive an industry-recognized Data Analytics with Gen AI Certificate, which you can add to your resume, LinkedIn profile, and job applications.",
+        "description": "Awarded only after completing all live projects and assessments. Includes a unique verification ID and is recognized by hiring partners and local Raipur companies. Reflects real, demonstrated skills using both traditional tools and modern Gen AI workflows.",
+        "highlights": [
+            "Awarded after live projects and assessments",
+            "Unique verification ID for employer checks",
+            "Recognized by hiring partners in Raipur and across India"
+        ]
+    },
+    "businessanalytics": {
+        "courseTitle": "Business Analytics Certificate",
+        "image": "/Certificate/Certificate-1.avif",
+        "completionText": "On successful completion, you will receive an industry-recognized Business Analytics Certificate that validates your ability to turn data into actionable business insights.",
+        "description": "The certificate reflects hands-on training in analytics tools, dashboarding, and decision-support skills that employers in Raipur look for when hiring business analysts and decision-support professionals.",
+        "highlights": [
+            "Industry-recognized certificate",
+            "Hands-on BI and predictive analytics focus",
+            "Validates ability to turn data into business insights"
+        ]
+    },
+    "ai": {
+        "courseTitle": "AI & Machine Learning Certificate",
+        "image": "/Certificate/Certificate-1.avif",
+        "completionText": "On successful completion of the AI & ML course, you'll receive an industry-recognized Certificate in Artificial Intelligence & Machine Learning, verifying your skills in Python, Machine Learning, Deep Learning, and Generative AI.",
+        "description": "Certificate is awarded after project submissions and final assessment. It is shareable directly on LinkedIn and your resume, verifiable through a unique certificate ID, and recognized by our hiring and placement partners across Raipur and pan-India.",
+        "highlights": [
+            "Awarded after project submissions + final assessment",
+            "Verifiable unique certificate ID",
+            "Recognized by hiring partners in Raipur and beyond"
+        ]
+    },
+    "genai": {
+        "courseTitle": "Generative AI Certificate",
+        "image": "/Certificate/Certificate-1.avif",
+        "completionText": "Upon successful completion of the course and capstone project, you will receive an industry-recognized Generative AI Course Certificate.",
+        "description": "The certificate validates hands-on, project-based learning — not just attendance. It is recognized by our hiring and placement partners, shareable directly on LinkedIn and your resume, and backed by a real project portfolio.",
+        "highlights": [
+            "Validates hands-on project-based learning",
+            "Recognized by hiring and placement partners",
+            "Shareable on LinkedIn and resume; backed by real project portfolio"
+        ]
+    },
+    "agenticai": {
+        "courseTitle": "Agentic AI Certificate",
+        "image": "/Certificate/Certificate-1.avif",
+        "completionText": "Upon successful completion of the course and capstone project, you will receive an industry-recognized Agentic AI Course Certificate.",
+        "description": "The certificate validates hands-on, project-based learning in building and applying agentic AI systems. It is recognized by our hiring partners, shareable on LinkedIn and your resume, and backed by a real project portfolio that demonstrates practical capability.",
+        "highlights": [
+            "Validates hands-on project-based Agentic AI training",
+            "Recognized by hiring and placement partners",
+            "Shareable on LinkedIn and resume with project portfolio"
+        ]
+    },
+    "fullstack": {
+        "courseTitle": "Full-Stack Certificate",
+        "image": "/Certificate/Certificate-1.avif",
+        "completionText": "On successful completion, you will receive an industry-recognized Full Stack Training Certificate that validates comprehensive skills in front-end and back-end web development.",
+        "description": "The certificate reflects hands-on training in building dynamic web applications and is designed to strengthen your resume and LinkedIn profile for software development roles.",
+        "highlights": [
+            "Industry-recognized certificate",
+            "Hands-on full-stack development experience",
+            "Validates end-to-end web application skills"
+        ]
+    },
+    "java": {
+        "courseTitle": "Java Certificate",
+        "image": "/Certificate/Certificate-1.avif",
+        "completionText": "Every student who completes the course requirements — attendance, assignments, and the final capstone project — receives an official Course Completion Certificate.",
+        "description": "This certificate confirms your training in Core Java and Advanced Java concepts, reflects the hands-on projects you've built, can be added directly to your resume and LinkedIn profile, and is recognized by our placement and hiring partner network.",
+        "highlights": [
+            "Confirms Core Java and Advanced Java training",
+            "Reflects hands-on projects completed",
+            "Recognized by placement and hiring partners"
+        ]
+    },
+    "python": {
+        "courseTitle": "Python with AI Certificate",
+        "image": "/Certificate/Certificate-1.avif",
+        "completionText": "On successful completion of the Python with AI course in Raipur, you will receive an industry-recognized course completion certificate that validates your hands-on proficiency in Python programming, data handling, machine learning, and applied AI project work.",
+        "description": "The certificate is designed to strengthen your resume and LinkedIn profile and reflects the practical, project-based nature of the training. Along with the certificate, you walk away with a portfolio of completed projects you can showcase to employers or clients.",
+        "highlights": [
+            "Validates Python, data handling, ML, and applied AI skills",
+            "Reflects practical project-based training",
+            "Accompanied by a portfolio of completed projects"
+        ]
+    },
+    "salesforce": {
+        "courseTitle": "Salesforce Certificate",
+        "image": "/Certificate/Certificate-1.avif",
+        "completionText": "On successful completion of this Salesforce course in Raipur, you will receive a course completion certificate that validates your hands-on training and project experience.",
+        "description": "You will also be fully prepared to attempt the official Salesforce Certified Administrator (ADM 201) exam. Our trainers provide dedicated guidance, mock tests, and revision sessions to help you clear the certification with confidence.",
+        "highlights": [
+            "Validates hands-on training and project experience",
+            "Preparation support for Salesforce Administrator (ADM 201) exam",
+            "Guidance, mock tests, and revision sessions included"
+        ]
+    },
+    "tableau": {
+        "courseTitle": "Tableau Certificate",
+        "image": "/Certificate/Certificate-1.avif",
+        "completionText": "On successful completion of this Tableau course in Raipur, you'll receive an industry-recognized course completion certificate that validates your hands-on skills in Tableau Desktop, dashboard design, and data storytelling.",
+        "description": "The certificate includes your project details and is shareable directly on LinkedIn. Certification is awarded only after you complete the capstone project, ensuring the credential reflects real, applied skill — not just attendance.",
+        "highlights": [
+            "Validates Tableau Desktop, dashboard design, and data storytelling",
+            "Includes project details; shareable on LinkedIn",
+            "Awarded only after capstone project completion"
+        ]
+    },
+    "powerbi": {
+        "courseTitle": "Power BI Certificate",
+        "image": "/Certificate/Certificate-1.avif",
+        "completionText": "On successful completion of the Power BI course in Raipur, you'll receive a course completion certificate that reflects the modules covered, hours of training, and the projects built during the program.",
+        "description": "The certificate is designed to be shared on LinkedIn and included in your resume, and is backed by the practical project work you complete during the course — so when an interviewer asks about it, you'll have real dashboards to show.",
+        "highlights": [
+            "Reflects modules covered, training hours, and projects built",
+            "Shareable on LinkedIn and resume",
+            "Backed by practical dashboard project work"
+        ]
+    },
+    "aws": {
+        "courseTitle": "AWS Certificate",
+        "image": "/Certificate/Certificate-1.avif",
+        "completionText": "On successful completion of this AWS course in Raipur, you will receive a course completion certificate that verifies your training in Amazon Web Services, including the modules covered and the project you built during the program.",
+        "description": "This certificate can be added to your resume and LinkedIn profile to show recruiters that you have practical, hands-on AWS experience. Alongside the course certificate, our trainers guide you through the process of registering for and clearing the official AWS Certified Solutions Architect – Associate exam.",
+        "highlights": [
+            "Verifies training in AWS modules and project work",
+            "Adds practical AWS experience to resume and LinkedIn",
+            "Guidance for official AWS Solutions Architect certification"
+        ]
+    },
+    "devops": {
+        "courseTitle": "DevOps Certificate",
+        "image": "/Certificate/Certificate-1.avif",
+        "completionText": "On successful completion of the course and capstone project, you will receive an industry-recognized DevOps course completion certificate.",
+        "description": "This certificate validates your hands-on skills in CI/CD, containerization, orchestration, and cloud deployment, and can be added to your resume and LinkedIn profile to strengthen your job applications. It is issued after project evaluation and final assessment and includes a unique verifiable ID.",
+        "highlights": [
+            "Validates CI/CD, containerization, orchestration, and cloud skills",
+            "Issued after project evaluation and final assessment",
+            "Verifiable certificate with unique ID; recognized by hiring partners"
+        ]
+    },
+    "corehr": {
+        "courseTitle": "Core HR Certificate",
+        "image": "/Certificate/Certificate-1.avif",
+        "completionText": "On successful completion of this Core HR Course in Raipur, you will receive a Course Completion Certificate recognized by our hiring partners and useful for job applications, along with a Skill Assessment Report highlighting your strengths across recruitment, payroll, and compliance, and a LinkedIn-ready Certificate Badge.",
+        "description": "Our certificate is not just a formality — it comes with practical skill validation, so employers can trust that you have completed real HR training, not just attended classes.",
+        "highlights": [
+            "Course Completion Certificate recognized by hiring partners",
+            "Skill Assessment Report across recruitment, payroll, and compliance",
+            "LinkedIn-ready Certificate Badge"
+        ]
+    },
+    "hrpayroll": {
+        "courseTitle": "HR Payroll Certificate",
+        "image": "/Certificate/Certificate-1.avif",
+        "completionText": "Every student who completes this HR Payroll Course in Raipur receives an industry-recognised certificate of completion.",
+        "description": "The certificate reflects the practical modules covered — statutory compliance, payroll software, and HR documentation — and can be shared directly on LinkedIn or added to your resume. Many of our hiring partners specifically look for candidates with hands-on payroll certification.",
+        "highlights": [
+            "Industry-recognised certificate reflecting practical modules",
+            "Covers statutory compliance, payroll software, and HR documentation",
+            "Valued by hiring partners for payroll and HR roles"
+        ]
+    },
+    "hrmanagement": {
+        "courseTitle": "HR Management Certificate",
+        "image": "/Certificate/Certificate-1.avif",
+        "completionText": "On successful completion, you will receive a Certificate in HR Management that reflects the practical, project-based nature of this training.",
+        "description": "Awarded after evaluation of assignments, projects, and final assessment. Recognized by hiring partners and local employers in Raipur. Adds credibility to your resume and LinkedIn profile, includes a verifiable certificate ID, and covers both HR Generalist and HR Payroll competencies.",
+        "highlights": [
+            "Awarded after assignments, projects, and final assessment",
+            "Recognized by hiring partners and employers in Raipur",
+            "Verifiable certificate ID; covers Generalist and Payroll competencies"
+        ]
+    },
+    "hrgeneralist": {
+        "courseTitle": "HR Generalist Certificate",
+        "image": "/Certificate/Certificate-1.avif",
+        "completionText": "On successful completion of this course, you will receive an HR Generalist Course Completion Certificate that validates your practical training in recruitment, payroll, compliance, and HR operations.",
+        "description": "This certificate is designed to strengthen your resume and profile, whether you are applying for your first HR job or moving into a generalist role. It reflects hands-on training rather than theory alone. Students also receive a project completion letter based on the capstone HR project completed during the course.",
+        "highlights": [
+            "Validates practical training in recruitment, payroll, compliance, and HR operations",
+            "Reflects hands-on training, not theory alone",
+            "Includes project completion letter from capstone HR project"
+        ]
+    },
+    "hranalytics": {
+        "courseTitle": "HR Analytics Certificate",
+        "image": "/Certificate/Certificate-1.avif",
+        "completionText": "On successful completion of the course, you will receive an industry-recognized HR Analytics course completion certificate.",
+        "description": "This certificate validates your practical training in workforce data analysis, dashboard building, and HR reporting, and can be added directly to your resume and LinkedIn profile. Employers in Raipur and across India value certificates that are backed by real project work, and this one comes with a portfolio-ready capstone project.",
+        "highlights": [
+            "Validates workforce data analysis, dashboard building, and HR reporting",
+            "Shareable on resume and LinkedIn",
+            "Backed by a portfolio-ready capstone project"
+        ]
+    },
+    "hrtraining": {
+        "courseTitle": "HR Training Certificate",
+        "image": "/Certificate/Certificate-1.avif",
+        "completionText": "On successful completion of this HR training in Raipur, you'll receive an industry-recognised HR Professional Certificate that you can add to your resume and LinkedIn profile.",
+        "description": "Certificate is awarded after project submission and a final assessment. Includes a unique certificate ID for verification by employers. Co-branded with our hiring partner network wherever applicable. Digital copy issued immediately; hard copy available on request. Reflects both theoretical understanding and practical project work completed during the course.",
+        "highlights": [
+            "Awarded after project submission and final assessment",
+            "Unique certificate ID for employer verification",
+            "Reflects theoretical understanding and practical project work"
+        ]
+    },
+    "sap": {
+        "courseTitle": "SAP Training Certificate",
+        "image": "/Certificate/Certificate-1.avif",
+        "completionText": "The Connecting Dots SAP Certification Course is designed to enhance your expertise in SAP systems.",
+        "description": "Our program goes beyond theoretical learning, offering hands-on practical sessions across various SAP modules.",
+        "highlights": [
+            "Industry-recognized certificate",
+            "Hands-on across multiple modules",
+            "Real-world scenario based learning"
+        ]
+    },
+    "itcourses": {
+        "courseTitle": "IT Training Certificate",
+        "image": "/Certificate/Certificate-1.avif",
+        "completionText": "The Connecting Dots Software Certification Course provides in-depth knowledge and hands-on experience in key software development technologies.",
+        "description": "Our comprehensive program covers programming languages, development frameworks, and industry best practices.",
+        "highlights": [
+            "Industry-recognized certificate",
+            "Hands-on programming and frameworks",
+            "Prepares for software development roles"
+        ]
+    },
+    "hrcourses": {
+        "courseTitle": "HR Training Certificate",
+        "image": "/Certificate/Certificate-1.avif",
+        "completionText": "Master the art of Human resources with HR Certification Course designed to equip you with essential skills.",
+        "description": "Our comprehensive program combines theoretical learning with hands-on practical sessions.",
+        "highlights": [
+            "Industry-recognized certificate",
+            "Combines theory and practical",
+            "Focuses on real-world HR scenarios"
+        ]
+    },
+    "datavisualization": {
+        "courseTitle": "Data Visualization with AI Certificate",
+        "image": "/Certificate/Certificate-1.avif",
+        "completionText": "On successful completion of the course and capstone projects, you'll receive an industry-recognized Data Visualization with AI Course Completion Certificate.",
+        "description": "Verifiable certificate with unique ID. Shareable directly on LinkedIn and your resume. Backed by a portfolio of real, reviewed projects — not just a piece of paper. Recognized by our hiring partners in Raipur and across India. Reflects actual, demonstrated skill; every learner completes hands-on assignments and at least two capstone projects before certification.",
+        "highlights": [
+            "Verifiable certificate with unique ID",
+            "Backed by portfolio of real reviewed projects",
+            "Recognized by hiring partners in Raipur and across India"
+        ]
+    }
 }

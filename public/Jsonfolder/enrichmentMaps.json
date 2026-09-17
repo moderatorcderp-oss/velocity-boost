@@ -943,7 +943,8 @@
         "hr-training": "SkillsHRTraining",
         "core-hr": "SkillsCoreHR",
         "hr": "SkillsHR",
-        "devops": "SkillsDevops"
+        "devops": "SkillsDevOps",
+        "aws": "SkillsAWS"
     },
     "whoMap": {
         "sap": "whosap",
@@ -986,7 +987,9 @@
         "hr-generalist": "whogen",
         "hr-training": "whohrtrain",
         "core-hr": "whocore",
-        "hr": "whohr"
+        "hr": "whohr",
+        "aws": "whoaws",
+        "devops": "whodevops"
     },
     "certificateMap": {
         "sap-abap": "abap",
@@ -1025,7 +1028,11 @@
         "hr-training": "hrtraining",
         "it": "itcourses",
         "hr": "hrcourses",
-        "data-visualization": "datavisualization"
+        "data-visualization": "datavisualization",
+        "aws": "aws",
+        "devops": "devops",
+        "genai": "genai",
+        "agenticai": "agenticai"
     },
     "faqMap": {
         "data-science": [
@@ -1210,6 +1217,40 @@
         "sap-ehs": "ehs",
         "sap-ibp": "ibp",
         "sap-btp": "btp",
-        "sap-grc": "grc"
+        "sap-grc": "grc",
+        "data-science": "datascience",
+        "data-science-with-ai": "datascience",
+        "data-analytics": "dataanalytics",
+        "data-analytics-with-gen-ai": "dataanalytics",
+        "business-analytics": "businessanalytics",
+        "ai-ml": "ai",
+        "aiml": "ai",
+        "artificial-intelligence": "ai",
+        "generative-ai": "genai",
+        "gen-ai": "genai",
+        "agentic-ai": "agenticai",
+        "full-stack": "fullstack",
+        "fullstack": "fullstack",
+        "java": "java",
+        "python": "python",
+        "salesforce": "salesforce",
+        "tableau": "tableau",
+        "power-bi": "powerbi",
+        "powerbi": "powerbi",
+        "data-visualization": "datavisualization",
+        "data-visualization-with-ai": "datavisualization",
+        "aws": "aws",
+        "devops": "devops",
+        "core-hr": "corehr",
+        "hr-payroll": "hrpayroll",
+        "payroll": "hrpayroll",
+        "hr-management": "hrmanagement",
+        "hr-generalist": "hrgeneralist",
+        "hr-analytics": "hranalytics",
+        "hr-training": "hrtraining",
+        "hr": "hrtraining",
+        "it-courses": "itcourses",
+        "hr-courses": "hrcourses",
+        "sap-courses": "sap"
     }
 }

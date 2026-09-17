@@ -579,400 +579,584 @@
   "whods": {
     "points": [
       {
-        "title": "Complete beginners welcome",
-        "description": "No prior coding or statistics background needed. We build up from data fundamentals."
+        "title": "Fresh graduates",
+        "description": "From B.Tech, BCA, BSc, or commerce backgrounds who want to enter the data science and AI field with no prior experience needed."
       },
       {
-        "title": "Can commit a few hours a week",
-        "description": "5-7 focused hours weekly is enough to keep pace with the datasets and models."
+        "title": "Working professionals",
+        "description": "In IT, finance, or operations looking to upskill and move into a data-focused or AI-driven role."
       },
       {
-        "title": "Comfortable with basic math & logic",
-        "description": "High-school level math is enough; we teach the statistics and ML theory as we go."
+        "title": "Career switchers",
+        "description": "From non-technical backgrounds who are serious about building a new career in data and AI."
       },
       {
-        "title": "Wants a real, lasting skill",
-        "description": "Looking to build a career-ready data science skill set, not a quick weekend hack."
+        "title": "Business owners and analysts in Raipur",
+        "description": "Who want to use data and AI tools to make better decisions in their own work."
+      },
+      {
+        "title": "Engineering and MCA students",
+        "description": "Who want an edge over their peers before campus placements."
       }
     ],
-    "note": "No prerequisites required to enroll"
+    "note": "If you're comfortable with basic computer usage and willing to put in consistent effort, this course meets you at your level and builds you up from there. No prior coding experience required."
   },
   "whoda": {
     "points": [
       {
-        "title": "Complete beginners welcome",
-        "description": "No prior analytics experience needed. We start with spreadsheets and build up."
+        "title": "Freshers & Students",
+        "description": "B.Tech, BCA, MCA, B.Com, BBA graduates who want a career in data analytics."
       },
       {
-        "title": "Can commit a few hours a week",
-        "description": "5-7 focused hours weekly is enough to keep pace with the projects."
+        "title": "Working Professionals",
+        "description": "Anyone looking to switch to a data-driven role or upskill within their current company."
       },
       {
-        "title": "Has a computer & internet",
-        "description": "Windows, Mac, or Linux - nothing special required to get started."
+        "title": "Business Owners & Entrepreneurs",
+        "description": "Raipur-based business owners who want to make data-backed decisions using AI tools."
       },
       {
-        "title": "Wants a real, lasting skill",
-        "description": "Looking to build a career-ready analytics skill set, not a quick weekend hack."
+        "title": "Career Switchers",
+        "description": "Professionals from non-technical backgrounds looking to enter the analytics field."
+      },
+      {
+        "title": "Job Seekers",
+        "description": "Anyone actively looking for analyst roles and wanting a strong, practical skill set to stand out."
       }
     ],
-    "note": "No prerequisites required to enroll"
+    "note": "No prior coding experience is required. We start from the basics and build up step by step."
   },
   "whoba": {
     "points": [
       {
-        "title": "Complete beginners welcome",
-        "description": "No prior business analytics background needed. We start from the fundamentals."
+        "title": "Fresh graduates and students",
+        "description": "Who want to build a career in business analytics and decision support."
       },
       {
-        "title": "Can commit a few hours a week",
-        "description": "5-7 focused hours weekly is enough to keep pace with the case studies."
+        "title": "Working professionals",
+        "description": "In marketing, finance, operations or sales who need stronger data skills."
       },
       {
-        "title": "Interested in data-driven decisions",
-        "description": "Ideal for anyone who wants to move from gut-feel to evidence-based choices."
+        "title": "Business owners and managers in Raipur",
+        "description": "Who want to make evidence-based decisions instead of relying on gut feel."
       },
       {
-        "title": "Wants a real, lasting skill",
-        "description": "Looking to build a career-ready skill set, not a quick weekend hack."
+        "title": "Career switchers",
+        "description": "Looking for a practical, job-ready analytics skill set."
       }
     ],
-    "note": "No prerequisites required to enroll"
+    "note": "No prior analytics background is required. We start from the fundamentals and build up with real business case studies."
   },
   "whogpt": {
     "points": [
       {
-        "title": "Complete beginners welcome",
-        "description": "No prior AI or coding experience needed. We start from the fundamentals."
+        "title": "Students",
+        "description": "Who want to add a future-ready AI skill to their resume before graduating."
       },
       {
-        "title": "Can commit a few hours a week",
-        "description": "5-7 focused hours weekly is enough to keep pace with the projects."
+        "title": "Working professionals",
+        "description": "In marketing, HR, sales, operations, or IT who want to use AI to work smarter."
       },
       {
-        "title": "Curious about AI tools",
-        "description": "Great for anyone who wants to actually understand and build with LLMs, not just use them."
+        "title": "Business owners & entrepreneurs in Raipur",
+        "description": "Looking to use AI for content, customer support, and productivity."
       },
       {
-        "title": "Wants a real, lasting skill",
-        "description": "Looking to build a career-ready AI skill set, not a quick weekend hack."
+        "title": "Freelancers & content creators",
+        "description": "Who want to scale their output using AI tools."
+      },
+      {
+        "title": "Career switchers",
+        "description": "Exploring opportunities in the growing AI and tech industry."
+      },
+      {
+        "title": "Educators & trainers",
+        "description": "Who want to bring AI literacy into their own teaching."
       }
     ],
-    "note": "No prerequisites required to enroll"
+    "note": "No prior coding or technical background is required. If you can use a smartphone and a web browser, you can take this course."
+  },
+  "whogenai": {
+    "points": [
+      {
+        "title": "Students",
+        "description": "Who want to add a future-ready AI skill to their resume before graduating."
+      },
+      {
+        "title": "Working professionals",
+        "description": "In marketing, HR, sales, operations, or IT who want to use AI to work smarter."
+      },
+      {
+        "title": "Business owners & entrepreneurs in Raipur",
+        "description": "Looking to use AI for content, customer support, and productivity."
+      },
+      {
+        "title": "Freelancers & content creators",
+        "description": "Who want to scale their output using AI tools."
+      },
+      {
+        "title": "Career switchers",
+        "description": "Exploring opportunities in the growing AI and tech industry."
+      }
+    ],
+    "note": "No prior coding or technical background is required. If you can use a smartphone and a web browser, you can take this course."
+  },
+  "whoagenticai": {
+    "points": [
+      {
+        "title": "Students and fresh graduates",
+        "description": "Who want practical experience building and applying agentic AI systems."
+      },
+      {
+        "title": "Working professionals",
+        "description": "In IT, product, or operations looking to automate workflows with AI agents."
+      },
+      {
+        "title": "Business owners and managers in Raipur",
+        "description": "Who want to explore intelligent automation for their teams."
+      },
+      {
+        "title": "Career switchers",
+        "description": "Serious about entering the AI and automation space with hands-on projects."
+      }
+    ],
+    "note": "No advanced coding background is required. We start from the fundamentals of generative and agentic AI and build up with practical projects."
   },
   "whofullstack": {
     "points": [
       {
-        "title": "Complete beginners welcome",
+        "title": "Complete beginners",
         "description": "No prior coding experience needed. We start from the fundamentals and build up."
       },
       {
-        "title": "Can commit a few hours a week",
-        "description": "5-7 focused hours weekly is enough to keep pace with the projects."
+        "title": "Students and fresh graduates",
+        "description": "Who want a complete front-end to back-end skill set before entering the job market."
       },
       {
-        "title": "Has a computer & internet",
-        "description": "Windows, Mac, or Linux - nothing special required to get started."
+        "title": "Working professionals",
+        "description": "Looking to switch into full-stack development roles."
       },
       {
-        "title": "Wants a real, lasting skill",
-        "description": "Looking to build a career-ready skill set, not a quick weekend hack."
+        "title": "Career switchers in Raipur",
+        "description": "Who want a practical, project-driven path into software development."
       }
     ],
-    "note": "No prerequisites required to enroll"
+    "note": "No prerequisites required. A computer and consistent effort are enough to get started."
   },
   "whojava": {
     "points": [
       {
-        "title": "Complete beginners welcome",
-        "description": "No prior programming experience needed. We start from the fundamentals."
+        "title": "College students",
+        "description": "Who want a practical Java foundation alongside their degree."
       },
       {
-        "title": "Can commit a few hours a week",
-        "description": "5-7 focused hours weekly is enough to keep pace with the projects."
+        "title": "Freshers and job seekers in Raipur",
+        "description": "Looking to break into software development."
       },
       {
-        "title": "Has a computer & internet",
-        "description": "Windows, Mac, or Linux - nothing special required to get started."
+        "title": "Working professionals",
+        "description": "Planning a career switch into IT or programming."
       },
       {
-        "title": "Wants a real, lasting skill",
-        "description": "Looking to build a career-ready backend development skill set."
+        "title": "Non-CS background learners",
+        "description": "Who are serious about starting from scratch and building real skills."
+      },
+      {
+        "title": "Anyone preparing for Java-based interviews",
+        "description": "Or campus placements."
       }
     ],
-    "note": "No prerequisites required to enroll"
+    "note": "No prior coding experience required — we start from the ground up and build steadily from there."
   },
   "whopython": {
     "points": [
       {
-        "title": "Complete beginners welcome",
-        "description": "No prior coding experience needed. We start from the fundamentals and build up."
+        "title": "Students (BCA, MCA, B.Tech, BSc IT)",
+        "description": "In Raipur who want strong Python and AI skills before entering the job market."
       },
       {
-        "title": "Can commit a few hours a week",
-        "description": "5-7 focused hours weekly is enough to keep pace with the projects."
+        "title": "Working professionals",
+        "description": "Looking to upskill or switch into a data/AI-focused role."
       },
       {
-        "title": "Has a computer & internet",
-        "description": "Windows, Mac, or Linux - nothing special required to get started."
+        "title": "Freshers",
+        "description": "Who want a career-ready skill combination that stands out in interviews."
       },
       {
-        "title": "Wants a real, lasting skill",
-        "description": "Looking to build a career-ready Python skill set, not a quick weekend hack."
+        "title": "Entrepreneurs and freelancers",
+        "description": "Who want to use Python and AI to automate and grow their own work."
+      },
+      {
+        "title": "Anyone in Raipur curious about AI",
+        "description": "And serious about building real, usable skills — no prior coding experience required."
       }
     ],
-    "note": "No prerequisites required to enroll"
+    "note": "No prior coding experience required. We start from the absolute basics and build up step by step."
   },
   "whosales": {
     "points": [
       {
-        "title": "Complete beginners welcome",
-        "description": "No prior CRM or coding experience needed. We start from the fundamentals."
+        "title": "Freshers and graduates",
+        "description": "Looking to start a career in CRM or cloud technology."
       },
       {
-        "title": "Can commit a few hours a week",
-        "description": "5-7 focused hours weekly is enough to keep pace with the configuration labs."
+        "title": "IT professionals",
+        "description": "Wanting to switch into the Salesforce ecosystem."
       },
       {
-        "title": "Has a computer & internet",
-        "description": "Windows, Mac, or Linux - nothing special required to get started."
+        "title": "Non-IT professionals",
+        "description": "Exploring a career change into tech."
       },
       {
-        "title": "Wants a real, lasting skill",
-        "description": "Looking to build a career-ready Salesforce skill set, not a quick weekend hack."
+        "title": "Business analysts and sales/CRM executives",
+        "description": "Who want to upskill on the Salesforce platform."
+      },
+      {
+        "title": "Students preparing for Salesforce Administrator certification",
+        "description": "Who want structured, hands-on preparation."
       }
     ],
-    "note": "No prerequisites required to enroll"
+    "note": "No prior coding experience is required to get started — the course begins with the fundamentals and builds up gradually."
   },
   "whopowerbi": {
     "points": [
       {
-        "title": "Complete beginners welcome",
-        "description": "No prior BI tool experience needed. We start from the fundamentals."
+        "title": "College students and freshers",
+        "description": "Who want a strong first job skill in data and reporting."
       },
       {
-        "title": "Can commit a few hours a week",
-        "description": "5-7 focused hours weekly is enough to keep pace with the dashboards."
+        "title": "Working professionals",
+        "description": "In finance, sales, HR, or operations who deal with reports and Excel sheets."
       },
       {
-        "title": "Comfortable with basic Excel",
-        "description": "If you can build a spreadsheet, you're ready to start with Power BI."
+        "title": "Business owners in Raipur",
+        "description": "Who want to track their own business data."
       },
       {
-        "title": "Wants a real, lasting skill",
-        "description": "Looking to build a career-ready reporting skill set, not a quick weekend hack."
+        "title": "IT professionals",
+        "description": "Looking to move into data analytics."
+      },
+      {
+        "title": "Anyone preparing for a data analyst or BI analyst role",
+        "description": "Who wants practical, project-based training."
       }
     ],
-    "note": "No prerequisites required to enroll"
+    "note": "No prior coding background is required. Basic comfort with Excel is helpful but not mandatory — the trainers start from the fundamentals."
   },
   "whotableau": {
     "points": [
       {
-        "title": "Complete beginners welcome",
-        "description": "No prior visualization tool experience needed. We start from the fundamentals."
+        "title": "College students and freshers",
+        "description": "Who want to enter the data analytics field."
       },
       {
-        "title": "Can commit a few hours a week",
-        "description": "5-7 focused hours weekly is enough to keep pace with the dashboards."
+        "title": "Working professionals from Excel-heavy roles",
+        "description": "Looking to upskill into visualisation."
       },
       {
-        "title": "Comfortable with basic Excel",
-        "description": "If you can build a spreadsheet, you're ready to start with Tableau."
+        "title": "Business analysts and MIS executives",
+        "description": "Who want stronger visualisation skills."
       },
       {
-        "title": "Wants a real, lasting skill",
-        "description": "Looking to build a career-ready visualization skill set, not a quick weekend hack."
+        "title": "Marketing, sales, and finance professionals",
+        "description": "Who work with reports daily."
+      },
+      {
+        "title": "Anyone in Raipur exploring a career switch",
+        "description": "Into data analytics or business intelligence."
+      },
+      {
+        "title": "Entrepreneurs and small business owners",
+        "description": "Who want to understand their own business data better."
       }
     ],
-    "note": "No prerequisites required to enroll"
+    "note": "No prior coding experience is required. Basic comfort with Excel is helpful but not mandatory — we start from the fundamentals."
   },
   "whoana": {
     "points": [
       {
-        "title": "Complete beginners welcome",
-        "description": "No prior HR analytics experience needed. We start from the fundamentals."
+        "title": "HR professionals in Raipur",
+        "description": "Looking to upskill into people analytics."
       },
       {
-        "title": "Can commit a few hours a week",
-        "description": "5-7 focused hours weekly is enough to keep pace with the projects."
+        "title": "Fresh graduates",
+        "description": "Who want to start their career in workforce analytics."
       },
       {
-        "title": "Interested in people data",
-        "description": "Great for HR professionals who want to move into a data-driven role."
+        "title": "MBA (HR) students",
+        "description": "Seeking practical, job-ready analytics skills."
       },
       {
-        "title": "Wants a real, lasting skill",
-        "description": "Looking to build a career-ready people analytics skill set."
+        "title": "Recruiters and talent acquisition specialists",
+        "description": "Wanting to work with data."
+      },
+      {
+        "title": "Business owners and HR managers",
+        "description": "Who want to make data-backed people decisions."
+      },
+      {
+        "title": "Working professionals in Raipur",
+        "description": "Planning a career switch into HR analytics roles."
       }
     ],
-    "note": "No prerequisites required to enroll"
+    "note": "No advanced statistics or coding background is required. We start from the fundamentals of HR metrics and build up to dashboards and insights."
   },
   "whoman": {
     "points": [
       {
-        "title": "Complete beginners welcome",
-        "description": "No prior HR management experience needed. We start from the fundamentals."
+        "title": "Fresh Graduates",
+        "description": "Who want to start their career in Human Resources."
       },
       {
-        "title": "Can commit a few hours a week",
-        "description": "5-7 focused hours weekly is enough to keep pace with the case studies."
+        "title": "Working Professionals",
+        "description": "From admin, operations, or non-HR roles planning a switch."
       },
       {
-        "title": "Interested in people leadership",
-        "description": "Ideal for anyone aiming to grow into an HR Manager or HRBP role."
+        "title": "HR Executives",
+        "description": "Looking to upgrade their skills and formalize experience with a certificate."
       },
       {
-        "title": "Wants a real, lasting skill",
-        "description": "Looking to build a career-ready HR management skill set."
+        "title": "Business Owners & Startup Founders",
+        "description": "Who manage HR functions themselves."
+      },
+      {
+        "title": "MBA/BBA Students",
+        "description": "Who want practical, hands-on HR training alongside academics."
+      },
+      {
+        "title": "Career Returners",
+        "description": "Re-entering the workforce after a break."
       }
     ],
-    "note": "No prerequisites required to enroll"
+    "note": "If you enjoy working with people, solving problems, and being the go-to person for workplace matters, this HR Certification Course is built for you."
   },
   "whopayroll": {
     "points": [
       {
-        "title": "Complete beginners welcome",
-        "description": "No prior payroll experience needed. We start from the fundamentals."
+        "title": "Fresh graduates",
+        "description": "Wanting to start a career in HR or payroll."
       },
       {
-        "title": "Can commit a few hours a week",
-        "description": "5-7 focused hours weekly is enough to keep pace with the calculations."
+        "title": "HR generalists",
+        "description": "Looking to specialise in payroll operations."
       },
       {
-        "title": "Comfortable with basic math",
-        "description": "If you're comfortable with numbers, you're ready to start with payroll."
+        "title": "Accounts or finance executives",
+        "description": "Expanding into payroll compliance."
       },
       {
-        "title": "Wants a real, lasting skill",
-        "description": "Looking to build a career-ready payroll processing skill set."
+        "title": "Working professionals",
+        "description": "Preparing for a role switch into HR."
+      },
+      {
+        "title": "Business owners or startup founders",
+        "description": "Who want to manage payroll in-house."
+      },
+      {
+        "title": "Someone returning to work after a career break",
+        "description": "Looking for a practical, high-demand skill."
       }
     ],
-    "note": "No prerequisites required to enroll"
+    "note": "No prior payroll experience is required. We start from the basics of salary structure and build up to full processing and compliance."
   },
   "whogen": {
     "points": [
       {
-        "title": "Complete beginners welcome",
-        "description": "No prior HR generalist experience needed. We start from the fundamentals."
+        "title": "Graduates from any stream",
+        "description": "Who want to start a career in Human Resources."
       },
       {
-        "title": "Can commit a few hours a week",
-        "description": "5-7 focused hours weekly is enough to keep pace with the projects."
+        "title": "MBA/PGDM students specialising in HR",
+        "description": "Who want practical, hands-on exposure."
       },
       {
-        "title": "Enjoys working with people",
-        "description": "Great for anyone who wants a broad, hands-on HR operations role."
+        "title": "Admin executives, office coordinators, or receptionists",
+        "description": "Looking to shift into HR."
       },
       {
-        "title": "Wants a real, lasting skill",
-        "description": "Looking to build a career-ready HR generalist skill set."
+        "title": "Working professionals in HR support roles",
+        "description": "Who want to move into a generalist position."
+      },
+      {
+        "title": "Business owners and startup founders",
+        "description": "Who want to manage HR functions in-house."
+      },
+      {
+        "title": "Homemakers and career-break professionals",
+        "description": "Planning a confident return to the workforce."
       }
     ],
-    "note": "No prerequisites required to enroll"
+    "note": "If you fall into any of these categories and have been searching for a reliable HR course in Raipur, this program is designed with you in mind."
   },
   "whohrtrain": {
     "points": [
       {
-        "title": "Complete beginners welcome",
-        "description": "No prior HR experience needed. We cover Core HR, Payroll and Analytics from scratch."
+        "title": "Fresh graduates (BBA, MBA, BCom, or any stream)",
+        "description": "Planning a career in Human Resources."
       },
       {
-        "title": "Can commit a few hours a week",
-        "description": "5-7 focused hours weekly is enough to keep pace with all modules."
+        "title": "Working professionals in admin or operations",
+        "description": "Who want to move into an HR role."
       },
       {
-        "title": "Wants breadth across HR",
-        "description": "Ideal for those who want multiple HR career paths open to them."
+        "title": "Career switchers",
+        "description": "Looking for a practical, hands-on HR training program in Raipur."
       },
       {
-        "title": "Wants a real, lasting skill",
-        "description": "Looking to build a well-rounded, career-ready HR skill set."
+        "title": "Small business owners",
+        "description": "Who want to manage their own HR and payroll function."
+      },
+      {
+        "title": "Anyone who has completed an HR degree",
+        "description": "But feels underprepared for real HR work."
       }
     ],
-    "note": "No prerequisites required to enroll"
+    "note": "No prior HR experience is required. The course is built around what companies in Raipur, Bhilai, and Durg are actually hiring for right now."
   },
   "whoit": {
     "points": [
       {
-        "title": "Complete beginners welcome",
+        "title": "Complete beginners",
         "description": "No prior coding experience needed. We start from the fundamentals and build up."
       },
       {
-        "title": "Can commit a few hours a week",
-        "description": "5-7 focused hours weekly is enough to keep pace with the projects."
+        "title": "Students and fresh graduates",
+        "description": "Looking for a practical path into IT, data, or AI roles."
       },
       {
-        "title": "Has a computer & internet",
-        "description": "Windows, Mac, or Linux - nothing special required to get started."
+        "title": "Working professionals",
+        "description": "Wanting to upskill or switch into high-demand tech roles."
       },
       {
-        "title": "Wants a real, lasting skill",
-        "description": "Looking to build a career-ready tech skill set, not a quick weekend hack."
+        "title": "Career switchers in Raipur",
+        "description": "Who want job-ready skills with placement support."
       }
     ],
-    "note": "No prerequisites required to enroll"
+    "note": "No prerequisites required. A computer and consistent effort are enough to get started."
   },
   "whohr": {
     "points": [
       {
-        "title": "Complete beginners welcome",
+        "title": "Complete beginners",
         "description": "No prior HR experience needed. We start from the fundamentals and build up."
       },
       {
-        "title": "Can commit a few hours a week",
-        "description": "5-7 focused hours weekly is enough to keep pace with the projects."
+        "title": "Fresh graduates and career switchers",
+        "description": "Looking for a practical entry into Human Resources."
       },
       {
-        "title": "Enjoys working with people",
-        "description": "Great for anyone who wants a people-facing operations role."
+        "title": "Working professionals in admin or operations",
+        "description": "Who want to move into HR roles."
       },
       {
-        "title": "Wants a real, lasting skill",
-        "description": "Looking to build a career-ready HR skill set, not a quick weekend hack."
+        "title": "Business owners and managers in Raipur",
+        "description": "Who need to handle HR functions themselves."
       }
     ],
-    "note": "No prerequisites required to enroll"
+    "note": "No prerequisites required. The programs are designed around real workplace HR tasks."
   },
   "whodatavisual": {
     "points": [
       {
-        "title": "Complete beginners welcome",
-        "description": "No prior visualization experience needed. We start from the fundamentals."
+        "title": "Students & Freshers in Raipur",
+        "description": "Looking to build a strong, job-ready skill for analytics and business roles."
       },
       {
-        "title": "Can commit a few hours a week",
-        "description": "5-7 focused hours weekly is enough to keep pace with the dashboards."
+        "title": "Working Professionals",
+        "description": "In finance, marketing, operations, or HR who want to present data more effectively at work."
       },
       {
-        "title": "Comfortable with basic Excel",
-        "description": "If you can build a spreadsheet, you're ready to start visualizing data."
+        "title": "Career Switchers",
+        "description": "Moving into data analytics, business intelligence, or data science roles."
       },
       {
-        "title": "Wants a real, lasting skill",
-        "description": "Looking to build a career-ready visualization skill set, not a quick weekend hack."
+        "title": "Small Business Owners",
+        "description": "Who want to understand and visualize their own business data."
+      },
+      {
+        "title": "Freelancers",
+        "description": "Looking to offer data visualization and dashboard-building services."
       }
     ],
-    "note": "No prerequisites required to enroll"
+    "note": "No prior coding experience is required. If you're comfortable with basic computer use and Excel, you're ready to start."
   },
   "whocore": {
     "points": [
       {
-        "title": "Complete beginners welcome",
-        "description": "No prior HR experience needed. We start from the fundamentals and build up."
+        "title": "Fresh Graduates (BBA, MBA, B.Com)",
+        "description": "Who want to build a career in Human Resources."
       },
       {
-        "title": "Can commit a few hours a week",
-        "description": "5-7 focused hours weekly is enough to keep pace with the projects."
+        "title": "Working Professionals",
+        "description": "In admin, operations, or customer service looking to switch to HR."
       },
       {
-        "title": "Enjoys working with people",
-        "description": "Great for anyone starting out in core HR operations."
+        "title": "Career Restarters",
+        "description": "Homemakers or professionals returning to the workforce."
       },
       {
-        "title": "Wants a real, lasting skill",
-        "description": "Looking to build a career-ready Core HR skill set, not a quick weekend hack."
+        "title": "Small Business Owners & Startup Founders",
+        "description": "Who want to manage HR functions in-house."
+      },
+      {
+        "title": "HR Freshers",
+        "description": "Who have theoretical knowledge but lack practical, hands-on training."
       }
     ],
-    "note": "No prerequisites required to enroll"
+    "note": "If you live in Raipur and are confused about \"how to start a career in HR,\" this course removes the guesswork with a step-by-step, practical roadmap."
+  },
+  "whoaws": {
+    "points": [
+      {
+        "title": "Final-year students and recent graduates",
+        "description": "Aiming for a career in cloud computing."
+      },
+      {
+        "title": "System administrators and IT support staff",
+        "description": "Looking to upgrade their skills."
+      },
+      {
+        "title": "Software developers",
+        "description": "Who want to understand cloud deployment."
+      },
+      {
+        "title": "Working professionals in Raipur",
+        "description": "Planning a switch to a cloud or DevOps role."
+      },
+      {
+        "title": "Anyone preparing for an AWS certification exam",
+        "description": "Who wants structured, guided learning."
+      }
+    ],
+    "note": "No prior cloud experience is required. Basic familiarity with computers and networking concepts is helpful but not mandatory. The course starts from the fundamentals."
+  },
+  "whodevops": {
+    "points": [
+      {
+        "title": "Freshers and BCA/MCA/B.Tech graduates",
+        "description": "Looking to start a career in DevOps."
+      },
+      {
+        "title": "Software developers",
+        "description": "Who want to add deployment and automation skills."
+      },
+      {
+        "title": "System administrators",
+        "description": "Transitioning into cloud and DevOps roles."
+      },
+      {
+        "title": "IT professionals in Raipur",
+        "description": "Seeking a career switch into high-paying tech roles."
+      },
+      {
+        "title": "Working professionals",
+        "description": "Who want practical, project-based DevOps training."
+      },
+      {
+        "title": "Anyone preparing for DevOps, cloud, or SRE roles",
+        "description": "Who wants hands-on experience with real pipelines."
+      }
+    ],
+    "note": "No prior DevOps experience is required. Basic computer and networking familiarity is helpful. We start from the fundamentals of Linux and build up to full CI/CD and cloud deployment."
   }
 }

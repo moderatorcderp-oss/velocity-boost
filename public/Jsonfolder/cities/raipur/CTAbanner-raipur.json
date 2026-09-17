@@ -330,193 +330,348 @@
         ]
     },
     "datascience": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
+        "badge": "Free Live Demo",
+        "title": "Your Data Science and AI Career in Raipur Starts Here",
+        "subtitle": "Seats for the next batch of our Data Science with AI course in Raipur are filling fast. Take the first step toward a data-driven career today.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Book Your Free Demo Class",
+        "trust": "Limited seats available · Real placement support",
+        "screenTitle": "Data Science Live Lab",
+        "widgets": [
+            "Python",
+            "ML Models",
+            "Gen AI",
+            "Projects"
+        ]
     },
     "dataanalytics": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
+        "badge": "Free Live Demo",
+        "title": "Your Data Analytics with Gen AI Career Starts Right Here in Raipur",
+        "subtitle": "Seats for the next batch are filling fast. Learn the exact skills companies are hiring for — data analytics powered by Generative AI.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to Our Course Counselor",
+        "trust": "Limited seats available · Real placement support",
+        "screenTitle": "Analytics Dashboard Lab",
+        "widgets": [
+            "Excel",
+            "SQL",
+            "Power BI",
+            "Gen AI"
+        ]
     },
     "businessanalytics": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
+        "badge": "Free Live Demo",
+        "title": "Ready to Build a Career in Business Analytics?",
+        "subtitle": "Join Raipur's practical Business Analytics program and learn to turn data into decisions that drive growth. Seats for the next batch are limited.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to a Course Counselor",
+        "trust": "Limited seats available · Real placement support",
+        "screenTitle": "Business Analytics Lab",
+        "widgets": [
+            "Dashboards",
+            "KPIs",
+            "Insights",
+            "Reports"
+        ]
     },
-    "ai": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
+    "aiml": {
+        "badge": "Free Live Demo",
+        "title": "Ready to Build Your Career in AI & Machine Learning?",
+        "subtitle": "Join Raipur's AI & ML course and go from beginner to job-ready with real projects, expert mentorship, and placement support.",
+        "primaryBtn": "Book Your Free Demo Class",
+        "secondaryBtn": "Talk to a Career Counselor",
+        "trust": "Limited seats available · Real placement support",
+        "screenTitle": "AI & ML Live Lab",
+        "widgets": [
+            "Python",
+            "Deep Learning",
+            "NLP",
+            "Projects"
+        ]
+    },
+    "genai": {
+        "badge": "Free Live Demo",
+        "title": "Ready to Future-Proof Your Career with Generative AI?",
+        "subtitle": "Join Raipur's leading Generative AI course and start building real, in-demand AI skills with expert mentors, hands-on projects, and a certificate that means something.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to a Course Counselor",
+        "trust": "Limited seats available · Real placement support",
+        "screenTitle": "Generative AI Lab",
+        "widgets": [
+            "Prompt Eng.",
+            "LLMs",
+            "Chatbots",
+            "Projects"
+        ]
+    },
+    "agenticai": {
+        "badge": "Free Live Demo",
+        "title": "Ready to Build with Agentic AI in Raipur?",
+        "subtitle": "Join Raipur's practical Agentic AI course and learn to design, build, and deploy intelligent AI agents with hands-on projects and expert mentorship.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to a Course Counselor",
+        "trust": "Limited seats available · Real placement support",
+        "screenTitle": "Agentic AI Lab",
+        "widgets": [
+            "Agents",
+            "LLMs",
+            "Automation",
+            "Projects"
+        ]
     },
     "fullstack": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
+        "badge": "Free Live Demo",
+        "title": "Ready to Become a Full-Stack Developer in Raipur?",
+        "subtitle": "Join Raipur's practical Full-Stack program and learn front-end to back-end development with real projects and placement support. Seats are limited.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Book a Free Demo Class",
+        "trust": "Limited seats available · Real placement support",
+        "screenTitle": "Full-Stack Dev Lab",
+        "widgets": [
+            "Frontend",
+            "Backend",
+            "APIs",
+            "Projects"
+        ]
     },
     "java": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
+        "badge": "Free Live Demo",
+        "title": "Your Java Developer Journey Starts Right Here in Raipur",
+        "subtitle": "Seats are limited for the upcoming batch. Book your free demo class today and see how we teach before you commit.",
+        "primaryBtn": "Book Free Demo Class",
+        "secondaryBtn": "Talk to a Counselor",
+        "trust": "Limited seats available · Real placement support",
+        "screenTitle": "Java Development Lab",
+        "widgets": [
+            "Core Java",
+            "Advanced Java",
+            "Projects",
+            "Git"
+        ]
     },
     "python": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
+        "badge": "Free Live Demo",
+        "title": "Your AI-Powered Career Starts Here in Raipur",
+        "subtitle": "Seats for the next batch of our Python with AI course in Raipur are filling fast. Join a training program built on real projects, real mentorship, and real career outcomes.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to a Career Counselor",
+        "trust": "Limited seats available · Real placement support",
+        "screenTitle": "Python & AI Lab",
+        "widgets": [
+            "Python",
+            "ML",
+            "Automation",
+            "Projects"
+        ]
     },
     "salesforce": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
+        "badge": "Free Live Demo",
+        "title": "Your Salesforce Career Starts Right Here in Raipur",
+        "subtitle": "Seats are limited for the upcoming batch. Enroll in Raipur's leading Salesforce course today and take the first step toward a high-growth career in CRM and cloud technology.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to a Counselor",
+        "trust": "Limited seats available · Real placement support",
+        "screenTitle": "Salesforce Live Org",
+        "widgets": [
+            "Admin",
+            "Flows",
+            "Reports",
+            "Projects"
+        ]
     },
     "tableau": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
+        "badge": "Free Live Demo",
+        "title": "Ready to Start Your Data Analytics Career?",
+        "subtitle": "Join Raipur's most hands-on Tableau course and start building dashboards that actually get noticed by recruiters.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to a Course Counsellor",
+        "trust": "Limited seats available · Real placement support",
+        "screenTitle": "Tableau Dashboard Lab",
+        "widgets": [
+            "Dashboards",
+            "Calcs",
+            "Storytelling",
+            "Projects"
+        ]
     },
     "powerbi": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
+        "badge": "Free Live Demo",
+        "title": "Ready to Build a Career Around Data?",
+        "subtitle": "Enroll in Raipur's most practical Power BI course and start building dashboards that get noticed — by employers, by clients, and by your own business.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to a Course Counselor",
+        "trust": "Limited seats available · Real placement support",
+        "screenTitle": "Power BI Dashboard Lab",
+        "widgets": [
+            "Power Query",
+            "DAX",
+            "Dashboards",
+            "Projects"
+        ]
+    },
+    "aws": {
+        "badge": "Free Live Demo",
+        "title": "Ready to Start Your Cloud Career with the Best AWS Course in Raipur?",
+        "subtitle": "Limited seats available for the upcoming batch. Learn from experienced trainers, work on real projects, and get certified.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to a Course Counselor",
+        "trust": "Limited seats available · Real placement support",
+        "screenTitle": "AWS Cloud Lab",
+        "widgets": [
+            "EC2",
+            "S3",
+            "IAM",
+            "Projects"
+        ]
+    },
+    "devops": {
+        "badge": "Free Live Demo",
+        "title": "Your DevOps Career Starts Right Here in Raipur",
+        "subtitle": "Seats are limited for the upcoming batch. Get hands-on training, real projects, and placement support to launch your career as a DevOps engineer.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to a Course Counselor",
+        "trust": "Limited seats available · Real placement support",
+        "screenTitle": "DevOps Pipeline Lab",
+        "widgets": [
+            "Docker",
+            "Kubernetes",
+            "CI/CD",
+            "Projects"
+        ]
     },
     "corehr": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
+        "badge": "Free Live Demo",
+        "title": "Your HR Career Starts Here — Right Here in Raipur",
+        "subtitle": "Don't just learn HR theory — master the practical skills companies actually hire for. Join the most trusted Core HR Course in Raipur and take your first confident step toward an HR career.",
+        "primaryBtn": "Book Your Free Demo Class",
+        "secondaryBtn": "Download Course Brochure",
+        "trust": "Limited seats available · Real placement support",
+        "screenTitle": "HR Practice Lab",
+        "widgets": [
+            "Recruitment",
+            "Payroll",
+            "Compliance",
+            "Policies"
+        ]
     },
     "hrpayroll": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
+        "badge": "Free Live Demo",
+        "title": "Ready to Build a Career in HR and Payroll?",
+        "subtitle": "Seats for the next batch of our HR Payroll Course in Raipur are filling fast. Learn practical payroll skills, master the tools employers want, and get placement support to land your first — or next — HR payroll role.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to a Course Counsellor",
+        "trust": "Limited seats available · Real placement support",
+        "screenTitle": "Payroll Practice Lab",
+        "widgets": [
+            "Salary Struct.",
+            "PF / ESI",
+            "TDS",
+            "Settlements"
+        ]
     },
     "hrmanagement": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
+        "badge": "Free Live Demo",
+        "title": "Your HR Career Starts Right Here in Raipur",
+        "subtitle": "Don't just learn HR, practice it, live it, and get certified for it. Join the HR Management Course in Raipur trusted by 500+ learners and start building a career that puts people first.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Book a Free Counseling Call",
+        "trust": "Limited seats available · Real placement support",
+        "screenTitle": "HR Management Lab",
+        "widgets": [
+            "Lifecycle",
+            "Appraisals",
+            "Policies",
+            "Reports"
+        ]
     },
     "hrgeneralist": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
+        "badge": "Free Live Demo",
+        "title": "Your HR Career Starts With One Decision — Make It Today",
+        "subtitle": "Seats for the next batch of our HR Generalist course in Raipur are filling up fast. Whether you are a fresher exploring HR for the first time or a professional ready to step into a generalist role, this is your moment.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Book a Free Counselling Session",
+        "trust": "Limited seats available · Real placement support",
+        "screenTitle": "HR Generalist Lab",
+        "widgets": [
+            "Recruitment",
+            "Onboarding",
+            "Payroll",
+            "Compliance"
+        ]
     },
     "hranalytics": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
+        "badge": "Free Live Demo",
+        "title": "Ready to Build Your Career in HR Analytics?",
+        "subtitle": "Join Raipur's most practical, project-based HR Analytics course and turn workforce data into your biggest career advantage. Seats for the next batch are filling fast.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to Our Career Counselor",
+        "trust": "Limited seats available · Real placement support",
+        "screenTitle": "HR Analytics Lab",
+        "widgets": [
+            "Dashboards",
+            "Attrition",
+            "KPIs",
+            "Power BI"
+        ]
     },
     "hrtraining": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
+        "badge": "Free Live Demo",
+        "title": "Ready to build a real career in HR?",
+        "subtitle": "Join the most practical HR training in Raipur and get hands-on with recruitment, payroll, compliance, and everything else a real HR job demands. Seats for the next batch are filling up fast.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Book a Free Demo Class",
+        "trust": "Limited seats available · Real placement support",
+        "screenTitle": "HR Training Lab",
+        "widgets": [
+            "Recruitment",
+            "Payroll",
+            "Compliance",
+            "Policies"
+        ]
     },
     "itcourses": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
+        "badge": "Free Live Demo",
+        "title": "Ready to Launch Your IT Career in Raipur?",
+        "subtitle": "Explore our full range of practical IT, Data, and AI courses designed for job-ready skills, real projects, and placement support. Seats are limited across batches.",
+        "primaryBtn": "Explore Courses",
+        "secondaryBtn": "Talk to a Counselor",
+        "trust": "Raipur classroom + online options · Real placement support",
+        "screenTitle": "IT Career Lab",
+        "widgets": [
+            "Data",
+            "AI",
+            "Cloud",
+            "Dev"
+        ]
     },
     "hrcourses": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
+        "badge": "Free Live Demo",
+        "title": "Ready to Build a Career in Human Resources?",
+        "subtitle": "Join Raipur's practical HR training programs covering Core HR, Payroll, Generalist, Analytics, and more — with hands-on projects and placement support.",
+        "primaryBtn": "Explore HR Courses",
+        "secondaryBtn": "Talk to a Counselor",
+        "trust": "Limited seats available · Real placement support",
+        "screenTitle": "HR Career Lab",
+        "widgets": [
+            "Core HR",
+            "Payroll",
+            "Analytics",
+            "Generalist"
+        ]
     },
     "datavisualization": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
+        "badge": "Free Live Demo",
+        "title": "Your Data Visualization with AI Career Starts Right Here in Raipur",
+        "subtitle": "Seats are limited to keep batches personal and mentor-led. Join the next batch and start building dashboards, charts, and AI-powered reports that get you noticed.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to a Course Counselor",
+        "trust": "Limited seats available · Real placement support",
+        "screenTitle": "Data Viz Lab",
+        "widgets": [
+            "Power BI",
+            "Tableau",
+            "Python Viz",
+            "AI Tools"
+        ]
     }
 }

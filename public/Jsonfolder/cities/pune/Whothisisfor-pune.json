@@ -615,44 +615,52 @@
   "whods": {
     "points": [
       {
-        "title": "Complete beginners welcome",
-        "description": "No prior coding or statistics background needed. We build up from data fundamentals."
+        "title": "Freshers and recent graduates",
+        "description": "From engineering, commerce, or science backgrounds who want to enter data science without a technical degree in the field."
       },
       {
-        "title": "Can commit a few hours a week",
-        "description": "5-7 focused hours weekly is enough to keep pace with the datasets and models."
+        "title": "Working professionals",
+        "description": "In IT, analytics, or operations roles who want to move into a data science or AI-focused position."
       },
       {
-        "title": "Comfortable with basic math & logic",
-        "description": "High-school level math is enough; we teach the statistics and ML theory as we go."
+        "title": "Career switchers from non-technical backgrounds",
+        "description": "Who are serious about putting in the work to retrain."
       },
       {
-        "title": "Wants a real, lasting skill",
-        "description": "Looking to build a career-ready data science skill set, not a quick weekend hack."
+        "title": "Developers and analysts",
+        "description": "Who already know some Python or SQL and want to formalize their machine learning and AI skills."
+      },
+      {
+        "title": "Entrepreneurs and product managers",
+        "description": "Who want enough hands-on fluency in data and AI to make better product and hiring decisions."
       }
     ],
-    "note": "No prerequisites required to enroll"
+    "note": "No prior data science experience is required. The course meets you where you are and builds from there."
   },
   "whoda": {
     "points": [
       {
-        "title": "Complete beginners welcome",
-        "description": "No prior analytics experience needed. We start with spreadsheets and build up."
+        "title": "Freshers and graduates",
+        "description": "Who want to start a career in data analytics without needing a technical background first."
       },
       {
-        "title": "Can commit a few hours a week",
-        "description": "5-7 focused hours weekly is enough to keep pace with the projects."
+        "title": "Working professionals",
+        "description": "From operations, finance, marketing, or sales who want to add data and AI skills to their current role."
       },
       {
-        "title": "Has a computer & internet",
-        "description": "Windows, Mac, or Linux - nothing special required to get started."
+        "title": "Career switchers",
+        "description": "Moving from a non-analytics background who need a structured, practical path into the field."
       },
       {
-        "title": "Wants a real, lasting skill",
-        "description": "Looking to build a career-ready analytics skill set, not a quick weekend hack."
+        "title": "Small business owners & entrepreneurs",
+        "description": "Who want to make sense of their own business data and use AI tools to work faster."
+      },
+      {
+        "title": "Anyone in Pune looking for classroom + mentorship",
+        "description": "Learners who prefer a mentor-led course rather than a purely self-paced online video series."
       }
     ],
-    "note": "No prerequisites required to enroll"
+    "note": "No advanced coding background is required. The course starts from the basics and builds up gradually."
   },
   "whoba": {
     "points": [
@@ -661,40 +669,98 @@
         "description": "No prior business analytics background needed. We start from the fundamentals."
       },
       {
-        "title": "Can commit a few hours a week",
-        "description": "5-7 focused hours weekly is enough to keep pace with the case studies."
+        "title": "Working professionals",
+        "description": "Who want to move from gut-feel to evidence-based decisions."
       },
       {
-        "title": "Interested in data-driven decisions",
-        "description": "Ideal for anyone who wants to move from gut-feel to evidence-based choices."
+        "title": "Aspiring Business Analysts",
+        "description": "Looking for a structured path into BI and analytics roles."
       },
       {
-        "title": "Wants a real, lasting skill",
-        "description": "Looking to build a career-ready skill set, not a quick weekend hack."
+        "title": "Managers and team leads",
+        "description": "Who need to interpret data and present insights to leadership."
       }
     ],
-    "note": "No prerequisites required to enroll"
+    "note": "No prerequisites required to enroll."
   },
   "whogpt": {
     "points": [
       {
-        "title": "Complete beginners welcome",
-        "description": "No prior AI or coding experience needed. We start from the fundamentals."
+        "title": "Software developers",
+        "description": "Who want to add Generative AI to their existing tech stack."
       },
       {
-        "title": "Can commit a few hours a week",
-        "description": "5-7 focused hours weekly is enough to keep pace with the projects."
+        "title": "Data analysts and data scientists",
+        "description": "Transitioning into AI/ML roles."
       },
       {
-        "title": "Curious about AI tools",
-        "description": "Great for anyone who wants to actually understand and build with LLMs, not just use them."
+        "title": "Freshers and final-year students",
+        "description": "Looking to enter the AI job market in Pune."
       },
       {
-        "title": "Wants a real, lasting skill",
-        "description": "Looking to build a career-ready AI skill set, not a quick weekend hack."
+        "title": "Product managers and business analysts",
+        "description": "Who want to understand and apply AI in their workflow."
+      },
+      {
+        "title": "Working professionals switching careers",
+        "description": "Into Generative AI without a full-time break."
+      },
+      {
+        "title": "Entrepreneurs and freelancers",
+        "description": "Who want to build AI-powered tools and products."
       }
     ],
-    "note": "No prerequisites required to enroll"
+    "note": "No prior AI or heavy coding experience is required for the core modules."
+  },
+  "whoagentic": {
+    "points": [
+      {
+        "title": "Software developers",
+        "description": "Who want to move from traditional coding into building AI-powered applications."
+      },
+      {
+        "title": "Data scientists and ML engineers",
+        "description": "Looking to apply their skills to agentic and LLM-based systems."
+      },
+      {
+        "title": "Product managers and analysts",
+        "description": "Who want a working, technical understanding of how agentic AI systems are built."
+      },
+      {
+        "title": "Freshers and final-year students",
+        "description": "With basic Python knowledge who want to enter the AI job market with a practical skill set."
+      },
+      {
+        "title": "Working professionals in Pune's IT sector",
+        "description": "Looking to reskill without quitting their job (evening and weekend batches available)."
+      }
+    ],
+    "note": "Basic familiarity with Python or LLMs is helpful but not mandatory."
+  },
+  "whoaiml": {
+    "points": [
+      {
+        "title": "Freshers and final-year students",
+        "description": "Who want to start their career in AI, ML, or data science instead of general software roles."
+      },
+      {
+        "title": "Working professionals",
+        "description": "In IT, testing, or support roles looking to transition into AI/ML without quitting their job first."
+      },
+      {
+        "title": "Non-tech professionals",
+        "description": "From finance, operations, or marketing backgrounds who want a structured, beginner-friendly path into AI."
+      },
+      {
+        "title": "Entrepreneurs and product folks",
+        "description": "Who want to understand AI well enough to build or evaluate AI-driven products."
+      },
+      {
+        "title": "Career returners",
+        "description": "Looking for a practical refresher backed by projects, not just certificates."
+      }
+    ],
+    "note": "You don't need a coding background to start — but you do need the willingness to practice consistently."
   },
   "whofullstack": {
     "points": [
@@ -703,229 +769,405 @@
         "description": "No prior coding experience needed. We start from the fundamentals and build up."
       },
       {
-        "title": "Can commit a few hours a week",
-        "description": "5-7 focused hours weekly is enough to keep pace with the projects."
+        "title": "College students & freshers",
+        "description": "Who want to build end-to-end applications for placements."
       },
       {
-        "title": "Has a computer & internet",
-        "description": "Windows, Mac, or Linux - nothing special required to get started."
+        "title": "Working professionals",
+        "description": "Looking to move into full-stack or product engineering roles."
       },
       {
-        "title": "Wants a real, lasting skill",
-        "description": "Looking to build a career-ready skill set, not a quick weekend hack."
+        "title": "Career switchers",
+        "description": "From non-tech backgrounds who want a structured path into software development."
       }
     ],
-    "note": "No prerequisites required to enroll"
+    "note": "No prerequisites required to enroll."
   },
   "whojava": {
     "points": [
       {
-        "title": "Complete beginners welcome",
-        "description": "No prior programming experience needed. We start from the fundamentals."
+        "title": "College students & freshers",
+        "description": "Who want a strong foundation in Java before entering the job market."
       },
       {
-        "title": "Can commit a few hours a week",
-        "description": "5-7 focused hours weekly is enough to keep pace with the projects."
+        "title": "Working professionals",
+        "description": "Looking to switch into a development role or upskill in backend technologies."
       },
       {
-        "title": "Has a computer & internet",
-        "description": "Windows, Mac, or Linux - nothing special required to get started."
+        "title": "Non-IT graduates",
+        "description": "Making a career change into software development."
       },
       {
-        "title": "Wants a real, lasting skill",
-        "description": "Looking to build a career-ready backend development skill set."
+        "title": "Engineers from other stacks",
+        "description": "Who want to add Java to their skill set."
+      },
+      {
+        "title": "Anyone in Pune preparing for Java technical interviews",
+        "description": "Or campus placements."
       }
     ],
-    "note": "No prerequisites required to enroll"
+    "note": "No prior programming experience is required for the beginner track."
   },
   "whopython": {
     "points": [
       {
-        "title": "Complete beginners welcome",
-        "description": "No prior coding experience needed. We start from the fundamentals and build up."
+        "title": "College students & freshers",
+        "description": "Who want to build a strong programming foundation before campus placements."
       },
       {
-        "title": "Can commit a few hours a week",
-        "description": "5-7 focused hours weekly is enough to keep pace with the projects."
+        "title": "Working professionals",
+        "description": "Looking to switch into software development, data analytics, or automation roles."
       },
       {
-        "title": "Has a computer & internet",
-        "description": "Windows, Mac, or Linux - nothing special required to get started."
+        "title": "Non-tech background learners",
+        "description": "Who want an approachable entry point into coding."
       },
       {
-        "title": "Wants a real, lasting skill",
-        "description": "Looking to build a career-ready Python skill set, not a quick weekend hack."
+        "title": "Entrepreneurs & freelancers",
+        "description": "Who want to automate repetitive business tasks using Python."
+      },
+      {
+        "title": "Anyone in Pune",
+        "description": "Searching for a structured, mentor-led Python course instead of scattered YouTube tutorials."
       }
     ],
-    "note": "No prerequisites required to enroll"
+    "note": "No prior coding experience is required. If you can use a computer comfortably, you can start this course."
   },
   "whosales": {
     "points": [
       {
-        "title": "Complete beginners welcome",
-        "description": "No prior CRM or coding experience needed. We start from the fundamentals."
+        "title": "Freshers and graduates",
+        "description": "Looking to start a career in CRM or IT."
       },
       {
-        "title": "Can commit a few hours a week",
-        "description": "5-7 focused hours weekly is enough to keep pace with the configuration labs."
+        "title": "Working professionals",
+        "description": "Wanting to switch into Salesforce roles."
       },
       {
-        "title": "Has a computer & internet",
-        "description": "Windows, Mac, or Linux - nothing special required to get started."
+        "title": "Business analysts",
+        "description": "Who want to add Salesforce configuration skills."
       },
       {
-        "title": "Wants a real, lasting skill",
-        "description": "Looking to build a career-ready Salesforce skill set, not a quick weekend hack."
+        "title": "Software developers",
+        "description": "Transitioning into Salesforce development."
+      },
+      {
+        "title": "Sales, support, or operations professionals",
+        "description": "Who already use Salesforce and want to go deeper."
+      },
+      {
+        "title": "Anyone in Pune",
+        "description": "Looking for a structured, project-based Salesforce training program with certification guidance."
       }
     ],
-    "note": "No prerequisites required to enroll"
+    "note": "No prior coding experience is required for the Admin track."
   },
   "whopowerbi": {
     "points": [
       {
-        "title": "Complete beginners welcome",
-        "description": "No prior BI tool experience needed. We start from the fundamentals."
+        "title": "Freshers and graduates",
+        "description": "Who want to enter the data analytics field with a strong, practical skill."
       },
       {
-        "title": "Can commit a few hours a week",
-        "description": "5-7 focused hours weekly is enough to keep pace with the dashboards."
+        "title": "Excel users",
+        "description": "Ready to move beyond pivot tables into automated, interactive dashboards."
       },
       {
-        "title": "Comfortable with basic Excel",
-        "description": "If you can build a spreadsheet, you're ready to start with Power BI."
+        "title": "Working professionals",
+        "description": "In finance, marketing, sales, HR, or operations who need to report on data as part of their job."
       },
       {
-        "title": "Wants a real, lasting skill",
-        "description": "Looking to build a career-ready reporting skill set, not a quick weekend hack."
+        "title": "Business analysts and MIS executives",
+        "description": "Looking to upgrade their reporting skills."
+      },
+      {
+        "title": "Career switchers",
+        "description": "Aiming to move into data analytics or business intelligence roles."
       }
     ],
-    "note": "No prerequisites required to enroll"
+    "note": "No coding background is required. If you're comfortable with basic Excel, you're ready to start."
   },
   "whotableau": {
     "points": [
       {
-        "title": "Complete beginners welcome",
-        "description": "No prior visualization tool experience needed. We start from the fundamentals."
+        "title": "Freshers and recent graduates",
+        "description": "Who want a practical, job-focused entry point into data analytics."
       },
       {
-        "title": "Can commit a few hours a week",
-        "description": "5-7 focused hours weekly is enough to keep pace with the dashboards."
+        "title": "Working professionals in non-technical roles",
+        "description": "Sales, marketing, operations, finance who want to add data visualization to their skill set."
       },
       {
-        "title": "Comfortable with basic Excel",
-        "description": "If you can build a spreadsheet, you're ready to start with Tableau."
+        "title": "Career switchers",
+        "description": "Moving into business analyst, data analyst, or BI developer roles."
       },
       {
-        "title": "Wants a real, lasting skill",
-        "description": "Looking to build a career-ready visualization skill set, not a quick weekend hack."
+        "title": "Excel power users",
+        "description": "Ready to move into interactive, scalable dashboarding."
+      },
+      {
+        "title": "Software professionals",
+        "description": "Who want to move sideways into analytics or product roles."
       }
     ],
-    "note": "No prerequisites required to enroll"
+    "note": "No coding background is required. Basic comfort with Excel and numbers is enough to get started."
+  },
+  "whodatavisual": {
+    "points": [
+      {
+        "title": "Working professionals",
+        "description": "In marketing, finance, sales, or operations who want to present data more effectively."
+      },
+      {
+        "title": "Freshers and students",
+        "description": "Looking to break into data analytics, business intelligence, or data science roles."
+      },
+      {
+        "title": "Career switchers",
+        "description": "Moving into analytics from non-technical backgrounds."
+      },
+      {
+        "title": "Entrepreneurs and business owners",
+        "description": "Who want to make faster, data-backed decisions."
+      },
+      {
+        "title": "Excel users ready to level up",
+        "description": "Into interactive dashboards and AI-assisted reporting."
+      }
+    ],
+    "note": "No prior visualisation experience is required. Basic comfort with Excel is enough to get started."
+  },
+  "whoaws": {
+    "points": [
+      {
+        "title": "Freshers & Engineering Graduates",
+        "description": "Looking to start a career in cloud computing."
+      },
+      {
+        "title": "Working IT Professionals",
+        "description": "Developers, sysadmins, testers upgrading to cloud roles."
+      },
+      {
+        "title": "DevOps & Support Engineers",
+        "description": "Who want to formalise their AWS knowledge with certification."
+      },
+      {
+        "title": "Non-IT professionals",
+        "description": "Transitioning into tech through cloud computing."
+      },
+      {
+        "title": "Business owners & entrepreneurs",
+        "description": "Who want to understand and manage their own cloud infrastructure."
+      },
+      {
+        "title": "Students preparing for AWS certification exams",
+        "description": "Who need structured, mentor-led guidance."
+      }
+    ],
+    "note": "No prior coding or cloud experience is required — the course starts from the fundamentals and builds up."
+  },
+  "whodevops": {
+    "points": [
+      {
+        "title": "Freshers & recent graduates",
+        "description": "Who want to enter IT with a high-demand, high-paying skill set."
+      },
+      {
+        "title": "System/Network Administrators",
+        "description": "Looking to move into modern cloud and automation roles."
+      },
+      {
+        "title": "Software Developers",
+        "description": "Who want end-to-end ownership of build, test, and deployment."
+      },
+      {
+        "title": "QA Engineers",
+        "description": "Aiming to move into automation and release engineering."
+      },
+      {
+        "title": "Working professionals in Pune",
+        "description": "Who want weekend or evening batches without quitting their job."
+      },
+      {
+        "title": "IT professionals switching careers",
+        "description": "Into cloud and DevOps roles."
+      }
+    ],
+    "note": "Basic understanding of any programming language and familiarity with computer networks is helpful but not mandatory."
   },
   "whoana": {
     "points": [
       {
-        "title": "Complete beginners welcome",
-        "description": "No prior HR analytics experience needed. We start from the fundamentals."
+        "title": "HR professionals and generalists",
+        "description": "Who want to add data skills to their profile."
       },
       {
-        "title": "Can commit a few hours a week",
-        "description": "5-7 focused hours weekly is enough to keep pace with the projects."
+        "title": "Recruiters and talent acquisition specialists",
+        "description": "Moving into strategic roles."
       },
       {
-        "title": "Interested in people data",
-        "description": "Great for HR professionals who want to move into a data-driven role."
+        "title": "HR managers",
+        "description": "Responsible for reporting to leadership."
       },
       {
-        "title": "Wants a real, lasting skill",
-        "description": "Looking to build a career-ready people analytics skill set."
+        "title": "MBA/BBA graduates specializing in Human Resources",
+        "description": "Who want practical people-analytics skills."
+      },
+      {
+        "title": "Business analysts and consultants",
+        "description": "Working closely with HR teams."
+      },
+      {
+        "title": "Working professionals in Pune",
+        "description": "Looking to switch into People Analytics roles."
       }
     ],
-    "note": "No prerequisites required to enroll"
+    "note": "No prior coding or analytics background is required — the course starts from the basics and builds up."
   },
   "whoman": {
     "points": [
       {
-        "title": "Complete beginners welcome",
-        "description": "No prior HR management experience needed. We start from the fundamentals."
+        "title": "Fresh graduates (any stream)",
+        "description": "Aiming to start an HR career."
       },
       {
-        "title": "Can commit a few hours a week",
-        "description": "5-7 focused hours weekly is enough to keep pace with the case studies."
+        "title": "Working professionals",
+        "description": "Looking to switch into HR."
       },
       {
-        "title": "Interested in people leadership",
-        "description": "Ideal for anyone aiming to grow into an HR Manager or HRBP role."
+        "title": "Current HR executives",
+        "description": "Wanting to upskill or get certified."
       },
       {
-        "title": "Wants a real, lasting skill",
-        "description": "Looking to build a career-ready HR management skill set."
+        "title": "Small business owners",
+        "description": "Who want to manage HR in-house."
+      },
+      {
+        "title": "Admin or operations staff",
+        "description": "Moving into HR roles."
+      },
+      {
+        "title": "Anyone searching for a practical, placement-focused HR Management Course in Pune",
+        "description": ""
       }
     ],
-    "note": "No prerequisites required to enroll"
+    "note": "No prior HR experience is assumed. The program is designed for exactly that starting point."
   },
   "whopayroll": {
     "points": [
       {
-        "title": "Complete beginners welcome",
-        "description": "No prior payroll experience needed. We start from the fundamentals."
+        "title": "Freshers and graduates (B.Com, BBA, MBA-HR)",
+        "description": "Starting a career in HR or payroll."
       },
       {
-        "title": "Can commit a few hours a week",
-        "description": "5-7 focused hours weekly is enough to keep pace with the calculations."
+        "title": "HR generalists",
+        "description": "Who want to specialize in payroll operations."
       },
       {
-        "title": "Comfortable with basic math",
-        "description": "If you're comfortable with numbers, you're ready to start with payroll."
+        "title": "Accounts and finance professionals",
+        "description": "Moving into payroll roles."
       },
       {
-        "title": "Wants a real, lasting skill",
-        "description": "Looking to build a career-ready payroll processing skill set."
+        "title": "Working professionals",
+        "description": "Preparing for a Payroll Executive, Payroll Analyst, or HR-Payroll Specialist role."
+      },
+      {
+        "title": "Entrepreneurs and small business owners",
+        "description": "Who manage payroll in-house."
+      },
+      {
+        "title": "Anyone looking for a practical, placement-focused HR Payroll Course in Pune",
+        "description": ""
       }
     ],
-    "note": "No prerequisites required to enroll"
+    "note": "No prior payroll experience is required. Basic familiarity with Excel is helpful but not mandatory."
   },
   "whogen": {
     "points": [
       {
-        "title": "Complete beginners welcome",
-        "description": "No prior HR generalist experience needed. We start from the fundamentals."
+        "title": "A graduate looking to start a career in Human Resources",
+        "description": ""
       },
       {
-        "title": "Can commit a few hours a week",
-        "description": "5-7 focused hours weekly is enough to keep pace with the projects."
+        "title": "An HR fresher who wants structured, practical training",
+        "description": ""
       },
       {
-        "title": "Enjoys working with people",
-        "description": "Great for anyone who wants a broad, hands-on HR operations role."
+        "title": "A working professional from another field planning to switch to HR",
+        "description": ""
       },
       {
-        "title": "Wants a real, lasting skill",
-        "description": "Looking to build a career-ready HR generalist skill set."
+        "title": "An HR executive who wants to formalize skills with certification",
+        "description": ""
+      },
+      {
+        "title": "A returning professional (career break) looking to re-enter the workforce",
+        "description": ""
+      },
+      {
+        "title": "A business owner or team lead who wants to manage HR functions in-house",
+        "description": ""
       }
     ],
-    "note": "No prerequisites required to enroll"
+    "note": "No prior HR background is required — the course starts from the basics and builds up to advanced, real-world HR operations."
   },
   "whohrtrain": {
     "points": [
       {
-        "title": "Complete beginners welcome",
-        "description": "No prior HR experience needed. We cover Core HR, Payroll and Analytics from scratch."
+        "title": "Freshers and graduates",
+        "description": "Who want to start their career in HR."
       },
       {
-        "title": "Can commit a few hours a week",
-        "description": "5-7 focused hours weekly is enough to keep pace with all modules."
+        "title": "Working professionals from any background",
+        "description": "Looking to switch into HR."
       },
       {
-        "title": "Wants breadth across HR",
-        "description": "Ideal for those who want multiple HR career paths open to them."
+        "title": "HR executives and coordinators",
+        "description": "Aiming to move up to HRBP or generalist roles."
       },
       {
-        "title": "Wants a real, lasting skill",
-        "description": "Looking to build a well-rounded, career-ready HR skill set."
+        "title": "Business owners and startup founders",
+        "description": "Who want to set up HR processes themselves."
+      },
+      {
+        "title": "MBA/BBA HR students",
+        "description": "Looking for practical, placement-ready HR Training in Pune alongside their academics."
+      },
+      {
+        "title": "Career-break returners",
+        "description": "Who want a refresher-style HR Training in Pune before re-entering the workforce."
       }
     ],
-    "note": "No prerequisites required to enroll"
+    "note": "No prior HR experience is required. Basic computer literacy and comfort with MS Excel are recommended."
+  },
+  "whocore": {
+    "points": [
+      {
+        "title": "Freshers and graduates (BBA, MBA-HR, BCom, or any stream)",
+        "description": "Who want to start a career in HR."
+      },
+      {
+        "title": "Working professionals from non-HR backgrounds",
+        "description": "Looking to switch into Human Resources."
+      },
+      {
+        "title": "Existing HR executives",
+        "description": "Who want to strengthen their core HR and compliance knowledge."
+      },
+      {
+        "title": "Admin or operations staff",
+        "description": "Planning to move into an HR generalist role."
+      },
+      {
+        "title": "Entrepreneurs and small business owners",
+        "description": "Who want to manage HR functions in-house."
+      },
+      {
+        "title": "Anyone searching for a practical, job-ready HR course in Pune",
+        "description": "Rather than a purely academic one."
+      }
+    ],
+    "note": "No prior HR experience is required. The course is designed for both complete beginners and those already working in HR."
   },
   "whoit": {
     "points": [
@@ -946,7 +1188,7 @@
         "description": "Looking to build a career-ready tech skill set, not a quick weekend hack."
       }
     ],
-    "note": "No prerequisites required to enroll"
+    "note": "No prerequisites required to enroll."
   },
   "whohr": {
     "points": [
@@ -967,48 +1209,6 @@
         "description": "Looking to build a career-ready HR skill set, not a quick weekend hack."
       }
     ],
-    "note": "No prerequisites required to enroll"
-  },
-  "whodatavisual": {
-    "points": [
-      {
-        "title": "Complete beginners welcome",
-        "description": "No prior visualization experience needed. We start from the fundamentals."
-      },
-      {
-        "title": "Can commit a few hours a week",
-        "description": "5-7 focused hours weekly is enough to keep pace with the dashboards."
-      },
-      {
-        "title": "Comfortable with basic Excel",
-        "description": "If you can build a spreadsheet, you're ready to start visualizing data."
-      },
-      {
-        "title": "Wants a real, lasting skill",
-        "description": "Looking to build a career-ready visualization skill set, not a quick weekend hack."
-      }
-    ],
-    "note": "No prerequisites required to enroll"
-  },
-  "whocore": {
-    "points": [
-      {
-        "title": "Complete beginners welcome",
-        "description": "No prior HR experience needed. We start from the fundamentals and build up."
-      },
-      {
-        "title": "Can commit a few hours a week",
-        "description": "5-7 focused hours weekly is enough to keep pace with the projects."
-      },
-      {
-        "title": "Enjoys working with people",
-        "description": "Great for anyone starting out in core HR operations."
-      },
-      {
-        "title": "Wants a real, lasting skill",
-        "description": "Looking to build a career-ready Core HR skill set, not a quick weekend hack."
-      }
-    ],
-    "note": "No prerequisites required to enroll"
+    "note": "No prerequisites required to enroll."
   }
 }

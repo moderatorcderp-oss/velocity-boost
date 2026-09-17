@@ -330,193 +330,348 @@
         ]
     },
     "datascience": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
+        "badge": "Free Live Demo",
+        "title": "Pune's Data Science Job Market Isn't Waiting — Are You Ready?",
+        "subtitle": "Seats for the next batch of our Data Science with AI course are filling up. Get in early, get mentor attention, and start building the portfolio that gets you hired.",
+        "primaryBtn": "Reserve Your Seat Now",
+        "secondaryBtn": "Talk to a Counselor",
+        "trust": "Classroom + Live Online · Real projects · Placement support",
+        "screenTitle": "Data Science Live Lab",
+        "widgets": [
+            "Python",
+            "ML Models",
+            "Power BI",
+            "Gen AI"
+        ]
     },
     "dataanalytics": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
+        "badge": "Free Live Demo",
+        "title": "Ready to Start Your Career in Data Analytics with Gen AI?",
+        "subtitle": "Join {city}'s practical, project-based Data Analytics with Gen AI course and learn the exact skills companies are hiring for right now.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to a Course Counsellor",
+        "trust": "Classroom sessions · Live projects · 1-on-1 mentorship",
+        "screenTitle": "Analytics Dashboard",
+        "widgets": [
+            "Excel",
+            "SQL",
+            "Power BI",
+            "Gen AI"
+        ]
     },
     "businessanalytics": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
+        "badge": "Free Live Demo",
+        "title": "Ready to Make Data-Driven Business Decisions?",
+        "subtitle": "Join {city}'s practical Business Analytics program and learn the metrics, tools, and storytelling skills that leadership teams actually use.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to a Career Counsellor",
+        "trust": "Weekend & weekday batches · Real business case studies · Placement support",
+        "screenTitle": "Business Dashboard",
+        "widgets": [
+            "KPIs",
+            "Power BI",
+            "SQL",
+            "AI Insights"
+        ]
     },
     "ai": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
+        "badge": "Free Live Demo",
+        "title": "Your AI & ML Career in {city} Starts With One Decision",
+        "subtitle": "Seats for the next batch of our AI & ML course in {city} are filling up fast. Don't just learn AI — learn how to use it to build a career that keeps growing.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to a Career Counsellor",
+        "trust": "Download Free Brochure · Limited seats available",
+        "screenTitle": "AI Model Lab",
+        "widgets": [
+            "Python",
+            "TensorFlow",
+            "NLP",
+            "Deployment"
+        ]
+    },
+    "genai": {
+        "badge": "Free Live Demo",
+        "title": "Ready to Build a Career in Generative AI?",
+        "subtitle": "Join {city}'s most practical, project-driven Generative AI course and go from fundamentals to a job-ready AI portfolio in just a few weeks.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to an Admissions Counselor",
+        "trust": "Download Full Curriculum · Limited seats",
+        "screenTitle": "Generative AI Workspace",
+        "widgets": [
+            "Prompting",
+            "RAG",
+            "Agents",
+            "Custom GPTs"
+        ]
+    },
+    "agenticai": {
+        "badge": "Free Live Demo",
+        "title": "Seats for the Next Agentic AI Batch in {city} Are Filling Up",
+        "subtitle": "Learn to build autonomous AI agents with hands-on projects, real frameworks, and instructors who work in the field. Classroom in {city} or live online — your choice.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to Admissions",
+        "trust": "Download Full Syllabus · Limited seats per batch",
+        "screenTitle": "Agentic AI Lab",
+        "widgets": [
+            "LangChain",
+            "CrewAI",
+            "RAG",
+            "Multi-Agent"
+        ]
     },
     "fullstack": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
+        "badge": "Free Live Demo",
+        "title": "Ready to Build Full-Stack Applications That Get You Hired?",
+        "subtitle": "Join {city}'s practical full-stack program and walk away with a complete application you can show in interviews.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Book a Free Demo Class",
+        "trust": "Weekend & weekday batches · Portfolio projects · Placement support",
+        "screenTitle": "Full Stack Workspace",
+        "widgets": [
+            "Frontend",
+            "Backend",
+            "Database",
+            "Deploy"
+        ]
     },
     "java": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
+        "badge": "Free Live Demo",
+        "title": "Ready to Start Your Java Journey in {city}?",
+        "subtitle": "Seats for the next batch of our Java course in {city} are filling up fast. Get hands-on training, real projects, and placement support — all in one program.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to a Course Advisor",
+        "trust": "Weekday & weekend batches · Beginner to advanced · Classroom + Live Online",
+        "screenTitle": "Java Development Lab",
+        "widgets": [
+            "Core Java",
+            "Spring Boot",
+            "Hibernate",
+            "REST APIs"
+        ]
     },
     "python": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
+        "badge": "Free Live Demo",
+        "title": "Ready to Start Learning Python in {city}?",
+        "subtitle": "Seats fill up fast for every new batch of our Python course in {city}. Reserve your spot today and start building real projects within the first two weeks.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to a Course Advisor",
+        "trust": "No payment required to book your free demo class",
+        "screenTitle": "Python Coding Lab",
+        "widgets": [
+            "Core Python",
+            "OOP",
+            "Pandas",
+            "Projects"
+        ]
     },
     "salesforce": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
+        "badge": "Free Live Demo",
+        "title": "Ready to Start Your Salesforce Career in {city}?",
+        "subtitle": "Join our next batch and get hands-on with real Salesforce projects, expert mentorship, and certification support all in one program.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to a Course Counselor",
+        "trust": "Download Free Brochure · Limited seats",
+        "screenTitle": "Salesforce Org",
+        "widgets": [
+            "Admin",
+            "Apex",
+            "LWC",
+            "Flows"
+        ]
     },
     "tableau": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
+        "badge": "Free Live Demo",
+        "title": "Ready to Actually Use Tableau — Not Just Learn About It?",
+        "subtitle": "Seats for the next batch of this Tableau course in {city} are filling up. Join a class built around real dashboards, real data, and real interview outcomes.",
+        "primaryBtn": "Book Your Free Demo Class",
+        "secondaryBtn": "Talk to a Course Advisor",
+        "trust": "Weekend and weekday batches · Hands-on projects · Certificate on completion",
+        "screenTitle": "Tableau Dashboard",
+        "widgets": [
+            "Dashboards",
+            "Calculations",
+            "LOD",
+            "Stories"
+        ]
     },
     "powerbi": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
-    },
-    "corehr": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
-    },
-    "hrpayroll": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
-    },
-    "hrmanagement": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
-    },
-    "hrgeneralist": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
-    },
-    "hranalytics": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
-    },
-    "hrtraining": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
-    },
-    "itcourses": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
-    },
-    "hrcourses": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
+        "badge": "Free Live Demo",
+        "title": "Your Next Job Might Be One Dashboard Away",
+        "subtitle": "Seats for the upcoming batch of this Power BI course in {city} are filling fast. Join a class that's built around real projects, real feedback, and real outcomes — not just recorded videos.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Book a Free Demo Class",
+        "trust": "Classroom sessions · Live online batches · Real instructors",
+        "screenTitle": "Power BI Dashboard",
+        "widgets": [
+            "Power Query",
+            "DAX",
+            "Modelling",
+            "Reports"
+        ]
     },
     "datavisualization": {
-        "badge": "",
-        "title": "",
-        "subtitle": "",
-        "primaryBtn": "",
-        "secondaryBtn": "",
-        "trust": "",
-        "screenTitle": "",
-        "widgets": []
+        "badge": "Free Live Demo",
+        "title": "Your Data Deserves to Be Understood — Not Just Seen",
+        "subtitle": "Enroll in {city}'s leading Data Visualization with AI Course and start turning raw data into decisions, dashboards, and career opportunities.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to an Admissions Counselor",
+        "trust": "Hands-on projects · Power BI + Tableau + Python · Placement support",
+        "screenTitle": "Visualization Studio",
+        "widgets": [
+            "Power BI",
+            "Tableau",
+            "Python",
+            "AI Charts"
+        ]
+    },
+    "aws": {
+        "badge": "Free Live Demo",
+        "title": "Your AWS Career Starts With One Decision",
+        "subtitle": "Seats for the next batch of our AWS course in {city} are filling fast. Get hands-on AWS training, real projects, and placement support — all in one program.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Book Free Demo Class",
+        "trust": "Limited seats per batch · Online & Classroom options",
+        "screenTitle": "AWS Console",
+        "widgets": [
+            "EC2",
+            "S3",
+            "IAM",
+            "VPC"
+        ]
+    },
+    "devops": {
+        "badge": "Free Live Demo",
+        "title": "Seats Are Limited for the Next Batch of Our DevOps Course in {city}",
+        "subtitle": "Learn the tools real companies use, build a project you can defend in interviews, and get placement support from day one.",
+        "primaryBtn": "Reserve My Seat",
+        "secondaryBtn": "Talk to a Course Advisor",
+        "trust": "Download Free Curriculum PDF · Limited seats available",
+        "screenTitle": "DevOps Pipeline",
+        "widgets": [
+            "Docker",
+            "Kubernetes",
+            "Jenkins",
+            "Terraform"
+        ]
+    },
+    "corehr": {
+        "badge": "Free Live Demo",
+        "title": "Ready to Build a Real Career in HR?",
+        "subtitle": "Join the next batch of our Core HR Course in {city} and learn the skills recruiters actually screen for — recruitment, payroll, compliance, and HR analytics, all in one program.",
+        "primaryBtn": "Enroll Now — Limited Seats",
+        "secondaryBtn": "Talk to a Course Counsellor",
+        "trust": "Flexible EMI options · Weekday & weekend batches · Classroom and online formats",
+        "screenTitle": "HR Operations Desk",
+        "widgets": [
+            "Recruitment",
+            "Payroll",
+            "Compliance",
+            "HRMS"
+        ]
+    },
+    "hrpayroll": {
+        "badge": "Free Live Demo",
+        "title": "Your Career in HR Payroll Starts Here",
+        "subtitle": "Seats for the next batch of our HR Payroll Course in {city} are filling fast. Get hands-on training, real compliance knowledge, and placement support that actually helps you get hired.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to a Course Counsellor",
+        "trust": "100% Practical Training · Live Payroll Software · Placement Assistance",
+        "screenTitle": "Payroll Processing",
+        "widgets": [
+            "CTC Design",
+            "PF/ESI",
+            "TDS",
+            "Payslips"
+        ]
+    },
+    "hrmanagement": {
+        "badge": "Free Live Demo",
+        "title": "Ready to Build a Career in HR? Join {city}'s Leading HR Management Course Today",
+        "subtitle": "Seats are limited for every batch to keep training personal and effective. If you're serious about starting or advancing your HR career, this HR Management Course in {city} is your next step.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to a Career Counsellor",
+        "trust": "Download Full Syllabus PDF · Limited seats",
+        "screenTitle": "HR Management Desk",
+        "widgets": [
+            "Recruitment",
+            "Payroll",
+            "Labour Law",
+            "HRMS"
+        ]
+    },
+    "hrgeneralist": {
+        "badge": "Free Live Demo",
+        "title": "Your HR Career Starts With the Right Training",
+        "subtitle": "Join {city}'s most practical HR Generalist Course and go from learning HR concepts to actually handling HR operations — recruitment, payroll, compliance, and more — with placement support to back you up.",
+        "primaryBtn": "Enroll in the HR Generalist Course Today",
+        "secondaryBtn": "Talk to Our Course Counselor",
+        "trust": "No spam. No pressure. Just clarity on whether this course is right for you.",
+        "screenTitle": "HR Generalist Desk",
+        "widgets": [
+            "Recruitment",
+            "Payroll",
+            "Policies",
+            "HRMS"
+        ]
+    },
+    "hranalytics": {
+        "badge": "Free Live Demo",
+        "title": "Your HR Career Deserves a Data Advantage",
+        "subtitle": "Seats for the next batch of the HR Analytics Course in {city} are filling fast. Learn the tools, build real dashboards, and become the HR professional every company wants on their team.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to a Career Counselor",
+        "trust": "Download Full Syllabus · Limited seats",
+        "screenTitle": "HR Analytics Dashboard",
+        "widgets": [
+            "Attrition",
+            "Power BI",
+            "eNPS",
+            "Surveys"
+        ]
+    },
+    "hrtraining": {
+        "badge": "Free Live Demo",
+        "title": "Your HR Career Starts with the Right Training",
+        "subtitle": "Seats for the next batch of our HR Training in {city} program are filling fast. Learn from real HR practitioners, work on live projects, and walk away with a job-ready skill set and placement support.",
+        "primaryBtn": "Enroll Now",
+        "secondaryBtn": "Talk to a Career Counsellor",
+        "trust": "Weekday & weekend batches · Classroom + Live Online · Beginner to Advanced",
+        "screenTitle": "HR Training Desk",
+        "widgets": [
+            "Recruitment",
+            "Payroll",
+            "Compliance",
+            "Analytics"
+        ]
+    },
+    "itcourses": {
+        "badge": "Free Guidance",
+        "title": "Not Sure Which IT Course Fits You?",
+        "subtitle": "Get personalized career guidance from our experts and discover the right IT or data course based on your skills, experience, and career goals.",
+        "primaryBtn": "WhatsApp Us",
+        "secondaryBtn": "Talk to a Counselor",
+        "trust": "Free career counselling · Classroom + online options available",
+        "screenTitle": "IT Career Path",
+        "widgets": [
+            "Data Science",
+            "AI/ML",
+            "Cloud",
+            "DevOps"
+        ]
+    },
+    "hrcourses": {
+        "badge": "Free Guidance",
+        "title": "Not Sure Which HR Course Fits You?",
+        "subtitle": "Get personalized career guidance from our experts and discover the right HR course based on your skills, experience, and career goals.",
+        "primaryBtn": "WhatsApp Us",
+        "secondaryBtn": "Talk to a Counselor",
+        "trust": "Free career counselling · Classroom + online options available",
+        "screenTitle": "HR Career Path",
+        "widgets": [
+            "Core HR",
+            "Payroll",
+            "Generalist",
+            "Analytics"
+        ]
     }
 }

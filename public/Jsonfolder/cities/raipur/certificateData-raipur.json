@@ -180,179 +180,223 @@
     ]
   },
   "datascience": {
-    "courseTitle": "Data Science Certificate",
+    "courseTitle": "Data Science with AI Certificate",
     "image": "/Certificate/Certificate-1.avif",
-    "completionText": "The Data Science Certification provides in-depth knowledge of data analysis, machine learning, and big data.",
-    "description": "With hands-on training, you'll be prepared to apply data science techniques to solve complex problems.",
+    "completionText": "On successful completion of the course, you'll receive an industry-recognized Data Science with AI course completion certificate that validates your practical skills — not just attendance.",
+    "description": "The certificate reflects completion of all curriculum modules, successful submission of capstone and mini-projects, and a verified skill assessment covering Python, Machine Learning, and AI fundamentals. It is designed to strengthen your resume, LinkedIn profile, and standing in interviews across Raipur and beyond.",
     "highlights": [
-      "Industry-recognized certificate",
-      "Hands-on training in Python, R, SQL",
-      "Validates practical ML and analytics skills"
+      "Completion of all curriculum modules and capstone projects",
+      "Verified skill assessment in Python, ML, and AI fundamentals",
+      "Shareable on resume and LinkedIn; recognized by hiring partners in Raipur"
     ]
   },
   "dataanalytics": {
-    "courseTitle": "Data Analytics Certificate",
+    "courseTitle": "Data Analytics with Gen AI Certificate",
     "image": "/Certificate/Certificate-1.avif",
-    "completionText": "The Masters in Data Analytics Certification offers advanced training in data processing, statistical analysis, and reporting.",
-    "description": "You'll learn to use tools like Python, Excel, and Power BI to extract valuable insights.",
+    "completionText": "On successful completion of the course, you will receive an industry-recognized Data Analytics with Gen AI Certificate, which you can add to your resume, LinkedIn profile, and job applications.",
+    "description": "Awarded only after completing all live projects and assessments. Includes a unique verification ID and is recognized by hiring partners and local Raipur companies. Reflects real, demonstrated skills using both traditional tools and modern Gen AI workflows.",
     "highlights": [
-      "Industry-recognized certificate",
-      "Hands-on with Python, Excel, Power BI",
-      "Validates statistical analysis skills"
+      "Awarded after live projects and assessments",
+      "Unique verification ID for employer checks",
+      "Recognized by hiring partners in Raipur and across India"
     ]
   },
   "businessanalytics": {
     "courseTitle": "Business Analytics Certificate",
     "image": "/Certificate/Certificate-1.avif",
-    "completionText": "The Masters in Business Analytics Certification focuses on turning data into actionable business insights.",
-    "description": "Learn to use analytics tools to optimize business processes and drive growth.",
+    "completionText": "On successful completion, you will receive an industry-recognized Business Analytics Certificate that validates your ability to turn data into actionable business insights.",
+    "description": "The certificate reflects hands-on training in analytics tools, dashboarding, and decision-support skills that employers in Raipur look for when hiring business analysts and decision-support professionals.",
     "highlights": [
       "Industry-recognized certificate",
-      "Hands-on BI and predictive analytics",
-      "Validates ability to turn data into insights"
+      "Hands-on BI and predictive analytics focus",
+      "Validates ability to turn data into business insights"
     ]
   },
   "ai": {
-    "courseTitle": "Artificial Intelligence Certificate",
+    "courseTitle": "AI & Machine Learning Certificate",
     "image": "/Certificate/Certificate-1.avif",
-    "completionText": "The Generative AI Certification offers cutting-edge training in AI-powered conversational systems.",
-    "description": "Learn to develop chatbots, integrate AI into business processes, and create intelligent applications.",
+    "completionText": "On successful completion of the AI & ML course, you'll receive an industry-recognized Certificate in Artificial Intelligence & Machine Learning, verifying your skills in Python, Machine Learning, Deep Learning, and Generative AI.",
+    "description": "Certificate is awarded after project submissions and final assessment. It is shareable directly on LinkedIn and your resume, verifiable through a unique certificate ID, and recognized by our hiring and placement partners across Raipur and pan-India.",
     "highlights": [
-      "Industry-recognized certificate",
-      "Hands-on with GPT models and chatbots",
-      "Validates practical AI application skills"
+      "Awarded after project submissions + final assessment",
+      "Verifiable unique certificate ID",
+      "Recognized by hiring partners in Raipur and beyond"
+    ]
+  },
+  "genai": {
+    "courseTitle": "Generative AI Certificate",
+    "image": "/Certificate/Certificate-1.avif",
+    "completionText": "Upon successful completion of the course and capstone project, you will receive an industry-recognized Generative AI Course Certificate.",
+    "description": "The certificate validates hands-on, project-based learning — not just attendance. It is recognized by our hiring and placement partners, shareable directly on LinkedIn and your resume, and backed by a real project portfolio.",
+    "highlights": [
+      "Validates hands-on project-based learning",
+      "Recognized by hiring and placement partners",
+      "Shareable on LinkedIn and resume; backed by real project portfolio"
+    ]
+  },
+  "agenticai": {
+    "courseTitle": "Agentic AI Certificate",
+    "image": "/Certificate/Certificate-1.avif",
+    "completionText": "Upon successful completion of the course and capstone project, you will receive an industry-recognized Agentic AI Course Certificate.",
+    "description": "The certificate validates hands-on, project-based learning in building and applying agentic AI systems. It is recognized by our hiring partners, shareable on LinkedIn and your resume, and backed by a real project portfolio that demonstrates practical capability.",
+    "highlights": [
+      "Validates hands-on project-based Agentic AI training",
+      "Recognized by hiring and placement partners",
+      "Shareable on LinkedIn and resume with project portfolio"
     ]
   },
   "fullstack": {
     "courseTitle": "Full-Stack Certificate",
     "image": "/Certificate/Certificate-1.avif",
-    "completionText": "The Full Stack Training Certification provides comprehensive skills in front-end and back-end web development.",
-    "description": "You'll learn to build dynamic web applications using HTML, CSS, JavaScript, and Node.js.",
+    "completionText": "On successful completion, you will receive an industry-recognized Full Stack Training Certificate that validates comprehensive skills in front-end and back-end web development.",
+    "description": "The certificate reflects hands-on training in building dynamic web applications and is designed to strengthen your resume and LinkedIn profile for software development roles.",
     "highlights": [
       "Industry-recognized certificate",
-      "Hands-on full-stack development",
+      "Hands-on full-stack development experience",
       "Validates end-to-end web application skills"
     ]
   },
   "java": {
     "courseTitle": "Java Certificate",
     "image": "/Certificate/Certificate-1.avif",
-    "completionText": "The JAVA Certification Course is tailored for those looking to master the Java programming language.",
-    "description": "Gain proficiency in building high-performance applications and scalable solutions.",
+    "completionText": "Every student who completes the course requirements — attendance, assignments, and the final capstone project — receives an official Course Completion Certificate.",
+    "description": "This certificate confirms your training in Core Java and Advanced Java concepts, reflects the hands-on projects you've built, can be added directly to your resume and LinkedIn profile, and is recognized by our placement and hiring partner network.",
     "highlights": [
-      "Industry-recognized certificate",
-      "Hands-on OOP and enterprise design",
-      "Validates high-performance Java skills"
+      "Confirms Core Java and Advanced Java training",
+      "Reflects hands-on projects completed",
+      "Recognized by placement and hiring partners"
     ]
   },
   "python": {
-    "courseTitle": "Python Certificate",
+    "courseTitle": "Python with AI Certificate",
     "image": "/Certificate/Certificate-1.avif",
-    "completionText": "The Python Certification equips you with versatile skills in one of the most popular programming languages.",
-    "description": "Learn to use Python for data analysis, web development, and automation.",
+    "completionText": "On successful completion of the Python with AI course in Raipur, you will receive an industry-recognized course completion certificate that validates your hands-on proficiency in Python programming, data handling, machine learning, and applied AI project work.",
+    "description": "The certificate is designed to strengthen your resume and LinkedIn profile and reflects the practical, project-based nature of the training. Along with the certificate, you walk away with a portfolio of completed projects you can showcase to employers or clients.",
     "highlights": [
-      "Industry-recognized certificate",
-      "Hands-on for data analysis and automation",
-      "Validates versatile Python skills"
+      "Validates Python, data handling, ML, and applied AI skills",
+      "Reflects practical project-based training",
+      "Accompanied by a portfolio of completed projects"
     ]
   },
   "salesforce": {
     "courseTitle": "Salesforce Certificate",
     "image": "/Certificate/Certificate-1.avif",
-    "completionText": "The Salesforce Training Certification is designed to make you proficient in managing and configuring Salesforce CRM.",
-    "description": "Gain hands-on experience with Salesforce tools and automate workflows.",
+    "completionText": "On successful completion of this Salesforce course in Raipur, you will receive a course completion certificate that validates your hands-on training and project experience.",
+    "description": "You will also be fully prepared to attempt the official Salesforce Certified Administrator (ADM 201) exam. Our trainers provide dedicated guidance, mock tests, and revision sessions to help you clear the certification with confidence.",
     "highlights": [
-      "Industry-recognized certificate",
-      "Hands-on CRM configuration",
-      "Validates practical CRM skills"
+      "Validates hands-on training and project experience",
+      "Preparation support for Salesforce Administrator (ADM 201) exam",
+      "Guidance, mock tests, and revision sessions included"
     ]
   },
   "tableau": {
     "courseTitle": "Tableau Certificate",
     "image": "/Certificate/Certificate-1.avif",
-    "completionText": "The Tableau Certification offers in-depth training in data visualization and dashboard creation.",
-    "description": "You'll learn to present complex data insights through interactive visuals.",
+    "completionText": "On successful completion of this Tableau course in Raipur, you'll receive an industry-recognized course completion certificate that validates your hands-on skills in Tableau Desktop, dashboard design, and data storytelling.",
+    "description": "The certificate includes your project details and is shareable directly on LinkedIn. Certification is awarded only after you complete the capstone project, ensuring the credential reflects real, applied skill — not just attendance.",
     "highlights": [
-      "Industry-recognized certificate",
-      "Hands-on interactive dashboards",
-      "Validates data visualization skills"
+      "Validates Tableau Desktop, dashboard design, and data storytelling",
+      "Includes project details; shareable on LinkedIn",
+      "Awarded only after capstone project completion"
     ]
   },
   "powerbi": {
-    "courseTitle": "PowerBI Certificate",
+    "courseTitle": "Power BI Certificate",
     "image": "/Certificate/Certificate-1.avif",
-    "completionText": "The Power BI Certification trains you in Microsoft's leading business intelligence tool.",
-    "description": "Learn to create dynamic dashboards, perform data analysis, and share insights.",
+    "completionText": "On successful completion of the Power BI course in Raipur, you'll receive a course completion certificate that reflects the modules covered, hours of training, and the projects built during the program.",
+    "description": "The certificate is designed to be shared on LinkedIn and included in your resume, and is backed by the practical project work you complete during the course — so when an interviewer asks about it, you'll have real dashboards to show.",
     "highlights": [
-      "Industry-recognized certificate",
-      "Hands-on dynamic dashboards",
-      "Validates Microsoft Power BI proficiency"
+      "Reflects modules covered, training hours, and projects built",
+      "Shareable on LinkedIn and resume",
+      "Backed by practical dashboard project work"
+    ]
+  },
+  "aws": {
+    "courseTitle": "AWS Certificate",
+    "image": "/Certificate/Certificate-1.avif",
+    "completionText": "On successful completion of this AWS course in Raipur, you will receive a course completion certificate that verifies your training in Amazon Web Services, including the modules covered and the project you built during the program.",
+    "description": "This certificate can be added to your resume and LinkedIn profile to show recruiters that you have practical, hands-on AWS experience. Alongside the course certificate, our trainers guide you through the process of registering for and clearing the official AWS Certified Solutions Architect – Associate exam.",
+    "highlights": [
+      "Verifies training in AWS modules and project work",
+      "Adds practical AWS experience to resume and LinkedIn",
+      "Guidance for official AWS Solutions Architect certification"
+    ]
+  },
+  "devops": {
+    "courseTitle": "DevOps Certificate",
+    "image": "/Certificate/Certificate-1.avif",
+    "completionText": "On successful completion of the course and capstone project, you will receive an industry-recognized DevOps course completion certificate.",
+    "description": "This certificate validates your hands-on skills in CI/CD, containerization, orchestration, and cloud deployment, and can be added to your resume and LinkedIn profile to strengthen your job applications. It is issued after project evaluation and final assessment and includes a unique verifiable ID.",
+    "highlights": [
+      "Validates CI/CD, containerization, orchestration, and cloud skills",
+      "Issued after project evaluation and final assessment",
+      "Verifiable certificate with unique ID; recognized by hiring partners"
     ]
   },
   "corehr": {
     "courseTitle": "Core HR Certificate",
     "image": "/Certificate/Certificate-1.avif",
-    "completionText": "The Core HR Certification focuses on the essentials of human resources, including policies, employee management, and labor laws.",
-    "description": "This certification ensures you are equipped to handle core HR functions.",
+    "completionText": "On successful completion of this Core HR Course in Raipur, you will receive a Course Completion Certificate recognized by our hiring partners and useful for job applications, along with a Skill Assessment Report highlighting your strengths across recruitment, payroll, and compliance, and a LinkedIn-ready Certificate Badge.",
+    "description": "Our certificate is not just a formality — it comes with practical skill validation, so employers can trust that you have completed real HR training, not just attended classes.",
     "highlights": [
-      "Industry-recognized certificate",
-      "Covers policies and labor laws",
-      "Validates practical core HR skills"
+      "Course Completion Certificate recognized by hiring partners",
+      "Skill Assessment Report across recruitment, payroll, and compliance",
+      "LinkedIn-ready Certificate Badge"
     ]
   },
   "hrpayroll": {
     "courseTitle": "HR Payroll Certificate",
     "image": "/Certificate/Certificate-1.avif",
-    "completionText": "The HR Payroll Certification teaches you the intricacies of payroll management.",
-    "description": "From handling salary calculations to statutory compliances, this certification ensures you are well-prepared.",
+    "completionText": "Every student who completes this HR Payroll Course in Raipur receives an industry-recognised certificate of completion.",
+    "description": "The certificate reflects the practical modules covered — statutory compliance, payroll software, and HR documentation — and can be shared directly on LinkedIn or added to your resume. Many of our hiring partners specifically look for candidates with hands-on payroll certification.",
     "highlights": [
-      "Industry-recognized certificate",
-      "Hands-on salary and compliance",
-      "Validates practical payroll skills"
+      "Industry-recognised certificate reflecting practical modules",
+      "Covers statutory compliance, payroll software, and HR documentation",
+      "Valued by hiring partners for payroll and HR roles"
     ]
   },
   "hrmanagement": {
     "courseTitle": "HR Management Certificate",
     "image": "/Certificate/Certificate-1.avif",
-    "completionText": "The HR Management Certification offers advanced training in strategic HR practices.",
-    "description": "This certification prepares you for managerial roles in HR.",
+    "completionText": "On successful completion, you will receive a Certificate in HR Management that reflects the practical, project-based nature of this training.",
+    "description": "Awarded after evaluation of assignments, projects, and final assessment. Recognized by hiring partners and local employers in Raipur. Adds credibility to your resume and LinkedIn profile, includes a verifiable certificate ID, and covers both HR Generalist and HR Payroll competencies.",
     "highlights": [
-      "Industry-recognized certificate",
-      "Covers workforce planning and talent",
-      "Validates strategic HR skills"
+      "Awarded after assignments, projects, and final assessment",
+      "Recognized by hiring partners and employers in Raipur",
+      "Verifiable certificate ID; covers Generalist and Payroll competencies"
     ]
   },
   "hrgeneralist": {
     "courseTitle": "HR Generalist Certificate",
     "image": "/Certificate/Certificate-1.avif",
-    "completionText": "The HR Generalist Certification covers all key HR functions, from recruitment to payroll management.",
-    "description": "This well-rounded program provides the skills you need to efficiently manage HR operations.",
+    "completionText": "On successful completion of this course, you will receive an HR Generalist Course Completion Certificate that validates your practical training in recruitment, payroll, compliance, and HR operations.",
+    "description": "This certificate is designed to strengthen your resume and profile, whether you are applying for your first HR job or moving into a generalist role. It reflects hands-on training rather than theory alone. Students also receive a project completion letter based on the capstone HR project completed during the course.",
     "highlights": [
-      "Industry-recognized certificate",
-      "Covers recruitment to payroll",
-      "Validates well-rounded HR skills"
+      "Validates practical training in recruitment, payroll, compliance, and HR operations",
+      "Reflects hands-on training, not theory alone",
+      "Includes project completion letter from capstone HR project"
     ]
   },
   "hranalytics": {
     "courseTitle": "HR Analytics Certificate",
     "image": "/Certificate/Certificate-1.avif",
-    "completionText": "The HR Analytics Certification focuses on using data to optimize HR processes.",
-    "description": "Learn to analyse workforce metrics, improve recruitment strategies, and enhance employee performance.",
+    "completionText": "On successful completion of the course, you will receive an industry-recognized HR Analytics course completion certificate.",
+    "description": "This certificate validates your practical training in workforce data analysis, dashboard building, and HR reporting, and can be added directly to your resume and LinkedIn profile. Employers in Raipur and across India value certificates that are backed by real project work, and this one comes with a portfolio-ready capstone project.",
     "highlights": [
-      "Industry-recognized certificate",
-      "Hands-on workforce metrics",
-      "Validates data-driven HR skills"
+      "Validates workforce data analysis, dashboard building, and HR reporting",
+      "Shareable on resume and LinkedIn",
+      "Backed by a portfolio-ready capstone project"
     ]
   },
   "hrtraining": {
     "courseTitle": "HR Training Certificate",
     "image": "/Certificate/Certificate-1.avif",
-    "completionText": "The HR Training Certification provides a solid foundation in human resource management.",
-    "description": "This certification prepares you to handle the daily operations of an HR department.",
+    "completionText": "On successful completion of this HR training in Raipur, you'll receive an industry-recognised HR Professional Certificate that you can add to your resume and LinkedIn profile.",
+    "description": "Certificate is awarded after project submission and a final assessment. Includes a unique certificate ID for verification by employers. Co-branded with our hiring partner network wherever applicable. Digital copy issued immediately; hard copy available on request. Reflects both theoretical understanding and practical project work completed during the course.",
     "highlights": [
-      "Industry-recognized certificate",
-      "Covers recruitment and performance",
-      "Validates solid HR foundation"
+      "Awarded after project submission and final assessment",
+      "Unique certificate ID for employer verification",
+      "Reflects theoretical understanding and practical project work"
     ]
   },
   "sap": {
@@ -389,14 +433,14 @@
     ]
   },
   "datavisualization": {
-    "courseTitle": "Data Visualization Training Certificate",
+    "courseTitle": "Data Visualization with AI Certificate",
     "image": "/Certificate/Certificate-1.avif",
-    "completionText": "Learn advance topics and industrial tools with the Certification of Data Visualization Course.",
-    "description": "Our program blends theoretical concepts with hands-on training, focusing on Tableau, Power BI, and Excel.",
+    "completionText": "On successful completion of the course and capstone projects, you'll receive an industry-recognized Data Visualization with AI Course Completion Certificate.",
+    "description": "Verifiable certificate with unique ID. Shareable directly on LinkedIn and your resume. Backed by a portfolio of real, reviewed projects — not just a piece of paper. Recognized by our hiring partners in Raipur and across India. Reflects actual, demonstrated skill; every learner completes hands-on assignments and at least two capstone projects before certification.",
     "highlights": [
-      "Industry-recognized certificate",
-      "Hands-on with Tableau, Power BI, Excel",
-      "Validates ability to transform complex data"
+      "Verifiable certificate with unique ID",
+      "Backed by portfolio of real reviewed projects",
+      "Recognized by hiring partners in Raipur and across India"
     ]
   }
 }

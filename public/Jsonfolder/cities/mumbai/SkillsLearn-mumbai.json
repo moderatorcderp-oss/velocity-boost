@@ -639,23 +639,740 @@
             "description": "SAP Solution Manager overview plus Linux/Unix basics for SAP servers"
         }
     ],
-    "SkillsDataScience": [],
-    "SkillsDataAnalytics": [],
-    "SkillsBusinessAnalytics": [],
-    "SkillsGenAI": [],
-    "SkillsFullStack": [],
-    "SkillsJava": [],
-    "SkillsPython": [],
-    "SkillsSalesforce": [],
-    "SkillsPowerBI": [],
-    "SkillsTableau": [],
-    "SkillsDataVisualization": [],
-    "SkillsIT": [],
-    "SkillsHRAnalytics": [],
-    "SkillsHRManagement": [],
-    "SkillsPayroll": [],
-    "SkillsHRGeneralist": [],
-    "SkillsHRTraining": [],
-    "SkillsCoreHR": [],
-    "SkillsHR": []
+    "SkillsDataScience": [
+        {
+            "icon": "Code2",
+            "title": "Python for Data Analysis & Automation",
+            "description": "Write clean, efficient Python code for data analysis, automation and model building"
+        },
+        {
+            "icon": "Database",
+            "title": "SQL & Real-World Data Handling",
+            "description": "Clean, transform and explore messy real-world datasets with Pandas, NumPy and SQL"
+        },
+        {
+            "icon": "BarChart3",
+            "title": "Statistics & Machine Learning",
+            "description": "Apply statistics and probability, then build, train and evaluate ML models (regression, classification, clustering)"
+        },
+        {
+            "icon": "Layers",
+            "title": "Deep Learning & Neural Networks",
+            "description": "Use TensorFlow and PyTorch to build neural networks for image and text problems"
+        },
+        {
+            "icon": "Rocket",
+            "title": "Generative AI & LLMs",
+            "description": "Work with generative AI, large language models, prompt engineering and fine-tuning basics"
+        },
+        {
+            "icon": "Monitor",
+            "title": "Model Deployment & Portfolio",
+            "description": "Deploy a working model as a simple web app and build a job-ready project portfolio"
+        }
+    ],
+    "SkillsDataAnalytics": [
+        {
+            "icon": "FileText",
+            "title": "Excel, SQL & Data Cleaning",
+            "description": "Clean, structure and analyse large datasets using Excel, SQL and Python"
+        },
+        {
+            "icon": "Layout",
+            "title": "Power BI & Tableau Dashboards",
+            "description": "Build interactive dashboards that tell a clear business story"
+        },
+        {
+            "icon": "PieChart",
+            "title": "Statistics & Predictive Basics",
+            "description": "Apply hypothesis testing, correlation, regression and basic machine learning"
+        },
+        {
+            "icon": "Code2",
+            "title": "Python for Analytics",
+            "description": "Use Pandas, NumPy and Matplotlib for exploratory data analysis"
+        },
+        {
+            "icon": "Rocket",
+            "title": "Generative AI for Analytics",
+            "description": "Use ChatGPT, Copilot and prompt engineering to speed up cleaning, summarisation and reporting"
+        },
+        {
+            "icon": "Award",
+            "title": "Data Storytelling & Capstone",
+            "description": "Present insights to non-technical stakeholders and complete an end-to-end portfolio project"
+        }
+    ],
+    "SkillsBusinessAnalytics": [
+        {
+            "icon": "BarChart3",
+            "title": "Business Metrics & KPIs",
+            "description": "Define and track the metrics that actually drive business decisions"
+        },
+        {
+            "icon": "Layout",
+            "title": "Dashboarding & Reporting",
+            "description": "Build executive-ready reports and dashboards in Power BI and Tableau"
+        },
+        {
+            "icon": "Calculator",
+            "title": "Statistical Thinking for Business",
+            "description": "Apply correlation, regression and A/B testing to real business problems"
+        },
+        {
+            "icon": "Code2",
+            "title": "Python & SQL for Analysts",
+            "description": "Extract, clean and analyse data without relying only on Excel"
+        },
+        {
+            "icon": "Rocket",
+            "title": "AI-Assisted Insights",
+            "description": "Use generative AI tools to accelerate analysis and insight generation"
+        },
+        {
+            "icon": "Users",
+            "title": "Stakeholder Communication",
+            "description": "Translate data into clear recommendations for non-technical decision makers"
+        }
+    ],
+    "SkillsGenAI": [
+        {
+            "icon": "Rocket",
+            "title": "Large Language Models (LLMs)",
+            "description": "Understand how GPT, Claude, Gemini and other LLMs actually work without needing a PhD in machine learning"
+        },
+        {
+            "icon": "FileText",
+            "title": "Prompt Engineering Frameworks",
+            "description": "Write high-quality, structured prompts that produce reliable results using proven frameworks"
+        },
+        {
+            "icon": "GitBranch",
+            "title": "RAG Pipelines & Vector Databases",
+            "description": "Connect models to your own data and documents using Retrieval-Augmented Generation"
+        },
+        {
+            "icon": "Blocks",
+            "title": "AI Agents, Chatbots & Automation",
+            "description": "Build custom GPTs, chatbots, AI agents and content pipelines for real business tasks"
+        },
+        {
+            "icon": "Settings",
+            "title": "Fine-Tuning & Customisation",
+            "description": "Know when and how to fine-tune models (and when it isn’t needed) for specific use cases"
+        },
+        {
+            "icon": "Shield",
+            "title": "Responsible AI Practices",
+            "description": "Apply AI responsibly — covering bias, hallucination, data privacy and ethical use"
+        }
+    ],
+    "SkillsAgenticAI": [
+        {
+            "icon": "GitBranch",
+            "title": "Agent Architectures",
+            "description": "Design single-agent, multi-agent and hierarchical systems that plan and act"
+        },
+        {
+            "icon": "Code2",
+            "title": "LangChain, LangGraph, CrewAI & AutoGen",
+            "description": "Build production-ready agents with the leading agent frameworks"
+        },
+        {
+            "icon": "Database",
+            "title": "Memory, Tools & Function Calling",
+            "description": "Give agents memory, connect them to APIs and databases, and let them decide next actions"
+        },
+        {
+            "icon": "Link",
+            "title": "RAG for Agents",
+            "description": "Ground agents in accurate, up-to-date information with retrieval-augmented generation"
+        },
+        {
+            "icon": "Users",
+            "title": "Multi-Agent Collaboration",
+            "description": "Set up agents that delegate work and collaborate on complex goals"
+        },
+        {
+            "icon": "Shield",
+            "title": "Guardrails, Evaluation & Deployment",
+            "description": "Add safety checks, monitor behaviour and deploy agents as working applications"
+        }
+    ],
+    "SkillsAIML": [
+        {
+            "icon": "Code2",
+            "title": "Python for Machine Learning",
+            "description": "Write clean Python code for data analysis and model building with Pandas, NumPy and Scikit-learn"
+        },
+        {
+            "icon": "BarChart3",
+            "title": "Supervised & Unsupervised Learning",
+            "description": "Build and evaluate regression, classification and clustering models"
+        },
+        {
+            "icon": "Layers",
+            "title": "Deep Learning with TensorFlow & PyTorch",
+            "description": "Design and train neural networks, CNNs and RNNs for image and text data"
+        },
+        {
+            "icon": "FileText",
+            "title": "NLP & Generative AI",
+            "description": "Build chatbots, sentiment tools and work with large language models"
+        },
+        {
+            "icon": "Rocket",
+            "title": "Model Deployment",
+            "description": "Deploy models using Flask, FastAPI and basic cloud platforms"
+        },
+        {
+            "icon": "Award",
+            "title": "Portfolio & Interview Readiness",
+            "description": "Present models and insights clearly — the skill interviewers actually test"
+        }
+    ],
+    "SkillsFullStack": [
+        {
+            "icon": "Code2",
+            "title": "Frontend Fundamentals",
+            "description": "HTML, CSS and modern JavaScript needed for full-stack applications"
+        },
+        {
+            "icon": "Monitor",
+            "title": "Backend with Python / Node",
+            "description": "Build APIs and server-side logic using Flask, FastAPI or Node.js"
+        },
+        {
+            "icon": "Database",
+            "title": "Databases & ORM",
+            "description": "Work with SQL/NoSQL databases and object-relational mapping"
+        },
+        {
+            "icon": "GitBranch",
+            "title": "Version Control & Collaboration",
+            "description": "Use Git and GitHub the way real development teams do"
+        },
+        {
+            "icon": "Cloud",
+            "title": "Deployment Basics",
+            "description": "Deploy full-stack applications to cloud platforms"
+        },
+        {
+            "icon": "Award",
+            "title": "End-to-End Project",
+            "description": "Ship a complete application you can show in interviews"
+        }
+    ],
+    "SkillsJava": [
+        {
+            "icon": "Code2",
+            "title": "Core Java & OOP",
+            "description": "Write clean Java code using inheritance, polymorphism, encapsulation and abstraction"
+        },
+        {
+            "icon": "Database",
+            "title": "Collections, Exception Handling & Multithreading",
+            "description": "Work confidently with collections, generics, exceptions and concurrency"
+        },
+        {
+            "icon": "Link",
+            "title": "JDBC & Database Connectivity",
+            "description": "Connect Java applications to MySQL and other relational databases"
+        },
+        {
+            "icon": "Rocket",
+            "title": "Spring Boot & REST APIs",
+            "description": "Build and consume REST APIs and backend services with Spring Boot"
+        },
+        {
+            "icon": "Blocks",
+            "title": "Hibernate / JPA",
+            "description": "Use object-relational mapping in real projects"
+        },
+        {
+            "icon": "GitBranch",
+            "title": "Git, Maven & Interview Prep",
+            "description": "Version control, build tools and structured preparation for Java technical interviews"
+        }
+    ],
+    "SkillsPython": [
+        {
+            "icon": "Code2",
+            "title": "Core Python Syntax & Logic",
+            "description": "Variables, data types, loops, conditionals, functions and clean, reusable code"
+        },
+        {
+            "icon": "Blocks",
+            "title": "Object-Oriented Programming",
+            "description": "Classes, inheritance, polymorphism and real software design patterns"
+        },
+        {
+            "icon": "Database",
+            "title": "Data Structures & File Handling",
+            "description": "Lists, tuples, dictionaries, sets, exception handling and working with files"
+        },
+        {
+            "icon": "BarChart3",
+            "title": "NumPy, Pandas & Matplotlib",
+            "description": "Data analysis and basic visualisation libraries used in real projects"
+        },
+        {
+            "icon": "Link",
+            "title": "APIs, Databases & Automation",
+            "description": "Connect to MySQL/SQLite, build REST APIs with Flask/FastAPI and automate tasks"
+        },
+        {
+            "icon": "GitBranch",
+            "title": "Git, Projects & Interview Readiness",
+            "description": "Version control and a hands-on capstone project for your portfolio"
+        }
+    ],
+    "SkillsSalesforce": [
+        {
+            "icon": "Cloud",
+            "title": "Salesforce Sales & Service Cloud",
+            "description": "Configure and customise the core CRM clouds used by businesses"
+        },
+        {
+            "icon": "Settings",
+            "title": "Objects, Fields, Workflows & Validation",
+            "description": "Build the data model and automate processes with Flow Builder"
+        },
+        {
+            "icon": "Code2",
+            "title": "Apex Programming Basics",
+            "description": "Write Apex classes, triggers and test classes for custom logic"
+        },
+        {
+            "icon": "Monitor",
+            "title": "Lightning Web Components (LWC)",
+            "description": "Create modern, dynamic user interfaces on the Salesforce platform"
+        },
+        {
+            "icon": "Users",
+            "title": "Security, Roles & Profiles",
+            "description": "Manage users, data security and access control correctly"
+        },
+        {
+            "icon": "BarChart3",
+            "title": "Reports, Dashboards & Integration",
+            "description": "Build analytics and integrate Salesforce with third-party apps via APIs"
+        }
+    ],
+    "SkillsPowerBI": [
+        {
+            "icon": "Database",
+            "title": "Data Connection & Power Query",
+            "description": "Connect to Excel, SQL, web and cloud sources and clean data with Power Query"
+        },
+        {
+            "icon": "Layers",
+            "title": "Data Modelling & Relationships",
+            "description": "Build star-schema models and manage relationships between tables"
+        },
+        {
+            "icon": "Calculator",
+            "title": "DAX Formulas",
+            "description": "Write calculated columns, measures and advanced time-intelligence functions"
+        },
+        {
+            "icon": "Layout",
+            "title": "Interactive Dashboard Design",
+            "description": "Create clear, interactive reports with slicers, filters, bookmarks and drill-throughs"
+        },
+        {
+            "icon": "Cloud",
+            "title": "Publishing & Security",
+            "description": "Publish to Power BI Service, set up scheduled refresh and row-level security"
+        },
+        {
+            "icon": "Award",
+            "title": "Storytelling & PL-300 Prep",
+            "description": "Present insights that get acted on and prepare for the Microsoft PL-300 exam"
+        }
+    ],
+    "SkillsTableau": [
+        {
+            "icon": "Database",
+            "title": "Data Connections & Tableau Prep",
+            "description": "Connect to Excel, SQL, cloud sources and clean data with Tableau Prep"
+        },
+        {
+            "icon": "Calculator",
+            "title": "Calculated Fields & LOD Expressions",
+            "description": "Build calculated fields, table calculations and Level of Detail expressions with confidence"
+        },
+        {
+            "icon": "Layout",
+            "title": "Interactive Dashboards & Stories",
+            "description": "Design dynamic dashboards using filters, parameters, actions and storytelling"
+        },
+        {
+            "icon": "BarChart3",
+            "title": "Visualisation Best Practices",
+            "description": "Choose the right chart and apply design principles so insights are obvious"
+        },
+        {
+            "icon": "Cloud",
+            "title": "Publishing & Sharing",
+            "description": "Publish and share workbooks securely on Tableau Server and Tableau Cloud"
+        },
+        {
+            "icon": "Award",
+            "title": "Portfolio of Real Dashboards",
+            "description": "Leave with 3–4 interview-ready dashboard projects built on real business data"
+        }
+    ],
+    "SkillsDataVisualization": [
+        {
+            "icon": "Layout",
+            "title": "Dashboard Design in Power BI & Tableau",
+            "description": "Build interactive dashboards that people actually want to look at"
+        },
+        {
+            "icon": "Code2",
+            "title": "Python Visualisation Libraries",
+            "description": "Create custom visuals with Pandas, Matplotlib, Seaborn and Plotly"
+        },
+        {
+            "icon": "PieChart",
+            "title": "Chart Selection & Design Principles",
+            "description": "Know when to use a bar, heatmap or scatter plot — and why it matters"
+        },
+        {
+            "icon": "Rocket",
+            "title": "AI-Assisted Visualisation",
+            "description": "Use generative AI tools to speed up chart generation, summaries and data prep"
+        },
+        {
+            "icon": "FileText",
+            "title": "Data Storytelling",
+            "description": "Write clear, non-technical summaries and present findings that change decisions"
+        },
+        {
+            "icon": "Award",
+            "title": "Portfolio-Ready Projects",
+            "description": "Package complete visualisation projects you can show in interviews"
+        }
+    ],
+    "SkillsAWS": [
+        {
+            "icon": "Cloud",
+            "title": "Core AWS Services",
+            "description": "EC2, S3, IAM, VPC, RDS, DynamoDB, Lambda and more — hands-on in a real AWS environment"
+        },
+        {
+            "icon": "Server",
+            "title": "Compute, Storage & Networking",
+            "description": "Launch instances, design storage solutions and build secure VPCs with security groups"
+        },
+        {
+            "icon": "Shield",
+            "title": "Security & Identity",
+            "description": "IAM users, roles, policies, encryption and least-privilege access best practices"
+        },
+        {
+            "icon": "Activity",
+            "title": "Monitoring & Serverless",
+            "description": "CloudWatch, CloudTrail, Lambda and API Gateway for production-ready setups"
+        },
+        {
+            "icon": "Calculator",
+            "title": "Cost Optimisation",
+            "description": "Estimate and control spend with Pricing Calculator and Cost Explorer"
+        },
+        {
+            "icon": "Award",
+            "title": "Certification & Job Readiness",
+            "description": "Prepare for AWS Certified Solutions Architect – Associate and real cloud roles"
+        }
+    ],
+    "SkillsDevOps": [
+        {
+            "icon": "Server",
+            "title": "Linux & Shell Scripting",
+            "description": "Administer servers and automate tasks with shell scripting"
+        },
+        {
+            "icon": "GitBranch",
+            "title": "Git, CI/CD & Jenkins",
+            "description": "Version control and automated pipelines with Jenkins and GitHub Actions"
+        },
+        {
+            "icon": "Package",
+            "title": "Docker & Kubernetes",
+            "description": "Containerise applications and orchestrate them with Kubernetes"
+        },
+        {
+            "icon": "Cloud",
+            "title": "Infrastructure as Code",
+            "description": "Provision cloud infrastructure on AWS using Terraform and configuration management with Ansible"
+        },
+        {
+            "icon": "Activity",
+            "title": "Monitoring & Observability",
+            "description": "Monitor systems with Prometheus, Grafana and basic DevSecOps practices"
+        },
+        {
+            "icon": "Award",
+            "title": "End-to-End Project Portfolio",
+            "description": "Build and defend real CI/CD and cloud projects in interviews"
+        }
+    ],
+    "SkillsIT": [
+        {
+            "icon": "Monitor",
+            "title": "Core IT Foundations",
+            "description": "Operating systems, networking basics and the tools every IT professional needs"
+        },
+        {
+            "icon": "Code2",
+            "title": "Programming & Scripting",
+            "description": "Practical coding skills in Python or Java that open doors to multiple IT roles"
+        },
+        {
+            "icon": "Cloud",
+            "title": "Cloud & Infrastructure Awareness",
+            "description": "Understand how modern applications are hosted and managed on cloud platforms"
+        },
+        {
+            "icon": "Database",
+            "title": "Data & Databases",
+            "description": "Work with SQL and understand how data is stored and retrieved in real systems"
+        },
+        {
+            "icon": "GitBranch",
+            "title": "Version Control & Collaboration",
+            "description": "Use Git and collaborative workflows the way professional teams do"
+        },
+        {
+            "icon": "Award",
+            "title": "Job-Ready Soft Skills",
+            "description": "Documentation, troubleshooting mindset and interview communication"
+        }
+    ],
+    "SkillsHRAnalytics": [
+        {
+            "icon": "BarChart3",
+            "title": "Core HR Metrics & KPIs",
+            "description": "Calculate and interpret attrition rate, time-to-hire, cost-per-hire, eNPS and span of control"
+        },
+        {
+            "icon": "Layout",
+            "title": "HR Dashboards in Excel & Power BI",
+            "description": "Build interactive people-analytics dashboards that drive decisions"
+        },
+        {
+            "icon": "Database",
+            "title": "SQL for HR Data",
+            "description": "Pull and analyse employee data from HR databases and HRIS exports"
+        },
+        {
+            "icon": "TrendingUp",
+            "title": "Attrition Prediction & Workforce Planning",
+            "description": "Create a predictive attrition model using simple, explainable techniques"
+        },
+        {
+            "icon": "FileText",
+            "title": "Survey & Engagement Analysis",
+            "description": "Design and analyse employee engagement surveys and turn data into insights"
+        },
+        {
+            "icon": "Users",
+            "title": "Data Storytelling for HR Leaders",
+            "description": "Translate raw HR data into a story that leadership will actually listen to"
+        }
+    ],
+    "SkillsHRManagement": [
+        {
+            "icon": "Users",
+            "title": "End-to-End Recruitment",
+            "description": "Sourcing, screening, interviewing and offer rollout for real hiring cycles"
+        },
+        {
+            "icon": "Banknote",
+            "title": "Payroll & Statutory Compliance",
+            "description": "Process payroll including PF, ESI, gratuity and TDS correctly"
+        },
+        {
+            "icon": "FileText",
+            "title": "HR Policies & Documentation",
+            "description": "Draft offer letters, appointment letters, policies and employee handbooks"
+        },
+        {
+            "icon": "Target",
+            "title": "Performance Management",
+            "description": "Run appraisal cycles using KRA/KPI and modern frameworks"
+        },
+        {
+            "icon": "Shield",
+            "title": "Labour Law & Employee Relations",
+            "description": "Apply core Indian labour laws and handle grievances professionally"
+        },
+        {
+            "icon": "Monitor",
+            "title": "HRMS Tools & HR Analytics Basics",
+            "description": "Use platforms like Keka, Zoho People and greytHR plus basic Excel/Power BI reporting"
+        }
+    ],
+    "SkillsPayroll": [
+        {
+            "icon": "Banknote",
+            "title": "Salary Structuring & CTC Design",
+            "description": "Design and structure a compliant CTC and salary breakup"
+        },
+        {
+            "icon": "Shield",
+            "title": "Statutory Compliance (PF, ESI, TDS)",
+            "description": "Calculate and file PF, ESI, Professional Tax and TDS accurately"
+        },
+        {
+            "icon": "Calculator",
+            "title": "Full & Final, Gratuity & Bonus",
+            "description": "Handle Full & Final settlements, gratuity and bonus calculations"
+        },
+        {
+            "icon": "Monitor",
+            "title": "Payroll Software Hands-On",
+            "description": "Use payroll software (greytHR, Zoho Payroll) and advanced Excel for payroll automation"
+        },
+        {
+            "icon": "FileText",
+            "title": "Payslips, Form 16 & MIS Reports",
+            "description": "Generate payslips, Form 16 and other statutory reports"
+        },
+        {
+            "icon": "Scale",
+            "title": "Audit Readiness & Labour Codes",
+            "description": "Manage payroll audits and stay compliant under Maharashtra and central labour regulations"
+        }
+    ],
+    "SkillsHRGeneralist": [
+        {
+            "icon": "Users",
+            "title": "Complete Recruitment Lifecycle",
+            "description": "Source, screen, interview and close offers independently"
+        },
+        {
+            "icon": "Banknote",
+            "title": "Payroll & Compliance Basics",
+            "description": "Process payroll and apply PF, ESI, Gratuity and other statutory requirements"
+        },
+        {
+            "icon": "FileText",
+            "title": "HR Documentation & Policies",
+            "description": "Draft offer letters, appointment letters, warning letters and HR policies"
+        },
+        {
+            "icon": "Target",
+            "title": "Performance & Employee Relations",
+            "description": "Run appraisals, handle grievances and manage the employee lifecycle"
+        },
+        {
+            "icon": "Monitor",
+            "title": "HRMS & Excel for HR",
+            "description": "Operate greytHR, Zoho People, Keka and build HR reports in Excel"
+        },
+        {
+            "icon": "Award",
+            "title": "Onboarding to Exit Formalities",
+            "description": "Manage induction, documentation and full-and-final settlements end-to-end"
+        }
+    ],
+    "SkillsHRTraining": [
+        {
+            "icon": "Users",
+            "title": "Recruitment & Selection",
+            "description": "Manage the complete hiring cycle from sourcing to onboarding"
+        },
+        {
+            "icon": "Banknote",
+            "title": "Payroll Processing & Compliance",
+            "description": "Handle salary processing, PF, ESI, gratuity and TDS accurately"
+        },
+        {
+            "icon": "Target",
+            "title": "Performance Appraisal Systems",
+            "description": "Design and run KRA/KPI-based appraisal cycles used by real companies"
+        },
+        {
+            "icon": "FileText",
+            "title": "HR Policies & Labour Law",
+            "description": "Draft policies and apply statutory compliance relevant to Indian workplaces"
+        },
+        {
+            "icon": "BarChart3",
+            "title": "HR Analytics & Reporting",
+            "description": "Build Excel and basic Power BI dashboards to track attrition, headcount and engagement"
+        },
+        {
+            "icon": "Monitor",
+            "title": "HRMS Tools & Interview Skills",
+            "description": "Operate popular HRMS platforms and present confidently in HR interviews"
+        }
+    ],
+    "SkillsCoreHR": [
+        {
+            "icon": "Users",
+            "title": "End-to-End Recruitment",
+            "description": "From job posting to offer letter — handle the full hiring process"
+        },
+        {
+            "icon": "Banknote",
+            "title": "Payroll & Statutory Compliance",
+            "description": "Process monthly payroll and apply PF, ESI, Gratuity, Bonus Act and Labour Welfare Fund"
+        },
+        {
+            "icon": "FileText",
+            "title": "HR Documentation & Policies",
+            "description": "Draft offer, appointment and relieving letters plus employee handbooks"
+        },
+        {
+            "icon": "Target",
+            "title": "Performance Management",
+            "description": "Design and execute appraisal cycles using KRAs, KPIs and modern frameworks"
+        },
+        {
+            "icon": "Shield",
+            "title": "Employee Relations & Labour Law",
+            "description": "Handle grievances, disciplinary action and basic Indian labour law compliance"
+        },
+        {
+            "icon": "Monitor",
+            "title": "HRMS & HR Analytics Basics",
+            "description": "Use Zoho People, Keka, greytHR and Excel for day-to-day HR operations and reporting"
+        }
+    ],
+    "SkillsHR": [
+        {
+            "icon": "Users",
+            "title": "People Operations Fundamentals",
+            "description": "Recruitment, onboarding, employee lifecycle and day-to-day HR operations"
+        },
+        {
+            "icon": "Banknote",
+            "title": "Compensation & Compliance",
+            "description": "Payroll basics, statutory deductions and labour law awareness"
+        },
+        {
+            "icon": "Target",
+            "title": "Performance & Engagement",
+            "description": "Appraisals, feedback systems and employee engagement practices"
+        },
+        {
+            "icon": "FileText",
+            "title": "HR Documentation & Policy",
+            "description": "Create the letters, policies and records every HR team needs"
+        },
+        {
+            "icon": "BarChart3",
+            "title": "HR Metrics & Reporting",
+            "description": "Track attrition, hiring metrics and present simple people dashboards"
+        },
+        {
+            "icon": "Monitor",
+            "title": "Modern HR Tools",
+            "description": "Work with HRMS platforms and Excel the way current HR teams actually do"
+        }
+    ]
 }
