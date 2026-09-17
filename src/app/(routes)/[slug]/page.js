@@ -18,6 +18,7 @@ import {
 import CityLinks from "@/components/CityLinks";
 
 export const revalidate = 86400;
+export const dynamic = "force-static";
 
 // ✅ ADDED: alias map to resolve new URL slugs to masterData keys
 const COURSE_SLUG_ALIASES = {
