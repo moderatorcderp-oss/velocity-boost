@@ -2,7 +2,7 @@
     "MDSpage": {
         "MDSHeader": {
             "title": "Data Science Course in Raipur",
-            "subtitle": "We invite you to attend the Best Data Science Certification Program in Raipur",
+            "subtitle": "Become a Job-Ready Data Scientist",
             "description": "The complete Data Science Course in Raipur given by Connecting Dots ERP is meant to give students the tools they need to succeed in the area. Predictive analytics, machine learning, data visualization, and data analysis are some of the important subjects covered in the course. With practical experience working with real-world data, our data science training in Raipur makes sure you are ready for opportunities in top firms that focus on data-driven careers",
             "features": [
                 "Live Class",
@@ -46,7 +46,7 @@
     "MDApage": {
         "MDAHeader": {
             "title": "Data Analytics with AI Course in Raipur",
-            "subtitle": "Learn to turn raw numbers into real business decisions",
+            "subtitle": "Learn to Turn Raw Numbers into Real Business Decisions",
             "description": "This Data Analytics with AI course in Raipur combines hands-on analytics training with practical AI tools like ChatGPT, Python-based machine learning, and automated reporting so you graduate job-ready, not just certificate-ready. 100% live, instructor-led sessions | Real datasets from actual businesses | Weekend and weekday batches in Raipur.",
             "features": [
                 "Live Class",
@@ -95,7 +95,7 @@
     "BApage": {
         "BAHeader": {
             "title": "Business Analytics Course in Raipur",
-            "subtitle": "Take advantage of the Business Analytics Training Certificate Course to advance your profession quickly",
+            "subtitle": "Become a Certified Business Analytics Professional",
             "description": "The Connecting Dots ERP’s Business Analytics Course in Raipur is intended to give students the tools they need to succeed in the industry. Important subjects covered in the course include business intelligence, data visualization, data analysis, and predictive analytics. Our business analytics training in Raipur guarantees that you are ready for opportunities in prestigious firms that focus on data-driven decision-making careers by giving you practical experience working with real-world business data.",
             "features": [
                 "Live Class",
@@ -143,8 +143,8 @@
     },
     "GPTpage": {
         "GPTHeader": {
-            "title": "Artificial Intelligence Course in Raipur",
-            "subtitle": "We invite you to attend the Best Artificial Intelligence Certification Program in Raipur",
+            "title": "Generative AI Course in Raipur",
+            "subtitle": "Build Real Skills for the AI-First Job Market",
             "description": "Connecting Dots ERP's extensive Artificial Intelligence Course in Raipur aims to give students the abilities they need to succeed in AI. The course covers important subjects, including AI-driven automation, machine learning, deep learning, and natural language processing. With practical experience working on actual ChatGPT and AI projects, our AI training in Raipur guarantees that you are ready for employment prospects in prestigious companies that value innovation and AI-powered solutions",
             "features": [
                 "Live Class",
@@ -192,8 +192,8 @@
     },
     "fullstackheader": {
         "FullStackHeader": {
-            "title": "Full stack training in Raipur",
-            "subtitle": "Project-based Job Oriented Full stack course in Raipur",
+            "title": "Full Stack Course in Raipur",
+            "subtitle": "Become a Job-Ready Full Stack Developer",
             "description": "Grow your potential with Connecting Dots' Full Stack course in Raipur, where you'll learn essential development skills for a successful tech career. With hands-on training and secure placement support, this course equips you to thrive in the ever-evolving world of full-stack development.",
             "features": [
                 "Live Class",
@@ -290,8 +290,8 @@
     },
     "pythonheader": {
         "PythonHeader": {
-            "title": "Python Training Program in Raipur",
-            "subtitle": " Learn Our advanced Python Course in Raipur with practical training",
+            "title": "Python Course in Raipur",
+            "subtitle": "Master Python with Practical, Project-Based Training",
             "description": "Unlock new career opportunities with Connecting Dots' Python course in Raipur, designed to help you master one of the most versatile programming languages. Through hands-on training, expert mentorship, and real-world projects, this course prepares you for a wide range of programming roles, making you proficient in Python development and data handling.",
             "features": [
                 "Live Class",
@@ -388,8 +388,8 @@
     },
     "abapheader": {
         "AbapHeader": {
-            "title": "Master SAP ABAP with Raipur's Most Practical, Job-Focused Training Program",
-            "subtitle": "Learn SAP ABAP programming from real-time SAP consultants, work on live projects, and get placement support all without leaving Raipur. Our SAP ABAP course in Raipur is designed for freshers, working professionals, and functional consultants who want to build a strong career in SAP development.",
+            "title": "SAP ABAP Course in Raipur",
+            "subtitle": "Become a Job-Ready SAP ABAP Developer",
             "description": "Learn SAP ABAP programming from real-time SAP consultants, work on live projects, and get placement support all without leaving Raipur. Our SAP ABAP course in Raipur is designed for freshers, working professionals, and functional consultants who want to build a strong career in SAP development.",
             "features": [
                 "Live Class",
@@ -437,8 +437,8 @@
     },
     "aribaheader": {
         "AribaHeader": {
-            "title": "Master Procurement with the Best SAP Ariba Course in Raipur",
-            "subtitle": "Learn end-to-end SAP Ariba from certified trainers, work on live procurement projects, and step into a high-demand career in supply chain and procurement — all from our training center in Raipur.",
+            "title": "SAP Ariba Course in Raipur",
+            "subtitle": "Become a Certified SAP Ariba Professional",
             "description": "Whether you're a fresher exploring SAP careers or a working professional looking to upskill, our SAP Ariba training in Raipur is designed to take you from basics to job-ready expertise in sourcing, contracts, and procurement management.",
             "features": [
                 "Live Class",
@@ -486,8 +486,8 @@
     },
     "basisheader": {
         "BasisHeader": {
-            "title": "Become a Certified SAP Basis Consultant with the Best SAP Basis Course in Raipur",
-            "subtitle": "Learn SAP system administration, installation, and support from real industry experts. Our SAP Basis training in Raipur combines hands-on labs, live projects, and placement support to turn beginners into job-ready SAP Basis consultants.",
+            "title": "SAP BASIS Course in Raipur",
+            "subtitle": "Become a Certified SAP BASIS Consultant",
             "description": "Join Raipur's most trusted SAP Basis institute and build a career in SAP system administration, client management, and technical support starting with your very first class.",
             "features": [
                 "Live Online & Classroom Batches",
@@ -536,8 +536,8 @@
     },
     "bwbiheader": {
         "BwbiHeader": {
-            "title": "Become a Certified SAP BW/BI Consultant in Raipur",
-            "subtitle": "Looking for a job-ready SAP BW/BI course in Raipur? Our training program is designed for students, working professionals, and career switchers who want hands-on expertise in SAP Business Warehouse and Business Intelligence. Learn data modeling, reporting, and analytics on real SAP systems, guided by trainers who have actually worked on live SAP BW/BI projects.",
+            "title": "SAP BW/BI Course in Raipur",
+            "subtitle": "Become a Certified SAP BW/BI Consultant",
             "description": "Looking for a job-ready SAP BW/BI course in Raipur? Our training program is designed for students, working professionals, and career switchers who want hands-on expertise in SAP Business Warehouse and Business Intelligence. Learn data modeling, reporting, and analytics on real SAP systems, guided by trainers who have actually worked on live SAP BW/BI projects.",
             "features": [
                 "Live Class",
@@ -585,8 +585,8 @@
     },
     "ewmheader": {
         "EWMHeader": {
-            "title": "SAP EWM Course in Raipur | Learn Warehouse Management the Practical Way",
-            "subtitle": "Join Raipur's most hands-on SAP EWM training program and learn how modern warehouses run on SAP S/4HANA. Real-time scenarios, live server access, and guidance from consultants who have actually implemented EWM on the ground.",
+            "title": "SAP EWM Course in Raipur",
+            "subtitle": "Become a Certified SAP EWM Professional",
             "description": "Live SAP EWM server access. Trainer with real implementation experience. Weekday & weekend batches. Resume building + interview preparation. Certificate on course completion.",
             "features": [
                 "Live Class",
@@ -634,8 +634,8 @@
     },
     "ficoheader": {
         "FICOHeader": {
-            "title": "SAP FICO Course in Raipur — Become Job-Ready in Finance & Controlling",
-            "subtitle": "Learn SAP FICO from certified trainers with real-time project exposure, hands-on system access, and placement support. Join Raipur's growing community of SAP-certified finance professionals.",
+            "title": "SAP FICO Course in Raipur",
+            "subtitle": "Become a Job-Ready SAP FICO Consultant",
             "description": "Whether you are a commerce graduate, a working accountant, or an ERP consultant looking to upskill, this SAP FICO training in Raipur is built to take you from fundamentals to configuration-level expertise.",
             "features": [
                 "Live Class",
@@ -688,8 +688,8 @@
     },
     "hanaheader": {
         "HanaHeader": {
-            "title": "Master SAP S/4 HANA in Raipur | Build a Career in Enterprise Technology",
-            "subtitle": "Join the most practical SAP S/4 HANA course in Raipur, designed for freshers, working professionals, and functional consultants who want real hands-on experience on live SAP systems. Learn directly from certified trainers, work on industry projects, and walk away job-ready.",
+            "title": "SAP S/4HANA Course in Raipur",
+            "subtitle": "Become a Certified SAP S/4HANA Professional",
             "description": "Join the most practical SAP S/4 HANA course in Raipur, designed for freshers, working professionals, and functional consultants who want real hands-on experience on live SAP systems. Learn directly from certified trainers, work on industry projects, and walk away job-ready.",
             "features": [
                 "Live Class",
@@ -737,8 +737,8 @@
     },
     "hrhcmheader": {
         "HRHCMHeader": {
-            "title": "Become an SAP HCM Certified Professional in Raipur — Learn from Industry Experts",
-            "subtitle": "Looking for a career-ready SAP HCM course in Raipur? Our training program is designed for freshers, HR professionals, and working executives who want to master SAP Human Capital Management from the ground up. Get hands-on exposure to real-time SAP HCM projects, learn directly from certified trainers, and walk away with a globally recognised certificate.",
+            "title": "SAP HR/HCM Course in Raipur",
+            "subtitle": "Become a Certified SAP HR/HCM Consultant",
             "description": "Whether you're switching careers into HR technology or upgrading your existing SAP skills, this SAP HCM training in Raipur gives you the practical, job-oriented learning you need to succeed.",
             "features": [
                 "Live Class",
@@ -786,8 +786,8 @@
     },
     "mmheader": {
         "MMHeader": {
-            "title": "Master SAP MM in Raipur — Learn from Certified Industry Experts",
-            "subtitle": "Join Raipur's most practical SAP MM Course and build real-world skills in procurement, inventory, and material management using live SAP systems. Learn by doing, not just watching.",
+            "title": "SAP MM Course in Raipur",
+            "subtitle": "Become a Certified SAP MM Consultant",
             "description": "Whether you're a fresher, a working professional, or someone switching careers, this SAP MM Training in Raipur is designed to take you from basics to job-ready in a few months — with real-time projects, mock interviews, and placement support.",
             "features": [
                 "Live Class",
@@ -840,7 +840,7 @@
     "coreheader": {
         "CoreHeader": {
             "title": "Core HR Course in Raipur",
-            "subtitle": "Build a Career in Human Resources That Actually Goes Somewhere",
+            "subtitle": "Become a Job-Ready Core HR Professional",
             "description": "Learn the real, day-to-day skills HR teams use — recruitment, payroll, compliance, performance management, and HRMS tools — through a practical Core HR Course in Raipur designed with working professionals and freshers in mind.",
             "features": [
                 "Live Class",
@@ -890,7 +890,7 @@
         "NetHeader": {
             "title": "SAP NetWeaver Course in Raipur",
             "subtitle": "Practical Based Job Oriented SAP Training in Raipur",
-            "description": " Practical Training on SAP's core technological platform, including integration, system management, and security, is provided via the SAP NetWeaver Course in Raipur. Acquire hands-on experience in real-world projects to get ready for positions such as SAP NetWeaver Consultant and System Administrator. This course gives you the tools to handle enterprise-level, scalable solutions in various SAP environments.",
+            "description": "Practical Training on SAP's core technological platform, including integration, system management, and security, is provided via the SAP NetWeaver Course in Raipur. Acquire hands-on experience in real-world projects to get ready for positions such as SAP NetWeaver Consultant and System Administrator. This course gives you the tools to handle enterprise-level, scalable solutions in various SAP environments.",
             "features": [
                 "Live Class",
                 "1:1 mentorship",
@@ -937,8 +937,8 @@
     },
     "pmheader": {
         "PMHeader": {
-            "title": "Become a Certified SAP PM Consultant with Raipur's Most Practical SAP PM Course",
-            "subtitle": "Looking for a job-ready SAP PM course in Raipur? You are in the right place. Our SAP PM training in Raipur is built for engineers, maintenance professionals, and fresh graduates who want to master SAP Plant Maintenance and step into high-paying SAP PM roles across India and abroad.",
+            "title": "SAP PM Course in Raipur",
+            "subtitle": "Become a Certified SAP PM Consultant",
             "description": "This isn't theory-heavy classroom learning. Every session in our SAP PM course in Raipur is hands-on, taught by consultants who've implemented SAP PM in real factories, plants, and manufacturing units. By the end of the course, you'll be able to configure maintenance orders, notifications, equipment master data, preventive maintenance plans, and more the exact skills companies hire for. Whether you're switching careers into SAP, upgrading from a core maintenance background, or preparing for SAP PM certification, this SAP PM training in Raipur gives you the structured path to get there.",
             "features": [
                 "Live Class",
@@ -990,8 +990,8 @@
     },
     "ppheader": {
         "PPHeader": {
-            "title": "Master SAP PP Course in Raipur | Become a Certified SAP Production Planning Consultant",
-            "subtitle": "Join Raipur's most practical SAP PP training program and learn real-time production planning, manufacturing execution, and MRP concepts from certified industry experts. Get 100% job-oriented training with live SAP server access.",
+            "title": "SAP PP Course in Raipur",
+            "subtitle": "Become a Certified SAP PP Consultant",
             "description": "Join Raipur's most practical SAP PP training program and learn real-time production planning, manufacturing execution, and MRP concepts from certified industry experts. Get 100% job-oriented training with live SAP server access.",
             "features": [
                 "Live Class",
@@ -1043,8 +1043,8 @@
     },
     "psheader": {
         "PSHeader": {
-            "title": "Master SAP PS Course in Raipur — Build a Career in Project Systems",
-            "subtitle": "Learn end-to-end SAP Project Systems (PS) module with live projects, real-time case studies, and placement support. Join Raipur's most practical SAP PS training program designed for working professionals and freshers alike.",
+            "title": "SAP PS Course in Raipur",
+            "subtitle": "Become a Certified SAP PS Consultant",
             "description": "Weekday & Weekend Batches | Live Instructor-Led Training | Certificate on Completion | 1-on-1 Doubt Sessions",
             "features": [
                 "Live Class",
@@ -1092,8 +1092,8 @@
     },
     "qmheader": {
         "QMHeader": {
-            "title": "Become a Certified SAP QM Consultant — Right Here in Raipur",
-            "subtitle": "Looking for a career-focused SAP QM course in Raipur that actually gets you job-ready? This program is built for people who want more than theory real SAP systems, real business scenarios, and real guidance from trainers who've worked on live SAP Quality Management projects.",
+            "title": "SAP QM Course in Raipur",
+            "subtitle": "Become a Certified SAP QM Consultant",
             "description": "Whether you're a mechanical, production, or quality engineer, an SAP end-user looking to upskill, or a fresher aiming to break into the SAP ecosystem, this course walks you through every module of SAP QM from quality planning to inspection, quality control, and quality certificates using hands-on system access, not just slides.",
             "features": [
                 "Live Class",
@@ -1141,8 +1141,8 @@
     },
     "scmheader": {
         "SCMHeader": {
-            "title": "Master SAP SCM in Raipur | Build a Career in Supply Chain Management",
-            "subtitle": "Join Raipur's most practical SAP SCM course, designed for freshers, working professionals, and logistics experts who want hands-on SAP training, real-time project exposure, and placement support all under one roof.",
+            "title": "SAP SCM Course in Raipur",
+            "subtitle": "Become a Certified SAP SCM Consultant",
             "description": "Learn SAP MM, SAP SD, SAP PP, SAP WM, and SAP EWM from certified trainers, with live SAP server access and 100% practical sessions.",
             "features": [
                 "Live Class",
@@ -1190,8 +1190,8 @@
     },
     "sdheader": {
         "SDHeader": {
-            "title": "SAP SD Course in Raipur | Become a Certified SAP Sales and Distribution Consultant",
-            "subtitle": "Learn SAP SD from real-time industry experts through a hands-on, placement-focused SAP SD training program in Raipur. Get live project exposure, SAP GUI access, and job-ready skills in Order to Cash, Pricing, Billing, and Credit Management.",
+            "title": "SAP SD Course in Raipur",
+            "subtitle": "Become a Certified SAP SD Consultant",
             "description": "Whether you're a fresher, a functional consultant, or a working professional switching careers, this SAP SD course in Raipur is built to take you from basics to enterprise-level implementation.",
             "features": [
                 "Live Class",
@@ -1243,8 +1243,8 @@
     },
     "succheader": {
         "SuccHeader": {
-            "title": "Become a Certified SAP SuccessFactors Consultant in Raipur",
-            "subtitle": "Learn Employee Central, Recruiting, Performance & Goals, and Learning Management from certified trainers. Get hands-on with live SAP SF systems, real HR project scenarios, and placement support all from the heart of Raipur.",
+            "title": "SAP SuccessFactors Course in Raipur",
+            "subtitle": "Become a Certified SAP SuccessFactors Consultant",
             "description": "Join Raipur's most practical SAP SuccessFactors training program and step into one of the fastest-growing careers in HR technology.",
             "features": [
                 "Live Class",
@@ -1297,7 +1297,7 @@
     "powerbi": {
         "POWERBI": {
             "title": "Power BI Course in Raipur",
-            "subtitle": "Become a Certified Power BI Analyst — Right Here in Raipur",
+            "subtitle": "Become a Certified Power BI Analyst",
             "description": "Data is everywhere, but professionals who can turn it into decisions are still rare. This Power BI course in Raipur is built to change that for you. Over the next few weeks, you'll go from opening Power BI for the first time to publishing dashboards that actual businesses rely on no fluff, no filler, just the skills that get you hired or promoted.",
             "features": [
                 "Live Class",
@@ -1399,7 +1399,7 @@
     "anapage": {
         "ANAHeader": {
             "title": "HR Analytics Course in Raipur",
-            "subtitle": "Become a Certified HR Analytics Professional in Raipur",
+            "subtitle": "Become a Certified HR Analytics Professional",
             "description": "Learn to turn people's data into business decisions. Our HR Analytics Course in Raipur is built for HR professionals who want to move from intuition-based HR to data-driven HR using real tools, real datasets, and real hiring, attrition, and performance case studies.",
             "features": [
                 "Live Class",
@@ -1448,7 +1448,7 @@
     "manpage": {
         "MANHeader": {
             "title": "HR Management Course in Raipur",
-            "subtitle": "Build a Career in HR with Raipur's Most Practical HR Management Course",
+            "subtitle": "Build a Career in HR with Practical HR Management Training",
             "description": "Looking for an HR Management Course in Raipur that actually prepares you for the job floor, not just the exam hall? You are in the right place. Our HR Management Course in Raipur is designed by industry practitioners, covering everything from recruitment and payroll to labour law and HR analytics with real case studies, live projects, and placement support built in.",
             "features": [
                 "Live Class",
@@ -1606,8 +1606,8 @@
     },
     "hrtraining": {
         "HRTrainingHeader": {
-            "title": "HR Training in Raipur",
-            "subtitle": "Build a Career in Human Resources with Practical HR Training in Raipur",
+            "title": "HR Training Course in Raipur",
+            "subtitle": "Build a Career in Human Resources with Practical HR Training",
             "description": "Our HR Training in Raipur covers recruitment, payroll, compliance, HRBP strategy, and HRMS tools, taught by working HR professionals — with real company projects, live case studies, and placement support.",
             "features": [
                 "Live Class",
@@ -1655,8 +1655,8 @@
     },
     "sapheader": {
         "SapHeader": {
-            "title": " Best SAP Course in Raipur",
-            "subtitle": " Get Certified with the best SAP training institute in Raipur",
+            "title": "SAP Course in Raipur",
+            "subtitle": "Get Certified with the Best SAP Training Institute in Raipur",
             "description": "Grow Your Career with the Best SAP Course in Raipur. Accelerate your professional journey with our industry-leading SAP training in Raipur, featuring specialized courses in SAP FICO, SAP MM, and SAP SD. Our comprehensive and hands-on training program is designed to build deep expertise in core SAP modules like Financial Accounting, Materials Management, and Sales & Distribution. Whether you're a fresher or a working professional, we’ll help you land your dream job in top MNCs.",
             "features": [
                 "Live Class",
@@ -1704,9 +1704,9 @@
     },
     "itcoursesheader": {
         "ITcoursesHeader": {
-            "title": "Software Training in Raipur with placement support",
-            "subtitle": " Get Certified with the advance IT training institute in Raipur",
-            "description": " Connecting Dots ERP offers an advanced IT course in Raipur designed to equip you with the essential skills to excel in the fast-evolving tech industry. Our advance and detailed training program covers key modules such as Data Science, Data Analytics, Python, and Java, ensuring you gain the expertise to work with cutting-edge technologies and solve complex business problems. By mastering these modules, you'll be prepared to take on roles like Data Scientist, Data Analyst, Python Developer, and Java Developer. Our course is tailored to help you build a strong foundation and land your dream job in the dynamic field of IT.",
+            "title": "IT Course in Raipur",
+            "subtitle": "Get Certified with Advanced IT Training in Raipur",
+            "description": "Connecting Dots ERP offers an advanced IT course in Raipur designed to equip you with the essential skills to excel in the fast-evolving tech industry. Our advance and detailed training program covers key modules such as Data Science, Data Analytics, Python, and Java, ensuring you gain the expertise to work with cutting-edge technologies and solve complex business problems. By mastering these modules, you'll be prepared to take on roles like Data Scientist, Data Analyst, Python Developer, and Java Developer. Our course is tailored to help you build a strong foundation and land your dream job in the dynamic field of IT.",
             "features": [
                 "Live Class",
                 "1:1 mentorship",
@@ -1753,9 +1753,9 @@
     },
     "hrcoursesheader": {
         "HRcoursesHeader": {
-            "title": "Advance HR Training in Raipur",
-            "subtitle": " Get Certified with the best HR training institute in Raipur",
-            "description": " Connecting Dots ERP offers a advance HR course in Raipur designed to equip you with the essential skills to excel in Human Resources. Our advanced and detailed HR training program covers key modules such as Personnel Administration, Payroll, Time Management, and Organizational Management.By mastering these modules, you'll gain the expertise to streamline HR processes, optimize workforce management, and drive organizational success. Our course is tailored to help you land your dream job in the dynamic field of HR.",
+            "title": "HR Course in Raipur",
+            "subtitle": "Get Certified with the Best HR Training Institute in Raipur",
+            "description": "Connecting Dots ERP offers a advance HR course in Raipur designed to equip you with the essential skills to excel in Human Resources. Our advanced and detailed HR training program covers key modules such as Personnel Administration, Payroll, Time Management, and Organizational Management.By mastering these modules, you'll gain the expertise to streamline HR processes, optimize workforce management, and drive organizational success. Our course is tailored to help you land your dream job in the dynamic field of HR.",
             "features": [
                 "Live Class",
                 "1:1 mentorship",
@@ -1803,7 +1803,7 @@
     "datavisualheader": {
         "DataVisualHeader": {
             "title": "Data Visualization with AI Course in Raipur",
-            "subtitle": "Turn raw numbers into decisions that get noticed",
+            "subtitle": "Turn Raw Numbers into Decisions That Get Noticed",
             "description": "Learn to build dashboards, tell stories with data, and use AI tools to work faster — all in a hands-on program designed for working professionals in Raipur. From Excel to Power BI, Tableau to AI-assisted analytics this course takes you from \"I can make a chart\" to \"I can make a chart that changes minds.\"",
             "features": [
                 "Live Class",
@@ -1851,8 +1851,8 @@
     },
     "awsheader": {
         "AWSHeader": {
-            "title": "Become a Certified AWS Cloud Professional Right Here in Raipur",
-            "subtitle": "Join Raipur's most practical AWS course and learn to design, deploy, and manage real cloud infrastructure on Amazon Web Services. Get hands-on with EC2, S3, IAM, Lambda, VPC, and 20+ AWS services through live projects, not just slides.",
+            "title": "AWS Course in Raipur",
+            "subtitle": "Become a Certified AWS Cloud Professional",
             "description": "Whether you're a fresher, a working IT professional, or a business owner exploring the cloud, this AWS course in Raipur is built to take you from fundamentals to job-ready skills in a few short weeks.",
             "features": [
                 "Live Class",
@@ -1905,7 +1905,7 @@
     "devopsheader": {
         "DevOpsHeader": {
             "title": "DevOps Course in Raipur",
-            "subtitle": "Become a Job-Ready DevOps Engineer with Raipur's Most Practical DevOps Course",
+            "subtitle": "Become a Job-Ready DevOps Engineer",
             "description": "Learn Git, Docker, Kubernetes, Jenkins, AWS, and Terraform through hands-on projects. Our DevOps course in Raipur is designed by industry practitioners to get you interview-ready in 4 months, not 4 years.",
             "features": [
                 "Live Class",
