@@ -254,15 +254,15 @@ const DSHeader = ({ data }) => {
           a diagonal light sheen, and a dedicated glow seated behind the form card. */}
       <div className="pointer-events-none absolute inset-0 z-[1] overflow-hidden" aria-hidden="true">
         <Image
-          src="https://res.cloudinary.com/bropujss/image/upload/v1788153580/headerImg_ftsnkg.webp"
+          src="https://res.cloudinary.com/bropujss/image/upload/c_limit,w_1200,q_auto,f_auto/v1788153580/headerImg_ftsnkg.webp"
           alt="header img"
-          width={861}
-          height={515}
+          width={1200}
+          height={705}
           priority
           fetchPriority="high"
           loading="eager"
           quality={70}
-          sizes="100vw"
+          sizes="(max-width: 1200px) 100vw, 1200px"
           className={styles.heroImage}
         />
         {/* top hairline accent */}

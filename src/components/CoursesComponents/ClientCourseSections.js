@@ -11,7 +11,7 @@ import SapAbapSyllabus from "./SyllabusCard";
 import SapDemoBanner from "./CTAbanner";
 // import {CityLinks} from "@/components/CityLinks";
 // === Above the fold (SSR enabled for SEO-critical content) ===
-const DSHeader = dynamic(() => import("./Header"));
+import DSHeader from "./Header";
 const UpcomingBatches = dynamic(() => import("./UpcomingBatches"))
 const Reviews = dynamic(() => import("./Reviews"));
 const Why = dynamic(() => import("./Why"));
