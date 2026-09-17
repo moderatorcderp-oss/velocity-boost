@@ -1,9 +1,9 @@
 {
   "MDSpage": {
     "MDSHeader": {
-      "title": "Data Science Course in {city}",
-      "subtitle": "We invite you to attend the Best Data Science Certification Program in {city}",
-      "description": "The complete Data Science Course in {city} given by Connecting Dots ERP is meant to give students the tools they need to succeed in the area. Predictive analytics, machine learning, data visualization, and data analysis are some of the important subjects covered in the course. With practical experience working with real-world data, our data science training in {city} makes sure you are ready for opportunities in top firms that focus on data-driven careers",
+      "title": "Data Science with AI Course in Pune",
+      "subtitle": "Become a Data Scientist Who Actually Understands AI – Not Just the Buzzwords",
+      "description": "Pune's most practical Data Science with AI course, built for people who want real skills, real projects, and a real shot at a data science job not just another certificate on the wall. This Data Science with AI course in Pune takes you from Python fundamentals to building and deploying machine learning and generative AI models, the same tools companies are actually hiring for right now.",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -11,11 +11,11 @@
       ],
       "buttons": [
         {
-          "text": "Request Call back",
+          "text": "Book a Free Demo Class",
           "courseName": "Data Science Program"
         },
         {
-          "text": "Download Syllabus",
+          "text": "Download Course Brochure",
           "courseName": "Book Live Demo"
         }
       ],
@@ -45,9 +45,9 @@
   },
   "MDApage": {
     "MDAHeader": {
-      "title": "Data Analytics Course in {city}",
-      "subtitle": "Practical Based Job Oriented Data Analytics Training in {city}",
-      "description": " To evaluate both structured and unstructured data and turn it into insights that can be put to use, the Data Analytics Course in {city} focuses on teaching the methods and resources needed. In addition to focusing on developing abilities in data mining, predictive analysis, and statistical modeling, this program prepares graduates for positions as data scientists, analysts, and business analysts.",
+      "title": "Data Analytics with AI Course in Pune",
+      "subtitle": "Learn to turn raw numbers into real business decisions",
+      "description": "This Data Analytics with AI course in Pune combines hands-on analytics training with practical AI tools like ChatGPT, Python-based machine learning, and automated reporting so you graduate job-ready, not just certificate-ready. 100% live, instructor-led sessions | Real datasets from actual businesses | Weekend and weekday batches in Pune.",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -55,11 +55,11 @@
       ],
       "buttons": [
         {
-          "text": "Request Call back",
+          "text": "Book a Free Demo Class",
           "courseName": "Data Analytics Program"
         },
         {
-          "text": "Download Syllabus",
+          "text": "Download Full Syllabus (PDF)",
           "courseName": "Book Live Demo"
         }
       ],
@@ -143,9 +143,9 @@
   },
   "GPTpage": {
     "GPTHeader": {
-      "title": "Artificial Intelligence Course in {city}",
-      "subtitle": "We invite you to attend the Best Artificial Intelligence Certification Program in {city}",
-      "description": "Connecting Dots ERP's extensive Artificial Intelligence Course in {city} aims to give students the abilities they need to succeed in AI. The course covers important subjects, including AI-driven automation, machine learning, deep learning, and natural language processing. With practical experience working on actual ChatGPT and AI projects, our AI training in {city} guarantees that you are ready for employment prospects in prestigious companies that value innovation and AI-powered solutions",
+      "title": "Generative AI Course in Pune",
+      "subtitle": "Build Real Skills for the AI-First Job Market",
+      "description": "Learn to design, train, and deploy Generative AI applications using ChatGPT, LangChain, RAG pipelines, and open-source LLMs. A hands-on Generative AI course in Pune built for working professionals, freshers, and career switchers who want to move into AI roles fast.",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -153,11 +153,11 @@
       ],
       "buttons": [
         {
-          "text": "Request Call back",
+          "text": "Book a Free Demo Class",
           "courseName": "Generative AI"
         },
         {
-          "text": "Download Syllabus",
+          "text": "Download Course Brochure",
           "courseName": "Book Live Demo"
         }
       ],
@@ -241,9 +241,9 @@
   },
   "javaheader": {
     "JavaHeader": {
-      "title": "Java Training Program in {city}",
-      "subtitle": "Project-based Job Oriented Java Course in {city}",
-      "description": "Grow your career with Connecting Dots ERP’s Java course in {city}, designed to equip you with essential programming skills for a successful tech career. With hands-on training and job placement support, this course prepares you to thrive in the competitive world of Java development.",
+      "title": "Java Course in Pune",
+      "subtitle": "Learn to Code, Build Real Projects, Get Hired",
+      "description": "Join Pune's most practical Java training program and go from writing your first line of code to building production-ready applications. Whether you're a fresher, a college student, or a working professional switching careers, this Java course in Pune is designed to get you job-ready not just certificate-ready.",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -251,11 +251,11 @@
       ],
       "buttons": [
         {
-          "text": "Request Call back",
+          "text": "Book a Free Demo Class",
           "courseName": "Java Training Program"
         },
         {
-          "text": "Download Syllabus",
+          "text": "Download Course Brochure",
           "courseName": "Book Live Demo"
         }
       ],
@@ -290,9 +290,9 @@
   },
   "pythonheader": {
     "PythonHeader": {
-      "title": "Python Training Program in {city}",
-      "subtitle": " Learn Our advanced Python Course in {city} with practical training",
-      "description": "Unlock new career opportunities with Connecting Dots' Python course in {city}, designed to help you master one of the most versatile programming languages. Through hands-on training, expert mentorship, and real-world projects, this course prepares you for a wide range of programming roles, making you proficient in Python development and data handling.",
+      "title": "Python Course in Pune",
+      "subtitle": "Master Python with Pune's Most Practical Python Course",
+      "description": "Join the leading Python course in Pune designed for beginners, working professionals, and career switchers. Learn Python programming, data structures, automation, and real-world projects with mentorship from industry experts who've built software that actually ships.",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -300,11 +300,11 @@
       ],
       "buttons": [
         {
-          "text": "Request Call back",
+          "text": "Book a Free Demo Class",
           "courseName": "PYTHON Program"
         },
         {
-          "text": "Download Syllabus",
+          "text": "Download Syllabus PDF",
           "courseName": "Book Live Demo"
         }
       ],
@@ -333,15 +333,15 @@
             "countryCode": "+91"
           }
         ],
-        "submitText": ""
+        "submitText": "Book Live Class"
       }
     }
   },
   "salesheader": {
     "SalesHeader": {
-      "title": "Advance Salesforce Training in {city}",
-      "subtitle": "Join our Project-based Salesforce Training Program in {city}",
-      "description": "Accelerate your career with Connecting Dots' Salesforce course in {city}, designed to equip you with the essential skills required to master Salesforce CRM, one of the most in-demand platforms in the world. Through practical training and project-based learning, this course prepares you for a range of roles in CRM management, cloud solutions, and customer relationship management.",
+      "title": "Salesforce Course in Pune",
+      "subtitle": "Become a Certified Salesforce Professional",
+      "description": "Learn Salesforce Admin, Developer, and CRM skills from industry experts. Our Salesforce course in Pune combines live projects, real CRM case studies, and placement support to help you launch a career in the world's #1 CRM platform.",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -349,11 +349,11 @@
       ],
       "buttons": [
         {
-          "text": "Request Call back",
+          "text": "Book a Free Demo Class",
           "courseName": "Salesforce Program"
         },
         {
-          "text": "Download Syllabus",
+          "text": "Download Course Brochure",
           "courseName": "Book Live Demo"
         }
       ],
@@ -843,9 +843,9 @@
   },
   "coreheader": {
     "CoreHeader": {
-      "title": "Core HR Training in {city}",
-      "subtitle": "Join our Practical-based Core HR Training in {city}",
-      "description": "Enhance your career with Connecting Dot's Core HR course in {city}, tailored to provide you with the key competencies needed to thrive in the field of human resource management. Focusing on practical skills and hands-on learning, this course equips you for various roles such as recruitment, employee engagement, talent development, and HR data analysis, helping you become a valuable asset in any organization.",
+      "title": "Core HR Course in Pune",
+      "subtitle": "Build a Career in Human Resources That Actually Goes Somewhere",
+      "description": "Learn the real, day-to-day skills HR teams use — recruitment, payroll, compliance, performance management, and HRMS tools — through a practical Core HR Course in Pune designed with working professionals and freshers in mind. 100% Practical Training | Live Projects | Placement Assistance | Weekday & Weekend Batches.",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -853,11 +853,11 @@
       ],
       "buttons": [
         {
-          "text": "Request Call back",
-          "courseName": "Core HR Training Program"
+          "text": "Book a Free Demo Class",
+          "courseName": "Core HR Program"
         },
         {
-          "text": "Download Syllabus",
+          "text": "Download Course Brochure",
           "courseName": "Book Live Demo"
         }
       ],
@@ -875,14 +875,9 @@
             "placeholder": "Enter your Email"
           },
           {
-            "type": "location",
-            "name": "location",
-            "placeholder": "Select your location"
-          },
-          {
-            "type": "course",
-            "name": "course",
-            "placeholder": "Select course"
+            "type": "text",
+            "name": "year",
+            "placeholder": "Year of Passing"
           },
           {
             "type": "tel",
@@ -1301,9 +1296,9 @@
   },
   "powerbi": {
     "POWERBI": {
-      "title": "Power BI Course in {city}",
-      "subtitle": "Job Oriented Power BI Classes in {city}",
-      "description": "Power BI is a powerful tool designed to help businesses turn raw data into actionable insights. Whether you’re a beginner or a seasoned professional, our Power BI course in {city} offers an in-depth understanding of the platform, enabling you to harness the full potential of your data. From interactive dashboards to real-time analytics, Power BI makes it easier to make informed decisions. Get started today and elevate your data skills through our advanced Power BI classes in {city}.",
+      "title": "Power BI Course in Pune",
+      "subtitle": "Become a Certified Power BI Analyst — Right Here in Pune",
+      "description": "Data is everywhere, but professionals who can turn it into decisions are still rare. This Power BI course in Pune is built to change that for you. Over the next few weeks, you'll go from opening Power BI for the first time to publishing dashboards that actual businesses rely on no fluff, no filler, just the skills that get you hired or promoted.Whether you're a fresh graduate, a working professional switching to analytics, or someone who's tired of manually updating Excel reports every Monday morning, this course meets you where you are.",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -1311,11 +1306,15 @@
       ],
       "buttons": [
         {
-          "text": "Request Call back",
+          "text": "Enroll Now",
           "courseName": "Power BI Program"
         },
         {
-          "text": "Download Syllabus",
+          "text": "Download Curriculum PDF",
+          "courseName": "Book Live Demo"
+        },
+        {
+          "text": "Talk to a Counsellor",
           "courseName": "Book Live Demo"
         }
       ],
@@ -1350,9 +1349,9 @@
   },
   "tableau": {
     "TABLEAU": {
-      "title": "Tableau Training in {city}",
-      "subtitle": "100% Practical Based Job Oriented Best Tableau Course in {city}",
-      "description": "Tableau is one of the most powerful data visualization tools, offering businesses and individuals the ability to analyze data in dynamic, interactive ways. Whether you're looking to enhance your skills with a Tableau certification Training in {city}, take a Tableau course, or explore Tableau tutorials, we provide everything you need to master the art of data storytelling.",
+      "title": "Tableau Course in Pune",
+      "subtitle": "Turn Raw Data Into Real Decisions",
+      "description": " Learn Tableau the way working analysts actually use it through live dashboards, real datasets, and a mentor who's built reports for actual businesses, not just slides.Pune's job market is full of roles asking for Tableau proficiency, but most people learning it online never touch a real business problem. This Tableau course in Pune is built differently. You'll work with messy, real-world data, build dashboards that a manager would actually approve of, and leave with a portfolio you can show in an interview instead of just a certificate you have to explain.",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -1360,11 +1359,11 @@
       ],
       "buttons": [
         {
-          "text": "Request Call back",
+          "text": "Book a Free Demo Class",
           "courseName": "Tableau Program"
         },
         {
-          "text": "Download Syllabus",
+          "text": "Download Course Brochure",
           "courseName": "Book Live Demo"
         }
       ],
@@ -1399,9 +1398,9 @@
   },
   "anapage": {
     "ANAHeader": {
-      "title": " HR Analytics Training in {city}",
-      "subtitle": " Master Data-Driven HR Decision Making with Our HR Analytics Training in {city}",
-      "description": "Upgrade your HR skills with Connecting Dots' HR Analytics course in {city}, designed to provide a comprehensive understanding of data analysis in human resource management. This course equips you with the tools to analyze employee data, improve HR processes, and make informed decisions. By integrating data-driven insights into HR operations, you will enhance talent management, recruitment, employee engagement, and retention strategies.",
+      "title": "HR Analytics Course in Pune",
+      "subtitle": "Become a Certified HR Analytics Professional in Pune",
+      "description": "Learn to turn people's data into business decisions. Our HR Analytics Course in Pune is built for HR professionals who want to move from intuition-based HR to data-driven HR using real tools, real datasets, and real hiring, attrition, and performance case studies.",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -1409,11 +1408,11 @@
       ],
       "buttons": [
         {
-          "text": "Request Call back",
-          "courseName": "Digital Marketing Training Program"
+          "text": "Enroll in the HR Analytics Course",
+          "courseName": "HR Analytics Program"
         },
         {
-          "text": "Download Syllabus",
+          "text": "Download Full Syllabus (PDF)",
           "courseName": "Book Live Demo"
         }
       ],
@@ -1436,7 +1435,7 @@
             "placeholder": "Year of Passing"
           },
           {
-            "type": "text",
+            "type": "tel",
             "name": "contactname",
             "placeholder": "Enter your phone number",
             "countryCode": "+91"
@@ -1448,9 +1447,9 @@
   },
   "manpage": {
     "MANHeader": {
-      "title": "HR Management Training in {city}",
-      "subtitle": "Join our complete HR Management Training in {city}",
-      "description": "Elevate your career with Connecting Dots' HR Management course in {city}, designed to provide in-depth knowledge and hands-on experience in managing human resources effectively. This course covers key areas such as employee recruitment, talent development, performance management, and compliance with labor laws, equipping you with the skills necessary to thrive in HR roles.",
+      "title": "HR Management Course in Pune",
+      "subtitle": "Build a Career in HR with Pune's Most Practical HR Management Course",
+      "description": "Looking for an HR Management Course in Pune that actually prepares you for the job floor, not just the exam hall? Our course is designed by industry practitioners, covering everything from recruitment and payroll to labour law and HR analytics with real case studies, live projects, and placement support built in.",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -1458,11 +1457,15 @@
       ],
       "buttons": [
         {
-          "text": "Request Call back",
-          "courseName": "Digital Marketing Training Program"
+          "text": "Enroll Now",
+          "courseName": "HR Management Program"
         },
         {
-          "text": "Download Syllabus",
+          "text": "Download Course Brochure",
+          "courseName": "Book Live Demo"
+        },
+        {
+          "text": "Book a Free Counselling Call",
           "courseName": "Book Live Demo"
         }
       ],
@@ -1485,7 +1488,7 @@
             "placeholder": "Year of Passing"
           },
           {
-            "type": "text",
+            "type": "tel",
             "name": "contactname",
             "placeholder": "Enter your phone number",
             "countryCode": "+91"
@@ -1497,9 +1500,9 @@
   },
   "payrollmanpage": {
     "PAYROLLHeader": {
-      "title": "Advance HR Payroll Training in {city}",
-      "subtitle": "Join our Project-based HR Payroll Training in {city}",
-      "description": "Advance your career with Connecting Dots' HR Payroll course in {city}, meticulously designed to provide you with the essential skills to excel in payroll management within Human Resource Management. This practical, hands-on training focuses on vital areas like payroll processing, tax compliance, employee benefits, and HR systems, equipping you to efficiently manage payroll functions in any organization.",
+      "title": "HR Payroll Course in Pune",
+      "subtitle": "Become a Job-Ready Payroll Professional",
+      "description": "Learn end-to-end payroll processing, statutory compliance, and HR operations with hands-on training designed by industry practitioners. Join Pune's most practical HR Payroll Course and get placement support from day one. 100% Practical Training | Live Payroll Software | Real Case Studies | Placement Assistance.",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -1507,11 +1510,15 @@
       ],
       "buttons": [
         {
-          "text": "Request Call back",
-          "courseName": "Digital Marketing Training Program"
+          "text": "Enroll Now",
+          "courseName": "HR Payroll Program"
         },
         {
-          "text": "Download Syllabus",
+          "text": "Download Brochure",
+          "courseName": "Book Live Demo"
+        },
+        {
+          "text": "Book a Free Demo Class",
           "courseName": "Book Live Demo"
         }
       ],
@@ -1534,7 +1541,7 @@
             "placeholder": "Year of Passing"
           },
           {
-            "type": "text",
+            "type": "tel",
             "name": "contactname",
             "placeholder": "Enter your phone number",
             "countryCode": "+91"
@@ -1546,9 +1553,9 @@
   },
   "genpage": {
     "GENHeader": {
-      "title": "HR Generalist Training in {city}",
-      "subtitle": "Become a Versatile HR Professional with Our HR Generalist Training in {city}",
-      "description": "Elevate your career in human resources with Connecting Dots' HR Generalist training in {city}, designed to provide you with a well-rounded understanding of key HR functions. This training program covers recruitment, employee relations, payroll management, performance appraisals, and labor laws, equipping you with the skills required to excel as an HR Generalist in any organization.",
+      "title": "HR Generalist Course in Pune",
+      "subtitle": "Become a Job-Ready HR Generalist in Just 3 Months",
+      "description": "If you are looking to build a career in Human Resources, this HR Generalist Course in Pune is designed to take you from the basics of HR to handling real, end-to-end HR operations with confidence. You'll learn recruitment, payroll, compliance, performance management, and HR software — all taught by working HR professionals.",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -1556,11 +1563,15 @@
       ],
       "buttons": [
         {
-          "text": "Request Call back",
-          "courseName": "Digital Marketing Training Program"
+          "text": "Enroll Now",
+          "courseName": "HR Generalist Program"
         },
         {
-          "text": "Download Syllabus",
+          "text": "Book a Free Demo Class",
+          "courseName": "Book Live Demo"
+        },
+        {
+          "text": "Download Course Brochure",
           "courseName": "Book Live Demo"
         }
       ],
@@ -1583,7 +1594,7 @@
             "placeholder": "Year of Passing"
           },
           {
-            "type": "text",
+            "type": "tel",
             "name": "contactname",
             "placeholder": "Enter your phone number",
             "countryCode": "+91"
@@ -1595,9 +1606,9 @@
   },
   "hrtraining": {
     "HRTrainingHeader": {
-      "title": "Best HR Training Institute in {city}",
-      "subtitle": " Learn advance HR Strategies with Practical learning",
-      "description": " Enhance your career with Best HR Training Institute in {city} including HR Generalist, CORE HR, Payroll Management, HR Management, and HR Analytics. Our HR  programs blend theoretical insights with practical experience about the case studies, equipping you with essential skills to excel in diverse HR roles across the industries.",
+      "title": "HR Training in Pune",
+      "subtitle": "Build a Career in Human Resources with Practical HR Training in Pune",
+      "description": "Our HR Training in Pune covers recruitment, payroll, compliance, HRBP strategy, and HRMS tools, taught by working HR professionals — with real company projects, live case studies, and placement support.",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -1605,11 +1616,11 @@
       ],
       "buttons": [
         {
-          "text": "Request Call back",
-          "courseName": "Digital Marketing Training Program"
+          "text": "Book a Free Demo Class",
+          "courseName": "HR Training Program"
         },
         {
-          "text": "Download Syllabus",
+          "text": "Download Course Brochure",
           "courseName": "Book Live Demo"
         }
       ],
@@ -1632,7 +1643,7 @@
             "placeholder": "Year of Passing"
           },
           {
-            "type": "text",
+            "type": "tel",
             "name": "contactname",
             "placeholder": "Enter your phone number",
             "countryCode": "+91"
@@ -1791,9 +1802,9 @@
   },
   "datavisualheader": {
     "DataVisualHeader": {
-      "title": "Data Visualization Course in {city}",
-      "subtitle": "Get Certified with the Data Visualization training institute in {city}",
-      "description": " We offers an advanced Data Visualization course in {city} designed to equip you with the essential skills to excel in the fast-evolving field of data analytics and visualization. Our detailed training program covers key modules such as data visualization techniques, tools like Tableau, Power BI, and advanced Excel, as well as best practices for creating compelling, insightful visualizations from complex datasets. By mastering these modules, you will be prepared to take on roles such as Data Visualization Specialist, Business Intelligence Analyst, or Data Analyst. ",
+      "title": "Data Visualization with AI Course in Pune",
+      "subtitle": "Turn raw numbers into decisions that get noticed",
+      "description": "Learn to build dashboards, tell stories with data, and use AI tools to work faster — all in a hands-on program designed for working professionals in Pune. From Excel to Power BI, Tableau to AI-assisted analytics this course takes you from \"I can make a chart\" to \"I can make a chart that changes minds.\"",
       "features": [
         "Live Class",
         "1:1 mentorship",
@@ -1801,11 +1812,11 @@
       ],
       "buttons": [
         {
-          "text": "Request Call back",
-          "courseName": "Digital Marketing Training Program"
+          "text": "Book a Free Demo Class",
+          "courseName": "Data Visualization Program"
         },
         {
-          "text": "Download Syllabus",
+          "text": "Download Course Brochure",
           "courseName": "Book Live Demo"
         }
       ],
@@ -1828,7 +1839,215 @@
             "placeholder": "Year of Passing"
           },
           {
+            "type": "tel",
+            "name": "contactname",
+            "placeholder": "Enter your phone number",
+            "countryCode": "+91"
+          }
+        ],
+        "submitText": "Book Live Class"
+      }
+    }
+  },
+  "agenticheader": {
+    "AgenticHeader": {
+      "title": "Agentic AI Course in Pune",
+      "subtitle": "Build Autonomous AI Agents That Actually Get Work Done",
+      "description": "Learn to design, build, and deploy AI agents that plan, reason, and act on their own. This hands-on Agentic AI course in Pune takes you from LLM basics to production-ready multi-agent systems using tools like LangChain, LangGraph, AutoGen, and CrewAI. Classroom sessions in Pune + live online batches | Real projects, not just theory | Certificate on completion | Placement support for eligible learners.",
+      "features": [
+        "Live Class",
+        "1:1 mentorship",
+        "Industry projects"
+      ],
+      "buttons": [
+        {
+          "text": "Enroll Now",
+          "courseName": "Agentic AI Program"
+        },
+        {
+          "text": "Download Curriculum",
+          "courseName": "Book Live Demo"
+        },
+        {
+          "text": "Book a Free Demo Class",
+          "courseName": "Book Live Demo"
+        }
+      ],
+      "form": {
+        "title": "Book a FREE live class",
+        "inputs": [
+          {
             "type": "text",
+            "name": "name",
+            "placeholder": "Enter your name"
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "placeholder": "Enter your Email"
+          },
+          {
+            "type": "text",
+            "name": "year",
+            "placeholder": "Year of Passing"
+          },
+          {
+            "type": "tel",
+            "name": "contactname",
+            "placeholder": "Enter your phone number",
+            "countryCode": "+91"
+          }
+        ],
+        "submitText": "Book Live Class"
+      }
+    }
+  },
+  "aimlheader": {
+    "AIMLHeader": {
+      "title": "AI ML Course in Pune",
+      "subtitle": "Learn Artificial Intelligence & Machine Learning the Practical Way",
+      "description": "Build real-world AI and ML projects, master Python, and get job-ready with a hands-on AI ML course in Pune trusted by students, working professionals, and career switchers. Pune has become one of India's fastest-growing hubs for artificial intelligence and data-driven careers, and this AI ML course in Pune is built to help you become part of that growth story.",
+      "features": [
+        "Live Class",
+        "1:1 mentorship",
+        "Industry projects"
+      ],
+      "buttons": [
+        {
+          "text": "Enroll Now",
+          "courseName": "AIML Program"
+        },
+        {
+          "text": "Download Brochure",
+          "courseName": "Book Live Demo"
+        },
+        {
+          "text": "Talk to a Counsellor",
+          "courseName": "Book Live Demo"
+        }
+      ],
+      "form": {
+        "title": "Book a FREE live class",
+        "inputs": [
+          {
+            "type": "text",
+            "name": "name",
+            "placeholder": "Enter your name"
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "placeholder": "Enter your Email"
+          },
+          {
+            "type": "text",
+            "name": "year",
+            "placeholder": "Year of Passing"
+          },
+          {
+            "type": "tel",
+            "name": "contactname",
+            "placeholder": "Enter your phone number",
+            "countryCode": "+91"
+          }
+        ],
+        "submitText": "Book Live Class"
+      }
+    }
+  },
+  "awsheader": {
+    "AWSHeader": {
+      "title": "AWS Course in Pune",
+      "subtitle": "Become a Certified AWS Cloud Professional Right Here in Pune",
+      "description": "Join Pune's most practical AWS course and learn to design, deploy, and manage real cloud infrastructure on Amazon Web Services. Get hands-on with EC2, S3, IAM, Lambda, VPC, and 20+ AWS services through live projects, not just slides. Whether you're a fresher, a working IT professional, or a business owner exploring the cloud, this AWS course in Pune is built to take you from fundamentals to job-ready skills.",
+      "features": [
+        "Live Class",
+        "1:1 mentorship",
+        "Industry projects"
+      ],
+      "buttons": [
+        {
+          "text": "Book a Free Demo Class",
+          "courseName": "AWS Program"
+        },
+        {
+          "text": "Download Course Brochure",
+          "courseName": "Book Live Demo"
+        },
+        {
+          "text": "Talk to a Career Counsellor",
+          "courseName": "Book Live Demo"
+        }
+      ],
+      "form": {
+        "title": "Book a FREE live class",
+        "inputs": [
+          {
+            "type": "text",
+            "name": "name",
+            "placeholder": "Enter your name"
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "placeholder": "Enter your Email"
+          },
+          {
+            "type": "text",
+            "name": "year",
+            "placeholder": "Year of Passing"
+          },
+          {
+            "type": "tel",
+            "name": "contactname",
+            "placeholder": "Enter your phone number",
+            "countryCode": "+91"
+          }
+        ],
+        "submitText": "Book Live Class"
+      }
+    }
+  },
+  "devopsheader": {
+    "DevOpsHeader": {
+      "title": "DevOps Course in Pune",
+      "subtitle": "Become a Job-Ready DevOps Engineer with Pune's Most Practical DevOps Course",
+      "description": "Learn Git, Docker, Kubernetes, Jenkins, AWS, and Terraform through hands-on projects. Our DevOps course in Pune is designed by industry practitioners to get you interview-ready in 4 months, not 4 years.",
+      "features": [
+        "Live Class",
+        "1:1 mentorship",
+        "Industry projects"
+      ],
+      "buttons": [
+        {
+          "text": "Book a Free Demo Class",
+          "courseName": "DevOps Program"
+        },
+        {
+          "text": "Download Detailed Curriculum (PDF)",
+          "courseName": "Book Live Demo"
+        }
+      ],
+      "form": {
+        "title": "Book a FREE live class",
+        "inputs": [
+          {
+            "type": "text",
+            "name": "name",
+            "placeholder": "Enter your name"
+          },
+          {
+            "type": "email",
+            "name": "email",
+            "placeholder": "Enter your Email"
+          },
+          {
+            "type": "text",
+            "name": "year",
+            "placeholder": "Year of Passing"
+          },
+          {
+            "type": "tel",
             "name": "contactname",
             "placeholder": "Enter your phone number",
             "countryCode": "+91"

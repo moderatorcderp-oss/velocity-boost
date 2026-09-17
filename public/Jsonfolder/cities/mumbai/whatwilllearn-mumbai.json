@@ -673,66 +673,66 @@
   ],
   "whatds": [
     {
+      "icon": "Code2",
+      "title": "Python for Data & AI",
+      "description": "Write clean, efficient Python code for data analysis and automation."
+    },
+    {
       "icon": "Database",
-      "title": "Data Science Fundamentals",
-      "description": "Understand the complete data science lifecycle from data collection to model deployment."
+      "title": "Data Cleaning & Exploration",
+      "description": "Clean, transform and explore messy real-world datasets with Pandas and NumPy."
     },
     {
       "icon": "BarChart3",
-      "title": "Statistical Analysis & EDA",
-      "description": "Perform exploratory data analysis and apply statistical techniques to real datasets."
-    },
-    {
-      "icon": "Code2",
-      "title": "Machine Learning Models",
-      "description": "Build, train and evaluate supervised and unsupervised machine learning models."
+      "title": "Statistics & Probability",
+      "description": "Apply statistics and probability to actually make sense of data, not just memorise formulas."
     },
     {
       "icon": "Layers",
-      "title": "Data Visualization",
-      "description": "Create clear, insightful visualizations and dashboards that communicate findings effectively."
+      "title": "Machine Learning Models",
+      "description": "Build, train and evaluate machine learning models — regression, classification, clustering."
     },
     {
       "icon": "Rocket",
-      "title": "Real-world Projects",
-      "description": "Work on end-to-end projects that mirror industry use-cases and business problems."
+      "title": "Deep Learning & Generative AI",
+      "description": "Use deep learning frameworks and work with generative AI, LLMs and prompt engineering."
     },
     {
       "icon": "Award",
-      "title": "Interview & Job Readiness",
-      "description": "Prepare for data science interviews with portfolio projects and domain knowledge."
+      "title": "Deployment & Portfolio",
+      "description": "Deploy a working model as a simple web app and present findings clearly to a non-technical audience."
     }
   ],
   "whatda": [
     {
       "icon": "Database",
-      "title": "Data Analytics Foundations",
-      "description": "Master the core concepts of data analytics and the tools used to turn data into insights."
-    },
-    {
-      "icon": "BarChart3",
-      "title": "Data Cleaning & Preparation",
-      "description": "Clean, transform and prepare structured and unstructured data for analysis."
+      "title": "Excel, SQL & Python Analytics",
+      "description": "Clean, structure and analyze large datasets using Excel, SQL and Python."
     },
     {
       "icon": "PieChart",
-      "title": "Statistical Modeling",
-      "description": "Apply statistical techniques and predictive modeling to real business data."
+      "title": "Power BI & Tableau Dashboards",
+      "description": "Build interactive dashboards in Power BI and Tableau that tell a clear business story."
+    },
+    {
+      "icon": "BarChart3",
+      "title": "Statistics & Predictive Modeling",
+      "description": "Apply statistical methods and train basic machine learning models for prediction and classification."
+    },
+    {
+      "icon": "Sparkles",
+      "title": "Generative AI for Analytics",
+      "description": "Use Generative AI tools and prompt engineering to automate reports, summarize data and generate insights."
     },
     {
       "icon": "TrendingUp",
-      "title": "Business Insights",
-      "description": "Translate analytical findings into actionable recommendations for stakeholders."
-    },
-    {
-      "icon": "Layout",
-      "title": "Dashboards & Reporting",
-      "description": "Build interactive reports and dashboards that drive decision-making."
+      "title": "Data Storytelling",
+      "description": "Design and present data stories that decision-makers can actually act on."
     },
     {
       "icon": "Award",
-      "title": "Career Preparation",
-      "description": "Get ready for Data Analyst and Business Analyst roles with practical projects."
+      "title": "Capstone Portfolio",
+      "description": "Build a portfolio of live projects using real datasets across retail, finance and e-commerce."
     }
   ],
   "whatba": [
@@ -770,33 +770,33 @@
   "whatgpt": [
     {
       "icon": "Cloud",
-      "title": "AI & Generative AI Fundamentals",
-      "description": "Understand the core concepts of Artificial Intelligence and Generative AI systems."
+      "title": "LLM Fundamentals",
+      "description": "Understand how large language models like GPT, Claude and Gemini actually work."
     },
     {
       "icon": "Code2",
-      "title": "Large Language Models",
-      "description": "Work with LLMs, prompt engineering and practical applications of ChatGPT-style models."
+      "title": "Prompt Engineering",
+      "description": "Write high-quality prompts using proven prompt engineering frameworks."
     },
     {
       "icon": "Layers",
-      "title": "Machine Learning & Deep Learning",
-      "description": "Build and train ML and deep learning models for real-world tasks."
+      "title": "RAG & Custom GPTs",
+      "description": "Use Retrieval-Augmented Generation to connect AI models to your own data and build custom GPTs and chatbots."
     },
     {
       "icon": "Rocket",
-      "title": "AI Project Development",
-      "description": "Design and implement end-to-end AI solutions including NLP and automation."
+      "title": "AI Agents & Automation",
+      "description": "Build AI agents and automate content, research and reporting workflows."
     },
     {
       "icon": "Settings",
-      "title": "AI Tools & Frameworks",
-      "description": "Gain hands-on experience with popular AI frameworks and deployment tools."
+      "title": "Fine-Tuning & Responsible AI",
+      "description": "Understand fine-tuning basics and apply AI responsibly covering bias, hallucination and data privacy."
     },
     {
       "icon": "Award",
-      "title": "Career in AI",
-      "description": "Prepare for roles such as AI Engineer, ML Engineer and AI Solutions Architect."
+      "title": "Portfolio Projects",
+      "description": "Build a portfolio of real Generative AI projects you can show in interviews or client pitches."
     }
   ],
   "whatfullstack": [
@@ -834,65 +834,65 @@
   "whatjava": [
     {
       "icon": "Code2",
-      "title": "Core Java Programming",
-      "description": "Master Java syntax, OOP concepts, collections and exception handling."
+      "title": "Core Java & OOP",
+      "description": "Write clean, efficient Java code using core OOP principles — inheritance, polymorphism, encapsulation, abstraction."
     },
     {
       "icon": "Layers",
-      "title": "Advanced Java & Frameworks",
-      "description": "Work with Spring, Hibernate and other enterprise Java frameworks."
-    },
-    {
-      "icon": "Database",
-      "title": "Database Connectivity",
-      "description": "Connect Java applications to databases using JDBC and ORM tools."
+      "title": "Collections, Multithreading & JDBC",
+      "description": "Work confidently with Java collections, exception handling, multithreading and connect applications to databases."
     },
     {
       "icon": "Server",
-      "title": "Backend & API Development",
-      "description": "Build RESTful services and backend systems with Java."
+      "title": "Spring Boot & REST APIs",
+      "description": "Build and consume REST APIs using Spring Boot."
+    },
+    {
+      "icon": "Database",
+      "title": "Hibernate / JPA",
+      "description": "Use Hibernate/JPA for object-relational mapping in real projects."
     },
     {
       "icon": "Rocket",
-      "title": "Real Project Implementation",
-      "description": "Develop complete Java applications that solve real business problems."
+      "title": "Git, Testing & Deployment",
+      "description": "Use Git, write unit tests with JUnit and deploy a working Java application from scratch."
     },
     {
       "icon": "Award",
-      "title": "Interview Preparation",
-      "description": "Get ready for Java Developer and Backend Engineer roles."
+      "title": "Interview & DSA Prep",
+      "description": "Approach coding interview questions and DSA problems with a structured method."
     }
   ],
   "whatpython": [
     {
       "icon": "Code2",
-      "title": "Python Programming Basics",
-      "description": "Learn Python syntax, data structures, functions and object-oriented programming."
+      "title": "Core Python & OOP",
+      "description": "Master core Python programming — variables, data types, loops, functions, logic building and OOP concepts."
     },
     {
       "icon": "Database",
-      "title": "Data Handling with Python",
-      "description": "Work with files, databases and popular data libraries like Pandas and NumPy."
+      "title": "Data Handling & Libraries",
+      "description": "Work with files, databases and popular data libraries like NumPy, Pandas and Matplotlib."
     },
     {
-      "icon": "BarChart3",
-      "title": "Data Analysis & Visualization",
-      "description": "Analyze data and create visualizations using Python libraries."
+      "icon": "Globe",
+      "title": "Web Scraping & Automation",
+      "description": "Build mini real-world projects including automation scripts and web scraping fundamentals."
     },
     {
-      "icon": "Rocket",
-      "title": "Web & Automation Projects",
-      "description": "Build web applications and automation scripts with Python."
+      "icon": "Server",
+      "title": "APIs & Web Basics",
+      "description": "Work with APIs and get an introduction to web development using Flask/Django basics."
     },
     {
-      "icon": "Layers",
-      "title": "Python for AI & ML",
-      "description": "Apply Python in machine learning and AI project workflows."
+      "icon": "GitBranch",
+      "title": "Git & Project Work",
+      "description": "Use version control with Git and GitHub for collaborative projects."
     },
     {
       "icon": "Award",
-      "title": "Career Pathways",
-      "description": "Prepare for roles as Python Developer, Data Analyst or Automation Engineer."
+      "title": "Interview & Portfolio Ready",
+      "description": "Prepare for interviews with resume building, mock technical interviews and a portfolio of projects."
     }
   ],
   "whatsales": [
@@ -929,98 +929,98 @@
   ],
   "whatpowerbi": [
     {
-      "icon": "BarChart3",
-      "title": "Power BI Fundamentals",
-      "description": "Understand the Power BI ecosystem and how to connect to multiple data sources."
+      "icon": "Database",
+      "title": "Data Connection & Power Query",
+      "description": "Connect Power BI to Excel, SQL databases, web sources and clean data using Power Query."
     },
     {
-      "icon": "Database",
-      "title": "Data Modeling",
-      "description": "Build efficient data models, relationships and calculated columns/measures."
+      "icon": "Layers",
+      "title": "Data Modeling & Relationships",
+      "description": "Build relationships between multiple tables and design a proper data model."
+    },
+    {
+      "icon": "Calculator",
+      "title": "DAX Formulas",
+      "description": "Write DAX formulas — from basic calculated columns to advanced measures."
     },
     {
       "icon": "PieChart",
       "title": "Interactive Dashboards",
-      "description": "Design professional, interactive dashboards and reports."
-    },
-    {
-      "icon": "TrendingUp",
-      "title": "DAX & Advanced Analytics",
-      "description": "Write DAX formulas for advanced calculations and business logic."
+      "description": "Design dashboards that are visually clear with slicers, filters, bookmarks and drill-throughs."
     },
     {
       "icon": "Share2",
-      "title": "Sharing & Collaboration",
-      "description": "Publish reports, manage workspaces and share insights securely."
+      "title": "Publishing & Security",
+      "description": "Publish and share dashboards through the Power BI Service with scheduled refresh and row-level security."
     },
     {
       "icon": "Award",
-      "title": "Job-Ready Portfolio",
-      "description": "Create portfolio projects and prepare for Power BI Developer roles."
+      "title": "Portfolio & Career Ready",
+      "description": "Present data insights confidently and build portfolio projects for analyst roles."
     }
   ],
   "whattableau": [
     {
-      "icon": "BarChart3",
-      "title": "Tableau Fundamentals",
-      "description": "Learn the Tableau interface and how to connect to various data sources."
+      "icon": "Database",
+      "title": "Data Connections & Prep",
+      "description": "Connect Tableau to Excel, SQL databases and cloud platforms and prepare data using Tableau Prep."
     },
     {
-      "icon": "Layers",
-      "title": "Data Preparation & Modeling",
-      "description": "Clean, join and prepare data for effective visualization."
+      "icon": "Calculator",
+      "title": "Calculations & LOD",
+      "description": "Build calculated fields, table calculations and Level of Detail (LOD) expressions."
     },
     {
       "icon": "PieChart",
-      "title": "Advanced Visualizations",
-      "description": "Create sophisticated charts, maps and interactive dashboards."
+      "title": "Interactive Dashboards",
+      "description": "Design interactive dashboards, stories and reports that communicate insights clearly."
     },
     {
       "icon": "TrendingUp",
-      "title": "Calculations & Analytics",
-      "description": "Use calculated fields, table calculations and analytics features."
+      "title": "Visualization Best Practices",
+      "description": "Apply data visualization best practices used by real BI teams."
     },
     {
       "icon": "Share2",
-      "title": "Dashboard Storytelling",
-      "description": "Build compelling data stories that drive business decisions."
+      "title": "Publishing & Sharing",
+      "description": "Publish and share dashboards securely on Tableau Server and Tableau Cloud."
     },
     {
       "icon": "Award",
-      "title": "Certification & Career Prep",
-      "description": "Prepare for Tableau certification and Data Analyst interviews."
+      "title": "Portfolio Projects",
+      "description": "Work on live business case studies and prepare a portfolio of dashboards for interviews."
     }
   ],
   "whatdatavisual": [
     {
-      "icon": "BarChart3",
-      "title": "Data Visualization Principles",
-      "description": "Learn the core principles of effective data visualization and storytelling."
+      "icon": "Database",
+      "title": "Data Cleaning & Preparation",
+      "description": "Clean, structure and prepare raw data for visualization using Excel and Python."
     },
     {
       "icon": "PieChart",
-      "title": "Tableau & Power BI Skills",
-      "description": "Build interactive dashboards using Tableau, Power BI and related tools."
+      "title": "Power BI & Tableau Dashboards",
+      "description": "Build interactive dashboards in Power BI and Tableau from scratch."
     },
     {
-      "icon": "Database",
-      "title": "Data Preparation",
-      "description": "Clean, transform and shape data so it is ready for visualization."
+      "icon": "BarChart3",
+      "title": "Chart Selection & Design",
+      "description": "Apply visual design principles, color theory and chart selection for effective storytelling."
+    },
+    {
+      "icon": "Sparkles",
+      "title": "AI-Assisted Visualization",
+      "description": "Leverage AI tools and prompts to auto-generate charts, summaries and data narratives."
     },
     {
       "icon": "TrendingUp",
-      "title": "Advanced Charts & Analytics",
-      "description": "Create advanced visuals and apply analytical techniques to data."
-    },
-    {
-      "icon": "Layout",
-      "title": "Dashboard Design Best Practices",
-      "description": "Design clear, user-friendly dashboards that drive decisions."
+      "title": "Interactive & Executive Reports",
+      "description": "Design executive-ready reports and present data confidently in interviews and client meetings."
     },
     {
       "icon": "Award",
-      "title": "Portfolio & Job Prep",
-      "description": "Build a visualization portfolio and prepare for Data Analyst roles."
+      "title": "Portfolio Projects",
+      "description": "Build a professional portfolio with 5+ real-world visualization projects."
     }
   ],
   "whatit": [
@@ -1058,193 +1058,193 @@
   "whatana": [
     {
       "icon": "BarChart3",
-      "title": "HR Analytics Fundamentals",
-      "description": "Understand how data analytics is applied to human resource processes."
-    },
-    {
-      "icon": "Users",
-      "title": "Workforce Metrics & KPIs",
-      "description": "Define and track key HR metrics for recruitment, retention and performance."
-    },
-    {
-      "icon": "TrendingUp",
-      "title": "Predictive HR Insights",
-      "description": "Use analytics to predict attrition, performance and hiring needs."
+      "title": "HR Metrics & KPIs",
+      "description": "Calculate and interpret key HR metrics: attrition rate, time-to-hire, cost-per-hire, eNPS and span of control."
     },
     {
       "icon": "PieChart",
-      "title": "HR Dashboards",
-      "description": "Build dashboards that give leaders clear visibility into people data."
+      "title": "HR Dashboards in Excel & Power BI",
+      "description": "Build interactive HR dashboards using Excel and Power BI that leadership actually acts on."
     },
     {
       "icon": "Database",
-      "title": "Data-Driven HR Decisions",
-      "description": "Turn HR data into actionable strategies for talent management."
+      "title": "Workforce Data Analysis",
+      "description": "Collect, clean and analyze workforce data across recruitment, performance, compensation and retention."
+    },
+    {
+      "icon": "TrendingUp",
+      "title": "Predictive Attrition Models",
+      "description": "Create a predictive attrition model using simple, explainable techniques."
+    },
+    {
+      "icon": "Users",
+      "title": "Survey & Engagement Analysis",
+      "description": "Design and analyse employee engagement surveys and present people-metrics to leadership."
     },
     {
       "icon": "Award",
-      "title": "Career in People Analytics",
-      "description": "Prepare for HR Analyst and People Analytics Specialist roles."
+      "title": "People Analytics Portfolio",
+      "description": "Build a portfolio of dashboards and reports you can show in interviews for People Analytics roles."
     }
   ],
   "whatman": [
     {
       "icon": "Users",
-      "title": "HR Management Fundamentals",
-      "description": "Master the core functions of human resource management in modern organizations."
+      "title": "End-to-End Recruitment",
+      "description": "Manage the complete recruitment lifecycle — from job posting to offer rollout."
     },
     {
-      "icon": "UserPlus",
-      "title": "Talent Acquisition",
-      "description": "Learn end-to-end recruitment, selection and onboarding processes."
+      "icon": "FileText",
+      "title": "HR Documentation & Policies",
+      "description": "Draft offer letters, appointment letters and HR policy documents that hold up legally."
+    },
+    {
+      "icon": "Banknote",
+      "title": "Payroll & Statutory Compliance",
+      "description": "Process monthly payroll including PF, ESIC, gratuity and TDS calculations."
     },
     {
       "icon": "Target",
       "title": "Performance Management",
-      "description": "Design and implement performance appraisal and development systems."
+      "description": "Design and run performance appraisal cycles including KRA and KPI setting."
     },
     {
-      "icon": "Banknote",
-      "title": "Compensation & Benefits",
-      "description": "Understand compensation structures, benefits and reward strategies."
-    },
-    {
-      "icon": "Shield",
-      "title": "Compliance & Employee Relations",
-      "description": "Handle labor laws, policies and positive employee relations."
+      "icon": "HeartPulse",
+      "title": "Employee Relations & Engagement",
+      "description": "Handle grievances, plan engagement activities and manage workplace conflicts professionally."
     },
     {
       "icon": "Award",
-      "title": "Leadership Readiness",
-      "description": "Build the skills needed for HR Manager and HR Business Partner roles."
+      "title": "HRMS Tools & Interview Ready",
+      "description": "Use HRMS platforms and Excel for day-to-day operations while preparing for HR interviews."
     }
   ],
   "whatpayroll": [
     {
       "icon": "Banknote",
-      "title": "Payroll Fundamentals",
-      "description": "Understand the complete payroll cycle from inputs to final payments."
+      "title": "CTC & Salary Structuring",
+      "description": "Design and structure a compliant CTC and salary breakup."
     },
     {
       "icon": "Calculator",
-      "title": "Salary Structure & Calculations",
-      "description": "Configure salary components, deductions and statutory calculations."
+      "title": "Monthly Payroll Processing",
+      "description": "Process monthly payroll from attendance to final disbursement."
     },
     {
       "icon": "FileText",
-      "title": "Compliance & Statutory Filings",
-      "description": "Handle PF, ESI, professional tax, TDS and other statutory requirements."
+      "title": "Statutory Compliance (PF, ESI, TDS)",
+      "description": "Calculate and file PF, ESI, Professional Tax and TDS accurately."
     },
     {
-      "icon": "Database",
-      "title": "Payroll Systems & Software",
-      "description": "Work with modern payroll systems and maintain accurate employee records."
+      "icon": "ClipboardList",
+      "title": "Full & Final Settlements",
+      "description": "Handle Full & Final settlements, gratuity and bonus calculations."
     },
     {
       "icon": "Shield",
-      "title": "Audit & Error Handling",
-      "description": "Identify, resolve and prevent common payroll errors and discrepancies."
+      "title": "Payroll Audits & Reconciliation",
+      "description": "Manage payroll audits, resolve discrepancies and generate payslips and Form 16."
     },
     {
       "icon": "Award",
-      "title": "Career in Payroll",
-      "description": "Prepare for Payroll Specialist, HR Payroll Executive and related roles."
+      "title": "Payroll Software & Career",
+      "description": "Work hands-on with greytHR, Zoho Payroll and Excel while preparing for payroll roles."
     }
   ],
   "whatgen": [
     {
       "icon": "Users",
-      "title": "HR Generalist Role Overview",
-      "description": "Understand the wide scope of responsibilities handled by an HR Generalist."
-    },
-    {
-      "icon": "UserPlus",
-      "title": "Recruitment & Onboarding",
-      "description": "Manage end-to-end hiring and create smooth onboarding experiences."
-    },
-    {
-      "icon": "ClipboardList",
-      "title": "Employee Lifecycle Management",
-      "description": "Handle day-to-day HR operations across the entire employee lifecycle."
+      "title": "End-to-End Recruitment",
+      "description": "Handle sourcing, screening, interviewing and offer rollout independently."
     },
     {
       "icon": "Banknote",
-      "title": "Payroll & Compliance Support",
-      "description": "Support payroll processing and ensure basic statutory compliance."
+      "title": "Payroll Processing & Compliance",
+      "description": "Process payroll, understand salary structures and calculate statutory deductions."
     },
     {
-      "icon": "HeartPulse",
-      "title": "Employee Engagement",
-      "description": "Design initiatives that improve culture, engagement and retention."
+      "icon": "FileText",
+      "title": "HR Policies & Documentation",
+      "description": "Draft HR letters — offer letters, appointment letters, warning letters and relieving letters."
+    },
+    {
+      "icon": "ClipboardList",
+      "title": "Onboarding & Employee Lifecycle",
+      "description": "Manage onboarding, induction, attendance, leave and full employee documentation."
+    },
+    {
+      "icon": "Target",
+      "title": "Performance & Employee Relations",
+      "description": "Conduct performance appraisals, manage KRAs/KPIs and handle grievances professionally."
     },
     {
       "icon": "Award",
-      "title": "All-Round HR Readiness",
-      "description": "Become job-ready for HR Generalist, HR Executive and Coordinator roles."
+      "title": "HRMS Tools & Job Readiness",
+      "description": "Work confidently on HRMS tools, Excel and HR reporting while preparing for Generalist roles."
     }
   ],
   "whathrtrain": [
     {
       "icon": "Users",
-      "title": "Complete HR Skill Set",
-      "description": "Gain a well-rounded foundation across Core HR, Generalist, Payroll and Analytics."
-    },
-    {
-      "icon": "ClipboardList",
-      "title": "Practical HR Processes",
-      "description": "Learn real-world HR processes used in recruitment, payroll and employee management."
-    },
-    {
-      "icon": "BarChart3",
-      "title": "HR Analytics Exposure",
-      "description": "Understand how data is used to improve HR decisions and workforce planning."
+      "title": "Full Recruitment Cycle",
+      "description": "Manage the complete recruitment and selection lifecycle, from sourcing to onboarding."
     },
     {
       "icon": "Banknote",
-      "title": "Payroll & Compliance",
-      "description": "Get hands-on knowledge of payroll processing and statutory compliance."
+      "title": "Payroll & Statutory Compliance",
+      "description": "Process payroll accurately, including PF, ESI, gratuity and TDS calculations."
+    },
+    {
+      "icon": "FileText",
+      "title": "HR Policies & Documentation",
+      "description": "Build HR policies, employee handbooks and standard operating procedures."
     },
     {
       "icon": "Target",
-      "title": "Performance & Talent",
-      "description": "Support performance management and talent development initiatives."
+      "title": "Performance Management",
+      "description": "Design and run performance appraisal systems used by mid-size and large companies."
+    },
+    {
+      "icon": "BarChart3",
+      "title": "HR Analytics & Dashboards",
+      "description": "Use HR analytics and Excel dashboards to track attrition, headcount and engagement."
     },
     {
       "icon": "Award",
-      "title": "Multiple Career Paths",
-      "description": "Prepare for roles across HR Generalist, Payroll, Recruitment and Analytics."
+      "title": "Interview & Placement Ready",
+      "description": "Conduct structured interviews and present HR data confidently to leadership teams."
     }
   ],
   "whatcore": [
     {
       "icon": "Users",
-      "title": "Core HR Foundations",
-      "description": "Understand the fundamental people processes every organization runs."
-    },
-    {
-      "icon": "UserPlus",
-      "title": "Recruitment & Onboarding",
-      "description": "Manage hiring pipelines and create effective onboarding journeys."
-    },
-    {
-      "icon": "ClipboardList",
-      "title": "Employee Records & Administration",
-      "description": "Maintain accurate employee data and handle day-to-day HR operations."
+      "title": "Complete Recruitment Lifecycle",
+      "description": "Handle end-to-end recruitment — from job posting to offer letter."
     },
     {
       "icon": "Banknote",
-      "title": "Payroll Support",
-      "description": "Support payroll inputs, validations and basic statutory compliance."
+      "title": "Payroll Processing & CTC",
+      "description": "Process monthly payroll, including salary structuring, TDS and deductions."
     },
     {
       "icon": "Shield",
-      "title": "Policy & Compliance",
-      "description": "Apply HR policies and ensure basic legal compliance."
+      "title": "Statutory Compliance",
+      "description": "Apply statutory compliance laws — PF, ESI, Gratuity, Bonus Act and Labour Laws."
+    },
+    {
+      "icon": "ClipboardList",
+      "title": "Onboarding & Performance",
+      "description": "Run onboarding and induction processes and manage performance appraisal cycles."
+    },
+    {
+      "icon": "FileText",
+      "title": "HR Policies & Documentation",
+      "description": "Draft HR policies, employee handbooks and offer/appointment letters."
     },
     {
       "icon": "Award",
-      "title": "HR Career Start",
-      "description": "Prepare for entry and mid-level Core HR and HR Executive roles."
+      "title": "HRMS Tools & Career Start",
+      "description": "Use HRMS tools and Excel for HR reporting while preparing for Core HR and HR Executive roles."
     }
   ],
   "whathr": [
@@ -1277,6 +1277,134 @@
       "icon": "Award",
       "title": "HR Career Readiness",
       "description": "Get ready for HR Generalist, HR Executive and related positions."
+    }
+  ],
+  "whatagentic": [
+    {
+      "icon": "Bot",
+      "title": "Agentic AI Fundamentals",
+      "description": "Explain how agentic AI differs from traditional generative AI and rule-based automation."
+    },
+    {
+      "icon": "GitBranch",
+      "title": "Agent Architectures",
+      "description": "Design single-agent, multi-agent and hierarchical agent architectures."
+    },
+    {
+      "icon": "Code2",
+      "title": "LangChain, LangGraph & CrewAI",
+      "description": "Build agents using LangChain, LangGraph, CrewAI, AutoGen and OpenAI Assistants API."
+    },
+    {
+      "icon": "Database",
+      "title": "Memory, Tools & RAG",
+      "description": "Give agents memory, connect them to external tools/APIs and implement Retrieval-Augmented Generation."
+    },
+    {
+      "icon": "Users",
+      "title": "Multi-Agent Collaboration",
+      "description": "Set up multi-agent systems where agents delegate work and collaborate on goals."
+    },
+    {
+      "icon": "Award",
+      "title": "Deployment, Guardrails & Debugging",
+      "description": "Add guardrails, evaluate agent behavior, deploy applications and monitor them in production."
+    }
+  ],
+  "whataws": [
+    {
+      "icon": "Cloud",
+      "title": "Cloud & AWS Fundamentals",
+      "description": "Understand core cloud computing concepts and set up AWS accounts, IAM users, roles and policies securely."
+    },
+    {
+      "icon": "Server",
+      "title": "Compute & Storage",
+      "description": "Launch and manage EC2 instances, configure auto-scaling, load balancing and design storage with S3, EBS and Glacier."
+    },
+    {
+      "icon": "Network",
+      "title": "Networking & Security",
+      "description": "Build Virtual Private Clouds (VPC), subnets, security groups and apply security best practices including encryption."
+    },
+    {
+      "icon": "Database",
+      "title": "Databases & Serverless",
+      "description": "Work with RDS, DynamoDB and deploy serverless applications using Lambda and API Gateway."
+    },
+    {
+      "icon": "Activity",
+      "title": "Monitoring, CI/CD & Cost",
+      "description": "Set up CloudWatch, CloudTrail, basic CI/CD pipelines and optimize costs using the AWS Pricing Calculator."
+    },
+    {
+      "icon": "Award",
+      "title": "Certification & Job Readiness",
+      "description": "Prepare confidently for AWS Certified Solutions Architect – Associate and related cloud roles."
+    }
+  ],
+  "whatdevops": [
+    {
+      "icon": "Terminal",
+      "title": "Linux & Version Control",
+      "description": "Set up and manage Linux servers, write shell scripts and use Git/GitHub for collaborative workflows."
+    },
+    {
+      "icon": "GitBranch",
+      "title": "CI/CD Pipelines",
+      "description": "Build automated CI/CD pipelines using Jenkins and GitHub Actions."
+    },
+    {
+      "icon": "Box",
+      "title": "Docker & Containerization",
+      "description": "Containerize applications with Docker and manage multi-container setups."
+    },
+    {
+      "icon": "Layers",
+      "title": "Kubernetes Orchestration",
+      "description": "Deploy, scale and monitor applications on Kubernetes clusters."
+    },
+    {
+      "icon": "Cloud",
+      "title": "Infrastructure as Code & Cloud",
+      "description": "Provision infrastructure on AWS using Terraform and implement configuration management with Ansible."
+    },
+    {
+      "icon": "Award",
+      "title": "Monitoring, Security & Interview Prep",
+      "description": "Monitor with Prometheus/Grafana, apply DevSecOps basics and prepare for DevOps engineer roles."
+    }
+  ],
+  "whataiml": [
+    {
+      "icon": "Code2",
+      "title": "Python for AI & ML",
+      "description": "Write clean, efficient Python code for data analysis and machine learning."
+    },
+    {
+      "icon": "BarChart3",
+      "title": "Statistics & Data Handling",
+      "description": "Apply statistics, clean and visualize data using Pandas, NumPy and Matplotlib."
+    },
+    {
+      "icon": "Layers",
+      "title": "Machine Learning Models",
+      "description": "Build and evaluate supervised and unsupervised machine learning models."
+    },
+    {
+      "icon": "Brain",
+      "title": "Deep Learning & Neural Networks",
+      "description": "Design and train deep learning models using TensorFlow and PyTorch for image and text data."
+    },
+    {
+      "icon": "MessageSquare",
+      "title": "NLP & Generative AI",
+      "description": "Work with natural language processing, chatbots and generative AI / LLM concepts."
+    },
+    {
+      "icon": "Award",
+      "title": "Deployment & Portfolio",
+      "description": "Deploy models using Flask/APIs and cloud platforms and present findings clearly."
     }
   ]
 }

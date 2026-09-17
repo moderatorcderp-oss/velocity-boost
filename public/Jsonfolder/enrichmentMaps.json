@@ -40,7 +40,11 @@
         "hr-generalist": "whatgen",
         "hr-training": "whathrtrain",
         "core-hr": "whatcore",
-        "hr": "whathr"
+        "hr": "whathr",
+        "aws": "whataws",
+        "agentic-ai": "whatagentic",
+        "devops": "whatdevops",
+        "ai-ml": "whataiml"
     },
     "skillsToCoursesMap": {
         "SkillsSAP": [
@@ -116,7 +120,6 @@
             "business-analytics"
         ],
         "SkillsGenAI": [
-            "chatgpt",
             "agentic-ai"
         ],
         "SkillsFullStack": [
@@ -163,6 +166,18 @@
         ],
         "SkillsHR": [
             "hr"
+        ],
+        "SkillsAWS": [
+            "aws"
+        ],
+        "SkillsAgentic": [
+            "agentic-ai"
+        ],
+        "SkillsDevOps": [
+            "devops"
+        ],
+        "SkillsAIML": [
+            "ai-ml"
         ]
     },
     "courseToWhoMap": {
@@ -664,13 +679,17 @@
             "BApage",
             "BAHeader"
         ],
-        "chatgpt": [
+        "generative-ai": [
             "GPTpage",
             "GPTHeader"
         ],
         "agentic-ai": [
-            "GPTpage",
-            "GPTHeader"
+            "agenticheader",
+            "AgenticHeader"
+        ],
+        "ai-ml": [
+            "aimlheader",
+            "AIMLHeader"
         ],
         "full-stack": [
             "fullstackheader",
@@ -683,6 +702,10 @@
         "python": [
             "pythonheader",
             "PythonHeader"
+        ],
+        "devops": [
+            "devopsheader",
+            "DevOpsHeader"
         ],
         "salesforce": [
             "salesheader",
