@@ -979,7 +979,7 @@ export default function PlacementPage() {
       `}</style>
 
       {/* ══════════════ HERO ══════════════ */}
-      <section className="hero">
+      <section className="hero bg-black">
 
         <div className="w-[95%] mx-auto flex justify-start gap-3 items-center">
 
