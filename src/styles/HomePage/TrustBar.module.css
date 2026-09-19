@@ -366,6 +366,7 @@
 @media (max-width: 640px) {
   .wrap {
     padding: 0;
+    background-color: transparent;
   }
 
   .bar {
@@ -379,6 +380,8 @@
     padding: 0;
     box-shadow: none;
     background-color: white !important;
+    background-color: transparent !important;
+    background: transparent;
   }
 
   .item + .item::before {
