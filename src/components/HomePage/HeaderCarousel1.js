@@ -29,11 +29,11 @@ export default function CareerHeroSlide({ onOpenForm }) {
         {/* Image — normal flow, w-full h-auto means it scales by its own
             intrinsic aspect ratio and the container height follows it */}
         <Image
-          src="https://res.cloudinary.com/djdhtkjhn/image/upload/v1785906042/mobileHero2_l4nu4u.png"
+          src="https://res.cloudinary.com/djdhtkjhn/image/upload/c_limit,w_900,q_auto,f_auto/v1785906042/mobileHero2_l4nu4u.png"
           alt="AI powered learning, SAP industry standard, smart assessments, personalized roadmap"
-          width={1200}
-          height={1500}
-          fetchPriority="high"
+          width={900}
+          height={1125}
+          sizes="100vw"
           className="w-full h-auto"
           priority
         />
@@ -98,11 +98,11 @@ export default function CareerHeroSlide({ onOpenForm }) {
       ================================================================ */}
       <div className="relative hidden w-full overflow-hidden sm:block sm:aspect-[16/9] lg:aspect-[14/9] xl:aspect-[2.4/1]">
           <Image
-            src="https://res.cloudinary.com/djdhtkjhn/image/upload/v1785573435/RoboWidth_mduj2r.png"
+            src="https://res.cloudinary.com/djdhtkjhn/image/upload/c_limit,w_1600,q_auto,f_auto/v1785573435/RoboWidth_mduj2r.png"
             alt="headerImg"
             fill
-            priority
-            fetchPriority="high"
+            sizes="(max-width: 640px) 100vw, (max-width: 1280px) 100vw, 1600px"
+            loading="eager"
             className="object-cover object-center"
           />
         <div className="absolute inset-0 z-10 mx-auto flex max-w-[1400px] items-start pt-16 box-border px-5 sm:px-8 lg:px-10">

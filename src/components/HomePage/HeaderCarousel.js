@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useCallback, useEffect } from 'react';
+import React, { useState, useCallback } from 'react';
 import dynamic from "next/dynamic";
 import CareerHeroSlide from "@/components/HomePage/HeaderCarousel1";
 
@@ -17,20 +17,6 @@ const HeaderCarousel = () => {
 
   const toggleForm = useCallback(() => {
     setShowForm(prev => !prev);
-  }, []);
-
-  useEffect(() => {
-    const preload = () => {
-      loadBtnform();
-    };
-
-    if ("requestIdleCallback" in window) {
-      const id = window.requestIdleCallback(preload, { timeout: 2500 });
-      return () => window.cancelIdleCallback(id);
-    }
-
-    const id = window.setTimeout(preload, 1500);
-    return () => window.clearTimeout(id);
   }, []);
 
   return (

@@ -18,14 +18,14 @@ const getCourseMeta = (name = "") => {
     n.includes("agentic") ||
     n.includes("aiml")
   )
-    return { label: "AI / DATA" };
+    return { label: "AI / Data" };
   if (
     n.includes("python") ||
     n.includes("java") ||
     n.includes("reactjs") ||
     n.includes("devops")
   )
-    return { label: "DEV" };
+    return { label: "Development" };
   if (
     n.includes("tableau") ||
     n.includes("power bi") ||
@@ -36,8 +36,8 @@ const getCourseMeta = (name = "") => {
   if (n.includes("salesforce")) return { label: "CRM" };
   if (n.includes("hr")) return { label: "HR" };
   if (n.includes("aws") || n.includes("azure") || n.includes("it course"))
-    return { label: "CLOUD" };
-  return { label: "CAREER" };
+    return { label: "Cloud" };
+  return { label: "Career" };
 };
 
 const courseNameToUrlMapping = {
@@ -88,38 +88,28 @@ const courseNameToUrlMapping = {
   "Data Visualization": "data-visualization-course",
 };
 
-/* Soft accent colors for cards */
-const ACCENTS = [
-  { bg: "#F5F3FF", border: "#C4B5FD", tag: "#7C3AED" },
-  { bg: "#ECFDF5", border: "#6EE7B7", tag: "#059669" },
-  { bg: "#FDF2F8", border: "#F9A8D4", tag: "#DB2777" },
-  { bg: "#FFF7ED", border: "#FDBA74", tag: "#EA580C" },
-  { bg: "#EFF6FF", border: "#93C5FD", tag: "#2563EB" },
-  { bg: "#F0FDFA", border: "#5EEAD4", tag: "#0D9488" },
-];
-
 /* ───────────────── icons ───────────────── */
 const ClockIcon = () => (
-  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
     <circle cx="12" cy="12" r="9" />
     <path d="M12 7v5l3 3" />
   </svg>
 );
 const LevelIcon = () => (
-  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true">
     <path d="M4 20V13" />
     <path d="M12 20V8" />
     <path d="M20 20V4" />
   </svg>
 );
 const BadgeIcon = () => (
-  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
     <circle cx="12" cy="8" r="5" />
     <path d="M9 12.5 7 22l5-3 5 3-2-9.5" />
   </svg>
 );
 const ArrowIcon = () => (
-  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
     <path d="M5 12h14" />
     <path d="M13 6l6 6-6 6" />
   </svg>
@@ -134,14 +124,14 @@ const CourseMedia = ({ course }) =>
       autoPlay
       muted
       playsInline
-      style={{ width: 44, height: 44, objectFit: "contain", borderRadius: 10 }}
+      style={{ width: 40, height: 40, objectFit: "contain", borderRadius: 10 }}
     />
   ) : (
     <Image
       src={course.icon || "/placeholder-course.png"}
       alt={course.alt || "related course"}
-      width={44}
-      height={44}
+      width={40}
+      height={40}
       style={{ objectFit: "contain", borderRadius: 10 }}
     />
   );
@@ -206,39 +196,92 @@ const RelatedCourses = ({ data, currentCityName }) => {
     <>
       <style>{`
         .rc-section {
+          --rc-blue: #2563eb;
+          --rc-blue-deep: #1e40af;
+          --rc-blue-soft: #eff6ff;
+          --rc-blue-line: #dbeafe;
+          --rc-ink: #0f172a;
+          --rc-muted: #64748b;
+
           font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
-          padding: 48px 20px 64px;
-          background: #f8fafc;
+          padding: 56px 20px 72px;
+          background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
         }
+
         .rc-grid {
           display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-          gap: 22px;
+          grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+          gap: 24px;
           max-width: 1140px;
-          margin: 36px auto 0;
+          margin: 40px auto 0;
         }
+
+        /* ── card ── */
         .rc-card {
           position: relative;
-          background: #fff;
-          border-radius: 18px;
-          border: 1.5px solid #e2e8f0;
-          padding: 22px 20px 18px;
+          isolation: isolate;
+          overflow: hidden;
           display: flex;
           flex-direction: column;
           gap: 14px;
+          padding: 24px 22px 20px;
+          background: #ffffff;
+          border: 1.5px solid var(--rc-blue-line);
+          border-radius: 20px;
           cursor: pointer;
-          transition: all 0.28s cubic-bezier(0.25, 0.8, 0.25, 1);
-          box-shadow: 0 4px 14px -6px rgba(15, 23, 42, 0.08);
+          outline: none;
+          box-shadow: 0 6px 18px -10px rgba(37, 99, 235, 0.25);
+          transition:
+            transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+            box-shadow 0.4s ease,
+            border-color 0.4s ease;
         }
-        .rc-card:hover {
+
+        /* blue circle: rests as a corner accent, floods the card on hover */
+        .rc-card::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          z-index: -1;
+          background: linear-gradient(135deg, var(--rc-blue) 0%, var(--rc-blue-deep) 100%);
+          clip-path: circle(46px at 100% 0);
+          transition: clip-path 0.65s cubic-bezier(0.65, 0, 0.35, 1);
+        }
+
+        .rc-card:hover,
+        .rc-card:focus-visible {
           transform: translateY(-6px);
-          box-shadow: 0 18px 32px -12px rgba(15, 23, 42, 0.16);
-          border-color: var(--accent-border);
+          border-color: var(--rc-blue);
+          box-shadow: 0 22px 40px -16px rgba(37, 99, 235, 0.55);
         }
-        .rc-card:hover .rc-arrow {
-          opacity: 1;
-          transform: translateX(0);
+        .rc-card:hover::before,
+        .rc-card:focus-visible::before {
+          clip-path: circle(150% at 100% 0);
         }
+        .rc-card:focus-visible {
+          outline: 3px solid #93c5fd;
+          outline-offset: 3px;
+        }
+        .rc-card:active {
+          transform: translateY(-2px) scale(0.99);
+        }
+
+        /* ── corner arrow (sits inside the resting circle) ── */
+        .rc-arrow {
+          position: absolute;
+          top: 12px;
+          right: 12px;
+          display: inline-flex;
+          color: #ffffff;
+          transform: rotate(-45deg);
+          transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1) 0.1s;
+        }
+        .rc-card:hover .rc-arrow,
+        .rc-card:focus-visible .rc-arrow {
+          transform: rotate(0deg) translateX(2px);
+        }
+
+        /* ── top row ── */
         .rc-top {
           display: flex;
           align-items: flex-start;
@@ -246,74 +289,130 @@ const RelatedCourses = ({ data, currentCityName }) => {
         }
         .rc-icon-wrap {
           flex-shrink: 0;
-          width: 52px;
-          height: 52px;
-          border-radius: 14px;
-          background: var(--accent-bg);
+          width: 56px;
+          height: 56px;
+          border-radius: 16px;
+          background: var(--rc-blue-soft);
+          border: 1px solid var(--rc-blue-line);
           display: flex;
           align-items: center;
           justify-content: center;
           overflow: hidden;
+          transition: background 0.4s ease, border-color 0.4s ease, transform 0.4s ease;
         }
+        .rc-card:hover .rc-icon-wrap,
+        .rc-card:focus-visible .rc-icon-wrap {
+          background: #ffffff;
+          border-color: #ffffff;
+          transform: scale(1.06) rotate(-4deg);
+        }
+
         .rc-title-block {
           flex: 1;
           min-width: 0;
+          padding-right: 28px; /* keeps text clear of the corner arrow */
         }
         .rc-tag {
           display: inline-block;
-          font-size: 10px;
-          font-weight: 700;
-          letter-spacing: 0.04em;
-          text-transform: uppercase;
-          color: var(--accent-tag);
-          background: var(--accent-bg);
-          padding: 3px 8px;
-          border-radius: 999px;
           margin-bottom: 6px;
+          padding: 3px 10px;
+          font-size: 11px;
+          font-weight: 600;
+          letter-spacing: 0.02em;
+          color: var(--rc-blue);
+          background: var(--rc-blue-soft);
+          border-radius: 999px;
+          transition: color 0.4s ease, background 0.4s ease;
+        }
+        .rc-card:hover .rc-tag,
+        .rc-card:focus-visible .rc-tag {
+          color: #ffffff;
+          background: rgba(255, 255, 255, 0.2);
         }
         .rc-title {
           margin: 0;
-          font-size: 16.5px;
+          font-size: 17px;
           font-weight: 600;
-          color: #1e293b;
           line-height: 1.35;
+          color: var(--rc-ink);
+          transition: color 0.4s ease;
         }
+        .rc-card:hover .rc-title,
+        .rc-card:focus-visible .rc-title {
+          color: #ffffff;
+        }
+
+        /* ── description ── */
         .rc-desc {
           margin: 0;
-          font-size: 13px;
-          line-height: 1.55;
-          color: #64748b;
+          font-size: 13.5px;
+          line-height: 1.6;
+          color: var(--rc-muted);
           display: -webkit-box;
           -webkit-line-clamp: 2;
           -webkit-box-orient: vertical;
           overflow: hidden;
+          transition: color 0.4s ease;
         }
+        .rc-card:hover .rc-desc,
+        .rc-card:focus-visible .rc-desc {
+          color: rgba(255, 255, 255, 0.88);
+        }
+
+        /* ── meta ── */
         .rc-meta {
           display: flex;
+          flex-wrap: wrap;
           align-items: center;
-          gap: 14px;
+          gap: 8px 14px;
           margin-top: auto;
-          padding-top: 12px;
-          border-top: 1px solid #f1f5f9;
+          padding-top: 14px;
+          border-top: 1px solid var(--rc-blue-line);
           font-size: 12px;
-          color: #64748b;
+          font-weight: 500;
+          color: var(--rc-muted);
+          transition: color 0.4s ease, border-color 0.4s ease;
         }
         .rc-meta-item {
-          display: flex;
+          display: inline-flex;
           align-items: center;
-          gap: 5px;
+          gap: 6px;
         }
-        .rc-arrow {
-          margin-left: auto;
-          color: var(--accent-tag);
-          opacity: 0;
-          transform: translateX(-6px);
-          transition: all 0.25s ease;
+        .rc-meta-item svg {
+          color: var(--rc-blue);
+          transition: color 0.4s ease;
         }
+        .rc-card:hover .rc-meta,
+        .rc-card:focus-visible .rc-meta {
+          color: rgba(255, 255, 255, 0.92);
+          border-color: rgba(255, 255, 255, 0.28);
+        }
+        .rc-card:hover .rc-meta-item svg,
+        .rc-card:focus-visible .rc-meta-item svg {
+          color: #bfdbfe;
+        }
+
+        /* ── responsive ── */
         @media (max-width: 600px) {
+          .rc-section {
+            padding: 44px 16px 56px;
+          }
           .rc-grid {
             grid-template-columns: 1fr;
             gap: 16px;
+          }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+          .rc-card,
+          .rc-card::before,
+          .rc-arrow,
+          .rc-icon-wrap {
+            transition: none;
+          }
+          .rc-card:hover,
+          .rc-card:focus-visible {
+            transform: none;
           }
         }
       `}</style>
@@ -323,18 +422,12 @@ const RelatedCourses = ({ data, currentCityName }) => {
 
         <div className="rc-grid">
           {items.map((course, index) => {
-            const accent = ACCENTS[index % ACCENTS.length];
             const meta = getCourseMeta(course.name);
 
             return (
               <div
                 key={index}
                 className="rc-card"
-                style={{
-                  "--accent-bg": accent.bg,
-                  "--accent-border": accent.border,
-                  "--accent-tag": accent.tag,
-                }}
                 role="button"
                 tabIndex={0}
                 onClick={() => handleCourseClick(course.name)}
@@ -343,6 +436,10 @@ const RelatedCourses = ({ data, currentCityName }) => {
                   currentCityName ? ` in ${currentCityName}` : ""
                 }`}
               >
+                <span className="rc-arrow">
+                  <ArrowIcon />
+                </span>
+
                 <div className="rc-top">
                   <div className="rc-icon-wrap">
                     <CourseMedia course={course} />
@@ -368,9 +465,6 @@ const RelatedCourses = ({ data, currentCityName }) => {
                   </span>
                   <span className="rc-meta-item">
                     <BadgeIcon /> Certificate
-                  </span>
-                  <span className="rc-arrow">
-                    <ArrowIcon />
                   </span>
                 </div>
               </div>

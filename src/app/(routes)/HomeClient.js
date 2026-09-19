@@ -4,7 +4,6 @@
 import { useEffect, useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import HeaderCarousel from "@/components/HomePage/HeaderCarousel";
-import WhyChooseSection from "@/components/HomePage/WhyChooseSection";
 import WhatWeOffer from "../../components/HomePage/WhatWeOffer"
 import Container from "@/components/StandardContainer";
 
@@ -17,14 +16,20 @@ import sapDemoBannerData from "../../../public/Jsonfolder/cities/pune/CTAbanner.
 // or if you prefer city-aware later:
 // import { getDemoBannerForCity } from "@/lib/masterData";
 
-const Marquee = dynamic(() => import("@/components/HomePage/Marquee2"), {
-  ssr: false,
-  loading: () => <div style={{ height: "60px" }} />,
-});
+// const Marquee = dynamic(() => import("@/components/HomePage/Marquee2"), {
+//   ssr: false,
+//   loading: () => <div style={{ height: "60px" }} />,
+// });
+import Marquee from "@/components/HomePage/Marquee2";
 
 const TrainingProcessSection = dynamic(() => import('@/components/HomePage/ProcessSection'), {
   ssr: false,
 })
+
+const WhyChooseSection = dynamic(() => import("@/components/HomePage/WhyChooseSection"), {
+  ssr: false,
+  loading: () => <div style={{ minHeight: "300px" }} />,
+});
 
 const OurClients = dynamic(() => import("@/components/HomePage/OurClients"), {
   ssr: false,
@@ -126,14 +131,18 @@ export default function HomeClient() {
 
           {/* Above the fold */}
           <HeaderCarousel />
-
-          {/* Below the fold — lazy loaded */}
-          <LazySection fallback={<div style={{ height: "60px" }} />}>
-            <Marquee />
-          </LazySection>
+          <Marquee />
           <LazySection fallback={<div style={{ minHeight: "250px" }} />}>
             <OurClients />
           </LazySection>
+
+          {/* Below the fold — lazy loaded */}
+          {/* <LazySection fallback={<div style={{ height: "60px" }} />}>
+            marquee compo
+          </LazySection>
+          <LazySection fallback={<div style={{ minHeight: "250px" }} />}>
+          our clients
+          </LazySection> */}
           <LazySection fallback={<div style={{ minHeight: "200px" }} />}>
             <WhatWeOffer />
           </LazySection>

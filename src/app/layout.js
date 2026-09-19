@@ -33,30 +33,35 @@ const rubik = Rubik({
   weight: ["300", "500"],
   subsets: ["latin"],
   display: "swap",
+  preload: false,
   variable: "--font-rubik",
 });
 
 const fraunces = Fraunces({
   subsets: ["latin"],
   display: "swap",
+  preload: false,
   variable: "--font-fraunces",
 });
 
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
+  preload: false,
   variable: "--font-inter",
 });
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
   display: "swap",
+  preload: false,
   variable: "--font-jetbrains-mono",
 });
 
 const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
   display: "swap",
+  preload: false,
   variable: "--font-bricolage",
 });
 
