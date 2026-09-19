@@ -2,8 +2,11 @@
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import { FaUser, FaLock, FaSpinner, FaEye, FaEyeSlash } from "react-icons/fa";
-import Head from "next/head";
+import Image from "next/image";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { ArrowRight } from "lucide-react";
+import AnimatedLogo from "@/components/AnimatedLogo";
+import LoadingArrow from "@/components/LoadingArrow";
 
 // Standalone helper for Blogs login
 async function loginToBlogs({ username, password, API_BASE_URL }) {
@@ -120,6 +123,41 @@ const checkAuthAndRedirect = (router) => {
   }
 };
 
+// ---- decorative-only helpers for the new UI (waves / particles / entrance) ----
+const PARTICLE_SHAPES = ["dot", "dot", "dot", "ring", "ring", "plus"];
+const PARTICLE_COUNT = 22;
+
+function createParticles() {
+  return Array.from({ length: PARTICLE_COUNT }).map((_, i) => {
+    const kind = PARTICLE_SHAPES[Math.floor(Math.random() * PARTICLE_SHAPES.length)];
+    return {
+      id: i,
+      kind,
+      left: Math.random() * 100,
+      duration: 9 + Math.random() * 10,
+      delay: -Math.random() * 15,
+      drift: `${Math.random() * 40 - 20}px`,
+    };
+  });
+}
+
+// Tailwind classes per particle shape (colors/sizes only — motion comes from .particle in <style> below)
+const particleShapeClasses = {
+  dot: "w-[5px] h-[5px] rounded-full bg-[#9fc3cd]",
+  ring: "w-[11px] h-[11px] rounded-full border-[1.6px] border-[#9fc3cd] bg-transparent",
+  plus: "text-[14px] leading-none text-[#9fc3cd]",
+};
+
+const ENTRANCE_SEQUENCE = [
+  "logo",
+  "toggle",
+  "heading",
+  "subtitle",
+  "login",
+  "password",
+  "button",
+];
+
 const AdminLogin = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -129,14 +167,18 @@ const AdminLogin = () => {
   const [error, setError] = useState(null);
   const [showPassword, setShowPassword] = useState(false);
 
-  // New state for tracking focus
-  const [usernameFocused, setUsernameFocused] = useState(false);
-  const [passwordFocused, setPasswordFocused] = useState(false);
+  // "admin" -> Login to Dashboard, "blog" -> Login to Blogs
+  const [mode, setMode] = useState("admin");
 
-  // Helper function to determine if label should be "floated"
-  const shouldFloatLabel = (value, isFocused) => {
-    return value.length > 0 || isFocused;
-  };
+  // decorative-only state (particles + entrance animation)
+  const [particles, setParticles] = useState([]);
+  const [played, setPlayed] = useState(false);
+
+  useEffect(() => {
+    setParticles(createParticles());
+    const t = setTimeout(() => setPlayed(true), 50);
+    return () => clearTimeout(t);
+  }, []);
 
   // Initial check on mount
   useEffect(() => {
@@ -224,131 +266,211 @@ const AdminLogin = () => {
     }
   }
 
+  // Single form submit — routes to the right handler based on the
+  // Admin / Blog toggle, without changing either handler's own logic.
+  const handleFormSubmit = (e) => {
+    if (mode === "admin") {
+      handleSubmit(e, "/");
+    } else {
+      handleSubmitToBlogs(e);
+    }
+  };
+
+  const loading = mode === "admin" ? dashboardLoading : blogsLoading;
+  const subtitle =
+    mode === "admin"
+      ? "Sign in and start managing your candidates!"
+      : "Sign in and start managing your blog posts!";
+  const buttonLabel = mode === "admin" ? "Login to Dashboard" : "Login to Blogs";
+
+  const fxClass = () => `fx ${played ? "in" : ""}`;
+  const fxStyle = (name) => {
+    const idx = ENTRANCE_SEQUENCE.indexOf(name);
+    return { animationDelay: `${120 + idx * 90}ms` };
+  };
+
   return (
-    <>
-      <section
-        className="flex justify-center items-center min-h-screen w-full bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url('https://img.freepik.com/premium-vector/background-night-mountains-whimsical-cartoon-illustration-night-mountains_198565-8267.jpg')`,
-        }}
-      >
-        <div className="relative w-full max-w-sm md:max-w-md bg-transparent backdrop-filter backdrop-blur-md border border-wheat text-yellow-100 flex flex-col justify-center items-center text-center rounded-3xl p-6 md:p-8 min-h-[400px]">
-          <form onSubmit={(e) => handleSubmit(e, "/")} className="w-full">
-            {/* Heading */}
-            <h2 className="text-2xl font-bold text-center mb-6 text-yellow-100 text-shadow-sm">
-              Admin Log-In
-            </h2>
+    <div className="relative w-full h-screen min-h-[700px] bg-[#033346] overflow-hidden font-sans">
+      {/* Scoped CSS: only what Tailwind's core utilities genuinely can't express
+          (keyframe animations + the autofill pseudo-class override). */}
+      <style>{`
+        @keyframes fadeUp {
+          to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes rise {
+          0% { transform: translateY(0) translateX(0); opacity: 0; }
+          10% { opacity: 0.6; }
+          90% { opacity: 0.5; }
+          100% { transform: translateY(-620px) translateX(var(--drift, 10px)); opacity: 0; }
+        }
+        .fx { opacity: 0; transform: translateY(14px); }
+        .fx.in { animation: fadeUp 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) forwards; }
+        .rise-particle {
+          animation-name: rise;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+        }
+        .autofill-fix:-webkit-autofill,
+        .autofill-fix:-webkit-autofill:hover,
+        .autofill-fix:-webkit-autofill:focus,
+        .autofill-fix:-webkit-autofill:active {
+          -webkit-text-fill-color: #eaf1f3;
+          caret-color: #eaf1f3;
+          -webkit-box-shadow: 0 0 0 1000px #123f51 inset;
+          box-shadow: 0 0 0 1000px #123f51 inset;
+          transition: background-color 9999s ease-in-out 0s, color 9999s ease-in-out 0s;
+        }
+      `}</style>
 
-            {/* Error Message */}
-            {error && (
-              <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-4 text-sm">
-                {error}
-              </div>
-            )}
 
-            {/* Username/Email Input */}
-            <div className="relative mx-auto mb-6 w-full border-b-2 border-yellow-100 text-shadow">
-              <FaUser className="absolute right-3 top-1/2 transform -translate-y-1/2 text-xl text-yellow-100" />
-              <input
-                type="text"
-                name="username"
-                id="admin_username"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
-                onFocus={() => setUsernameFocused(true)}
-                onBlur={() => setUsernameFocused(false)}
-                required
-                className="w-full h-12 bg-transparent border-none outline-none text-base px-3 pr-10 text-yellow-100"
-              />
-              <label
-                htmlFor="admin_username"
-                className={`absolute left-0 text-base pointer-events-none transition-all duration-300 ${
-                  shouldFloatLabel(username, usernameFocused)
-                    ? "-top-2 text-sm text-shadow-none"
-                    : "top-1/2 transform -translate-y-1/2"
-                }`}
-              >
-                Username or Email
-              </label>
-            </div>
 
-            {/* Password Input with Show/Hide Toggle */}
-            <div className="relative mx-auto mb-8 w-full border-b-2 border-yellow-100 text-shadow">
-              <FaLock className="absolute right-3 top-1/2 transform -translate-y-1/2 text-xl text-yellow-100" />
-              <input
-                type={showPassword ? "text" : "password"}
-                name="password"
-                id="login_password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                onFocus={() => setPasswordFocused(true)}
-                onBlur={() => setPasswordFocused(false)}
-                required
-                className="w-full h-12 bg-transparent border-none outline-none text-base px-3 pr-16 text-yellow-100"
-              />
-              <label
-                htmlFor="login_password"
-                className={`absolute left-0 text-base pointer-events-none transition-all duration-300 ${
-                  shouldFloatLabel(password, passwordFocused)
-                    ? "-top-2 text-sm text-shadow-none"
-                    : "top-1/2 transform -translate-y-1/2"
-                }`}
-              >
-                Password
-              </label>
-              {/* Show/Hide Password Toggle Button */}
-              <button
-                type="button"
-                onClick={() => setShowPassword((prev) => !prev)}
-                className="absolute right-10 top-1/2 transform -translate-y-1/2 text-xl text-yellow-100 p-1 focus:outline-none"
-                aria-label={showPassword ? "Hide password" : "Show password"}
-              >
-                {showPassword ? <FaEyeSlash /> : <FaEye />}
-              </button>
-            </div>
-
-            {/* Submit Buttons */}
-            <div className="flex flex-col items-center gap-4 w-full">
-              {/* Dashboard Login Button */}
-              <button
-                type="button"
-                onClick={(e) => handleSubmit(e, "/")}
-                disabled={dashboardLoading}
-                className="w-4/5 h-11 rounded-full bg-orange-700 text-white text-lg font-semibold border-none outline-none cursor-pointer shadow-md hover:shadow-xl transition-shadow duration-300 disabled:opacity-50 disabled:cursor-not-allowed inline-flex items-center justify-center"
-              >
-                {dashboardLoading ? (
-                  <>
-                    <FaSpinner className="animate-spin mr-2" />
-                    Logging In...
-                  </>
-                ) : (
-                  "Login to Dashboard"
-                )}
-              </button>
-
-              {/* Blogs Login Button (updated with separate loading) */}
-              <button
-                type="button"
-                onClick={handleSubmitToBlogs}
-                disabled={blogsLoading}
-                className="w-4/5 h-11 rounded-full bg-orange-700 text-white text-lg font-semibold border-none outline-none cursor-pointer shadow-md hover:shadow-xl transition-shadow duration-300 disabled:opacity-50 disabled:cursor-not-allowed inline-flex items-center justify-center"
-              >
-                {blogsLoading ? (
-                  <>
-                    <FaSpinner className="animate-spin mr-2" />
-                    Logging In...
-                  </>
-                ) : (
-                  "Login to Blogs"
-                )}
-              </button>
-            </div>
-          </form>
+      {/* ---------- center card ---------- */}
+      <div className="relative z-[5] w-[284px] mx-auto pt-24 text-center">
+        <div
+          className={`${fxClass()} inline-flex items-center bg-white/[0.06] border border-white/[0.12] rounded-[20px] p-1 mb-[22px] gap-0.5`}
+          style={fxStyle("toggle")}
+        >
+          <button
+            type="button"
+            className={`border-none cursor-pointer px-5 py-[7px] text-[12.5px] font-bold tracking-[0.4px] rounded-2xl transition-colors duration-200 ${mode === "admin"
+              ? "bg-gradient-to-r from-[#00c97a] to-[#00e08c] text-[#04241b]"
+              : "bg-transparent text-[#9fb6bf]"
+              }`}
+            onClick={() => setMode("admin")}
+            disabled={dashboardLoading || blogsLoading}
+          >
+            ADMIN
+          </button>
+          <button
+            type="button"
+            className={`border-none cursor-pointer px-5 py-[7px] text-[12.5px] font-bold tracking-[0.4px] rounded-2xl transition-colors duration-200 ${mode === "blog"
+              ? "bg-gradient-to-r from-[#00c97a] to-[#00e08c] text-[#04241b]"
+              : "bg-transparent text-[#9fb6bf]"
+              }`}
+            onClick={() => setMode("blog")}
+            disabled={dashboardLoading || blogsLoading}
+          >
+            BLOG
+          </button>
         </div>
-      </section>
-    </>
+
+        <h1
+          className={`${fxClass()} text-[#eaf1f3] text-[34px] font-medium m-0 mb-3.5 tracking-[0.3px]`}
+          style={fxStyle("heading")}
+        >
+          Admin Log-In
+        </h1>
+        <p
+          className={`${fxClass()} text-[#9fb6bf] text-[15px] m-0 mb-[34px] whitespace-nowrap`}
+          style={fxStyle("subtitle")}
+        >
+          {subtitle}
+        </p>
+
+        {error && (
+          <div className="bg-[rgba(255,82,82,0.12)] border border-[rgba(255,82,82,0.4)] text-[#ffb3b3] text-[12.5px] px-3.5 py-2.5 rounded-lg mb-4 text-left">
+            {error}
+          </div>
+        )}
+
+        <form onSubmit={handleFormSubmit} className="flex flex-col gap-3.5">
+          <input
+            className={`${fxClass()} autofill-fix w-full px-[18px] py-[15px] rounded-lg bg-white/[0.06] border border-white/[0.09] text-[#eaf1f3] text-sm outline-none placeholder:text-[#7f9aa6] focus:border-[#00e08c]/50 focus:bg-white/[0.09] transition-colors duration-200`}
+            style={fxStyle("login")}
+            type="text"
+            name="username"
+            id="admin_username"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+            placeholder="Username or Email"
+            autoComplete="username"
+            required
+          />
+
+          <div className={`${fxClass()} relative w-full`} style={fxStyle("password")}>
+            <input
+              className="autofill-fix w-full px-[18px] py-[15px] pr-11 rounded-lg bg-white/[0.06] border border-white/[0.09] text-[#eaf1f3] text-sm outline-none placeholder:text-[#7f9aa6] focus:border-[#00e08c]/50 focus:bg-white/[0.09] transition-colors duration-200"
+              type={showPassword ? "text" : "password"}
+              name="password"
+              id="login_password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="Password"
+              autoComplete="current-password"
+              required
+            />
+            <button
+              type="button"
+              onClick={() => setShowPassword((prev) => !prev)}
+              className="absolute right-3.5 top-1/2 -translate-y-1/2 bg-transparent border-none p-1 cursor-pointer text-[#9fb6bf] text-[15px] flex items-center justify-center hover:text-[#eaf1f3] transition-colors duration-200"
+              aria-label={showPassword ? "Hide password" : "Show password"}
+            >
+              {showPassword ? <FaEyeSlash /> : <FaEye />}
+            </button>
+          </div>
+
+          <button
+            type="submit"
+            disabled={loading}
+            className={`${fxClass()} mt-1.5 w-full py-4 border-none rounded-lg text-[15px] font-bold tracking-[0.2px] text-[#04241b] bg-gradient-to-r from-[#00c97a] to-[#00e08c] cursor-pointer flex items-center justify-center gap-2 relative overflow-hidden transition-[transform,filter] duration-150 ease-out hover:brightness-[1.06] hover:-translate-y-px active:translate-y-0 disabled:cursor-default ${loading ? "brightness-[0.94]" : ""
+              }`}
+            style={fxStyle("button")}
+          >
+            <span className="leading-none inline-flex">
+              {loading ? "Logging In" : buttonLabel}
+            </span>
+            {loading ? (
+              <LoadingArrow size={18} />
+            ) : (
+              <ArrowRight size={18} className="transition-transform duration-200 group-hover:translate-x-1" />
+            )}
+          </button>
+        </form>
+      </div>
+
+      {/* ---------- floating particles ---------- */}
+      <div className="absolute left-0 right-0 bottom-0 h-[46%] overflow-hidden z-[2] pointer-events-none" aria-hidden="true">
+        {particles.map((p) => (
+          <span
+            key={p.id}
+            className={`rise-particle absolute -bottom-10 opacity-[0.55] ${particleShapeClasses[p.kind]}`}
+            style={{
+              left: `${p.left}%`,
+              animationDuration: `${p.duration}s`,
+              animationDelay: `${p.delay}s`,
+              "--drift": p.drift,
+            }}
+          >
+            {p.kind === "plus" ? "+" : null}
+          </span>
+        ))}
+      </div>
+
+      {/* ---------- waves ---------- */}
+      <div className="absolute left-0 right-0 bottom-0 w-full z-[3] leading-none">
+        <svg viewBox="0 0 1440 220" preserveAspectRatio="none" className="block w-full h-auto">
+          <path
+            d="M0,60 C240,120 480,10 720,50 C960,90 1200,30 1440,70 L1440,220 L0,220 Z"
+            fill="#26516b"
+            opacity="0.55"
+          />
+          <path
+            d="M0,100 C240,150 480,60 720,100 C960,140 1200,70 1440,110 L1440,220 L0,220 Z"
+            fill="#7d97a3"
+            opacity="0.55"
+          />
+          <path
+            d="M0,140 C240,190 480,110 720,140 C960,170 1200,110 1440,150 L1440,220 L0,220 Z"
+            fill="#f9f8fd"
+          />
+        </svg>
+      </div>
+
+      <div className="absolute left-0 right-0 bottom-[22px] text-center z-[4] text-[#b9bcc9] text-xs leading-[1.6]">
+        2026 © Connecting Dots ERP. All rights reserved
+      </div>
+    </div>
   );
 };
-
 
 export default AdminLogin;
