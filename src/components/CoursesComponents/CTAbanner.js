@@ -2,14 +2,6 @@ import React from "react";
 import "../../styles/CTABanner.css";
 import Container from "../StandardContainer";
 
-/**
- * SAP Free Demo – Footer CTA Banner
- * Structural layout (flex, grid, positioning, overflow, etc.) is handled
- * with Tailwind utility classes here in the JSX. All the exact pixel
- * values, gradients, and custom breakpoints live in SapDemoBanner.css,
- * which is imported above, so the visual result is pixel-identical to
- * the original design.
- */
 export default function SapDemoBanner({
     badge = "Free Live Demo",
     title = "Loading...",

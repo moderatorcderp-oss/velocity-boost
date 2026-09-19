@@ -46,7 +46,6 @@ export default function ClientCourseSections(props) {
     demoBannerData,
     shouldUseLegacyModules,
   } = props;
-
   // === Digital Marketing layout (multi-section courses) ===
   if (layoutType === "digital") {
     return (

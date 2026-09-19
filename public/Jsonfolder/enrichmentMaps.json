@@ -26,7 +26,6 @@
         "business-analytics": "whatba",
         "chatgpt": "whatgpt",
         "generative-ai": "whatgpt",
-        "gen-ai": "whatgpt",
         "agentic-ai": "whatagentic",
         "full-stack": "whatfullstack",
         "java": "whatjava",
@@ -122,8 +121,7 @@
         ],
         "SkillsGenAI": [
             "chatgpt",
-            "generative-ai",
-            "gen-ai"
+            "generative-ai"
         ],
         "SkillsAgentic": [
             "agentic-ai"
@@ -985,7 +983,6 @@
         "business-analytics": "SkillsBusinessAnalytics",
         "chatgpt": "SkillsGenAI",
         "generative-ai": "SkillsGenAI",
-        "gen-ai": "SkillsGenAI",
         "agentic-ai": "SkillsAgentic",
         "full-stack": "SkillsFullStack",
         "java": "SkillsJava",
@@ -1033,7 +1030,6 @@
         "business-analytics": "whoba",
         "chatgpt": "whogpt",
         "generative-ai": "whogpt",
-        "gen-ai": "whogpt",
         "agentic-ai": "whoagentic",
         "full-stack": "whofullstack",
         "java": "whojava",
@@ -1077,7 +1073,6 @@
         "business-analytics": "businessanalytics",
         "chatgpt": "genai",
         "generative-ai": "genai",
-        "gen-ai": "genai",
         "agentic-ai": "agenticai",
         "full-stack": "fullstack",
         "java": "java",
@@ -1307,7 +1302,6 @@
         "aiml": "ai",
         "artificial-intelligence": "ai",
         "generative-ai": "genai",
-        "gen-ai": "genai",
         "chatgpt": "genai",
         "agentic-ai": "agenticai",
         "full-stack": "fullstack",
