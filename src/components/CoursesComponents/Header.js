@@ -305,15 +305,15 @@ const DSHeader = ({ data }) => {
               SAP Training &amp; Certification
             </div>
 
-            <h1 className="text-xl font-extrabold leading-[1.2] tracking-tight text-[#0b1130] sm:text-4xl lg:text-[2.7rem]">
-              {data.title} |
+            <h1 className="text-xl font-extrabold leading-[1.2] tracking-tight text-[#0b1130] sm:text-4xl lg:text-[2.4rem]">
+              {data.title}  - {data.subtitle}
             </h1>
 
-            {data.subtitle && (
+            {/* {data.subtitle && (
               <h2 className="mt-3 text-lg font-semibold leading-snug text-[#036f85] sm:text-xl">
                 {data.subtitle}
               </h2>
-            )}
+            )} */}
 
             {data.description && (
               <p className="mt-6 max-w-xl text-base leading-relaxed text-slate-600">
@@ -330,14 +330,23 @@ const DSHeader = ({ data }) => {
                     : "px-6 py-3.5 text-sm";
                   return (
                     <button
-                      key={index}
-                      onClick={handleButtonClick}
-                      className={
-                        isPrimary
-                          ? `group inline-flex items-center gap-2 rounded-lg bg-[#010162] font-bold text-white shadow-md shadow-[#010162]/15 transition-colors duration-150 hover:bg-[#02024f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#036f85] ${sizeClasses}`
-                          : `inline-flex items-center gap-2 rounded-lg border border-slate-300 bg-white font-semibold text-slate-700 transition-colors duration-150 hover:border-[#036f85] hover:text-[#036f85] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#036f85] ${sizeClasses}`
-                      }
-                    >
+                    key={index}
+                    onClick={
+                      index === 0
+                        ? () => {
+                            window.open(
+                              "https://wa.me/9004002941?text=Hi%20I'm%20interested%20in%20your%20courses.",
+                              "_blank"
+                            );
+                          }
+                        : handleButtonClick
+                    }
+                    className={
+                      isPrimary
+                        ? `group inline-flex items-center gap-2 rounded-lg bg-[#010162] font-bold text-white shadow-md shadow-[#010162]/15 transition-colors duration-150 hover:bg-[#02024f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#036f85] ${sizeClasses}`
+                        : `inline-flex items-center gap-2 rounded-lg border border-slate-300 bg-white font-semibold text-slate-700 transition-colors duration-150 hover:border-[#036f85] hover:text-[#036f85] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#036f85] ${sizeClasses}`
+                    }
+                  >
                       {isPrimary ? (
                         <ArrowRight size={16} strokeWidth={2.4} className="order-2 transition-transform duration-150 group-hover:translate-x-0.5" />
                       ) : index==1?(
