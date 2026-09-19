@@ -46,7 +46,7 @@ const Certificate = ({ data }) => {
 
                 <div className="cert-frame relative bg-[#FBF8F2] rounded-xl border-2 border-[#C9A227]/60 p-3">
                   <Image
-                    src={"https://res.cloudinary.com/bropujss/image/upload/v1784204578/Certificate_pbdvhs_uexpuc.webp"}
+                    src={"https://res.cloudinary.com/bropujss/image/upload/v1789796293/CD_certificate_updated_xzndsg.webp"}
                     alt={altText}
                     width={1000}
                     height={500}
