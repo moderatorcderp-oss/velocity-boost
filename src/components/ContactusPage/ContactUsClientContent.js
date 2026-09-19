@@ -289,32 +289,33 @@ const ContactUsClientContent = ({ formData = {}, setFormData }) => {
     <div className="py-12 px-4 w-full max-w-7xl mx-auto">
       <div className="container mx-auto">
         {/* Enhanced title with custom styling */}
-        <div className="mb-12">
-          <h2
-            className="text-center font-bold uppercase"
-            style={{
-              fontSize: "clamp(1.5rem, 4vw, 2.5rem)",
-              fontWeight: 700,
-              letterSpacing: "clamp(2px, 0.5vw, 4px)",
-              textShadow: `
-                0 0 0px #fff,
-                0 0 10px #fff,
-                0 0 10px #0073e6,
-                0 0 20px #182e4a,
-                0 0 20px #182e4a,
-                0 0 30px #182e4a,
-                0 0 30px #182e4a
-              `,
-              background:
-                "linear-gradient(90deg, #fff 35%, rgba(3, 163, 196, 1) 49%, #fff 62%)",
-              WebkitBackgroundClip: "text",
-              color: "transparent",
-              textAlign: "center",
-            }}
-          >
-            EXPLORE OUR EXPERT TECH TRAINING SOLUTIONS
-          </h2>
-        </div>
+        <div className="mb-12 text-center">
+  <h2
+    className="mx-auto max-w-3xl font-bold uppercase"
+    style={{
+      fontSize: "clamp(1.5rem, 4vw, 2.5rem)",
+      fontWeight: 700,
+      lineHeight: 1.2,
+      letterSpacing: "clamp(1px, 0.3vw, 3px)",
+      textWrap: "balance",
+      background:
+        "linear-gradient(90deg, #0f172a 0%, #1e40af 35%, #2563eb 65%, #03a3c4 100%)",
+      WebkitBackgroundClip: "text",
+      backgroundClip: "text",
+      WebkitTextFillColor: "transparent",
+      color: "transparent",
+    }}
+  >
+    Explore Our Expert Tech Training Solutions
+  </h2>
+
+  {/* accent bar */}
+  <div
+    aria-hidden="true"
+    className="mx-auto mt-5 h-1 w-20 rounded-full"
+    style={{ background: "linear-gradient(90deg, #2563eb, #03a3c4)" }}
+  />
+</div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           {/* Contact Info Section */}
@@ -325,7 +326,7 @@ const ContactUsClientContent = ({ formData = {}, setFormData }) => {
                 className="border-b-2 border-gray-300/50 pb-8 mb-8 last:border-b-0"
               >
                 {/* Branch Name - Enhanced for dark backgrounds */}
-                <h5 className="text-xl md:text-2xl font-bold uppercase mb-6 text-center lg:text-left text-white drop-shadow-lg">
+                <h5 className="text-xl md:text-2xl font-bold uppercase mb-6 text-center lg:text-left text-black drop-shadow-lg">
                   {branch.name}
                 </h5>
 
@@ -365,7 +366,7 @@ const ContactUsClientContent = ({ formData = {}, setFormData }) => {
                     <div className="flex flex-col items-center">
                       <a
                         href={branch.whatsapp}
-                        className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-6 py-3 rounded-lg font-medium transition-all duration-200 transform hover:scale-105 shadow-md hover:shadow-lg"
+                        className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-black px-6 py-3 rounded-lg font-medium transition-all duration-200 transform hover:scale-105 shadow-md hover:shadow-lg"
                       >
                         Chat Now
                       </a>
@@ -557,13 +558,13 @@ const ContactUsClientContent = ({ formData = {}, setFormData }) => {
 
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white py-3 rounded-lg font-semibold transition-all duration-200 mt-3 disabled:from-red-400 disabled:to-red-500 disabled:cursor-not-allowed transform hover:scale-[1.02] shadow-lg hover:shadow-xl"
+                  className="w-full bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-black py-3 rounded-lg font-semibold transition-all duration-200 mt-3 disabled:from-red-400 disabled:to-red-500 disabled:cursor-not-allowed transform hover:scale-[1.02] shadow-lg hover:shadow-xl"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? (
                     <span className="flex items-center justify-center gap-2">
                       <svg
-                        className="animate-spin h-5 w-5 text-white"
+                        className="animate-spin h-5 w-5 text-black"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
