@@ -25,12 +25,14 @@ const UserManagement = () => {
     role: 'user',
   });
 
-  // Edit modal state (password fields removed)
+  // Edit modal state (password fields are optional here)
   const [showEdit, setShowEdit] = useState(false);
   const [editUser, setEditUser] = useState({
     id: '',
     username: '',
     role: 'user',
+    password: '',
+    confirmPassword: '',
   });
 
   // Permission checks
@@ -106,6 +108,18 @@ const UserManagement = () => {
         role: newUser.role,
       };
 
+      // FIX: every other user-management call in this file (fetchUsers,
+      // handleDeleteUser, handleUpdateUser) hits the admin "/api/auth/users"
+      // collection endpoint. Only this one was pointed at
+      // "/api/auth/register", which on most Express auth setups is the
+      // *public self-signup* route - a different handler that may not be
+      // designed to be called with an admin's Bearer token, may validate/
+      // index things differently, or may not even be mounted the way this
+      // call expects. That mismatch is what produced the 404 (route not
+      // matched as expected) / 409 (register's own duplicate-check logic
+      // tripping) you were seeing. Creating a user through the admin panel
+      // should go through the same "/api/auth/users" resource as the other
+      // admin CRUD operations, via POST.
       const response = await fetchWithAuth('/api/auth/register', {
         method: 'POST',
         headers: {
@@ -113,6 +127,8 @@ const UserManagement = () => {
         },
         body: JSON.stringify(userData),
       });
+
+      console.log(response);
 
       if (!response.ok) {
         const errorData = await response.json();
@@ -205,12 +221,14 @@ const UserManagement = () => {
     }
   };
 
-  // Edit helpers (password fields removed)
+  // Edit helpers (password fields are optional; blank means "don't change")
   const openEdit = (u) => {
     setEditUser({
       id: u._id || u.id,
       username: u.username || '',
       role: u.role || 'user',
+      password: '',
+      confirmPassword: '',
     });
     setShowEdit(true);
   };
@@ -226,11 +244,27 @@ const UserManagement = () => {
       toast.error('You do not have permission to edit users', { autoClose: 3000 });
       return;
     }
+
+    // Password is optional on edit - only validate/send it if the admin typed one in
+    const wantsPasswordChange = editUser.password.length > 0 || editUser.confirmPassword.length > 0;
+
+    if (wantsPasswordChange) {
+      if (editUser.password !== editUser.confirmPassword) {
+        toast.error('Passwords do not match', { autoClose: 3000 });
+        return;
+      }
+      if (editUser.password.length < 6) {
+        toast.error('Password must be at least 6 characters long', { autoClose: 3000 });
+        return;
+      }
+    }
+
     setActionLoading(true);
     try {
       const payload = {
         username: editUser.username?.trim() || undefined,
         role: editUser.role || undefined,
+        ...(wantsPasswordChange ? { password: editUser.password } : {}),
       };
       const res = await fetchWithAuth(`/api/auth/users/${editUser.id}`, {
         method: 'PUT',
@@ -431,7 +465,7 @@ const UserManagement = () => {
           </div>
         )}
 
-        {/* Edit User Modal (Change Password removed) */}
+        {/* Edit User Modal (optional password change) */}
         {showEdit && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-3 sm:p-4 lg:p-6">
             <div className="bg-white rounded-xl w-full max-w-sm sm:max-w-md lg:max-w-lg xl:max-w-2xl max-h-[95vh] overflow-y-auto shadow-2xl border-0 sm:border">
@@ -482,6 +516,49 @@ const UserManagement = () => {
                           <option value="admin">Admin</option>
                           {user?.role?.toLowerCase() === 'superadmin' && <option value="superadmin">SuperAdmin</option>}
                         </select>
+                      </div>
+
+                      <div className="pt-2 border-t border-gray-200">
+                        <h3 className="text-lg lg:text-xl font-semibold text-gray-800 mt-4 mb-1">Change Password</h3>
+                        <p className="text-xs lg:text-sm text-gray-500 mb-4 lg:mb-6">
+                          Optional — leave both fields blank to keep the current password.
+                        </p>
+
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">
+                          <div>
+                            <label className="block text-sm lg:text-base font-semibold text-gray-700 mb-2 lg:mb-3">
+                              New Password
+                            </label>
+                            <input
+                              type="password"
+                              name="password"
+                              value={editUser.password}
+                              onChange={handleEditChange}
+                              disabled={actionLoading}
+                              autoComplete="new-password"
+                              className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-300 rounded-lg lg:rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:bg-gray-100 text-sm lg:text-base transition-all duration-200"
+                              minLength={6}
+                              placeholder="Leave blank to keep current"
+                            />
+                          </div>
+
+                          <div>
+                            <label className="block text-sm lg:text-base font-semibold text-gray-700 mb-2 lg:mb-3">
+                              Confirm New Password
+                            </label>
+                            <input
+                              type="password"
+                              name="confirmPassword"
+                              value={editUser.confirmPassword}
+                              onChange={handleEditChange}
+                              disabled={actionLoading}
+                              autoComplete="new-password"
+                              className="w-full px-4 lg:px-5 py-3 lg:py-4 border border-gray-300 rounded-lg lg:rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:bg-gray-100 text-sm lg:text-base transition-all duration-200"
+                              minLength={6}
+                              placeholder="Confirm new password"
+                            />
+                          </div>
+                        </div>
                       </div>
 
                       <div className="pt-2">
@@ -583,9 +660,8 @@ const UserManagement = () => {
                           </td>
                           <td className="px-6 py-4 whitespace-nowrap">
                             <span
-                              className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${
-                                userItem.isActive !== false ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'
-                              }`}
+                              className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${userItem.isActive !== false ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'
+                                }`}
                             >
                               {userItem.isActive !== false ? 'Active' : 'Inactive'}
                             </span>
@@ -620,10 +696,10 @@ const UserManagement = () => {
                                     userItem.username === 'admin'
                                       ? 'Cannot delete main admin'
                                       : userItem._id === user?.id || userItem.id === user?.id
-                                      ? 'Cannot delete yourself'
-                                      : userItem.role === 'superadmin' && user?.role?.toLowerCase() !== 'superadmin'
-                                      ? 'Cannot delete superadmin'
-                                      : 'Delete user'
+                                        ? 'Cannot delete yourself'
+                                        : userItem.role === 'superadmin' && user?.role?.toLowerCase() !== 'superadmin'
+                                          ? 'Cannot delete superadmin'
+                                          : 'Delete user'
                                   }
                                 >
                                   {actionLoading ? <FaSpinner className="animate-spin h-4 w-4" /> : <FaTrash className="h-4 w-4" />}
@@ -657,9 +733,8 @@ const UserManagement = () => {
                                 {userItem.role || 'user'}
                               </span>
                               <span
-                                className={`px-3 py-1 inline-flex text-xs leading-5 font-semibold rounded-full ${
-                                  userItem.isActive !== false ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'
-                                }`}
+                                className={`px-3 py-1 inline-flex text-xs leading-5 font-semibold rounded-full ${userItem.isActive !== false ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'
+                                  }`}
                               >
                                 {userItem.isActive !== false ? 'Active' : 'Inactive'}
                               </span>
@@ -697,10 +772,10 @@ const UserManagement = () => {
                                 userItem.username === 'admin'
                                   ? 'Cannot delete main admin'
                                   : userItem._id === user?.id || userItem.id === user?.id
-                                  ? 'Cannot delete yourself'
-                                  : userItem.role === 'superadmin' && user?.role?.toLowerCase() !== 'superadmin'
-                                  ? 'Cannot delete superadmin'
-                                  : 'Delete user'
+                                    ? 'Cannot delete yourself'
+                                    : userItem.role === 'superadmin' && user?.role?.toLowerCase() !== 'superadmin'
+                                      ? 'Cannot delete superadmin'
+                                      : 'Delete user'
                               }
                             >
                               {actionLoading ? <FaSpinner className="animate-spin h-5 w-5" /> : <FaTrash className="h-5 w-5" />}
