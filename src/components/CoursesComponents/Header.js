@@ -340,9 +340,9 @@ const DSHeader = ({ data }) => {
                     >
                       {isPrimary ? (
                         <ArrowRight size={16} strokeWidth={2.4} className="order-2 transition-transform duration-150 group-hover:translate-x-0.5" />
-                      ) : (
+                      ) : index==1?(
                         <Download size={16} strokeWidth={2.2} />
-                      )}
+                      ):""}
                       <span className={isPrimary ? "order-1" : ""}>{button.text}</span>
                     </button>
                   );
