@@ -981,10 +981,10 @@ export default function PlacementPage() {
       {/* ══════════════ HERO ══════════════ */}
       <section className="hero bg-black">
 
-        <div className="w-[95%] mx-auto flex justify-start gap-3 items-center">
+        <div className="w-[95%] max-w-[1800px] mx-auto flex flex-col lg:flex-row justify-start gap-8 lg:gap-6 items-center py-10 lg:py-12">
 
           {/* ── LEFT ── */}
-          <div className="w-[50%]">
+          <div className="w-full lg:w-3/5 lg:shrink-0">
             <div className="hero-eyebrow">
               <span className="eyebrow-dot" />
               Placement Records
@@ -1003,10 +1003,12 @@ export default function PlacementPage() {
             </p>
 
             <div className="hero-actions">
-              <button className="btn-blue" onClick={() => alumniRef.current?.scrollIntoView({ behavior: "smooth" })}>
+              <button
+                className="btn-blue"
+                onClick={() => alumniRef.current?.scrollIntoView({ behavior: "smooth" })}
+              >
                 View Placed Students ↗
               </button>
-
             </div>
 
             <div className="hero-stats" ref={statsRef}>
@@ -1020,9 +1022,14 @@ export default function PlacementPage() {
           </div>
 
           {/* ── RIGHT — graduate visual ── */}
-          <div className="w-[55%] absolute right-5 top-5 h-screen flex items-center">
-            <img src="https://res.cloudinary.com/bropujss/image/upload/v1783678174/PlacementHeroSectionImage_xhhviz_c9lypk.webp" alt="placement roadmap image" className="h-[500px]" />
+          <div className="w-full lg:flex-1 lg:min-w-0 flex items-center justify-center">
+            <img
+              src="https://res.cloudinary.com/bropujss/image/upload/v1783678174/PlacementHeroSectionImage_xhhviz_c9lypk.webp"
+              alt="placement roadmap image"
+              className="w-full max-w-[380px] md:max-w-[460px] lg:max-w-full h-auto lg:max-h-[500px] min-[1440px]:max-h-[680px] object-contain"
+            />
           </div>
+
         </div>
       </section>
 
