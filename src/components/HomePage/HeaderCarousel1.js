@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { Barlow_Condensed } from "next/font/google";
-
 import ConsultationButton from "./ConsultationButton";
 
 /* ---------- Inline SVG icons ---------- */
@@ -36,6 +35,7 @@ export default function CareerHeroSlide({ onOpenForm }) {
           sizes="100vw"
           className="w-full h-auto"
           priority
+          fetchPriority="high"
         />
 
         {/* Scrim for text readability regardless of what's under the panel */}
@@ -103,6 +103,7 @@ export default function CareerHeroSlide({ onOpenForm }) {
             fill
             sizes="(max-width: 640px) 100vw, (max-width: 1280px) 100vw, 1600px"
             loading="eager"
+            fetchPriority="high"
             className="object-cover object-center"
           />
         <div className="absolute inset-0 z-10 mx-auto flex max-w-[1400px] items-start pt-16 box-border px-5 sm:px-8 lg:px-10">
