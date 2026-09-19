@@ -5,6 +5,7 @@ import Container from "../StandardContainer";
 export default function SapDemoBanner({
     badge = "Free Live Demo",
     title = "Loading...",
+    number = "+919004001938",
     subtitle = "loading...",
     primaryBtn = "Book My Free Demo",
     secondaryBtn = "Talk to a Counselor Instead",
@@ -12,6 +13,11 @@ export default function SapDemoBanner({
     screenTitle = "SAP S/4HANA Live System",
     widgets = ["FI/CO", "MM/SD", "Reports", "Master Data"],
 } = {}) {
+    const handleWhatsAppClick = () => {
+        const digitsOnly = number.replace(/[^\d]/g, "");
+        window.open(`https://wa.me/${digitsOnly}`, "_blank", "noopener,noreferrer");
+    };
+
     return (
         <Container>
             <div className="h-30 w-full flex items-center justify-center bg-white p-5">
@@ -44,10 +50,16 @@ export default function SapDemoBanner({
                         </p>
 
                         <div className="sapdemo-row flex flex-wrap">
-                            <button className="sapdemo-btn-primary font-bold whitespace-nowrap">
+                            <button
+                                className="sapdemo-btn-primary font-bold whitespace-nowrap"
+                                onClick={handleWhatsAppClick}
+                            >
                                 {primaryBtn}
                             </button>
-                            <button className="sapdemo-btn-secondary font-semibold whitespace-nowrap">
+                            <button
+                                className="sapdemo-btn-secondary font-semibold whitespace-nowrap"
+                                onClick={handleWhatsAppClick}
+                            >
                                 {secondaryBtn}
                             </button>
                         </div>
