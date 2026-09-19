@@ -47,10 +47,16 @@ export default function FAQAccordion({ data }) {
                   Chat on WhatsApp
                 </a>
 
-                <a href="tel:" className="faqHelpBtn faqHelpBtnCall">
+                <button 
+                  onClick={() => {
+                                window.open(
+                                    "https://wa.me/9004002941?text=Hi%20I'm%20interested%20in%20your%20courses.",
+                                    "_blank"
+                                );}}
+                className="faqHelpBtn faqHelpBtnCall">
                   <Phone size={16} strokeWidth={2} />
                   Call Us Now
-                </a>
+                </button>
               </div>
             </div>
 

@@ -25,7 +25,7 @@ const STATS = [
     desc: "Our institute offers 50+ industry-relevant courses designed to help learners upskill across domains."
   },
   {
-    value: "4.9/5", title: "Google Rating", tint: "#c95f08", icon: <Star size={26} strokeWidth={1.8} />,
+    value: "4.8/5", title: "Google Rating", tint: "#c95f08", icon: <Star size={26} strokeWidth={1.8} />,
     desc: "Our institute is rated 4.9/5 on Google, reflecting the trust and satisfaction of our learners."
   },
   {

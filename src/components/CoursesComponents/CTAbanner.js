@@ -58,7 +58,12 @@ export default function SapDemoBanner({
                             </button>
                             <button
                                 className="sapdemo-btn-secondary font-semibold whitespace-nowrap"
-                                onClick={handleWhatsAppClick}
+                                onClick={() => {
+                                window.open(
+                                    "https://wa.me/9004002941?text=Hi%20I'm%20interested%20in%20your%20courses.",
+                                    "_blank"
+                                );
+                                }}
                             >
                                 {secondaryBtn}
                             </button>
