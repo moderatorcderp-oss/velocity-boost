@@ -1,8 +1,9 @@
-import * as LucideIcons from "lucide-react";
+import { Wrench } from "lucide-react";
+import { skillIcons } from "./skillIcons";
 import SectionHeading from "./SectionHeading";
 
 function SkillIcon({ name }) {
-  const Icon = LucideIcons[name] || LucideIcons.Wrench;
+  const Icon = skillIcons[name] || Wrench;
   return (
     <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-blue-700 text-white shadow-sm">
       <Icon size={18} strokeWidth={2.2} />

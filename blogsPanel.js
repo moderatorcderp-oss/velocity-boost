@@ -45,6 +45,8 @@ app.use(express.urlencoded({ extended: true }));
 
 // Debugging Middleware
 app.use((req, res, next) => {
+  console.log('Incoming Request:', req.method, req.url);
+  console.log('Origin:', req.headers.origin);
   next();
 });
 
@@ -244,7 +246,9 @@ const deleteCloudinaryImage = async (publicId) => {
     return;
   }
   try {
+    console.log('Attempting to delete Cloudinary image with public ID:', publicId.trim());
     const result = await cloudinary.uploader.destroy(publicId.trim());
+    console.log('Cloudinary deletion result:', result);
     return result;
   } catch (error) {
     console.error('Error deleting Cloudinary image:', publicId, error);
@@ -268,6 +272,7 @@ const deleteAllBlogImages = async (blog) => {
   if (deletePromises.length > 0) {
     try {
       await Promise.all(deletePromises);
+      console.log('All blog images deleted successfully');
     } catch (error) {
       console.error('Error deleting some blog images:', error);
     }
@@ -485,6 +490,7 @@ const authenticateToken = (req, res, next) => {
 // Migration function to fix existing data
 const migrateBlogSchema = async () => {
   try {
+    console.log('Starting blog schema migration...');
     // Find blogs that have old field names or missing new fields
     const blogsToMigrate = await Blog.find({
       $or: [
@@ -492,6 +498,7 @@ const migrateBlogSchema = async () => {
         { courseImagesData: { $exists: false } }
       ]
     });
+    console.log(`Found ${blogsToMigrate.length} blogs to migrate`);
     for (const blog of blogsToMigrate) {
       const updateData = {};
       // Remove old coursesData field if it exists
@@ -508,8 +515,10 @@ const migrateBlogSchema = async () => {
       }
       if (Object.keys(updateData).length > 0) {
         await Blog.findByIdAndUpdate(blog._id, updateData);
+        console.log(`Migrated blog: ${blog.title}`);
       }
     }
+    console.log('Blog schema migration completed successfully');
   } catch (error) {
     console.error('Migration error:', error);
   }
@@ -519,6 +528,7 @@ const migrateBlogSchema = async () => {
 mongoose
   .connect(process.env.MONGO_URI)
   .then(async () => {
+    console.log('Blogs MongoDB Connected');
     // Run migration on startup
     await migrateBlogSchema();
   })
@@ -662,7 +672,9 @@ app.get('/api/auth/users', authenticateToken, async (req, res) => {
         currentRole: req.user.role
       });
     }
+    console.log(`Admin ${req.user.username} fetching all users`);
     const users = await User.find({}, { password: 0 }).sort({ createdAt: -1 });
+    console.log(`Found ${users.length} users`);
     res.json(users);
   } catch (err) {
     console.error('Error fetching users:', err);
@@ -720,6 +732,7 @@ app.put('/api/auth/users/:id', authenticateToken, async (req, res) => {
       updateData,
       { new: true, runValidators: true }
     ).select('-password');
+    console.log(`User ${updatedUser.username} updated by ${req.user.username}`);
     res.json({ message: 'User updated successfully', user: updatedUser });
   } catch (err) {
     console.error('Error updating user:', err);
@@ -738,15 +751,18 @@ app.delete('/api/auth/users/:id', authenticateToken, async (req, res) => {
       return res.status(403).json({ message: 'Access denied. Admin privileges required.' });
     }
     const { id } = req.params;
+    console.log(`Admin ${req.user.username} attempting to delete user ${id}`);
     if (!mongoose.Types.ObjectId.isValid(id)) return res.status(400).json({ message: 'Invalid user ID format' });
     const userToDelete = await User.findById(id);
     if (!userToDelete) return res.status(404).json({ message: 'User not found' });
+    console.log(`Found user to delete: ${userToDelete.username}`);
     if (userToDelete.username === 'admin') return res.status(403).json({ message: 'Cannot delete the main admin user' });
     if (userToDelete._id.toString() === req.user.id) return res.status(403).json({ message: 'Cannot delete yourself' });
     if (userToDelete.role === 'superadmin' && req.user.role.toLowerCase() !== 'superadmin') {
       return res.status(403).json({ message: 'Only superadmin can delete other superadmins' });
     }
     await User.findByIdAndDelete(id);
+    console.log(`User ${userToDelete.username} deleted successfully`);
     res.json({
       message: `User ${userToDelete.username} deleted successfully`,
       deletedUser: { id: userToDelete._id, username: userToDelete.username, role: userToDelete.role }
@@ -811,12 +827,14 @@ app.get('/api/blogs', async (req, res) => {
 // ENHANCED Backend tags endpoint with null filtering
 app.get('/api/blogs/tags', async (req, res) => {
   try {
+    console.log('Fetching all tags from database...');
     const tags = await Blog.distinct('tags');
     // ENHANCED: Filter out null, undefined, empty, and non-string values
     const sortedTags = tags
       .filter(tag => tag && typeof tag === 'string' && tag.trim() !== '')
       .map(tag => tag.trim()) // Clean up whitespace
       .sort();
+    console.log(`Found ${sortedTags.length} valid unique tags`);
     res.json({ tags: sortedTags, count: sortedTags.length });
   } catch (err) {
     console.error('Error fetching tags:', err);
@@ -827,11 +845,13 @@ app.get('/api/blogs/tags', async (req, res) => {
 // NEW: Endpoint to get distinct keywords
 app.get('/api/blogs/keywords', async (req, res) => {
   try {
+    console.log('Fetching all keywords from database...');
     const keywords = await Blog.distinct('keywords');
     const sortedKeywords = keywords
       .filter(kw => kw && typeof kw === 'string' && kw.trim() !== '')
       .map(kw => kw.trim())
       .sort();
+    console.log(`Found ${sortedKeywords.length} valid unique keywords`);
     res.json({ keywords: sortedKeywords, count: sortedKeywords.length });
   } catch (err) {
     console.error('Error fetching keywords:', err);
@@ -885,6 +905,7 @@ app.get('/api/blogs/search/keywords', async (req, res) => {
 app.get('/api/blogs/my-posts', authenticateToken, async (req, res) => {
   try {
     const { category, subcategory, status, tags, limit, skip } = req.query;
+    console.log(`Fetching posts for user ${req.user.username} (ID: ${req.user.id})`);
     // Build query for current user's posts only
     let query = {
       $or: [
@@ -907,6 +928,7 @@ app.get('/api/blogs/my-posts', authenticateToken, async (req, res) => {
       .sort({ createdAt: -1 })
       .skip(parsedSkip)
       .limit(parsedLimit);
+    console.log(`Found ${blogs.length} posts for user ${req.user.username}`);
     res.json({ blogs, total: blogs.length, author: req.user.username });
   } catch (err) {
     console.error('Error fetching user blogs:', err);
@@ -943,6 +965,7 @@ app.get('/api/blogs/:id', async (req, res) => {
 app.post('/api/blogs', authenticateToken, uploadFields, async (req, res) => {
   try {
     const { title, content, category, subcategory, author, status, slug: providedSlug, tags: tagsInput, keywords: keywordsInput, courses: coursesInput } = req.body; // NEW: Added keywordsInput
+    console.log('Creating blog with courses:', title, coursesInput, 'files:', req.files);
     let blogSlug = providedSlug ? generateSlug(providedSlug) : generateSlug(title);
     blogSlug = await findUniqueSlug(blogSlug, Blog);
     // Handle Featured Image
@@ -952,6 +975,7 @@ app.post('/api/blogs', authenticateToken, uploadFields, async (req, res) => {
       const imageFile = req.files.image[0];
       imagePath = imageFile.path;
       imagePublicId = imageFile.filename || getPublicIdFromUrl(imageFile.path);
+      console.log('Featured image uploaded:', imagePath);
     }
     // Handle Banner Image
     let bannerImagePath = null;
@@ -960,6 +984,7 @@ app.post('/api/blogs', authenticateToken, uploadFields, async (req, res) => {
       const bannerFile = req.files.bannerImage[0];
       bannerImagePath = bannerFile.path;
       bannerImagePublicId = bannerFile.filename || getPublicIdFromUrl(bannerFile.path);
+      console.log('Banner image uploaded:', bannerImagePath);
     }
     // Process courses data
     let processedCourses = [];
@@ -982,6 +1007,7 @@ app.post('/api/blogs', authenticateToken, uploadFields, async (req, res) => {
               publicId: courseImagePublicId,
               url: courseImagePath
             });
+            console.log(`Course ${index + 1} image uploaded:`, courseImagePath);
           }
           return {
             name: course.name,
@@ -991,6 +1017,7 @@ app.post('/api/blogs', authenticateToken, uploadFields, async (req, res) => {
             courseImagePublicId: courseImagePublicId
           };
         });
+        console.log('Processed courses:', processedCourses.length);
       } catch (err) {
         console.error('Error processing courses:', err);
         throw new Error('Invalid courses data format');
@@ -1018,6 +1045,7 @@ app.post('/api/blogs', authenticateToken, uploadFields, async (req, res) => {
       courseImagesData: courseImagesData
     });
     await newBlog.save();
+    console.log('Blog created successfully with courses and images');
     res.status(201).json({ message: 'Blog created successfully with courses', blog: newBlog });
   } catch (err) {
     // Cleanup uploaded files if blog creation fails
@@ -1044,6 +1072,7 @@ app.post('/api/blogs', authenticateToken, uploadFields, async (req, res) => {
 app.put('/api/blogs/:id', authenticateToken, uploadFields, async (req, res) => {
   try {
     const { id } = req.params;
+    console.log(`[UPDATE] Received update request for blog ID: ${id}`);
     // Validate blog ID
     if (!mongoose.Types.ObjectId.isValid(id)) {
       console.warn(`[UPDATE] Invalid Blog ID format: ${id}`);
@@ -1055,6 +1084,7 @@ app.put('/api/blogs/:id', authenticateToken, uploadFields, async (req, res) => {
       console.warn(`[UPDATE] Blog not found for ID: ${id}`);
       return res.status(404).json({ message: 'Blog not found' });
     }
+    console.log(`[UPDATE] Found existing blog: ${existingBlog.title} (Slug: ${existingBlog.slug})`);
     const updatedData = {};
     // Process tags if provided
     if (req.body.tags !== undefined) {
@@ -1081,6 +1111,7 @@ app.put('/api/blogs/:id', authenticateToken, uploadFields, async (req, res) => {
       // Cleanup previous course images if any
       if (Array.isArray(existingBlog.courseImagesData) && existingBlog.courseImagesData.length > 0) {
         await cleanupCourseImages(existingBlog.courseImagesData);
+        console.log(`[UPDATE] Cleaned up ${existingBlog.courseImagesData.length} previous course images`);
       }
     }
     // Handle slug update if title or slug changed
@@ -1088,18 +1119,21 @@ app.put('/api/blogs/:id', authenticateToken, uploadFields, async (req, res) => {
       const slugResult = await handleSlugUpdate(req.body, existingBlog);
       if (slugResult.error) return res.status(400).json({ message: slugResult.error });
       updatedData.slug = slugResult.slug;
+      console.log(`[UPDATE] Updated slug to: ${updatedData.slug}`);
     }
     // Handle featured image upload
     if (req.files?.image?.[0]) {
       const { path, publicId } = await handleImageUpload(req.files.image[0], existingBlog.imagePublicId);
       updatedData.image = path;
       updatedData.imagePublicId = publicId;
+      console.log('[UPDATE] Updated featured image');
     }
     // Handle banner image upload
     if (req.files?.bannerImage?.[0]) {
       const { path, publicId } = await handleImageUpload(req.files.bannerImage[0], existingBlog.bannerImagePublicId);
       updatedData.bannerImage = path;
       updatedData.bannerImagePublicId = publicId;
+      console.log('[UPDATE] Updated banner image');
     }
     // Update simple fields
     const scalarFields = ['title', 'content', 'category', 'subcategory', 'author', 'status'];
@@ -1116,6 +1150,7 @@ app.put('/api/blogs/:id', authenticateToken, uploadFields, async (req, res) => {
       console.warn(`[UPDATE] Blog not found after update attempt for ID: ${id}`);
       return res.status(404).json({ message: 'Blog not found after update' });
     }
+    console.log(`[UPDATE] Blog updated successfully: ${updatedBlog.title} (ID: ${id})`);
     return res.json({ message: 'Blog updated successfully', blog: updatedBlog });
   } catch (err) {
     console.error('[UPDATE] Error updating blog:', err);
@@ -1139,6 +1174,7 @@ app.delete('/api/blogs/:id', authenticateToken, async (req, res) => {
     // Delete all images associated with the blog
     await deleteAllBlogImages(blogToDelete);
     await Blog.findByIdAndDelete(req.params.id);
+    console.log('Blog and all associated images deleted successfully');
     res.json({ message: 'Blog and associated images deleted successfully' });
   } catch (err) {
     console.error('Error deleting blog:', err);

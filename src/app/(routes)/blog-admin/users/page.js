@@ -128,6 +128,7 @@ const UserManagement = () => {
         body: JSON.stringify(userData),
       });
 
+      console.log(response);
 
       if (!response.ok) {
         const errorData = await response.json();

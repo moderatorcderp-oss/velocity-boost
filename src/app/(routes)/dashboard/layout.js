@@ -51,6 +51,8 @@ const DashboardLayout = ({ children }) => {
     const role = localStorage.getItem("adminRole");
     const adminId = localStorage.getItem("adminId"); // Need adminId for logging
 
+    console.log("DashboardLayout: Running authentication check useEffect.");
+
     // Assuming 'ViewMode' and 'EditMode' might also land here, adjust roles as needed
     if (
       !token ||
@@ -60,9 +62,13 @@ const DashboardLayout = ({ children }) => {
         role !== "Admin" &&
         role !== "SuperAdmin")
     ) {
+      console.log(
+        "DashboardLayout: User not authenticated or role restricted, redirecting."
+      );
       router.push("/AdminLogin");
       setIsAdminAuthenticated(false);
     } else {
+      console.log("DashboardLayout: User authenticated.", { role, adminId });
       setIsAdminAuthenticated(true);
 
       // Start activity tracking and timers ONLY if authenticated
@@ -72,6 +78,7 @@ const DashboardLayout = ({ children }) => {
       // Use a flag like isAdminLoggedIn or check last login timestamp/session status on backend
       // For simplicity, let's use a localStorage flag cleared on logout.
       if (localStorage.getItem("isAdminLoggedIn") === "true" && adminId) {
+        console.log("DashboardLayout: Logging LOGIN event.");
         logActivityEvent("LOGIN", pathname, "User logged in");
         localStorage.removeItem("isAdminLoggedIn"); // Clear this flag after logging
       } else if (adminId) {
@@ -92,6 +99,7 @@ const DashboardLayout = ({ children }) => {
 
       // Cleanup timers and event listeners on unmount
       return () => {
+        console.log("DashboardLayout: Cleaning up timers and event listeners.");
         clearTimeout(inactivityTimerRef.current);
         clearTimeout(warningTimerRef.current);
         if (typeof document !== "undefined") {
@@ -120,6 +128,11 @@ const DashboardLayout = ({ children }) => {
     const adminId = localStorage.getItem("adminId");
     const adminToken = localStorage.getItem("adminToken");
     const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+
+    console.log(
+      `DashboardLayout: Attempting to log activity: ${action} on ${page}`,
+      { details, adminId }
+    );
 
     if (!adminId || !adminToken || !apiUrl) {
       console.warn(
@@ -161,8 +174,12 @@ const DashboardLayout = ({ children }) => {
     setShowWarning(false);
 
     inactivityTimerRef.current = setTimeout(() => {
+      console.log(
+        "DashboardLayout: Inactivity timer expired, showing warning."
+      );
       setShowWarning(true);
       warningTimerRef.current = setTimeout(() => {
+        console.log("DashboardLayout: Warning timer expired, logging out.");
         handleLogout();
       }, WARNING_DURATION);
     }, INACTIVITY_TIMEOUT);
@@ -170,7 +187,10 @@ const DashboardLayout = ({ children }) => {
 
   // --- Logout Function ---
   const handleLogout = () => {
-      logActivityEvent(
+    console.log(
+      "DashboardLayout: Logging LOGOUT event before clearing storage."
+    );
+    logActivityEvent(
       "LOGOUT",
       pathname,
       "User logged out manually or due to inactivity"
@@ -197,12 +217,16 @@ const DashboardLayout = ({ children }) => {
       pathname !== currentPagePath
     ) {
       const timeSpent = Date.now() - currentPageStartTime;
+      console.log(
+        `DashboardLayout: Logging PAGE_VIEW_END for ${currentPagePath}. Duration: ${timeSpent}ms`
+      );
       logActivityEvent(
         "PAGE_VIEW_END",
         currentPagePath,
         `Duration: ${timeSpent}ms - Navigated`
       );
 
+      console.log(`DashboardLayout: Logging PAGE_VIEW_START for ${pathname}.`);
       logActivityEvent("PAGE_VIEW_START", pathname, "Page visited");
 
       // Update state for the new page
@@ -210,6 +234,9 @@ const DashboardLayout = ({ children }) => {
       setCurrentPageStartTime(Date.now());
     } else if (isAdminAuthenticated && pathname && !currentPagePath) {
       // This handles the very first page load within this layout IF it wasn't triggered as a LOGIN page view
+      console.log(
+        `DashboardLayout: Initializing page tracking for ${pathname}.`
+      );
       setCurrentPagePath(pathname);
       setCurrentPageStartTime(Date.now());
       // We already log LOGIN in the other effect, no need for duplicate PAGE_VIEW_START here on first load.
@@ -218,6 +245,7 @@ const DashboardLayout = ({ children }) => {
 
   // Show a minimal loading state or nothing while authentication is verified.
   if (!isAdminAuthenticated) {
+    console.log("DashboardLayout: Not authenticated, showing loader or null.");
     return (
       <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50">
         <FaSpinner className="animate-spin text-4xl text-blue-600 mb-4" />

@@ -122,6 +122,10 @@ const PopupForm = ({
 
             return a.localeCompare(b);
           });
+
+        console.log(
+          `✅ Loaded ${uniqueLocations.length} locations (${indianCities.length} Indian cities)`
+        );
         setLocationSuggestions(uniqueLocations);
       } catch (error) {
         console.error("❌ Error loading cities data:", error);
@@ -572,6 +576,9 @@ const PopupForm = ({
         setIsSubmitting(false);
         return;
       }
+
+      console.log("Submitting formData:", formData);
+
       // Native fetch instead of a dynamically-imported axios — removes the
       // dependency entirely rather than just deferring it.
       const res = await fetch(`${apiUrl}/api/submit`, {
@@ -589,6 +596,7 @@ const PopupForm = ({
         throw err;
       }
 
+      console.log("PopupForm submitted successfully:", data);
       setStatusMessage({
         text: data.message || "Registration complete!",
         type: "success",
@@ -628,6 +636,7 @@ const PopupForm = ({
           alertMessage =
             responseData?.message ||
             "Submission failed. Please check your input.";
+          console.log("Backend 400 message for alert:", alertMessage);
         } else {
           alertMessage = `Submission failed due to a server issue (Status: ${status}). Please try again later.`;
         }

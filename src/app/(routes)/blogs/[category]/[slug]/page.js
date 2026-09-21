@@ -491,6 +491,7 @@ const renderTocItems = (items, parentIndex = '', depth = 0) => {
       }
 
       const response = await axios.post(`${apiUrl}/api/submit`, payload);
+      console.log("Form submitted successfully:", response.data);
       
       setShowThankYou(true);
       setFormData({
@@ -647,7 +648,9 @@ const renderTocItems = (items, parentIndex = '', depth = 0) => {
       try {
         setLoading(true);
         setError(null);
-                
+        
+        console.log('Fetching blog post with slug:', slug);
+        
         const response = await fetch(`${API_BASE_URL}/api/blogs/slug/${slug}`);
         
         if (!response.ok) {
@@ -659,8 +662,10 @@ const renderTocItems = (items, parentIndex = '', depth = 0) => {
         }
         
         const data = await response.json();
+        console.log('Blog data received:', data);
         setBlog(data);
       } catch (err) {
+        console.error('Error fetching blog post:', err);
         setError(err.message);
       } finally {
         setLoading(false);
