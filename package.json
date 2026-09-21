@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "clean": "rm -rf .next out node_modules/.cache",
-    "rebuild": "npm run clean && npm ci && npm run build"
+    "rebuild": "npm run clean && npm ci && npm run build",
+    "audit:browse": "node scripts/agentic-browse.mjs"
   },
   "dependencies": {
     "@next/bundle-analyzer": "^16.2.9",
