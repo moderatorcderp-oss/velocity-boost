@@ -12,6 +12,7 @@
  *   node scripts/agentic-browse.mjs --base=https://www.example.com --routes=/,/courses
  *
  * Requires Playwright (dev only):  npx playwright install chromium
+ * Set CHROMIUM_PATH to use an already-installed Chromium instead.
  */
 
 import { chromium } from "playwright";
@@ -38,7 +39,9 @@ const VIEWPORTS = [
 
 const results = [];
 
-const browser = await chromium.launch();
+const browser = await chromium.launch(
+  process.env.CHROMIUM_PATH ? { executablePath: process.env.CHROMIUM_PATH } : {}
+);
 
 for (const viewport of VIEWPORTS) {
   const context = await browser.newContext({
