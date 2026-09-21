@@ -2,6 +2,7 @@
 
 import { Suspense } from "react";
 import dynamic from "next/dynamic";
+import { DeferPaint } from "@/components/Common/LazySection";
 import CoursesRelated from "./RelatedCourses";
 import CoursesTrustBar from "./CoursesTrustBar";
 import WhatYouWillLearn from "./WhatYouWillLearn";
@@ -116,11 +117,9 @@ export default function ClientCourseSections(props) {
           <FAQ data={faqData} />
         </Suspense>
 
-        <div
-
-        >
+        <DeferPaint intrinsicSize="auto 600px">
           {cityLinks}
-        </div>
+        </DeferPaint>
 
         <Suspense fallback={null}>
           <CoursesRelated data={relatedCoursesData} currentCityName={currentCityName} />
@@ -140,14 +139,22 @@ export default function ClientCourseSections(props) {
       <Why data={whyData} />
 
       {/* what section  */}
-      <WhatYouWillLearn data={whatYouWillLearnData} />
+      <DeferPaint intrinsicSize="auto 700px">
+        <WhatYouWillLearn data={whatYouWillLearnData} />
+      </DeferPaint>
       {sapModData && <SapModComponent data={sapModData} />}
 
-      <SapAbapSyllabus />
+      <DeferPaint intrinsicSize="auto 900px">
+        <SapAbapSyllabus />
+      </DeferPaint>
 
-      <SkillsAndTools data={skillsntoolsdata} />
+      <DeferPaint intrinsicSize="auto 700px">
+        <SkillsAndTools data={skillsntoolsdata} />
+      </DeferPaint>
 
-      <WhoThisIsFor data={whothisisfor} />
+      <DeferPaint intrinsicSize="auto 700px">
+        <WhoThisIsFor data={whothisisfor} />
+      </DeferPaint>
 
       <Suspense fallback={null}>
         <Certificate data={certificateData} />
@@ -184,7 +191,9 @@ export default function ClientCourseSections(props) {
         <FAQ data={faqData} />
       </Suspense>
 
-      <SapDemoBanner {...demoBannerData} />
+      <DeferPaint intrinsicSize="auto 400px">
+        <SapDemoBanner {...demoBannerData} />
+      </DeferPaint>
 
       {shouldUseLegacyModules && (
         <div id="modules" style={{ scrollMarginTop: "80px" }}>
@@ -194,9 +203,9 @@ export default function ClientCourseSections(props) {
         </div>
       )}
 
-      <div>
+      <DeferPaint intrinsicSize="auto 600px">
         {cityLinks}
-      </div>
+      </DeferPaint>
     </>
   );
 }

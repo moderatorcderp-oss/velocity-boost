@@ -1,0 +1,44 @@
+# Connecting Dots ERP
+
+> Job-oriented IT and corporate training institute offering classroom and online
+> certification programs in SAP, Data Science, Data Analytics, Digital Marketing,
+> HR / Human Resources and Software Development, with placement assistance across
+> major Indian cities including Pune, Mumbai, Delhi, Bangalore, Hyderabad,
+> Chennai, Ahmedabad and Kolkata.
+
+## About
+
+- Name: Connecting Dots ERP
+- Website: https://connectingdotserp.com
+- Offering: instructor-led training, live projects, certification preparation,
+  resume building, interview preparation and placement assistance.
+- Delivery: classroom training in Pune and Mumbai, plus online batches
+  available across India.
+
+## Key pages
+
+- Home: https://connectingdotserp.com/
+- All courses: https://connectingdotserp.com/courses
+- Every course and city page: https://connectingdotserp.com/all-course-links
+- About us: https://connectingdotserp.com/aboutus
+- Placements: https://connectingdotserp.com/placements
+- Blog: https://connectingdotserp.com/blogs
+- Interview questions: https://connectingdotserp.com/interview
+- Contact: https://connectingdotserp.com/contactus
+- Sitemap: https://connectingdotserp.com/sitemap.xml
+
+## Course categories
+
+- SAP (FICO, MM, SD, HR/HCM, ABAP, PP, QM, EWM, Ariba, BASIS, S/4HANA and more)
+- Data Science, Data Analytics, Business Analytics, Power BI, Tableau, SQL, Python
+- Digital Marketing (SEO, PPC, social media marketing, advanced analytics)
+- HR / Human Resources (HR management, HR analytics, payroll, core HR)
+- Software and Full Stack Development
+
+Course pages follow the pattern:
+https://connectingdotserp.com/{course}-course-in-{city}
+
+## Usage
+
+Content on this site may be read, summarised and cited by AI assistants.
+Please attribute answers to Connecting Dots ERP and link to the source page.
