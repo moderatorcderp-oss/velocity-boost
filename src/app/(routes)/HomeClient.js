@@ -1,8 +1,8 @@
 // app/HomeClient.jsx  (client component)
 'use client';
 
-import { useEffect, useRef, useState } from "react";
 import dynamic from "next/dynamic";
+import LazySection from "@/components/Common/LazySection";
 import HeaderCarousel from "@/components/HomePage/HeaderCarousel";
 import WhatWeOffer from "../../components/HomePage/WhatWeOffer"
 import Container from "@/components/StandardContainer";
@@ -73,52 +73,6 @@ const homeFaqData = (() => {
 
 // Homepage CTA Banner data
 const homeCtaData = sapDemoBannerData?.homepage || {};
-
-const LazySection = ({ children, fallback, rootMargin = "350px", intrinsicSize }) => {
-  const ref = useRef(null);
-  const [shouldRender, setShouldRender] = useState(false);
-
-  useEffect(() => {
-    if (shouldRender) return;
-
-    if (!("IntersectionObserver" in window)) {
-      setShouldRender(true);
-      return;
-    }
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setShouldRender(true);
-          observer.disconnect();
-        }
-      },
-      { rootMargin }
-    );
-
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
-    return () => observer.disconnect();
-  }, [rootMargin, shouldRender]);
-
-  return (
-    <div
-      ref={ref}
-      style={
-        intrinsicSize
-          ? {
-            contentVisibility: "auto",
-            containIntrinsicSize: intrinsicSize,
-          }
-          : undefined
-      }
-    >
-      {shouldRender ? children : fallback}
-    </div>
-  );
-};
 
 export default function HomeClient() {
   return (

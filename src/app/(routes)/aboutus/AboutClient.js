@@ -5,12 +5,10 @@ import ApplyBanner from '@/components/TestingAbout/ApplyBanner';
 // import Achievements from '@/components/HomePage/Achievements';
 import dynamic from 'next/dynamic';
 import React from 'react';
+import LazySection from '@/components/Common/LazySection';
 
 // dynamic imports with ssr: false are allowed inside this client component
-const Hero = dynamic(() => import("@/components/TestingAbout/Hero"), {
-  ssr: false,
-  loading: () => <div className="h-[400px] bg-gray-100 flex items-center justify-center">Loading hero...</div>,
-});
+const Hero = dynamic(() => import("@/components/TestingAbout/Hero"));
 
 const Achievements = dynamic(() => import("@/components/HomePage/Achievements"), {
   ssr: false,
@@ -34,9 +32,15 @@ const AboutClient = ({ branches = [] }) => {
       <h1 className="sr-only">Connecting Dots ERP</h1>
 
       <Hero />
-      <Achievements />
-      <SAPCompassDial />
-      <SAPAdoptionRings />
+      <LazySection fallback={<div className="h-[300px]" />} intrinsicSize="auto 300px">
+        <Achievements />
+      </LazySection>
+      <LazySection fallback={<div className="h-[300px]" />} intrinsicSize="auto 300px">
+        <SAPCompassDial />
+      </LazySection>
+      <LazySection fallback={<div className="h-[300px]" />} intrinsicSize="auto 300px">
+        <SAPAdoptionRings />
+      </LazySection>
       <ApplyBanner />
     </div>
   );

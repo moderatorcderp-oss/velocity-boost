@@ -1069,7 +1069,7 @@ export default function PlacementPage() {
                 <div className="fc-badge">⭐ Top Pick</div>
                 <div className="fc-top">
                   <div className="fc-photo-wrap">
-                    <img src={f.photo} alt={f.name || "name"} />
+                    <img src={f.photo} alt={f.name || "name"} loading="lazy" decoding="async" />
                   </div>
                   <div>
                     <div className="fc-name">{f.name}</div>
@@ -1082,7 +1082,7 @@ export default function PlacementPage() {
                     <div className="fc-salary-label">Package Offered</div>
                   </div>
                   <div className="fc-logo-wrap">
-                    <img src={f.logo} alt="company logo" />
+                    <img src={f.logo} alt="company logo" loading="lazy" decoding="async" />
                   </div>
                 </div>
               </div>
@@ -1096,7 +1096,7 @@ export default function PlacementPage() {
                 <div className="fc-badge">⭐ Top Pick</div>
                 <div className="fc-top">
                   <div className="fc-photo-wrap">
-                    <img src={f.photo} alt={f.name || "client img"} />
+                    <img src={f.photo} alt={f.name || "client img"} loading="lazy" decoding="async" />
                   </div>
                   <div>
                     <div className="fc-name">{f.name}</div>
@@ -1109,7 +1109,7 @@ export default function PlacementPage() {
                     <div className="fc-salary-label">Package Offered</div>
                   </div>
                   <div className="fc-logo-wrap">
-                    <img src={f.logo} alt="company logo" />
+                    <img src={f.logo} alt="company logo" loading="lazy" decoding="async" />
                   </div>
                 </div>
               </div>

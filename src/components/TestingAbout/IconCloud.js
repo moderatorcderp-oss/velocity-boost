@@ -13,7 +13,7 @@ const TECHNOLOGY_SLUGS = [
   // Web Development
   "javascript", "typescript", "react", "nodedotjs", "express", "html5", "css3", "npm", "yarn", "webpack", "vite",
   // Design Tools
-  "figma", "sketch", "canva", "photoshop",
+  "figma", "sketch", "canva", "adobephotoshop",
   // Social Media & Marketing
   "facebook", "instagram", "youtube", "mailchimp", "hubspot", "google", "googleanalytics",
   // Development Tools
@@ -25,7 +25,7 @@ const TECHNOLOGY_SLUGS = [
   // Programming Languages
   "go", "rust", "cplusplus", "csharp", "php", "ruby", "swift", "kotlin",
   // Frameworks
-  "nextdotjs", "vue", "angular", "django", "flask", "laravel", "spring", "bootstrap",
+  "nextdotjs", "vuedotjs", "angular", "django", "flask", "laravel", "spring", "bootstrap",
 ];
 
 // Static configuration to prevent recreation
