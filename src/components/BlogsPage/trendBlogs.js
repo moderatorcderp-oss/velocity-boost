@@ -33,8 +33,6 @@ const TrendingBlogs = () => {
           // credentials: 'include',
         });
         
-        console.log('Response status:', response.status);
-        
         if (!response.ok) {
           const errorText = await response.text();
           console.error('Error response:', errorText);
@@ -42,11 +40,9 @@ const TrendingBlogs = () => {
         }
         
         const result = await response.json();
-        console.log('API Response:', JSON.stringify(result, null, 2));
         
         // Your backend returns { blogs: [...], hasMore: boolean }
         const blogsData = result.blogs || [];
-        console.log('Blogs data:', blogsData);
         
         if (blogsData.length > 0) {
           console.log('First blog:', blogsData[0]);

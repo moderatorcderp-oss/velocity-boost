@@ -68,7 +68,6 @@ const BlogPage = () => {
         params.append('category', category);
       }
       
-      console.log(`Fetching blogs - Skip: ${skip}, Limit: ${limit}, Category: ${category}`);
       
       const response = await fetch(`${API_BASE_URL}/api/blogs?${params}`);
       
@@ -82,7 +81,6 @@ const BlogPage = () => {
       const blogsData = responseData.blogs || [];
       const hasMoreData = responseData.hasMore || false;
       
-      console.log(`Found ${blogsData.length} blogs, hasMore: ${hasMoreData}`);
       
       // Transform the data to match your frontend structure
       const transformedBlogs = blogsData.map((blog, index) => {
@@ -131,7 +129,6 @@ const BlogPage = () => {
           });
           
           const mergedBlogs = Array.from(blogMap.values());
-          console.log(`Merged ${prev.length} existing with ${transformedBlogs.length} new = ${mergedBlogs.length} total`);
           return mergedBlogs;
         });
       }
@@ -177,7 +174,6 @@ const BlogPage = () => {
   // Load more blogs function for infinite scroll
   const loadMoreBlogs = useCallback(() => {
     if (!loadingMore && hasMore) {
-      console.log('Loading more blogs...');
       fetchBlogs(false);
     }
   }, [hasMore, loadingMore, fetchBlogs]);
@@ -273,7 +269,6 @@ const BlogPage = () => {
           !loadingMore &&
           activeSection === 'blogs'
         ) {
-          console.log('Scrolled to load more position');
           loadMoreBlogs();
         }
       }, 150); // Throttle by 150ms

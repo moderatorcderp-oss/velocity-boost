@@ -79,7 +79,6 @@ const BlogAdminLayout = ({ children }) => {
         if (loading) return;
 
         if (!isAuthenticated() || !user) {
-          console.log('BlogAdminLayout: User not authenticated, redirecting to login');
           router.push('/AdminLogin');
           return;
         }

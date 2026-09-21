@@ -21,7 +21,6 @@ export const AuthProvider = ({ children }) => {
           return;
         }
 
-        console.log('Validating token with backend...');
 
         // Validate token with your Express backend
         const res = await fetch(`${API_BASE_URL}/api/auth/validate-token`, {
@@ -34,7 +33,6 @@ export const AuthProvider = ({ children }) => {
 
         if (res.ok) {
           const userData = await res.json();
-          console.log('Token validation successful:', userData);
           
           setUser({
             id: userData.id,
@@ -52,7 +50,6 @@ export const AuthProvider = ({ children }) => {
           localStorage.setItem('adminId', userData.id);
           localStorage.setItem('isAdminLoggedIn', 'true');
         } else {
-          console.log('Token validation failed:', res.status);
           // Clear invalid token and related data
           clearAuthData();
         }
@@ -79,7 +76,6 @@ export const AuthProvider = ({ children }) => {
   };
 
   const login = (userData) => {
-    console.log('AuthContext login called with:', userData);
     
     // Normalize role to lowercase
     const normalizedRole = userData.role ? userData.role.toLowerCase() : '';
@@ -94,7 +90,6 @@ export const AuthProvider = ({ children }) => {
       lastLogin: userData.lastLogin || new Date().toISOString()
     };
 
-    console.log('Storing user data:', userInfo);
     
     // Update state
     setUser(userInfo);
@@ -107,10 +102,6 @@ export const AuthProvider = ({ children }) => {
     localStorage.setItem('adminId', userInfo.id);
     localStorage.setItem('userData', JSON.stringify(userInfo));
     localStorage.setItem('isAdminLoggedIn', 'true');
-    
-    console.log('AuthContext: Login successful, localStorage updated');
-    
-    console.log('User logged in successfully:', userInfo);
   };
 
   const logout = async () => {

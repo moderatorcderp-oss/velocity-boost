@@ -404,7 +404,6 @@ const BlogsAdminPanel = () => {
         // 2) Debug: list the files being sent
         try {
           const files = formData.getAll("courseImages");
-          console.log("[AdminPanel] courseImages files:", files.map(f => f?.name || "(none)"));
         } catch {}
       }
 
@@ -417,7 +416,6 @@ const BlogsAdminPanel = () => {
 
       try {
         const raw = formData.get("courses");
-        console.log("[AdminPanel] courses raw:", raw);
         if (raw) console.log("[AdminPanel] courses parsed:", JSON.parse(raw));
       } catch (e) {
         console.warn("[AdminPanel] courses parse failed:", e);

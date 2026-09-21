@@ -20,6 +20,3 @@ const trimmed = all.filter(city => {
 const outPath = path.join(__dirname, '..', 'src', 'data', 'india-cities.json');
 fs.mkdirSync(path.dirname(outPath), { recursive: true });
 fs.writeFileSync(outPath, JSON.stringify(trimmed));
-
-console.log(`Wrote ${trimmed.length} cities to ${outPath}`);
-console.log(`File size: ${(fs.statSync(outPath).size / 1024).toFixed(1)} KB`);
