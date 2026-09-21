@@ -34,6 +34,7 @@ const fetchWithAuth = async (url, options = {}) => {
       if (currentPath !== '/AdminLogin') {
         sessionStorage.setItem('intendedPath', currentPath);
       }
+      console.log('🔄 Redirecting to login...');
       window.location.href = "/AdminLogin";
     }
     throw new Error("Not authenticated");

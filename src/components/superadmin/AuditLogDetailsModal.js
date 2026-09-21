@@ -77,11 +77,15 @@ const AuditLogDetailsModal = ({ log, onClose }) => {
   const fetchUserById = async (userId) => {
     if (!userId || userDetails[userId] !== undefined) {
       // If userId is null/undefined/empty OR details are already in state (success or failed), don't fetch
+      console.log(
+        `Skipping fetch for ${userId}: Already in state or invalid ID.`
+      );
       return;
     }
 
     // Mark this specific user ID as loading temporarily? Or just rely on global?
     // Relying on global loadingUsers for simplicity for now.
+    console.log(`Attempting API fetch for user ID: ${userId}`);
 
     const apiUrl = process.env.NEXT_PUBLIC_API_URL || ""; // Use empty string as fallback
     if (!apiUrl) {
@@ -100,6 +104,7 @@ const AuditLogDetailsModal = ({ log, onClose }) => {
         const adminData = await adminResponse.json();
         // Check if response looks like user/admin data (has _id and username)
         if (adminData && adminData._id && adminData.username) {
+          console.log(`Successfully fetched admin ${userId}`);
           setUserDetails((prev) => ({ ...prev, [userId]: adminData })); // Store the user object
           return; // Found user, stop here
         } else {
@@ -213,6 +218,9 @@ const AuditLogDetailsModal = ({ log, onClose }) => {
       // If there are new unique IDs to fetch
       if (uniqueUserIdsToFetch.length > 0) {
         setLoadingUsers(true); // Start global loading indicator
+        console.log(
+          `Starting batch fetch for ${uniqueUserIdsToFetch.length} users...`
+        );
         try {
           // Call fetchUserById for each unique ID that hasn't been attempted
           await Promise.all(
@@ -224,6 +232,7 @@ const AuditLogDetailsModal = ({ log, onClose }) => {
           // No need to set a global error here based on individual failures.
         } finally {
           setLoadingUsers(false); // End global loading indicator when batch is done
+          console.log("Batch fetch finished.");
         }
       }
     };
@@ -452,6 +461,9 @@ const AuditLogDetailsModal = ({ log, onClose }) => {
       /^[0-9a-f]{24}$/i.test(value.$oid)
     ) {
       const userId = value.$oid;
+      console.log(
+        `renderUserValue found {$oid: "${userId}"}, recursing with ID string.`
+      );
       return renderUserValue(userId); // Recurse with the actual ID string
     }
 
@@ -463,6 +475,9 @@ const AuditLogDetailsModal = ({ log, onClose }) => {
       typeof value._id === "string" &&
       value.username
     ) {
+      console.log(
+        `renderUserValue found populated user object for ID: ${value._id}`
+      );
       const user = value;
       return (
         <div className="flex flex-col space-y-1 text-sm">
@@ -491,12 +506,14 @@ const AuditLogDetailsModal = ({ log, onClose }) => {
       /^[0-9a-f]{24}$/i.test(value)
     ) {
       const userId = value;
+      console.log(`renderUserValue checking state for user ID: ${userId}`);
 
       // Check if details are already in state (success or failed)
       if (userDetails[userId] !== undefined) {
         // Check if the key exists
         if (userDetails[userId]) {
           // Check if the value is the user object (success)
+          console.log(`Details found in state for ${userId}`);
           const user = userDetails[userId];
           return (
             /* ... UI for fetched user details (same as populated) ... */
@@ -525,6 +542,7 @@ const AuditLogDetailsModal = ({ log, onClose }) => {
           );
         } else {
           // The value is false (fetch attempted and failed)
+          console.log(`Details fetch failed for ${userId}`);
           return (
             <div className="flex flex-col space-y-1 text-sm text-red-700">
               <div className="font-medium">User Details Not Available</div>
@@ -540,6 +558,7 @@ const AuditLogDetailsModal = ({ log, onClose }) => {
       // it means the useEffect might not have picked this ID up yet, or a fetch
       // is about to start. Show a pending indicator. The useEffect should
       // eventually trigger fetchUserById for this ID because userDetails[userId] is undefined.
+      console.log(`Details for ${userId} not in state, showing pending...`);
       // No need to manually call fetchUserById here, useEffect handles finding and triggering fetches.
       return (
         <div className="flex items-center text-gray-600 italic text-sm">
@@ -548,6 +567,12 @@ const AuditLogDetailsModal = ({ log, onClose }) => {
         </div>
       );
     }
+
+    // 5. For any other value type, fall back to renderSimpleValue
+    console.log(
+      `renderUserValue falling back to renderSimpleValue for value:`,
+      value
+    );
     return renderSimpleValue(value);
   };
 

@@ -1,14 +1,5 @@
 // src/app/layout.js
-import {
-  Lato,
-  Rubik,
-  Fraunces,
-  Inter,
-  JetBrains_Mono,
-  Bricolage_Grotesque,
-} from "next/font/google";
-import Script from "next/script";
-import { Partytown } from "@builder.io/partytown/react";
+import { Lato, Rubik, Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 
 // import Navbar from "@/components/Common/Navbar";
@@ -21,6 +12,7 @@ import ConditionalAuthProvider from "@/app/conditionalprovider";
 import ClientLayoutWrapper from "@/components/ClientLayoutWrapper";
 import Navbar2 from "@/components/Common/Navbar2";
 import WaveComponent from "@/components/Wave";
+import DeferredAnalytics from "@/components/DeferredAnalytics";
 // --- Font Setup ---
 const lato = Lato({
   weight: ["400", "700"],
@@ -37,26 +29,6 @@ const rubik = Rubik({
   variable: "--font-rubik",
 });
 
-const fraunces = Fraunces({
-  subsets: ["latin"],
-  display: "swap",
-  preload: false,
-  variable: "--font-fraunces",
-});
-
-const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
-  preload: false,
-  variable: "--font-inter",
-});
-
-const jetbrainsMono = JetBrains_Mono({
-  subsets: ["latin"],
-  display: "swap",
-  preload: false,
-  variable: "--font-jetbrains-mono",
-});
 
 const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
@@ -67,8 +39,6 @@ const bricolage = Bricolage_Grotesque({
 
 // --- Constants ---
 const GTM_ID = "GTM-MB68QM2V";
-const FB_PIXEL_ID = "3414178115554916";
-const AHREFS_KEY = "4r3vxTcyxECWaXnhKBGH5g"; //4r3vxTcyxECWaXnhKBGH5g
 
 // Verification metadata (kept here as it's typically site-wide)
 //new ahref added
@@ -91,7 +61,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${lato.variable} ${rubik.variable} ${fraunces.variable} ${inter.variable} ${jetbrainsMono.variable} ${bricolage.variable}`}
+      className={`${lato.variable} ${rubik.variable} ${bricolage.variable}`}
     >
       <head>
         <link rel="preconnect" href="https://www.googletagmanager.com" />
@@ -100,11 +70,6 @@ export default function RootLayout({ children }) {
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://connect.facebook.net" />
 
-        <Partytown
-          debug={false}
-          forward={["fbq"]}
-          lib="/~partytown/"
-        />
 
         {/* <link rel="manifest" href="/site.webmanifest" /> */}
         <meta name="theme-color" content="#1a365d" />
@@ -143,48 +108,9 @@ export default function RootLayout({ children }) {
         </div>
 
 
-        {/* Google Tag Manager */}
-        <Script
-          id="gtm-script"
-          strategy="lazyOnload"
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-              })(window,document,'script','dataLayer','${GTM_ID}');
-            `,
-          }}
-        />
-        {/* Facebook Pixel - Offloaded to Web Worker */}
-        <Script
-          id="facebook-pixel"
-          type="text/partytown"
-          strategy="lazyOnload"
-          dangerouslySetInnerHTML={{
-            __html: `
-              !function(f,b,e,v,n,t,s)
-              {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-              if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-              n.queue=[];t=b.createElement(e);t.async=!0;
-              t.src=v;s=b.getElementsByTagName(e)[0];
-              s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
-              fbq('init', '${FB_PIXEL_ID}');
-              fbq('track', 'PageView');
-            `,
-          }}
-        />
-
-        {/* ✅ FIXED: Ahrefs WITHOUT Partytown (API routes don't work in web workers) */}
-        <Script
-          id="ahrefs-analytics"
-          src="/api/ahrefs"
-          data-key={AHREFS_KEY}
-          strategy="lazyOnload"
-        />
+        {/* GTM, Meta Pixel and Ahrefs: loaded after the first interaction
+            so they stay off the critical rendering path. */}
+        <DeferredAnalytics />
       </body>
     </html>
   );
