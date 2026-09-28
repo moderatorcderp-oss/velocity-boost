@@ -43,6 +43,7 @@ export default function CoursesLayout({ children }) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <h1 className="sr-only">SAP, IT, Data and HR Courses at Connecting Dots ERP</h1>
       {children}
     </>
   );
