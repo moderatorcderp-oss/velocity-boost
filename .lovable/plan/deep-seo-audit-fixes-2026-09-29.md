@@ -9,7 +9,7 @@
 - Remove crawler-visible About-page loading messages while preserving the same reserved space and visual loading behavior.
 - Repair course-page canonical and structured-data URLs for public alias slugs.
 - Remove unsupported or fabricated structured-data fields, including placeholder images, fake review text, changing build-time dates, and the malformed logo URL.
-- Add a preview-deployment `noindex` response header without affecting the production domain.
+- Add a preview-deployment `noindex` response header without affecting the production domain..
 
 ## Already present — leave unchanged
 
