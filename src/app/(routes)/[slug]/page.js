@@ -99,7 +99,7 @@ export async function generateMetadata({ params }) {
     return {};
   }
 
-  const metadata = generateDynamicMetadata(courseSlug, citySlug);
+  const metadata = generateDynamicMetadata(courseSlug, citySlug, rawCourseSlug);
   if (!metadata) {
     console.warn(
       `❌ generateMetadata: Failed to generate metadata for "${slug}".`
@@ -193,12 +193,13 @@ const CourseCityPage = async ({ params }) => {
     return notFound();
   }
 
-  const jsonLd = generateDynamicJsonLd(courseSlug, citySlug);
+  const jsonLd = generateDynamicJsonLd(courseSlug, citySlug, rawCourseSlug);
 
   const processPlaceholders = (obj, cityNameToUse) => {
     if (typeof obj === "string") {
-      // ✅ CHANGED: escaped curly braces for correct regex
-      return obj.replace(/\{city\}/g, cityNameToUse);
+      return obj
+        .replace(/\{city\}/g, cityNameToUse)
+        .replace(/\bPune\b/g, cityNameToUse);
     }
     if (Array.isArray(obj)) {
       return obj.map((item) => processPlaceholders(item, cityNameToUse));

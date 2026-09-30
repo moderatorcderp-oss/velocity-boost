@@ -149,15 +149,7 @@ const SapModComponent = ({ data }) => {
 
   // No data state
   if (!data) {
-    return (
-      <div className="w-full bg-[#2d2d2d] mb-16 sm:mb-20 lg:mb-24">
-        <div className="flex items-center justify-center py-16">
-          <div className="text-white text-xl text-center">
-            No SAP Modules data available (check masterData.js or prop passing).
-          </div>
-        </div>
-      </div>
-    );
+    return null;
   }
 
   return (

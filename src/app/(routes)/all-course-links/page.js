@@ -138,18 +138,19 @@ const generateCourseLinks = () => {
 // Function to format display text
 const formatDisplayText = (course, city) => {
   const courseText = course
-    .replace(/-course-in$/, "")
-    .replace(/-training-in$/, "")
+    .replace(/-in$/, "")
     .replace(/-/g, " ")
-    .replace(/\b\w/g, (l) => l.toUpperCase());
+    .replace(/\b\w/g, (l) => l.toUpperCase())
+    .replace(/\bIt\b/g, "IT")
+    .replace(/\bAi\b/g, "AI")
+    .replace(/\bHr\b/g, "HR")
+    .replace(/\bSap\b/g, "SAP");
 
   const cityText = city
     .replace(/-/g, " ")
     .replace(/\b\w/g, (l) => l.toUpperCase());
 
-  const suffix = course.includes("-training-in") ? "Training" : "Course";
-
-  return `${courseText} ${suffix} In ${cityText}`;
+  return `${courseText} in ${cityText}`;
 };
 
 // Generate all course links

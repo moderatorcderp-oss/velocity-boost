@@ -80,7 +80,7 @@ images: {
 
   // ✅ PERFORMANCE: Headers for optimal caching and security
   async headers() {
-    return [
+    const headers = [
       {
         source: "/_next/static/:path*",
         headers: [
@@ -139,6 +139,20 @@ images: {
         ],
       },
     ];
+
+    if (process.env.VERCEL_ENV && process.env.VERCEL_ENV !== "production") {
+      headers.push({
+        source: "/:path*",
+        headers: [
+          {
+            key: "X-Robots-Tag",
+            value: "noindex, nofollow, noarchive",
+          },
+        ],
+      });
+    }
+
+    return headers;
   },
 
   // Rewrites

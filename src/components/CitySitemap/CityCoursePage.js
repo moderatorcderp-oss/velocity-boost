@@ -1,7 +1,7 @@
 // src/components/CitySitemap/CityCoursePage.js
 "use client"
 
-import { useEffect, useState } from "react";
+import { useMemo, useState } from "react";
 import Link from "next/link";
 import { FaSearch } from "react-icons/fa";
 import styles from "@/styles/CitySitemap/CityCoursePage.module.css";
@@ -97,53 +97,13 @@ const getCourseCategories = (city) => [
   },
 ];
 
-// Server-side component for SEO
-const ServerSideLinks = ({ city, courseCategories }) => (
-  <div className={styles.seoLinksContainer} style={{ display: 'none' }}>
-    {courseCategories.map((category) => (
-      <div key={category.id}>
-        <h3>{category.name} in {city}</h3>
-        {category.subcategories && category.subcategories.map((subcategory, index) => (
-          <div key={index}>
-            <h4>{subcategory.title}</h4>
-            {subcategory.courses.map((course, idx) => (
-              <Link key={idx} href={course.slug}>
-                {course.name} in {city}
-              </Link>
-            ))}
-          </div>
-        ))}
-        {category.courses && category.courses.map((course, idx) => (
-          <Link key={idx} href={course.slug}>
-            {course.name} in {city}
-          </Link>
-        ))}
-      </div>
-    ))}
-  </div>
-);
-
 const CityCoursePage = ({ city, cityInfo }) => {
   const [searchTerm, setSearchTerm] = useState("");
-  const [filteredCategories, setFilteredCategories] = useState([]);
-  
-  const courseCategories = getCourseCategories(city);
-
-  // Initialize filtered categories on first render
-  useEffect(() => {
-    setFilteredCategories(courseCategories);
-  }, []);
-
-  // Filter courses by search term
-  useEffect(() => {
-    if (searchTerm.trim() === '') {
-      setFilteredCategories(courseCategories);
-      return;
-    }
-
+  const courseCategories = useMemo(() => getCourseCategories(city), [city]);
+  const filteredCategories = useMemo(() => {
+    if (searchTerm.trim() === '') return courseCategories;
     const lowerSearchTerm = searchTerm.toLowerCase();
-    
-    const filtered = courseCategories.filter(category => {
+    return courseCategories.filter(category => {
       // Check category name
       if (category.name.toLowerCase().includes(lowerSearchTerm)) {
         return true;
@@ -167,14 +127,10 @@ const CityCoursePage = ({ city, cityInfo }) => {
       return false;
     });
 
-    setFilteredCategories(filtered);
-  }, [searchTerm]);
+  }, [courseCategories, searchTerm]);
 
   return (
     <div className={styles.cityPageContainer}>
-      {/* Server-side links for SEO - hidden from users but visible to crawlers */}
-      <ServerSideLinks city={city} courseCategories={courseCategories} />
-      
       {/* City Header Section */}
       <div className={styles.cityHeader}>
         <h1>Professional Courses in {cityInfo.name} </h1>
@@ -194,7 +150,7 @@ const CityCoursePage = ({ city, cityInfo }) => {
       </div>
 
       {/* No Results Message */}
-      {filteredCategories.length === 0 && (
+      {searchTerm.trim() !== "" && filteredCategories.length === 0 && (
         <div className={styles.noResults}>
           <h3>No courses found matching "{searchTerm}"</h3>
           <button 

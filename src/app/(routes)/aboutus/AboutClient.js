@@ -5,24 +5,21 @@ import ApplyBanner from '@/components/TestingAbout/ApplyBanner';
 // import Achievements from '@/components/HomePage/Achievements';
 import dynamic from 'next/dynamic';
 import React from 'react';
-import LazySection from '@/components/Common/LazySection';
+import { DeferPaint } from '@/components/Common/LazySection';
 
 // dynamic imports with ssr: false are allowed inside this client component
 const Hero = dynamic(() => import("@/components/TestingAbout/Hero"));
 
 const Achievements = dynamic(() => import("@/components/HomePage/Achievements"), {
-  ssr: false,
-  loading: () => <div className="h-[300px] bg-gray-100 flex items-center justify-center">Loading achievements...</div>,
+  loading: () => <div className="h-[300px] bg-gray-100" aria-hidden="true" />,
 });
 
 const SAPCompassDial = dynamic(() => import("@/components/TestingAbout/Placement"), {
-  ssr: false,
-  loading: () => <div className="h-[300px] bg-gray-100 flex items-center justify-center">Loading placements...</div>,
+  loading: () => <div className="h-[300px] bg-gray-100" aria-hidden="true" />,
 });
 
 const SAPAdoptionRings = dynamic(() => import("@/components/TestingAbout/SapComp"), {
-  ssr: false,
-  loading: () => <div className="h-[300px] bg-gray-100 flex items-center justify-center">Loading SAP content...</div>,
+  loading: () => <div className="h-[300px] bg-gray-100" aria-hidden="true" />,
 });
 
 
@@ -32,15 +29,15 @@ const AboutClient = ({ branches = [] }) => {
       <h1 className="sr-only">Connecting Dots ERP</h1>
 
       <Hero />
-      <LazySection fallback={<div className="h-[300px]" />} intrinsicSize="auto 300px">
+      <DeferPaint intrinsicSize="auto 300px">
         <Achievements />
-      </LazySection>
-      <LazySection fallback={<div className="h-[300px]" />} intrinsicSize="auto 300px">
+      </DeferPaint>
+      <DeferPaint intrinsicSize="auto 300px">
         <SAPCompassDial />
-      </LazySection>
-      <LazySection fallback={<div className="h-[300px]" />} intrinsicSize="auto 300px">
+      </DeferPaint>
+      <DeferPaint intrinsicSize="auto 300px">
         <SAPAdoptionRings />
-      </LazySection>
+      </DeferPaint>
       <ApplyBanner />
     </div>
   );
