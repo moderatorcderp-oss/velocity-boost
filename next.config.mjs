@@ -1,10 +1,16 @@
 /** @type {import('next').NextConfig} */
 import bundleAnalyzer from "@next/bundle-analyzer";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+const projectRoot = path.dirname(fileURLToPath(import.meta.url));
 
 const withBundleAnalyzer = bundleAnalyzer({
   enabled: process.env.ANALYZE === "true",
 });
 const nextConfig = {
+  outputFileTracingRoot: projectRoot,
+
   // Environment variables
   env: {
     NEXT_PUBLIC_GOOGLE_MAPS_API_KEY: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,

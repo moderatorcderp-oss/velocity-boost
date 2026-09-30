@@ -1,7 +1,19 @@
 const fs = require('fs');
 const path = require('path');
 
-const pkgPath = require.resolve('cities.json');
+const outPath = path.join(__dirname, '..', 'src', 'data', 'india-cities.json');
+
+let pkgPath;
+try {
+  pkgPath = require.resolve('cities.json');
+} catch {
+  if (fs.existsSync(outPath)) {
+    console.log(`Using committed city data at ${outPath}`);
+    process.exit(0);
+  }
+  throw new Error('cities.json is required when src/data/india-cities.json is missing.');
+}
+
 const all = JSON.parse(fs.readFileSync(pkgPath, 'utf8'));
 
 const allowedIntl = ['US', 'UK', 'CA', 'AU', 'DE', 'FR', 'SG', 'AE', 'JP'];
@@ -17,7 +29,6 @@ const trimmed = all.filter(city => {
   population: city.population ? Number(city.population) : 0,
 }));
 
-const outPath = path.join(__dirname, '..', 'src', 'data', 'india-cities.json');
 fs.mkdirSync(path.dirname(outPath), { recursive: true });
 fs.writeFileSync(outPath, JSON.stringify(trimmed));
 
