@@ -1,4 +1,5 @@
 // app/(routes)/placements/page.js
+import { ORG_FACTS } from "@/lib/orgFacts";
 import PlacementsClient from "./PlacementsClient";
 import { jsonLd } from "./metadata";
 
@@ -21,7 +22,7 @@ export default function PlacementsPage() {
         <h2>100% Placement Support for SAP, IT, and HR Training Students</h2>
         <h2>Interview Preparation and Resume Building</h2>
         <h2>Career Guidance and Hiring Partner Support</h2>
-        <h2>Average Package 6 LPA and Highest Package 24 LPA</h2>
+        <h2>Average Package {ORG_FACTS.averagePackage} and Highest Package {ORG_FACTS.highestPackage}</h2>
       </div>
 
       <PlacementsClient />

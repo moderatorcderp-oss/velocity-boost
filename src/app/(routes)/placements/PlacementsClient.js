@@ -2,6 +2,7 @@
 import dynamic from "next/dynamic";
 import { useEffect, useRef, useState } from "react";
 import Btnform from "@/components/HomePage/Btnform";
+import { ORG_FACTS } from "@/lib/orgFacts";
 const PopupForm = dynamic(() => import("@/components/PopupForm"), {
   ssr: false,
   loading: () => null,
@@ -11,10 +12,10 @@ const PopupForm = dynamic(() => import("@/components/PopupForm"), {
 // ─── DATA ────────────────────────────────────────────────────────────────────
 
 const heroStats = [
-  { value: "98%", label: "Placement Rate" },
-  { value: "₹6 LPA", label: "Avg. Package" },
-  { value: "₹24 LPA", label: "Highest Package" },
-  { value: "100+", label: "Hiring Partners" },
+  { value: ORG_FACTS.placementRate, label: "Placement Rate" },
+  { value: ORG_FACTS.averagePackage, label: "Avg. Package" },
+  { value: ORG_FACTS.highestPackage, label: "Highest Package" },
+  { value: ORG_FACTS.hiringPartners, label: "Hiring Partners" },
 ];
 
 
@@ -23,7 +24,7 @@ const placementSteps = [
   { step: "02", icon: "🛠️", title: "Project Scenarios", desc: "Work on real-time SAP project scenarios and business use cases to gain practical implementation experience." },
   { step: "03", icon: "🧠", title: "Technical & HR Mocks", desc: "Prepare for technical and HR interviews through mock sessions with expert feedback and confidence-building practice." },
   { step: "04", icon: "📝", title: "Resume & LinkedIn", desc: "ATS-optimised resume helped by HR team with LinkedIn profile revamp to attract 10× more recruiters." },
-  { step: "05", icon: "🤝", title: "Experience Alteration", desc: "Our unique offering helps you apply for jobs with relevant experience, enhancing your resume and boosting hiring chances." },
+  { step: "05", icon: "🤝", title: "Portfolio & Career Positioning", desc: "Turn your training projects into a documented, interview-ready portfolio and position your resume around the skills you have actually built." },
   { step: "06", icon: "🏆", title: "100% Job Assistance", desc: "Get 100% job assistance with expert training, resume building, mock interviews & 100% placement support at our top-rated training institute." },
 ];
 
@@ -997,8 +998,8 @@ export default function PlacementPage() {
             </h1>
 
             <p className="hero-sub">
-              Join 10,000+ learners who've transformed careers with Connecting Dots ERP's
-              industry-first placement program — backed by 100+ hiring partners,
+              Join {ORG_FACTS.studentsTrained} learners who've transformed careers with Connecting Dots ERP's
+              industry-first placement program — backed by {ORG_FACTS.hiringPartners} hiring partners,
               real projects, and one-on-one mentorship.
             </p>
 
@@ -1160,9 +1161,9 @@ export default function PlacementPage() {
         <div className="counter-grid">
           {[
             { num: "5000+", label: "Students Placed" },
-            { num: "100+", label: "Hiring Partners" },
-            { num: "₹6 LPA", label: "Average Package" },
-            { num: "98%", label: "Placement Rate" },
+            { num: ORG_FACTS.hiringPartners, label: "Hiring Partners" },
+            { num: ORG_FACTS.averagePackage, label: "Average Package" },
+            { num: ORG_FACTS.placementRate, label: "Placement Rate" },
           ].map((c, i) => (
             <div key={i} className="ctr-item">
               <div className="ctr-num">{c.num}</div>
@@ -1201,7 +1202,7 @@ export default function PlacementPage() {
           <div className="partners-header">
             <div>
               <div className="section-label">Hiring Partners</div>
-              <h2 className="section-title">100+ Companies<br /><span className="accent">Actively Hiring</span></h2>
+              <h2 className="section-title">{ORG_FACTS.hiringPartners} Companies<br /><span className="accent">Actively Hiring</span></h2>
             </div>
             <p className="section-sub">From Fortune 50+ giants to breakout startups — your profile reaches them all.</p>
           </div>
@@ -1295,10 +1296,10 @@ export default function PlacementPage() {
               <div className="faq-cta">
                 <div className="faq-cta-icon">🚀</div>
                 <div className="faq-cta-title">Ready to get placed?</div>
-                <p className="faq-cta-sub">Join 10,000+ learners on the path to their dream career. No experience required — just the drive to grow.</p>
+                <p className="faq-cta-sub">Join {ORG_FACTS.studentsTrained} learners on the path to their dream career. No experience required — just the drive to grow.</p>
                 <ul className="faq-cta-list">
                   <li>100% Placement Assistance</li>
-                  <li>Direct referrals to 100+ companies</li>
+                  <li>Direct referrals to {ORG_FACTS.hiringPartners} companies</li>
                   <li>Session Recordings</li>
                   <li>Live mentor support 7 days/week</li>
                 </ul>

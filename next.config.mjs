@@ -117,6 +117,22 @@ images: {
         ],
       },
       {
+        // Keep preview / staging / old Vercel deployments out of search results.
+        // Applies to any *.vercel.app host; the production custom domain is
+        // unaffected. Deliberately a header (not a robots.txt Disallow): a
+        // crawler has to be able to fetch the page to see the noindex.
+        // For genuinely private environments, also enable Vercel Deployment
+        // Protection - authentication is the only real access control.
+        source: "/:path*",
+        has: [{ type: "host", value: "(.*\\.)?vercel\\.app" }],
+        headers: [
+          {
+            key: "X-Robots-Tag",
+            value: "noindex, nofollow, noarchive",
+          },
+        ],
+      },
+      {
         // Security headers for all routes
         source: "/:path*",
         headers: [

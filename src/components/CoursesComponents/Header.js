@@ -112,12 +112,10 @@ const DSHeader = ({ data }) => {
     };
   }, []);
 
+  // No header data: reserve the hero space silently instead of shipping
+  // "Loading header data..." as page text.
   if (!data) {
-    return (
-      <div className="flex min-h-[60vh] items-center justify-center bg-white">
-        <p className="text-slate-500">Loading header data...</p>
-      </div>
-    );
+    return <div className="min-h-[60vh] bg-white" aria-hidden="true" />;
   }
 
   const handleChange = (event) => {

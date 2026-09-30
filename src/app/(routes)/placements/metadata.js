@@ -1,9 +1,10 @@
 // app/(routes)/placements/metadata.js
+import { ORG_FACTS } from "@/lib/orgFacts";
 
 const placementTitle =
   "100% Job Placement Assistance | Connecting Dots ERP - SAP Training Institute";
 const placementDescription =
-  "Get 100% job placement assistance with 100% placement rate, ₹6 LPA average package, and ₹24 LPA highest package. Expert interview prep, resume building, and career support at Connecting Dots ERP.";
+  `Get 100% job placement assistance with a ${ORG_FACTS.placementRate} placement rate, ${ORG_FACTS.averagePackage} average package, and ${ORG_FACTS.highestPackage} highest package. Expert interview prep, resume building, and career support at Connecting Dots ERP.`;
 const placementUrl = "https://connectingdotserp.com/placements";
 
 export const placementKeywords = [
@@ -78,9 +79,9 @@ export const metadata = {
     creator: "@CD_ERP",
   },
   other: {
-    "placement.rate": "100%",
-    "placement.average_package": "6 LPA",
-    "placement.highest_package": "24 LPA",
+    "placement.rate": ORG_FACTS.placementRate,
+    "placement.average_package": ORG_FACTS.averagePackage,
+    "placement.highest_package": ORG_FACTS.highestPackage,
     "course.provider": "Connecting Dots ERP",
     "career.support":
       "Interview preparation, resume building, placement assistance",

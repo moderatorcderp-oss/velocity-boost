@@ -50,6 +50,8 @@ import coursesSap from "../../public/Jsonfolder/courses-sap.json";
 import coursesIt from "../../public/Jsonfolder/courses-it.json";
 import coursesHr from "../../public/Jsonfolder/courses-hr.json";
 
+import { resolveContentFamily, neutralizeCityCopy } from "./cityContent.js";
+
 // =====================================================
 // HELPERS
 // =====================================================
@@ -323,6 +325,26 @@ coursesData["hr"] = coursesData["hr-training"];
 coursesData["generative-ai"] = coursesData["chatgpt"]; // will be refined in step 6
 
 // =====================================================
+// 3b. SNAPSHOT CITY-NEUTRAL COPY (before Pune enrichment overwrites it)
+// =====================================================
+// The enrichment step below replaces header/why/whothisisfor/certificate/
+// demoBanner on each course with copy written *about Pune*. Cities that have no
+// authored copy of their own must never see that, so we keep the original
+// `{city}`-templated versions here. (Kept OUTSIDE the course objects on purpose:
+// course objects are serialised into client components, so attaching a second
+// copy would bloat every page.)
+
+const CITY_COPY_KEYS = ["header", "why", "whothisisfor", "certificate", "demoBanner"];
+const GENERIC_CITY_COPY = {};
+Object.entries(coursesData).forEach(([slug, course]) => {
+  const snap = {};
+  CITY_COPY_KEYS.forEach((key) => {
+    if (course?.[key] !== undefined) snap[key] = structuredClone(course[key]);
+  });
+  GENERIC_CITY_COPY[slug] = snap;
+});
+
+// =====================================================
 // 4. ENRICHMENT (matches your enrichmentMaps.json)
 // =====================================================
 
@@ -434,6 +456,33 @@ Object.values(coursesData).forEach((course) => {
 // 6. SPECIAL generative-ai OVERRIDE
 // =====================================================
 
+function deriveGenerativeAiHeader(baseHeader) {
+  return {
+    ...(baseHeader || {}),
+    title: "Generative AI Course in {city}",
+    subtitle:
+      "Get Certified with the Best Generative AI Training Program in {city}",
+    description:
+      "Connecting Dots ERP's Generative AI course in {city} helps you master AI tools, prompt engineering, automation workflows, machine learning foundations, and real-world AI project practice for modern tech and business roles.",
+  };
+}
+
+function deriveGenerativeAiWhy(baseWhy) {
+  return baseWhy
+    ? {
+      ...baseWhy,
+      title: "Why Generative AI?",
+      cards: (baseWhy.cards || []).map((card) => ({
+        ...card,
+        title: (card.title || "").replace("ChatGPT and AI", "Generative AI"),
+        content: (card.content || "")
+          .replace(/generative-ai and AI/g, "Generative AI")
+          .replace(/Artificial Intelligence/g, "Generative AI"),
+      })),
+    }
+    : { title: "Why Generative AI?", cards: [] };
+}
+
 if (coursesData.chatgpt) {
   const base = coursesData.chatgpt;
 
@@ -448,54 +497,55 @@ if (coursesData.chatgpt) {
     metaTitle: "Generative AI Course in {city} | AI Training & Certification",
     metaDescription:
       "Master Generative AI in {city}. Learn AI tools, prompt engineering, automation, projects, certification guidance, and 100%  placement support.",
-    header: {
-      ...(base.header || {}),
-      title: "Generative AI Course in {city}",
-      subtitle:
-        "Get Certified with the Best Generative AI Training Program in {city}",
-      description:
-        "Connecting Dots ERP's Generative AI course in {city} helps you master AI tools, prompt engineering, automation workflows, machine learning foundations, and real-world AI project practice for modern tech and business roles.",
-    },
-    why: base.why
-      ? {
-        ...base.why,
-        title: "Why Generative AI?",
-        cards: (base.why.cards || []).map((card) => ({
-          ...card,
-          title: (card.title || "").replace("ChatGPT and AI", "Generative AI"),
-          content: (card.content || "")
-            .replace(/generative-ai and AI/g, "Generative AI")
-            .replace(/Artificial Intelligence/g, "Generative AI"),
-        })),
-      }
-      : { title: "Why Generative AI?", cards: [] },
+    header: deriveGenerativeAiHeader(base.header),
+    why: deriveGenerativeAiWhy(base.why),
+  };
+
+  // City-neutral version for cities that have no authored copy (see 3b).
+  GENERIC_CITY_COPY["generative-ai"] = {
+    ...(GENERIC_CITY_COPY.chatgpt || {}),
+    header: deriveGenerativeAiHeader(GENERIC_CITY_COPY.chatgpt?.header),
+    why: deriveGenerativeAiWhy(GENERIC_CITY_COPY.chatgpt?.why),
   };
 }
 
 // =====================================================
-// 7. CITY-AWARE HELPER
+// 7. CITY-AWARE HELPERS
 // =====================================================
+//
+// Resolution order for the five "city copy" blocks
+// (header, why, whothisisfor, certificate, demoBanner):
+//
+//   1. the city's OWN authored file (only pune / mumbai / raipur — see
+//      cityContent.js)
+//   2. the Pune copy, re-targeted with neutralizeCityCopy(): course-offered
+//      mentions ("course in Pune") are renamed, Pune-specific market claims
+//      are REMOVED (never renamed to another city)
+//   3. the course's own city-neutral `{city}` object, if it has one
+//
+// Nothing here can fall back to raw Pune copy for a non-Pune city.
+// `cityName` should be citiesData[citySlug].name; it defaults sensibly.
 
-/**
- * Returns the correct header object for a course + city.
- * Uses dsHeaderData-mumbai.json for mumbai, otherwise the default (Pune) file.
- */
-const getLocalizedSource = (citySlug, sources) => sources[citySlug] || null;
+const CITY_SOURCES = {
+  header: { pune: dsHeaderDataPune, mumbai: dsHeaderDataMumbai, raipur: dsHeaderDataRaipur },
+  why: { pune: whyDataPune, mumbai: whyDataMumbai, raipur: whyDataRaipur },
+  who: { pune: whoDataPune, mumbai: whoDataMumbai, raipur: whoDataRaipur },
+  what: { pune: whatWillLearnDataPune, mumbai: whatWillLearnDataMumbai, raipur: whatWillLearnDataRaipur },
+  skills: { pune: skillsDataPune, mumbai: skillsDataMumbai, raipur: skillsDataRaipur },
+  certificate: { pune: certificateDataPune, mumbai: certificateDataMumbai, raipur: certificateDataRaipur },
+  demoBanner: { pune: CTABannerData, mumbai: CTABannerDataMumbai, raipur: CTABannerDataRaipur },
+};
 
-export function getHeaderForCity(courseSlug, citySlug) {
-  const headerSource = getLocalizedSource(citySlug, {
-    pune: dsHeaderDataPune,
-    mumbai: dsHeaderDataMumbai,
-    raipur: dsHeaderDataRaipur,
-  });
-  if (!headerSource) return null;
+const cityNameFor = (citySlug, cityName) =>
+  cityName || citiesData[citySlug]?.name || citySlug;
 
-  const path = enrichmentMaps?.headerMap?.[courseSlug];
-  if (!path) return null;
-
-  const [groupKey, headerKey] = path;
-  return headerSource?.[groupKey]?.[headerKey] || null;
-}
+// In courses-*.json several of these fields are not copy at all but pointer
+// strings such as "dsHeaderData['ficoheader']['FICOHeader']" that the enrichment
+// step resolves to Pune data. Those are not usable as generic copy.
+const genericCopy = (courseSlug, key) => {
+  const value = GENERIC_CITY_COPY[courseSlug]?.[key];
+  return value && typeof value === "object" ? value : null;
+};
 
 /**
  * Mumbai-only overrides for courses that share "Whysap" in whyMap
@@ -516,75 +566,139 @@ const MUMBAI_WHY_OVERRIDES = {
 };
 
 /**
- * Returns the correct Why object for a course + city.
- * Uses WhyData-mumbai.json for mumbai, otherwise the default (Pune) file.
+ * Enrichment maps are keyed by canonical slug ("it"), but some URLs use an alias
+ * that shares the same course object ("it-course-with-ai"). Find the map entry
+ * for the slug itself or for any slug that points at the same course object.
  */
-export function getWhyForCity(courseSlug, citySlug) {
-  const whySource = getLocalizedSource(citySlug, {
-    pune: whyDataPune,
-    mumbai: whyDataMumbai,
-    raipur: whyDataRaipur,
-  });
-  if (!whySource) return null;
+function mapEntry(map, courseSlug) {
+  if (!map) return undefined;
+  if (map[courseSlug] !== undefined) return map[courseSlug];
+  const course = coursesData[courseSlug];
+  if (!course) return undefined;
+  const canonical = Object.keys(map).find((key) => coursesData[key] === course);
+  return canonical ? map[canonical] : undefined;
+}
 
-  const path =
-    (citySlug === "mumbai" && MUMBAI_WHY_OVERRIDES[courseSlug]) ||
-    enrichmentMaps?.whyMap?.[courseSlug];
+// ---- raw lookups: (family, courseSlug) -> block | null -------------------
+
+const lookupHeader = (family, courseSlug) => {
+  const path = mapEntry(enrichmentMaps?.headerMap, courseSlug);
   if (!path) return null;
+  const [groupKey, headerKey] = path;
+  return CITY_SOURCES.header[family]?.[groupKey]?.[headerKey] || null;
+};
 
+const lookupWhy = (family, courseSlug) => {
+  const path =
+    (family === "mumbai" && MUMBAI_WHY_OVERRIDES[courseSlug]) ||
+    mapEntry(enrichmentMaps?.whyMap, courseSlug);
+  if (!path) return null;
   const [groupKey, whyKey] = path;
-  return whySource?.[groupKey]?.[whyKey] || null;
-}
+  return CITY_SOURCES.why[family]?.[groupKey]?.[whyKey] || null;
+};
 
-export function getWhoThisIsForForCity(courseSlug, citySlug) {
-  const source = getLocalizedSource(citySlug, {
-    pune: whoDataPune,
-    mumbai: whoDataMumbai,
-    raipur: whoDataRaipur,
-  });
-  if (!source) return null;
+const lookupWho = (family, courseSlug) => {
+  const whoKey = mapEntry(enrichmentMaps?.whoMap, courseSlug);
+  return whoKey ? CITY_SOURCES.who[family]?.[whoKey] || null : null;
+};
 
-  const whoKey = enrichmentMaps?.whoMap?.[courseSlug];
-  if (!whoKey) return null;
+const lookupCertificate = (family, courseSlug) => {
+  const certKey = mapEntry(enrichmentMaps?.certificateMap, courseSlug);
+  return certKey ? CITY_SOURCES.certificate[family]?.[certKey] || null : null;
+};
 
-  return source?.[whoKey] || null;
-}
+const lookupDemoBanner = (family, courseSlug) => {
+  const bannerKey = mapEntry(enrichmentMaps?.demoBannerMap, courseSlug);
+  return bannerKey ? CITY_SOURCES.demoBanner[family]?.[bannerKey] || null : null;
+};
 
+// ---- resolution ----------------------------------------------------------
 
 /**
- * Returns the correct WhatYouWillLearn array for a course + city.
- * Uses WhatYouWillLearn-mumbai.json for mumbai, otherwise the default (Pune) file.
+ * Hero-header fallbacks: if a header field can only be expressed as a Pune
+ * claim, replace it with wording built from the course's own city-neutral
+ * data rather than dropping the hero.
  */
-export function getWhatYouWillLearnForCity(courseSlug, citySlug) {
-  const source = getLocalizedSource(citySlug, {
-    pune: whatWillLearnDataPune,
-    mumbai: whatWillLearnDataMumbai,
-    raipur: whatWillLearnDataRaipur,
-  });
-  if (!source) return null;
+function headerFallbacks(courseSlug, cityName) {
+  const course = coursesData[courseSlug] || {};
+  const label = course.title || courseSlug;
+  const neutralDescription =
+    typeof course.description === "string"
+      ? course.description.replace(/\{city\}/g, cityName)
+      : `Connecting Dots ERP's ${label} course in ${cityName}, with practical training, projects and placement support.`;
+  return {
+    title: `${label} Course in ${cityName}`,
+    subtitle: `Job-oriented ${label} training in ${cityName}`,
+    description: neutralDescription,
+  };
+}
 
-  const whatKey = enrichmentMaps?.whatWillLearnMap?.[courseSlug];
+function resolveCityCopy(key, lookup, courseSlug, citySlug, cityName) {
+  const name = cityNameFor(citySlug, cityName);
+
+  // 1. authored copy for this exact city
+  const family = resolveContentFamily(citySlug);
+  if (family) {
+    const own = lookup(family, courseSlug);
+    if (own) return own;
+  }
+
+  // 2. Pune copy with every Pune-specific claim stripped
+  const options = key === "header" ? { fallbacks: headerFallbacks(courseSlug, name) } : {};
+  const retargeted = neutralizeCityCopy(lookup("pune", courseSlug), name, "Pune", options);
+  if (retargeted) return retargeted;
+
+  // 3. course-level city-neutral copy (if the course has any)
+  return genericCopy(courseSlug, key);
+}
+
+export function getHeaderForCity(courseSlug, citySlug = "pune", cityName) {
+  return resolveCityCopy("header", lookupHeader, courseSlug, citySlug, cityName);
+}
+
+export function getWhyForCity(courseSlug, citySlug = "pune", cityName) {
+  return resolveCityCopy("why", lookupWhy, courseSlug, citySlug, cityName);
+}
+
+export function getWhoThisIsForForCity(courseSlug, citySlug = "pune", cityName) {
+  return resolveCityCopy("whothisisfor", lookupWho, courseSlug, citySlug, cityName);
+}
+
+export function getCertificateForCity(courseSlug, citySlug = "pune", cityName) {
+  return resolveCityCopy("certificate", lookupCertificate, courseSlug, citySlug, cityName);
+}
+
+/** Returns the Demo / CTA Banner object for a course + city. */
+export function getDemoBannerForCity(courseSlug, citySlug = "pune", cityName) {
+  return resolveCityCopy("demoBanner", lookupDemoBanner, courseSlug, citySlug, cityName);
+}
+
+/**
+ * What you'll learn / skills currently contain no city-specific wording
+ * (scripts/check-location-content.mjs enforces this), so non-authored cities
+ * share the Pune source. It is still passed through neutralizeCityCopy() so a
+ * future edit to the Pune file cannot leak Pune claims into other cities.
+ */
+export function getWhatYouWillLearnForCity(courseSlug, citySlug = "pune", cityName) {
+  const family = resolveContentFamily(citySlug);
+  const whatKey = mapEntry(enrichmentMaps?.whatWillLearnMap, courseSlug);
   if (!whatKey) return null;
 
-  const data = source?.[whatKey];
+  const data = CITY_SOURCES.what[family || "pune"]?.[whatKey];
   if (!data) return null;
 
   // same normalisation the enrichment step uses
-  return Array.isArray(data) ? data : data.items || data.cards || [];
+  const items = Array.isArray(data) ? data : data.items || data.cards || [];
+  return family ? items : neutralizeCityCopy(items, cityNameFor(citySlug, cityName)) || [];
 }
 
-export function getSkillsForCity(courseSlug, citySlug) {
-  const source = getLocalizedSource(citySlug, {
-    pune: skillsDataPune,
-    mumbai: skillsDataMumbai,
-    raipur: skillsDataRaipur,
-  });
-  if (!source) return null;
-
-  const skillsKey = enrichmentMaps?.skillsMap?.[courseSlug];
+export function getSkillsForCity(courseSlug, citySlug = "pune", cityName) {
+  const family = resolveContentFamily(citySlug);
+  const skillsKey = mapEntry(enrichmentMaps?.skillsMap, courseSlug);
   if (!skillsKey) return null;
 
-  return source?.[skillsKey] || null;
+  const data = CITY_SOURCES.skills[family || "pune"]?.[skillsKey] || null;
+  return family ? data : neutralizeCityCopy(data, cityNameFor(citySlug, cityName));
 }
 
 export function getCourseData(slug, citySlug = "pune") {
@@ -594,58 +708,17 @@ export function getCourseData(slug, citySlug = "pune") {
   const course = structuredClone(base);
   course.city = citiesData[citySlug] || null;
 
-  // Override header with city-specific version when available
-  const cityHeader = getHeaderForCity(slug, citySlug);
-  if (cityHeader) {
-    course.header = cityHeader;
-  }
+  const cityName = citiesData[citySlug]?.name;
+  const header = getHeaderForCity(slug, citySlug, cityName);
+  if (header) course.header = header;
 
-  // Override why with city-specific version when available
-  const cityWhy = getWhyForCity(slug, citySlug);
-  if (cityWhy) {
-    course.why = cityWhy;
-  }
+  const why = getWhyForCity(slug, citySlug, cityName);
+  if (why) course.why = why;
 
-  // Override demo banner with city-specific version when available
-  const cityDemoBanner = getDemoBannerForCity(slug, citySlug);
-  if (cityDemoBanner) {
-    course.demoBanner = cityDemoBanner;
-  }
+  const demoBanner = getDemoBannerForCity(slug, citySlug, cityName);
+  if (demoBanner) course.demoBanner = demoBanner;
 
   return course;
-}
-
-
-export function getCertificateForCity(courseSlug, citySlug) {
-  const source = getLocalizedSource(citySlug, {
-    pune: certificateDataPune,
-    mumbai: certificateDataMumbai,
-    raipur: certificateDataRaipur,
-  });
-  if (!source) return null;
-
-  const certKey = enrichmentMaps?.certificateMap?.[courseSlug];
-  if (!certKey) return null;
-
-  return source?.[certKey] || null;
-}
-
-/**
- * Returns the Demo / CTA Banner object for a course + city.
- * Currently uses the single SapDemoBanner.json; swap the source
- * when you create city-specific files.
- */
-export function getDemoBannerForCity(courseSlug, citySlug) {
-  const source = getLocalizedSource(citySlug, {
-    pune: CTABannerData,
-    mumbai: CTABannerDataMumbai,
-    raipur: CTABannerDataRaipur,
-  });
-  if (!source) return null;
-  const bannerKey = enrichmentMaps?.demoBannerMap?.[courseSlug];
-  if (!bannerKey) return null;
-
-  return source?.[bannerKey] || null;
 }
 
 // =====================================================

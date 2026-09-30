@@ -26,7 +26,7 @@ const STATS = [
   },
   {
     value: "4.8/5", title: "Google Rating", tint: "#c95f08", icon: <Star size={26} strokeWidth={1.8} />,
-    desc: "Our institute is rated 4.9/5 on Google, reflecting the trust and satisfaction of our learners."
+    desc: "Our institute is rated 4.8/5 on Google, reflecting the trust and satisfaction of our learners."
   },
   {
     value: "200+", title: "Hiring Partners", tint: "#2456b8", icon: <Briefcase size={26} strokeWidth={1.8} />,

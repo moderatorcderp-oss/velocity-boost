@@ -16,21 +16,10 @@ import {
   getDemoBannerForCity
 } from "@/lib/masterData";
 import CityLinks from "@/components/CityLinks";
+import { COURSE_SLUG_ALIASES } from "@/lib/courseAliases";
 
 export const revalidate = 86400;
 export const dynamic = "force-static";
-
-// ✅ ADDED: alias map to resolve new URL slugs to masterData keys
-const COURSE_SLUG_ALIASES = {
-  "data-science-with-ai": "data-science",
-  "advanced-data-analytics-with-generative-ai": "data-analytics",
-  "advanced-data-analytics-azure-power-bi": "data-analytics",
-  "python-with-ai": "python",
-  "data-visualization-with-ai": "data-visualization",
-  "full-stack-with-ai": "full-stack",
-  "hr-courses-training-institute": "hr-training",
-  "agentic-ai": "agentic-ai",
-};
 
 const PREFERRED_CITY_LINK_SLUGS = {
   "data-science": "data-science-with-ai",
@@ -197,9 +186,10 @@ const CourseCityPage = async ({ params }) => {
 
   const processPlaceholders = (obj, cityNameToUse) => {
     if (typeof obj === "string") {
-      return obj
-        .replace(/\{city\}/g, cityNameToUse)
-        .replace(/\bPune\b/g, cityNameToUse);
+      // Only {city} is substituted. Do NOT blanket-replace "Pune": that would turn
+      // any leaked Pune market claim into an invented one for another city.
+      // Location integrity is enforced by scripts/check-location-content.mjs.
+      return obj.replace(/\{city\}/g, cityNameToUse);
     }
     if (Array.isArray(obj)) {
       return obj.map((item) => processPlaceholders(item, cityNameToUse));
@@ -214,48 +204,72 @@ const CourseCityPage = async ({ params }) => {
     return obj;
   };
 
-  // ✅ CITY-SPECIFIC HEADER
-  // Prefer the city-specific header file (mumbai → dsHeaderData-mumbai.json)
-  // Fall back to the header already present on the course object (Pune default)
-  const cityHeader = getHeaderForCity(courseSlug, citySlug);
-  const rawHeader = cityHeader || course.header;
-  const headerData = processPlaceholders(rawHeader, city.name);
+  // ✅ CITY-SAFE COPY
+  // Every block below is resolved by masterData (see "7. CITY-AWARE HELPERS"):
+  // the city's own authored copy (pune / mumbai / raipur only), otherwise the
+  // course's city-neutral {city} template. We deliberately do NOT fall back to
+  // `course.header`, `course.why`, ... because those hold the Pune copy.
+  const headerData = processPlaceholders(
+    getHeaderForCity(courseSlug, citySlug, city.name),
+    city.name
+  );
 
-  const cityWhy = getWhyForCity(courseSlug, citySlug);
-  const whyData = processPlaceholders(cityWhy || course.why, city.name);
+  const whyData = processPlaceholders(
+    getWhyForCity(courseSlug, citySlug, city.name),
+    city.name
+  );
 
-  const cityWhat = getWhatYouWillLearnForCity(courseSlug, citySlug);
+  // What-you'll-learn / skills contain no city wording; safe to fall back to
+  // the course-level data.
   const whatYouWillLearnData = processPlaceholders(
-    cityWhat || course.whatYouWillLearn,
+    getWhatYouWillLearnForCity(courseSlug, citySlug, city.name) || course.whatYouWillLearn,
     city.name
   );
 
-  const citySkills = getSkillsForCity(courseSlug, citySlug);
   const skillsntoolsdata = processPlaceholders(
-    citySkills || course.skillsndtools,
+    getSkillsForCity(courseSlug, citySlug, city.name) || course.skillsndtools,
     city.name
   );
 
-  const cityWho = getWhoThisIsForForCity(courseSlug, citySlug);
   const whothisisfor = processPlaceholders(
-    cityWho || course.whothisisfor,
+    getWhoThisIsForForCity(courseSlug, citySlug, city.name),
     city.name
   );
 
-  const cityCert = getCertificateForCity(courseSlug, citySlug);
   const certificateData = processPlaceholders(
-    cityCert || course.certificate,
+    getCertificateForCity(courseSlug, citySlug, city.name),
     city.name
   );
 
   // ---------- Demo / CTA Banner ----------
-  const cityDemoBanner = getDemoBannerForCity(courseSlug, citySlug);
-  const demoBannerData = processPlaceholders(
-    cityDemoBanner || course.demoBanner,
-    city.name
-  );
+  // Never render the banner component with no props: its built-in defaults are
+  // "Loading..." and an SAP S/4HANA screen title, which would ship as page text.
+  const demoBannerData =
+    processPlaceholders(
+      getDemoBannerForCity(courseSlug, citySlug, city.name),
+      city.name
+    ) || {
+      badge: "Free Live Demo",
+      title: `Book a Free ${course.title} Demo Class in ${city.name}`,
+      subtitle:
+        "Talk to a counselor and see how our live, instructor-led classes work before you enrol.",
+      trust: "Live instructor-led classes \u2022 Hands-on projects",
+      screenTitle: `${course.fullTitle || course.title} Live Class`,
+      widgets: (course.modules || []).slice(0, 4),
+    };
 
   const isSapCourse = course.category === "sap";
+
+  // Slim identity object for the client component. The full `course` object also
+  // carries the Pune-authored copy (header/why/...) and every section already
+  // passed below; serialising it would leak that text into every city page's
+  // inline RSC payload.
+  const clientCourse = {
+    slug: course.slug,
+    title: course.title,
+    fullTitle: course.fullTitle,
+    category: course.category,
+  };
 
   const sapModData =
     isSapCourse && course.sapMod
@@ -351,7 +365,7 @@ const CourseCityPage = async ({ params }) => {
         whyData={whyData}
         whatYouWillLearnData={whatYouWillLearnData}
         sapModData={sapModData}
-        course={course}
+        course={clientCourse}
         modulesData={modulesData}
         descriptionContentData={descriptionContentData}
         certificateData={certificateData}

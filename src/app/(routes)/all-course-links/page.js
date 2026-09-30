@@ -136,21 +136,39 @@ const generateCourseLinks = () => {
 };
 
 // Function to format display text
+// Builds "<Course Name> Course in <City>" from the URL pieces. The course list
+// mixes "-course-in" and bare "-in" endings (e.g. "it-course-with-ai-in"), which
+// previously produced labels like "It Course With Ai In Course In Pune".
+const ACRONYMS = new Set([
+  "sap", "it", "ai", "ml", "hr", "aws", "sql", "bi", "btp", "ewm", "ehs", "grc",
+  "ibp", "abap", "fico", "mm", "pm", "pp", "ps", "qm", "scm", "sd", "hcm", "bwbi",
+]);
+const SMALL_WORDS = new Set(["with", "and", "of"]);
+
+const titleCaseSlug = (slug) =>
+  slug
+    .split("-")
+    .filter(Boolean)
+    .map((word, i) =>
+      ACRONYMS.has(word)
+        ? word.toUpperCase()
+        : i > 0 && SMALL_WORDS.has(word)
+          ? word
+          : word.charAt(0).toUpperCase() + word.slice(1)
+    )
+    .join(" ");
+
 const formatDisplayText = (course, city) => {
-  const courseText = course
+  const courseSlug = course
+    .replace(/-(course|training)-in$/, "")
     .replace(/-in$/, "")
-    .replace(/-/g, " ")
-    .replace(/\b\w/g, (l) => l.toUpperCase())
-    .replace(/\bIt\b/g, "IT")
-    .replace(/\bAi\b/g, "AI")
-    .replace(/\bHr\b/g, "HR")
-    .replace(/\bSap\b/g, "SAP");
+    .split("-")
+    .filter((word) => word !== "course" && word !== "training")
+    .join("-");
 
-  const cityText = city
-    .replace(/-/g, " ")
-    .replace(/\b\w/g, (l) => l.toUpperCase());
+  const suffix = course.includes("-training-in") ? "Training" : "Course";
 
-  return `${courseText} in ${cityText}`;
+  return `${titleCaseSlug(courseSlug)} ${suffix} in ${titleCaseSlug(city)}`;
 };
 
 // Generate all course links
