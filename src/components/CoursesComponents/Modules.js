@@ -89,25 +89,13 @@ const Modules = ({ data }) => {
 
   // Simplified loading/error handling as data is passed directly
   if (!data) {
-    return (
-      <div className="flex items-center justify-center min-h-[400px] p-8">
-        <div className="text-center text-gray-600">
-          No Modules data available (check masterData.js or prop passing).
-        </div>
-      </div>
-    );
+    return null;
   }
 
   // Ensure data.tabs and activeTab content exists before trying to access modules
   const currentTabData = data.tabs.find((tab) => tab.type === activeTab);
   if (!currentTabData) {
-    return (
-      <div className="flex items-center justify-center min-h-[400px] p-8">
-        <div className="text-center text-red-600">
-          Selected tab data not found.
-        </div>
-      </div>
-    );
+    return null;
   }
 
   return (

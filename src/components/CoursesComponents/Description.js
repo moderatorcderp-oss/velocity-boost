@@ -79,11 +79,7 @@ const Description = ({ data, sectionIndex = 0 }) => { // Renamed 'content' prop 
 
   // Simplified error/loading handling as data is passed directly
   if (!data) {
-    return (
-      <div /* Add loading/error styling */>
-        <p>No description data available (check masterData.js or prop passing).</p>
-      </div>
-    );
+    return null;
   }
 
   // Figure out if/where to split paragraphs for the list

@@ -411,11 +411,7 @@ const RelatedCourses = ({ data, currentCityName }) => {
   );
 
   if (!data || !items.length) {
-    return (
-      <div style={{ padding: 40, textAlign: "center", color: "#666" }}>
-        No related courses data available (check masterData.js or prop passing).
-      </div>
-    );
+    return null;
   }
 
   const introText = currentCityName

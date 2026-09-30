@@ -997,7 +997,7 @@ export default function PlacementPage() {
             </h1>
 
             <p className="hero-sub">
-              Join 10,000+ learners who've transformed careers with Learnova's
+              Join 10,000+ learners who've transformed careers with Connecting Dots ERP's
               industry-first placement program — backed by 100+ hiring partners,
               real projects, and one-on-one mentorship.
             </p>

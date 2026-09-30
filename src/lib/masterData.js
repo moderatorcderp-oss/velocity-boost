@@ -480,9 +480,15 @@ if (coursesData.chatgpt) {
  * Returns the correct header object for a course + city.
  * Uses dsHeaderData-mumbai.json for mumbai, otherwise the default (Pune) file.
  */
-export function getHeaderForCity(courseSlug, citySlug = "pune") {
-  const headerSource =
-    citySlug === "mumbai" ? dsHeaderDataMumbai : citySlug === "raipur" ? dsHeaderDataRaipur : dsHeaderDataPune;
+const getLocalizedSource = (citySlug, sources) => sources[citySlug] || null;
+
+export function getHeaderForCity(courseSlug, citySlug) {
+  const headerSource = getLocalizedSource(citySlug, {
+    pune: dsHeaderDataPune,
+    mumbai: dsHeaderDataMumbai,
+    raipur: dsHeaderDataRaipur,
+  });
+  if (!headerSource) return null;
 
   const path = enrichmentMaps?.headerMap?.[courseSlug];
   if (!path) return null;
@@ -513,8 +519,13 @@ const MUMBAI_WHY_OVERRIDES = {
  * Returns the correct Why object for a course + city.
  * Uses WhyData-mumbai.json for mumbai, otherwise the default (Pune) file.
  */
-export function getWhyForCity(courseSlug, citySlug = "pune") {
-  const whySource = citySlug === "mumbai" ? whyDataMumbai : citySlug === "raipur" ? whyDataRaipur : whyDataPune;
+export function getWhyForCity(courseSlug, citySlug) {
+  const whySource = getLocalizedSource(citySlug, {
+    pune: whyDataPune,
+    mumbai: whyDataMumbai,
+    raipur: whyDataRaipur,
+  });
+  if (!whySource) return null;
 
   const path =
     (citySlug === "mumbai" && MUMBAI_WHY_OVERRIDES[courseSlug]) ||
@@ -525,9 +536,13 @@ export function getWhyForCity(courseSlug, citySlug = "pune") {
   return whySource?.[groupKey]?.[whyKey] || null;
 }
 
-export function getWhoThisIsForForCity(courseSlug, citySlug = "pune") {
-  const source =
-    citySlug === "mumbai" ? whoDataMumbai : citySlug === "raipur" ? whoDataRaipur : whoDataPune;
+export function getWhoThisIsForForCity(courseSlug, citySlug) {
+  const source = getLocalizedSource(citySlug, {
+    pune: whoDataPune,
+    mumbai: whoDataMumbai,
+    raipur: whoDataRaipur,
+  });
+  if (!source) return null;
 
   const whoKey = enrichmentMaps?.whoMap?.[courseSlug];
   if (!whoKey) return null;
@@ -540,9 +555,13 @@ export function getWhoThisIsForForCity(courseSlug, citySlug = "pune") {
  * Returns the correct WhatYouWillLearn array for a course + city.
  * Uses WhatYouWillLearn-mumbai.json for mumbai, otherwise the default (Pune) file.
  */
-export function getWhatYouWillLearnForCity(courseSlug, citySlug = "pune") {
-  const source =
-    citySlug === "mumbai" ? whatWillLearnDataMumbai : citySlug === "raipur" ? whatWillLearnDataRaipur : whatWillLearnDataPune;
+export function getWhatYouWillLearnForCity(courseSlug, citySlug) {
+  const source = getLocalizedSource(citySlug, {
+    pune: whatWillLearnDataPune,
+    mumbai: whatWillLearnDataMumbai,
+    raipur: whatWillLearnDataRaipur,
+  });
+  if (!source) return null;
 
   const whatKey = enrichmentMaps?.whatWillLearnMap?.[courseSlug];
   if (!whatKey) return null;
@@ -554,9 +573,13 @@ export function getWhatYouWillLearnForCity(courseSlug, citySlug = "pune") {
   return Array.isArray(data) ? data : data.items || data.cards || [];
 }
 
-export function getSkillsForCity(courseSlug, citySlug = "pune") {
-  const source =
-    citySlug === "mumbai" ? skillsDataMumbai : citySlug === "raipur" ? skillsDataRaipur : skillsDataPune;
+export function getSkillsForCity(courseSlug, citySlug) {
+  const source = getLocalizedSource(citySlug, {
+    pune: skillsDataPune,
+    mumbai: skillsDataMumbai,
+    raipur: skillsDataRaipur,
+  });
+  if (!source) return null;
 
   const skillsKey = enrichmentMaps?.skillsMap?.[courseSlug];
   if (!skillsKey) return null;
@@ -593,9 +616,13 @@ export function getCourseData(slug, citySlug = "pune") {
 }
 
 
-export function getCertificateForCity(courseSlug, citySlug = "pune") {
-  const source =
-    citySlug === "mumbai" ? certificateDataMumbai : citySlug === "raipur" ? certificateDataRaipur : certificateDataPune;
+export function getCertificateForCity(courseSlug, citySlug) {
+  const source = getLocalizedSource(citySlug, {
+    pune: certificateDataPune,
+    mumbai: certificateDataMumbai,
+    raipur: certificateDataRaipur,
+  });
+  if (!source) return null;
 
   const certKey = enrichmentMaps?.certificateMap?.[courseSlug];
   if (!certKey) return null;
@@ -608,10 +635,13 @@ export function getCertificateForCity(courseSlug, citySlug = "pune") {
  * Currently uses the single SapDemoBanner.json; swap the source
  * when you create city-specific files.
  */
-export function getDemoBannerForCity(courseSlug, citySlug = "pune") {
-  const source = citySlug === "mumbai" ? CTABannerDataMumbai
-    : citySlug === "raipur" ? CTABannerDataRaipur
-      : CTABannerData;
+export function getDemoBannerForCity(courseSlug, citySlug) {
+  const source = getLocalizedSource(citySlug, {
+    pune: CTABannerData,
+    mumbai: CTABannerDataMumbai,
+    raipur: CTABannerDataRaipur,
+  });
+  if (!source) return null;
   const bannerKey = enrichmentMaps?.demoBannerMap?.[courseSlug];
   if (!bannerKey) return null;
 
