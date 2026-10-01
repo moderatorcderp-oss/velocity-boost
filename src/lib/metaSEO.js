@@ -1,5 +1,11 @@
 // seoMeta.js
 
+import reviewedLocationMetadata from "../data/reviewedLocationMetadata.json" with {
+  type: "json",
+};
+
+const reviewedOverrides = reviewedLocationMetadata.cities || {};
+
 export const citySpecificMeta = {
   "sap-fico": {
     "pune": {
@@ -11296,41 +11302,75 @@ function makeDescriptionFromTemplate(courseTitle, cityName) {
   return `Master ${courseTitle} in ${cityName} with expert trainers, hands-on projects, certification guidance, and placement support. Enroll with Connecting Dots ERP today.`;
 }
 
-export function getMeta(courseSlug, citySlug, course = {}, city = {}) {
+function escapeRegExp(value) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function cityAligned(value, cityName, allCityNames) {
+  if (typeof value !== "string" || !value.trim()) return "";
+  const currentCity = cityName.toLowerCase();
+  const contains = (name) =>
+    new RegExp(`\\b${escapeRegExp(name)}\\b`, "i").test(value);
+  const foreignCity = allCityNames.some(
+    (name) =>
+      name.toLowerCase() !== currentCity &&
+      !currentCity.includes(name.toLowerCase()) &&
+      contains(name)
+  );
+  return foreignCity ? "" : value.replace(/\{city\}/gi, cityName);
+}
+
+function firstCityAligned(values, cityName, allCityNames) {
+  for (const value of values) {
+    const aligned = cityAligned(value, cityName, allCityNames);
+    if (aligned) return aligned;
+  }
+  return "";
+}
+
+export function getMeta(
+  courseSlug,
+  citySlug,
+  course = {},
+  city = {},
+  allCityNames = []
+) {
   const exactKey = `${courseSlug}__${citySlug}`;
+  const cityName = city.name || citySlug;
+  const courseTitle = course.title || courseSlug;
+  const reviewed = reviewedOverrides[citySlug]?.[courseSlug] || {};
+  const exact = overrides[exactKey] || {};
+  const courseOverride = overrides[`course:${courseSlug}`] || {};
+  const cityOverride = overrides[`city:${citySlug}`] || {};
 
-  // 1) exact course+city override
-  if (overrides[exactKey]) {
-    return { ...overrides[exactKey], source: "override-exact" };
-  }
+  const metaTitle = firstCityAligned(
+    [
+      exact.metaTitle,
+      course.metaTitle,
+      courseOverride.metaTitle,
+      cityOverride.metaTitle,
+      reviewed.title,
+    ],
+    cityName,
+    allCityNames
+  );
+  const metaDescription = firstCityAligned(
+    [
+      exact.metaDescription,
+      course.metaDescription,
+      courseOverride.metaDescription,
+      cityOverride.metaDescription,
+      reviewed.description,
+    ],
+    cityName,
+    allCityNames
+  );
 
-  // 2) explicit meta fields on course object (highest precedence after exact)
-  if (course.metaTitle || course.metaDescription) {
-    return {
-      metaTitle: course.metaTitle || makeTitleFromTemplate(course.title || courseSlug, city.name || citySlug),
-      metaDescription:
-        course.metaDescription || makeDescriptionFromTemplate(course.title || courseSlug, city.name || citySlug),
-      source: "course.meta",
-    };
-  }
-
-  // 3) course-level override (keyed as 'course:<courseSlug>')
-  const courseKey = `course:${courseSlug}`;
-  if (overrides[courseKey]) {
-    return { ...overrides[courseKey], source: "override-course" };
-  }
-
-  // 4) city-level override (keyed as 'city:<citySlug>')
-  const cityKey = `city:${citySlug}`;
-  if (overrides[cityKey]) {
-    return { ...overrides[cityKey], source: "override-city" };
-  }
-
-  // 5) fallback template
   return {
-    metaTitle: makeTitleFromTemplate(course.title || courseSlug, city.name || citySlug),
-    metaDescription: makeDescriptionFromTemplate(course.title || courseSlug, city.name || citySlug),
-    source: "template",
+    metaTitle: metaTitle || makeTitleFromTemplate(courseTitle, cityName),
+    metaDescription:
+      metaDescription || makeDescriptionFromTemplate(courseTitle, cityName),
+    source: metaTitle || metaDescription ? "validated-override" : "template",
   };
 }
 

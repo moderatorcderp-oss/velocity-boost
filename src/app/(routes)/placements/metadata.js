@@ -1,4 +1,3 @@
-// app/(routes)/placements/metadata.js
 import { ORG_FACTS } from "@/lib/orgFacts";
 
 const placementTitle =
@@ -6,6 +5,9 @@ const placementTitle =
 const placementDescription =
   `Get 100% job placement assistance with a ${ORG_FACTS.placementRate} placement rate, ${ORG_FACTS.averagePackage} average package, and ${ORG_FACTS.highestPackage} highest package. Expert interview prep, resume building, and career support at Connecting Dots ERP.`;
 const placementUrl = "https://connectingdotserp.com/placements";
+const logoUrl = "https://connectingdotserp.com/Connecting_Logo_New.webp";
+const organizationId = "https://connectingdotserp.com/#organization";
+const websiteId = "https://connectingdotserp.com/#website";
 
 export const placementKeywords = [
   "job placement",
@@ -49,9 +51,7 @@ export const metadata = {
       "max-video-preview": -1,
     },
   },
-  alternates: {
-    canonical: placementUrl,
-  },
+  alternates: { canonical: placementUrl },
   openGraph: {
     title: placementTitle,
     description: placementDescription,
@@ -92,100 +92,36 @@ export const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "WebPage",
-      "@id": `${placementUrl}#webpage`,
-      url: placementUrl,
-      name: placementTitle,
-      description: placementDescription,
-      inLanguage: "en-US",
-      isPartOf: {
-        "@id": "https://connectingdotserp.com/#website",
+      "@type": "Organization",
+      "@id": organizationId,
+      name: "Connecting Dots ERP",
+      url: "https://connectingdotserp.com/",
+      description:
+        "Connecting Dots ERP provides SAP, IT, and HR training with job placement assistance, interview preparation, resume building, and career guidance.",
+      telephone: ["+919004002941", "+919004002958"],
+      logo: {
+        "@type": "ImageObject",
+        "@id": "https://connectingdotserp.com/#organizationLogoImage",
+        url: logoUrl,
       },
-      primaryImageOfPage: {
-        "@id": `${placementUrl}#primaryimage`,
-      },
-      image: {
-        "@id": `${placementUrl}#primaryimage`,
-      },
-      thumbnailUrl:
-        "https://res.cloudinary.com/bropujss/image/upload/v1783687070/logo_rju9sa_scdui4.webp",
-      datePublished: "2025-09-01T10:00:00+00:00",
-      dateModified: "2025-11-24T10:00:00+00:00",
-      breadcrumb: {
-        "@id": `${placementUrl}#breadcrumb`,
-      },
-      mainEntity: {
-        "@id": `${placementUrl}#placementservice`,
-      },
-      potentialAction: [
-        {
-          "@type": "ReadAction",
-          target: [placementUrl],
-        },
-      ],
-    },
-    {
-      "@type": "ImageObject",
-      inLanguage: "en-US",
-      "@id": `${placementUrl}#primaryimage`,
-      url: "https://res.cloudinary.com/bropujss/image/upload/v1783687070/logo_rju9sa_scdui4.webp",
-      contentUrl:
-        "https://res.cloudinary.com/bropujss/image/upload/v1783687070/logo_rju9sa_scdui4.webp",
-      width: 1200,
-      height: 800,
-    },
-    {
-      "@type": "Service",
-      "@id": `${placementUrl}#placementservice`,
-      name: "Job Placement Assistance",
-      description: placementDescription,
-      serviceType: "Career 100% placement support",
-      provider: {
-        "@id": "https://connectingdotserp.com/#organization",
-      },
-      areaServed: {
-        "@type": "Country",
-        name: "India",
-      },
-      audience: {
-        "@type": "Audience",
-        audienceType: "SAP, IT, and HR training students",
-      },
-      offers: {
-        "@type": "Offer",
-        url: placementUrl,
-        category: "Placement Assistance",
-        availability: "https://schema.org/InStock",
-      },
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": `${placementUrl}#breadcrumb`,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          name: "Home",
-          item: "https://connectingdotserp.com/",
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          name: "Placements",
-          item: placementUrl,
-        },
+      sameAs: [
+        "https://www.facebook.com/sapinstallation.pune.9",
+        "https://x.com/CD_ERP",
+        "https://www.youtube.com/channel/UCxQ-RBOBaoYjjd4Mv7qQekA",
+        "https://www.linkedin.com/company/connecting-dots-erp",
+        "https://www.instagram.com/connecting_dot_software_course/",
+        "https://in.pinterest.com/Connecting_Dots_ERP/",
+        "https://www.quora.com/profile/Connecting-Dot-ERP-SAP-And-IT-Training-Institute",
       ],
     },
     {
       "@type": "WebSite",
-      "@id": "https://connectingdotserp.com/#website",
+      "@id": websiteId,
       url: "https://connectingdotserp.com/",
       name: "Connecting Dots ERP",
       description:
         "SAP & IT Training Institute in Pune and Mumbai with 100% Placement Support.",
-      publisher: {
-        "@id": "https://connectingdotserp.com/#organization",
-      },
+      publisher: { "@id": organizationId },
       potentialAction: [
         {
           "@type": "SearchAction",
@@ -201,33 +137,49 @@ export const jsonLd = {
           },
         },
       ],
-      inLanguage: "en-US",
+      inLanguage: "en-IN",
     },
     {
-      "@type": "Organization",
-      "@id": "https://connectingdotserp.com/#organization",
-      name: "Connecting Dots ERP",
-      url: "https://connectingdotserp.com/",
-      logo: {
-        "@type": "ImageObject",
-        "@id": "https://connectingdotserp.com/#organizationLogoImage",
-        url: "https://res.cloudinary.com/bropujss/image/upload/v1783687070/logo_rju9sa_scdui4.webp",
-        width: 228,
-        height: 70,
-      },
-      description:
-        "Connecting Dots ERP provides SAP, IT, and HR training with job placement assistance, interview preparation, resume building, and career guidance.",
-      telephone: ["+919004002941", "+919004002958"],
-      sameAs: [
-        "https://www.facebook.com/sapinstallation.pune.9",
-        "https://x.com/CD_ERP",
-        "https://www.youtube.com/channel/UCxQ-RBOBaoYjjd4Mv7qQekA",
-        "https://www.linkedin.com/company/connecting-dots-erp",
-        "https://www.instagram.com/connecting_dot_software_course/",
-        "https://in.pinterest.com/Connecting_Dots_ERP/",
-        "https://www.quora.com/profile/Connecting-Dot-ERP-SAP-And-IT-Training-Institute",
-      ],
+      "@type": "WebPage",
+      "@id": `${placementUrl}#webpage`,
+      url: placementUrl,
+      name: placementTitle,
+      description: placementDescription,
       inLanguage: "en-US",
+      isPartOf: { "@id": websiteId },
+      image: { "@id": `${placementUrl}#primaryimage` },
+      primaryImageOfPage: { "@id": `${placementUrl}#primaryimage` },
+      breadcrumb: { "@id": `${placementUrl}#breadcrumb` },
+      mainEntity: { "@id": `${placementUrl}#placementservice` },
+      potentialAction: [{ "@type": "ReadAction", target: [placementUrl] }],
+    },
+    {
+      "@type": "ImageObject",
+      "@id": `${placementUrl}#primaryimage`,
+      inLanguage: "en-US",
+      url: logoUrl,
+      contentUrl: logoUrl,
+    },
+    {
+      "@type": "Service",
+      "@id": `${placementUrl}#placementservice`,
+      name: "Job Placement Assistance",
+      description: placementDescription,
+      serviceType: "Career 100% placement support",
+      provider: { "@id": organizationId },
+      areaServed: { "@type": "Country", name: "India" },
+      audience: {
+        "@type": "Audience",
+        audienceType: "SAP, IT, and HR training students",
+      },
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": `${placementUrl}#breadcrumb`,
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://connectingdotserp.com/" },
+        { "@type": "ListItem", position: 2, name: "Placements", item: placementUrl },
+      ],
     },
   ],
 };

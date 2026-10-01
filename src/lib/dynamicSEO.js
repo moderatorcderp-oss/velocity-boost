@@ -101,7 +101,11 @@ function getOptimalDescription(course, cityName, courseTitle) {
   return expandedTemplate.length <= 160 ? expandedTemplate : truncateString(expandedTemplate, 160);
 }
 
-export function generateDynamicMetadata(courseSlug, citySlug) {
+export function generateDynamicMetadata(
+  courseSlug,
+  citySlug,
+  publicCourseSlug = courseSlug
+) {
   const course = coursesData[courseSlug];
   const city = citiesData[citySlug];
 
@@ -117,7 +121,14 @@ export function generateDynamicMetadata(courseSlug, citySlug) {
   const hasOffice = city.hasOffice;
 
   // NEW: pull meta overrides / templates from metaSEO.js
-  const metaOverride = getMeta(courseSlug, citySlug, course, city) || {};
+  const metaOverride =
+    getMeta(
+      courseSlug,
+      citySlug,
+      course,
+      city,
+      Object.values(citiesData).map((entry) => entry.name)
+    ) || {};
   const overrideTitle = replaceCityPlaceholder(metaOverride.metaTitle, cityName);
   const overrideDescription = replaceCityPlaceholder(metaOverride.metaDescription, cityName);
 
@@ -144,9 +155,9 @@ export function generateDynamicMetadata(courseSlug, citySlug) {
   const optimizedKeywords = truncateString(keywords, 400);
 
   // Generate URLs - use the incoming slugs consistently
-  const pageUrl = `https://connectingdotserp.com/${courseSlug}-course-in-${citySlug}`;
-  const ogImageUrl = `https://connectingdotserp.com/images/og-${courseSlug}-course-${citySlug}.jpg`;
-  const twitterImageUrl = `https://connectingdotserp.com/images/twitter-${courseSlug}-course-${citySlug}.jpg`;
+  const pageUrl = `https://connectingdotserp.com/${publicCourseSlug}-course-in-${citySlug}`;
+  const ogImageUrl = "https://connectingdotserp.com/Connecting_Logo_New.webp";
+  const twitterImageUrl = ogImageUrl;
 
   // Open Graph metadata
   const openGraph = {
@@ -164,7 +175,7 @@ export function generateDynamicMetadata(courseSlug, citySlug) {
     ],
     type: "website",
     locale: "en_US",
-    updatedTime: new Date().toISOString(),
+    ...(course.updatedAt ? { updatedTime: course.updatedAt } : {}),
   };
 
   // Twitter Card metadata
@@ -244,7 +255,11 @@ export function generateDynamicMetadata(courseSlug, citySlug) {
 }
 
 // Keep your existing generateDynamicJsonLd function but prefer metaDescription when available
-export function generateDynamicJsonLd(courseSlug, citySlug) {
+export function generateDynamicJsonLd(
+  courseSlug,
+  citySlug,
+  publicCourseSlug = courseSlug
+) {
   const course = coursesData[courseSlug];
   const city = citiesData[citySlug];
 
@@ -256,7 +271,7 @@ export function generateDynamicJsonLd(courseSlug, citySlug) {
   }
 
   const baseUrl = "https://connectingdotserp.com";
-  const pageUrl = `${baseUrl}/${courseSlug}-course-in-${citySlug}`;
+  const pageUrl = `${baseUrl}/${publicCourseSlug}-course-in-${citySlug}`;
   const currentDate = new Date().toISOString();
   const futureDate = new Date(Date.now() + 90 * 24 * 60 * 60 * 1000)
     .toISOString()
@@ -266,7 +281,14 @@ export function generateDynamicJsonLd(courseSlug, citySlug) {
   const hasOffice = city.hasOffice;
 
   // NEW: prefer metaDescription from overrides if present (keeps JSON-LD consistent with meta tags)
-  const metaOverride = getMeta(courseSlug, citySlug, course, city) || {};
+  const metaOverride =
+    getMeta(
+      courseSlug,
+      citySlug,
+      course,
+      city,
+      Object.values(citiesData).map((entry) => entry.name)
+    ) || {};
   const processedDescription = (metaOverride.metaDescription && metaOverride.metaDescription.replace(/{city}/g, cityName)) ||
     (course.description ? course.description.replace(/{city}/g, cityName) : "");
 
@@ -620,5 +642,68 @@ export function generateDynamicJsonLd(courseSlug, citySlug) {
     });
   }
 
-  return jsonLd;
+  const logoUrl = `${baseUrl}/Connecting_Logo_New.webp`;
+  const safeGraph = jsonLd
+    .filter((node) => node["@type"] !== "SpecialAnnouncement")
+    .map((sourceNode) => {
+      const node = { ...sourceNode };
+      delete node["@context"];
+
+      if (node["@type"] === "Organization") {
+        delete node.description;
+        delete node.telephone;
+        node.logo = { ...node.logo, url: logoUrl };
+      }
+
+      if (node["@type"] === "WebPage") {
+        node.image = {
+          "@type": "ImageObject",
+          url: logoUrl,
+          caption: `${courseTitle} Course in ${cityName}`,
+        };
+        node.primaryImageOfPage = { "@id": `${pageUrl}#mainImage` };
+        if (course.publishedAt) node.datePublished = course.publishedAt;
+        else delete node.datePublished;
+        if (course.updatedAt) node.dateModified = course.updatedAt;
+        else delete node.dateModified;
+      }
+
+      if (node["@type"] === "Course") {
+        delete node.aggregateRating;
+        delete node.review;
+        delete node.hasCourseInstance;
+        if (node.offers) {
+          node.offers = { ...node.offers };
+          delete node.offers.priceValidUntil;
+          delete node.offers.availability;
+          delete node.offers.areaServed;
+          delete node.offers.seller;
+        }
+      }
+
+      if (node["@type"] === "VideoObject") {
+        node.thumbnailUrl =
+          "https://img.youtube.com/vi/7YRbfuv7R3k/hqdefault.jpg";
+        if (course.videoUploadDate) node.uploadDate = course.videoUploadDate;
+        else delete node.uploadDate;
+      }
+
+      if (node["@type"] === "LocalBusiness") {
+        node.name = `Connecting Dots ERP ${cityName}`;
+        node.image = logoUrl;
+        delete node.aggregateRating;
+        delete node.review;
+        if (!city.office?.postalCode && node.address) {
+          delete node.address.postalCode;
+        }
+        node.areaServed = { "@type": "City", name: cityName };
+      }
+
+      return node;
+    });
+
+  return {
+    "@context": "https://schema.org",
+    "@graph": safeGraph,
+  };
 }
